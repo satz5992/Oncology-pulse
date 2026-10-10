@@ -4,322 +4,614 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Oncology Pulse</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <style>
-/* H&E palette: hematoxylin violet accent, eosin pink signal. */
+@font-face{font-family:"Plex Sans";src:url(fonts/plex-sans-400.woff2) format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"Plex Sans";src:url(fonts/plex-sans-500.woff2) format("woff2");font-weight:500;font-display:swap}
+@font-face{font-family:"Plex Sans";src:url(fonts/plex-sans-600.woff2) format("woff2");font-weight:600;font-display:swap}
+@font-face{font-family:"Plex Sans";src:url(fonts/plex-sans-700.woff2) format("woff2");font-weight:700;font-display:swap}
+@font-face{font-family:"Plex Mono";src:url(fonts/plex-mono-400.woff2) format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"Plex Mono";src:url(fonts/plex-mono-500.woff2) format("woff2");font-weight:500;font-display:swap}
+
+/* Layout: app shell — compact top bar, scrolling screen, fixed bottom navigation, full-screen detail sheet.
+   Palette: hematoxylin indigo (accent) and eosin rose (signal) on cool clinical greys. */
 :root{
-  --bg:#f6f5fa; --surface:#ffffff; --sunk:#eeecf5; --fg:#1c1a29; --muted:#615d78; --line:#dddaea;
-  --accent:#4a3d94; --accent-soft:#e7e3f8; --eosin:#b8365f; --eosin-soft:#fbe6ee;
-  --ok:#1f7a55; --ok-soft:#ddf2e8; --warn:#9a6200; --warn-soft:#fbefd7; --info:#1d5f96; --info-soft:#e0edf8;
-  --f-display:"Bricolage Grotesque", "Roboto", system-ui, sans-serif;
-  --f-body:"IBM Plex Sans", "Roboto", system-ui, sans-serif;
-  --f-mono:"IBM Plex Mono", "Roboto Mono", monospace;
-  --r:12px; color-scheme:light;
+  --bg:#f4f5f8; --surface:#ffffff; --surface-2:#eef0f5; --line:#e2e5ee; --fg:#11131b; --muted:#5b6074; --faint:#8a8fa4;
+  --accent:#3d3a9a; --accent-soft:#ebeafc; --on-accent:#ffffff; --signal:#be2f5b; --signal-soft:#fce8ef;
+  --ok:#17775a; --ok-soft:#ddf3ea; --warn:#9a5f00; --warn-soft:#fbefd6; --info:#1d5e9a; --info-soft:#e1edf9;
+  --shadow:0 1px 2px rgba(17,19,27,.05),0 4px 14px rgba(17,19,27,.05);
+  --f:"Plex Sans", Roboto, system-ui, sans-serif; --mono:"Plex Mono", "Roboto Mono", monospace;
+  --r:14px; --r-sm:9px; --fs:1; color-scheme:light;
 }
-@media (prefers-color-scheme: dark){:root{
-  --bg:#131220; --surface:#1c1a2c; --sunk:#232138; --fg:#ecebf5; --muted:#a29fbd; --line:#2f2c48;
-  --accent:#a899f0; --accent-soft:#2c2752; --eosin:#f07fa2; --eosin-soft:#3d1d2c;
-  --ok:#5fd1a0; --ok-soft:#173528; --warn:#f0be5c; --warn-soft:#3a2c12; --info:#7ab8ec; --info-soft:#16304a;
-  color-scheme:dark}}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0e0f15; --surface:#171922; --surface-2:#1f2231; --line:#2a2e40; --fg:#eceef6; --muted:#a2a7bd; --faint:#757a93;
+  --accent:#aeaaff; --accent-soft:#262551; --on-accent:#14132e; --signal:#f4849f; --signal-soft:#3c1b29;
+  --ok:#5fd3a6; --ok-soft:#14352a; --warn:#f2c060; --warn-soft:#3a2b10; --info:#7cb9ee; --info-soft:#132f4a;
+  --shadow:0 1px 2px rgba(0,0,0,.4); color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0e0f15; --surface:#171922; --surface-2:#1f2231; --line:#2a2e40; --fg:#eceef6; --muted:#a2a7bd; --faint:#757a93;
+  --accent:#aeaaff; --accent-soft:#262551; --on-accent:#14132e; --signal:#f4849f; --signal-soft:#3c1b29;
+  --ok:#5fd3a6; --ok-soft:#14352a; --warn:#f2c060; --warn-soft:#3a2b10; --info:#7cb9ee; --info-soft:#132f4a;
+  --shadow:0 1px 2px rgba(0,0,0,.4); color-scheme:dark}
+
+[hidden]{display:none!important}
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
-html,body{margin:0}
-body{background:var(--bg);color:var(--fg);font-family:var(--f-body);font-size:15px;line-height:1.5}
-.wrap{padding-inline:16px;padding-block:14px 40px;display:flex;flex-direction:column;gap:18px}
-header.top{display:flex;align-items:center;justify-content:space-between;gap:12px}
-.brand h1{font-family:var(--f-display);font-weight:700;font-size:1.65rem;letter-spacing:-.02em;margin:0;line-height:1.05}
-.brand h1 span{color:var(--eosin)}
-.stamp{font-family:var(--f-mono);font-size:.72rem;color:var(--muted);display:flex;align-items:center;gap:6px;margin-top:4px}
-.dot{width:7px;height:7px;border-radius:50%;background:var(--ok);flex:none}
-.dot.stale{background:var(--warn)}
-.refresh{flex:none;width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:var(--surface);color:var(--accent);display:grid;place-items:center}
-.refresh svg{width:20px;height:20px}
-.refresh.spin svg{animation:spin .9s linear infinite}
+html{font-size:calc(15px * var(--fs))}
+html,body{margin:0;height:100%}
+body{background:var(--bg);color:var(--fg);font-family:var(--f);line-height:1.5;-webkit-font-smoothing:antialiased;overscroll-behavior-y:contain}
+button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:pointer}
+input,select{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+svg.i{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.num{font-family:var(--mono);font-variant-numeric:tabular-nums}
+
+/* ---- shell ---- */
+.appbar{position:sticky;top:0;z-index:20;background:var(--bg);display:flex;align-items:center;gap:10px;padding:12px 16px 10px}
+.appbar.scrolled{box-shadow:0 1px 0 var(--line)}
+.brand{display:flex;align-items:center;gap:10px;flex:1;min-width:0}
+.mark{width:34px;height:34px;border-radius:10px;background:var(--accent);display:grid;place-items:center;flex:none}
+.mark svg{width:20px;height:20px;stroke:var(--on-accent);stroke-width:2.2;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.brand h1{margin:0;font-size:1.12rem;font-weight:700;letter-spacing:-.01em;line-height:1.1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.brand small{display:block;font-size:.74rem;color:var(--muted);font-weight:400;letter-spacing:0}
+.iconbtn{width:42px;height:42px;border-radius:12px;display:grid;place-items:center;color:var(--fg);flex:none}
+.iconbtn:active{background:var(--surface-2)}
+.iconbtn.spin svg{animation:spin .9s linear infinite}
 @keyframes spin{to{transform:rotate(360deg)}}
+main{padding:0 16px calc(84px + env(safe-area-inset-bottom,0px))}
+.screen{display:none;flex-direction:column;gap:22px;padding-top:4px}
+.screen.on{display:flex}
+.ptr{height:0;overflow:hidden;display:grid;place-items:center;color:var(--muted);font-size:.8rem;transition:height .15s}
 
-.bar{position:sticky;top:0;z-index:5;background:var(--bg);margin-inline:-16px;padding:10px 16px;border-bottom:1px solid var(--line);display:flex;flex-direction:column;gap:10px}
-.search{display:flex;gap:8px}
-.search input{flex:1;min-width:0;font:inherit;padding:11px 12px;border:1px solid var(--line);border-radius:var(--r);background:var(--surface);color:var(--fg)}
-.search select{font:inherit;font-size:.88rem;padding:10px 8px;border:1px solid var(--line);border-radius:var(--r);background:var(--surface);color:var(--fg);max-width:38%}
-.chips{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none}
+nav.tabs{position:fixed;left:0;right:0;bottom:0;z-index:30;background:var(--surface);border-top:1px solid var(--line);display:grid;grid-template-columns:repeat(5,1fr);padding:6px 4px calc(6px + env(safe-area-inset-bottom,0px))}
+nav.tabs button{display:flex;flex-direction:column;align-items:center;gap:2px;padding:6px 0;color:var(--faint);font-size:.7rem;font-weight:500;position:relative}
+nav.tabs button .pillbg{width:56px;height:30px;border-radius:15px;display:grid;place-items:center;transition:background .15s}
+nav.tabs button[aria-current="page"]{color:var(--fg)}
+nav.tabs button[aria-current="page"] .pillbg{background:var(--accent-soft);color:var(--accent)}
+nav.tabs .dotbadge{position:absolute;top:6px;left:calc(50% + 10px);min-width:16px;height:16px;padding:0 4px;border-radius:8px;background:var(--signal);color:#fff;font-size:.62rem;font-weight:600;display:grid;place-items:center}
+
+/* ---- common ---- */
+.sec-h{display:flex;align-items:baseline;justify-content:space-between;gap:10px;margin:0 0 10px}
+.sec-h h2{margin:0;font-size:.78rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.sec-h button{font-size:.84rem;font-weight:500;color:var(--accent)}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+.rows > * + *{border-top:1px solid var(--line)}
+.row{display:flex;gap:12px;padding:14px;align-items:flex-start;text-align:left;width:100%}
+.row:active{background:var(--surface-2)}
+.row .body{flex:1;min-width:0;display:flex;flex-direction:column;gap:4px}
+.row .t{font-weight:600;font-size:.96rem;line-height:1.35}
+.row .m{font-size:.78rem;color:var(--muted);display:flex;flex-wrap:wrap;gap:4px 8px;align-items:center}
+.row .k{font-family:var(--mono);font-size:.76rem;color:var(--fg);opacity:.85;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.row .chev{color:var(--faint);margin-top:2px}
+.bar{width:3px;align-self:stretch;border-radius:2px;flex:none;background:var(--line)}
+.c-approval{--c:var(--ok);--cs:var(--ok-soft)} .c-trial{--c:var(--accent);--cs:var(--accent-soft)} .c-designation{--c:var(--info);--cs:var(--info-soft)}
+.c-regulatory{--c:var(--warn);--cs:var(--warn-soft)} .c-upcoming{--c:var(--signal);--cs:var(--signal-soft)} .c-research{--c:var(--muted);--cs:var(--surface-2)}
+.bar.c-approval,.bar.c-trial,.bar.c-designation,.bar.c-regulatory,.bar.c-upcoming,.bar.c-research{background:var(--c)}
+.tag{display:inline-flex;align-items:center;font-size:.66rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:3px 7px;border-radius:5px;background:var(--cs,var(--surface-2));color:var(--c,var(--muted))}
+.pc{color:var(--signal);font-weight:600;font-size:.66rem;letter-spacing:.05em;text-transform:uppercase;display:inline-flex;align-items:center;gap:3px}
+.pc::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--signal)}
+.newdot{width:7px;height:7px;border-radius:50%;background:var(--signal);display:inline-block}
+.search{display:flex;align-items:center;gap:8px;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:0 12px;height:46px}
+.search input{flex:1;min-width:0;border:0;background:none;outline:none;font-size:.95rem}
+.search svg{color:var(--faint)}
+.chips{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;margin:0 -16px;padding:0 16px}
 .chips::-webkit-scrollbar{display:none}
-.chip{flex:none;font:500 .82rem var(--f-body);padding:7px 13px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--fg)}
-.chip[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--surface)}
-.chip .n{font-family:var(--f-mono);font-size:.7rem;opacity:.7;margin-left:4px}
+.chip{flex:none;font-size:.82rem;font-weight:500;padding:7px 12px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--fg);display:inline-flex;gap:6px;align-items:center}
+.chip .n{font-family:var(--mono);font-size:.7rem;color:var(--faint)}
+.chip[aria-pressed="true"]{background:var(--fg);border-color:var(--fg);color:var(--bg)}
+.chip[aria-pressed="true"] .n{color:inherit;opacity:.7}
+.filters{display:flex;flex-direction:column;gap:10px;position:sticky;top:64px;z-index:15;background:var(--bg);padding:2px 0 10px}
+.selectchip{flex:none;font-size:.82rem;font-weight:500;padding:7px 30px 7px 12px;border-radius:999px;border:1px solid var(--line);background:var(--surface) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%238a8fa4' stroke-width='2.5'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E") no-repeat right 10px center;appearance:none;-webkit-appearance:none}
+.selectchip.set{border-color:var(--accent);color:var(--accent)}
+.count{font-size:.78rem;color:var(--muted)}
+.empty{padding:36px 20px;text-align:center;color:var(--muted);font-size:.9rem}
+.empty strong{display:block;color:var(--fg);font-size:1rem;margin-bottom:4px}
+.daylabel{font-size:.74rem;font-weight:600;color:var(--muted);letter-spacing:.06em;text-transform:uppercase;padding:14px 2px 6px}
 
-h2{font-family:var(--f-display);font-weight:500;font-size:1.05rem;margin:0 0 10px;display:flex;justify-content:space-between;align-items:baseline;gap:8px}
-h2 small{font:400 .74rem var(--f-mono);color:var(--muted)}
-.strip{display:flex;gap:10px;overflow-x:auto;padding-bottom:4px;scroll-snap-type:x mandatory;scrollbar-width:none}
-.strip::-webkit-scrollbar{display:none}
-.dec{flex:0 0 74%;max-width:260px;scroll-snap-align:start;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:12px;display:flex;flex-direction:column;gap:5px}
-.dec .when{font:500 .74rem var(--f-mono);color:var(--eosin);letter-spacing:.04em;text-transform:uppercase}
-.dec .what{font-weight:600;font-size:.9rem;line-height:1.3}
-.dec .why{font-size:.78rem;color:var(--muted);font-family:var(--f-mono)}
+/* ---- home ---- */
+.brief{background:var(--accent);color:var(--on-accent);border-radius:var(--r);padding:18px;display:flex;flex-direction:column;gap:14px;box-shadow:var(--shadow)}
+.brief .d{font-size:.8rem;opacity:.85}
+.brief .h{font-size:1.3rem;font-weight:700;letter-spacing:-.01em;line-height:1.25;margin:2px 0 0}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.stat{background:rgba(255,255,255,.13);background:color-mix(in srgb,var(--on-accent) 12%,transparent);border-radius:10px;padding:10px;text-align:left}
+.stat b{display:block;font-family:var(--mono);font-size:1.3rem;font-weight:500;line-height:1.1}
+.stat span{font-size:.72rem;opacity:.85;line-height:1.2;display:block;margin-top:2px}
+.timeline .row{align-items:center}
+.date{width:52px;flex:none;text-align:center;border-radius:10px;background:var(--signal-soft);color:var(--signal);padding:6px 0;line-height:1.1}
+.date b{display:block;font-size:1.05rem;font-family:var(--mono);font-weight:500}
+.date span{font-size:.64rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase}
+.hscroll{display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -16px;padding:0 16px 2px;scrollbar-width:none}
+.hscroll::-webkit-scrollbar{display:none}
+.hcard{flex:0 0 82%;max-width:330px;scroll-snap-align:start;background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--signal);border-radius:var(--r);padding:14px;text-align:left;display:flex;flex-direction:column;gap:6px}
+.hcard .t{font-weight:600;line-height:1.35;font-size:.95rem}
+.hcard .k{font-family:var(--mono);font-size:.74rem;color:var(--muted)}
+.totd{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:16px;text-align:left;display:flex;flex-direction:column;gap:8px;width:100%}
+.totd .eyebrow{font-size:.7rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+.totd .nm{font-size:1.2rem;font-weight:700;letter-spacing:-.01em}
+.totd .res{font-family:var(--mono);font-size:.78rem;background:var(--surface-2);border-radius:8px;padding:8px 10px}
 
-.day{display:flex;flex-direction:column;gap:10px}
-.day + .day{margin-top:14px}
-.dayhead{font:500 .72rem var(--f-mono);color:var(--muted);letter-spacing:.08em;text-transform:uppercase;display:flex;align-items:center;gap:10px}
-.dayhead::after{content:"";flex:1;height:1px;background:var(--line)}
-.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:14px;display:flex;flex-direction:column;gap:8px;min-width:0}
-.card.pc{border-left:3px solid var(--eosin)}
-.card.new .flagnew{display:inline}
-.flagnew{display:none;font:600 .66rem var(--f-body);background:var(--eosin);color:var(--surface);padding:2px 6px;border-radius:4px;letter-spacing:.04em}
-.meta{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
-.pill{font:600 .66rem var(--f-body);letter-spacing:.05em;text-transform:uppercase;padding:3px 8px;border-radius:5px}
-.p-approval{background:var(--ok-soft);color:var(--ok)}
-.p-trial{background:var(--accent-soft);color:var(--accent)}
-.p-designation{background:var(--info-soft);color:var(--info)}
-.p-regulatory{background:var(--warn-soft);color:var(--warn)}
-.p-upcoming{background:var(--eosin-soft);color:var(--eosin)}
-.p-research{background:var(--sunk);color:var(--muted)}
-.site{font-size:.78rem;color:var(--muted)}
-.flag{font:600 .66rem var(--f-body);color:var(--eosin);letter-spacing:.04em;text-transform:uppercase}
-.card h3{margin:0;font-size:1rem;font-weight:600;line-height:1.35}
-.card p{margin:0;opacity:.88;font-size:.9rem}
-.data{font-family:var(--f-mono);font-size:.78rem;background:var(--sunk);border-radius:6px;padding:8px 10px;overflow-x:auto;white-space:nowrap}
-.foot{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:8px;font-size:.8rem}
-.foot a{color:var(--accent);text-decoration:none;font-weight:500;padding:6px 0}
-.acts{display:flex;gap:6px}
-.btn{font:inherit;font-size:.8rem;background:none;border:1px solid var(--line);border-radius:7px;padding:6px 11px;color:var(--muted)}
-.btn[aria-pressed="true"]{color:var(--eosin);border-color:var(--eosin)}
-.empty{background:var(--surface);border:1px dashed var(--line);border-radius:var(--r);padding:28px 18px;text-align:center;color:var(--muted)}
-.empty strong{display:block;color:var(--fg);font-family:var(--f-display);font-weight:500;font-size:1.08rem;margin-bottom:6px}
-.note{font-size:.75rem;color:var(--muted);text-align:center;margin:6px 0 0}
-
-.tabs{display:grid;grid-template-columns:1fr 1fr;gap:4px;background:var(--sunk);padding:4px;border-radius:12px}
-.tab{font:600 .9rem var(--f-body);border:0;background:none;color:var(--muted);padding:9px;border-radius:9px}
-.tab[aria-selected="true"]{background:var(--surface);color:var(--fg);box-shadow:0 1px 2px rgba(0,0,0,.08)}
-.tab .n{font:400 .72rem var(--f-mono);opacity:.7;margin-left:4px}
-.trial{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:14px;display:flex;flex-direction:column;gap:8px;min-width:0}
-.trial .tname{font-family:var(--f-display);font-weight:700;font-size:1.12rem;letter-spacing:-.01em;line-height:1.2;margin:0}
-.trial .cite{font:400 .74rem var(--f-mono);color:var(--muted)}
-.trial .pop{font-size:.88rem;color:var(--muted);margin:0}
-.trial .res{font-family:var(--f-mono);font-size:.8rem;background:var(--sunk);border-radius:6px;padding:8px 10px;line-height:1.45}
-.trial .take{font-size:.9rem;border-left:3px solid var(--accent);padding:2px 0 2px 10px;margin:0}
-.trial details{font-size:.86rem}
-.trial summary{color:var(--accent);font-weight:500;padding:4px 0;list-style:none}
-.trial summary::-webkit-details-marker{display:none}
-.trial summary::before{content:"+ "}
-.trial details[open] summary::before{content:"− "}
-.kv{display:grid;grid-template-columns:auto 1fr;gap:4px 10px;margin-top:6px}
-.kv dt{font:600 .7rem var(--f-body);text-transform:uppercase;letter-spacing:.05em;color:var(--muted);padding-top:2px}
-.kv dd{margin:0;min-width:0}
-.kv ol{margin:0;padding-left:18px}
-.m-Systemic{background:var(--accent-soft);color:var(--accent)}
-.m-Radiotherapy{background:var(--eosin-soft);color:var(--eosin)}
-.m-Combined{background:var(--info-soft);color:var(--info)}
-.m-Surgery,.m-Surgery\/RT,.m-Device{background:var(--warn-soft);color:var(--warn)}
+/* ---- trials ---- */
+.sitegrid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.site{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px;text-align:left;display:flex;flex-direction:column;gap:2px;min-height:68px}
+.site b{font-size:.88rem;font-weight:600;line-height:1.25}
+.site span{font-family:var(--mono);font-size:.74rem;color:var(--muted)}
+.mod{font-size:.66rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:3px 7px;border-radius:5px}
+.m-Systemic{background:var(--accent-soft);color:var(--accent)} .m-Radiotherapy{background:var(--signal-soft);color:var(--signal)}
+.m-Combined{background:var(--info-soft);color:var(--info)} .m-Surgery,.m-Device{background:var(--warn-soft);color:var(--warn)}
 .m-Screening,.m-Supportive{background:var(--ok-soft);color:var(--ok)}
-.sitehead{font-family:var(--f-display);font-weight:500;font-size:1.05rem;margin:18px 0 8px;display:flex;justify-content:space-between;align-items:baseline}
-.sitehead small{font:400 .72rem var(--f-mono);color:var(--muted)}
-.tlist{display:flex;flex-direction:column;gap:10px}
-.toast{position:fixed;left:16px;right:16px;bottom:20px;background:var(--fg);color:var(--bg);padding:12px 14px;border-radius:10px;font-size:.85rem;opacity:0;transform:translateY(10px);transition:.2s;pointer-events:none;z-index:20}
+.crumb{display:flex;align-items:center;gap:8px;font-weight:600}
+.crumb button{color:var(--accent);display:inline-flex;align-items:center;gap:2px;font-weight:500}
+
+/* ---- more ---- */
+.setting{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px}
+.setting .l{display:flex;flex-direction:column;gap:2px;min-width:0}
+.setting .l b{font-weight:500;font-size:.95rem}
+.setting .l span{font-size:.78rem;color:var(--muted)}
+.seg{display:inline-flex;background:var(--surface-2);border-radius:10px;padding:3px;gap:2px;flex:none}
+.seg button{font-size:.8rem;font-weight:500;padding:6px 10px;border-radius:8px;color:var(--muted)}
+.seg button[aria-pressed="true"]{background:var(--surface);color:var(--fg);box-shadow:var(--shadow)}
+.link{display:flex;align-items:center;justify-content:space-between;padding:14px;width:100%;text-align:left}
+.fine{font-size:.78rem;color:var(--muted);line-height:1.55;padding:0 4px}
+
+/* ---- detail sheet ---- */
+.sheet{position:fixed;inset:0;z-index:50;background:var(--bg);display:flex;flex-direction:column;transform:translateY(100%);transition:transform .22s ease;visibility:hidden}
+.sheet.on{transform:none;visibility:visible}
+.sheet .top{display:flex;align-items:center;gap:4px;padding:8px 8px 8px 4px;border-bottom:1px solid var(--line);background:var(--bg)}
+.sheet .top .sp{flex:1}
+.sheet .scroll{flex:1;overflow-y:auto;padding:18px 18px 40px;display:flex;flex-direction:column;gap:18px}
+.d-title{font-size:1.4rem;font-weight:700;letter-spacing:-.015em;line-height:1.25;margin:0}
+.d-meta{display:flex;flex-wrap:wrap;gap:6px 10px;align-items:center;font-size:.82rem;color:var(--muted)}
+.d-sec h3{margin:0 0 6px;font-size:.72rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.d-sec p{margin:0;font-size:.98rem;line-height:1.6}
+.d-data{font-family:var(--mono);font-size:.86rem;line-height:1.55;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px 14px}
+.callout{background:var(--accent-soft);border-radius:12px;padding:12px 14px;font-size:.96rem;line-height:1.55}
+.callout b{display:block;font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin-bottom:4px}
+.arms{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px}
+.arms li{display:flex;gap:10px;align-items:flex-start;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:10px 12px;font-size:.92rem}
+.arms li i{font-style:normal;font-family:var(--mono);font-size:.74rem;width:22px;height:22px;border-radius:6px;background:var(--surface-2);display:grid;place-items:center;flex:none;color:var(--muted)}
+.kv{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.kv div{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:10px 12px;min-width:0}
+.kv span{display:block;font-size:.68rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.kv b{font-weight:500;font-size:.9rem}
+.tags{display:flex;flex-wrap:wrap;gap:6px}
+.tags span{font-size:.78rem;padding:4px 9px;border-radius:999px;background:var(--surface-2);color:var(--muted)}
+.btn{display:flex;align-items:center;justify-content:center;gap:8px;height:48px;border-radius:12px;background:var(--accent);color:var(--on-accent);font-weight:600;width:100%}
+.btn.ghost{background:var(--surface);color:var(--fg);border:1px solid var(--line)}
+.savebtn[aria-pressed="true"]{color:var(--signal)}
+.savebtn[aria-pressed="true"] svg{fill:currentColor}
+.disclaimer{font-size:.76rem;color:var(--faint);line-height:1.5}
+
+/* ---- search overlay ---- */
+.overlay{position:fixed;inset:0;z-index:60;background:var(--bg);display:none;flex-direction:column}
+.overlay.on{display:flex}
+.overlay .top{display:flex;align-items:center;gap:6px;padding:10px 12px 10px 6px;border-bottom:1px solid var(--line)}
+.overlay .top input{flex:1;min-width:0;border:0;background:none;outline:none;font-size:1.05rem;height:42px}
+.overlay .scroll{flex:1;overflow-y:auto;padding:14px 16px 40px;display:flex;flex-direction:column;gap:18px}
+mark{background:var(--warn-soft);color:inherit;border-radius:3px;padding:0 1px}
+
+.toast{position:fixed;left:16px;right:16px;bottom:calc(84px + env(safe-area-inset-bottom,0px));z-index:70;background:var(--fg);color:var(--bg);padding:12px 14px;border-radius:12px;font-size:.88rem;opacity:0;transform:translateY(8px);transition:.2s;pointer-events:none;box-shadow:var(--shadow)}
 .toast.on{opacity:1;transform:none}
+@media (prefers-reduced-motion: reduce){.sheet,.toast,.ptr{transition:none}}
 </style>
 </head>
 <body>
-<div class="wrap">
-  <header class="top">
-    <div class="brand">
-      <h1>Oncology <span>Pulse</span></h1>
-      <div class="stamp"><span class="dot stale" id="dot"></span><span id="stampText">Loading…</span></div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <symbol id="i-home" viewBox="0 0 24 24"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V20h14V9.5"/><path d="M10 20v-6h4v6"/></symbol>
+ <symbol id="i-news" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 8h10M7 12h10M7 16h6"/></symbol>
+ <symbol id="i-trials" viewBox="0 0 24 24"><path d="M9 3v6l-5 9a2 2 0 0 0 1.8 3h12.4a2 2 0 0 0 1.8-3l-5-9V3"/><path d="M8 3h8"/><path d="M7 15h10"/></symbol>
+ <symbol id="i-bookmark" viewBox="0 0 24 24"><path d="M6 3h12v18l-6-4-6 4z"/></symbol>
+ <symbol id="i-more" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></symbol>
+ <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></symbol>
+ <symbol id="i-refresh" viewBox="0 0 24 24"><path d="M21 12a9 9 0 1 1-2.6-6.4"/><path d="M21 3v6h-6"/></symbol>
+ <symbol id="i-back" viewBox="0 0 24 24"><path d="M15 18 9 12l6-6"/></symbol>
+ <symbol id="i-chev" viewBox="0 0 24 24"><path d="m9 6 6 6-6 6"/></symbol>
+ <symbol id="i-share" viewBox="0 0 24 24"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.6 13.5 6.8 4M15.4 6.5l-6.8 4"/></symbol>
+ <symbol id="i-ext" viewBox="0 0 24 24"><path d="M14 4h6v6"/><path d="M20 4 10 14"/><path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></symbol>
+ <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+ <symbol id="i-pulse" viewBox="0 0 24 24"><path d="M2 12h4l2.5-6 4.5 13 2.5-9 1.5 2H22"/></symbol>
+</svg>
+
+<header class="appbar" id="appbar">
+  <div class="brand"><div class="mark"><svg viewBox="0 0 24 24"><use href="#i-pulse"/></svg></div>
+    <h1 id="title">Oncology Pulse<small id="subtitle">Loading…</small></h1></div>
+  <button class="iconbtn" id="btnSearch" aria-label="Search everything"><svg class="i"><use href="#i-search"/></svg></button>
+  <button class="iconbtn" id="btnRefresh" aria-label="Check for updates"><svg class="i"><use href="#i-refresh"/></svg></button>
+</header>
+
+<main>
+  <div class="ptr" id="ptr">Release to refresh</div>
+
+  <!-- HOME -->
+  <section class="screen" id="s-home">
+    <div class="brief" id="brief"></div>
+    <div id="homePC"></div>
+    <div id="homeAhead"></div>
+    <div>
+      <div class="sec-h"><h2>Latest</h2><button data-go="news">See all</button></div>
+      <div class="panel rows" id="homeLatest"></div>
     </div>
-    <button class="refresh" id="refresh" aria-label="Check for new updates">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
-    </button>
-  </header>
-
-  <div class="tabs" role="tablist">
-    <button class="tab" role="tab" id="tabNews" aria-selected="true">News<span class="n" id="nNews"></span></button>
-    <button class="tab" role="tab" id="tabTrials" aria-selected="false">Landmark trials<span class="n" id="nTrials"></span></button>
-  </div>
-
-  <div id="newsView" style="display:flex;flex-direction:column;gap:18px">
-  <div class="bar">
-    <div class="search">
-      <input id="q" type="search" placeholder="Search drug, trial, biomarker…" aria-label="Search news">
-      <select id="site" aria-label="Tumour site"><option value="">All sites</option></select>
-    </div>
-    <div class="chips" id="chips" role="toolbar" aria-label="Filter by type"></div>
-  </div>
-
-  <section id="ahead" hidden>
-    <h2>Decisions ahead <small>FDA action dates</small></h2>
-    <div class="strip" id="strip"></div>
+    <div id="homeTotd"></div>
   </section>
 
-  <section>
-    <h2>Latest <small id="count"></small></h2>
-    <div id="list"></div>
+  <!-- NEWS -->
+  <section class="screen" id="s-news">
+    <div class="filters">
+      <label class="search"><svg class="i"><use href="#i-search"/></svg><input id="nq" type="search" placeholder="Filter news" aria-label="Filter news"></label>
+      <div class="chips" id="nchips"></div>
+    </div>
+    <div id="nlist"></div>
   </section>
 
-  </div>
-
-  <div id="trialsView" hidden>
-    <div class="bar">
-      <div class="search">
-        <input id="tq" type="search" placeholder="Search trial, drug, setting…" aria-label="Search trials">
-        <select id="tsite" aria-label="Tumour site"><option value="">All sites</option></select>
-      </div>
-      <div class="chips" id="tchips" role="toolbar" aria-label="Filter by modality"></div>
+  <!-- TRIALS -->
+  <section class="screen" id="s-trials">
+    <div class="filters">
+      <label class="search"><svg class="i"><use href="#i-search"/></svg><input id="tq" type="search" placeholder="Search 300 landmark trials" aria-label="Search trials"></label>
+      <div class="chips" id="tchips"></div>
     </div>
     <div id="tlist"></div>
-  </div>
+  </section>
 
-  <p class="note">Summaries are compiled automatically from news and regulator sources. Confirm against the full publication or label before clinical use. <span id="ver"></span></p>
+  <!-- SAVED -->
+  <section class="screen" id="s-saved">
+    <div class="seg" id="savedSeg" style="align-self:flex-start"><button data-k="news" aria-pressed="true">News</button><button data-k="trials" aria-pressed="false">Trials</button></div>
+    <div id="slist"></div>
+  </section>
+
+  <!-- MORE -->
+  <section class="screen" id="s-more">
+    <div>
+      <div class="sec-h"><h2>Display</h2></div>
+      <div class="panel rows">
+        <div class="setting"><div class="l"><b>Theme</b><span>Follows your phone by default</span></div>
+          <div class="seg" id="segTheme"><button data-v="system">Auto</button><button data-v="light">Light</button><button data-v="dark">Dark</button></div></div>
+        <div class="setting"><div class="l"><b>Text size</b><span>For reading on rounds</span></div>
+          <div class="seg" id="segSize"><button data-v="1">Standard</button><button data-v="1.12">Large</button></div></div>
+      </div>
+    </div>
+    <div>
+      <div class="sec-h"><h2>Library</h2></div>
+      <div class="panel rows" id="libInfo"></div>
+    </div>
+    <div>
+      <div class="sec-h"><h2>App</h2></div>
+      <div class="panel rows">
+        <button class="link" id="lnkUpdate"><span><b style="font-weight:500">Get the latest version</b><br><span class="count">Downloads the newest APK from GitHub</span></span><svg class="i"><use href="#i-ext"/></svg></button>
+        <div class="setting"><div class="l"><b>Version</b><span>Background checks every 4 hours</span></div><span class="num count" id="ver">—</span></div>
+      </div>
+    </div>
+    <p class="fine">News summaries are compiled automatically each morning from regulator and medical news sources. Trial summaries are a revision aid. Always confirm figures against the original publication or prescribing information before clinical use.</p>
+  </section>
+</main>
+
+<nav class="tabs" id="tabs">
+  <button data-go="home" aria-current="page"><span class="pillbg"><svg class="i"><use href="#i-home"/></svg></span>Home</button>
+  <button data-go="news"><span class="pillbg"><svg class="i"><use href="#i-news"/></svg></span>News<span class="dotbadge" id="badge" hidden></span></button>
+  <button data-go="trials"><span class="pillbg"><svg class="i"><use href="#i-trials"/></svg></span>Trials</button>
+  <button data-go="saved"><span class="pillbg"><svg class="i"><use href="#i-bookmark"/></svg></span>Saved</button>
+  <button data-go="more"><span class="pillbg"><svg class="i"><use href="#i-more"/></svg></span>More</button>
+</nav>
+
+<div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="dTitle">
+  <div class="top">
+    <button class="iconbtn" id="sheetBack" aria-label="Back"><svg class="i"><use href="#i-back"/></svg></button>
+    <span class="sp"></span>
+    <button class="iconbtn" id="sheetShare" aria-label="Share"><svg class="i"><use href="#i-share"/></svg></button>
+    <button class="iconbtn savebtn" id="sheetSave" aria-label="Save" aria-pressed="false"><svg class="i"><use href="#i-bookmark"/></svg></button>
+  </div>
+  <div class="scroll" id="sheetBody"></div>
 </div>
+
+<div class="overlay" id="overlay" role="dialog" aria-modal="true" aria-label="Search">
+  <div class="top">
+    <button class="iconbtn" id="ovBack" aria-label="Close search"><svg class="i"><use href="#i-back"/></svg></button>
+    <input id="gq" type="search" placeholder="Search news and trials" aria-label="Search news and trials">
+    <button class="iconbtn" id="ovClear" aria-label="Clear"><svg class="i"><use href="#i-x"/></svg></button>
+  </div>
+  <div class="scroll" id="ovBody"></div>
+</div>
+
 <div class="toast" id="toast" role="status"></div>
 
 <script>
-const TYPES=[["all","All"],["approval","Approvals"],["trial","Trials"],["designation","Designations"],["regulatory","Regulatory"],["upcoming","Upcoming"],["research","Research"],["saved","Saved"]];
-const LABEL={approval:"Approval",trial:"Trial result",designation:"Designation",regulatory:"Regulatory",upcoming:"Upcoming decision",research:"Research"};
-const A=window.Android;
-let items=[], updated=null, type="all", saved=new Set(), seenBefore=new Set();
-const store={get(k,d){try{const v=localStorage.getItem(k);return v==null?d:JSON.parse(v)}catch(e){return d}},set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}};
-saved=new Set(store.get("saved",[]));type=store.get("type","all");seenBefore=new Set(store.get("seen",[]));
-const $=id=>document.getElementById(id);
-const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
-const fmtDay=d=>{const t=new Date(d+"T00:00:00");return isNaN(t)?d:t.toLocaleDateString("en-IN",{weekday:"short",day:"numeric",month:"short",year:"numeric"})};
-const fmtShort=d=>{const t=new Date(d+"T00:00:00");return isNaN(t)?d:t.toLocaleDateString("en-IN",{day:"numeric",month:"short"})};
-const today=new Date().toISOString().slice(0,10);
-function toast(msg){const t=$("toast");t.textContent=msg;t.classList.add("on");clearTimeout(toast.t);toast.t=setTimeout(()=>t.classList.remove("on"),2600)}
+"use strict";
+const A = window.Android;
+const $ = id => document.getElementById(id);
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const mem = {};
+const store = {
+  get(k,d){ if(k in mem) return mem[k]; try{const v=localStorage.getItem(k);return v==null?d:JSON.parse(v)}catch(e){return d} },
+  set(k,v){ mem[k]=v; try{localStorage.setItem(k,JSON.stringify(v))}catch(e){} }
+};
+const LABEL = {approval:"Approval",trial:"Trial result",designation:"Designation",regulatory:"Regulatory",upcoming:"Upcoming",research:"Research"};
+const NTYPES = [["all","All"],["approval","Approvals"],["trial","Trials"],["upcoming","Upcoming"],["designation","Designations"],["regulatory","Regulatory"],["research","Research"]];
+const MODS = [["all","All"],["Systemic","Systemic"],["Radiotherapy","Radiotherapy"],["Combined","Combined"],["Surgery","Surgery"]];
+const today = new Date().toISOString().slice(0,10);
+const D = s => new Date(s + "T00:00:00");
+const fmtDay = s => { const t=D(s); return isNaN(t)?s:t.toLocaleDateString("en-IN",{weekday:"short",day:"numeric",month:"short"}); };
+const fmtShort = s => { const t=D(s); return isNaN(t)?s:t.toLocaleDateString("en-IN",{day:"numeric",month:"short"}); };
+const daysAgo = n => { const t=new Date(); t.setDate(t.getDate()-n); return t.toISOString().slice(0,10); };
 
-function load(json,fromNetwork){
+let news=[], updated=null, trials=[], trialsMeta={};
+let screen="home", ntype="all", nsite="", tmod="all", tsite="", savedKind="news";
+let savedNews=new Set(store.get("saved",[])), savedTrials=new Set(store.get("tsaved",[]));
+const seenAtOpen=new Set(store.get("seen",[]));
+let current=null; // {kind,id}
+
+function toast(m){const t=$("toast");t.textContent=m;t.classList.add("on");clearTimeout(toast.h);toast.h=setTimeout(()=>t.classList.remove("on"),2400)}
+const isNew = i => seenAtOpen.size>0 && !seenAtOpen.has(i.id);
+const modOf = t => /Surgery/.test(t.modality) ? "Surgery" : t.modality;
+const ico = n => `<svg class="i"><use href="#i-${n}"/></svg>`;
+
+/* ---------- data ---------- */
+function loadNews(json, fromNet){
   try{const d=typeof json==="string"?JSON.parse(json):json;
-    const before=new Set(items.map(i=>i.id));
-    items=(d.items||[]).filter(i=>i&&i.title);updated=d.updated||null;
-    if(fromNetwork&&before.size){const n=items.filter(i=>!before.has(i.id)).length;toast(n?`${n} new item${n>1?"s":""}`:"You're up to date")}
+    const before=new Set(news.map(i=>i.id));
+    news=(d.items||[]).filter(i=>i&&i.title).sort((a,b)=>(b.date||"").localeCompare(a.date||""));
+    updated=d.updated||null;
+    if(fromNet&&before.size){const n=news.filter(i=>!before.has(i.id)).length;toast(n?`${n} new update${n>1?"s":""}`:"You're up to date")}
   }catch(e){}
-  render();stamp();$("nNews").textContent=items.length;
+  renderAll();
 }
-function markSeen(){store.set("seen",items.map(i=>i.id))}
+function loadTrials(json){
+  try{const d=typeof json==="string"?JSON.parse(json):json;trials=d.trials||[];trialsMeta={version:d.version,updated:d.updated}}catch(e){trials=[]}
+  renderAll();
+}
 
-function chips(){
-  const counts={};items.forEach(i=>{counts[i.category]=(counts[i.category]||0)+1});
-  $("chips").innerHTML=TYPES.map(([k,l])=>{const n=k==="all"?items.length:k==="saved"?saved.size:(counts[k]||0);
-    return `<button class="chip" data-k="${k}" aria-pressed="${type===k}">${l}<span class="n">${n}</span></button>`}).join("");
+/* ---------- rows ---------- */
+function newsRow(i, q){
+  const hl = s => q ? highlight(s,q) : esc(s);
+  return `<button class="row" data-open="news:${esc(i.id)}">
+    <span class="bar c-${esc(i.category)}"></span>
+    <span class="body">
+      <span class="m"><span class="tag c-${esc(i.category)}">${esc(LABEL[i.category]||i.category)}</span>${i.tumor?`<span>${esc(i.tumor)}</span>`:""}${i.impact==="practice-changing"?`<span class="pc">Practice-changing</span>`:""}${isNew(i)?`<span class="newdot" title="New"></span>`:""}</span>
+      <span class="t">${hl(i.title)}</span>
+      ${i.keyData?`<span class="k">${hl(i.keyData)}</span>`:""}
+      <span class="m">${esc(i.source||"")} · ${esc(fmtShort(i.date))}</span>
+    </span></button>`;
 }
-function sites(){
-  const cur=$("site").value;const s=[...new Set(items.map(i=>i.tumor).filter(Boolean))].sort();
-  $("site").innerHTML=`<option value="">All sites</option>`+s.map(x=>`<option${x===cur?" selected":""}>${esc(x)}</option>`).join("");
+function trialRow(t, q){
+  const hl = s => q ? highlight(s,q) : esc(s);
+  return `<button class="row" data-open="trial:${esc(t.id)}">
+    <span class="body">
+      <span class="m"><span class="mod m-${esc(modOf(t))}">${esc(t.modality)}</span><span>${esc(t.setting)}</span></span>
+      <span class="t">${hl(t.name)} <span class="num count">${esc(t.year)}</span></span>
+      <span class="k">${hl(t.result)}</span>
+      <span class="m">${esc(t.site)} · ${esc(t.journal)}</span>
+    </span><svg class="i chev"><use href="#i-chev"/></svg></button>`;
 }
-function card(i){
-  const pc=i.impact==="practice-changing", isNew=seenBefore.size&&!seenBefore.has(i.id);
-  return `<article class="card${pc?" pc":""}${isNew?" new":""}">
-    <div class="meta"><span class="flagnew">NEW</span><span class="pill p-${esc(i.category)}">${esc(LABEL[i.category]||i.category)}</span>
-      ${i.tumor?`<span class="site">${esc(i.tumor)}</span>`:""}${pc?`<span class="flag">· Practice-changing</span>`:""}</div>
-    <h3>${esc(i.title)}</h3>
-    ${i.summary?`<p>${esc(i.summary)}</p>`:""}
-    ${i.keyData?`<div class="data">${esc(i.keyData)}</div>`:""}
-    <div class="foot">${i.url?`<a href="${esc(i.url)}" data-open="${esc(i.url)}">${esc(i.source||"Source")} ↗</a>`:`<span>${esc(i.source||"")}</span>`}
-      <div class="acts"><button class="btn share" data-id="${esc(i.id)}">Share</button>
-      <button class="btn save" data-id="${esc(i.id)}" aria-pressed="${saved.has(i.id)}">${saved.has(i.id)?"Saved":"Save"}</button></div></div>
-  </article>`;
+function highlight(s,q){
+  const words=q.toLowerCase().split(/\s+/).filter(w=>w.length>1).map(w=>w.replace(/[.*+?^${}()|[\]\\]/g,"\\$&"));
+  let out=esc(s); if(!words.length) return out;
+  return out.replace(new RegExp("("+words.join("|")+")","gi"),"<mark>$1</mark>");
 }
-function render(){
-  chips();sites();
-  const q=$("q").value.trim().toLowerCase(), site=$("site").value;
-  const up=items.filter(i=>i.category==="upcoming"&&(i.actionDate||"")>=today).sort((a,b)=>(a.actionDate||"").localeCompare(b.actionDate||""));
-  const showAhead=up.length&&type==="all"&&!q&&!site;
-  $("ahead").hidden=!showAhead;
-  $("strip").innerHTML=up.map(i=>`<div class="dec"><span class="when">${esc(i.actionDateLabel||fmtShort(i.actionDate))}</span><span class="what">${esc(i.title)}</span>${i.keyData?`<span class="why">${esc(i.keyData)}</span>`:""}</div>`).join("");
-  let list=items.filter(i=>{
-    if(type==="saved"?!saved.has(i.id):type!=="all"&&i.category!==type)return false;
-    if(showAhead&&i.category==="upcoming"&&(i.actionDate||"")>=today)return false;
-    if(site&&i.tumor!==site)return false;
-    if(q){const h=[i.title,i.summary,i.keyData,i.tumor,i.source,(i.tags||[]).join(" ")].join(" ").toLowerCase();if(!h.includes(q))return false}
-    return true});
-  list.sort((a,b)=>(b.date||"").localeCompare(a.date||""));
-  $("count").textContent=list.length+" item"+(list.length===1?"":"s");
-  if(!items.length){$("list").innerHTML=`<div class="empty"><strong>No news yet</strong>Tap refresh to download the latest updates.</div>`;return}
-  if(!list.length){$("list").innerHTML=`<div class="empty"><strong>Nothing matches</strong>${type==="saved"?"Tap Save on any item to keep it here.":"Try a different filter or clear the search."}</div>`;return}
+const matches = (hay,q) => q.toLowerCase().split(/\s+/).filter(Boolean).every(w=>hay.toLowerCase().includes(w));
+const newsHay = i => [i.title,i.summary,i.keyData,i.tumor,i.source,(i.tags||[]).join(" ")].join(" ");
+const trialHay = t => [t.name,t.setting,t.population,(t.arms||[]).join(" "),t.result,t.takeaway,t.journal,t.site,t.modality,(t.tags||[]).join(" ")].join(" ");
+
+/* ---------- screens ---------- */
+function renderHome(){
+  const now=new Date();
+  const newCount=news.filter(isNew).length, week=news.filter(i=>(i.date||"")>=daysAgo(7)).length;
+  const upcoming=news.filter(i=>i.category==="upcoming"&&(i.actionDate||"")>=today).sort((a,b)=>a.actionDate.localeCompare(b.actionDate));
+  const pc=news.filter(i=>i.impact==="practice-changing"&&(i.date||"")>=daysAgo(45));
+  const hr=now.getHours(), greet=hr<12?"Good morning":hr<17?"Good afternoon":"Good evening";
+  $("brief").innerHTML=`<div><div class="d">${esc(now.toLocaleDateString("en-IN",{weekday:"long",day:"numeric",month:"long"}))}</div>
+    <p class="h">${greet}. ${newCount?`${newCount} new update${newCount>1?"s":""} since your last visit.`:"Here's where oncology stands today."}</p></div>
+    <div class="stats">
+      <button class="stat" data-go="news"><b>${week}</b><span>Updates this week</span></button>
+      <button class="stat" data-go="news" data-ntype="upcoming"><b>${upcoming.length}</b><span>FDA decisions ahead</span></button>
+      <button class="stat" data-go="trials"><b>${trials.length}</b><span>Landmark trials</span></button>
+    </div>`;
+  $("homePC").innerHTML=pc.length?`<div class="sec-h"><h2>Practice-changing</h2></div><div class="hscroll">${pc.map(i=>`<button class="hcard" data-open="news:${esc(i.id)}"><span class="m"><span class="tag c-${esc(i.category)}">${esc(LABEL[i.category])}</span> <span class="count">${esc(i.tumor||"")}</span></span><span class="t">${esc(i.title)}</span>${i.keyData?`<span class="k">${esc(i.keyData)}</span>`:""}</button>`).join("")}</div>`:"";
+  $("homeAhead").innerHTML=upcoming.length?`<div class="sec-h"><h2>Decisions ahead</h2>${upcoming.length>4?`<button data-go="news" data-ntype="upcoming">All ${upcoming.length}</button>`:""}</div>
+    <div class="panel rows timeline">${upcoming.slice(0,4).map(i=>{const t=D(i.actionDate);const lbl=i.actionDateLabel||"";const exact=/^\d/.test(lbl);
+      return `<button class="row" data-open="news:${esc(i.id)}"><span class="date"><b>${exact?t.getDate():esc(t.toLocaleDateString("en-IN",{month:"short"}))}</b><span>${exact?esc(t.toLocaleDateString("en-IN",{month:"short"})):"expected"}</span></span>
+      <span class="body"><span class="t">${esc(i.title)}</span>${i.keyData?`<span class="k">${esc(i.keyData)}</span>`:""}</span><svg class="i chev"><use href="#i-chev"/></svg></button>`}).join("")}</div>`:"";
+  const latest=news.filter(i=>i.category!=="upcoming").slice(0,5);
+  $("homeLatest").innerHTML=latest.length?latest.map(i=>newsRow(i)).join(""):`<div class="empty"><strong>No news yet</strong>Pull down or tap refresh to download updates.</div>`;
+  if(trials.length){const day=Math.floor(Date.now()/864e5);const t=trials[(day*7919)%trials.length];
+    $("homeTotd").innerHTML=`<div class="sec-h"><h2>Trial of the day</h2><button data-go="trials">Library</button></div>
+    <button class="totd" data-open="trial:${esc(t.id)}"><span class="eyebrow">${esc(t.site)} · ${esc(t.setting)}</span><span class="nm">${esc(t.name)}</span><span class="count">${esc(t.journal)} · ${esc(t.design)}</span><span class="res">${esc(t.result)}</span><span style="font-size:.9rem">${esc(t.takeaway)}</span></button>`;}
+}
+function renderNews(){
+  const q=$("nq").value.trim();
+  const counts={};news.forEach(i=>counts[i.category]=(counts[i.category]||0)+1);
+  const sites=[...new Set(news.map(i=>i.tumor).filter(Boolean))].sort();
+  $("nchips").innerHTML=`<select class="selectchip${nsite?" set":""}" id="nsite" aria-label="Tumour site"><option value="">All sites</option>${sites.map(s=>`<option${s===nsite?" selected":""}>${esc(s)}</option>`).join("")}</select>`+
+    NTYPES.map(([k,l])=>`<button class="chip" data-ntype="${k}" aria-pressed="${ntype===k}">${l}<span class="n">${k==="all"?news.length:(counts[k]||0)}</span></button>`).join("");
+  let list=news.filter(i=>(ntype==="all"||i.category===ntype)&&(!nsite||i.tumor===nsite)&&(!q||matches(newsHay(i),q)));
+  if(ntype==="upcoming") list=list.sort((a,b)=>(a.actionDate||"").localeCompare(b.actionDate||""));
+  if(!list.length){$("nlist").innerHTML=`<div class="empty"><strong>Nothing matches</strong>Try another filter or clear the search.</div>`;return}
+  if(ntype==="upcoming"){$("nlist").innerHTML=`<div class="panel rows">${list.map(i=>newsRow(i,q)).join("")}</div>`;return}
   const groups=[];list.forEach(i=>{const g=groups[groups.length-1];if(g&&g.d===i.date)g.items.push(i);else groups.push({d:i.date,items:[i]})});
-  $("list").innerHTML=groups.map(g=>`<div class="day"><div class="dayhead">${esc(fmtDay(g.d))}</div>${g.items.map(card).join("")}</div>`).join("");
+  $("nlist").innerHTML=`<div class="count">${list.length} item${list.length>1?"s":""}</div>`+groups.map(g=>`<div class="daylabel">${esc(fmtDay(g.d))}</div><div class="panel rows">${g.items.map(i=>newsRow(i,q)).join("")}</div>`).join("");
 }
-function stamp(){
-  if(!updated){$("stampText").textContent=items.length?`${items.length} items`:"No data yet";return}
-  const t=new Date(updated);$("dot").classList.toggle("stale",(Date.now()-t)/36e5>36);
-  $("stampText").textContent="Updated "+t.toLocaleString("en-IN",{day:"numeric",month:"short",hour:"numeric",minute:"2-digit"});
-}
-function refresh(){if(!A)return;$("refresh").classList.add("spin");A.refresh()}
-window.onNews=j=>{$("refresh").classList.remove("spin");load(j,true)};
-window.onNewsError=m=>{$("refresh").classList.remove("spin");toast(m)};
-window.handleBack=()=>{if(view==="trials"){if($("tq").value||$("tsite").value||tmod!=="all"){$("tq").value="";$("tsite").value="";tmod="all";renderTrials();return true}setView("news");return true}if($("q").value||$("site").value||type!=="all"){$("q").value="";$("site").value="";type="all";store.set("type",type);render();window.scrollTo(0,0);return true}return false};
-
-$("refresh").addEventListener("click",refresh);
-$("chips").addEventListener("click",e=>{const b=e.target.closest(".chip");if(!b)return;type=b.dataset.k;store.set("type",type);render();window.scrollTo({top:0})});
-$("list").addEventListener("click",e=>{
-  const a=e.target.closest("[data-open]");if(a){e.preventDefault();A?A.open(a.dataset.open):window.open(a.dataset.open);return}
-  const s=e.target.closest(".save");if(s){const id=s.dataset.id;saved.has(id)?saved.delete(id):saved.add(id);store.set("saved",[...saved]);render();return}
-  const sh=e.target.closest(".share");if(sh){const i=items.find(x=>x.id===sh.dataset.id);if(!i)return;
-    const txt=`${i.title}\n${i.keyData?i.keyData+"\n":""}${i.url||""}\n— via Oncology Pulse`;
-    if(A)A.share(txt);else if(navigator.share)navigator.share({text:txt}).catch(()=>{});}
-});
-let qt;$("q").addEventListener("input",()=>{clearTimeout(qt);qt=setTimeout(render,120)});
-$("site").addEventListener("change",render);
-
-
-/* ---------- Landmark trials ---------- */
-let trials=[], tmod="all", view=store.get("view","news"), tsaved=new Set(store.get("tsaved",[]));
-const MODS=[["all","All"],["Systemic","Systemic"],["Radiotherapy","Radiotherapy"],["Combined","Chemo-RT / combined"],["Surgery","Surgery"],["saved","Saved"]];
-function loadTrials(j){try{const d=typeof j==="string"?JSON.parse(j):j;trials=d.trials||[]}catch(e){trials=[]}
-  const sites=[...new Set(trials.map(t=>t.site))];const cur=$("tsite").value;
-  $("tsite").innerHTML='<option value="">All sites</option>'+sites.map(x=>`<option${x===cur?" selected":""}>${esc(x)}</option>`).join("");
-  $("nTrials").textContent=trials.length;renderTrials()}
-function modOf(t){return /Surgery/.test(t.modality)?"Surgery":t.modality}
-function trialCard(t){
-  const sv=tsaved.has(t.id);
-  return `<article class="trial">
-   <div class="meta"><span class="pill m-${esc(modOf(t))}">${esc(t.modality)}</span><span class="site">${esc(t.setting)}</span></div>
-   <h3 class="tname">${esc(t.name)}</h3>
-   <span class="cite">${esc(t.journal)} · ${esc(t.design)}</span>
-   <p class="pop">${esc(t.population)}</p>
-   <div class="res">${esc(t.result)}</div>
-   <p class="take">${esc(t.takeaway)}</p>
-   <details><summary>Design &amp; arms</summary><dl class="kv">
-     <dt>Arms</dt><dd><ol>${(t.arms||[]).map(a=>`<li>${esc(a)}</li>`).join("")}</ol></dd>
-     <dt>Endpoint</dt><dd>${esc(t.endpoint)}</dd>
-     <dt>Year</dt><dd>${esc(t.year)}</dd>
-     ${t.tags&&t.tags.length?`<dt>Tags</dt><dd>${esc(t.tags.join(", "))}</dd>`:""}
-   </dl></details>
-   <div class="foot"><span class="cite">${esc(t.site)}</span><div class="acts">
-     <button class="btn tshare" data-id="${esc(t.id)}">Share</button>
-     <button class="btn tsave" data-id="${esc(t.id)}" aria-pressed="${sv}">${sv?"Saved":"Save"}</button></div></div>
-  </article>`}
 function renderTrials(){
-  $("tchips").innerHTML=MODS.map(([k,l])=>{const n=k==="all"?trials.length:k==="saved"?tsaved.size:trials.filter(t=>modOf(t)===k).length;
-    return `<button class="chip" data-k="${k}" aria-pressed="${tmod===k}">${l}<span class="n">${n}</span></button>`}).join("");
-  const q=$("tq").value.trim().toLowerCase(), site=$("tsite").value;
-  const list=trials.filter(t=>{
-    if(tmod==="saved"?!tsaved.has(t.id):tmod!=="all"&&modOf(t)!==tmod)return false;
-    if(site&&t.site!==site)return false;
-    if(q){const h=[t.name,t.setting,t.population,(t.arms||[]).join(" "),t.result,t.takeaway,t.journal,t.site,(t.tags||[]).join(" ")].join(" ").toLowerCase();
-      if(!q.split(/\s+/).every(w=>h.includes(w)))return false}
-    return true});
-  if(!trials.length){$("tlist").innerHTML='<div class="empty"><strong>No trials loaded</strong>Update the app to get the trials library.</div>';return}
-  if(!list.length){$("tlist").innerHTML=`<div class="empty"><strong>No trials match</strong>${tmod==="saved"?"Tap Save on any trial to keep it here.":"Try another search or filter."}</div>`;return}
+  const q=$("tq").value.trim();
+  const sites=[...new Set(trials.map(t=>t.site))];
+  $("tchips").innerHTML=`<select class="selectchip${tsite?" set":""}" id="tsite" aria-label="Tumour site"><option value="">All sites</option>${sites.map(s=>`<option${s===tsite?" selected":""}>${esc(s)}</option>`).join("")}</select>`+
+    MODS.map(([k,l])=>`<button class="chip" data-tmod="${k}" aria-pressed="${tmod===k}">${l}<span class="n">${k==="all"?trials.length:trials.filter(t=>modOf(t)===k).length}</span></button>`).join("");
+  if(!trials.length){$("tlist").innerHTML=`<div class="empty"><strong>Library not loaded</strong>Update the app to get the trials library.</div>`;return}
+  if(!q&&!tsite&&tmod==="all"){
+    const by={};trials.forEach(t=>by[t.site]=(by[t.site]||0)+1);
+    $("tlist").innerHTML=`<div class="sec-h"><h2>Browse by site</h2></div><div class="sitegrid">${sites.map(s=>`<button class="site" data-tsite="${esc(s)}"><b>${esc(s)}</b><span>${by[s]} trials</span></button>`).join("")}</div>`;
+    return;
+  }
+  const list=trials.filter(t=>(tmod==="all"||modOf(t)===tmod)&&(!tsite||t.site===tsite)&&(!q||matches(trialHay(t),q)));
+  if(!list.length){$("tlist").innerHTML=`<div class="empty"><strong>No trials match</strong>Try fewer words or another filter.</div>`;return}
   const groups=[];list.forEach(t=>{const g=groups[groups.length-1];if(g&&g.s===t.site)g.items.push(t);else groups.push({s:t.site,items:[t]})});
-  $("tlist").innerHTML=groups.map(g=>`<div class="sitehead">${esc(g.s)}<small>${g.items.length}</small></div><div class="tlist">${g.items.map(trialCard).join("")}</div>`).join("");
+  $("tlist").innerHTML=`<div class="count">${list.length} trial${list.length>1?"s":""}</div>`+groups.map(g=>`<div class="daylabel">${esc(g.s)}</div><div class="panel rows">${g.items.map(t=>trialRow(t,q)).join("")}</div>`).join("");
 }
-function setView(v){view=v;store.set("view",v);$("newsView").style.display=v==="news"?"flex":"none";$("trialsView").hidden=v!=="trials";
-  $("tabNews").setAttribute("aria-selected",v==="news");$("tabTrials").setAttribute("aria-selected",v==="trials");$("refresh").hidden=v!=="news";window.scrollTo(0,0)}
-$("tabNews").addEventListener("click",()=>setView("news"));
-$("tabTrials").addEventListener("click",()=>setView("trials"));
-$("tchips").addEventListener("click",e=>{const b=e.target.closest(".chip");if(!b)return;tmod=b.dataset.k;renderTrials();window.scrollTo({top:0})});
-let tqt;$("tq").addEventListener("input",()=>{clearTimeout(tqt);tqt=setTimeout(renderTrials,150)});
-$("tsite").addEventListener("change",renderTrials);
-$("tlist").addEventListener("click",e=>{
-  const s=e.target.closest(".tsave");if(s){const id=s.dataset.id;tsaved.has(id)?tsaved.delete(id):tsaved.add(id);store.set("tsaved",[...tsaved]);renderTrials();return}
-  const sh=e.target.closest(".tshare");if(sh){const t=trials.find(x=>x.id===sh.dataset.id);if(!t)return;
-    const txt=`${t.name} (${t.journal})\n${t.population}\nArms: ${(t.arms||[]).join(" vs ")}\nResult: ${t.result}\nTakeaway: ${t.takeaway}\n— via Oncology Pulse`;
-    if(A)A.share(txt);else if(navigator.share)navigator.share({text:txt}).catch(()=>{})}
-});
-window.onTrials=j=>{loadTrials(j);toast("Trials library updated")};
+function renderSaved(){
+  [...$("savedSeg").children].forEach(b=>b.setAttribute("aria-pressed",b.dataset.k===savedKind));
+  if(savedKind==="news"){const l=news.filter(i=>savedNews.has(i.id));
+    $("slist").innerHTML=l.length?`<div class="panel rows">${l.map(i=>newsRow(i)).join("")}</div>`:`<div class="empty"><strong>No saved news</strong>Tap the bookmark on any update to keep it here.</div>`}
+  else{const l=trials.filter(t=>savedTrials.has(t.id));
+    $("slist").innerHTML=l.length?`<div class="panel rows">${l.map(t=>trialRow(t)).join("")}</div>`:`<div class="empty"><strong>No saved trials</strong>Bookmark trials to build your revision list.</div>`}
+}
+function renderMore(){
+  const th=store.get("theme","system"), fs=String(store.get("fs",1));
+  [...$("segTheme").children].forEach(b=>b.setAttribute("aria-pressed",b.dataset.v===th));
+  [...$("segSize").children].forEach(b=>b.setAttribute("aria-pressed",b.dataset.v===fs));
+  const up=updated?new Date(updated).toLocaleString("en-IN",{day:"numeric",month:"short",hour:"numeric",minute:"2-digit"}):"—";
+  $("libInfo").innerHTML=`<div class="setting"><div class="l"><b>News feed</b><span>Updated ${esc(up)}</span></div><span class="num count">${news.length} items</span></div>
+    <div class="setting"><div class="l"><b>Landmark trials</b><span>Library v${esc(trialsMeta.version||"—")} · ${esc(trialsMeta.updated||"")}</span></div><span class="num count">${trials.length} trials</span></div>`;
+}
+function renderChrome(){
+  const n=news.filter(isNew).length;$("badge").hidden=!n;$("badge").textContent=n>9?"9+":n;
+  const titles={home:"Oncology Pulse",news:"News",trials:"Landmark trials",saved:"Saved",more:"Settings"};
+  const up=updated?"Updated "+new Date(updated).toLocaleString("en-IN",{day:"numeric",month:"short",hour:"numeric",minute:"2-digit"}):"Offline copy";
+  const subs={home:up,news:`${news.length} items · ${up}`,trials:`${trials.length} practice-defining trials`,saved:`${savedNews.size+savedTrials.size} bookmarks`,more:"Display, library and app"};
+  $("title").firstChild.nodeValue=titles[screen];$("subtitle").textContent=subs[screen];
+  $("btnRefresh").hidden=!(screen==="home"||screen==="news");
+}
+function renderAll(){renderHome();renderNews();renderTrials();renderSaved();renderMore();renderChrome();if(current)openDetail(current.kind,current.id,true)}
 
-if(A){loadTrials(A.trials());A.refreshTrials()}else{fetch("trials.json").then(r=>r.json()).then(loadTrials).catch(()=>{})}
-setView(view);
-if(A){try{$("ver").textContent="v"+A.version()}catch(e){};load(A.cached(),false);refresh();setTimeout(markSeen,4000)}
-else{fetch("news.json").then(r=>r.text()).then(t=>load(t,false)).catch(()=>render())}
-document.addEventListener("visibilitychange",()=>{if(document.hidden)markSeen()});
+function go(s,opts={}){
+  screen=s;store.set("screen",s);
+  document.querySelectorAll(".screen").forEach(e=>e.classList.toggle("on",e.id==="s-"+s));
+  document.querySelectorAll("#tabs button").forEach(b=>{if(b.dataset.go===s)b.setAttribute("aria-current","page");else b.removeAttribute("aria-current")});
+  if(opts.ntype){ntype=opts.ntype;renderNews()}
+  renderChrome();if(!opts.keepScroll)window.scrollTo(0,0);
+}
+
+/* ---------- detail ---------- */
+function openDetail(kind,id,silent){
+  const body=$("sheetBody");current={kind,id};
+  if(kind==="news"){
+    const i=news.find(x=>x.id===id);if(!i){closeDetail();return}
+    $("sheetSave").setAttribute("aria-pressed",savedNews.has(id));
+    body.innerHTML=`<div class="d-meta"><span class="tag c-${esc(i.category)}">${esc(LABEL[i.category]||i.category)}</span>${i.tumor?`<span>${esc(i.tumor)}</span>`:""}${i.impact==="practice-changing"?`<span class="pc">Practice-changing</span>`:""}</div>
+      <h2 class="d-title" id="dTitle">${esc(i.title)}</h2>
+      <div class="d-meta"><span>${esc(i.source||"")}</span><span>·</span><span>${esc(fmtDay(i.date))}</span></div>
+      ${i.category==="upcoming"&&i.actionDate?`<div class="kv"><div><span>Expected decision</span><b>${esc(i.actionDateLabel||fmtShort(i.actionDate))}</b></div><div><span>Days away</span><b class="num">${Math.max(0,Math.round((D(i.actionDate)-D(today))/864e5))}</b></div></div>`:""}
+      ${i.summary?`<div class="d-sec"><h3>Summary</h3><p>${esc(i.summary)}</p></div>`:""}
+      ${i.keyData?`<div class="d-sec"><h3>Key data</h3><div class="d-data">${esc(i.keyData)}</div></div>`:""}
+      ${(i.tags||[]).length?`<div class="tags">${i.tags.map(t=>`<span>${esc(t)}</span>`).join("")}</div>`:""}
+      ${related("news",i)}
+      ${i.url?`<button class="btn" data-ext="${esc(i.url)}">${ico("ext")}Read at ${esc(i.source||"source")}</button>`:""}
+      <p class="disclaimer">Automatically compiled summary. Verify against the source or label before clinical use.</p>`;
+  } else {
+    const t=trials.find(x=>x.id===id);if(!t){closeDetail();return}
+    $("sheetSave").setAttribute("aria-pressed",savedTrials.has(id));
+    body.innerHTML=`<div class="d-meta"><span class="mod m-${esc(modOf(t))}">${esc(t.modality)}</span><span>${esc(t.site)}</span><span>·</span><span>${esc(t.setting)}</span></div>
+      <h2 class="d-title" id="dTitle">${esc(t.name)}</h2>
+      <div class="kv"><div><span>Published</span><b>${esc(t.journal)}</b></div><div><span>Design</span><b>${esc(t.design)}</b></div></div>
+      <div class="d-sec"><h3>Population</h3><p>${esc(t.population)}</p></div>
+      <div class="d-sec"><h3>Arms</h3><ol class="arms">${(t.arms||[]).map((a,n)=>`<li><i>${String.fromCharCode(65+n)}</i><span>${esc(a)}</span></li>`).join("")}</ol></div>
+      <div class="d-sec"><h3>Primary endpoint</h3><p>${esc(t.endpoint)}</p></div>
+      <div class="d-sec"><h3>Result</h3><div class="d-data">${esc(t.result)}</div></div>
+      <div class="callout"><b>Takeaway</b>${esc(t.takeaway)}</div>
+      ${(t.tags||[]).length?`<div class="tags">${t.tags.map(x=>`<span>${esc(x)}</span>`).join("")}</div>`:""}
+      ${related("trial",t)}
+      <p class="disclaimer">Revision summary. Check figures against ${esc(t.journal)} before quoting.</p>`;
+  }
+  if(!silent){body.scrollTop=0;$("sheet").classList.add("on");try{A&&A.setDetailOpen&&A.setDetailOpen(true)}catch(e){}}
+}
+function related(kind,x){
+  if(kind==="trial"){
+    const tags=new Set(x.tags||[]);
+    const r=trials.filter(t=>t.id!==x.id&&t.site===x.site).map(t=>({t,s:(t.tags||[]).filter(g=>tags.has(g)).length+(t.setting===x.setting?1:0)})).filter(o=>o.s>0).sort((a,b)=>b.s-a.s).slice(0,4).map(o=>o.t);
+    return r.length?`<div class="d-sec"><h3>Related trials</h3><div class="panel rows">${r.map(t=>trialRow(t)).join("")}</div></div>`:"";
+  }
+  const words=new Set([...(x.tags||[]),x.tumor].filter(Boolean).map(s=>s.toLowerCase()));
+  const r=trials.filter(t=>t.site.toLowerCase().includes((x.tumor||"~").toLowerCase().split(" ")[0])&&(t.tags||[]).some(g=>words.has(g.toLowerCase()))).slice(0,3);
+  return r.length?`<div class="d-sec"><h3>Background trials</h3><div class="panel rows">${r.map(t=>trialRow(t)).join("")}</div></div>`:"";
+}
+function closeDetail(){$("sheet").classList.remove("on");current=null;try{A&&A.setDetailOpen&&A.setDetailOpen(false)}catch(e){}}
+function shareCurrent(){
+  if(!current)return;let txt="";
+  if(current.kind==="news"){const i=news.find(x=>x.id===current.id);if(!i)return;txt=`${i.title}\n${i.keyData?i.keyData+"\n":""}${i.url||""}\n— Oncology Pulse`}
+  else{const t=trials.find(x=>x.id===current.id);if(!t)return;txt=`${t.name} (${t.journal})\n${t.population}\nArms: ${(t.arms||[]).join(" vs ")}\nResult: ${t.result}\nTakeaway: ${t.takeaway}\n— Oncology Pulse`}
+  if(A)A.share(txt);else if(navigator.share)navigator.share({text:txt}).catch(()=>{});
+}
+function toggleSave(){
+  if(!current)return;const set=current.kind==="news"?savedNews:savedTrials;const on=!set.has(current.id);
+  on?set.add(current.id):set.delete(current.id);store.set(current.kind==="news"?"saved":"tsaved",[...set]);
+  $("sheetSave").setAttribute("aria-pressed",on);toast(on?"Saved":"Removed from saved");renderSaved();renderChrome();
+}
+
+/* ---------- global search ---------- */
+function openSearch(){$("overlay").classList.add("on");$("gq").value="";renderSearch();setTimeout(()=>$("gq").focus(),50)}
+function closeSearch(){$("overlay").classList.remove("on");$("gq").blur()}
+function renderSearch(){
+  const q=$("gq").value.trim();
+  if(q.length<2){$("ovBody").innerHTML=`<div class="empty"><strong>Search everything</strong>Drug, trial, biomarker or setting — for example “ESR1”, “hypofractionation” or “residual disease”.</div>`;return}
+  const n=news.filter(i=>matches(newsHay(i),q)).slice(0,20), t=trials.filter(x=>matches(trialHay(x),q)).slice(0,40);
+  $("ovBody").innerHTML=(!n.length&&!t.length)?`<div class="empty"><strong>No results</strong>Try fewer or different words.</div>`:
+    (t.length?`<div><div class="sec-h"><h2>Landmark trials · ${t.length}</h2></div><div class="panel rows">${t.map(x=>trialRow(x,q)).join("")}</div></div>`:"")+
+    (n.length?`<div><div class="sec-h"><h2>News · ${n.length}</h2></div><div class="panel rows">${n.map(i=>newsRow(i,q)).join("")}</div></div>`:"");
+}
+
+/* ---------- settings ---------- */
+function applyTheme(){
+  const th=store.get("theme","system");
+  if(th==="system")document.documentElement.removeAttribute("data-theme");else document.documentElement.setAttribute("data-theme",th);
+  document.documentElement.style.setProperty("--fs",store.get("fs",1));
+  const dark=th==="dark"||(th==="system"&&matchMedia("(prefers-color-scheme: dark)").matches);
+  try{A&&A.setDark&&A.setDark(dark)}catch(e){}
+}
+
+/* ---------- events ---------- */
+document.addEventListener("click",e=>{
+  const o=e.target.closest("[data-open]");if(o){const [k,id]=o.dataset.open.split(/:(.*)/s);if($("overlay").classList.contains("on")&&k)closeSearch();openDetail(k,id);return}
+  const g=e.target.closest("[data-go]");if(g){go(g.dataset.go,{ntype:g.dataset.ntype});return}
+  const nt=e.target.closest("[data-ntype]");if(nt){ntype=nt.dataset.ntype;renderNews();return}
+  const tm=e.target.closest("[data-tmod]");if(tm){tmod=tm.dataset.tmod;renderTrials();return}
+  const ts=e.target.closest("[data-tsite]");if(ts){tsite=ts.dataset.tsite;renderTrials();window.scrollTo(0,0);return}
+  const ex=e.target.closest("[data-ext]");if(ex){A?A.open(ex.dataset.ext):window.open(ex.dataset.ext);return}
+});
+document.addEventListener("change",e=>{
+  if(e.target.id==="nsite"){nsite=e.target.value;renderNews()}
+  if(e.target.id==="tsite"){tsite=e.target.value;renderTrials()}
+});
+let dq;const deb=f=>()=>{clearTimeout(dq);dq=setTimeout(f,140)};
+$("nq").addEventListener("input",deb(renderNews));
+$("tq").addEventListener("input",deb(renderTrials));
+$("gq").addEventListener("input",deb(renderSearch));
+$("btnSearch").addEventListener("click",openSearch);
+$("ovBack").addEventListener("click",closeSearch);
+$("ovClear").addEventListener("click",()=>{$("gq").value="";renderSearch();$("gq").focus()});
+$("sheetBack").addEventListener("click",closeDetail);
+$("sheetShare").addEventListener("click",shareCurrent);
+$("sheetSave").addEventListener("click",toggleSave);
+$("savedSeg").addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;savedKind=b.dataset.k;renderSaved()});
+$("segTheme").addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;store.set("theme",b.dataset.v);applyTheme();renderMore()});
+$("segSize").addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;store.set("fs",Number(b.dataset.v));applyTheme();renderMore()});
+$("lnkUpdate").addEventListener("click",()=>{const u="https://github.com/satz5992/Oncology-pulse/releases/latest";A?A.open(u):window.open(u)});
+$("btnRefresh").addEventListener("click",refresh);
+window.addEventListener("scroll",()=>$("appbar").classList.toggle("scrolled",window.scrollY>4),{passive:true});
+try{matchMedia("(prefers-color-scheme: dark)").addEventListener("change",applyTheme)}catch(e){}
+
+/* pull to refresh */
+let py=null,pd=0;
+document.addEventListener("touchstart",e=>{py=(window.scrollY<=0&&(screen==="home"||screen==="news")&&!current)?e.touches[0].clientY:null;pd=0},{passive:true});
+document.addEventListener("touchmove",e=>{if(py==null)return;pd=e.touches[0].clientY-py;if(pd>0){$("ptr").style.height=Math.min(pd/2.2,52)+"px";$("ptr").textContent=pd>110?"Release to refresh":"Pull to refresh"}},{passive:true});
+document.addEventListener("touchend",()=>{if(py!=null&&pd>110)refresh();$("ptr").style.height="0";py=null});
+
+function refresh(){if(!A){toast("Open in the app to refresh");return}$("btnRefresh").classList.add("spin");A.refresh();A.refreshTrials&&A.refreshTrials()}
+window.onNews=j=>{$("btnRefresh").classList.remove("spin");loadNews(j,true)};
+window.onNewsError=m=>{$("btnRefresh").classList.remove("spin");toast(m)};
+window.onTrials=j=>{loadTrials(j);toast("Trials library updated")};
+window.handleBack=()=>{
+  if($("overlay").classList.contains("on")){closeSearch();return true}
+  if(current){closeDetail();return true}
+  if(screen==="trials"&&(tsite||tmod!=="all"||$("tq").value)){tsite="";tmod="all";$("tq").value="";renderTrials();return true}
+  if(screen==="news"&&(nsite||ntype!=="all"||$("nq").value)){nsite="";ntype="all";$("nq").value="";renderNews();return true}
+  if(screen!=="home"){go("home");return true}
+  return false;
+};
+document.addEventListener("visibilitychange",()=>{if(document.hidden)store.set("seen",news.map(i=>i.id))});
+
+/* ---------- boot ---------- */
+applyTheme();
+go(store.get("screen","home"));
+if(A){
+  try{$("ver").textContent="v"+A.version()}catch(e){}
+  loadTrials(A.trials());loadNews(A.cached(),false);
+  if(!seenAtOpen.size)store.set("seen",news.map(i=>i.id));
+  refresh();
+}else{
+  Promise.all([fetch("news.json").then(r=>r.text()).then(t=>loadNews(t,false)),fetch("trials.json").then(r=>r.json()).then(loadTrials)]).catch(()=>renderAll());
+}
 </script>
 </body>
 </html>

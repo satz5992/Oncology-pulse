@@ -119,6 +119,28 @@ public class MainActivity extends Activity {
             runOnUiThread(() -> startActivity(Intent.createChooser(i, "Share")));
         }
 
+        /** Match the system bars to the theme chosen in the app. */
+        @JavascriptInterface
+        public void setDark(boolean dark) {
+            runOnUiThread(() -> {
+                int bg = dark ? 0xFF0E0F15 : 0xFFF4F5F8;
+                int nav = dark ? 0xFF171922 : 0xFFFFFFFF;
+                getWindow().setStatusBarColor(bg);
+                getWindow().setNavigationBarColor(nav);
+                web.setBackgroundColor(bg);
+                android.view.View decor = getWindow().getDecorView();
+                int flags = decor.getSystemUiVisibility();
+                if (dark) {
+                    flags &= ~android.view.View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR;
+                    if (Build.VERSION.SDK_INT >= 26) flags &= ~android.view.View.SYSTEM_UI_FLAG_LIGHT_NAVIGATION_BAR;
+                } else {
+                    flags |= android.view.View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR;
+                    if (Build.VERSION.SDK_INT >= 26) flags |= android.view.View.SYSTEM_UI_FLAG_LIGHT_NAVIGATION_BAR;
+                }
+                decor.setSystemUiVisibility(flags);
+            });
+        }
+
         @JavascriptInterface
         public String version() {
             return BuildConfig.VERSION_NAME;
