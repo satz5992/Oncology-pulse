@@ -29,7 +29,38 @@ final class NewsRepo {
 
     /** Fetch the latest feed from the network. Throws on any failure. */
     static String fetch() throws Exception {
-        URL url = new URL(BuildConfig.NEWS_URL + "?t=" + System.currentTimeMillis());
+        return fetchUrl(BuildConfig.NEWS_URL);
+    }
+
+    /** The landmark-trials library: newest downloaded copy, else the bundled one. */
+    static String trials(Context ctx) {
+        File f = new File(ctx.getFilesDir(), "trials.json");
+        try {
+            if (f.exists()) return readAll(new FileInputStream(f));
+            return readAll(ctx.getAssets().open("trials.json"));
+        } catch (Exception e) {
+            return "{\"trials\":[]}";
+        }
+    }
+
+    /** Download the trials library if a newer version is published; returns true if updated. */
+    static boolean refreshTrials(Context ctx) {
+        try {
+            String body = fetchUrl(BuildConfig.TRIALS_URL);
+            int remote = new JSONObject(body).optInt("version", 0);
+            int local = new JSONObject(trials(ctx)).optInt("version", 0);
+            if (remote <= local) return false;
+            try (FileOutputStream out = new FileOutputStream(new File(ctx.getFilesDir(), "trials.json"))) {
+                out.write(body.getBytes(StandardCharsets.UTF_8));
+            }
+            return true;
+        } catch (Exception e) {
+            return false;
+        }
+    }
+
+    private static String fetchUrl(String base) throws Exception {
+        URL url = new URL(base + "?t=" + System.currentTimeMillis());
         HttpURLConnection c = (HttpURLConnection) url.openConnection();
         c.setConnectTimeout(15000);
         c.setReadTimeout(20000);

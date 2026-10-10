@@ -95,6 +95,20 @@ public class MainActivity extends Activity {
         }
 
         @JavascriptInterface
+        public String trials() {
+            return NewsRepo.trials(MainActivity.this);
+        }
+
+        @JavascriptInterface
+        public void refreshTrials() {
+            new Thread(() -> {
+                if (NewsRepo.refreshTrials(MainActivity.this)) {
+                    deliver("onTrials", NewsRepo.trials(MainActivity.this));
+                }
+            }).start();
+        }
+
+        @JavascriptInterface
         public void open(String url) {
             openExternal(url);
         }

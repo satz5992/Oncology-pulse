@@ -84,6 +84,34 @@ h2 small{font:400 .74rem var(--f-mono);color:var(--muted)}
 .empty{background:var(--surface);border:1px dashed var(--line);border-radius:var(--r);padding:28px 18px;text-align:center;color:var(--muted)}
 .empty strong{display:block;color:var(--fg);font-family:var(--f-display);font-weight:500;font-size:1.08rem;margin-bottom:6px}
 .note{font-size:.75rem;color:var(--muted);text-align:center;margin:6px 0 0}
+
+.tabs{display:grid;grid-template-columns:1fr 1fr;gap:4px;background:var(--sunk);padding:4px;border-radius:12px}
+.tab{font:600 .9rem var(--f-body);border:0;background:none;color:var(--muted);padding:9px;border-radius:9px}
+.tab[aria-selected="true"]{background:var(--surface);color:var(--fg);box-shadow:0 1px 2px rgba(0,0,0,.08)}
+.tab .n{font:400 .72rem var(--f-mono);opacity:.7;margin-left:4px}
+.trial{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:14px;display:flex;flex-direction:column;gap:8px;min-width:0}
+.trial .tname{font-family:var(--f-display);font-weight:700;font-size:1.12rem;letter-spacing:-.01em;line-height:1.2;margin:0}
+.trial .cite{font:400 .74rem var(--f-mono);color:var(--muted)}
+.trial .pop{font-size:.88rem;color:var(--muted);margin:0}
+.trial .res{font-family:var(--f-mono);font-size:.8rem;background:var(--sunk);border-radius:6px;padding:8px 10px;line-height:1.45}
+.trial .take{font-size:.9rem;border-left:3px solid var(--accent);padding:2px 0 2px 10px;margin:0}
+.trial details{font-size:.86rem}
+.trial summary{color:var(--accent);font-weight:500;padding:4px 0;list-style:none}
+.trial summary::-webkit-details-marker{display:none}
+.trial summary::before{content:"+ "}
+.trial details[open] summary::before{content:"− "}
+.kv{display:grid;grid-template-columns:auto 1fr;gap:4px 10px;margin-top:6px}
+.kv dt{font:600 .7rem var(--f-body);text-transform:uppercase;letter-spacing:.05em;color:var(--muted);padding-top:2px}
+.kv dd{margin:0;min-width:0}
+.kv ol{margin:0;padding-left:18px}
+.m-Systemic{background:var(--accent-soft);color:var(--accent)}
+.m-Radiotherapy{background:var(--eosin-soft);color:var(--eosin)}
+.m-Combined{background:var(--info-soft);color:var(--info)}
+.m-Surgery,.m-Surgery\/RT,.m-Device{background:var(--warn-soft);color:var(--warn)}
+.m-Screening,.m-Supportive{background:var(--ok-soft);color:var(--ok)}
+.sitehead{font-family:var(--f-display);font-weight:500;font-size:1.05rem;margin:18px 0 8px;display:flex;justify-content:space-between;align-items:baseline}
+.sitehead small{font:400 .72rem var(--f-mono);color:var(--muted)}
+.tlist{display:flex;flex-direction:column;gap:10px}
 .toast{position:fixed;left:16px;right:16px;bottom:20px;background:var(--fg);color:var(--bg);padding:12px 14px;border-radius:10px;font-size:.85rem;opacity:0;transform:translateY(10px);transition:.2s;pointer-events:none;z-index:20}
 .toast.on{opacity:1;transform:none}
 </style>
@@ -100,6 +128,12 @@ h2 small{font:400 .74rem var(--f-mono);color:var(--muted)}
     </button>
   </header>
 
+  <div class="tabs" role="tablist">
+    <button class="tab" role="tab" id="tabNews" aria-selected="true">News<span class="n" id="nNews"></span></button>
+    <button class="tab" role="tab" id="tabTrials" aria-selected="false">Landmark trials<span class="n" id="nTrials"></span></button>
+  </div>
+
+  <div id="newsView" style="display:flex;flex-direction:column;gap:18px">
   <div class="bar">
     <div class="search">
       <input id="q" type="search" placeholder="Search drug, trial, biomarker…" aria-label="Search news">
@@ -117,6 +151,19 @@ h2 small{font:400 .74rem var(--f-mono);color:var(--muted)}
     <h2>Latest <small id="count"></small></h2>
     <div id="list"></div>
   </section>
+
+  </div>
+
+  <div id="trialsView" hidden>
+    <div class="bar">
+      <div class="search">
+        <input id="tq" type="search" placeholder="Search trial, drug, setting…" aria-label="Search trials">
+        <select id="tsite" aria-label="Tumour site"><option value="">All sites</option></select>
+      </div>
+      <div class="chips" id="tchips" role="toolbar" aria-label="Filter by modality"></div>
+    </div>
+    <div id="tlist"></div>
+  </div>
 
   <p class="note">Summaries are compiled automatically from news and regulator sources. Confirm against the full publication or label before clinical use. <span id="ver"></span></p>
 </div>
@@ -142,7 +189,7 @@ function load(json,fromNetwork){
     items=(d.items||[]).filter(i=>i&&i.title);updated=d.updated||null;
     if(fromNetwork&&before.size){const n=items.filter(i=>!before.has(i.id)).length;toast(n?`${n} new item${n>1?"s":""}`:"You're up to date")}
   }catch(e){}
-  render();stamp();
+  render();stamp();$("nNews").textContent=items.length;
 }
 function markSeen(){store.set("seen",items.map(i=>i.id))}
 
@@ -196,7 +243,7 @@ function stamp(){
 function refresh(){if(!A)return;$("refresh").classList.add("spin");A.refresh()}
 window.onNews=j=>{$("refresh").classList.remove("spin");load(j,true)};
 window.onNewsError=m=>{$("refresh").classList.remove("spin");toast(m)};
-window.handleBack=()=>{if($("q").value||$("site").value||type!=="all"){$("q").value="";$("site").value="";type="all";store.set("type",type);render();window.scrollTo(0,0);return true}return false};
+window.handleBack=()=>{if(view==="trials"){if($("tq").value||$("tsite").value||tmod!=="all"){$("tq").value="";$("tsite").value="";tmod="all";renderTrials();return true}setView("news");return true}if($("q").value||$("site").value||type!=="all"){$("q").value="";$("site").value="";type="all";store.set("type",type);render();window.scrollTo(0,0);return true}return false};
 
 $("refresh").addEventListener("click",refresh);
 $("chips").addEventListener("click",e=>{const b=e.target.closest(".chip");if(!b)return;type=b.dataset.k;store.set("type",type);render();window.scrollTo({top:0})});
@@ -210,6 +257,66 @@ $("list").addEventListener("click",e=>{
 let qt;$("q").addEventListener("input",()=>{clearTimeout(qt);qt=setTimeout(render,120)});
 $("site").addEventListener("change",render);
 
+
+/* ---------- Landmark trials ---------- */
+let trials=[], tmod="all", view=store.get("view","news"), tsaved=new Set(store.get("tsaved",[]));
+const MODS=[["all","All"],["Systemic","Systemic"],["Radiotherapy","Radiotherapy"],["Combined","Chemo-RT / combined"],["Surgery","Surgery"],["saved","Saved"]];
+function loadTrials(j){try{const d=typeof j==="string"?JSON.parse(j):j;trials=d.trials||[]}catch(e){trials=[]}
+  const sites=[...new Set(trials.map(t=>t.site))];const cur=$("tsite").value;
+  $("tsite").innerHTML='<option value="">All sites</option>'+sites.map(x=>`<option${x===cur?" selected":""}>${esc(x)}</option>`).join("");
+  $("nTrials").textContent=trials.length;renderTrials()}
+function modOf(t){return /Surgery/.test(t.modality)?"Surgery":t.modality}
+function trialCard(t){
+  const sv=tsaved.has(t.id);
+  return `<article class="trial">
+   <div class="meta"><span class="pill m-${esc(modOf(t))}">${esc(t.modality)}</span><span class="site">${esc(t.setting)}</span></div>
+   <h3 class="tname">${esc(t.name)}</h3>
+   <span class="cite">${esc(t.journal)} · ${esc(t.design)}</span>
+   <p class="pop">${esc(t.population)}</p>
+   <div class="res">${esc(t.result)}</div>
+   <p class="take">${esc(t.takeaway)}</p>
+   <details><summary>Design &amp; arms</summary><dl class="kv">
+     <dt>Arms</dt><dd><ol>${(t.arms||[]).map(a=>`<li>${esc(a)}</li>`).join("")}</ol></dd>
+     <dt>Endpoint</dt><dd>${esc(t.endpoint)}</dd>
+     <dt>Year</dt><dd>${esc(t.year)}</dd>
+     ${t.tags&&t.tags.length?`<dt>Tags</dt><dd>${esc(t.tags.join(", "))}</dd>`:""}
+   </dl></details>
+   <div class="foot"><span class="cite">${esc(t.site)}</span><div class="acts">
+     <button class="btn tshare" data-id="${esc(t.id)}">Share</button>
+     <button class="btn tsave" data-id="${esc(t.id)}" aria-pressed="${sv}">${sv?"Saved":"Save"}</button></div></div>
+  </article>`}
+function renderTrials(){
+  $("tchips").innerHTML=MODS.map(([k,l])=>{const n=k==="all"?trials.length:k==="saved"?tsaved.size:trials.filter(t=>modOf(t)===k).length;
+    return `<button class="chip" data-k="${k}" aria-pressed="${tmod===k}">${l}<span class="n">${n}</span></button>`}).join("");
+  const q=$("tq").value.trim().toLowerCase(), site=$("tsite").value;
+  const list=trials.filter(t=>{
+    if(tmod==="saved"?!tsaved.has(t.id):tmod!=="all"&&modOf(t)!==tmod)return false;
+    if(site&&t.site!==site)return false;
+    if(q){const h=[t.name,t.setting,t.population,(t.arms||[]).join(" "),t.result,t.takeaway,t.journal,t.site,(t.tags||[]).join(" ")].join(" ").toLowerCase();
+      if(!q.split(/\s+/).every(w=>h.includes(w)))return false}
+    return true});
+  if(!trials.length){$("tlist").innerHTML='<div class="empty"><strong>No trials loaded</strong>Update the app to get the trials library.</div>';return}
+  if(!list.length){$("tlist").innerHTML=`<div class="empty"><strong>No trials match</strong>${tmod==="saved"?"Tap Save on any trial to keep it here.":"Try another search or filter."}</div>`;return}
+  const groups=[];list.forEach(t=>{const g=groups[groups.length-1];if(g&&g.s===t.site)g.items.push(t);else groups.push({s:t.site,items:[t]})});
+  $("tlist").innerHTML=groups.map(g=>`<div class="sitehead">${esc(g.s)}<small>${g.items.length}</small></div><div class="tlist">${g.items.map(trialCard).join("")}</div>`).join("");
+}
+function setView(v){view=v;store.set("view",v);$("newsView").style.display=v==="news"?"flex":"none";$("trialsView").hidden=v!=="trials";
+  $("tabNews").setAttribute("aria-selected",v==="news");$("tabTrials").setAttribute("aria-selected",v==="trials");$("refresh").hidden=v!=="news";window.scrollTo(0,0)}
+$("tabNews").addEventListener("click",()=>setView("news"));
+$("tabTrials").addEventListener("click",()=>setView("trials"));
+$("tchips").addEventListener("click",e=>{const b=e.target.closest(".chip");if(!b)return;tmod=b.dataset.k;renderTrials();window.scrollTo({top:0})});
+let tqt;$("tq").addEventListener("input",()=>{clearTimeout(tqt);tqt=setTimeout(renderTrials,150)});
+$("tsite").addEventListener("change",renderTrials);
+$("tlist").addEventListener("click",e=>{
+  const s=e.target.closest(".tsave");if(s){const id=s.dataset.id;tsaved.has(id)?tsaved.delete(id):tsaved.add(id);store.set("tsaved",[...tsaved]);renderTrials();return}
+  const sh=e.target.closest(".tshare");if(sh){const t=trials.find(x=>x.id===sh.dataset.id);if(!t)return;
+    const txt=`${t.name} (${t.journal})\n${t.population}\nArms: ${(t.arms||[]).join(" vs ")}\nResult: ${t.result}\nTakeaway: ${t.takeaway}\n— via Oncology Pulse`;
+    if(A)A.share(txt);else if(navigator.share)navigator.share({text:txt}).catch(()=>{})}
+});
+window.onTrials=j=>{loadTrials(j);toast("Trials library updated")};
+
+if(A){loadTrials(A.trials());A.refreshTrials()}else{fetch("trials.json").then(r=>r.json()).then(loadTrials).catch(()=>{})}
+setView(view);
 if(A){try{$("ver").textContent="v"+A.version()}catch(e){};load(A.cached(),false);refresh();setTimeout(markSeen,4000)}
 else{fetch("news.json").then(r=>r.text()).then(t=>load(t,false)).catch(()=>render())}
 document.addEventListener("visibilitychange",()=>{if(document.hidden)markSeen()});

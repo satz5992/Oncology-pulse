@@ -1,0 +1,6760 @@
+{
+ "version": 1,
+ "updated": "2026-10-10",
+ "count": 299,
+ "trials": [
+  {
+   "name": "NSABP B-06",
+   "setting": "Early (local therapy)",
+   "modality": "Surgery/RT",
+   "year": 1985,
+   "journal": "NEJM 2002 (20-y)",
+   "design": "Phase 3, n=1,851",
+   "population": "Stage I–II, tumour ≤4 cm",
+   "arms": [
+    "Total mastectomy",
+    "Lumpectomy alone",
+    "Lumpectomy + whole-breast RT"
+   ],
+   "endpoint": "DFS, OS, ipsilateral recurrence",
+   "result": "No OS difference at 20 y; ipsilateral recurrence 39.2% without RT vs 14.3% with RT",
+   "takeaway": "Breast-conserving surgery + RT is equivalent to mastectomy; RT is essential after lumpectomy.",
+   "tags": [
+    "BCS",
+    "radiotherapy",
+    "mastectomy"
+   ],
+   "site": "Breast",
+   "id": "nsabp-b-06"
+  },
+  {
+   "name": "Milan I (Veronesi)",
+   "setting": "Early (local therapy)",
+   "modality": "Surgery/RT",
+   "year": 1981,
+   "journal": "NEJM 2002 (20-y)",
+   "design": "Phase 3, n=701",
+   "population": "Tumour ≤2 cm, node-negative",
+   "arms": [
+    "Radical mastectomy",
+    "Quadrantectomy + axillary dissection + RT"
+   ],
+   "endpoint": "OS",
+   "result": "20-y OS 58.8% vs 58.3% (no difference)",
+   "takeaway": "Quadrantectomy + RT is a safe alternative to mastectomy for small cancers.",
+   "tags": [
+    "BCS",
+    "radiotherapy"
+   ],
+   "site": "Breast",
+   "id": "milan-i-veronesi"
+  },
+  {
+   "name": "EBCTCG RT overview",
+   "setting": "Early (local therapy)",
+   "modality": "Radiotherapy",
+   "year": 2011,
+   "journal": "Lancet 2011",
+   "design": "Meta-analysis, 17 trials, n=10,801",
+   "population": "After breast-conserving surgery",
+   "arms": [
+    "RT",
+    "No RT"
+   ],
+   "endpoint": "Any recurrence, breast cancer death",
+   "result": "10-y any recurrence 19.3% vs 35.0%; 15-y BC death 21.4% vs 25.2%",
+   "takeaway": "RT after BCS halves recurrence; roughly one BC death avoided per four recurrences prevented.",
+   "tags": [
+    "radiotherapy",
+    "meta-analysis"
+   ],
+   "site": "Breast",
+   "id": "ebctcg-rt-overview"
+  },
+  {
+   "name": "START-B",
+   "setting": "Early (local therapy)",
+   "modality": "Radiotherapy",
+   "year": 2008,
+   "journal": "Lancet 2008; Lancet Oncol 2013",
+   "design": "Phase 3, n=2,215",
+   "population": "Early BC after surgery",
+   "arms": [
+    "50 Gy/25 fr",
+    "40 Gy/15 fr over 3 weeks"
+   ],
+   "endpoint": "Local-regional relapse",
+   "result": "10-y LRR 5.5% (50 Gy) vs 4.3% (40 Gy); fewer late normal-tissue effects with 40 Gy",
+   "takeaway": "Moderate hypofractionation (40 Gy/15) became standard whole-breast RT.",
+   "tags": [
+    "radiotherapy",
+    "hypofractionation"
+   ],
+   "site": "Breast",
+   "id": "start-b"
+  },
+  {
+   "name": "FAST-Forward",
+   "setting": "Early (local therapy)",
+   "modality": "Radiotherapy",
+   "year": 2020,
+   "journal": "Lancet 2020",
+   "design": "Phase 3 non-inferiority, n=4,096",
+   "population": "pT1–3 pN0–1 after surgery",
+   "arms": [
+    "40 Gy/15 fr",
+    "27 Gy/5 fr (1 week)",
+    "26 Gy/5 fr (1 week)"
+   ],
+   "endpoint": "Ipsilateral breast tumour relapse",
+   "result": "5-y IBTR 2.1% (40 Gy) vs 1.7% (27 Gy) vs 1.4% (26 Gy); 26 Gy non-inferior with similar normal-tissue effects",
+   "takeaway": "26 Gy in 5 fractions over 1 week is a standard option for whole-breast/chest-wall RT.",
+   "tags": [
+    "radiotherapy",
+    "ultra-hypofractionation"
+   ],
+   "site": "Breast",
+   "id": "fast-forward"
+  },
+  {
+   "name": "EORTC 22881 Boost",
+   "setting": "Early (local therapy)",
+   "modality": "Radiotherapy",
+   "year": 2001,
+   "journal": "NEJM 2001; Lancet Oncol 2015 (20-y)",
+   "design": "Phase 3, n=5,318",
+   "population": "After BCS + 50 Gy WBRT",
+   "arms": [
+    "16 Gy tumour-bed boost",
+    "No boost"
+   ],
+   "endpoint": "Ipsilateral breast recurrence",
+   "result": "20-y IBTR 12.0% vs 16.4% (HR 0.65); largest absolute benefit in age ≤40",
+   "takeaway": "Boost reduces local recurrence, especially in younger women; no OS benefit.",
+   "tags": [
+    "radiotherapy",
+    "boost"
+   ],
+   "site": "Breast",
+   "id": "eortc-22881-boost"
+  },
+  {
+   "name": "MA.20",
+   "setting": "Early (local therapy)",
+   "modality": "Radiotherapy",
+   "year": 2015,
+   "journal": "NEJM 2015",
+   "design": "Phase 3, n=1,832",
+   "population": "Node-positive or high-risk node-negative after BCS",
+   "arms": [
+    "WBRT + regional nodal irradiation",
+    "WBRT alone"
+   ],
+   "endpoint": "OS",
+   "result": "10-y DFS 82.0% vs 77.0% (HR 0.76); OS not significantly different",
+   "takeaway": "Regional nodal RT improves DFS in node-positive disease.",
+   "tags": [
+    "radiotherapy",
+    "RNI"
+   ],
+   "site": "Breast",
+   "id": "ma-20"
+  },
+  {
+   "name": "EORTC 22922",
+   "setting": "Early (local therapy)",
+   "modality": "Radiotherapy",
+   "year": 2015,
+   "journal": "NEJM 2015; Lancet Oncol 2020",
+   "design": "Phase 3, n=4,004",
+   "population": "Medial/central or node-positive tumours",
+   "arms": [
+    "Internal mammary + medial supraclavicular RT",
+    "No IM-MS RT"
+   ],
+   "endpoint": "OS",
+   "result": "10-y OS 82.3% vs 80.7% (NS at 10 y); reduced BC mortality on 15-y update",
+   "takeaway": "Supports internal mammary/supraclavicular RT in higher-risk disease.",
+   "tags": [
+    "radiotherapy",
+    "RNI",
+    "internal mammary"
+   ],
+   "site": "Breast",
+   "id": "eortc-22922"
+  },
+  {
+   "name": "Danish 82b/82c & EBCTCG PMRT",
+   "setting": "Early (local therapy)",
+   "modality": "Radiotherapy",
+   "year": 1997,
+   "journal": "NEJM 1997; Lancet 2014 (EBCTCG)",
+   "design": "Phase 3 + meta-analysis",
+   "population": "Post-mastectomy, node-positive",
+   "arms": [
+    "Post-mastectomy RT",
+    "No RT"
+   ],
+   "endpoint": "Recurrence, BC mortality",
+   "result": "EBCTCG (1–3 nodes): 20-y BC mortality reduced 7.9% absolute with PMRT",
+   "takeaway": "PMRT reduces recurrence and BC mortality even with 1–3 positive nodes.",
+   "tags": [
+    "radiotherapy",
+    "PMRT"
+   ],
+   "site": "Breast",
+   "id": "danish-82b-82c-ebctcg-pmrt"
+  },
+  {
+   "name": "CALGB 9343",
+   "setting": "Early (local therapy)",
+   "modality": "Radiotherapy",
+   "year": 2004,
+   "journal": "NEJM 2004; JCO 2013",
+   "design": "Phase 3, n=636",
+   "population": "Age ≥70, T1N0, ER+",
+   "arms": [
+    "Tamoxifen + RT",
+    "Tamoxifen alone"
+   ],
+   "endpoint": "Local recurrence",
+   "result": "10-y local recurrence 2% vs 10%; no OS difference",
+   "takeaway": "RT omission is reasonable in older women with small ER+ tumours on endocrine therapy.",
+   "tags": [
+    "radiotherapy",
+    "omission",
+    "elderly"
+   ],
+   "site": "Breast",
+   "id": "calgb-9343"
+  },
+  {
+   "name": "PRIME II",
+   "setting": "Early (local therapy)",
+   "modality": "Radiotherapy",
+   "year": 2015,
+   "journal": "Lancet Oncol 2015; NEJM 2023",
+   "design": "Phase 3, n=1,326",
+   "population": "Age ≥65, HR+, node-negative, ≤3 cm, on endocrine therapy",
+   "arms": [
+    "WBRT",
+    "No RT"
+   ],
+   "endpoint": "Ipsilateral breast recurrence",
+   "result": "10-y IBTR 9.5% vs 0.9%; no OS difference",
+   "takeaway": "Omitting RT is an option in low-risk older women willing to take endocrine therapy.",
+   "tags": [
+    "radiotherapy",
+    "omission",
+    "elderly"
+   ],
+   "site": "Breast",
+   "id": "prime-ii"
+  },
+  {
+   "name": "NSABP B-39/RTOG 0413",
+   "setting": "Early (local therapy)",
+   "modality": "Radiotherapy",
+   "year": 2019,
+   "journal": "Lancet 2019",
+   "design": "Phase 3, n=4,216",
+   "population": "Stage 0–II after BCS",
+   "arms": [
+    "Accelerated partial-breast irradiation",
+    "Whole-breast RT"
+   ],
+   "endpoint": "IBTR",
+   "result": "10-y IBTR 4.6% vs 3.9%; did not meet equivalence criteria",
+   "takeaway": "APBI is acceptable for carefully selected low-risk patients; WBRT remains the reference.",
+   "tags": [
+    "radiotherapy",
+    "APBI"
+   ],
+   "site": "Breast",
+   "id": "nsabp-b-39-rtog-0413"
+  },
+  {
+   "name": "IMPORT LOW",
+   "setting": "Early (local therapy)",
+   "modality": "Radiotherapy",
+   "year": 2017,
+   "journal": "Lancet 2017",
+   "design": "Phase 3 non-inferiority, n=2,018",
+   "population": "Age ≥50, low-risk, after BCS",
+   "arms": [
+    "40 Gy WBRT",
+    "36 Gy WB + 40 Gy partial",
+    "40 Gy partial-breast only"
+   ],
+   "endpoint": "Local relapse",
+   "result": "5-y local relapse 1.1% (WB) vs 0.5% (partial); partial-breast non-inferior with fewer late effects",
+   "takeaway": "External-beam partial-breast RT is a standard option for low-risk disease.",
+   "tags": [
+    "radiotherapy",
+    "partial breast"
+   ],
+   "site": "Breast",
+   "id": "import-low"
+  },
+  {
+   "name": "ACOSOG Z0011",
+   "setting": "Early (axilla)",
+   "modality": "Surgery",
+   "year": 2011,
+   "journal": "JAMA 2011; JAMA 2017",
+   "design": "Phase 3 non-inferiority, n=891",
+   "population": "T1–2, cN0, 1–2 positive SLNs, BCS + WBRT",
+   "arms": [
+    "Axillary dissection",
+    "SLNB alone"
+   ],
+   "endpoint": "OS",
+   "result": "10-y OS 86.3% vs 83.6% (non-inferior); regional recurrence <2% both arms",
+   "takeaway": "ALND can be omitted with 1–2 positive sentinel nodes treated with BCS + whole-breast RT.",
+   "tags": [
+    "axilla",
+    "SLNB"
+   ],
+   "site": "Breast",
+   "id": "acosog-z0011"
+  },
+  {
+   "name": "AMAROS",
+   "setting": "Early (axilla)",
+   "modality": "Radiotherapy",
+   "year": 2014,
+   "journal": "Lancet Oncol 2014; JCO 2023",
+   "design": "Phase 3, n=1,425",
+   "population": "T1–2, positive SLN",
+   "arms": [
+    "Axillary dissection",
+    "Axillary RT"
+   ],
+   "endpoint": "Axillary recurrence",
+   "result": "Axillary recurrence very low in both (≈1%); lymphoedema roughly halved with RT",
+   "takeaway": "Axillary RT is an alternative to ALND with less lymphoedema.",
+   "tags": [
+    "axilla",
+    "radiotherapy"
+   ],
+   "site": "Breast",
+   "id": "amaros"
+  },
+  {
+   "name": "SOUND",
+   "setting": "Early (axilla)",
+   "modality": "Surgery",
+   "year": 2023,
+   "journal": "JAMA Oncol 2023",
+   "design": "Phase 3 non-inferiority, n=1,463",
+   "population": "Tumour ≤2 cm, negative axillary ultrasound, BCS",
+   "arms": [
+    "SLNB",
+    "No axillary surgery"
+   ],
+   "endpoint": "Distant DFS",
+   "result": "5-y DDFS 97.7% vs 98.0%",
+   "takeaway": "Axillary surgery can be omitted in selected small tumours with negative ultrasound.",
+   "tags": [
+    "axilla",
+    "de-escalation"
+   ],
+   "site": "Breast",
+   "id": "sound"
+  },
+  {
+   "name": "Oxford Overview (EBCTCG) chemo",
+   "setting": "Adjuvant",
+   "modality": "Systemic",
+   "year": 2012,
+   "journal": "Lancet 2012",
+   "design": "Meta-analysis, n≈100,000",
+   "population": "Early BC",
+   "arms": [
+    "Anthracycline/taxane regimens",
+    "No chemo / older regimens"
+   ],
+   "endpoint": "Recurrence, BC mortality",
+   "result": "Taxane-plus-anthracycline regimens reduce BC mortality by about one-third vs no chemo",
+   "takeaway": "Benefit of modern chemo is proportional and largely independent of age, ER and nodal status.",
+   "tags": [
+    "chemotherapy",
+    "meta-analysis"
+   ],
+   "site": "Breast",
+   "id": "oxford-overview-ebctcg-chemo"
+  },
+  {
+   "name": "CALGB 9741",
+   "setting": "Adjuvant",
+   "modality": "Systemic",
+   "year": 2003,
+   "journal": "JCO 2003",
+   "design": "Phase 3 (2x2), n=2,005",
+   "population": "Node-positive",
+   "arms": [
+    "Dose-dense (q2w) AC→T",
+    "Conventional q3w"
+   ],
+   "endpoint": "DFS",
+   "result": "Dose-dense improved DFS (RR 0.74) and OS (RR 0.69)",
+   "takeaway": "Established dose-dense AC→paclitaxel with G-CSF.",
+   "tags": [
+    "chemotherapy",
+    "dose-dense"
+   ],
+   "site": "Breast",
+   "id": "calgb-9741"
+  },
+  {
+   "name": "E1199",
+   "setting": "Adjuvant",
+   "modality": "Systemic",
+   "year": 2008,
+   "journal": "NEJM 2008; JCO 2015",
+   "design": "Phase 3, n=4,950",
+   "population": "Node-positive or high-risk N0 after AC",
+   "arms": [
+    "Paclitaxel q3w",
+    "Paclitaxel weekly",
+    "Docetaxel q3w",
+    "Docetaxel weekly"
+   ],
+   "endpoint": "DFS",
+   "result": "Weekly paclitaxel and q3w docetaxel superior to q3w paclitaxel (DFS HR ≈0.84)",
+   "takeaway": "Weekly paclitaxel after AC became a standard taxane schedule.",
+   "tags": [
+    "chemotherapy",
+    "taxane"
+   ],
+   "site": "Breast",
+   "id": "e1199"
+  },
+  {
+   "name": "TAILORx",
+   "setting": "Adjuvant",
+   "modality": "Systemic",
+   "year": 2018,
+   "journal": "NEJM 2018",
+   "design": "Phase 3 non-inferiority, n=10,273",
+   "population": "HR+, HER2−, N0, Oncotype RS 11–25",
+   "arms": [
+    "Endocrine therapy",
+    "Chemo + endocrine therapy"
+   ],
+   "endpoint": "Invasive DFS",
+   "result": "9-y IDFS 83.3% vs 84.3% (HR 1.08, non-inferior); some benefit of chemo age ≤50 with RS 16–25",
+   "takeaway": "Most node-negative patients with RS ≤25 can skip chemotherapy.",
+   "tags": [
+    "genomic assay",
+    "Oncotype",
+    "de-escalation"
+   ],
+   "site": "Breast",
+   "id": "tailorx"
+  },
+  {
+   "name": "RxPONDER",
+   "setting": "Adjuvant",
+   "modality": "Systemic",
+   "year": 2021,
+   "journal": "NEJM 2021",
+   "design": "Phase 3, n=5,018",
+   "population": "HR+, HER2−, 1–3 nodes, RS ≤25",
+   "arms": [
+    "Endocrine therapy",
+    "Chemo + endocrine therapy"
+   ],
+   "endpoint": "Invasive DFS",
+   "result": "Postmenopausal: no chemo benefit; premenopausal: 5-y IDFS 94.2% vs 89.0%",
+   "takeaway": "Postmenopausal N1 with RS ≤25 can omit chemo; premenopausal still benefit.",
+   "tags": [
+    "genomic assay",
+    "Oncotype"
+   ],
+   "site": "Breast",
+   "id": "rxponder"
+  },
+  {
+   "name": "MINDACT",
+   "setting": "Adjuvant",
+   "modality": "Systemic",
+   "year": 2016,
+   "journal": "NEJM 2016; Lancet Oncol 2021",
+   "design": "Phase 3, n=6,693",
+   "population": "Early BC, high clinical but low genomic (MammaPrint) risk",
+   "arms": [
+    "Chemo",
+    "No chemo"
+   ],
+   "endpoint": "Distant metastasis-free survival",
+   "result": "5-y DMFS 94.7% without chemo (met prespecified threshold); ~1.5% absolute benefit with chemo",
+   "takeaway": "MammaPrint low-risk can spare about 46% of clinically high-risk patients from chemo.",
+   "tags": [
+    "genomic assay",
+    "MammaPrint"
+   ],
+   "site": "Breast",
+   "id": "mindact"
+  },
+  {
+   "name": "ATAC",
+   "setting": "Adjuvant",
+   "modality": "Systemic",
+   "year": 2005,
+   "journal": "Lancet 2005/2010 (ATAC)",
+   "design": "Phase 3, n=9,366 (ATAC)",
+   "population": "Postmenopausal HR+",
+   "arms": [
+    "Anastrozole",
+    "Tamoxifen",
+    "Combination"
+   ],
+   "endpoint": "DFS",
+   "result": "10-y recurrence 19.7% vs 24.0% (HR 0.79) favouring anastrozole",
+   "takeaway": "Aromatase inhibitors are preferred adjuvant ET in postmenopausal women.",
+   "tags": [
+    "endocrine therapy",
+    "aromatase inhibitor"
+   ],
+   "site": "Breast",
+   "id": "atac"
+  },
+  {
+   "name": "ATLAS / aTTom",
+   "setting": "Adjuvant",
+   "modality": "Systemic",
+   "year": 2013,
+   "journal": "Lancet 2013",
+   "design": "Phase 3, n=12,894",
+   "population": "ER+ after 5 y tamoxifen",
+   "arms": [
+    "10 y tamoxifen",
+    "Stop at 5 y"
+   ],
+   "endpoint": "Recurrence, BC mortality",
+   "result": "BC mortality years 5–14: 12.2% vs 15.0%",
+   "takeaway": "Extended tamoxifen (10 y) reduces recurrence and mortality.",
+   "tags": [
+    "endocrine therapy",
+    "extended"
+   ],
+   "site": "Breast",
+   "id": "atlas-attom"
+  },
+  {
+   "name": "SOFT / TEXT",
+   "setting": "Adjuvant",
+   "modality": "Systemic",
+   "year": 2014,
+   "journal": "NEJM 2014/2018; JCO 2023",
+   "design": "Phase 3, n=3,047 (SOFT), 2,672 (TEXT)",
+   "population": "Premenopausal HR+",
+   "arms": [
+    "Tamoxifen",
+    "Tamoxifen + OFS",
+    "Exemestane + OFS"
+   ],
+   "endpoint": "DFS",
+   "result": "Exemestane + OFS best; benefit concentrated in high-risk (young, chemo-treated) patients; OS gain in SOFT high-risk",
+   "takeaway": "Add ovarian suppression for higher-risk premenopausal women.",
+   "tags": [
+    "endocrine therapy",
+    "OFS",
+    "premenopausal"
+   ],
+   "site": "Breast",
+   "id": "soft-text"
+  },
+  {
+   "name": "monarchE",
+   "setting": "Adjuvant",
+   "modality": "Systemic",
+   "year": 2020,
+   "journal": "JCO 2020; Lancet Oncol 2023",
+   "design": "Phase 3, n=5,637",
+   "population": "HR+, HER2−, high-risk node-positive",
+   "arms": [
+    "Abemaciclib 2 y + ET",
+    "ET alone"
+   ],
+   "endpoint": "Invasive DFS",
+   "result": "IDFS HR 0.68; 5-y IDFS absolute benefit ≈7.6%; OS benefit reported 2025",
+   "takeaway": "Adjuvant abemaciclib for high-risk node-positive HR+ disease.",
+   "tags": [
+    "CDK4/6",
+    "abemaciclib"
+   ],
+   "site": "Breast",
+   "id": "monarche"
+  },
+  {
+   "name": "NATALEE",
+   "setting": "Adjuvant",
+   "modality": "Systemic",
+   "year": 2024,
+   "journal": "NEJM 2024",
+   "design": "Phase 3, n=5,101",
+   "population": "HR+, HER2−, stage II–III incl. high-risk N0",
+   "arms": [
+    "Ribociclib 400 mg 3 y + NSAI",
+    "NSAI alone"
+   ],
+   "endpoint": "Invasive DFS",
+   "result": "3-y IDFS 90.4% vs 87.1% (HR 0.75)",
+   "takeaway": "Ribociclib extends adjuvant CDK4/6 option to a broader stage II–III population.",
+   "tags": [
+    "CDK4/6",
+    "ribociclib"
+   ],
+   "site": "Breast",
+   "id": "natalee"
+  },
+  {
+   "name": "OlympiA",
+   "setting": "Adjuvant",
+   "modality": "Systemic",
+   "year": 2021,
+   "journal": "NEJM 2021; Ann Oncol 2022",
+   "design": "Phase 3, n=1,836",
+   "population": "gBRCA1/2, HER2−, high-risk after chemo",
+   "arms": [
+    "Olaparib 1 y",
+    "Placebo"
+   ],
+   "endpoint": "Invasive DFS",
+   "result": "3-y IDFS 85.9% vs 77.1% (HR 0.58); OS HR 0.68",
+   "takeaway": "Adjuvant olaparib for high-risk gBRCA carriers; test germline early.",
+   "tags": [
+    "PARP",
+    "BRCA",
+    "olaparib"
+   ],
+   "site": "Breast",
+   "id": "olympia"
+  },
+  {
+   "name": "HERA / NSABP B-31+N9831",
+   "setting": "Adjuvant",
+   "modality": "Systemic",
+   "year": 2005,
+   "journal": "NEJM 2005",
+   "design": "Phase 3s, n≈5,100 (HERA), n≈4,000 (joint)",
+   "population": "HER2+ early BC",
+   "arms": [
+    "Chemo + trastuzumab 1 y",
+    "Chemo alone"
+   ],
+   "endpoint": "DFS",
+   "result": "Recurrence risk reduced ≈50% (joint analysis HR 0.48); OS gain sustained at 10 y",
+   "takeaway": "One year of adjuvant trastuzumab is standard for HER2+ early BC.",
+   "tags": [
+    "HER2",
+    "trastuzumab"
+   ],
+   "site": "Breast",
+   "id": "hera-nsabp-b-31-n9831"
+  },
+  {
+   "name": "APHINITY",
+   "setting": "Adjuvant",
+   "modality": "Systemic",
+   "year": 2017,
+   "journal": "NEJM 2017; JCO 2021",
+   "design": "Phase 3, n=4,805",
+   "population": "HER2+ node-positive or high-risk N0",
+   "arms": [
+    "Pertuzumab + trastuzumab + chemo",
+    "Placebo + trastuzumab + chemo"
+   ],
+   "endpoint": "Invasive DFS",
+   "result": "Small IDFS benefit (HR 0.81), mainly node-positive (6-y absolute 4.5%)",
+   "takeaway": "Add pertuzumab for node-positive HER2+ disease.",
+   "tags": [
+    "HER2",
+    "pertuzumab"
+   ],
+   "site": "Breast",
+   "id": "aphinity"
+  },
+  {
+   "name": "APT (Tolaney)",
+   "setting": "Adjuvant",
+   "modality": "Systemic",
+   "year": 2015,
+   "journal": "NEJM 2015; JCO 2019",
+   "design": "Single-arm phase 2, n=406",
+   "population": "HER2+, ≤3 cm, node-negative",
+   "arms": [
+    "Weekly paclitaxel ×12 + trastuzumab 1 y"
+   ],
+   "endpoint": "Invasive DFS",
+   "result": "7-y IDFS 93.3%; very low distant recurrence",
+   "takeaway": "De-escalated TH is standard for small node-negative HER2+ tumours.",
+   "tags": [
+    "HER2",
+    "de-escalation"
+   ],
+   "site": "Breast",
+   "id": "apt-tolaney"
+  },
+  {
+   "name": "KATHERINE",
+   "setting": "Post-neoadjuvant",
+   "modality": "Systemic",
+   "year": 2019,
+   "journal": "NEJM 2019; NEJM 2025",
+   "design": "Phase 3, n=1,486",
+   "population": "HER2+ with residual disease after neoadjuvant therapy",
+   "arms": [
+    "T-DM1 ×14",
+    "Trastuzumab"
+   ],
+   "endpoint": "Invasive DFS",
+   "result": "3-y IDFS 88.3% vs 77.0% (HR 0.50); OS benefit confirmed",
+   "takeaway": "Residual disease after HER2-directed neoadjuvant therapy → T-DM1.",
+   "tags": [
+    "HER2",
+    "T-DM1",
+    "residual disease"
+   ],
+   "site": "Breast",
+   "id": "katherine"
+  },
+  {
+   "name": "CREATE-X",
+   "setting": "Post-neoadjuvant",
+   "modality": "Systemic",
+   "year": 2017,
+   "journal": "NEJM 2017",
+   "design": "Phase 3, n=910",
+   "population": "HER2− residual disease after neoadjuvant chemo",
+   "arms": [
+    "Capecitabine 6–8 cycles",
+    "No capecitabine"
+   ],
+   "endpoint": "DFS",
+   "result": "TNBC subgroup: DFS 69.8% vs 56.1% (HR 0.58), OS HR 0.52",
+   "takeaway": "Adjuvant capecitabine for TNBC with residual disease (non-gBRCA or no PARP access).",
+   "tags": [
+    "TNBC",
+    "capecitabine",
+    "residual disease"
+   ],
+   "site": "Breast",
+   "id": "create-x"
+  },
+  {
+   "name": "KEYNOTE-522",
+   "setting": "Neoadjuvant",
+   "modality": "Systemic",
+   "year": 2020,
+   "journal": "NEJM 2020/2022/2024",
+   "design": "Phase 3, n=1,174",
+   "population": "Stage II–III TNBC",
+   "arms": [
+    "Pembrolizumab + carbo-paclitaxel → AC/EC, then adjuvant pembrolizumab",
+    "Placebo + same chemo"
+   ],
+   "endpoint": "pCR, EFS",
+   "result": "pCR 64.8% vs 51.2%; 5-y EFS 81.2% vs 72.2%; 5-y OS 86.6% vs 81.7% (HR 0.66)",
+   "takeaway": "Pembrolizumab + chemo is standard neoadjuvant therapy for stage II–III TNBC.",
+   "tags": [
+    "TNBC",
+    "immunotherapy",
+    "pembrolizumab"
+   ],
+   "site": "Breast",
+   "id": "keynote-522"
+  },
+  {
+   "name": "NeoSphere",
+   "setting": "Neoadjuvant",
+   "modality": "Systemic",
+   "year": 2012,
+   "journal": "Lancet Oncol 2012",
+   "design": "Phase 2, n=417",
+   "population": "HER2+ operable/locally advanced",
+   "arms": [
+    "Docetaxel + trastuzumab",
+    "+ pertuzumab",
+    "HP alone",
+    "Docetaxel + pertuzumab"
+   ],
+   "endpoint": "pCR",
+   "result": "pCR 45.8% with THP vs 29.0% with TH",
+   "takeaway": "Basis for neoadjuvant dual HER2 blockade (THP).",
+   "tags": [
+    "HER2",
+    "pertuzumab",
+    "pCR"
+   ],
+   "site": "Breast",
+   "id": "neosphere"
+  },
+  {
+   "name": "CTNeoBC pooled analysis",
+   "setting": "Neoadjuvant",
+   "modality": "Systemic",
+   "year": 2014,
+   "journal": "Lancet 2014",
+   "design": "Pooled analysis, n=11,955",
+   "population": "Neoadjuvant trials",
+   "arms": [
+    "pCR",
+    "No pCR"
+   ],
+   "endpoint": "EFS, OS association",
+   "result": "ypT0/is ypN0 strongly associated with EFS (HR 0.48) and OS, most in TNBC and HER2+/HR−",
+   "takeaway": "pCR is prognostic for individuals; trial-level surrogacy is weak.",
+   "tags": [
+    "pCR",
+    "surrogate endpoint"
+   ],
+   "site": "Breast",
+   "id": "ctneobc-pooled-analysis"
+  },
+  {
+   "name": "CLEOPATRA",
+   "setting": "Metastatic 1L",
+   "modality": "Systemic",
+   "year": 2012,
+   "journal": "NEJM 2012/2015; Lancet Oncol 2020",
+   "design": "Phase 3, n=808",
+   "population": "HER2+ MBC, first line",
+   "arms": [
+    "Pertuzumab + trastuzumab + docetaxel",
+    "Placebo + trastuzumab + docetaxel"
+   ],
+   "endpoint": "PFS",
+   "result": "mPFS 18.7 vs 12.4 mo; mOS 57.1 vs 40.8 mo (HR 0.69)",
+   "takeaway": "THP is the first-line standard for HER2+ MBC.",
+   "tags": [
+    "HER2",
+    "pertuzumab",
+    "metastatic"
+   ],
+   "site": "Breast",
+   "id": "cleopatra"
+  },
+  {
+   "name": "DESTINY-Breast03",
+   "setting": "Metastatic 2L",
+   "modality": "Systemic",
+   "year": 2022,
+   "journal": "NEJM 2022; Lancet 2023",
+   "design": "Phase 3, n=524",
+   "population": "HER2+ MBC after trastuzumab + taxane",
+   "arms": [
+    "Trastuzumab deruxtecan",
+    "T-DM1"
+   ],
+   "endpoint": "PFS",
+   "result": "12-mo PFS 75.8% vs 34.1% (HR 0.28); mPFS 28.8 vs 6.8 mo; OS HR 0.64",
+   "takeaway": "T-DXd is the second-line standard for HER2+ MBC.",
+   "tags": [
+    "HER2",
+    "ADC",
+    "T-DXd"
+   ],
+   "site": "Breast",
+   "id": "destiny-breast03"
+  },
+  {
+   "name": "DESTINY-Breast04",
+   "setting": "Metastatic",
+   "modality": "Systemic",
+   "year": 2022,
+   "journal": "NEJM 2022",
+   "design": "Phase 3, n=557",
+   "population": "HER2-low MBC after 1–2 lines of chemo",
+   "arms": [
+    "Trastuzumab deruxtecan",
+    "Physician's choice chemo"
+   ],
+   "endpoint": "PFS (HR+ cohort)",
+   "result": "mPFS 9.9 vs 5.1 mo (all); mOS 23.4 vs 16.8 mo (HR 0.64)",
+   "takeaway": "Created the 'HER2-low' category; T-DXd standard after chemo.",
+   "tags": [
+    "HER2-low",
+    "ADC",
+    "T-DXd"
+   ],
+   "site": "Breast",
+   "id": "destiny-breast04"
+  },
+  {
+   "name": "DESTINY-Breast06",
+   "setting": "Metastatic",
+   "modality": "Systemic",
+   "year": 2024,
+   "journal": "NEJM 2024",
+   "design": "Phase 3, n=866",
+   "population": "HR+, HER2-low/ultralow, chemo-naive after ET",
+   "arms": [
+    "Trastuzumab deruxtecan",
+    "Physician's choice chemo"
+   ],
+   "endpoint": "PFS (HER2-low)",
+   "result": "mPFS 13.2 vs 8.1 mo (HR 0.62); similar in HER2-ultralow",
+   "takeaway": "T-DXd can be used before chemo after endocrine resistance in HER2-low/ultralow.",
+   "tags": [
+    "HER2-low",
+    "HER2-ultralow",
+    "ADC"
+   ],
+   "site": "Breast",
+   "id": "destiny-breast06"
+  },
+  {
+   "name": "HER2CLIMB",
+   "setting": "Metastatic",
+   "modality": "Systemic",
+   "year": 2020,
+   "journal": "NEJM 2020",
+   "design": "Phase 3, n=612",
+   "population": "HER2+ MBC after T, P, T-DM1, incl. brain mets",
+   "arms": [
+    "Tucatinib + trastuzumab + capecitabine",
+    "Placebo + T + capecitabine"
+   ],
+   "endpoint": "PFS",
+   "result": "1-y PFS 33.1% vs 12.3% (HR 0.54); OS HR 0.66; brain-met PFS HR 0.48",
+   "takeaway": "Tucatinib triplet is preferred with active brain metastases.",
+   "tags": [
+    "HER2",
+    "tucatinib",
+    "brain metastases"
+   ],
+   "site": "Breast",
+   "id": "her2climb"
+  },
+  {
+   "name": "PALOMA-2",
+   "setting": "Metastatic 1L",
+   "modality": "Systemic",
+   "year": 2016,
+   "journal": "NEJM 2016",
+   "design": "Phase 3, n=666",
+   "population": "HR+, HER2− postmenopausal MBC, first line",
+   "arms": [
+    "Palbociclib + letrozole",
+    "Placebo + letrozole"
+   ],
+   "endpoint": "PFS",
+   "result": "mPFS 24.8 vs 14.5 mo (HR 0.58); OS not significant",
+   "takeaway": "CDK4/6i + AI established as first-line standard.",
+   "tags": [
+    "CDK4/6",
+    "palbociclib"
+   ],
+   "site": "Breast",
+   "id": "paloma-2"
+  },
+  {
+   "name": "MONALEESA-2",
+   "setting": "Metastatic 1L",
+   "modality": "Systemic",
+   "year": 2016,
+   "journal": "NEJM 2016; NEJM 2022",
+   "design": "Phase 3, n=668",
+   "population": "HR+, HER2− postmenopausal MBC, first line",
+   "arms": [
+    "Ribociclib + letrozole",
+    "Placebo + letrozole"
+   ],
+   "endpoint": "PFS",
+   "result": "mPFS 25.3 vs 16.0 mo; mOS 63.9 vs 51.4 mo (HR 0.76)",
+   "takeaway": "Ribociclib shows OS benefit in first line.",
+   "tags": [
+    "CDK4/6",
+    "ribociclib"
+   ],
+   "site": "Breast",
+   "id": "monaleesa-2"
+  },
+  {
+   "name": "MONALEESA-7",
+   "setting": "Metastatic 1L",
+   "modality": "Systemic",
+   "year": 2018,
+   "journal": "Lancet Oncol 2018; NEJM 2019",
+   "design": "Phase 3, n=672",
+   "population": "Pre/perimenopausal HR+, HER2− MBC",
+   "arms": [
+    "Ribociclib + ET + goserelin",
+    "Placebo + ET + goserelin"
+   ],
+   "endpoint": "PFS",
+   "result": "mPFS 23.8 vs 13.0 mo; 42-mo OS 70.2% vs 46.0% (HR 0.71)",
+   "takeaway": "First CDK4/6i trial to show OS benefit; standard for premenopausal MBC.",
+   "tags": [
+    "CDK4/6",
+    "ribociclib",
+    "premenopausal"
+   ],
+   "site": "Breast",
+   "id": "monaleesa-7"
+  },
+  {
+   "name": "MONARCH 3",
+   "setting": "Metastatic 1L",
+   "modality": "Systemic",
+   "year": 2017,
+   "journal": "JCO 2017",
+   "design": "Phase 3, n=493",
+   "population": "HR+, HER2− postmenopausal MBC",
+   "arms": [
+    "Abemaciclib + NSAI",
+    "Placebo + NSAI"
+   ],
+   "endpoint": "PFS",
+   "result": "mPFS 28.2 vs 14.8 mo (HR 0.54)",
+   "takeaway": "Abemaciclib + AI is a first-line option.",
+   "tags": [
+    "CDK4/6",
+    "abemaciclib"
+   ],
+   "site": "Breast",
+   "id": "monarch-3"
+  },
+  {
+   "name": "PADA-1 / SERENA-6",
+   "setting": "Metastatic",
+   "modality": "Systemic",
+   "year": 2022,
+   "journal": "Lancet Oncol 2022; NEJM 2025",
+   "design": "Phase 3",
+   "population": "HR+ MBC on AI + CDK4/6i with rising ESR1 mutation in ctDNA",
+   "arms": [
+    "Switch to fulvestrant (PADA-1) or camizestrant (SERENA-6)",
+    "Continue AI"
+   ],
+   "endpoint": "PFS",
+   "result": "SERENA-6: mPFS 16.0 vs 9.2 mo (HR 0.44)",
+   "takeaway": "ctDNA-guided early switch on ESR1 emergence before clinical progression.",
+   "tags": [
+    "ESR1",
+    "ctDNA",
+    "oral SERD"
+   ],
+   "site": "Breast",
+   "id": "pada-1-serena-6"
+  },
+  {
+   "name": "SOLAR-1",
+   "setting": "Metastatic 2L",
+   "modality": "Systemic",
+   "year": 2019,
+   "journal": "NEJM 2019",
+   "design": "Phase 3, n=572",
+   "population": "HR+, HER2− MBC after AI, PIK3CA-mutant cohort",
+   "arms": [
+    "Alpelisib + fulvestrant",
+    "Placebo + fulvestrant"
+   ],
+   "endpoint": "PFS (PIK3CA-mut)",
+   "result": "mPFS 11.0 vs 5.7 mo (HR 0.65)",
+   "takeaway": "Test PIK3CA; alpelisib + fulvestrant for mutant disease (watch hyperglycaemia).",
+   "tags": [
+    "PIK3CA",
+    "alpelisib"
+   ],
+   "site": "Breast",
+   "id": "solar-1"
+  },
+  {
+   "name": "CAPItello-291",
+   "setting": "Metastatic 2L",
+   "modality": "Systemic",
+   "year": 2023,
+   "journal": "NEJM 2023",
+   "design": "Phase 3, n=708",
+   "population": "HR+, HER2− MBC after AI ± CDK4/6i",
+   "arms": [
+    "Capivasertib + fulvestrant",
+    "Placebo + fulvestrant"
+   ],
+   "endpoint": "PFS (overall & AKT-pathway altered)",
+   "result": "mPFS 7.2 vs 3.6 mo overall (HR 0.60); 7.3 vs 3.1 mo in altered tumours",
+   "takeaway": "AKT inhibition for PIK3CA/AKT1/PTEN-altered disease.",
+   "tags": [
+    "AKT",
+    "capivasertib",
+    "PIK3CA"
+   ],
+   "site": "Breast",
+   "id": "capitello-291"
+  },
+  {
+   "name": "INAVO120",
+   "setting": "Metastatic 1L",
+   "modality": "Systemic",
+   "year": 2024,
+   "journal": "NEJM 2024",
+   "design": "Phase 3, n=325",
+   "population": "PIK3CA-mut HR+ MBC, endocrine-resistant (relapse ≤12 mo of adjuvant ET)",
+   "arms": [
+    "Inavolisib + palbociclib + fulvestrant",
+    "Placebo + palbociclib + fulvestrant"
+   ],
+   "endpoint": "PFS",
+   "result": "mPFS 15.0 vs 7.3 mo (HR 0.43); OS benefit reported",
+   "takeaway": "Triplet for PIK3CA-mutant endocrine-resistant first-line disease.",
+   "tags": [
+    "PIK3CA",
+    "inavolisib"
+   ],
+   "site": "Breast",
+   "id": "inavo120"
+  },
+  {
+   "name": "EMERALD",
+   "setting": "Metastatic 2L",
+   "modality": "Systemic",
+   "year": 2022,
+   "journal": "JCO 2022",
+   "design": "Phase 3, n=478",
+   "population": "HR+ MBC after 1–2 lines ET incl. CDK4/6i",
+   "arms": [
+    "Elacestrant",
+    "Standard ET"
+   ],
+   "endpoint": "PFS (all & ESR1-mut)",
+   "result": "ESR1-mut: 12-mo PFS 26.8% vs 8.2% (HR 0.55)",
+   "takeaway": "First oral SERD approved, for ESR1-mutant disease.",
+   "tags": [
+    "ESR1",
+    "oral SERD",
+    "elacestrant"
+   ],
+   "site": "Breast",
+   "id": "emerald"
+  },
+  {
+   "name": "OlympiAD",
+   "setting": "Metastatic",
+   "modality": "Systemic",
+   "year": 2017,
+   "journal": "NEJM 2017",
+   "design": "Phase 3, n=302",
+   "population": "gBRCA, HER2− MBC, ≤2 prior chemo",
+   "arms": [
+    "Olaparib",
+    "Physician's choice chemo"
+   ],
+   "endpoint": "PFS",
+   "result": "mPFS 7.0 vs 4.2 mo (HR 0.58); ORR 59.9% vs 28.8%",
+   "takeaway": "PARP inhibitor option for gBRCA MBC.",
+   "tags": [
+    "PARP",
+    "BRCA"
+   ],
+   "site": "Breast",
+   "id": "olympiad"
+  },
+  {
+   "name": "KEYNOTE-355",
+   "setting": "Metastatic 1L",
+   "modality": "Systemic",
+   "year": 2020,
+   "journal": "Lancet 2020; NEJM 2022",
+   "design": "Phase 3, n=847",
+   "population": "Untreated metastatic TNBC",
+   "arms": [
+    "Pembrolizumab + chemo",
+    "Placebo + chemo"
+   ],
+   "endpoint": "PFS, OS (CPS ≥10)",
+   "result": "CPS ≥10: mOS 23.0 vs 16.1 mo (HR 0.73)",
+   "takeaway": "First-line pembrolizumab + chemo for PD-L1 CPS ≥10 metastatic TNBC.",
+   "tags": [
+    "TNBC",
+    "immunotherapy",
+    "PD-L1"
+   ],
+   "site": "Breast",
+   "id": "keynote-355"
+  },
+  {
+   "name": "ASCENT",
+   "setting": "Metastatic",
+   "modality": "Systemic",
+   "year": 2021,
+   "journal": "NEJM 2021",
+   "design": "Phase 3, n=529",
+   "population": "Metastatic TNBC after ≥2 chemo regimens",
+   "arms": [
+    "Sacituzumab govitecan",
+    "Physician's choice chemo"
+   ],
+   "endpoint": "PFS (no brain mets)",
+   "result": "mPFS 5.6 vs 1.7 mo; mOS 12.1 vs 6.7 mo (HR 0.48)",
+   "takeaway": "Sacituzumab is standard later-line therapy for metastatic TNBC.",
+   "tags": [
+    "TNBC",
+    "ADC",
+    "TROP2"
+   ],
+   "site": "Breast",
+   "id": "ascent"
+  },
+  {
+   "name": "TROPiCS-02",
+   "setting": "Metastatic",
+   "modality": "Systemic",
+   "year": 2023,
+   "journal": "Lancet 2023",
+   "design": "Phase 3, n=543",
+   "population": "HR+, HER2− MBC after ET, CDK4/6i and 2–4 chemo lines",
+   "arms": [
+    "Sacituzumab govitecan",
+    "Physician's choice chemo"
+   ],
+   "endpoint": "PFS",
+   "result": "mPFS 5.5 vs 4.0 mo; mOS 14.4 vs 11.2 mo (HR 0.79)",
+   "takeaway": "Sacituzumab option for heavily pretreated HR+ MBC.",
+   "tags": [
+    "ADC",
+    "TROP2"
+   ],
+   "site": "Breast",
+   "id": "tropics-02"
+  },
+  {
+   "name": "NLST",
+   "setting": "Screening",
+   "modality": "Screening",
+   "year": 2011,
+   "journal": "NEJM 2011",
+   "design": "RCT, n=53,454",
+   "population": "Age 55–74, ≥30 pack-years",
+   "arms": [
+    "Low-dose CT",
+    "Chest X-ray"
+   ],
+   "endpoint": "Lung cancer mortality",
+   "result": "Lung cancer mortality reduced 20%; all-cause mortality reduced 6.7%",
+   "takeaway": "Basis for annual LDCT screening in high-risk smokers.",
+   "tags": [
+    "screening",
+    "LDCT"
+   ],
+   "site": "Lung",
+   "id": "nlst"
+  },
+  {
+   "name": "NELSON",
+   "setting": "Screening",
+   "modality": "Screening",
+   "year": 2020,
+   "journal": "NEJM 2020",
+   "design": "RCT, n=15,792",
+   "population": "Age 50–74 smokers/ex-smokers",
+   "arms": [
+    "Volume-based LDCT",
+    "No screening"
+   ],
+   "endpoint": "Lung cancer mortality",
+   "result": "10-y lung cancer mortality reduced 24% in men (RR 0.76)",
+   "takeaway": "Confirmed LDCT benefit with volumetric nodule management and low false-positive rates.",
+   "tags": [
+    "screening",
+    "LDCT"
+   ],
+   "site": "Lung",
+   "id": "nelson"
+  },
+  {
+   "name": "LACE meta-analysis",
+   "setting": "Adjuvant",
+   "modality": "Systemic",
+   "year": 2008,
+   "journal": "JCO 2008",
+   "design": "Pooled analysis, n=4,584",
+   "population": "Resected NSCLC",
+   "arms": [
+    "Cisplatin-based adjuvant chemo",
+    "Observation"
+   ],
+   "endpoint": "OS",
+   "result": "5-y OS absolute benefit 5.4% (HR 0.89); benefit in stage II–III, not IA",
+   "takeaway": "Adjuvant cisplatin doublet for resected stage II–IIIA NSCLC.",
+   "tags": [
+    "adjuvant",
+    "chemotherapy"
+   ],
+   "site": "Lung",
+   "id": "lace-meta-analysis"
+  },
+  {
+   "name": "ADAURA",
+   "setting": "Adjuvant",
+   "modality": "Systemic",
+   "year": 2020,
+   "journal": "NEJM 2020; NEJM 2023",
+   "design": "Phase 3, n=682",
+   "population": "Resected stage IB–IIIA EGFR ex19del/L858R",
+   "arms": [
+    "Osimertinib 3 y",
+    "Placebo"
+   ],
+   "endpoint": "DFS (II–IIIA)",
+   "result": "DFS HR 0.17 (II–IIIA); 5-y OS 88% vs 78% (HR 0.49)",
+   "takeaway": "Adjuvant osimertinib is standard for resected EGFR-mutant NSCLC.",
+   "tags": [
+    "EGFR",
+    "osimertinib",
+    "adjuvant"
+   ],
+   "site": "Lung",
+   "id": "adaura"
+  },
+  {
+   "name": "ALINA",
+   "setting": "Adjuvant",
+   "modality": "Systemic",
+   "year": 2024,
+   "journal": "NEJM 2024",
+   "design": "Phase 3, n=257",
+   "population": "Resected stage IB–IIIA ALK+",
+   "arms": [
+    "Alectinib 2 y",
+    "Platinum chemo"
+   ],
+   "endpoint": "DFS",
+   "result": "2-y DFS 93.8% vs 63.0% (II–IIIA, HR 0.24)",
+   "takeaway": "Adjuvant alectinib replaces chemo for resected ALK+ NSCLC.",
+   "tags": [
+    "ALK",
+    "alectinib",
+    "adjuvant"
+   ],
+   "site": "Lung",
+   "id": "alina"
+  },
+  {
+   "name": "CheckMate 816",
+   "setting": "Neoadjuvant",
+   "modality": "Systemic",
+   "year": 2022,
+   "journal": "NEJM 2022; NEJM 2025",
+   "design": "Phase 3, n=358",
+   "population": "Resectable stage IB–IIIA NSCLC",
+   "arms": [
+    "Nivolumab + chemo ×3 then surgery",
+    "Chemo ×3 then surgery"
+   ],
+   "endpoint": "EFS, pCR",
+   "result": "mEFS 31.6 vs 20.8 mo (HR 0.63); pCR 24.0% vs 2.2%; OS benefit (HR 0.72)",
+   "takeaway": "Neoadjuvant chemo-immunotherapy is standard for resectable NSCLC.",
+   "tags": [
+    "immunotherapy",
+    "neoadjuvant",
+    "nivolumab"
+   ],
+   "site": "Lung",
+   "id": "checkmate-816"
+  },
+  {
+   "name": "KEYNOTE-671",
+   "setting": "Perioperative",
+   "modality": "Systemic",
+   "year": 2023,
+   "journal": "NEJM 2023; Lancet 2024",
+   "design": "Phase 3, n=797",
+   "population": "Resectable stage II–IIIB NSCLC",
+   "arms": [
+    "Pembrolizumab + chemo → surgery → pembrolizumab",
+    "Placebo + chemo → surgery → placebo"
+   ],
+   "endpoint": "EFS, OS",
+   "result": "24-mo EFS 62.4% vs 40.6% (HR 0.58); OS HR 0.72",
+   "takeaway": "First perioperative IO regimen with OS benefit.",
+   "tags": [
+    "immunotherapy",
+    "perioperative",
+    "pembrolizumab"
+   ],
+   "site": "Lung",
+   "id": "keynote-671"
+  },
+  {
+   "name": "PACIFIC",
+   "setting": "Stage III unresectable",
+   "modality": "Combined",
+   "year": 2017,
+   "journal": "NEJM 2017/2018; JCO 2022",
+   "design": "Phase 3, n=713",
+   "population": "Unresectable stage III, no progression after concurrent chemoRT",
+   "arms": [
+    "Durvalumab 12 mo",
+    "Placebo"
+   ],
+   "endpoint": "PFS, OS",
+   "result": "mPFS 16.8 vs 5.6 mo; 5-y OS 42.9% vs 33.4% (HR 0.72)",
+   "takeaway": "Consolidation durvalumab after chemoRT is standard for stage III NSCLC.",
+   "tags": [
+    "immunotherapy",
+    "chemoradiotherapy",
+    "radiotherapy"
+   ],
+   "site": "Lung",
+   "id": "pacific"
+  },
+  {
+   "name": "LAURA",
+   "setting": "Stage III unresectable",
+   "modality": "Combined",
+   "year": 2024,
+   "journal": "NEJM 2024",
+   "design": "Phase 3, n=216",
+   "population": "Unresectable stage III EGFR-mutant after chemoRT",
+   "arms": [
+    "Osimertinib",
+    "Placebo"
+   ],
+   "endpoint": "PFS",
+   "result": "mPFS 39.1 vs 5.6 mo (HR 0.16)",
+   "takeaway": "Consolidation osimertinib (not durvalumab) for EGFR-mutant stage III.",
+   "tags": [
+    "EGFR",
+    "osimertinib",
+    "radiotherapy"
+   ],
+   "site": "Lung",
+   "id": "laura"
+  },
+  {
+   "name": "RTOG 9410",
+   "setting": "Stage III unresectable",
+   "modality": "Radiotherapy",
+   "year": 2011,
+   "journal": "JNCI 2011",
+   "design": "Phase 3, n=610",
+   "population": "Unresectable stage II–III NSCLC",
+   "arms": [
+    "Sequential chemo → RT",
+    "Concurrent chemoRT (once daily)",
+    "Concurrent chemoRT (BID)"
+   ],
+   "endpoint": "OS",
+   "result": "mOS 14.6 vs 17.0 vs 15.6 mo; 5-y OS 10% vs 16% vs 13% (concurrent daily best)",
+   "takeaway": "Concurrent chemoradiotherapy is superior to sequential.",
+   "tags": [
+    "radiotherapy",
+    "chemoradiotherapy"
+   ],
+   "site": "Lung",
+   "id": "rtog-9410"
+  },
+  {
+   "name": "RTOG 0617",
+   "setting": "Stage III unresectable",
+   "modality": "Radiotherapy",
+   "year": 2015,
+   "journal": "Lancet Oncol 2015; JCO 2020",
+   "design": "Phase 3 (2x2), n=544",
+   "population": "Unresectable stage III NSCLC",
+   "arms": [
+    "60 Gy vs 74 Gy",
+    "± cetuximab with carboplatin-paclitaxel"
+   ],
+   "endpoint": "OS",
+   "result": "mOS 28.7 mo (60 Gy) vs 20.3 mo (74 Gy); cetuximab no benefit; heart dose predicted death",
+   "takeaway": "60 Gy remains standard; dose escalation is harmful; limit heart dose.",
+   "tags": [
+    "radiotherapy",
+    "dose escalation",
+    "cardiac dose"
+   ],
+   "site": "Lung",
+   "id": "rtog-0617"
+  },
+  {
+   "name": "CHART",
+   "setting": "Stage III unresectable",
+   "modality": "Radiotherapy",
+   "year": 1997,
+   "journal": "Lancet 1997",
+   "design": "Phase 3, n=563",
+   "population": "Inoperable NSCLC",
+   "arms": [
+    "CHART 54 Gy/36 fr in 12 days",
+    "60 Gy/30 fr"
+   ],
+   "endpoint": "OS",
+   "result": "2-y OS 29% vs 20%",
+   "takeaway": "Shows accelerated fractionation benefit (repopulation); informs hypofractionation when concurrent not feasible.",
+   "tags": [
+    "radiotherapy",
+    "accelerated fractionation"
+   ],
+   "site": "Lung",
+   "id": "chart"
+  },
+  {
+   "name": "Lung ART",
+   "setting": "Adjuvant",
+   "modality": "Radiotherapy",
+   "year": 2022,
+   "journal": "Lancet Oncol 2022",
+   "design": "Phase 3, n=501",
+   "population": "Resected pN2 NSCLC",
+   "arms": [
+    "Postoperative conformal RT 54 Gy",
+    "No PORT"
+   ],
+   "endpoint": "DFS",
+   "result": "3-y DFS 47.1% vs 43.8% (NS); more cardiopulmonary deaths with PORT",
+   "takeaway": "Routine PORT is not recommended for completely resected pN2.",
+   "tags": [
+    "radiotherapy",
+    "PORT",
+    "N2"
+   ],
+   "site": "Lung",
+   "id": "lung-art"
+  },
+  {
+   "name": "CHISEL",
+   "setting": "Early (stage I)",
+   "modality": "Radiotherapy",
+   "year": 2019,
+   "journal": "Lancet Oncol 2019",
+   "design": "Phase 3, n=101",
+   "population": "Inoperable stage I NSCLC",
+   "arms": [
+    "SABR 54 Gy/3 or 48 Gy/4",
+    "Conventional RT 66 Gy/33 or 50 Gy/20"
+   ],
+   "endpoint": "Local control",
+   "result": "Local failure HR 0.32; longer OS with SABR",
+   "takeaway": "SABR is standard for medically inoperable stage I NSCLC.",
+   "tags": [
+    "radiotherapy",
+    "SBRT",
+    "SABR"
+   ],
+   "site": "Lung",
+   "id": "chisel"
+  },
+  {
+   "name": "SABR-COMET",
+   "setting": "Oligometastatic",
+   "modality": "Radiotherapy",
+   "year": 2019,
+   "journal": "Lancet 2019; JCO 2020",
+   "design": "Randomised phase 2, n=99",
+   "population": "1–5 oligometastases, controlled primary (multiple histologies)",
+   "arms": [
+    "SABR to all lesions + SOC",
+    "SOC palliative"
+   ],
+   "endpoint": "OS",
+   "result": "mOS 50 vs 28 mo; 5-y OS 42.3% vs 17.7%; grade 5 toxicity 4.5%",
+   "takeaway": "Supports ablative RT to all sites in oligometastatic disease; phase 3 confirmation ongoing.",
+   "tags": [
+    "radiotherapy",
+    "SBRT",
+    "oligometastatic"
+   ],
+   "site": "Lung",
+   "id": "sabr-comet"
+  },
+  {
+   "name": "Gomez (MDACC) oligomet NSCLC",
+   "setting": "Oligometastatic",
+   "modality": "Radiotherapy",
+   "year": 2016,
+   "journal": "Lancet Oncol 2016; JCO 2019",
+   "design": "Randomised phase 2, n=49",
+   "population": "≤3 metastases after first-line systemic therapy",
+   "arms": [
+    "Local consolidative therapy + maintenance",
+    "Maintenance/observation"
+   ],
+   "endpoint": "PFS",
+   "result": "mPFS 14.2 vs 4.4 mo; mOS 41.2 vs 17.0 mo",
+   "takeaway": "Consolidative local therapy for oligometastatic NSCLC after systemic response.",
+   "tags": [
+    "radiotherapy",
+    "oligometastatic"
+   ],
+   "site": "Lung",
+   "id": "gomez-mdacc-oligomet-nsclc"
+  },
+  {
+   "name": "IPASS",
+   "setting": "Metastatic 1L",
+   "modality": "Systemic",
+   "year": 2009,
+   "journal": "NEJM 2009",
+   "design": "Phase 3, n=1,217",
+   "population": "East Asian never/light smokers with adenocarcinoma",
+   "arms": [
+    "Gefitinib",
+    "Carboplatin-paclitaxel"
+   ],
+   "endpoint": "PFS",
+   "result": "EGFR-mutant: PFS HR 0.48; EGFR wild-type: HR 2.85 (worse with gefitinib)",
+   "takeaway": "EGFR mutation, not clinical features, predicts TKI benefit; established biomarker-driven therapy.",
+   "tags": [
+    "EGFR",
+    "gefitinib",
+    "biomarker"
+   ],
+   "site": "Lung",
+   "id": "ipass"
+  },
+  {
+   "name": "FLAURA",
+   "setting": "Metastatic 1L",
+   "modality": "Systemic",
+   "year": 2018,
+   "journal": "NEJM 2018; NEJM 2020",
+   "design": "Phase 3, n=556",
+   "population": "EGFR ex19del/L858R advanced NSCLC",
+   "arms": [
+    "Osimertinib",
+    "Gefitinib or erlotinib"
+   ],
+   "endpoint": "PFS",
+   "result": "mPFS 18.9 vs 10.2 mo; mOS 38.6 vs 31.8 mo (HR 0.80)",
+   "takeaway": "Osimertinib is first-line standard for EGFR-mutant NSCLC.",
+   "tags": [
+    "EGFR",
+    "osimertinib"
+   ],
+   "site": "Lung",
+   "id": "flaura"
+  },
+  {
+   "name": "FLAURA2",
+   "setting": "Metastatic 1L",
+   "modality": "Systemic",
+   "year": 2023,
+   "journal": "NEJM 2023; NEJM 2025",
+   "design": "Phase 3, n=557",
+   "population": "EGFR-mutant advanced NSCLC",
+   "arms": [
+    "Osimertinib + platinum-pemetrexed",
+    "Osimertinib"
+   ],
+   "endpoint": "PFS",
+   "result": "mPFS 25.5 vs 16.7 mo (HR 0.62); OS improved (HR 0.77)",
+   "takeaway": "Adding chemo to osimertinib prolongs survival, notably with brain mets or high burden.",
+   "tags": [
+    "EGFR",
+    "osimertinib",
+    "chemotherapy"
+   ],
+   "site": "Lung",
+   "id": "flaura2"
+  },
+  {
+   "name": "MARIPOSA",
+   "setting": "Metastatic 1L",
+   "modality": "Systemic",
+   "year": 2024,
+   "journal": "NEJM 2024; NEJM 2025",
+   "design": "Phase 3, n=1,074",
+   "population": "EGFR-mutant advanced NSCLC",
+   "arms": [
+    "Amivantamab + lazertinib",
+    "Osimertinib"
+   ],
+   "endpoint": "PFS",
+   "result": "mPFS 23.7 vs 16.6 mo (HR 0.70); OS HR 0.75",
+   "takeaway": "Amivantamab-lazertinib is a first-line alternative; more toxicity (VTE prophylaxis, skin).",
+   "tags": [
+    "EGFR",
+    "amivantamab",
+    "bispecific"
+   ],
+   "site": "Lung",
+   "id": "mariposa"
+  },
+  {
+   "name": "ALEX",
+   "setting": "Metastatic 1L",
+   "modality": "Systemic",
+   "year": 2017,
+   "journal": "NEJM 2017; Ann Oncol 2020",
+   "design": "Phase 3, n=303",
+   "population": "ALK+ advanced NSCLC",
+   "arms": [
+    "Alectinib",
+    "Crizotinib"
+   ],
+   "endpoint": "PFS",
+   "result": "mPFS 34.8 vs 10.9 mo; CNS progression 12% vs 45%",
+   "takeaway": "Alectinib is a first-line standard for ALK+ NSCLC.",
+   "tags": [
+    "ALK",
+    "alectinib"
+   ],
+   "site": "Lung",
+   "id": "alex"
+  },
+  {
+   "name": "CROWN",
+   "setting": "Metastatic 1L",
+   "modality": "Systemic",
+   "year": 2020,
+   "journal": "NEJM 2020; JCO 2024",
+   "design": "Phase 3, n=296",
+   "population": "ALK+ advanced NSCLC",
+   "arms": [
+    "Lorlatinib",
+    "Crizotinib"
+   ],
+   "endpoint": "PFS",
+   "result": "5-y PFS 60% vs 8% (HR 0.19); intracranial progression strongly reduced",
+   "takeaway": "Lorlatinib offers the longest PFS in ALK+ disease; manage lipids and CNS effects.",
+   "tags": [
+    "ALK",
+    "lorlatinib"
+   ],
+   "site": "Lung",
+   "id": "crown"
+  },
+  {
+   "name": "KEYNOTE-024",
+   "setting": "Metastatic 1L",
+   "modality": "Systemic",
+   "year": 2016,
+   "journal": "NEJM 2016; JCO 2021",
+   "design": "Phase 3, n=305",
+   "population": "PD-L1 TPS ≥50%, no EGFR/ALK",
+   "arms": [
+    "Pembrolizumab",
+    "Platinum chemo"
+   ],
+   "endpoint": "PFS",
+   "result": "mPFS 10.3 vs 6.0 mo; 5-y OS 31.9% vs 16.3% (HR 0.62)",
+   "takeaway": "Pembrolizumab monotherapy for PD-L1 ≥50% NSCLC.",
+   "tags": [
+    "immunotherapy",
+    "PD-L1",
+    "pembrolizumab"
+   ],
+   "site": "Lung",
+   "id": "keynote-024"
+  },
+  {
+   "name": "KEYNOTE-189",
+   "setting": "Metastatic 1L",
+   "modality": "Systemic",
+   "year": 2018,
+   "journal": "NEJM 2018; JCO 2023",
+   "design": "Phase 3, n=616",
+   "population": "Non-squamous NSCLC, no EGFR/ALK",
+   "arms": [
+    "Pembrolizumab + pemetrexed-platinum",
+    "Placebo + pemetrexed-platinum"
+   ],
+   "endpoint": "OS, PFS",
+   "result": "5-y OS 19.4% vs 11.3% (HR 0.60) across PD-L1 levels",
+   "takeaway": "Chemo-IO standard for non-squamous NSCLC regardless of PD-L1.",
+   "tags": [
+    "immunotherapy",
+    "pembrolizumab",
+    "non-squamous"
+   ],
+   "site": "Lung",
+   "id": "keynote-189"
+  },
+  {
+   "name": "KEYNOTE-407",
+   "setting": "Metastatic 1L",
+   "modality": "Systemic",
+   "year": 2018,
+   "journal": "NEJM 2018",
+   "design": "Phase 3, n=559",
+   "population": "Squamous NSCLC",
+   "arms": [
+    "Pembrolizumab + carboplatin-(nab)paclitaxel",
+    "Placebo + chemo"
+   ],
+   "endpoint": "OS, PFS",
+   "result": "mOS 15.9 vs 11.3 mo (HR 0.64)",
+   "takeaway": "Chemo-IO standard for squamous NSCLC.",
+   "tags": [
+    "immunotherapy",
+    "pembrolizumab",
+    "squamous"
+   ],
+   "site": "Lung",
+   "id": "keynote-407"
+  },
+  {
+   "name": "CheckMate 9LA",
+   "setting": "Metastatic 1L",
+   "modality": "Systemic",
+   "year": 2021,
+   "journal": "Lancet Oncol 2021",
+   "design": "Phase 3, n=719",
+   "population": "Advanced NSCLC, no EGFR/ALK",
+   "arms": [
+    "Nivolumab + ipilimumab + 2 cycles chemo",
+    "Chemo ×4"
+   ],
+   "endpoint": "OS",
+   "result": "mOS 15.6 vs 10.9 mo (HR 0.66)",
+   "takeaway": "Dual IO + limited chemo is a first-line option.",
+   "tags": [
+    "immunotherapy",
+    "nivolumab",
+    "ipilimumab"
+   ],
+   "site": "Lung",
+   "id": "checkmate-9la"
+  },
+  {
+   "name": "PARAMOUNT",
+   "setting": "Metastatic maintenance",
+   "modality": "Systemic",
+   "year": 2012,
+   "journal": "Lancet Oncol 2012; JCO 2013",
+   "design": "Phase 3, n=539",
+   "population": "Non-squamous NSCLC after cisplatin-pemetrexed induction",
+   "arms": [
+    "Pemetrexed maintenance",
+    "Placebo"
+   ],
+   "endpoint": "PFS, OS",
+   "result": "mOS 13.9 vs 11.0 mo (HR 0.78)",
+   "takeaway": "Continuation pemetrexed maintenance improves survival.",
+   "tags": [
+    "maintenance",
+    "pemetrexed"
+   ],
+   "site": "Lung",
+   "id": "paramount"
+  },
+  {
+   "name": "Scagliotti cis-pem vs cis-gem",
+   "setting": "Metastatic 1L",
+   "modality": "Systemic",
+   "year": 2008,
+   "journal": "JCO 2008",
+   "design": "Phase 3 non-inferiority, n=1,725",
+   "population": "Advanced NSCLC",
+   "arms": [
+    "Cisplatin-pemetrexed",
+    "Cisplatin-gemcitabine"
+   ],
+   "endpoint": "OS",
+   "result": "OS equal overall; adenocarcinoma 12.6 vs 10.9 mo, squamous worse with pemetrexed",
+   "takeaway": "Histology guides chemo: pemetrexed for non-squamous only.",
+   "tags": [
+    "chemotherapy",
+    "histology"
+   ],
+   "site": "Lung",
+   "id": "scagliotti-cis-pem-vs-cis-gem"
+  },
+  {
+   "name": "Temel early palliative care",
+   "setting": "Metastatic",
+   "modality": "Supportive",
+   "year": 2010,
+   "journal": "NEJM 2010",
+   "design": "RCT, n=151",
+   "population": "Newly diagnosed metastatic NSCLC",
+   "arms": [
+    "Early palliative care + standard care",
+    "Standard care"
+   ],
+   "endpoint": "Quality of life",
+   "result": "Better QoL, less depression, less aggressive end-of-life care; mOS 11.6 vs 8.9 mo",
+   "takeaway": "Integrate palliative care early in metastatic disease.",
+   "tags": [
+    "palliative care",
+    "supportive"
+   ],
+   "site": "Lung",
+   "id": "temel-early-palliative-care"
+  },
+  {
+   "name": "CodeBreaK 200",
+   "setting": "Metastatic 2L",
+   "modality": "Systemic",
+   "year": 2023,
+   "journal": "Lancet 2023",
+   "design": "Phase 3, n=345",
+   "population": "KRAS G12C NSCLC after platinum and IO",
+   "arms": [
+    "Sotorasib",
+    "Docetaxel"
+   ],
+   "endpoint": "PFS",
+   "result": "mPFS 5.6 vs 4.5 mo (HR 0.66); no OS difference",
+   "takeaway": "KRAS G12C inhibitor is a second-line option.",
+   "tags": [
+    "KRAS",
+    "sotorasib"
+   ],
+   "site": "Lung",
+   "id": "codebreak-200"
+  },
+  {
+   "name": "LIBRETTO-431",
+   "setting": "Metastatic 1L",
+   "modality": "Systemic",
+   "year": 2023,
+   "journal": "NEJM 2023",
+   "design": "Phase 3, n=261",
+   "population": "RET fusion-positive NSCLC",
+   "arms": [
+    "Selpercatinib",
+    "Platinum-pemetrexed ± pembrolizumab"
+   ],
+   "endpoint": "PFS",
+   "result": "mPFS 24.8 vs 11.2 mo (HR 0.46)",
+   "takeaway": "Selpercatinib first line for RET-fusion NSCLC.",
+   "tags": [
+    "RET",
+    "selpercatinib"
+   ],
+   "site": "Lung",
+   "id": "libretto-431"
+  },
+  {
+   "name": "DESTINY-Lung01/02",
+   "setting": "Metastatic 2L",
+   "modality": "Systemic",
+   "year": 2022,
+   "journal": "NEJM 2022; JCO 2023",
+   "design": "Phase 2",
+   "population": "HER2 (ERBB2)-mutant NSCLC",
+   "arms": [
+    "Trastuzumab deruxtecan 5.4 mg/kg (DL-02)"
+   ],
+   "endpoint": "ORR",
+   "result": "ORR 49% at 5.4 mg/kg; ILD ~13% (lower than 6.4 mg/kg)",
+   "takeaway": "T-DXd for pretreated HER2-mutant NSCLC.",
+   "tags": [
+    "HER2",
+    "ADC",
+    "T-DXd"
+   ],
+   "site": "Lung",
+   "id": "destiny-lung01-02"
+  },
+  {
+   "name": "CONVERT",
+   "setting": "Limited-stage SCLC",
+   "modality": "Radiotherapy",
+   "year": 2017,
+   "journal": "Lancet Oncol 2017",
+   "design": "Phase 3, n=547",
+   "population": "Limited-stage SCLC",
+   "arms": [
+    "45 Gy/30 fr BID",
+    "66 Gy/33 fr once daily"
+   ],
+   "endpoint": "OS",
+   "result": "mOS 30 vs 25 mo (NS); 2-y OS 56% vs 51%; similar toxicity",
+   "takeaway": "45 Gy BID remains standard; 66 Gy daily is an alternative.",
+   "tags": [
+    "SCLC",
+    "radiotherapy",
+    "fractionation"
+   ],
+   "site": "Lung",
+   "id": "convert"
+  },
+  {
+   "name": "Turrisi INT 0096",
+   "setting": "Limited-stage SCLC",
+   "modality": "Radiotherapy",
+   "year": 1999,
+   "journal": "NEJM 1999",
+   "design": "Phase 3, n=417",
+   "population": "Limited-stage SCLC",
+   "arms": [
+    "45 Gy BID + cisplatin-etoposide",
+    "45 Gy daily + cisplatin-etoposide"
+   ],
+   "endpoint": "OS",
+   "result": "5-y OS 26% vs 16%",
+   "takeaway": "Twice-daily concurrent thoracic RT established.",
+   "tags": [
+    "SCLC",
+    "radiotherapy",
+    "hyperfractionation"
+   ],
+   "site": "Lung",
+   "id": "turrisi-int-0096"
+  },
+  {
+   "name": "Aupérin PCI meta-analysis",
+   "setting": "Limited-stage SCLC",
+   "modality": "Radiotherapy",
+   "year": 1999,
+   "journal": "NEJM 1999",
+   "design": "Meta-analysis, n=987",
+   "population": "SCLC in complete remission",
+   "arms": [
+    "Prophylactic cranial irradiation",
+    "No PCI"
+   ],
+   "endpoint": "OS",
+   "result": "3-y OS 20.7% vs 15.3%; brain mets reduced by 54%",
+   "takeaway": "PCI after CR in limited-stage SCLC (MRI surveillance increasingly used).",
+   "tags": [
+    "SCLC",
+    "PCI",
+    "radiotherapy"
+   ],
+   "site": "Lung",
+   "id": "aup-rin-pci-meta-analysis"
+  },
+  {
+   "name": "ADRIATIC",
+   "setting": "Limited-stage SCLC",
+   "modality": "Combined",
+   "year": 2024,
+   "journal": "NEJM 2024",
+   "design": "Phase 3, n=730",
+   "population": "LS-SCLC without progression after concurrent chemoRT",
+   "arms": [
+    "Durvalumab consolidation",
+    "Placebo"
+   ],
+   "endpoint": "OS, PFS",
+   "result": "mOS 55.9 vs 33.4 mo (HR 0.73)",
+   "takeaway": "Consolidation durvalumab is standard after chemoRT in LS-SCLC.",
+   "tags": [
+    "SCLC",
+    "immunotherapy",
+    "radiotherapy"
+   ],
+   "site": "Lung",
+   "id": "adriatic"
+  },
+  {
+   "name": "IMpower133",
+   "setting": "Extensive-stage SCLC",
+   "modality": "Systemic",
+   "year": 2018,
+   "journal": "NEJM 2018",
+   "design": "Phase 3, n=403",
+   "population": "Untreated ES-SCLC",
+   "arms": [
+    "Atezolizumab + carboplatin-etoposide",
+    "Placebo + chemo"
+   ],
+   "endpoint": "OS",
+   "result": "mOS 12.3 vs 10.3 mo (HR 0.70)",
+   "takeaway": "Chemo-IO is first-line standard for ES-SCLC.",
+   "tags": [
+    "SCLC",
+    "immunotherapy",
+    "atezolizumab"
+   ],
+   "site": "Lung",
+   "id": "impower133"
+  },
+  {
+   "name": "CASPIAN",
+   "setting": "Extensive-stage SCLC",
+   "modality": "Systemic",
+   "year": 2019,
+   "journal": "Lancet 2019",
+   "design": "Phase 3, n=805",
+   "population": "Untreated ES-SCLC",
+   "arms": [
+    "Durvalumab + platinum-etoposide",
+    "Platinum-etoposide"
+   ],
+   "endpoint": "OS",
+   "result": "mOS 13.0 vs 10.3 mo (HR 0.73)",
+   "takeaway": "Durvalumab + EP is an alternative first-line chemo-IO.",
+   "tags": [
+    "SCLC",
+    "immunotherapy",
+    "durvalumab"
+   ],
+   "site": "Lung",
+   "id": "caspian"
+  },
+  {
+   "name": "CREST (Slotman)",
+   "setting": "Extensive-stage SCLC",
+   "modality": "Radiotherapy",
+   "year": 2015,
+   "journal": "Lancet 2015",
+   "design": "Phase 3, n=498",
+   "population": "ES-SCLC responding to chemo",
+   "arms": [
+    "Thoracic RT 30 Gy/10 + PCI",
+    "PCI alone"
+   ],
+   "endpoint": "1-y OS",
+   "result": "1-y OS 33% vs 28% (NS); 2-y OS 13% vs 3%",
+   "takeaway": "Consolidative thoracic RT considered for residual thoracic disease after chemo.",
+   "tags": [
+    "SCLC",
+    "radiotherapy"
+   ],
+   "site": "Lung",
+   "id": "crest-slotman"
+  },
+  {
+   "name": "DeLLphi-304",
+   "setting": "Extensive-stage SCLC",
+   "modality": "Systemic",
+   "year": 2025,
+   "journal": "NEJM 2025",
+   "design": "Phase 3, n=509",
+   "population": "SCLC after platinum chemo",
+   "arms": [
+    "Tarlatamab",
+    "Chemo (topotecan, lurbinectedin or amrubicin)"
+   ],
+   "endpoint": "OS",
+   "result": "mOS 13.6 vs 8.3 mo (HR 0.60)",
+   "takeaway": "Tarlatamab is the second-line standard for SCLC.",
+   "tags": [
+    "SCLC",
+    "bispecific",
+    "DLL3"
+   ],
+   "site": "Lung",
+   "id": "dellphi-304"
+  },
+  {
+   "name": "CROSS",
+   "setting": "Neoadjuvant",
+   "modality": "Combined",
+   "year": 2012,
+   "journal": "NEJM 2012; Lancet Oncol 2015",
+   "design": "Phase 3, n=368",
+   "population": "Resectable oesophageal/GEJ cancer",
+   "arms": [
+    "Carboplatin-paclitaxel + 41.4 Gy/23 fr → surgery",
+    "Surgery alone"
+   ],
+   "endpoint": "OS",
+   "result": "mOS 49.4 vs 24.0 mo; pCR 29% (49% in SCC)",
+   "takeaway": "Neoadjuvant chemoradiotherapy (CROSS) is standard, especially for SCC.",
+   "tags": [
+    "radiotherapy",
+    "chemoradiotherapy",
+    "oesophageal"
+   ],
+   "site": "Oesophagus & Stomach",
+   "id": "cross"
+  },
+  {
+   "name": "CheckMate 577",
+   "setting": "Adjuvant",
+   "modality": "Systemic",
+   "year": 2021,
+   "journal": "NEJM 2021",
+   "design": "Phase 3, n=794",
+   "population": "Oesophageal/GEJ cancer with residual disease after CROSS + surgery",
+   "arms": [
+    "Nivolumab 1 y",
+    "Placebo"
+   ],
+   "endpoint": "DFS",
+   "result": "mDFS 22.4 vs 11.0 mo (HR 0.69)",
+   "takeaway": "Adjuvant nivolumab for residual pathologic disease after neoadjuvant chemoRT.",
+   "tags": [
+    "immunotherapy",
+    "nivolumab",
+    "residual disease"
+   ],
+   "site": "Oesophagus & Stomach",
+   "id": "checkmate-577"
+  },
+  {
+   "name": "FLOT4",
+   "setting": "Perioperative",
+   "modality": "Systemic",
+   "year": 2019,
+   "journal": "Lancet 2019",
+   "design": "Phase 3, n=716",
+   "population": "Resectable gastric/GEJ adenocarcinoma ≥cT2 or N+",
+   "arms": [
+    "FLOT ×4 → surgery → FLOT ×4",
+    "ECF/ECX ×3 → surgery → ×3"
+   ],
+   "endpoint": "OS",
+   "result": "mOS 50 vs 35 mo (HR 0.77)",
+   "takeaway": "Perioperative FLOT is standard for resectable gastric/GEJ adenocarcinoma.",
+   "tags": [
+    "perioperative",
+    "FLOT",
+    "gastric"
+   ],
+   "site": "Oesophagus & Stomach",
+   "id": "flot4"
+  },
+  {
+   "name": "ESOPEC",
+   "setting": "Perioperative",
+   "modality": "Systemic",
+   "year": 2025,
+   "journal": "NEJM 2025",
+   "design": "Phase 3, n=438",
+   "population": "Resectable oesophageal adenocarcinoma",
+   "arms": [
+    "Perioperative FLOT",
+    "CROSS chemoradiotherapy"
+   ],
+   "endpoint": "OS",
+   "result": "3-y OS 57.4% vs 50.7% (HR 0.70)",
+   "takeaway": "FLOT preferred over CROSS for oesophageal adenocarcinoma.",
+   "tags": [
+    "FLOT",
+    "CROSS",
+    "adenocarcinoma"
+   ],
+   "site": "Oesophagus & Stomach",
+   "id": "esopec"
+  },
+  {
+   "name": "MAGIC",
+   "setting": "Perioperative",
+   "modality": "Systemic",
+   "year": 2006,
+   "journal": "NEJM 2006",
+   "design": "Phase 3, n=503",
+   "population": "Resectable gastric/lower oesophageal adenocarcinoma",
+   "arms": [
+    "Perioperative ECF",
+    "Surgery alone"
+   ],
+   "endpoint": "OS",
+   "result": "5-y OS 36% vs 23%",
+   "takeaway": "Established perioperative chemotherapy in gastric cancer.",
+   "tags": [
+    "perioperative",
+    "gastric"
+   ],
+   "site": "Oesophagus & Stomach",
+   "id": "magic"
+  },
+  {
+   "name": "INT-0116 (Macdonald)",
+   "setting": "Adjuvant",
+   "modality": "Combined",
+   "year": 2001,
+   "journal": "NEJM 2001",
+   "design": "Phase 3, n=556",
+   "population": "Resected gastric/GEJ adenocarcinoma",
+   "arms": [
+    "5-FU/LV + 45 Gy chemoRT",
+    "Surgery alone"
+   ],
+   "endpoint": "OS",
+   "result": "mOS 36 vs 27 mo",
+   "takeaway": "Adjuvant chemoRT benefit, mainly after limited (D0/D1) dissection.",
+   "tags": [
+    "radiotherapy",
+    "adjuvant",
+    "gastric"
+   ],
+   "site": "Oesophagus & Stomach",
+   "id": "int-0116-macdonald"
+  },
+  {
+   "name": "CLASSIC",
+   "setting": "Adjuvant",
+   "modality": "Systemic",
+   "year": 2012,
+   "journal": "Lancet 2012/2014",
+   "design": "Phase 3, n=1,035",
+   "population": "Stage II–IIIB gastric cancer after D2 gastrectomy",
+   "arms": [
+    "CAPOX 6 months",
+    "Observation"
+   ],
+   "endpoint": "DFS",
+   "result": "5-y DFS 68% vs 53%; 5-y OS 78% vs 69%",
+   "takeaway": "Adjuvant CAPOX after D2 gastrectomy (Asian standard).",
+   "tags": [
+    "adjuvant",
+    "CAPOX",
+    "gastric"
+   ],
+   "site": "Oesophagus & Stomach",
+   "id": "classic"
+  },
+  {
+   "name": "ToGA",
+   "setting": "Metastatic 1L",
+   "modality": "Systemic",
+   "year": 2010,
+   "journal": "Lancet 2010",
+   "design": "Phase 3, n=594",
+   "population": "HER2+ advanced gastric/GEJ",
+   "arms": [
+    "Trastuzumab + cisplatin-fluoropyrimidine",
+    "Chemo alone"
+   ],
+   "endpoint": "OS",
+   "result": "mOS 13.8 vs 11.1 mo; 16.0 vs 11.8 mo in IHC3+ / IHC2+FISH+",
+   "takeaway": "Test HER2 in all advanced gastric cancer; add trastuzumab.",
+   "tags": [
+    "HER2",
+    "trastuzumab",
+    "gastric"
+   ],
+   "site": "Oesophagus & Stomach",
+   "id": "toga"
+  },
+  {
+   "name": "KEYNOTE-811",
+   "setting": "Metastatic 1L",
+   "modality": "Systemic",
+   "year": 2023,
+   "journal": "Nature 2021; Lancet 2023",
+   "design": "Phase 3, n=698",
+   "population": "HER2+ advanced gastric/GEJ",
+   "arms": [
+    "Pembrolizumab + trastuzumab + chemo",
+    "Placebo + trastuzumab + chemo"
+   ],
+   "endpoint": "PFS, OS",
+   "result": "ORR 74% vs 52%; benefit confined to PD-L1 CPS ≥1 (OS HR 0.79)",
+   "takeaway": "Add pembrolizumab for HER2+ CPS ≥1 disease.",
+   "tags": [
+    "HER2",
+    "immunotherapy",
+    "gastric"
+   ],
+   "site": "Oesophagus & Stomach",
+   "id": "keynote-811"
+  },
+  {
+   "name": "CheckMate 649",
+   "setting": "Metastatic 1L",
+   "modality": "Systemic",
+   "year": 2021,
+   "journal": "Lancet 2021",
+   "design": "Phase 3, n=1,581 (chemo-nivo arms)",
+   "population": "HER2− advanced gastric/GEJ/oesophageal adenocarcinoma",
+   "arms": [
+    "Nivolumab + FOLFOX/CAPOX",
+    "Chemo alone"
+   ],
+   "endpoint": "OS (CPS ≥5)",
+   "result": "CPS ≥5: mOS 14.4 vs 11.1 mo (HR 0.71)",
+   "takeaway": "Chemo-nivolumab first line, greatest benefit with higher CPS.",
+   "tags": [
+    "immunotherapy",
+    "nivolumab",
+    "PD-L1"
+   ],
+   "site": "Oesophagus & Stomach",
+   "id": "checkmate-649"
+  },
+  {
+   "name": "SPOTLIGHT / GLOW",
+   "setting": "Metastatic 1L",
+   "modality": "Systemic",
+   "year": 2023,
+   "journal": "Lancet 2023; Nat Med 2023",
+   "design": "Phase 3s, n=565 / 507",
+   "population": "Claudin 18.2-positive, HER2− gastric/GEJ",
+   "arms": [
+    "Zolbetuximab + FOLFOX/CAPOX",
+    "Placebo + chemo"
+   ],
+   "endpoint": "PFS",
+   "result": "SPOTLIGHT mOS 18.2 vs 15.5 mo (HR 0.75)",
+   "takeaway": "Test CLDN18.2; zolbetuximab is a first-line option (nausea/vomiting common).",
+   "tags": [
+    "CLDN18.2",
+    "zolbetuximab"
+   ],
+   "site": "Oesophagus & Stomach",
+   "id": "spotlight-glow"
+  },
+  {
+   "name": "RAINBOW",
+   "setting": "Metastatic 2L",
+   "modality": "Systemic",
+   "year": 2014,
+   "journal": "Lancet Oncol 2014",
+   "design": "Phase 3, n=665",
+   "population": "Advanced gastric after first-line platinum/FP",
+   "arms": [
+    "Ramucirumab + paclitaxel",
+    "Placebo + paclitaxel"
+   ],
+   "endpoint": "OS",
+   "result": "mOS 9.6 vs 7.4 mo (HR 0.81)",
+   "takeaway": "Paclitaxel-ramucirumab is the second-line standard.",
+   "tags": [
+    "ramucirumab",
+    "anti-VEGFR2"
+   ],
+   "site": "Oesophagus & Stomach",
+   "id": "rainbow"
+  },
+  {
+   "name": "CheckMate 648 / KEYNOTE-590",
+   "setting": "Metastatic 1L",
+   "modality": "Systemic",
+   "year": 2021,
+   "journal": "NEJM 2022; Lancet 2021",
+   "design": "Phase 3s",
+   "population": "Advanced oesophageal SCC (± adenocarcinoma in KN-590)",
+   "arms": [
+    "Nivolumab or pembrolizumab + chemo",
+    "Chemo alone"
+   ],
+   "endpoint": "OS",
+   "result": "KN-590 CPS ≥10: mOS 13.5 vs 9.4 mo (HR 0.62)",
+   "takeaway": "Chemo-IO first line for oesophageal SCC, best with PD-L1 positivity.",
+   "tags": [
+    "immunotherapy",
+    "oesophageal SCC"
+   ],
+   "site": "Oesophagus & Stomach",
+   "id": "checkmate-648-keynote-590"
+  },
+  {
+   "name": "RTOG 85-01",
+   "setting": "Definitive",
+   "modality": "Radiotherapy",
+   "year": 1992,
+   "journal": "NEJM 1992; JAMA 1999",
+   "design": "Phase 3, n=129",
+   "population": "Oesophageal cancer, non-surgical",
+   "arms": [
+    "5-FU/cisplatin + 50 Gy",
+    "RT alone 64 Gy"
+   ],
+   "endpoint": "OS",
+   "result": "5-y OS 26% vs 0%",
+   "takeaway": "Definitive chemoRT (50–50.4 Gy) is standard non-surgical therapy.",
+   "tags": [
+    "radiotherapy",
+    "chemoradiotherapy",
+    "oesophageal"
+   ],
+   "site": "Oesophagus & Stomach",
+   "id": "rtog-85-01"
+  },
+  {
+   "name": "INT 0123",
+   "setting": "Definitive",
+   "modality": "Radiotherapy",
+   "year": 2002,
+   "journal": "JCO 2002",
+   "design": "Phase 3, n=236",
+   "population": "Oesophageal cancer, definitive chemoRT",
+   "arms": [
+    "64.8 Gy + chemo",
+    "50.4 Gy + chemo"
+   ],
+   "endpoint": "OS, local control",
+   "result": "No benefit from 64.8 Gy; more treatment deaths",
+   "takeaway": "50.4 Gy remains the standard definitive dose.",
+   "tags": [
+    "radiotherapy",
+    "dose escalation",
+    "oesophageal"
+   ],
+   "site": "Oesophagus & Stomach",
+   "id": "int-0123"
+  },
+  {
+   "name": "MOSAIC",
+   "setting": "Adjuvant",
+   "modality": "Systemic",
+   "year": 2004,
+   "journal": "NEJM 2004; JCO 2009",
+   "design": "Phase 3, n=2,246",
+   "population": "Resected stage II–III colon cancer",
+   "arms": [
+    "FOLFOX4",
+    "LV5FU2"
+   ],
+   "endpoint": "DFS",
+   "result": "Stage III 6-y OS 72.9% vs 68.7% (HR 0.80)",
+   "takeaway": "Oxaliplatin-based adjuvant therapy is standard for stage III colon cancer.",
+   "tags": [
+    "adjuvant",
+    "oxaliplatin",
+    "colon"
+   ],
+   "site": "Colorectal",
+   "id": "mosaic"
+  },
+  {
+   "name": "IDEA",
+   "setting": "Adjuvant",
+   "modality": "Systemic",
+   "year": 2018,
+   "journal": "NEJM 2018; Lancet Oncol 2020",
+   "design": "Pooled analysis of 6 phase 3s, n=12,834",
+   "population": "Stage III colon cancer",
+   "arms": [
+    "3 months FOLFOX/CAPOX",
+    "6 months"
+   ],
+   "endpoint": "DFS (non-inferiority)",
+   "result": "Low-risk (T1–3 N1): 3 mo CAPOX non-inferior; less neuropathy",
+   "takeaway": "3 months CAPOX for low-risk stage III; 6 months for high-risk (T4 or N2).",
+   "tags": [
+    "adjuvant",
+    "duration",
+    "colon"
+   ],
+   "site": "Colorectal",
+   "id": "idea"
+  },
+  {
+   "name": "ATOMIC",
+   "setting": "Adjuvant",
+   "modality": "Systemic",
+   "year": 2025,
+   "journal": "NEJM 2025",
+   "design": "Phase 3, n=712",
+   "population": "Resected stage III dMMR colon cancer",
+   "arms": [
+    "mFOLFOX6 + atezolizumab",
+    "mFOLFOX6"
+   ],
+   "endpoint": "DFS",
+   "result": "3-y DFS 86.4% vs 76.6% (HR 0.50)",
+   "takeaway": "Adjuvant atezolizumab + FOLFOX for stage III dMMR colon cancer.",
+   "tags": [
+    "dMMR",
+    "immunotherapy",
+    "adjuvant"
+   ],
+   "site": "Colorectal",
+   "id": "atomic"
+  },
+  {
+   "name": "NICHE-2",
+   "setting": "Neoadjuvant",
+   "modality": "Systemic",
+   "year": 2024,
+   "journal": "NEJM 2024",
+   "design": "Phase 2, n=111",
+   "population": "Locally advanced dMMR colon cancer",
+   "arms": [
+    "Nivolumab + ipilimumab (1 cycle) ×2 doses → surgery"
+   ],
+   "endpoint": "Safety, 3-y DFS",
+   "result": "Major pathologic response 95%, pCR 68%; no recurrences at 2 y",
+   "takeaway": "Short neoadjuvant IO is highly active in dMMR colon cancer.",
+   "tags": [
+    "dMMR",
+    "immunotherapy",
+    "neoadjuvant"
+   ],
+   "site": "Colorectal",
+   "id": "niche-2"
+  },
+  {
+   "name": "Cercek dostarlimab dMMR rectal",
+   "setting": "Neoadjuvant",
+   "modality": "Systemic",
+   "year": 2022,
+   "journal": "NEJM 2022/2025",
+   "design": "Phase 2",
+   "population": "Stage II–III dMMR rectal cancer",
+   "arms": [
+    "Dostarlimab 6 months"
+   ],
+   "endpoint": "Clinical complete response",
+   "result": "cCR 100% in first 12, sustained in expanded cohort; organ preservation without RT or surgery",
+   "takeaway": "Anti-PD-1 alone can replace chemoRT and surgery in dMMR rectal cancer.",
+   "tags": [
+    "dMMR",
+    "immunotherapy",
+    "organ preservation"
+   ],
+   "site": "Colorectal",
+   "id": "cercek-dostarlimab-dmmr-rectal"
+  },
+  {
+   "name": "German CAO/ARO/AIO-94",
+   "setting": "Neoadjuvant",
+   "modality": "Radiotherapy",
+   "year": 2004,
+   "journal": "NEJM 2004; JCO 2012",
+   "design": "Phase 3, n=823",
+   "population": "Stage II–III rectal cancer",
+   "arms": [
+    "Preoperative chemoRT 50.4 Gy",
+    "Postoperative chemoRT"
+   ],
+   "endpoint": "OS",
+   "result": "Local recurrence 6% vs 13% (5-y); no OS difference; less toxicity preop",
+   "takeaway": "Preoperative chemoradiotherapy is preferred over postoperative.",
+   "tags": [
+    "radiotherapy",
+    "rectal",
+    "chemoradiotherapy"
+   ],
+   "site": "Colorectal",
+   "id": "german-cao-aro-aio-94"
+  },
+  {
+   "name": "Dutch TME",
+   "setting": "Neoadjuvant",
+   "modality": "Radiotherapy",
+   "year": 2001,
+   "journal": "NEJM 2001; Lancet Oncol 2011",
+   "design": "Phase 3, n=1,861",
+   "population": "Resectable rectal cancer",
+   "arms": [
+    "Short-course RT 25 Gy/5 fr + TME",
+    "TME alone"
+   ],
+   "endpoint": "Local recurrence",
+   "result": "10-y local recurrence 5% vs 11%",
+   "takeaway": "Short-course RT reduces local recurrence even with optimal TME surgery.",
+   "tags": [
+    "radiotherapy",
+    "short-course",
+    "rectal"
+   ],
+   "site": "Colorectal",
+   "id": "dutch-tme"
+  },
+  {
+   "name": "RAPIDO",
+   "setting": "Neoadjuvant (TNT)",
+   "modality": "Combined",
+   "year": 2021,
+   "journal": "Lancet Oncol 2021",
+   "design": "Phase 3, n=920",
+   "population": "High-risk locally advanced rectal cancer",
+   "arms": [
+    "Short-course RT → 18 weeks CAPOX/FOLFOX → TME",
+    "Long-course chemoRT → TME ± adjuvant chemo"
+   ],
+   "endpoint": "Disease-related treatment failure",
+   "result": "3-y DrTF 23.7% vs 30.4% (HR 0.75); pCR 28% vs 14%; later higher locoregional failure",
+   "takeaway": "Total neoadjuvant therapy with short-course RT is a standard option.",
+   "tags": [
+    "TNT",
+    "radiotherapy",
+    "rectal"
+   ],
+   "site": "Colorectal",
+   "id": "rapido"
+  },
+  {
+   "name": "PRODIGE 23",
+   "setting": "Neoadjuvant (TNT)",
+   "modality": "Combined",
+   "year": 2021,
+   "journal": "Lancet Oncol 2021",
+   "design": "Phase 3, n=461",
+   "population": "cT3–4 rectal cancer",
+   "arms": [
+    "mFOLFIRINOX ×6 → chemoRT → TME → adjuvant chemo",
+    "ChemoRT → TME → adjuvant chemo"
+   ],
+   "endpoint": "DFS",
+   "result": "3-y DFS 76% vs 69% (HR 0.69); pCR 28% vs 12%; OS benefit at 7 y",
+   "takeaway": "Induction FOLFIRINOX TNT improves outcomes in rectal cancer.",
+   "tags": [
+    "TNT",
+    "FOLFIRINOX",
+    "rectal"
+   ],
+   "site": "Colorectal",
+   "id": "prodige-23"
+  },
+  {
+   "name": "OPRA",
+   "setting": "Neoadjuvant (TNT)",
+   "modality": "Combined",
+   "year": 2022,
+   "journal": "JCO 2022",
+   "design": "Randomised phase 2, n=324",
+   "population": "Stage II–III rectal cancer",
+   "arms": [
+    "Induction chemo → chemoRT",
+    "ChemoRT → consolidation chemo"
+   ],
+   "endpoint": "3-y DFS; TME-free survival",
+   "result": "TME-free survival 53% (consolidation) vs 41%; DFS similar",
+   "takeaway": "Consolidation-chemo TNT enables watch-and-wait organ preservation for ~half.",
+   "tags": [
+    "TNT",
+    "watch and wait",
+    "organ preservation"
+   ],
+   "site": "Colorectal",
+   "id": "opra"
+  },
+  {
+   "name": "PROSPECT",
+   "setting": "Neoadjuvant",
+   "modality": "Systemic",
+   "year": 2023,
+   "journal": "NEJM 2023",
+   "design": "Phase 3 non-inferiority, n=1,194",
+   "population": "cT2N+ / cT3N0–1 rectal cancer suitable for sphincter-sparing surgery",
+   "arms": [
+    "Neoadjuvant FOLFOX (chemoRT only if poor response)",
+    "Neoadjuvant chemoRT"
+   ],
+   "endpoint": "DFS",
+   "result": "5-y DFS 80.8% vs 78.6% (non-inferior); 91% avoided RT",
+   "takeaway": "Selective omission of pelvic RT in intermediate-risk rectal cancer.",
+   "tags": [
+    "rectal",
+    "RT omission"
+   ],
+   "site": "Colorectal",
+   "id": "prospect"
+  },
+  {
+   "name": "CRYSTAL",
+   "setting": "Metastatic 1L",
+   "modality": "Systemic",
+   "year": 2009,
+   "journal": "NEJM 2009; JCO 2011",
+   "design": "Phase 3, n=1,198",
+   "population": "mCRC, first line",
+   "arms": [
+    "FOLFIRI + cetuximab",
+    "FOLFIRI"
+   ],
+   "endpoint": "PFS",
+   "result": "KRAS wild-type: mOS 23.5 vs 20.0 mo",
+   "takeaway": "Anti-EGFR benefit restricted to RAS wild-type tumours.",
+   "tags": [
+    "anti-EGFR",
+    "cetuximab",
+    "RAS"
+   ],
+   "site": "Colorectal",
+   "id": "crystal"
+  },
+  {
+   "name": "FIRE-3 / CALGB 80405",
+   "setting": "Metastatic 1L",
+   "modality": "Systemic",
+   "year": 2014,
+   "journal": "Lancet Oncol 2014; JAMA 2017",
+   "design": "Phase 3s",
+   "population": "RAS wild-type mCRC",
+   "arms": [
+    "Chemo + cetuximab",
+    "Chemo + bevacizumab"
+   ],
+   "endpoint": "ORR (FIRE-3), OS (CALGB)",
+   "result": "Left-sided primaries: OS favoured anti-EGFR; right-sided favoured bevacizumab",
+   "takeaway": "Primary tumour sidedness guides biologic choice in RAS wild-type mCRC.",
+   "tags": [
+    "sidedness",
+    "anti-EGFR",
+    "bevacizumab"
+   ],
+   "site": "Colorectal",
+   "id": "fire-3-calgb-80405"
+  },
+  {
+   "name": "PARADIGM",
+   "setting": "Metastatic 1L",
+   "modality": "Systemic",
+   "year": 2023,
+   "journal": "JAMA 2023",
+   "design": "Phase 3, n=802",
+   "population": "RAS wild-type mCRC",
+   "arms": [
+    "mFOLFOX6 + panitumumab",
+    "mFOLFOX6 + bevacizumab"
+   ],
+   "endpoint": "OS (left-sided)",
+   "result": "Left-sided: mOS 37.9 vs 34.3 mo (HR 0.82)",
+   "takeaway": "Prospectively confirmed anti-EGFR for left-sided RAS wild-type mCRC.",
+   "tags": [
+    "anti-EGFR",
+    "panitumumab",
+    "sidedness"
+   ],
+   "site": "Colorectal",
+   "id": "paradigm"
+  },
+  {
+   "name": "KEYNOTE-177",
+   "setting": "Metastatic 1L",
+   "modality": "Systemic",
+   "year": 2020,
+   "journal": "NEJM 2020; Lancet Oncol 2022",
+   "design": "Phase 3, n=307",
+   "population": "MSI-H/dMMR mCRC",
+   "arms": [
+    "Pembrolizumab",
+    "Chemo ± bevacizumab/cetuximab"
+   ],
+   "endpoint": "PFS",
+   "result": "mPFS 16.5 vs 8.2 mo (HR 0.60)",
+   "takeaway": "Pembrolizumab is first-line standard for MSI-H mCRC.",
+   "tags": [
+    "MSI-H",
+    "immunotherapy",
+    "pembrolizumab"
+   ],
+   "site": "Colorectal",
+   "id": "keynote-177"
+  },
+  {
+   "name": "CheckMate 8HW",
+   "setting": "Metastatic 1L",
+   "modality": "Systemic",
+   "year": 2024,
+   "journal": "NEJM 2024",
+   "design": "Phase 3",
+   "population": "MSI-H/dMMR mCRC",
+   "arms": [
+    "Nivolumab + ipilimumab",
+    "Chemo (1L) / nivolumab (all lines)"
+   ],
+   "endpoint": "PFS",
+   "result": "vs chemo: 2-y PFS 72% vs 14% (HR 0.21); better than nivolumab alone",
+   "takeaway": "Nivolumab + ipilimumab is a first-line option for MSI-H mCRC.",
+   "tags": [
+    "MSI-H",
+    "immunotherapy",
+    "ipilimumab"
+   ],
+   "site": "Colorectal",
+   "id": "checkmate-8hw"
+  },
+  {
+   "name": "BEACON CRC / BREAKWATER",
+   "setting": "Metastatic",
+   "modality": "Systemic",
+   "year": 2019,
+   "journal": "NEJM 2019; NEJM 2025",
+   "design": "Phase 3s",
+   "population": "BRAF V600E mCRC",
+   "arms": [
+    "Encorafenib + cetuximab (2L, BEACON); + mFOLFOX6 (1L, BREAKWATER)",
+    "Standard chemo"
+   ],
+   "endpoint": "OS, ORR",
+   "result": "BEACON mOS 9.3 vs 5.9 mo; BREAKWATER 1L ORR 61% vs 40%, OS benefit",
+   "takeaway": "Test BRAF; encorafenib + cetuximab (+ chemo first line) for BRAF V600E.",
+   "tags": [
+    "BRAF",
+    "encorafenib"
+   ],
+   "site": "Colorectal",
+   "id": "beacon-crc-breakwater"
+  },
+  {
+   "name": "DESTINY-CRC / MOUNTAINEER",
+   "setting": "Metastatic",
+   "modality": "Systemic",
+   "year": 2021,
+   "journal": "Lancet Oncol 2021/2023",
+   "design": "Phase 2s",
+   "population": "HER2+ RAS wild-type mCRC",
+   "arms": [
+    "Tucatinib + trastuzumab",
+    "or T-DXd"
+   ],
+   "endpoint": "ORR",
+   "result": "MOUNTAINEER ORR 38%; DESTINY-CRC02 ORR ~38% at 5.4 mg/kg",
+   "takeaway": "HER2-targeted options for HER2-amplified mCRC.",
+   "tags": [
+    "HER2",
+    "tucatinib"
+   ],
+   "site": "Colorectal",
+   "id": "destiny-crc-mountaineer"
+  },
+  {
+   "name": "CORRECT / RECOURSE / SUNLIGHT",
+   "setting": "Metastatic (refractory)",
+   "modality": "Systemic",
+   "year": 2023,
+   "journal": "Lancet 2013; NEJM 2015; NEJM 2023",
+   "design": "Phase 3s",
+   "population": "Refractory mCRC",
+   "arms": [
+    "Regorafenib / trifluridine-tipiracil / FTD-TPI + bevacizumab",
+    "Placebo / FTD-TPI"
+   ],
+   "endpoint": "OS",
+   "result": "SUNLIGHT: mOS 10.8 vs 7.5 mo (HR 0.61) adding bevacizumab",
+   "takeaway": "Trifluridine-tipiracil + bevacizumab is preferred third-line.",
+   "tags": [
+    "refractory",
+    "trifluridine-tipiracil"
+   ],
+   "site": "Colorectal",
+   "id": "correct-recourse-sunlight"
+  },
+  {
+   "name": "FRESCO-2",
+   "setting": "Metastatic (refractory)",
+   "modality": "Systemic",
+   "year": 2023,
+   "journal": "Lancet 2023",
+   "design": "Phase 3, n=691",
+   "population": "Refractory mCRC",
+   "arms": [
+    "Fruquintinib",
+    "Placebo"
+   ],
+   "endpoint": "OS",
+   "result": "mOS 7.4 vs 4.8 mo (HR 0.66)",
+   "takeaway": "Fruquintinib is a later-line option.",
+   "tags": [
+    "refractory",
+    "fruquintinib"
+   ],
+   "site": "Colorectal",
+   "id": "fresco-2"
+  },
+  {
+   "name": "EORTC 40983 (EPOC)",
+   "setting": "Perioperative (liver mets)",
+   "modality": "Systemic",
+   "year": 2008,
+   "journal": "Lancet 2008; Lancet Oncol 2013",
+   "design": "Phase 3, n=364",
+   "population": "Resectable CRC liver metastases (≤4)",
+   "arms": [
+    "Perioperative FOLFOX4 + surgery",
+    "Surgery alone"
+   ],
+   "endpoint": "PFS",
+   "result": "3-y PFS improved 7–9% absolute; no OS difference",
+   "takeaway": "Perioperative chemo is an option around liver metastasectomy.",
+   "tags": [
+    "liver metastases",
+    "perioperative"
+   ],
+   "site": "Colorectal",
+   "id": "eortc-40983-epoc"
+  },
+  {
+   "name": "ACT II",
+   "setting": "Definitive",
+   "modality": "Radiotherapy",
+   "year": 2013,
+   "journal": "Lancet Oncol 2013",
+   "design": "Phase 3 (2x2), n=940",
+   "population": "Anal SCC",
+   "arms": [
+    "MMC vs cisplatin with 5-FU + 50.4 Gy",
+    "± maintenance chemo"
+   ],
+   "endpoint": "Complete response, PFS",
+   "result": "No benefit from cisplatin or maintenance; ~90% complete response",
+   "takeaway": "5-FU/mitomycin with RT remains the standard (Nigro regimen).",
+   "tags": [
+    "radiotherapy",
+    "chemoradiotherapy",
+    "anal"
+   ],
+   "site": "Anal",
+   "id": "act-ii"
+  },
+  {
+   "name": "RTOG 98-11",
+   "setting": "Definitive",
+   "modality": "Radiotherapy",
+   "year": 2008,
+   "journal": "JAMA 2008; JCO 2012",
+   "design": "Phase 3, n=682",
+   "population": "Anal SCC",
+   "arms": [
+    "5-FU/MMC + RT",
+    "Induction 5-FU/cisplatin → 5-FU/cisplatin + RT"
+   ],
+   "endpoint": "DFS",
+   "result": "5-y DFS 67.8% vs 57.8%; colostomy higher with cisplatin",
+   "takeaway": "Confirms mitomycin-based chemoRT without induction chemotherapy.",
+   "tags": [
+    "radiotherapy",
+    "anal"
+   ],
+   "site": "Anal",
+   "id": "rtog-98-11"
+  },
+  {
+   "name": "POD1UM-303",
+   "setting": "Metastatic 1L",
+   "modality": "Systemic",
+   "year": 2024,
+   "journal": "Lancet 2025",
+   "design": "Phase 3, n=308",
+   "population": "Advanced anal SCC",
+   "arms": [
+    "Retifanlimab + carboplatin-paclitaxel",
+    "Placebo + chemo"
+   ],
+   "endpoint": "PFS",
+   "result": "mPFS 9.3 vs 7.4 mo (HR 0.63)",
+   "takeaway": "First chemo-IO standard for advanced anal SCC.",
+   "tags": [
+    "immunotherapy",
+    "anal"
+   ],
+   "site": "Anal",
+   "id": "pod1um-303"
+  },
+  {
+   "name": "CONKO-001",
+   "setting": "Adjuvant",
+   "modality": "Systemic",
+   "year": 2007,
+   "journal": "JAMA 2007/2013",
+   "design": "Phase 3, n=368",
+   "population": "Resected pancreatic adenocarcinoma",
+   "arms": [
+    "Gemcitabine 6 months",
+    "Observation"
+   ],
+   "endpoint": "DFS",
+   "result": "10-y OS 12.2% vs 7.7%",
+   "takeaway": "Adjuvant chemo is standard after pancreatic resection.",
+   "tags": [
+    "adjuvant",
+    "gemcitabine"
+   ],
+   "site": "Pancreas",
+   "id": "conko-001"
+  },
+  {
+   "name": "ESPAC-4",
+   "setting": "Adjuvant",
+   "modality": "Systemic",
+   "year": 2017,
+   "journal": "Lancet 2017",
+   "design": "Phase 3, n=730",
+   "population": "Resected pancreatic cancer",
+   "arms": [
+    "Gemcitabine + capecitabine",
+    "Gemcitabine"
+   ],
+   "endpoint": "OS",
+   "result": "mOS 28.0 vs 25.5 mo (HR 0.82)",
+   "takeaway": "Gem-cape is the adjuvant option for patients unfit for mFOLFIRINOX.",
+   "tags": [
+    "adjuvant",
+    "gemcitabine",
+    "capecitabine"
+   ],
+   "site": "Pancreas",
+   "id": "espac-4"
+  },
+  {
+   "name": "PRODIGE 24",
+   "setting": "Adjuvant",
+   "modality": "Systemic",
+   "year": 2018,
+   "journal": "NEJM 2018; JAMA Oncol 2022",
+   "design": "Phase 3, n=493",
+   "population": "Resected pancreatic adenocarcinoma, fit (PS 0–1)",
+   "arms": [
+    "mFOLFIRINOX 6 months",
+    "Gemcitabine"
+   ],
+   "endpoint": "DFS",
+   "result": "mOS 53.5 vs 35.5 mo; mDFS 21.4 vs 12.8 mo",
+   "takeaway": "mFOLFIRINOX is the adjuvant standard for fit patients.",
+   "tags": [
+    "adjuvant",
+    "FOLFIRINOX"
+   ],
+   "site": "Pancreas",
+   "id": "prodige-24"
+  },
+  {
+   "name": "ACCORD 11 (PRODIGE 4)",
+   "setting": "Metastatic 1L",
+   "modality": "Systemic",
+   "year": 2011,
+   "journal": "NEJM 2011",
+   "design": "Phase 3, n=342",
+   "population": "Metastatic pancreatic cancer, PS 0–1",
+   "arms": [
+    "FOLFIRINOX",
+    "Gemcitabine"
+   ],
+   "endpoint": "OS",
+   "result": "mOS 11.1 vs 6.8 mo (HR 0.57)",
+   "takeaway": "FOLFIRINOX first line for fit patients.",
+   "tags": [
+    "FOLFIRINOX",
+    "metastatic"
+   ],
+   "site": "Pancreas",
+   "id": "accord-11-prodige-4"
+  },
+  {
+   "name": "MPACT",
+   "setting": "Metastatic 1L",
+   "modality": "Systemic",
+   "year": 2013,
+   "journal": "NEJM 2013",
+   "design": "Phase 3, n=861",
+   "population": "Metastatic pancreatic cancer",
+   "arms": [
+    "Nab-paclitaxel + gemcitabine",
+    "Gemcitabine"
+   ],
+   "endpoint": "OS",
+   "result": "mOS 8.5 vs 6.7 mo (HR 0.72)",
+   "takeaway": "Gem-nab-paclitaxel is a first-line standard.",
+   "tags": [
+    "nab-paclitaxel",
+    "metastatic"
+   ],
+   "site": "Pancreas",
+   "id": "mpact"
+  },
+  {
+   "name": "NAPOLI-3",
+   "setting": "Metastatic 1L",
+   "modality": "Systemic",
+   "year": 2023,
+   "journal": "Lancet 2023",
+   "design": "Phase 3, n=770",
+   "population": "Metastatic pancreatic cancer",
+   "arms": [
+    "NALIRIFOX",
+    "Gemcitabine + nab-paclitaxel"
+   ],
+   "endpoint": "OS",
+   "result": "mOS 11.1 vs 9.2 mo (HR 0.83)",
+   "takeaway": "NALIRIFOX is an approved first-line option.",
+   "tags": [
+    "NALIRIFOX",
+    "liposomal irinotecan"
+   ],
+   "site": "Pancreas",
+   "id": "napoli-3"
+  },
+  {
+   "name": "POLO",
+   "setting": "Metastatic maintenance",
+   "modality": "Systemic",
+   "year": 2019,
+   "journal": "NEJM 2019",
+   "design": "Phase 3, n=154",
+   "population": "gBRCA metastatic pancreatic cancer stable after ≥16 weeks platinum",
+   "arms": [
+    "Olaparib maintenance",
+    "Placebo"
+   ],
+   "endpoint": "PFS",
+   "result": "mPFS 7.4 vs 3.8 mo (HR 0.53); no OS difference",
+   "takeaway": "Germline testing for all; olaparib maintenance for gBRCA.",
+   "tags": [
+    "PARP",
+    "BRCA",
+    "maintenance"
+   ],
+   "site": "Pancreas",
+   "id": "polo"
+  },
+  {
+   "name": "RASolute 302",
+   "setting": "Metastatic 2L",
+   "modality": "Systemic",
+   "year": 2026,
+   "journal": "2026 (ASCO/ESMO)",
+   "design": "Phase 3",
+   "population": "Previously treated metastatic pancreatic adenocarcinoma",
+   "arms": [
+    "Daraxonrasib",
+    "Chemotherapy"
+   ],
+   "endpoint": "OS",
+   "result": "Death risk reduced 60% vs chemotherapy",
+   "takeaway": "First RAS(ON) inhibitor to improve survival; approved 2026.",
+   "tags": [
+    "KRAS",
+    "RAS inhibitor",
+    "daraxonrasib"
+   ],
+   "site": "Pancreas",
+   "id": "rasolute-302"
+  },
+  {
+   "name": "PREOPANC",
+   "setting": "Neoadjuvant",
+   "modality": "Combined",
+   "year": 2022,
+   "journal": "JCO 2020/2022",
+   "design": "Phase 3, n=246",
+   "population": "Resectable/borderline resectable pancreatic cancer",
+   "arms": [
+    "Neoadjuvant gemcitabine-based chemoRT",
+    "Upfront surgery"
+   ],
+   "endpoint": "OS",
+   "result": "5-y OS 20.5% vs 6.5% (HR 0.73)",
+   "takeaway": "Supports neoadjuvant therapy, especially for borderline resectable disease.",
+   "tags": [
+    "neoadjuvant",
+    "radiotherapy",
+    "borderline resectable"
+   ],
+   "site": "Pancreas",
+   "id": "preopanc"
+  },
+  {
+   "name": "SHARP",
+   "setting": "Advanced 1L",
+   "modality": "Systemic",
+   "year": 2008,
+   "journal": "NEJM 2008",
+   "design": "Phase 3, n=602",
+   "population": "Advanced HCC, Child-Pugh A",
+   "arms": [
+    "Sorafenib",
+    "Placebo"
+   ],
+   "endpoint": "OS",
+   "result": "mOS 10.7 vs 7.9 mo (HR 0.69)",
+   "takeaway": "First systemic therapy to prolong survival in HCC.",
+   "tags": [
+    "HCC",
+    "sorafenib"
+   ],
+   "site": "Hepatobiliary",
+   "id": "sharp"
+  },
+  {
+   "name": "REFLECT",
+   "setting": "Advanced 1L",
+   "modality": "Systemic",
+   "year": 2018,
+   "journal": "Lancet 2018",
+   "design": "Phase 3 non-inferiority, n=954",
+   "population": "Unresectable HCC",
+   "arms": [
+    "Lenvatinib",
+    "Sorafenib"
+   ],
+   "endpoint": "OS",
+   "result": "mOS 13.6 vs 12.3 mo (non-inferior)",
+   "takeaway": "Lenvatinib is a TKI first-line option.",
+   "tags": [
+    "HCC",
+    "lenvatinib"
+   ],
+   "site": "Hepatobiliary",
+   "id": "reflect"
+  },
+  {
+   "name": "IMbrave150",
+   "setting": "Advanced 1L",
+   "modality": "Systemic",
+   "year": 2020,
+   "journal": "NEJM 2020; J Hepatol 2022",
+   "design": "Phase 3, n=501",
+   "population": "Unresectable HCC, Child-Pugh A",
+   "arms": [
+    "Atezolizumab + bevacizumab",
+    "Sorafenib"
+   ],
+   "endpoint": "OS, PFS",
+   "result": "mOS 19.2 vs 13.4 mo (HR 0.66)",
+   "takeaway": "Atezo-bev is first-line standard; screen varices before bevacizumab.",
+   "tags": [
+    "HCC",
+    "immunotherapy",
+    "bevacizumab"
+   ],
+   "site": "Hepatobiliary",
+   "id": "imbrave150"
+  },
+  {
+   "name": "HIMALAYA",
+   "setting": "Advanced 1L",
+   "modality": "Systemic",
+   "year": 2022,
+   "journal": "NEJM Evid 2022",
+   "design": "Phase 3, n=1,324",
+   "population": "Unresectable HCC",
+   "arms": [
+    "STRIDE: tremelimumab ×1 + durvalumab",
+    "Sorafenib"
+   ],
+   "endpoint": "OS",
+   "result": "mOS 16.4 vs 13.8 mo (HR 0.78); 5-y OS 19.6% vs 9.4%",
+   "takeaway": "STRIDE is a first-line option, especially with bleeding risk.",
+   "tags": [
+    "HCC",
+    "immunotherapy",
+    "tremelimumab"
+   ],
+   "site": "Hepatobiliary",
+   "id": "himalaya"
+  },
+  {
+   "name": "CheckMate 9DW",
+   "setting": "Advanced 1L",
+   "modality": "Systemic",
+   "year": 2025,
+   "journal": "Lancet 2025",
+   "design": "Phase 3, n=668",
+   "population": "Unresectable HCC",
+   "arms": [
+    "Nivolumab + ipilimumab",
+    "Lenvatinib or sorafenib"
+   ],
+   "endpoint": "OS",
+   "result": "mOS 23.7 vs 20.6 mo (HR 0.79)",
+   "takeaway": "Dual checkpoint blockade is another first-line option.",
+   "tags": [
+    "HCC",
+    "immunotherapy"
+   ],
+   "site": "Hepatobiliary",
+   "id": "checkmate-9dw"
+  },
+  {
+   "name": "TOPAZ-1",
+   "setting": "Advanced 1L",
+   "modality": "Systemic",
+   "year": 2022,
+   "journal": "NEJM Evid 2022",
+   "design": "Phase 3, n=685",
+   "population": "Advanced biliary tract cancer",
+   "arms": [
+    "Durvalumab + gemcitabine-cisplatin",
+    "Placebo + gem-cis"
+   ],
+   "endpoint": "OS",
+   "result": "mOS 12.8 vs 11.5 mo (HR 0.80)",
+   "takeaway": "Gem-cis + durvalumab (or pembrolizumab, KEYNOTE-966) is first-line standard.",
+   "tags": [
+    "biliary",
+    "immunotherapy"
+   ],
+   "site": "Hepatobiliary",
+   "id": "topaz-1"
+  },
+  {
+   "name": "ABC-02",
+   "setting": "Advanced 1L",
+   "modality": "Systemic",
+   "year": 2010,
+   "journal": "NEJM 2010",
+   "design": "Phase 3, n=410",
+   "population": "Advanced biliary tract cancer",
+   "arms": [
+    "Gemcitabine + cisplatin",
+    "Gemcitabine"
+   ],
+   "endpoint": "OS",
+   "result": "mOS 11.7 vs 8.1 mo (HR 0.64)",
+   "takeaway": "Gem-cis became the backbone for biliary cancer.",
+   "tags": [
+    "biliary",
+    "gemcitabine",
+    "cisplatin"
+   ],
+   "site": "Hepatobiliary",
+   "id": "abc-02"
+  },
+  {
+   "name": "BILCAP",
+   "setting": "Adjuvant",
+   "modality": "Systemic",
+   "year": 2019,
+   "journal": "Lancet Oncol 2019",
+   "design": "Phase 3, n=447",
+   "population": "Resected biliary tract cancer",
+   "arms": [
+    "Capecitabine 6 months",
+    "Observation"
+   ],
+   "endpoint": "OS",
+   "result": "Per-protocol mOS 53 vs 36 mo (HR 0.75); ITT not significant",
+   "takeaway": "Adjuvant capecitabine is standard after biliary resection.",
+   "tags": [
+    "biliary",
+    "adjuvant",
+    "capecitabine"
+   ],
+   "site": "Hepatobiliary",
+   "id": "bilcap"
+  },
+  {
+   "name": "ClarIDHy / FIGHT-202",
+   "setting": "Advanced 2L",
+   "modality": "Systemic",
+   "year": 2020,
+   "journal": "Lancet Oncol 2020",
+   "design": "Phase 3 / phase 2",
+   "population": "IDH1-mutant (ClarIDHy) or FGFR2-fusion (FIGHT-202) cholangiocarcinoma",
+   "arms": [
+    "Ivosidenib vs placebo",
+    "Pemigatinib single-arm"
+   ],
+   "endpoint": "PFS / ORR",
+   "result": "ClarIDHy PFS HR 0.37; FIGHT-202 ORR 35.5%",
+   "takeaway": "Molecular profiling (IDH1, FGFR2, HER2, BRAF, MSI) is essential in cholangiocarcinoma.",
+   "tags": [
+    "IDH1",
+    "FGFR2",
+    "targeted therapy"
+   ],
+   "site": "Hepatobiliary",
+   "id": "claridhy-fight-202"
+  },
+  {
+   "name": "NETTER-1",
+   "setting": "Advanced",
+   "modality": "Radiotherapy",
+   "year": 2017,
+   "journal": "NEJM 2017; Lancet Oncol 2021",
+   "design": "Phase 3, n=229",
+   "population": "SSTR+ midgut NET progressing on octreotide",
+   "arms": [
+    "177Lu-DOTATATE + octreotide 30 mg",
+    "High-dose octreotide 60 mg"
+   ],
+   "endpoint": "PFS",
+   "result": "20-mo PFS 65.2% vs 10.8%; final OS 48.0 vs 36.3 mo (NS)",
+   "takeaway": "PRRT is standard second-line for SSTR+ midgut NET.",
+   "tags": [
+    "PRRT",
+    "nuclear medicine",
+    "radioligand"
+   ],
+   "site": "Neuroendocrine",
+   "id": "netter-1"
+  },
+  {
+   "name": "NETTER-2",
+   "setting": "Advanced 1L",
+   "modality": "Radiotherapy",
+   "year": 2024,
+   "journal": "Lancet 2024",
+   "design": "Phase 3, n=226",
+   "population": "Newly diagnosed SSTR+ G2/G3 GEP-NET (Ki-67 ≥10–55%)",
+   "arms": [
+    "177Lu-DOTATATE + octreotide 30 mg",
+    "High-dose octreotide 60 mg"
+   ],
+   "endpoint": "PFS",
+   "result": "mPFS 22.8 vs 8.5 mo (HR 0.28)",
+   "takeaway": "First-line PRRT for higher-grade well-differentiated GEP-NET.",
+   "tags": [
+    "PRRT",
+    "radioligand",
+    "first-line"
+   ],
+   "site": "Neuroendocrine",
+   "id": "netter-2"
+  },
+  {
+   "name": "PROMID / CLARINET",
+   "setting": "Advanced",
+   "modality": "Systemic",
+   "year": 2014,
+   "journal": "JCO 2009; NEJM 2014",
+   "design": "Phase 3s",
+   "population": "Well-differentiated GEP-NET",
+   "arms": [
+    "Octreotide LAR / lanreotide",
+    "Placebo"
+   ],
+   "endpoint": "Time to progression / PFS",
+   "result": "CLARINET 2-y PFS 65.1% vs 33.0%",
+   "takeaway": "Somatostatin analogues have antiproliferative effect.",
+   "tags": [
+    "somatostatin analogue",
+    "lanreotide"
+   ],
+   "site": "Neuroendocrine",
+   "id": "promid-clarinet"
+  },
+  {
+   "name": "RADIANT-3/4 & SUN-1111",
+   "setting": "Advanced",
+   "modality": "Systemic",
+   "year": 2011,
+   "journal": "NEJM 2011; Lancet 2016",
+   "design": "Phase 3s",
+   "population": "Advanced pancreatic NET (RADIANT-3, SUN) / lung-GI NET (RADIANT-4)",
+   "arms": [
+    "Everolimus or sunitinib",
+    "Placebo"
+   ],
+   "endpoint": "PFS",
+   "result": "RADIANT-3 mPFS 11.0 vs 4.6 mo; sunitinib 11.4 vs 5.5 mo",
+   "takeaway": "Everolimus and sunitinib are standard for progressive pNET.",
+   "tags": [
+    "everolimus",
+    "sunitinib",
+    "pNET"
+   ],
+   "site": "Neuroendocrine",
+   "id": "radiant-3-4-sun-1111"
+  },
+  {
+   "name": "E2211 (CAPTEM)",
+   "setting": "Advanced",
+   "modality": "Systemic",
+   "year": 2023,
+   "journal": "JCO 2024",
+   "design": "Randomised phase 2, n=144",
+   "population": "Advanced pancreatic NET",
+   "arms": [
+    "Capecitabine + temozolomide",
+    "Temozolomide"
+   ],
+   "endpoint": "PFS",
+   "result": "mPFS 22.7 vs 14.4 mo (HR 0.58)",
+   "takeaway": "CAPTEM is an active cytotoxic option for pNET.",
+   "tags": [
+    "CAPTEM",
+    "pNET"
+   ],
+   "site": "Neuroendocrine",
+   "id": "e2211-captem"
+  },
+  {
+   "name": "PIVOT / ProtecT",
+   "setting": "Localised",
+   "modality": "Surgery/RT",
+   "year": 2016,
+   "journal": "NEJM 2016; NEJM 2023 (15-y)",
+   "design": "RCT, n=1,643 (ProtecT)",
+   "population": "PSA-detected localised prostate cancer",
+   "arms": [
+    "Active monitoring",
+    "Radical prostatectomy",
+    "Radical RT + ADT"
+   ],
+   "endpoint": "Prostate cancer mortality",
+   "result": "15-y PCa mortality ~3% in all arms; metastasis higher with monitoring",
+   "takeaway": "Active surveillance is safe for low-risk disease; treatment reduces progression, not death.",
+   "tags": [
+    "active surveillance",
+    "radiotherapy",
+    "prostatectomy"
+   ],
+   "site": "Prostate",
+   "id": "pivot-protect"
+  },
+  {
+   "name": "RTOG 94-08",
+   "setting": "Localised (intermediate)",
+   "modality": "Radiotherapy",
+   "year": 2011,
+   "journal": "NEJM 2011",
+   "design": "Phase 3, n=1,979",
+   "population": "Low/intermediate-risk localised prostate cancer",
+   "arms": [
+    "RT + 4 months ADT",
+    "RT alone"
+   ],
+   "endpoint": "OS",
+   "result": "10-y OS 62% vs 57%; benefit in intermediate risk",
+   "takeaway": "Short-term ADT with RT for intermediate-risk disease.",
+   "tags": [
+    "radiotherapy",
+    "ADT"
+   ],
+   "site": "Prostate",
+   "id": "rtog-94-08"
+  },
+  {
+   "name": "Bolla EORTC 22863",
+   "setting": "Localised (high-risk)",
+   "modality": "Radiotherapy",
+   "year": 1997,
+   "journal": "NEJM 1997; Lancet Oncol 2010",
+   "design": "Phase 3, n=415",
+   "population": "High-risk/locally advanced",
+   "arms": [
+    "RT + 3 y goserelin",
+    "RT alone"
+   ],
+   "endpoint": "OS",
+   "result": "10-y OS 58.1% vs 39.8%",
+   "takeaway": "Long-term ADT (2–3 y) with RT is standard for high-risk disease.",
+   "tags": [
+    "radiotherapy",
+    "ADT",
+    "high-risk"
+   ],
+   "site": "Prostate",
+   "id": "bolla-eortc-22863"
+  },
+  {
+   "name": "CHHiP",
+   "setting": "Localised",
+   "modality": "Radiotherapy",
+   "year": 2016,
+   "journal": "Lancet Oncol 2016",
+   "design": "Phase 3 non-inferiority, n=3,216",
+   "population": "Localised prostate cancer",
+   "arms": [
+    "74 Gy/37 fr",
+    "60 Gy/20 fr",
+    "57 Gy/19 fr"
+   ],
+   "endpoint": "Biochemical/clinical failure",
+   "result": "5-y freedom from failure 88.3% (74 Gy) vs 90.6% (60 Gy) vs 85.9% (57 Gy)",
+   "takeaway": "60 Gy/20 fr moderate hypofractionation is a standard.",
+   "tags": [
+    "radiotherapy",
+    "hypofractionation"
+   ],
+   "site": "Prostate",
+   "id": "chhip"
+  },
+  {
+   "name": "HYPO-RT-PC / PACE-B",
+   "setting": "Localised",
+   "modality": "Radiotherapy",
+   "year": 2019,
+   "journal": "Lancet 2019; NEJM 2024",
+   "design": "Phase 3s",
+   "population": "Low/intermediate-risk localised prostate cancer",
+   "arms": [
+    "Ultra-hypofractionated SBRT 36.25 Gy/5 fr (PACE-B)",
+    "Conventional/moderate RT"
+   ],
+   "endpoint": "Biochemical/clinical failure",
+   "result": "PACE-B 5-y freedom from failure 95.8% vs 94.6% (non-inferior)",
+   "takeaway": "5-fraction SBRT is a standard option for low/intermediate-risk disease.",
+   "tags": [
+    "radiotherapy",
+    "SBRT",
+    "ultra-hypofractionation"
+   ],
+   "site": "Prostate",
+   "id": "hypo-rt-pc-pace-b"
+  },
+  {
+   "name": "ASCENDE-RT",
+   "setting": "Localised (high/intermediate)",
+   "modality": "Radiotherapy",
+   "year": 2017,
+   "journal": "IJROBP 2017",
+   "design": "Phase 3, n=398",
+   "population": "Intermediate/high-risk",
+   "arms": [
+    "EBRT + LDR brachytherapy boost",
+    "Dose-escalated EBRT 78 Gy"
+   ],
+   "endpoint": "Biochemical PFS",
+   "result": "9-y bPFS 83% vs 62%; more GU toxicity with boost",
+   "takeaway": "Brachytherapy boost improves biochemical control.",
+   "tags": [
+    "brachytherapy",
+    "radiotherapy"
+   ],
+   "site": "Prostate",
+   "id": "ascende-rt"
+  },
+  {
+   "name": "RADICALS-RT / RAVES / GETUG-AFU 17 (ARTISTIC)",
+   "setting": "Post-prostatectomy",
+   "modality": "Radiotherapy",
+   "year": 2020,
+   "journal": "Lancet 2020 (×3)",
+   "design": "Meta-analysis of 3 phase 3s, n=2,153",
+   "population": "After radical prostatectomy with adverse features",
+   "arms": [
+    "Adjuvant RT",
+    "Early salvage RT on PSA rise"
+   ],
+   "endpoint": "Event-free survival",
+   "result": "No EFS benefit with adjuvant RT; early salvage avoided RT in ~half",
+   "takeaway": "Early salvage RT is preferred over routine adjuvant RT.",
+   "tags": [
+    "radiotherapy",
+    "salvage",
+    "post-prostatectomy"
+   ],
+   "site": "Prostate",
+   "id": "radicals-rt-raves-getug-afu-17-artistic"
+  },
+  {
+   "name": "STAMPEDE (arm H) M1 RT",
+   "setting": "Metastatic hormone-sensitive",
+   "modality": "Radiotherapy",
+   "year": 2018,
+   "journal": "Lancet 2018",
+   "design": "Phase 3, n=2,061",
+   "population": "Newly diagnosed mHSPC",
+   "arms": [
+    "ADT + prostate RT",
+    "ADT alone"
+   ],
+   "endpoint": "OS",
+   "result": "Low-volume: 3-y OS 81% vs 73% (HR 0.68); no benefit in high-volume",
+   "takeaway": "Prostate RT for low-volume mHSPC.",
+   "tags": [
+    "radiotherapy",
+    "mHSPC",
+    "low-volume"
+   ],
+   "site": "Prostate",
+   "id": "stampede-arm-h-m1-rt"
+  },
+  {
+   "name": "CHAARTED",
+   "setting": "Metastatic hormone-sensitive",
+   "modality": "Systemic",
+   "year": 2015,
+   "journal": "NEJM 2015; JCO 2018",
+   "design": "Phase 3, n=790",
+   "population": "Newly diagnosed mHSPC",
+   "arms": [
+    "ADT + docetaxel ×6",
+    "ADT alone"
+   ],
+   "endpoint": "OS",
+   "result": "mOS 57.6 vs 44.0 mo; benefit in high-volume (HR 0.63)",
+   "takeaway": "Docetaxel with ADT for high-volume mHSPC.",
+   "tags": [
+    "docetaxel",
+    "mHSPC"
+   ],
+   "site": "Prostate",
+   "id": "chaarted"
+  },
+  {
+   "name": "LATITUDE / STAMPEDE abiraterone",
+   "setting": "Metastatic hormone-sensitive",
+   "modality": "Systemic",
+   "year": 2017,
+   "journal": "NEJM 2017 (×2)",
+   "design": "Phase 3s",
+   "population": "High-risk / newly diagnosed mHSPC",
+   "arms": [
+    "ADT + abiraterone + prednisone",
+    "ADT alone"
+   ],
+   "endpoint": "OS",
+   "result": "LATITUDE mOS 53.3 vs 36.5 mo (HR 0.66)",
+   "takeaway": "Abiraterone with ADT for mHSPC.",
+   "tags": [
+    "abiraterone",
+    "mHSPC"
+   ],
+   "site": "Prostate",
+   "id": "latitude-stampede-abiraterone"
+  },
+  {
+   "name": "TITAN / ENZAMET / ARCHES",
+   "setting": "Metastatic hormone-sensitive",
+   "modality": "Systemic",
+   "year": 2019,
+   "journal": "NEJM 2019 (×2); JCO 2019",
+   "design": "Phase 3s",
+   "population": "mHSPC",
+   "arms": [
+    "ADT + apalutamide or enzalutamide",
+    "ADT ± standard"
+   ],
+   "endpoint": "OS / rPFS",
+   "result": "TITAN OS HR 0.65; ENZAMET 5-y OS 67% vs 57%",
+   "takeaway": "ARPI intensification for all fit mHSPC patients.",
+   "tags": [
+    "ARPI",
+    "enzalutamide",
+    "apalutamide"
+   ],
+   "site": "Prostate",
+   "id": "titan-enzamet-arches"
+  },
+  {
+   "name": "PEACE-1 / ARASENS",
+   "setting": "Metastatic hormone-sensitive",
+   "modality": "Systemic",
+   "year": 2022,
+   "journal": "Lancet 2022; NEJM 2022",
+   "design": "Phase 3s",
+   "population": "De novo mHSPC",
+   "arms": [
+    "ADT + docetaxel + abiraterone (PEACE-1) or darolutamide (ARASENS)",
+    "ADT + docetaxel"
+   ],
+   "endpoint": "OS",
+   "result": "ARASENS OS HR 0.68; PEACE-1 high-volume OS HR 0.72",
+   "takeaway": "Triplet therapy for fit high-volume de novo mHSPC.",
+   "tags": [
+    "triplet",
+    "darolutamide",
+    "docetaxel"
+   ],
+   "site": "Prostate",
+   "id": "peace-1-arasens"
+  },
+  {
+   "name": "SPARTAN / PROSPER / ARAMIS",
+   "setting": "Non-metastatic CRPC",
+   "modality": "Systemic",
+   "year": 2018,
+   "journal": "NEJM 2018/2019",
+   "design": "Phase 3s",
+   "population": "nmCRPC with PSA doubling time ≤10 mo",
+   "arms": [
+    "Apalutamide / enzalutamide / darolutamide + ADT",
+    "Placebo + ADT"
+   ],
+   "endpoint": "Metastasis-free survival",
+   "result": "MFS gain ~2 years (HR ~0.3); OS benefit in all three",
+   "takeaway": "ARPI for high-risk nmCRPC.",
+   "tags": [
+    "nmCRPC",
+    "ARPI"
+   ],
+   "site": "Prostate",
+   "id": "spartan-prosper-aramis"
+  },
+  {
+   "name": "EMBARK",
+   "setting": "Biochemical recurrence",
+   "modality": "Systemic",
+   "year": 2023,
+   "journal": "NEJM 2023; NEJM 2025",
+   "design": "Phase 3, n=1,068",
+   "population": "High-risk biochemical recurrence (PSADT ≤9 mo)",
+   "arms": [
+    "Enzalutamide + leuprolide",
+    "Leuprolide",
+    "Enzalutamide alone"
+   ],
+   "endpoint": "MFS",
+   "result": "5-y MFS 87.3% vs 71.4% (HR 0.42); OS benefit",
+   "takeaway": "Combined enzalutamide + ADT for high-risk BCR.",
+   "tags": [
+    "enzalutamide",
+    "biochemical recurrence"
+   ],
+   "site": "Prostate",
+   "id": "embark"
+  },
+  {
+   "name": "TAX 327",
+   "setting": "Metastatic CRPC",
+   "modality": "Systemic",
+   "year": 2004,
+   "journal": "NEJM 2004",
+   "design": "Phase 3, n=1,006",
+   "population": "mCRPC",
+   "arms": [
+    "Docetaxel q3w + prednisone",
+    "Mitoxantrone + prednisone"
+   ],
+   "endpoint": "OS",
+   "result": "mOS 18.9 vs 16.5 mo",
+   "takeaway": "First chemotherapy with survival benefit in mCRPC.",
+   "tags": [
+    "docetaxel",
+    "mCRPC"
+   ],
+   "site": "Prostate",
+   "id": "tax-327"
+  },
+  {
+   "name": "COU-AA-301/302, AFFIRM, PREVAIL",
+   "setting": "Metastatic CRPC",
+   "modality": "Systemic",
+   "year": 2012,
+   "journal": "NEJM 2011–2014",
+   "design": "Phase 3s",
+   "population": "mCRPC pre/post docetaxel",
+   "arms": [
+    "Abiraterone or enzalutamide",
+    "Placebo"
+   ],
+   "endpoint": "OS",
+   "result": "AFFIRM mOS 18.4 vs 13.6 mo; PREVAIL OS HR 0.71",
+   "takeaway": "ARPIs prolong survival in mCRPC.",
+   "tags": [
+    "abiraterone",
+    "enzalutamide",
+    "mCRPC"
+   ],
+   "site": "Prostate",
+   "id": "cou-aa-301-302-affirm-prevail"
+  },
+  {
+   "name": "TROPIC / CARD",
+   "setting": "Metastatic CRPC",
+   "modality": "Systemic",
+   "year": 2019,
+   "journal": "Lancet 2010; NEJM 2019",
+   "design": "Phase 3s",
+   "population": "mCRPC after docetaxel (and an ARPI in CARD)",
+   "arms": [
+    "Cabazitaxel",
+    "Mitoxantrone / alternative ARPI"
+   ],
+   "endpoint": "OS / rPFS",
+   "result": "CARD mOS 13.6 vs 11.0 mo",
+   "takeaway": "Cabazitaxel preferred over a second ARPI after docetaxel + ARPI.",
+   "tags": [
+    "cabazitaxel",
+    "mCRPC"
+   ],
+   "site": "Prostate",
+   "id": "tropic-card"
+  },
+  {
+   "name": "ALSYMPCA",
+   "setting": "Metastatic CRPC",
+   "modality": "Radiotherapy",
+   "year": 2013,
+   "journal": "NEJM 2013",
+   "design": "Phase 3, n=921",
+   "population": "Symptomatic bone-metastatic CRPC, no visceral mets",
+   "arms": [
+    "Radium-223 ×6",
+    "Placebo"
+   ],
+   "endpoint": "OS",
+   "result": "mOS 14.9 vs 11.3 mo (HR 0.70)",
+   "takeaway": "Radium-223 for bone-predominant mCRPC (not with abiraterone).",
+   "tags": [
+    "radium-223",
+    "radiopharmaceutical",
+    "bone metastases"
+   ],
+   "site": "Prostate",
+   "id": "alsympca"
+  },
+  {
+   "name": "VISION",
+   "setting": "Metastatic CRPC",
+   "modality": "Radiotherapy",
+   "year": 2021,
+   "journal": "NEJM 2021",
+   "design": "Phase 3, n=831",
+   "population": "PSMA-PET+ mCRPC after ARPI and taxane",
+   "arms": [
+    "177Lu-PSMA-617 + SOC",
+    "SOC"
+   ],
+   "endpoint": "rPFS, OS",
+   "result": "mOS 15.3 vs 11.3 mo (HR 0.62)",
+   "takeaway": "Lu-PSMA is standard after ARPI and taxane in PSMA+ mCRPC.",
+   "tags": [
+    "Lu-PSMA",
+    "radioligand",
+    "PSMA"
+   ],
+   "site": "Prostate",
+   "id": "vision"
+  },
+  {
+   "name": "PSMAfore",
+   "setting": "Metastatic CRPC",
+   "modality": "Radiotherapy",
+   "year": 2024,
+   "journal": "Lancet 2024",
+   "design": "Phase 3, n=468",
+   "population": "Taxane-naive PSMA+ mCRPC after one ARPI",
+   "arms": [
+    "177Lu-PSMA-617",
+    "Change of ARPI"
+   ],
+   "endpoint": "rPFS",
+   "result": "mrPFS 12.0 vs 5.6 mo (HR 0.41)",
+   "takeaway": "Lu-PSMA can be used before chemotherapy.",
+   "tags": [
+    "Lu-PSMA",
+    "radioligand"
+   ],
+   "site": "Prostate",
+   "id": "psmafore"
+  },
+  {
+   "name": "PROfound",
+   "setting": "Metastatic CRPC",
+   "modality": "Systemic",
+   "year": 2020,
+   "journal": "NEJM 2020",
+   "design": "Phase 3, n=387",
+   "population": "mCRPC with HRR alterations after ARPI",
+   "arms": [
+    "Olaparib",
+    "Alternative ARPI"
+   ],
+   "endpoint": "rPFS (BRCA1/2, ATM)",
+   "result": "Cohort A rPFS 7.4 vs 3.6 mo; OS 19.1 vs 14.7 mo",
+   "takeaway": "Test HRR genes; PARP inhibitor for BRCA-altered mCRPC.",
+   "tags": [
+    "PARP",
+    "BRCA",
+    "olaparib"
+   ],
+   "site": "Prostate",
+   "id": "profound"
+  },
+  {
+   "name": "TALAPRO-2 / PROpel",
+   "setting": "Metastatic CRPC 1L",
+   "modality": "Systemic",
+   "year": 2023,
+   "journal": "Lancet 2023; NEJM Evid 2022",
+   "design": "Phase 3s",
+   "population": "First-line mCRPC",
+   "arms": [
+    "PARPi (talazoparib / olaparib) + ARPI",
+    "ARPI alone"
+   ],
+   "endpoint": "rPFS",
+   "result": "Greatest benefit in BRCA-mutated; TALAPRO-2 OS benefit reported",
+   "takeaway": "PARPi + ARPI first line, especially for HRR/BRCA-altered disease.",
+   "tags": [
+    "PARP",
+    "talazoparib",
+    "first-line"
+   ],
+   "site": "Prostate",
+   "id": "talapro-2-propel"
+  },
+  {
+   "name": "SWOG 8710",
+   "setting": "Neoadjuvant",
+   "modality": "Systemic",
+   "year": 2003,
+   "journal": "NEJM 2003",
+   "design": "Phase 3, n=307",
+   "population": "MIBC T2–T4a",
+   "arms": [
+    "MVAC ×3 → cystectomy",
+    "Cystectomy alone"
+   ],
+   "endpoint": "OS",
+   "result": "mOS 77 vs 46 mo; pT0 38% vs 15%",
+   "takeaway": "Cisplatin-based neoadjuvant chemo before cystectomy.",
+   "tags": [
+    "neoadjuvant",
+    "MVAC",
+    "MIBC"
+   ],
+   "site": "Bladder & Upper Tract",
+   "id": "swog-8710"
+  },
+  {
+   "name": "VESPER",
+   "setting": "Neoadjuvant",
+   "modality": "Systemic",
+   "year": 2022,
+   "journal": "JCO 2022",
+   "design": "Phase 3, n=500",
+   "population": "MIBC",
+   "arms": [
+    "Dose-dense MVAC ×6",
+    "Gemcitabine-cisplatin ×4"
+   ],
+   "endpoint": "PFS",
+   "result": "Neoadjuvant ddMVAC: 3-y PFS 66% vs 56%",
+   "takeaway": "ddMVAC is a preferred neoadjuvant regimen.",
+   "tags": [
+    "neoadjuvant",
+    "ddMVAC"
+   ],
+   "site": "Bladder & Upper Tract",
+   "id": "vesper"
+  },
+  {
+   "name": "NIAGARA",
+   "setting": "Perioperative",
+   "modality": "Systemic",
+   "year": 2024,
+   "journal": "NEJM 2024",
+   "design": "Phase 3, n=1,063",
+   "population": "Cisplatin-eligible MIBC",
+   "arms": [
+    "Durvalumab + gem-cis → cystectomy → durvalumab",
+    "Gem-cis → cystectomy"
+   ],
+   "endpoint": "EFS, OS",
+   "result": "2-y EFS 67.8% vs 59.8% (HR 0.68); OS HR 0.75",
+   "takeaway": "Perioperative durvalumab is a new standard for MIBC.",
+   "tags": [
+    "immunotherapy",
+    "perioperative",
+    "MIBC"
+   ],
+   "site": "Bladder & Upper Tract",
+   "id": "niagara"
+  },
+  {
+   "name": "CheckMate 274",
+   "setting": "Adjuvant",
+   "modality": "Systemic",
+   "year": 2021,
+   "journal": "NEJM 2021",
+   "design": "Phase 3, n=709",
+   "population": "High-risk MIUC after radical surgery",
+   "arms": [
+    "Nivolumab 1 y",
+    "Placebo"
+   ],
+   "endpoint": "DFS",
+   "result": "mDFS 20.8 vs 10.8 mo (HR 0.70)",
+   "takeaway": "Adjuvant nivolumab for high-risk resected urothelial cancer.",
+   "tags": [
+    "immunotherapy",
+    "adjuvant"
+   ],
+   "site": "Bladder & Upper Tract",
+   "id": "checkmate-274"
+  },
+  {
+   "name": "BC2001",
+   "setting": "Bladder preservation",
+   "modality": "Radiotherapy",
+   "year": 2012,
+   "journal": "NEJM 2012",
+   "design": "Phase 3, n=360",
+   "population": "MIBC",
+   "arms": [
+    "RT + 5-FU/mitomycin",
+    "RT alone"
+   ],
+   "endpoint": "Locoregional DFS",
+   "result": "2-y LRDFS 67% vs 54% (HR 0.68)",
+   "takeaway": "Trimodality bladder preservation with concurrent 5-FU/MMC is standard.",
+   "tags": [
+    "radiotherapy",
+    "bladder preservation",
+    "trimodality"
+   ],
+   "site": "Bladder & Upper Tract",
+   "id": "bc2001"
+  },
+  {
+   "name": "POUT",
+   "setting": "Adjuvant (upper tract)",
+   "modality": "Systemic",
+   "year": 2020,
+   "journal": "Lancet 2020",
+   "design": "Phase 3, n=261",
+   "population": "Upper-tract urothelial carcinoma pT2–T4 or N+",
+   "arms": [
+    "Platinum-gemcitabine ×4",
+    "Surveillance"
+   ],
+   "endpoint": "DFS",
+   "result": "3-y DFS 71% vs 46% (HR 0.45)",
+   "takeaway": "Adjuvant platinum chemo after nephroureterectomy.",
+   "tags": [
+    "UTUC",
+    "adjuvant"
+   ],
+   "site": "Bladder & Upper Tract",
+   "id": "pout"
+  },
+  {
+   "name": "JAVELIN Bladder 100",
+   "setting": "Metastatic maintenance",
+   "modality": "Systemic",
+   "year": 2020,
+   "journal": "NEJM 2020",
+   "design": "Phase 3, n=700",
+   "population": "Advanced UC without progression after first-line platinum",
+   "arms": [
+    "Avelumab maintenance + BSC",
+    "BSC"
+   ],
+   "endpoint": "OS",
+   "result": "mOS 21.4 vs 14.3 mo (HR 0.69)",
+   "takeaway": "Switch-maintenance avelumab after platinum response.",
+   "tags": [
+    "immunotherapy",
+    "maintenance",
+    "avelumab"
+   ],
+   "site": "Bladder & Upper Tract",
+   "id": "javelin-bladder-100"
+  },
+  {
+   "name": "EV-302",
+   "setting": "Metastatic 1L",
+   "modality": "Systemic",
+   "year": 2024,
+   "journal": "NEJM 2024",
+   "design": "Phase 3, n=886",
+   "population": "Untreated advanced urothelial carcinoma",
+   "arms": [
+    "Enfortumab vedotin + pembrolizumab",
+    "Platinum-gemcitabine"
+   ],
+   "endpoint": "PFS, OS",
+   "result": "mOS 31.5 vs 16.1 mo (HR 0.47); mPFS 12.5 vs 6.3 mo",
+   "takeaway": "EV + pembrolizumab replaced platinum chemo first line.",
+   "tags": [
+    "ADC",
+    "enfortumab vedotin",
+    "immunotherapy"
+   ],
+   "site": "Bladder & Upper Tract",
+   "id": "ev-302"
+  },
+  {
+   "name": "CheckMate 901 (gem-cis + nivo)",
+   "setting": "Metastatic 1L",
+   "modality": "Systemic",
+   "year": 2023,
+   "journal": "NEJM 2023",
+   "design": "Phase 3, n=608",
+   "population": "Cisplatin-eligible advanced UC",
+   "arms": [
+    "Nivolumab + gemcitabine-cisplatin",
+    "Gem-cis"
+   ],
+   "endpoint": "OS",
+   "result": "mOS 21.7 vs 18.9 mo (HR 0.78)",
+   "takeaway": "Alternative first-line regimen when EV not available.",
+   "tags": [
+    "immunotherapy",
+    "cisplatin"
+   ],
+   "site": "Bladder & Upper Tract",
+   "id": "checkmate-901-gem-cis-nivo"
+  },
+  {
+   "name": "THOR",
+   "setting": "Metastatic",
+   "modality": "Systemic",
+   "year": 2023,
+   "journal": "NEJM 2023",
+   "design": "Phase 3, n=266",
+   "population": "FGFR-altered advanced UC after ARPI/IO",
+   "arms": [
+    "Erdafitinib",
+    "Chemotherapy"
+   ],
+   "endpoint": "OS",
+   "result": "mOS 12.1 vs 7.8 mo (HR 0.64)",
+   "takeaway": "Test FGFR3; erdafitinib for altered tumours.",
+   "tags": [
+    "FGFR",
+    "erdafitinib"
+   ],
+   "site": "Bladder & Upper Tract",
+   "id": "thor"
+  },
+  {
+   "name": "CheckMate 214",
+   "setting": "Metastatic 1L",
+   "modality": "Systemic",
+   "year": 2018,
+   "journal": "NEJM 2018",
+   "design": "Phase 3, n=1,096",
+   "population": "Advanced clear-cell RCC",
+   "arms": [
+    "Nivolumab + ipilimumab",
+    "Sunitinib"
+   ],
+   "endpoint": "OS (int/poor risk)",
+   "result": "Int/poor-risk: mOS 47.0 vs 26.6 mo (HR 0.68); durable CR ~10%",
+   "takeaway": "Nivo-ipi first line for intermediate/poor-risk ccRCC.",
+   "tags": [
+    "immunotherapy",
+    "ccRCC"
+   ],
+   "site": "Kidney",
+   "id": "checkmate-214"
+  },
+  {
+   "name": "KEYNOTE-426 / CLEAR / CheckMate 9ER",
+   "setting": "Metastatic 1L",
+   "modality": "Systemic",
+   "year": 2019,
+   "journal": "NEJM 2019/2021 (×3)",
+   "design": "Phase 3s",
+   "population": "Advanced ccRCC",
+   "arms": [
+    "Pembrolizumab + axitinib / lenvatinib; nivolumab + cabozantinib",
+    "Sunitinib"
+   ],
+   "endpoint": "PFS, OS",
+   "result": "CLEAR mPFS 23.9 vs 9.2 mo (HR 0.39); all showed OS benefit",
+   "takeaway": "IO-TKI combinations are first-line standards across risk groups.",
+   "tags": [
+    "IO-TKI",
+    "ccRCC"
+   ],
+   "site": "Kidney",
+   "id": "keynote-426-clear-checkmate-9er"
+  },
+  {
+   "name": "KEYNOTE-564",
+   "setting": "Adjuvant",
+   "modality": "Systemic",
+   "year": 2021,
+   "journal": "NEJM 2021; NEJM 2024",
+   "design": "Phase 3, n=994",
+   "population": "High-risk ccRCC after nephrectomy",
+   "arms": [
+    "Pembrolizumab 1 y",
+    "Placebo"
+   ],
+   "endpoint": "DFS",
+   "result": "DFS HR 0.72; OS HR 0.62",
+   "takeaway": "Adjuvant pembrolizumab for intermediate-high/high-risk resected ccRCC.",
+   "tags": [
+    "immunotherapy",
+    "adjuvant",
+    "ccRCC"
+   ],
+   "site": "Kidney",
+   "id": "keynote-564"
+  },
+  {
+   "name": "CARMENA",
+   "setting": "Metastatic",
+   "modality": "Surgery",
+   "year": 2018,
+   "journal": "NEJM 2018",
+   "design": "Phase 3 non-inferiority, n=450",
+   "population": "Synchronous mRCC, intermediate/poor risk",
+   "arms": [
+    "Sunitinib alone",
+    "Cytoreductive nephrectomy → sunitinib"
+   ],
+   "endpoint": "OS",
+   "result": "mOS 18.4 vs 13.9 mo (sunitinib alone non-inferior)",
+   "takeaway": "Upfront cytoreductive nephrectomy is not routine for intermediate/poor-risk mRCC.",
+   "tags": [
+    "cytoreductive nephrectomy"
+   ],
+   "site": "Kidney",
+   "id": "carmena"
+  },
+  {
+   "name": "LITESPARK-005",
+   "setting": "Metastatic 2L+",
+   "modality": "Systemic",
+   "year": 2024,
+   "journal": "NEJM 2024",
+   "design": "Phase 3, n=746",
+   "population": "Advanced ccRCC after IO and VEGF-TKI",
+   "arms": [
+    "Belzutifan",
+    "Everolimus"
+   ],
+   "endpoint": "PFS, OS",
+   "result": "PFS HR 0.75; ORR 22.7% vs 3.5%",
+   "takeaway": "HIF-2α inhibitor option in later-line ccRCC.",
+   "tags": [
+    "HIF-2α",
+    "belzutifan"
+   ],
+   "site": "Kidney",
+   "id": "litespark-005"
+  },
+  {
+   "name": "Einhorn PVB / BEP (Williams)",
+   "setting": "Metastatic",
+   "modality": "Systemic",
+   "year": 1987,
+   "journal": "Ann Intern Med 1977; NEJM 1987",
+   "design": "Phase 3",
+   "population": "Disseminated germ cell tumour",
+   "arms": [
+    "BEP (cisplatin-etoposide-bleomycin)",
+    "PVB (vinblastine)"
+   ],
+   "endpoint": "Response, toxicity",
+   "result": "Equal efficacy with less neuromuscular toxicity with etoposide",
+   "takeaway": "BEP is the cornerstone; cisplatin made metastatic GCT curable.",
+   "tags": [
+    "germ cell",
+    "BEP",
+    "cisplatin"
+   ],
+   "site": "Testis",
+   "id": "einhorn-pvb-bep-williams"
+  },
+  {
+   "name": "IGCCCG",
+   "setting": "Metastatic",
+   "modality": "Systemic",
+   "year": 1997,
+   "journal": "JCO 1997; JCO 2021 update",
+   "design": "Prognostic classification, n=5,862",
+   "population": "Metastatic GCT",
+   "arms": [
+    "Good / intermediate / poor risk"
+   ],
+   "endpoint": "PFS, OS",
+   "result": "NSGCT 5-y OS ~95% (good), ~89% (intermediate), ~67% (poor) in 2021 update",
+   "takeaway": "Risk group guides BEP ×3 vs ×4 (or VIP).",
+   "tags": [
+    "germ cell",
+    "prognostic"
+   ],
+   "site": "Testis",
+   "id": "igcccg"
+  },
+  {
+   "name": "MRC TE19 (Oliver)",
+   "setting": "Adjuvant (stage I seminoma)",
+   "modality": "Systemic",
+   "year": 2005,
+   "journal": "Lancet 2005; JCO 2011",
+   "design": "Phase 3 non-inferiority, n=1,477",
+   "population": "Stage I seminoma after orchidectomy",
+   "arms": [
+    "Single-dose carboplatin AUC 7",
+    "Para-aortic RT 20–30 Gy"
+   ],
+   "endpoint": "Relapse-free rate",
+   "result": "5-y RFS 94.7% vs 96.0% (non-inferior); fewer contralateral GCTs with carboplatin",
+   "takeaway": "Surveillance or one cycle carboplatin; adjuvant RT largely abandoned.",
+   "tags": [
+    "seminoma",
+    "carboplatin",
+    "radiotherapy"
+   ],
+   "site": "Testis",
+   "id": "mrc-te19-oliver"
+  },
+  {
+   "name": "GOG 111 / OV-10",
+   "setting": "Advanced ovarian 1L",
+   "modality": "Systemic",
+   "year": 1996,
+   "journal": "NEJM 1996",
+   "design": "Phase 3, n=386",
+   "population": "Stage III–IV ovarian cancer",
+   "arms": [
+    "Cisplatin + paclitaxel",
+    "Cisplatin + cyclophosphamide"
+   ],
+   "endpoint": "OS",
+   "result": "mOS 38 vs 24 mo",
+   "takeaway": "Platinum-taxane became first-line standard (carboplatin later per GOG 158).",
+   "tags": [
+    "ovarian",
+    "paclitaxel",
+    "platinum"
+   ],
+   "site": "Gynaecologic",
+   "id": "gog-111-ov-10"
+  },
+  {
+   "name": "GOG 172 (Armstrong IP)",
+   "setting": "Advanced ovarian 1L",
+   "modality": "Systemic",
+   "year": 2006,
+   "journal": "NEJM 2006",
+   "design": "Phase 3, n=429",
+   "population": "Optimally debulked stage III ovarian cancer",
+   "arms": [
+    "IV paclitaxel + IP cisplatin/paclitaxel",
+    "IV cisplatin-paclitaxel"
+   ],
+   "endpoint": "OS",
+   "result": "mOS 65.6 vs 49.7 mo; only 42% completed IP therapy",
+   "takeaway": "IP chemo improves OS but is toxic; GOG 252 later showed no benefit with modern regimens.",
+   "tags": [
+    "ovarian",
+    "intraperitoneal"
+   ],
+   "site": "Gynaecologic",
+   "id": "gog-172-armstrong-ip"
+  },
+  {
+   "name": "JGOG 3016",
+   "setting": "Advanced ovarian 1L",
+   "modality": "Systemic",
+   "year": 2009,
+   "journal": "Lancet 2009; Lancet Oncol 2013",
+   "design": "Phase 3, n=637",
+   "population": "Stage II–IV ovarian cancer",
+   "arms": [
+    "Dose-dense weekly paclitaxel + carboplatin",
+    "q3w paclitaxel-carboplatin"
+   ],
+   "endpoint": "PFS",
+   "result": "mOS 100.5 vs 62.2 mo in Japanese population; not replicated in ICON8",
+   "takeaway": "Weekly paclitaxel is an option; benefit population-dependent.",
+   "tags": [
+    "ovarian",
+    "dose-dense"
+   ],
+   "site": "Gynaecologic",
+   "id": "jgog-3016"
+  },
+  {
+   "name": "EORTC 55971 / CHORUS",
+   "setting": "Advanced ovarian 1L",
+   "modality": "Surgery",
+   "year": 2010,
+   "journal": "NEJM 2010; Lancet 2015",
+   "design": "Phase 3s",
+   "population": "Stage IIIC–IV ovarian cancer",
+   "arms": [
+    "Neoadjuvant chemo → interval debulking",
+    "Primary debulking → chemo"
+   ],
+   "endpoint": "OS",
+   "result": "Equivalent OS; lower surgical morbidity with NACT",
+   "takeaway": "Neoadjuvant chemo is appropriate when complete primary cytoreduction is unlikely.",
+   "tags": [
+    "ovarian",
+    "NACT",
+    "surgery"
+   ],
+   "site": "Gynaecologic",
+   "id": "eortc-55971-chorus"
+  },
+  {
+   "name": "OVHIPEC-1",
+   "setting": "Advanced ovarian 1L",
+   "modality": "Surgery",
+   "year": 2018,
+   "journal": "NEJM 2018",
+   "design": "Phase 3, n=245",
+   "population": "Stage III ovarian cancer after NACT",
+   "arms": [
+    "Interval debulking + HIPEC cisplatin",
+    "Interval debulking alone"
+   ],
+   "endpoint": "RFS",
+   "result": "mOS 45.7 vs 33.9 mo (HR 0.67)",
+   "takeaway": "HIPEC at interval debulking is an option.",
+   "tags": [
+    "ovarian",
+    "HIPEC"
+   ],
+   "site": "Gynaecologic",
+   "id": "ovhipec-1"
+  },
+  {
+   "name": "SOLO-1",
+   "setting": "Maintenance 1L",
+   "modality": "Systemic",
+   "year": 2018,
+   "journal": "NEJM 2018; JCO 2023",
+   "design": "Phase 3, n=391",
+   "population": "BRCA-mutated advanced ovarian cancer responding to platinum",
+   "arms": [
+    "Olaparib 2 y",
+    "Placebo"
+   ],
+   "endpoint": "PFS",
+   "result": "7-y OS 67.0% vs 46.5%; PFS HR 0.33",
+   "takeaway": "Olaparib maintenance for BRCA-mutated ovarian cancer.",
+   "tags": [
+    "ovarian",
+    "PARP",
+    "BRCA"
+   ],
+   "site": "Gynaecologic",
+   "id": "solo-1"
+  },
+  {
+   "name": "PAOLA-1",
+   "setting": "Maintenance 1L",
+   "modality": "Systemic",
+   "year": 2019,
+   "journal": "NEJM 2019; Ann Oncol 2023",
+   "design": "Phase 3, n=806",
+   "population": "Advanced ovarian cancer after platinum + bevacizumab",
+   "arms": [
+    "Olaparib + bevacizumab",
+    "Placebo + bevacizumab"
+   ],
+   "endpoint": "PFS",
+   "result": "HRD-positive: 5-y OS 65.5% vs 48.4% (HR 0.62)",
+   "takeaway": "Olaparib + bevacizumab maintenance for HRD-positive disease.",
+   "tags": [
+    "ovarian",
+    "PARP",
+    "HRD"
+   ],
+   "site": "Gynaecologic",
+   "id": "paola-1"
+  },
+  {
+   "name": "PRIMA",
+   "setting": "Maintenance 1L",
+   "modality": "Systemic",
+   "year": 2019,
+   "journal": "NEJM 2019",
+   "design": "Phase 3, n=733",
+   "population": "Advanced ovarian cancer responding to first-line platinum",
+   "arms": [
+    "Niraparib",
+    "Placebo"
+   ],
+   "endpoint": "PFS",
+   "result": "Overall PFS 13.8 vs 8.2 mo (HR 0.62); HRD 21.9 vs 10.4 mo; no OS benefit",
+   "takeaway": "Niraparib maintenance regardless of biomarker (benefit largest in HRD).",
+   "tags": [
+    "ovarian",
+    "PARP",
+    "niraparib"
+   ],
+   "site": "Gynaecologic",
+   "id": "prima"
+  },
+  {
+   "name": "ICON7 / GOG 218",
+   "setting": "Advanced ovarian 1L",
+   "modality": "Systemic",
+   "year": 2011,
+   "journal": "NEJM 2011 (×2)",
+   "design": "Phase 3s",
+   "population": "Advanced ovarian cancer",
+   "arms": [
+    "Chemo + bevacizumab → maintenance",
+    "Chemo alone"
+   ],
+   "endpoint": "PFS",
+   "result": "Modest PFS benefit; OS gain in high-risk subgroup (ICON7)",
+   "takeaway": "Bevacizumab for high-risk / suboptimally debulked disease.",
+   "tags": [
+    "ovarian",
+    "bevacizumab"
+   ],
+   "site": "Gynaecologic",
+   "id": "icon7-gog-218"
+  },
+  {
+   "name": "MIRASOL",
+   "setting": "Platinum-resistant ovarian",
+   "modality": "Systemic",
+   "year": 2023,
+   "journal": "NEJM 2023",
+   "design": "Phase 3, n=453",
+   "population": "FRα-high platinum-resistant ovarian cancer",
+   "arms": [
+    "Mirvetuximab soravtansine",
+    "Investigator's choice chemo"
+   ],
+   "endpoint": "PFS",
+   "result": "mOS 16.5 vs 12.7 mo (HR 0.67); ORR 42% vs 16%",
+   "takeaway": "Test FRα; mirvetuximab for FRα-high platinum-resistant disease.",
+   "tags": [
+    "ovarian",
+    "ADC",
+    "FRα"
+   ],
+   "site": "Gynaecologic",
+   "id": "mirasol"
+  },
+  {
+   "name": "PORTEC-1/2",
+   "setting": "Adjuvant endometrial",
+   "modality": "Radiotherapy",
+   "year": 2010,
+   "journal": "Lancet 2000; Lancet 2010",
+   "design": "Phase 3s",
+   "population": "Intermediate/high-intermediate-risk endometrial cancer",
+   "arms": [
+    "Vaginal brachytherapy (PORTEC-2)",
+    "Pelvic EBRT"
+   ],
+   "endpoint": "Vaginal recurrence",
+   "result": "Vaginal recurrence 1.8% vs 1.6%; less GI toxicity with VBT",
+   "takeaway": "Vaginal brachytherapy replaces pelvic RT for high-intermediate risk.",
+   "tags": [
+    "endometrial",
+    "brachytherapy",
+    "radiotherapy"
+   ],
+   "site": "Gynaecologic",
+   "id": "portec-1-2"
+  },
+  {
+   "name": "PORTEC-3",
+   "setting": "Adjuvant endometrial",
+   "modality": "Combined",
+   "year": 2018,
+   "journal": "Lancet Oncol 2018/2019",
+   "design": "Phase 3, n=686",
+   "population": "High-risk endometrial cancer",
+   "arms": [
+    "Chemoradiotherapy → adjuvant carboplatin-paclitaxel",
+    "Pelvic RT alone"
+   ],
+   "endpoint": "OS, FFS",
+   "result": "5-y OS 81.4% vs 76.1%; largest benefit in stage III and p53-abnormal",
+   "takeaway": "ChemoRT for high-risk disease, especially p53-abnormal.",
+   "tags": [
+    "endometrial",
+    "chemoradiotherapy",
+    "molecular"
+   ],
+   "site": "Gynaecologic",
+   "id": "portec-3"
+  },
+  {
+   "name": "GOG 258",
+   "setting": "Adjuvant endometrial",
+   "modality": "Combined",
+   "year": 2019,
+   "journal": "NEJM 2019",
+   "design": "Phase 3, n=813",
+   "population": "Stage III–IVA endometrial cancer",
+   "arms": [
+    "Chemoradiotherapy + chemo",
+    "Chemo ×6"
+   ],
+   "endpoint": "RFS",
+   "result": "No RFS difference; fewer vaginal/nodal recurrences with RT",
+   "takeaway": "Chemotherapy alone is reasonable for stage III; RT improves local control.",
+   "tags": [
+    "endometrial",
+    "chemotherapy",
+    "radiotherapy"
+   ],
+   "site": "Gynaecologic",
+   "id": "gog-258"
+  },
+  {
+   "name": "RUBY / NRG-GY018",
+   "setting": "Advanced endometrial 1L",
+   "modality": "Systemic",
+   "year": 2023,
+   "journal": "NEJM 2023 (×2)",
+   "design": "Phase 3s",
+   "population": "Stage III–IV or recurrent endometrial cancer",
+   "arms": [
+    "Dostarlimab or pembrolizumab + carboplatin-paclitaxel",
+    "Placebo + chemo"
+   ],
+   "endpoint": "PFS",
+   "result": "dMMR: PFS HR 0.28–0.30; RUBY OS benefit overall",
+   "takeaway": "Chemo-IO first line, profound benefit in dMMR.",
+   "tags": [
+    "endometrial",
+    "immunotherapy",
+    "dMMR"
+   ],
+   "site": "Gynaecologic",
+   "id": "ruby-nrg-gy018"
+  },
+  {
+   "name": "KEYNOTE-775",
+   "setting": "Advanced endometrial 2L",
+   "modality": "Systemic",
+   "year": 2022,
+   "journal": "NEJM 2022",
+   "design": "Phase 3, n=827",
+   "population": "Advanced endometrial cancer after platinum",
+   "arms": [
+    "Lenvatinib + pembrolizumab",
+    "Doxorubicin or paclitaxel"
+   ],
+   "endpoint": "PFS, OS",
+   "result": "pMMR mOS 17.4 vs 12.0 mo",
+   "takeaway": "Len-pembro for pMMR endometrial cancer after platinum.",
+   "tags": [
+    "endometrial",
+    "lenvatinib",
+    "pembrolizumab"
+   ],
+   "site": "Gynaecologic",
+   "id": "keynote-775"
+  },
+  {
+   "name": "Cervix chemoRT (Rose / Morris, 1999 NCI alert)",
+   "setting": "Locally advanced cervix",
+   "modality": "Radiotherapy",
+   "year": 1999,
+   "journal": "NEJM 1999 (×3)",
+   "design": "Phase 3s",
+   "population": "Locally advanced cervical cancer",
+   "arms": [
+    "Cisplatin-based concurrent chemoRT",
+    "RT ± hydroxyurea"
+   ],
+   "endpoint": "OS",
+   "result": "Death risk reduced 30–50%",
+   "takeaway": "Weekly cisplatin + EBRT + brachytherapy is standard.",
+   "tags": [
+    "cervix",
+    "chemoradiotherapy",
+    "brachytherapy"
+   ],
+   "site": "Gynaecologic",
+   "id": "cervix-chemort-rose-morris-1999-nci-alert"
+  },
+  {
+   "name": "EMBRACE-I",
+   "setting": "Locally advanced cervix",
+   "modality": "Radiotherapy",
+   "year": 2021,
+   "journal": "Lancet Oncol 2021",
+   "design": "Prospective cohort, n=1,341",
+   "population": "Locally advanced cervical cancer",
+   "arms": [
+    "MRI-guided adaptive brachytherapy + chemoRT"
+   ],
+   "endpoint": "Local control",
+   "result": "5-y local control 92%; pelvic control 87%",
+   "takeaway": "Image-guided adaptive brachytherapy with dose targets (HR-CTV D90 ≥85 Gy) is standard.",
+   "tags": [
+    "cervix",
+    "brachytherapy",
+    "IGABT"
+   ],
+   "site": "Gynaecologic",
+   "id": "embrace-i"
+  },
+  {
+   "name": "INTERLACE",
+   "setting": "Locally advanced cervix",
+   "modality": "Combined",
+   "year": 2024,
+   "journal": "Lancet 2024",
+   "design": "Phase 3, n=500",
+   "population": "Stage IB1 N+ to IVA cervical cancer",
+   "arms": [
+    "Induction weekly carboplatin-paclitaxel ×6 → chemoRT",
+    "ChemoRT"
+   ],
+   "endpoint": "PFS, OS",
+   "result": "5-y OS 80% vs 72% (HR 0.60)",
+   "takeaway": "Short induction chemo before chemoRT is a new standard option.",
+   "tags": [
+    "cervix",
+    "induction chemotherapy"
+   ],
+   "site": "Gynaecologic",
+   "id": "interlace"
+  },
+  {
+   "name": "KEYNOTE-A18",
+   "setting": "Locally advanced cervix",
+   "modality": "Combined",
+   "year": 2024,
+   "journal": "Lancet 2024",
+   "design": "Phase 3, n=1,060",
+   "population": "High-risk LACC (FIGO 2014 IB2–IIB N+ or III–IVA)",
+   "arms": [
+    "Pembrolizumab + chemoRT → pembrolizumab",
+    "Placebo + chemoRT"
+   ],
+   "endpoint": "PFS, OS",
+   "result": "36-mo OS 82.6% vs 74.8% (HR 0.67)",
+   "takeaway": "Pembrolizumab with chemoRT for high-risk LACC.",
+   "tags": [
+    "cervix",
+    "immunotherapy",
+    "chemoradiotherapy"
+   ],
+   "site": "Gynaecologic",
+   "id": "keynote-a18"
+  },
+  {
+   "name": "GOG 240",
+   "setting": "Metastatic cervix",
+   "modality": "Systemic",
+   "year": 2014,
+   "journal": "NEJM 2014",
+   "design": "Phase 3, n=452",
+   "population": "Recurrent/metastatic cervical cancer",
+   "arms": [
+    "Chemo + bevacizumab",
+    "Chemo alone"
+   ],
+   "endpoint": "OS",
+   "result": "mOS 17.0 vs 13.3 mo",
+   "takeaway": "Bevacizumab added to first-line chemo.",
+   "tags": [
+    "cervix",
+    "bevacizumab"
+   ],
+   "site": "Gynaecologic",
+   "id": "gog-240"
+  },
+  {
+   "name": "KEYNOTE-826",
+   "setting": "Metastatic cervix",
+   "modality": "Systemic",
+   "year": 2021,
+   "journal": "NEJM 2021; Lancet 2023",
+   "design": "Phase 3, n=617",
+   "population": "Persistent/recurrent/metastatic cervical cancer",
+   "arms": [
+    "Pembrolizumab + platinum-paclitaxel ± bev",
+    "Placebo + same"
+   ],
+   "endpoint": "OS, PFS",
+   "result": "CPS ≥1: mOS 28.6 vs 16.5 mo (HR 0.60)",
+   "takeaway": "Chemo-IO ± bevacizumab is first-line standard for PD-L1+ disease.",
+   "tags": [
+    "cervix",
+    "immunotherapy"
+   ],
+   "site": "Gynaecologic",
+   "id": "keynote-826"
+  },
+  {
+   "name": "SHAPE",
+   "setting": "Early cervix",
+   "modality": "Surgery",
+   "year": 2024,
+   "journal": "NEJM 2024",
+   "design": "Phase 3 non-inferiority, n=700",
+   "population": "Low-risk early cervical cancer (≤2 cm)",
+   "arms": [
+    "Simple hysterectomy",
+    "Radical hysterectomy"
+   ],
+   "endpoint": "Pelvic recurrence",
+   "result": "3-y pelvic recurrence 2.5% vs 2.2% (non-inferior); less urinary dysfunction",
+   "takeaway": "Simple hysterectomy is adequate for low-risk early cervical cancer.",
+   "tags": [
+    "cervix",
+    "de-escalation",
+    "surgery"
+   ],
+   "site": "Gynaecologic",
+   "id": "shape"
+  },
+  {
+   "name": "LACC",
+   "setting": "Early cervix",
+   "modality": "Surgery",
+   "year": 2018,
+   "journal": "NEJM 2018",
+   "design": "Phase 3, n=631",
+   "population": "Stage IA1–IB1 cervical cancer",
+   "arms": [
+    "Minimally invasive radical hysterectomy",
+    "Open radical hysterectomy"
+   ],
+   "endpoint": "DFS",
+   "result": "4.5-y DFS 86.0% vs 96.5%; 3-y OS 93.8% vs 99.0%",
+   "takeaway": "Open surgery is preferred for radical hysterectomy.",
+   "tags": [
+    "cervix",
+    "surgery",
+    "MIS"
+   ],
+   "site": "Gynaecologic",
+   "id": "lacc"
+  },
+  {
+   "name": "MACH-NC",
+   "setting": "Locally advanced",
+   "modality": "Combined",
+   "year": 2009,
+   "journal": "Radiother Oncol 2009; 2021 update",
+   "design": "Meta-analysis, n≈17,000",
+   "population": "Non-metastatic HNSCC",
+   "arms": [
+    "Locoregional therapy + chemo",
+    "Locoregional therapy alone"
+   ],
+   "endpoint": "OS",
+   "result": "Concurrent chemo: 5-y OS +6.5% (HR 0.83); induction/adjuvant smaller",
+   "takeaway": "Concurrent platinum chemoRT is the reference for locally advanced HNSCC.",
+   "tags": [
+    "radiotherapy",
+    "chemoradiotherapy",
+    "meta-analysis"
+   ],
+   "site": "Head & Neck",
+   "id": "mach-nc"
+  },
+  {
+   "name": "MARCH",
+   "setting": "Locally advanced",
+   "modality": "Radiotherapy",
+   "year": 2006,
+   "journal": "Lancet 2006; Lancet Oncol 2017",
+   "design": "Meta-analysis, n=11,423",
+   "population": "HNSCC treated with RT",
+   "arms": [
+    "Hyperfractionated / accelerated RT",
+    "Conventional RT"
+   ],
+   "endpoint": "OS",
+   "result": "Hyperfractionation: 5-y OS +8.1%",
+   "takeaway": "Altered fractionation helps when RT is given alone.",
+   "tags": [
+    "radiotherapy",
+    "altered fractionation"
+   ],
+   "site": "Head & Neck",
+   "id": "march"
+  },
+  {
+   "name": "RTOG 9501 / EORTC 22931",
+   "setting": "Adjuvant",
+   "modality": "Radiotherapy",
+   "year": 2004,
+   "journal": "NEJM 2004 (×2)",
+   "design": "Phase 3s",
+   "population": "Resected high-risk HNSCC",
+   "arms": [
+    "Postoperative RT + cisplatin 100 mg/m²",
+    "Postoperative RT alone"
+   ],
+   "endpoint": "Locoregional control, OS",
+   "result": "Pooled: benefit confined to positive margins and/or extranodal extension",
+   "takeaway": "Adjuvant chemoRT for positive margins or ENE.",
+   "tags": [
+    "radiotherapy",
+    "adjuvant",
+    "ENE"
+   ],
+   "site": "Head & Neck",
+   "id": "rtog-9501-eortc-22931"
+  },
+  {
+   "name": "Bonner cetuximab-RT",
+   "setting": "Locally advanced",
+   "modality": "Radiotherapy",
+   "year": 2006,
+   "journal": "NEJM 2006; Lancet Oncol 2010",
+   "design": "Phase 3, n=424",
+   "population": "Locoregionally advanced HNSCC",
+   "arms": [
+    "RT + cetuximab",
+    "RT alone"
+   ],
+   "endpoint": "Locoregional control",
+   "result": "5-y OS 45.6% vs 36.4%",
+   "takeaway": "Cetuximab-RT improves on RT alone, but is inferior to cisplatin (see RTOG 1016).",
+   "tags": [
+    "radiotherapy",
+    "cetuximab"
+   ],
+   "site": "Head & Neck",
+   "id": "bonner-cetuximab-rt"
+  },
+  {
+   "name": "RTOG 1016 / De-ESCALaTE",
+   "setting": "HPV+ oropharynx",
+   "modality": "Radiotherapy",
+   "year": 2019,
+   "journal": "Lancet 2019 (×2)",
+   "design": "Phase 3s",
+   "population": "HPV-positive oropharyngeal cancer",
+   "arms": [
+    "RT + cetuximab",
+    "RT + cisplatin"
+   ],
+   "endpoint": "OS",
+   "result": "RTOG 1016 5-y OS 77.9% vs 84.6% (cetuximab inferior)",
+   "takeaway": "Cisplatin remains standard even in HPV+ disease; cetuximab is not a de-escalation.",
+   "tags": [
+    "radiotherapy",
+    "HPV",
+    "cisplatin"
+   ],
+   "site": "Head & Neck",
+   "id": "rtog-1016-de-escalate"
+  },
+  {
+   "name": "Noronha (Tata) weekly vs 3-weekly cisplatin",
+   "setting": "Adjuvant",
+   "modality": "Radiotherapy",
+   "year": 2018,
+   "journal": "JCO 2018",
+   "design": "Phase 3 non-inferiority, n=300",
+   "population": "Mostly postoperative oral cavity HNSCC",
+   "arms": [
+    "Cisplatin 30 mg/m² weekly + RT",
+    "Cisplatin 100 mg/m² q3w + RT"
+   ],
+   "endpoint": "Locoregional control",
+   "result": "2-y LRC 58.5% vs 73.1% (weekly inferior)",
+   "takeaway": "3-weekly high-dose cisplatin preferred in the postoperative setting.",
+   "tags": [
+    "radiotherapy",
+    "cisplatin",
+    "India"
+   ],
+   "site": "Head & Neck",
+   "id": "noronha-tata-weekly-vs-3-weekly-cisplatin"
+  },
+  {
+   "name": "JCOG1008",
+   "setting": "Adjuvant",
+   "modality": "Radiotherapy",
+   "year": 2022,
+   "journal": "Lancet 2022",
+   "design": "Phase 3 non-inferiority, n=261",
+   "population": "Postoperative high-risk HNSCC",
+   "arms": [
+    "Cisplatin 40 mg/m² weekly + RT",
+    "Cisplatin 100 mg/m² q3w + RT"
+   ],
+   "endpoint": "OS",
+   "result": "3-y OS 71.6% vs 59.1% (weekly non-inferior, less toxic)",
+   "takeaway": "Weekly cisplatin 40 mg/m² is an acceptable postoperative alternative.",
+   "tags": [
+    "radiotherapy",
+    "cisplatin"
+   ],
+   "site": "Head & Neck",
+   "id": "jcog1008"
+  },
+  {
+   "name": "PARSPORT",
+   "setting": "Locally advanced",
+   "modality": "Radiotherapy",
+   "year": 2011,
+   "journal": "Lancet Oncol 2011",
+   "design": "Phase 3, n=94",
+   "population": "Pharyngeal cancer",
+   "arms": [
+    "Parotid-sparing IMRT",
+    "Conventional RT"
+   ],
+   "endpoint": "Xerostomia",
+   "result": "Grade ≥2 xerostomia at 12 mo 38% vs 74%",
+   "takeaway": "IMRT is standard to reduce xerostomia.",
+   "tags": [
+    "radiotherapy",
+    "IMRT",
+    "xerostomia"
+   ],
+   "site": "Head & Neck",
+   "id": "parsport"
+  },
+  {
+   "name": "VA Larynx / RTOG 91-11",
+   "setting": "Larynx preservation",
+   "modality": "Combined",
+   "year": 2003,
+   "journal": "NEJM 1991; NEJM 2003; JCO 2013",
+   "design": "Phase 3s",
+   "population": "Advanced laryngeal cancer",
+   "arms": [
+    "Induction chemo → RT",
+    "Concurrent cisplatin-RT",
+    "RT alone (91-11)"
+   ],
+   "endpoint": "Laryngectomy-free survival",
+   "result": "Concurrent chemoRT gave highest larynx preservation (~84% at 2 y)",
+   "takeaway": "Organ preservation with concurrent chemoRT for suitable T3/low-volume T4 larynx.",
+   "tags": [
+    "larynx",
+    "organ preservation",
+    "radiotherapy"
+   ],
+   "site": "Head & Neck",
+   "id": "va-larynx-rtog-91-11"
+  },
+  {
+   "name": "TAX 324 / TAX 323",
+   "setting": "Locally advanced",
+   "modality": "Systemic",
+   "year": 2007,
+   "journal": "NEJM 2007 (×2)",
+   "design": "Phase 3s",
+   "population": "Unresectable / locally advanced HNSCC",
+   "arms": [
+    "TPF induction → chemoRT",
+    "PF induction → chemoRT"
+   ],
+   "endpoint": "OS",
+   "result": "TAX 324 mOS 71 vs 30 mo",
+   "takeaway": "If induction is used, TPF is the regimen; routine induction not proven over chemoRT.",
+   "tags": [
+    "induction chemotherapy",
+    "TPF"
+   ],
+   "site": "Head & Neck",
+   "id": "tax-324-tax-323"
+  },
+  {
+   "name": "Sun / Zhang NPC GP induction",
+   "setting": "Nasopharynx",
+   "modality": "Combined",
+   "year": 2019,
+   "journal": "NEJM 2019; Lancet Oncol 2016",
+   "design": "Phase 3s",
+   "population": "Locoregionally advanced nasopharyngeal carcinoma",
+   "arms": [
+    "Induction gemcitabine-cisplatin → chemoRT",
+    "ChemoRT"
+   ],
+   "endpoint": "RFS, OS",
+   "result": "Zhang: 3-y RFS 85.3% vs 76.5%; OS benefit later",
+   "takeaway": "GP induction + chemoRT is standard for locally advanced NPC.",
+   "tags": [
+    "nasopharynx",
+    "induction",
+    "radiotherapy"
+   ],
+   "site": "Head & Neck",
+   "id": "sun-zhang-npc-gp-induction"
+  },
+  {
+   "name": "KEYNOTE-048",
+   "setting": "Recurrent/metastatic",
+   "modality": "Systemic",
+   "year": 2019,
+   "journal": "Lancet 2019",
+   "design": "Phase 3, n=882",
+   "population": "R/M HNSCC first line",
+   "arms": [
+    "Pembrolizumab ± platinum-5FU",
+    "Cetuximab + platinum-5FU (EXTREME)"
+   ],
+   "endpoint": "OS",
+   "result": "CPS ≥20 pembro alone mOS 14.9 vs 10.7 mo; chemo-pembro OS benefit overall",
+   "takeaway": "Pembrolizumab (± chemo) replaced EXTREME first line.",
+   "tags": [
+    "immunotherapy",
+    "pembrolizumab",
+    "R/M"
+   ],
+   "site": "Head & Neck",
+   "id": "keynote-048"
+  },
+  {
+   "name": "CheckMate 141",
+   "setting": "Recurrent/metastatic",
+   "modality": "Systemic",
+   "year": 2016,
+   "journal": "NEJM 2016",
+   "design": "Phase 3, n=361",
+   "population": "Platinum-refractory R/M HNSCC",
+   "arms": [
+    "Nivolumab",
+    "Investigator's choice"
+   ],
+   "endpoint": "OS",
+   "result": "mOS 7.5 vs 5.1 mo (HR 0.70)",
+   "takeaway": "Nivolumab for platinum-refractory HNSCC.",
+   "tags": [
+    "immunotherapy",
+    "nivolumab"
+   ],
+   "site": "Head & Neck",
+   "id": "checkmate-141"
+  },
+  {
+   "name": "Patil (Tata) metronomic",
+   "setting": "Recurrent/metastatic",
+   "modality": "Systemic",
+   "year": 2020,
+   "journal": "JCO 2020/2023",
+   "design": "Phase 3 and phase 2",
+   "population": "R/M HNSCC (resource-limited)",
+   "arms": [
+    "Oral metronomic methotrexate + celecoxib ± low-dose nivolumab",
+    "Cisplatin / metronomic"
+   ],
+   "endpoint": "OS",
+   "result": "Low-dose nivolumab 40 mg + metronomic: 1-y OS 43.4% vs 16.3%",
+   "takeaway": "Affordable options for LMIC settings.",
+   "tags": [
+    "India",
+    "low-dose nivolumab",
+    "metronomic"
+   ],
+   "site": "Head & Neck",
+   "id": "patil-tata-metronomic"
+  },
+  {
+   "name": "KEYNOTE-689",
+   "setting": "Perioperative",
+   "modality": "Systemic",
+   "year": 2025,
+   "journal": "NEJM 2025",
+   "design": "Phase 3, n=714",
+   "population": "Resectable stage III–IVA HNSCC",
+   "arms": [
+    "Neoadjuvant + adjuvant pembrolizumab with standard therapy",
+    "Standard surgery + (chemo)RT"
+   ],
+   "endpoint": "EFS",
+   "result": "CPS ≥10 EFS HR 0.66",
+   "takeaway": "Perioperative pembrolizumab for resectable PD-L1+ HNSCC.",
+   "tags": [
+    "immunotherapy",
+    "perioperative"
+   ],
+   "site": "Head & Neck",
+   "id": "keynote-689"
+  },
+  {
+   "name": "EORTC/NCIC (Stupp)",
+   "setting": "Glioblastoma",
+   "modality": "Combined",
+   "year": 2005,
+   "journal": "NEJM 2005; Lancet Oncol 2009",
+   "design": "Phase 3, n=573",
+   "population": "Newly diagnosed GBM, age ≤70",
+   "arms": [
+    "RT 60 Gy/30 + concurrent and adjuvant temozolomide",
+    "RT alone"
+   ],
+   "endpoint": "OS",
+   "result": "mOS 14.6 vs 12.1 mo; 5-y OS 9.8% vs 1.9%; MGMT methylation predicts benefit",
+   "takeaway": "Stupp protocol is standard for GBM.",
+   "tags": [
+    "glioblastoma",
+    "temozolomide",
+    "radiotherapy",
+    "MGMT"
+   ],
+   "site": "CNS",
+   "id": "eortc-ncic-stupp"
+  },
+  {
+   "name": "Perry elderly GBM",
+   "setting": "Glioblastoma",
+   "modality": "Combined",
+   "year": 2017,
+   "journal": "NEJM 2017",
+   "design": "Phase 3, n=562",
+   "population": "GBM age ≥65",
+   "arms": [
+    "Short-course RT 40 Gy/15 + TMZ",
+    "Short-course RT alone"
+   ],
+   "endpoint": "OS",
+   "result": "mOS 9.3 vs 7.6 mo; MGMT-methylated 13.5 vs 7.7 mo",
+   "takeaway": "Hypofractionated RT + TMZ for older patients.",
+   "tags": [
+    "glioblastoma",
+    "elderly",
+    "radiotherapy"
+   ],
+   "site": "CNS",
+   "id": "perry-elderly-gbm"
+  },
+  {
+   "name": "EF-14 (TTFields)",
+   "setting": "Glioblastoma",
+   "modality": "Device",
+   "year": 2017,
+   "journal": "JAMA 2017",
+   "design": "Phase 3, n=695",
+   "population": "GBM after chemoRT",
+   "arms": [
+    "TTFields + TMZ",
+    "TMZ alone"
+   ],
+   "endpoint": "PFS, OS",
+   "result": "mOS 20.9 vs 16.0 mo",
+   "takeaway": "Tumour-treating fields are an option with maintenance TMZ.",
+   "tags": [
+    "glioblastoma",
+    "TTFields"
+   ],
+   "site": "CNS",
+   "id": "ef-14-ttfields"
+  },
+  {
+   "name": "RTOG 9802 / EORTC 22033",
+   "setting": "Low-grade glioma",
+   "modality": "Combined",
+   "year": 2016,
+   "journal": "NEJM 2016",
+   "design": "Phase 3, n=251",
+   "population": "High-risk low-grade glioma",
+   "arms": [
+    "RT + PCV",
+    "RT alone"
+   ],
+   "endpoint": "OS",
+   "result": "mOS 13.3 vs 7.8 y",
+   "takeaway": "RT + PCV for high-risk LGG (IDH-mutant).",
+   "tags": [
+    "low-grade glioma",
+    "PCV",
+    "radiotherapy"
+   ],
+   "site": "CNS",
+   "id": "rtog-9802-eortc-22033"
+  },
+  {
+   "name": "RTOG 9402 / EORTC 26951",
+   "setting": "Oligodendroglioma",
+   "modality": "Combined",
+   "year": 2013,
+   "journal": "JCO 2013 (×2)",
+   "design": "Phase 3s",
+   "population": "Anaplastic oligodendroglial tumours",
+   "arms": [
+    "RT + PCV",
+    "RT alone"
+   ],
+   "endpoint": "OS",
+   "result": "1p/19q co-deleted: mOS 14.7 vs 7.3 y (RTOG 9402)",
+   "takeaway": "RT + PCV for 1p/19q co-deleted oligodendroglioma.",
+   "tags": [
+    "oligodendroglioma",
+    "1p19q",
+    "PCV"
+   ],
+   "site": "CNS",
+   "id": "rtog-9402-eortc-26951"
+  },
+  {
+   "name": "CATNON",
+   "setting": "Anaplastic astrocytoma",
+   "modality": "Combined",
+   "year": 2017,
+   "journal": "Lancet 2017; Lancet Oncol 2021",
+   "design": "Phase 3 (2x2), n=751",
+   "population": "1p/19q non-codeleted anaplastic glioma",
+   "arms": [
+    "RT ± concurrent TMZ ± adjuvant TMZ"
+   ],
+   "endpoint": "OS",
+   "result": "Adjuvant TMZ improved OS (HR 0.64), benefit in IDH-mutant",
+   "takeaway": "RT + 12 cycles adjuvant TMZ for IDH-mutant grade 3 astrocytoma.",
+   "tags": [
+    "astrocytoma",
+    "temozolomide",
+    "IDH"
+   ],
+   "site": "CNS",
+   "id": "catnon"
+  },
+  {
+   "name": "INDIGO",
+   "setting": "Low-grade glioma",
+   "modality": "Systemic",
+   "year": 2023,
+   "journal": "NEJM 2023",
+   "design": "Phase 3, n=331",
+   "population": "Residual/recurrent grade 2 IDH-mutant glioma after surgery only",
+   "arms": [
+    "Vorasidenib",
+    "Placebo"
+   ],
+   "endpoint": "PFS",
+   "result": "mPFS 27.7 vs 11.1 mo (HR 0.39)",
+   "takeaway": "Vorasidenib can delay RT/chemo in grade 2 IDH-mutant glioma.",
+   "tags": [
+    "IDH",
+    "vorasidenib",
+    "glioma"
+   ],
+   "site": "CNS",
+   "id": "indigo"
+  },
+  {
+   "name": "Patchell (surgery + WBRT)",
+   "setting": "Brain metastases",
+   "modality": "Surgery/RT",
+   "year": 1990,
+   "journal": "NEJM 1990/JAMA 1998",
+   "design": "RCTs",
+   "population": "Single brain metastasis",
+   "arms": [
+    "Surgery + WBRT",
+    "WBRT alone (1990)"
+   ],
+   "endpoint": "OS, recurrence",
+   "result": "Surgery improved OS (40 vs 15 wk)",
+   "takeaway": "Resection for single accessible metastasis.",
+   "tags": [
+    "brain metastases",
+    "surgery",
+    "radiotherapy"
+   ],
+   "site": "CNS",
+   "id": "patchell-surgery-wbrt"
+  },
+  {
+   "name": "N0574 (Brown)",
+   "setting": "Brain metastases",
+   "modality": "Radiotherapy",
+   "year": 2016,
+   "journal": "JAMA 2016",
+   "design": "Phase 3, n=213",
+   "population": "1–3 brain metastases",
+   "arms": [
+    "SRS alone",
+    "SRS + WBRT"
+   ],
+   "endpoint": "Cognitive deterioration",
+   "result": "Cognitive decline at 3 mo 63.5% vs 91.7%; no OS difference",
+   "takeaway": "SRS alone is preferred for limited brain metastases.",
+   "tags": [
+    "brain metastases",
+    "SRS",
+    "neurocognition"
+   ],
+   "site": "CNS",
+   "id": "n0574-brown"
+  },
+  {
+   "name": "JLGK0901 (Yamamoto)",
+   "setting": "Brain metastases",
+   "modality": "Radiotherapy",
+   "year": 2014,
+   "journal": "Lancet Oncol 2014",
+   "design": "Prospective, n=1,194",
+   "population": "1–10 brain metastases (≤10 mL total)",
+   "arms": [
+    "SRS alone"
+   ],
+   "endpoint": "OS",
+   "result": "OS for 5–10 lesions non-inferior to 2–4 lesions",
+   "takeaway": "SRS is reasonable for up to 10 metastases.",
+   "tags": [
+    "brain metastases",
+    "SRS"
+   ],
+   "site": "CNS",
+   "id": "jlgk0901-yamamoto"
+  },
+  {
+   "name": "NRG CC001",
+   "setting": "Brain metastases",
+   "modality": "Radiotherapy",
+   "year": 2020,
+   "journal": "JCO 2020",
+   "design": "Phase 3, n=518",
+   "population": "Brain metastases for WBRT",
+   "arms": [
+    "Hippocampal-avoidance WBRT + memantine",
+    "WBRT + memantine"
+   ],
+   "endpoint": "Cognitive failure",
+   "result": "Cognitive failure risk reduced (HR 0.74)",
+   "takeaway": "If WBRT is needed, use hippocampal avoidance + memantine.",
+   "tags": [
+    "brain metastases",
+    "HA-WBRT",
+    "memantine"
+   ],
+   "site": "CNS",
+   "id": "nrg-cc001"
+  },
+  {
+   "name": "QUARTZ",
+   "setting": "Brain metastases",
+   "modality": "Radiotherapy",
+   "year": 2016,
+   "journal": "Lancet 2016",
+   "design": "Phase 3 non-inferiority, n=538",
+   "population": "NSCLC brain mets unsuitable for surgery/SRS",
+   "arms": [
+    "Optimal supportive care + dexamethasone",
+    "OSC + WBRT 20 Gy/5"
+   ],
+   "endpoint": "QALYs",
+   "result": "No meaningful difference in QALYs or OS",
+   "takeaway": "WBRT adds little for poor-prognosis patients.",
+   "tags": [
+    "brain metastases",
+    "WBRT",
+    "palliative"
+   ],
+   "site": "CNS",
+   "id": "quartz"
+  },
+  {
+   "name": "IFM 2009",
+   "setting": "Newly diagnosed (transplant-eligible)",
+   "modality": "Systemic",
+   "year": 2017,
+   "journal": "NEJM 2017",
+   "design": "Phase 3, n=700",
+   "population": "Newly diagnosed myeloma age ≤65",
+   "arms": [
+    "RVD + early ASCT",
+    "RVD alone (ASCT at relapse)"
+   ],
+   "endpoint": "PFS",
+   "result": "mPFS 50 vs 36 mo; no OS difference",
+   "takeaway": "Early ASCT improves PFS; still standard for eligible patients.",
+   "tags": [
+    "ASCT",
+    "RVD"
+   ],
+   "site": "Myeloma",
+   "id": "ifm-2009"
+  },
+  {
+   "name": "GRIFFIN / PERSEUS",
+   "setting": "Newly diagnosed (transplant-eligible)",
+   "modality": "Systemic",
+   "year": 2024,
+   "journal": "Blood 2020; NEJM 2024",
+   "design": "Phase 2 / phase 3, n=709 (PERSEUS)",
+   "population": "Transplant-eligible NDMM",
+   "arms": [
+    "D-VRd induction + ASCT + D-VRd consolidation + D-R maintenance",
+    "VRd + ASCT + VRd + R"
+   ],
+   "endpoint": "PFS",
+   "result": "PERSEUS 4-y PFS 84.3% vs 67.7% (HR 0.42); MRD negativity 75% vs 48%",
+   "takeaway": "Quadruplet D-VRd is the standard for transplant-eligible myeloma.",
+   "tags": [
+    "daratumumab",
+    "quadruplet"
+   ],
+   "site": "Myeloma",
+   "id": "griffin-perseus"
+  },
+  {
+   "name": "MAIA",
+   "setting": "Newly diagnosed (transplant-ineligible)",
+   "modality": "Systemic",
+   "year": 2019,
+   "journal": "NEJM 2019; Lancet Oncol 2021",
+   "design": "Phase 3, n=737",
+   "population": "Transplant-ineligible NDMM",
+   "arms": [
+    "Daratumumab + lenalidomide + dexamethasone",
+    "Rd"
+   ],
+   "endpoint": "PFS",
+   "result": "mPFS 61.9 vs 34.4 mo; OS HR 0.68",
+   "takeaway": "DRd is a standard for transplant-ineligible myeloma.",
+   "tags": [
+    "daratumumab",
+    "transplant-ineligible"
+   ],
+   "site": "Myeloma",
+   "id": "maia"
+  },
+  {
+   "name": "CEPHEUS / IMROZ",
+   "setting": "Newly diagnosed (transplant-ineligible)",
+   "modality": "Systemic",
+   "year": 2024,
+   "journal": "NEJM 2024; Nat Med 2025",
+   "design": "Phase 3s",
+   "population": "Transplant-ineligible/deferred NDMM",
+   "arms": [
+    "Anti-CD38 (isatuximab or daratumumab) + VRd",
+    "VRd"
+   ],
+   "endpoint": "PFS / MRD",
+   "result": "IMROZ 5-y PFS 63.2% vs 45.2% (HR 0.60)",
+   "takeaway": "Quadruplets also benefit fit transplant-ineligible patients.",
+   "tags": [
+    "isatuximab",
+    "quadruplet"
+   ],
+   "site": "Myeloma",
+   "id": "cepheus-imroz"
+  },
+  {
+   "name": "CALGB 100104 / Myeloma XI",
+   "setting": "Maintenance",
+   "modality": "Systemic",
+   "year": 2012,
+   "journal": "NEJM 2012; Lancet Oncol 2019",
+   "design": "Phase 3s",
+   "population": "Post-ASCT myeloma",
+   "arms": [
+    "Lenalidomide maintenance",
+    "Placebo / observation"
+   ],
+   "endpoint": "PFS / OS",
+   "result": "Meta-analysis: OS benefit (HR 0.75)",
+   "takeaway": "Lenalidomide maintenance until progression after ASCT.",
+   "tags": [
+    "maintenance",
+    "lenalidomide"
+   ],
+   "site": "Myeloma",
+   "id": "calgb-100104-myeloma-xi"
+  },
+  {
+   "name": "CARTITUDE-4",
+   "setting": "Relapsed (1–3 prior lines)",
+   "modality": "Systemic",
+   "year": 2023,
+   "journal": "NEJM 2023; 2024 OS",
+   "design": "Phase 3, n=419",
+   "population": "Lenalidomide-refractory MM, 1–3 prior lines",
+   "arms": [
+    "Cilta-cel",
+    "PVd or DPd"
+   ],
+   "endpoint": "PFS, OS",
+   "result": "12-mo PFS 75.9% vs 48.6% (HR 0.26); OS benefit",
+   "takeaway": "BCMA CAR-T moves to second line.",
+   "tags": [
+    "CAR-T",
+    "BCMA",
+    "cilta-cel"
+   ],
+   "site": "Myeloma",
+   "id": "cartitude-4"
+  },
+  {
+   "name": "MajesTEC-3",
+   "setting": "Relapsed (1–3 prior lines)",
+   "modality": "Systemic",
+   "year": 2025,
+   "journal": "NEJM 2025",
+   "design": "Phase 3",
+   "population": "Relapsed/refractory MM, 1–3 prior lines",
+   "arms": [
+    "Teclistamab + daratumumab",
+    "DPd or DVd"
+   ],
+   "endpoint": "PFS, OS",
+   "result": "Large PFS and OS benefit",
+   "takeaway": "Bispecific + anti-CD38 is a powerful early-relapse option.",
+   "tags": [
+    "bispecific",
+    "teclistamab"
+   ],
+   "site": "Myeloma",
+   "id": "majestec-3"
+  },
+  {
+   "name": "GELA LNH98-5 (R-CHOP)",
+   "setting": "DLBCL 1L",
+   "modality": "Systemic",
+   "year": 2002,
+   "journal": "NEJM 2002; Blood 2010",
+   "design": "Phase 3, n=399",
+   "population": "DLBCL age 60–80",
+   "arms": [
+    "R-CHOP",
+    "CHOP"
+   ],
+   "endpoint": "EFS",
+   "result": "10-y OS 43.5% vs 27.6%",
+   "takeaway": "R-CHOP became the DLBCL standard.",
+   "tags": [
+    "DLBCL",
+    "rituximab"
+   ],
+   "site": "Lymphoma",
+   "id": "gela-lnh98-5-r-chop"
+  },
+  {
+   "name": "POLARIX",
+   "setting": "DLBCL 1L",
+   "modality": "Systemic",
+   "year": 2022,
+   "journal": "NEJM 2022; 2024 OS",
+   "design": "Phase 3, n=879",
+   "population": "Intermediate/high-risk DLBCL (IPI 2–5)",
+   "arms": [
+    "Pola-R-CHP",
+    "R-CHOP"
+   ],
+   "endpoint": "PFS",
+   "result": "2-y PFS 76.7% vs 70.2% (HR 0.73)",
+   "takeaway": "Pola-R-CHP is an alternative first line for higher-IPI DLBCL.",
+   "tags": [
+    "DLBCL",
+    "polatuzumab"
+   ],
+   "site": "Lymphoma",
+   "id": "polarix"
+  },
+  {
+   "name": "ZUMA-7 / TRANSFORM",
+   "setting": "DLBCL 2L",
+   "modality": "Systemic",
+   "year": 2022,
+   "journal": "NEJM 2022; Lancet 2022",
+   "design": "Phase 3s",
+   "population": "Primary refractory or early relapse (<12 mo) LBCL",
+   "arms": [
+    "Axi-cel / liso-cel CAR-T",
+    "Salvage chemo + ASCT"
+   ],
+   "endpoint": "EFS",
+   "result": "ZUMA-7 mEFS 8.3 vs 2.0 mo; OS HR 0.73",
+   "takeaway": "CAR-T is standard second line for early relapse.",
+   "tags": [
+    "CAR-T",
+    "DLBCL"
+   ],
+   "site": "Lymphoma",
+   "id": "zuma-7-transform"
+  },
+  {
+   "name": "HD10 / HD16 / RAPID",
+   "setting": "Early Hodgkin",
+   "modality": "Combined",
+   "year": 2010,
+   "journal": "NEJM 2010; JCO 2019; NEJM 2015",
+   "design": "Phase 3s",
+   "population": "Early-stage favourable Hodgkin lymphoma",
+   "arms": [
+    "ABVD ×2 + 20 Gy ISRT (HD10)",
+    "PET-guided omission of RT (RAPID, HD16)"
+   ],
+   "endpoint": "PFS",
+   "result": "HD10: ABVD ×2 + 20 Gy as effective as ×4 + 30 Gy; PET-neg RT omission slightly ↑ relapse",
+   "takeaway": "Brief chemo + low-dose RT; RT omission trades small relapse increase for less late toxicity.",
+   "tags": [
+    "Hodgkin",
+    "radiotherapy",
+    "PET-adapted"
+   ],
+   "site": "Lymphoma",
+   "id": "hd10-hd16-rapid"
+  },
+  {
+   "name": "RATHL",
+   "setting": "Advanced Hodgkin",
+   "modality": "Systemic",
+   "year": 2016,
+   "journal": "NEJM 2016",
+   "design": "Phase 3, n=1,214",
+   "population": "Advanced Hodgkin lymphoma",
+   "arms": [
+    "Interim PET-negative: AVD (drop bleomycin)",
+    "Continue ABVD"
+   ],
+   "endpoint": "PFS",
+   "result": "3-y PFS 84.4% vs 85.7% (non-inferior); less pulmonary toxicity",
+   "takeaway": "Omit bleomycin after negative interim PET.",
+   "tags": [
+    "Hodgkin",
+    "PET-adapted",
+    "bleomycin"
+   ],
+   "site": "Lymphoma",
+   "id": "rathl"
+  },
+  {
+   "name": "ECHELON-1",
+   "setting": "Advanced Hodgkin",
+   "modality": "Systemic",
+   "year": 2018,
+   "journal": "NEJM 2018; NEJM 2022",
+   "design": "Phase 3, n=1,334",
+   "population": "Stage III–IV Hodgkin lymphoma",
+   "arms": [
+    "A-AVD (brentuximab)",
+    "ABVD"
+   ],
+   "endpoint": "Modified PFS",
+   "result": "6-y OS 93.9% vs 89.4% (HR 0.59)",
+   "takeaway": "BV-AVD is a first-line option for advanced HL.",
+   "tags": [
+    "Hodgkin",
+    "brentuximab"
+   ],
+   "site": "Lymphoma",
+   "id": "echelon-1"
+  },
+  {
+   "name": "HD21",
+   "setting": "Advanced Hodgkin",
+   "modality": "Systemic",
+   "year": 2024,
+   "journal": "Lancet 2024",
+   "design": "Phase 3, n=1,500",
+   "population": "Advanced HL",
+   "arms": [
+    "BrECADD",
+    "eBEACOPP"
+   ],
+   "endpoint": "PFS, treatment-related morbidity",
+   "result": "4-y PFS 94.3% vs 90.9%; less toxicity",
+   "takeaway": "BrECADD is a new standard in advanced HL (where available).",
+   "tags": [
+    "Hodgkin",
+    "BrECADD"
+   ],
+   "site": "Lymphoma",
+   "id": "hd21"
+  },
+  {
+   "name": "S1826",
+   "setting": "Advanced Hodgkin",
+   "modality": "Systemic",
+   "year": 2024,
+   "journal": "NEJM 2024",
+   "design": "Phase 3, n=994",
+   "population": "Stage III–IV HL, age ≥12",
+   "arms": [
+    "Nivolumab + AVD",
+    "Brentuximab + AVD"
+   ],
+   "endpoint": "PFS",
+   "result": "2-y PFS 92% vs 83% (HR 0.45)",
+   "takeaway": "N-AVD is emerging as a first-line standard for advanced HL, including adolescents.",
+   "tags": [
+    "Hodgkin",
+    "nivolumab"
+   ],
+   "site": "Lymphoma",
+   "id": "s1826"
+  },
+  {
+   "name": "PRIMA (FL)",
+   "setting": "Follicular lymphoma",
+   "modality": "Systemic",
+   "year": 2011,
+   "journal": "Lancet 2011; JCO 2019",
+   "design": "Phase 3, n=1,018",
+   "population": "Advanced FL responding to R-chemo",
+   "arms": [
+    "Rituximab maintenance 2 y",
+    "Observation"
+   ],
+   "endpoint": "PFS",
+   "result": "10-y PFS 51% vs 35%; no OS difference",
+   "takeaway": "Rituximab maintenance prolongs PFS in FL.",
+   "tags": [
+    "follicular",
+    "rituximab",
+    "maintenance"
+   ],
+   "site": "Lymphoma",
+   "id": "prima-fl"
+  },
+  {
+   "name": "StiL / BRIGHT",
+   "setting": "Indolent lymphoma",
+   "modality": "Systemic",
+   "year": 2013,
+   "journal": "Lancet 2013; Blood 2014",
+   "design": "Phase 3s",
+   "population": "Indolent NHL and MCL",
+   "arms": [
+    "Bendamustine + rituximab",
+    "R-CHOP/R-CVP"
+   ],
+   "endpoint": "PFS",
+   "result": "StiL mPFS 69.5 vs 31.2 mo with less toxicity",
+   "takeaway": "BR is a standard first-line option for indolent lymphoma.",
+   "tags": [
+    "bendamustine",
+    "indolent"
+   ],
+   "site": "Lymphoma",
+   "id": "stil-bright"
+  },
+  {
+   "name": "TRIANGLE",
+   "setting": "Mantle cell",
+   "modality": "Systemic",
+   "year": 2024,
+   "journal": "Lancet 2024",
+   "design": "Phase 3, n=870",
+   "population": "Younger fit MCL",
+   "arms": [
+    "Ibrutinib + immunochemo ± ASCT",
+    "Immunochemo + ASCT"
+   ],
+   "endpoint": "FFS",
+   "result": "Ibrutinib without ASCT non-inferior/superior to ASCT",
+   "takeaway": "BTK inhibitor added to induction; ASCT may be omitted.",
+   "tags": [
+    "mantle cell",
+    "ibrutinib",
+    "ASCT"
+   ],
+   "site": "Lymphoma",
+   "id": "triangle"
+  },
+  {
+   "name": "CLL14 / ELEVATE-TN / RESONATE-2",
+   "setting": "CLL 1L",
+   "modality": "Systemic",
+   "year": 2019,
+   "journal": "NEJM 2019; Lancet 2020; NEJM 2015",
+   "design": "Phase 3s",
+   "population": "Untreated CLL",
+   "arms": [
+    "Venetoclax-obinutuzumab (fixed 12 mo) / acalabrutinib / ibrutinib",
+    "Chlorambucil-based"
+   ],
+   "endpoint": "PFS",
+   "result": "CLL14 6-y PFS 53.1% vs 21.7%",
+   "takeaway": "Targeted therapy (BTKi or Ven-O) has replaced chemoimmunotherapy.",
+   "tags": [
+    "CLL",
+    "venetoclax",
+    "BTK inhibitor"
+   ],
+   "site": "Lymphoma",
+   "id": "cll14-elevate-tn-resonate-2"
+  },
+  {
+   "name": "Daunorubicin 90 vs 45 (E1900)",
+   "setting": "AML induction",
+   "modality": "Systemic",
+   "year": 2009,
+   "journal": "NEJM 2009",
+   "design": "Phase 3, n=657",
+   "population": "AML age <60",
+   "arms": [
+    "Daunorubicin 90 mg/m² ×3 + cytarabine",
+    "45 mg/m²"
+   ],
+   "endpoint": "OS",
+   "result": "mOS 23.7 vs 15.7 mo",
+   "takeaway": "7+3 with daunorubicin 60–90 mg/m² is standard induction.",
+   "tags": [
+    "AML",
+    "7+3"
+   ],
+   "site": "Leukaemia & MDS",
+   "id": "daunorubicin-90-vs-45-e1900"
+  },
+  {
+   "name": "RATIFY",
+   "setting": "AML induction",
+   "modality": "Systemic",
+   "year": 2017,
+   "journal": "NEJM 2017",
+   "design": "Phase 3, n=717",
+   "population": "FLT3-mutated AML age <60",
+   "arms": [
+    "Midostaurin + 7+3",
+    "Placebo + 7+3"
+   ],
+   "endpoint": "OS",
+   "result": "OS HR 0.78; 4-y OS 51.4% vs 44.3%",
+   "takeaway": "Test FLT3 at diagnosis; add midostaurin (or quizartinib).",
+   "tags": [
+    "AML",
+    "FLT3",
+    "midostaurin"
+   ],
+   "site": "Leukaemia & MDS",
+   "id": "ratify"
+  },
+  {
+   "name": "VIALE-A",
+   "setting": "AML (unfit)",
+   "modality": "Systemic",
+   "year": 2020,
+   "journal": "NEJM 2020",
+   "design": "Phase 3, n=431",
+   "population": "AML unfit for intensive chemo",
+   "arms": [
+    "Venetoclax + azacitidine",
+    "Placebo + azacitidine"
+   ],
+   "endpoint": "OS",
+   "result": "mOS 14.7 vs 9.6 mo; CR/CRi 66.4% vs 28.3%",
+   "takeaway": "Ven-Aza is standard for unfit AML.",
+   "tags": [
+    "AML",
+    "venetoclax",
+    "azacitidine"
+   ],
+   "site": "Leukaemia & MDS",
+   "id": "viale-a"
+  },
+  {
+   "name": "APL0406 (Lo-Coco)",
+   "setting": "APL",
+   "modality": "Systemic",
+   "year": 2013,
+   "journal": "NEJM 2013; JCO 2017",
+   "design": "Phase 3, n=276",
+   "population": "Low/intermediate-risk APL",
+   "arms": [
+    "ATRA + arsenic trioxide",
+    "ATRA + chemotherapy (AIDA)"
+   ],
+   "endpoint": "EFS",
+   "result": "2-y EFS 97% vs 86%; 50-mo OS 99% vs 93%",
+   "takeaway": "ATRA-ATO without chemo for non-high-risk APL.",
+   "tags": [
+    "APL",
+    "arsenic",
+    "ATRA"
+   ],
+   "site": "Leukaemia & MDS",
+   "id": "apl0406-lo-coco"
+  },
+  {
+   "name": "IRIS",
+   "setting": "CML",
+   "modality": "Systemic",
+   "year": 2003,
+   "journal": "NEJM 2003; NEJM 2017",
+   "design": "Phase 3, n=1,106",
+   "population": "Chronic-phase CML",
+   "arms": [
+    "Imatinib",
+    "Interferon + cytarabine"
+   ],
+   "endpoint": "Response, PFS",
+   "result": "10-y OS 83.3% with imatinib",
+   "takeaway": "TKIs transformed CML into a chronic disease.",
+   "tags": [
+    "CML",
+    "imatinib"
+   ],
+   "site": "Leukaemia & MDS",
+   "id": "iris"
+  },
+  {
+   "name": "PhALLCON / GIMEMA LAL2116",
+   "setting": "Ph+ ALL",
+   "modality": "Systemic",
+   "year": 2024,
+   "journal": "JAMA 2024; NEJM 2020",
+   "design": "Phase 3 / phase 2",
+   "population": "Ph+ ALL",
+   "arms": [
+    "Ponatinib + reduced chemo / dasatinib + blinatumomab (chemo-free)",
+    "Imatinib + chemo"
+   ],
+   "endpoint": "MRD-negative CR",
+   "result": "D-ALBA: molecular response 60% after blinatumomab; 3-y OS ~80%",
+   "takeaway": "Chemo-light TKI + blinatumomab approaches for Ph+ ALL.",
+   "tags": [
+    "ALL",
+    "Ph+",
+    "blinatumomab"
+   ],
+   "site": "Leukaemia & MDS",
+   "id": "phallcon-gimema-lal2116"
+  },
+  {
+   "name": "E1910",
+   "setting": "B-ALL consolidation",
+   "modality": "Systemic",
+   "year": 2024,
+   "journal": "NEJM 2024",
+   "design": "Phase 3, n=224",
+   "population": "MRD-negative Ph-negative B-ALL age 30–70",
+   "arms": [
+    "Blinatumomab + chemo consolidation",
+    "Chemo alone"
+   ],
+   "endpoint": "OS",
+   "result": "3-y OS 85% vs 68% (HR 0.42)",
+   "takeaway": "Blinatumomab in consolidation even when MRD-negative.",
+   "tags": [
+    "ALL",
+    "blinatumomab"
+   ],
+   "site": "Leukaemia & MDS",
+   "id": "e1910"
+  },
+  {
+   "name": "CheckMate 067",
+   "setting": "Metastatic 1L",
+   "modality": "Systemic",
+   "year": 2015,
+   "journal": "NEJM 2015/2017; JCO 2022",
+   "design": "Phase 3, n=945",
+   "population": "Untreated advanced melanoma",
+   "arms": [
+    "Nivolumab + ipilimumab",
+    "Nivolumab",
+    "Ipilimumab"
+   ],
+   "endpoint": "PFS, OS",
+   "result": "10-y OS 43% (combo) vs 37% vs 19%; mOS 71.9 mo with combo",
+   "takeaway": "Combination checkpoint blockade gives durable long-term survival.",
+   "tags": [
+    "melanoma",
+    "immunotherapy",
+    "ipilimumab"
+   ],
+   "site": "Melanoma & Skin",
+   "id": "checkmate-067"
+  },
+  {
+   "name": "RELATIVITY-047",
+   "setting": "Metastatic 1L",
+   "modality": "Systemic",
+   "year": 2022,
+   "journal": "NEJM 2022",
+   "design": "Phase 3, n=714",
+   "population": "Untreated advanced melanoma",
+   "arms": [
+    "Nivolumab + relatlimab",
+    "Nivolumab"
+   ],
+   "endpoint": "PFS",
+   "result": "mPFS 10.1 vs 4.6 mo (HR 0.75)",
+   "takeaway": "LAG-3 + PD-1 is a less toxic first-line combination.",
+   "tags": [
+    "melanoma",
+    "relatlimab",
+    "LAG-3"
+   ],
+   "site": "Melanoma & Skin",
+   "id": "relativity-047"
+  },
+  {
+   "name": "COMBI-d/v & COLUMBUS",
+   "setting": "Metastatic BRAF",
+   "modality": "Systemic",
+   "year": 2015,
+   "journal": "NEJM 2015; Lancet Oncol 2018",
+   "design": "Phase 3s",
+   "population": "BRAF V600 melanoma",
+   "arms": [
+    "BRAF + MEK inhibitor",
+    "BRAF inhibitor alone"
+   ],
+   "endpoint": "PFS, OS",
+   "result": "5-y OS ~34% with dabrafenib-trametinib",
+   "takeaway": "BRAF/MEK combination for BRAF-mutant melanoma.",
+   "tags": [
+    "melanoma",
+    "BRAF",
+    "MEK"
+   ],
+   "site": "Melanoma & Skin",
+   "id": "combi-d-v-columbus"
+  },
+  {
+   "name": "DREAMseq",
+   "setting": "Metastatic BRAF",
+   "modality": "Systemic",
+   "year": 2023,
+   "journal": "JCO 2023",
+   "design": "Phase 3, n=265",
+   "population": "BRAF V600 melanoma",
+   "arms": [
+    "Nivo-ipi first → BRAF/MEK",
+    "BRAF/MEK first → nivo-ipi"
+   ],
+   "endpoint": "OS",
+   "result": "2-y OS 71.8% vs 51.5%",
+   "takeaway": "Start with immunotherapy even in BRAF-mutant melanoma.",
+   "tags": [
+    "melanoma",
+    "sequencing"
+   ],
+   "site": "Melanoma & Skin",
+   "id": "dreamseq"
+  },
+  {
+   "name": "KEYNOTE-054 / CheckMate 238 / COMBI-AD",
+   "setting": "Adjuvant",
+   "modality": "Systemic",
+   "year": 2017,
+   "journal": "NEJM 2017/2018",
+   "design": "Phase 3s",
+   "population": "Resected stage III melanoma",
+   "arms": [
+    "Pembrolizumab / nivolumab / dabrafenib-trametinib",
+    "Placebo / ipilimumab"
+   ],
+   "endpoint": "RFS",
+   "result": "Pembro RFS HR 0.57; COMBI-AD OS HR 0.57 at first analysis",
+   "takeaway": "Adjuvant anti-PD-1 or BRAF/MEK for resected stage III.",
+   "tags": [
+    "melanoma",
+    "adjuvant"
+   ],
+   "site": "Melanoma & Skin",
+   "id": "keynote-054-checkmate-238-combi-ad"
+  },
+  {
+   "name": "SWOG S1801",
+   "setting": "Neoadjuvant",
+   "modality": "Systemic",
+   "year": 2023,
+   "journal": "NEJM 2023",
+   "design": "Phase 2, n=313",
+   "population": "Resectable stage III–IV melanoma",
+   "arms": [
+    "Neoadjuvant + adjuvant pembrolizumab",
+    "Adjuvant pembrolizumab only"
+   ],
+   "endpoint": "EFS",
+   "result": "2-y EFS 72% vs 49%",
+   "takeaway": "Neoadjuvant IO before surgery for macroscopic stage III.",
+   "tags": [
+    "melanoma",
+    "neoadjuvant"
+   ],
+   "site": "Melanoma & Skin",
+   "id": "swog-s1801"
+  },
+  {
+   "name": "NADINA",
+   "setting": "Neoadjuvant",
+   "modality": "Systemic",
+   "year": 2024,
+   "journal": "NEJM 2024",
+   "design": "Phase 3, n=423",
+   "population": "Macroscopic stage III melanoma",
+   "arms": [
+    "Neoadjuvant nivo + ipi ×2 → response-adapted surgery",
+    "Surgery → adjuvant nivolumab"
+   ],
+   "endpoint": "EFS",
+   "result": "12-mo EFS 83.7% vs 57.2% (HR 0.32)",
+   "takeaway": "Neoadjuvant ipi-nivo is a new standard.",
+   "tags": [
+    "melanoma",
+    "neoadjuvant",
+    "ipilimumab"
+   ],
+   "site": "Melanoma & Skin",
+   "id": "nadina"
+  },
+  {
+   "name": "MSLT-II / DeCOG-SLT",
+   "setting": "Nodal management",
+   "modality": "Surgery",
+   "year": 2017,
+   "journal": "NEJM 2017",
+   "design": "Phase 3, n=1,939",
+   "population": "Melanoma with positive sentinel node",
+   "arms": [
+    "Completion lymph node dissection",
+    "Ultrasound surveillance"
+   ],
+   "endpoint": "Melanoma-specific survival",
+   "result": "No MSS difference",
+   "takeaway": "Completion dissection no longer routine after positive SLNB.",
+   "tags": [
+    "melanoma",
+    "SLNB"
+   ],
+   "site": "Melanoma & Skin",
+   "id": "mslt-ii-decog-slt"
+  },
+  {
+   "name": "mRNA-4157 + pembrolizumab (KEYNOTE-942)",
+   "setting": "Adjuvant",
+   "modality": "Systemic",
+   "year": 2024,
+   "journal": "Lancet 2024",
+   "design": "Randomised phase 2b, n=157",
+   "population": "Resected high-risk melanoma",
+   "arms": [
+    "Personalised neoantigen mRNA vaccine + pembrolizumab",
+    "Pembrolizumab"
+   ],
+   "endpoint": "RFS",
+   "result": "RFS HR 0.56; phase 3 ongoing",
+   "takeaway": "Proof of concept for individualised cancer vaccines.",
+   "tags": [
+    "melanoma",
+    "vaccine",
+    "mRNA"
+   ],
+   "site": "Melanoma & Skin",
+   "id": "mrna-4157-pembrolizumab-keynote-942"
+  },
+  {
+   "name": "Cemiplimab cSCC / Avelumab Merkel",
+   "setting": "Advanced skin",
+   "modality": "Systemic",
+   "year": 2018,
+   "journal": "NEJM 2018; Lancet Oncol 2016",
+   "design": "Phase 2s",
+   "population": "Advanced cutaneous SCC / Merkel cell carcinoma",
+   "arms": [
+    "Cemiplimab / avelumab"
+   ],
+   "endpoint": "ORR",
+   "result": "cSCC ORR ~47%; Merkel ORR ~33% (2L), higher first line",
+   "takeaway": "Anti-PD-1/PD-L1 is standard for advanced cSCC and Merkel cell carcinoma.",
+   "tags": [
+    "cSCC",
+    "Merkel",
+    "immunotherapy"
+   ],
+   "site": "Melanoma & Skin",
+   "id": "cemiplimab-cscc-avelumab-merkel"
+  },
+  {
+   "name": "ACOSOG Z9001 / SSG XVIII",
+   "setting": "GIST adjuvant",
+   "modality": "Systemic",
+   "year": 2012,
+   "journal": "Lancet 2009; JAMA 2012",
+   "design": "Phase 3s",
+   "population": "Resected high-risk GIST",
+   "arms": [
+    "Imatinib 3 y",
+    "Imatinib 1 y"
+   ],
+   "endpoint": "RFS, OS",
+   "result": "5-y OS 92.0% vs 81.7% (3 y vs 1 y)",
+   "takeaway": "Three years of adjuvant imatinib for high-risk GIST (KIT exon 11 most benefit; not PDGFRA D842V).",
+   "tags": [
+    "GIST",
+    "imatinib",
+    "adjuvant"
+   ],
+   "site": "Sarcoma & GIST",
+   "id": "acosog-z9001-ssg-xviii"
+  },
+  {
+   "name": "B2222 / EORTC 62005",
+   "setting": "GIST advanced",
+   "modality": "Systemic",
+   "year": 2002,
+   "journal": "NEJM 2002; Lancet 2004",
+   "design": "Phase 2/3",
+   "population": "Advanced GIST",
+   "arms": [
+    "Imatinib 400 vs 800 mg"
+   ],
+   "endpoint": "Response, PFS",
+   "result": "Exon 9 mutations benefit from 800 mg",
+   "takeaway": "Imatinib 400 mg first line; 800 mg for KIT exon 9.",
+   "tags": [
+    "GIST",
+    "imatinib",
+    "KIT"
+   ],
+   "site": "Sarcoma & GIST",
+   "id": "b2222-eortc-62005"
+  },
+  {
+   "name": "INVICTUS / VOYAGER",
+   "setting": "GIST later line",
+   "modality": "Systemic",
+   "year": 2020,
+   "journal": "Lancet Oncol 2020/2021",
+   "design": "Phase 3s",
+   "population": "Advanced GIST after ≥3 TKIs (INVICTUS); PDGFRA D842V (NAVIGATOR)",
+   "arms": [
+    "Ripretinib vs placebo",
+    "Avapritinib for D842V"
+   ],
+   "endpoint": "PFS",
+   "result": "INVICTUS mPFS 6.3 vs 1.0 mo",
+   "takeaway": "Ripretinib fourth line; avapritinib for PDGFRA D842V.",
+   "tags": [
+    "GIST",
+    "ripretinib",
+    "avapritinib"
+   ],
+   "site": "Sarcoma & GIST",
+   "id": "invictus-voyager"
+  },
+  {
+   "name": "O'Sullivan NCIC SR2",
+   "setting": "Soft tissue sarcoma (local)",
+   "modality": "Radiotherapy",
+   "year": 2002,
+   "journal": "Lancet 2002",
+   "design": "Phase 3, n=190",
+   "population": "Extremity soft tissue sarcoma",
+   "arms": [
+    "Preoperative RT 50 Gy",
+    "Postoperative RT 66 Gy"
+   ],
+   "endpoint": "Wound complications, late toxicity",
+   "result": "Wound complications 35% vs 17%; less fibrosis/oedema with preop; similar local control",
+   "takeaway": "Preoperative RT is preferred (lower dose, less late toxicity).",
+   "tags": [
+    "sarcoma",
+    "radiotherapy",
+    "preoperative"
+   ],
+   "site": "Sarcoma & GIST",
+   "id": "o-sullivan-ncic-sr2"
+  },
+  {
+   "name": "STRASS",
+   "setting": "Retroperitoneal sarcoma",
+   "modality": "Radiotherapy",
+   "year": 2020,
+   "journal": "Lancet Oncol 2020",
+   "design": "Phase 3, n=266",
+   "population": "Primary retroperitoneal sarcoma",
+   "arms": [
+    "Preoperative RT + surgery",
+    "Surgery alone"
+   ],
+   "endpoint": "Abdominal recurrence-free survival",
+   "result": "No overall benefit; possible benefit in liposarcoma",
+   "takeaway": "Preoperative RT is not routine for retroperitoneal sarcoma.",
+   "tags": [
+    "sarcoma",
+    "retroperitoneal",
+    "radiotherapy"
+   ],
+   "site": "Sarcoma & GIST",
+   "id": "strass"
+  },
+  {
+   "name": "EORTC 62012",
+   "setting": "Metastatic STS",
+   "modality": "Systemic",
+   "year": 2014,
+   "journal": "Lancet Oncol 2014",
+   "design": "Phase 3, n=455",
+   "population": "Advanced soft tissue sarcoma",
+   "arms": [
+    "Doxorubicin + ifosfamide",
+    "Doxorubicin"
+   ],
+   "endpoint": "OS",
+   "result": "OS not significantly improved (14.3 vs 12.8 mo); higher ORR and PFS",
+   "takeaway": "Single-agent doxorubicin is first line; combination when response needed.",
+   "tags": [
+    "sarcoma",
+    "doxorubicin"
+   ],
+   "site": "Sarcoma & GIST",
+   "id": "eortc-62012"
+  },
+  {
+   "name": "EURAMOS-1",
+   "setting": "Osteosarcoma",
+   "modality": "Systemic",
+   "year": 2016,
+   "journal": "Lancet Oncol 2016",
+   "design": "Phase 3, n=2,260",
+   "population": "Resectable osteosarcoma",
+   "arms": [
+    "MAP ± ifosfamide/etoposide for poor responders",
+    "MAP"
+   ],
+   "endpoint": "EFS",
+   "result": "No benefit from intensifying for poor responders",
+   "takeaway": "MAP remains standard for osteosarcoma.",
+   "tags": [
+    "osteosarcoma",
+    "MAP"
+   ],
+   "site": "Sarcoma & GIST",
+   "id": "euramos-1"
+  },
+  {
+   "name": "EURO EWING 2012 / rEECur",
+   "setting": "Ewing sarcoma",
+   "modality": "Systemic",
+   "year": 2022,
+   "journal": "Lancet 2022",
+   "design": "Phase 3, n=640",
+   "population": "Newly diagnosed Ewing sarcoma",
+   "arms": [
+    "VDC/IE (interval-compressed)",
+    "VIDE"
+   ],
+   "endpoint": "EFS",
+   "result": "3-y EFS 67% vs 61%; OS benefit",
+   "takeaway": "VDC/IE is the preferred regimen.",
+   "tags": [
+    "Ewing",
+    "VDC/IE"
+   ],
+   "site": "Sarcoma & GIST",
+   "id": "euro-ewing-2012-reecur"
+  },
+  {
+   "name": "Hartsell RTOG 97-14",
+   "setting": "Bone metastases",
+   "modality": "Radiotherapy",
+   "year": 2005,
+   "journal": "JNCI 2005",
+   "design": "Phase 3, n=898",
+   "population": "Painful bone metastases (breast/prostate)",
+   "arms": [
+    "8 Gy single fraction",
+    "30 Gy/10 fr"
+   ],
+   "endpoint": "Pain response",
+   "result": "Pain response 66% vs 66%; retreatment 18% vs 9%",
+   "takeaway": "8 Gy single fraction is standard for uncomplicated bone pain.",
+   "tags": [
+    "palliative",
+    "bone metastases",
+    "single fraction"
+   ],
+   "site": "Radiotherapy (general & palliative)",
+   "id": "hartsell-rtog-97-14"
+  },
+  {
+   "name": "SC.24 (spine SBRT)",
+   "setting": "Bone metastases",
+   "modality": "Radiotherapy",
+   "year": 2021,
+   "journal": "Lancet Oncol 2021",
+   "design": "Phase 2/3, n=229",
+   "population": "Painful spinal metastases",
+   "arms": [
+    "SBRT 24 Gy/2 fr",
+    "Conventional 20 Gy/5 fr"
+   ],
+   "endpoint": "Complete pain response at 3 mo",
+   "result": "CR 35% vs 14%",
+   "takeaway": "Spine SBRT gives more complete pain response in selected patients.",
+   "tags": [
+    "SBRT",
+    "spine",
+    "palliative"
+   ],
+   "site": "Radiotherapy (general & palliative)",
+   "id": "sc-24-spine-sbrt"
+  },
+  {
+   "name": "Patchell MSCC",
+   "setting": "Spinal cord compression",
+   "modality": "Surgery/RT",
+   "year": 2005,
+   "journal": "Lancet 2005",
+   "design": "RCT, n=101",
+   "population": "Metastatic spinal cord compression",
+   "arms": [
+    "Decompressive surgery + RT",
+    "RT alone"
+   ],
+   "endpoint": "Ambulation",
+   "result": "Ambulatory 84% vs 57%; retained ambulation 122 vs 13 days",
+   "takeaway": "Surgery + RT for suitable patients with MSCC.",
+   "tags": [
+    "spinal cord compression",
+    "surgery",
+    "radiotherapy"
+   ],
+   "site": "Radiotherapy (general & palliative)",
+   "id": "patchell-mscc"
+  },
+  {
+   "name": "SCORAD III",
+   "setting": "Spinal cord compression",
+   "modality": "Radiotherapy",
+   "year": 2019,
+   "journal": "JAMA 2019",
+   "design": "Phase 3 non-inferiority, n=686",
+   "population": "MSCC not suitable for surgery",
+   "arms": [
+    "8 Gy single fraction",
+    "20 Gy/5 fr"
+   ],
+   "endpoint": "Ambulatory status at 8 weeks",
+   "result": "Ambulatory status ~70% in both arms; non-inferiority margin narrowly not met",
+   "takeaway": "Single 8 Gy is reasonable for patients with short expected survival.",
+   "tags": [
+    "spinal cord compression",
+    "palliative"
+   ],
+   "site": "Radiotherapy (general & palliative)",
+   "id": "scorad-iii"
+  },
+  {
+   "name": "ORIOLE / STOMP",
+   "setting": "Oligometastatic",
+   "modality": "Radiotherapy",
+   "year": 2020,
+   "journal": "JAMA Oncol 2020; JCO 2018",
+   "design": "Randomised phase 2s",
+   "population": "Oligometastatic/oligorecurrent prostate cancer",
+   "arms": [
+    "Metastasis-directed SBRT",
+    "Observation"
+   ],
+   "endpoint": "PFS / ADT-free survival",
+   "result": "ORIOLE 6-mo progression 19% vs 61%",
+   "takeaway": "Metastasis-directed therapy can delay ADT in oligorecurrent prostate cancer.",
+   "tags": [
+    "SBRT",
+    "oligometastatic",
+    "prostate"
+   ],
+   "site": "Radiotherapy (general & palliative)",
+   "id": "oriole-stomp"
+  },
+  {
+   "name": "Navari olanzapine CINV",
+   "setting": "Supportive",
+   "modality": "Supportive",
+   "year": 2016,
+   "journal": "NEJM 2016",
+   "design": "Phase 3, n=380",
+   "population": "Highly emetogenic chemotherapy",
+   "arms": [
+    "Olanzapine 10 mg + NK1 + 5-HT3 + dexamethasone",
+    "Placebo + same"
+   ],
+   "endpoint": "No nausea",
+   "result": "No nausea 0–120 h: 37% vs 22%",
+   "takeaway": "Four-drug antiemetic prophylaxis (olanzapine 5–10 mg) for HEC.",
+   "tags": [
+    "CINV",
+    "olanzapine",
+    "antiemetic"
+   ],
+   "site": "Supportive care",
+   "id": "navari-olanzapine-cinv"
+  },
+  {
+   "name": "Hokusai VTE Cancer / SELECT-D / Caravaggio",
+   "setting": "Supportive",
+   "modality": "Supportive",
+   "year": 2018,
+   "journal": "NEJM 2018; JCO 2018; NEJM 2020",
+   "design": "Phase 3s",
+   "population": "Cancer-associated VTE",
+   "arms": [
+    "Edoxaban / rivaroxaban / apixaban",
+    "LMWH (dalteparin)"
+   ],
+   "endpoint": "Recurrent VTE, bleeding",
+   "result": "DOACs non-inferior to LMWH; more GI/GU bleeding with edoxaban/rivaroxaban",
+   "takeaway": "DOACs are standard for cancer-associated VTE except high GI/GU bleeding risk.",
+   "tags": [
+    "VTE",
+    "DOAC",
+    "anticoagulation"
+   ],
+   "site": "Supportive care",
+   "id": "hokusai-vte-cancer-select-d-caravaggio"
+  },
+  {
+   "name": "Denosumab vs zoledronic acid (Stopeck / Fizazi)",
+   "setting": "Supportive",
+   "modality": "Supportive",
+   "year": 2010,
+   "journal": "JCO 2010; Lancet 2011",
+   "design": "Phase 3s",
+   "population": "Bone metastases (breast, prostate)",
+   "arms": [
+    "Denosumab",
+    "Zoledronic acid"
+   ],
+   "endpoint": "Time to skeletal-related event",
+   "result": "Delayed first SRE (prostate HR 0.82); similar OS; ONJ ~2%",
+   "takeaway": "Bone-modifying agents reduce SREs; check dental health and calcium.",
+   "tags": [
+    "bone metastases",
+    "denosumab",
+    "SRE"
+   ],
+   "site": "Supportive care",
+   "id": "denosumab-vs-zoledronic-acid-stopeck-fizazi"
+  },
+  {
+   "name": "ABCSG-18 / Early Breast EBCTCG bisphosphonates",
+   "setting": "Supportive",
+   "modality": "Supportive",
+   "year": 2015,
+   "journal": "Lancet 2015 (×2)",
+   "design": "Phase 3 + meta-analysis",
+   "population": "Postmenopausal early BC on AI",
+   "arms": [
+    "Denosumab / bisphosphonate",
+    "Placebo / none"
+   ],
+   "endpoint": "Fractures; bone recurrence",
+   "result": "Bisphosphonates reduce bone recurrence and BC death in postmenopausal women",
+   "takeaway": "Adjuvant zoledronic acid for postmenopausal higher-risk early BC.",
+   "tags": [
+    "bisphosphonate",
+    "breast",
+    "bone health"
+   ],
+   "site": "Supportive care",
+   "id": "abcsg-18-early-breast-ebctcg-bisphosphonates"
+  }
+ ]
+}

@@ -33,7 +33,9 @@ jobs:
           gradle-version: '8.7'
 
       - name: Bundle the latest news as the offline starter copy
-        run: cp data/news.json app/src/main/assets/news.json
+        run: |
+          cp data/news.json app/src/main/assets/news.json
+          cp data/trials.json app/src/main/assets/trials.json
 
       - name: Build signed APK
         run: gradle :app:assembleRelease --no-daemon
