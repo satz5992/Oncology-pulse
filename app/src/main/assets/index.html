@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Oncology Pulse</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* H&E palette: hematoxylin violet accent, eosin pink signal. */
+:root{
+  --bg:#f6f5fa; --surface:#ffffff; --sunk:#eeecf5; --fg:#1c1a29; --muted:#615d78; --line:#dddaea;
+  --accent:#4a3d94; --accent-soft:#e7e3f8; --eosin:#b8365f; --eosin-soft:#fbe6ee;
+  --ok:#1f7a55; --ok-soft:#ddf2e8; --warn:#9a6200; --warn-soft:#fbefd7; --info:#1d5f96; --info-soft:#e0edf8;
+  --f-display:"Bricolage Grotesque", "Roboto", system-ui, sans-serif;
+  --f-body:"IBM Plex Sans", "Roboto", system-ui, sans-serif;
+  --f-mono:"IBM Plex Mono", "Roboto Mono", monospace;
+  --r:12px; color-scheme:light;
+}
+@media (prefers-color-scheme: dark){:root{
+  --bg:#131220; --surface:#1c1a2c; --sunk:#232138; --fg:#ecebf5; --muted:#a29fbd; --line:#2f2c48;
+  --accent:#a899f0; --accent-soft:#2c2752; --eosin:#f07fa2; --eosin-soft:#3d1d2c;
+  --ok:#5fd1a0; --ok-soft:#173528; --warn:#f0be5c; --warn-soft:#3a2c12; --info:#7ab8ec; --info-soft:#16304a;
+  color-scheme:dark}}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0}
+body{background:var(--bg);color:var(--fg);font-family:var(--f-body);font-size:15px;line-height:1.5}
+.wrap{padding-inline:16px;padding-block:14px 40px;display:flex;flex-direction:column;gap:18px}
+header.top{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.brand h1{font-family:var(--f-display);font-weight:700;font-size:1.65rem;letter-spacing:-.02em;margin:0;line-height:1.05}
+.brand h1 span{color:var(--eosin)}
+.stamp{font-family:var(--f-mono);font-size:.72rem;color:var(--muted);display:flex;align-items:center;gap:6px;margin-top:4px}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--ok);flex:none}
+.dot.stale{background:var(--warn)}
+.refresh{flex:none;width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:var(--surface);color:var(--accent);display:grid;place-items:center}
+.refresh svg{width:20px;height:20px}
+.refresh.spin svg{animation:spin .9s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+.bar{position:sticky;top:0;z-index:5;background:var(--bg);margin-inline:-16px;padding:10px 16px;border-bottom:1px solid var(--line);display:flex;flex-direction:column;gap:10px}
+.search{display:flex;gap:8px}
+.search input{flex:1;min-width:0;font:inherit;padding:11px 12px;border:1px solid var(--line);border-radius:var(--r);background:var(--surface);color:var(--fg)}
+.search select{font:inherit;font-size:.88rem;padding:10px 8px;border:1px solid var(--line);border-radius:var(--r);background:var(--surface);color:var(--fg);max-width:38%}
+.chips{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none}
+.chips::-webkit-scrollbar{display:none}
+.chip{flex:none;font:500 .82rem var(--f-body);padding:7px 13px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--fg)}
+.chip[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--surface)}
+.chip .n{font-family:var(--f-mono);font-size:.7rem;opacity:.7;margin-left:4px}
+
+h2{font-family:var(--f-display);font-weight:500;font-size:1.05rem;margin:0 0 10px;display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+h2 small{font:400 .74rem var(--f-mono);color:var(--muted)}
+.strip{display:flex;gap:10px;overflow-x:auto;padding-bottom:4px;scroll-snap-type:x mandatory;scrollbar-width:none}
+.strip::-webkit-scrollbar{display:none}
+.dec{flex:0 0 74%;max-width:260px;scroll-snap-align:start;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:12px;display:flex;flex-direction:column;gap:5px}
+.dec .when{font:500 .74rem var(--f-mono);color:var(--eosin);letter-spacing:.04em;text-transform:uppercase}
+.dec .what{font-weight:600;font-size:.9rem;line-height:1.3}
+.dec .why{font-size:.78rem;color:var(--muted);font-family:var(--f-mono)}
+
+.day{display:flex;flex-direction:column;gap:10px}
+.day + .day{margin-top:14px}
+.dayhead{font:500 .72rem var(--f-mono);color:var(--muted);letter-spacing:.08em;text-transform:uppercase;display:flex;align-items:center;gap:10px}
+.dayhead::after{content:"";flex:1;height:1px;background:var(--line)}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:14px;display:flex;flex-direction:column;gap:8px;min-width:0}
+.card.pc{border-left:3px solid var(--eosin)}
+.card.new .flagnew{display:inline}
+.flagnew{display:none;font:600 .66rem var(--f-body);background:var(--eosin);color:var(--surface);padding:2px 6px;border-radius:4px;letter-spacing:.04em}
+.meta{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.pill{font:600 .66rem var(--f-body);letter-spacing:.05em;text-transform:uppercase;padding:3px 8px;border-radius:5px}
+.p-approval{background:var(--ok-soft);color:var(--ok)}
+.p-trial{background:var(--accent-soft);color:var(--accent)}
+.p-designation{background:var(--info-soft);color:var(--info)}
+.p-regulatory{background:var(--warn-soft);color:var(--warn)}
+.p-upcoming{background:var(--eosin-soft);color:var(--eosin)}
+.p-research{background:var(--sunk);color:var(--muted)}
+.site{font-size:.78rem;color:var(--muted)}
+.flag{font:600 .66rem var(--f-body);color:var(--eosin);letter-spacing:.04em;text-transform:uppercase}
+.card h3{margin:0;font-size:1rem;font-weight:600;line-height:1.35}
+.card p{margin:0;opacity:.88;font-size:.9rem}
+.data{font-family:var(--f-mono);font-size:.78rem;background:var(--sunk);border-radius:6px;padding:8px 10px;overflow-x:auto;white-space:nowrap}
+.foot{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:8px;font-size:.8rem}
+.foot a{color:var(--accent);text-decoration:none;font-weight:500;padding:6px 0}
+.acts{display:flex;gap:6px}
+.btn{font:inherit;font-size:.8rem;background:none;border:1px solid var(--line);border-radius:7px;padding:6px 11px;color:var(--muted)}
+.btn[aria-pressed="true"]{color:var(--eosin);border-color:var(--eosin)}
+.empty{background:var(--surface);border:1px dashed var(--line);border-radius:var(--r);padding:28px 18px;text-align:center;color:var(--muted)}
+.empty strong{display:block;color:var(--fg);font-family:var(--f-display);font-weight:500;font-size:1.08rem;margin-bottom:6px}
+.note{font-size:.75rem;color:var(--muted);text-align:center;margin:6px 0 0}
+.toast{position:fixed;left:16px;right:16px;bottom:20px;background:var(--fg);color:var(--bg);padding:12px 14px;border-radius:10px;font-size:.85rem;opacity:0;transform:translateY(10px);transition:.2s;pointer-events:none;z-index:20}
+.toast.on{opacity:1;transform:none}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div class="brand">
+      <h1>Oncology <span>Pulse</span></h1>
+      <div class="stamp"><span class="dot stale" id="dot"></span><span id="stampText">Loading…</span></div>
+    </div>
+    <button class="refresh" id="refresh" aria-label="Check for new updates">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
+    </button>
+  </header>
+
+  <div class="bar">
+    <div class="search">
+      <input id="q" type="search" placeholder="Search drug, trial, biomarker…" aria-label="Search news">
+      <select id="site" aria-label="Tumour site"><option value="">All sites</option></select>
+    </div>
+    <div class="chips" id="chips" role="toolbar" aria-label="Filter by type"></div>
+  </div>
+
+  <section id="ahead" hidden>
+    <h2>Decisions ahead <small>FDA action dates</small></h2>
+    <div class="strip" id="strip"></div>
+  </section>
+
+  <section>
+    <h2>Latest <small id="count"></small></h2>
+    <div id="list"></div>
+  </section>
+
+  <p class="note">Summaries are compiled automatically from news and regulator sources. Confirm against the full publication or label before clinical use. <span id="ver"></span></p>
+</div>
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+const TYPES=[["all","All"],["approval","Approvals"],["trial","Trials"],["designation","Designations"],["regulatory","Regulatory"],["upcoming","Upcoming"],["research","Research"],["saved","Saved"]];
+const LABEL={approval:"Approval",trial:"Trial result",designation:"Designation",regulatory:"Regulatory",upcoming:"Upcoming decision",research:"Research"};
+const A=window.Android;
+let items=[], updated=null, type="all", saved=new Set(), seenBefore=new Set();
+const store={get(k,d){try{const v=localStorage.getItem(k);return v==null?d:JSON.parse(v)}catch(e){return d}},set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}};
+saved=new Set(store.get("saved",[]));type=store.get("type","all");seenBefore=new Set(store.get("seen",[]));
+const $=id=>document.getElementById(id);
+const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const fmtDay=d=>{const t=new Date(d+"T00:00:00");return isNaN(t)?d:t.toLocaleDateString("en-IN",{weekday:"short",day:"numeric",month:"short",year:"numeric"})};
+const fmtShort=d=>{const t=new Date(d+"T00:00:00");return isNaN(t)?d:t.toLocaleDateString("en-IN",{day:"numeric",month:"short"})};
+const today=new Date().toISOString().slice(0,10);
+function toast(msg){const t=$("toast");t.textContent=msg;t.classList.add("on");clearTimeout(toast.t);toast.t=setTimeout(()=>t.classList.remove("on"),2600)}
+
+function load(json,fromNetwork){
+  try{const d=typeof json==="string"?JSON.parse(json):json;
+    const before=new Set(items.map(i=>i.id));
+    items=(d.items||[]).filter(i=>i&&i.title);updated=d.updated||null;
+    if(fromNetwork&&before.size){const n=items.filter(i=>!before.has(i.id)).length;toast(n?`${n} new item${n>1?"s":""}`:"You're up to date")}
+  }catch(e){}
+  render();stamp();
+}
+function markSeen(){store.set("seen",items.map(i=>i.id))}
+
+function chips(){
+  const counts={};items.forEach(i=>{counts[i.category]=(counts[i.category]||0)+1});
+  $("chips").innerHTML=TYPES.map(([k,l])=>{const n=k==="all"?items.length:k==="saved"?saved.size:(counts[k]||0);
+    return `<button class="chip" data-k="${k}" aria-pressed="${type===k}">${l}<span class="n">${n}</span></button>`}).join("");
+}
+function sites(){
+  const cur=$("site").value;const s=[...new Set(items.map(i=>i.tumor).filter(Boolean))].sort();
+  $("site").innerHTML=`<option value="">All sites</option>`+s.map(x=>`<option${x===cur?" selected":""}>${esc(x)}</option>`).join("");
+}
+function card(i){
+  const pc=i.impact==="practice-changing", isNew=seenBefore.size&&!seenBefore.has(i.id);
+  return `<article class="card${pc?" pc":""}${isNew?" new":""}">
+    <div class="meta"><span class="flagnew">NEW</span><span class="pill p-${esc(i.category)}">${esc(LABEL[i.category]||i.category)}</span>
+      ${i.tumor?`<span class="site">${esc(i.tumor)}</span>`:""}${pc?`<span class="flag">· Practice-changing</span>`:""}</div>
+    <h3>${esc(i.title)}</h3>
+    ${i.summary?`<p>${esc(i.summary)}</p>`:""}
+    ${i.keyData?`<div class="data">${esc(i.keyData)}</div>`:""}
+    <div class="foot">${i.url?`<a href="${esc(i.url)}" data-open="${esc(i.url)}">${esc(i.source||"Source")} ↗</a>`:`<span>${esc(i.source||"")}</span>`}
+      <div class="acts"><button class="btn share" data-id="${esc(i.id)}">Share</button>
+      <button class="btn save" data-id="${esc(i.id)}" aria-pressed="${saved.has(i.id)}">${saved.has(i.id)?"Saved":"Save"}</button></div></div>
+  </article>`;
+}
+function render(){
+  chips();sites();
+  const q=$("q").value.trim().toLowerCase(), site=$("site").value;
+  const up=items.filter(i=>i.category==="upcoming"&&(i.actionDate||"")>=today).sort((a,b)=>(a.actionDate||"").localeCompare(b.actionDate||""));
+  const showAhead=up.length&&type==="all"&&!q&&!site;
+  $("ahead").hidden=!showAhead;
+  $("strip").innerHTML=up.map(i=>`<div class="dec"><span class="when">${esc(i.actionDateLabel||fmtShort(i.actionDate))}</span><span class="what">${esc(i.title)}</span>${i.keyData?`<span class="why">${esc(i.keyData)}</span>`:""}</div>`).join("");
+  let list=items.filter(i=>{
+    if(type==="saved"?!saved.has(i.id):type!=="all"&&i.category!==type)return false;
+    if(showAhead&&i.category==="upcoming"&&(i.actionDate||"")>=today)return false;
+    if(site&&i.tumor!==site)return false;
+    if(q){const h=[i.title,i.summary,i.keyData,i.tumor,i.source,(i.tags||[]).join(" ")].join(" ").toLowerCase();if(!h.includes(q))return false}
+    return true});
+  list.sort((a,b)=>(b.date||"").localeCompare(a.date||""));
+  $("count").textContent=list.length+" item"+(list.length===1?"":"s");
+  if(!items.length){$("list").innerHTML=`<div class="empty"><strong>No news yet</strong>Tap refresh to download the latest updates.</div>`;return}
+  if(!list.length){$("list").innerHTML=`<div class="empty"><strong>Nothing matches</strong>${type==="saved"?"Tap Save on any item to keep it here.":"Try a different filter or clear the search."}</div>`;return}
+  const groups=[];list.forEach(i=>{const g=groups[groups.length-1];if(g&&g.d===i.date)g.items.push(i);else groups.push({d:i.date,items:[i]})});
+  $("list").innerHTML=groups.map(g=>`<div class="day"><div class="dayhead">${esc(fmtDay(g.d))}</div>${g.items.map(card).join("")}</div>`).join("");
+}
+function stamp(){
+  if(!updated){$("stampText").textContent=items.length?`${items.length} items`:"No data yet";return}
+  const t=new Date(updated);$("dot").classList.toggle("stale",(Date.now()-t)/36e5>36);
+  $("stampText").textContent="Updated "+t.toLocaleString("en-IN",{day:"numeric",month:"short",hour:"numeric",minute:"2-digit"});
+}
+function refresh(){if(!A)return;$("refresh").classList.add("spin");A.refresh()}
+window.onNews=j=>{$("refresh").classList.remove("spin");load(j,true)};
+window.onNewsError=m=>{$("refresh").classList.remove("spin");toast(m)};
+window.handleBack=()=>{if($("q").value||$("site").value||type!=="all"){$("q").value="";$("site").value="";type="all";store.set("type",type);render();window.scrollTo(0,0);return true}return false};
+
+$("refresh").addEventListener("click",refresh);
+$("chips").addEventListener("click",e=>{const b=e.target.closest(".chip");if(!b)return;type=b.dataset.k;store.set("type",type);render();window.scrollTo({top:0})});
+$("list").addEventListener("click",e=>{
+  const a=e.target.closest("[data-open]");if(a){e.preventDefault();A?A.open(a.dataset.open):window.open(a.dataset.open);return}
+  const s=e.target.closest(".save");if(s){const id=s.dataset.id;saved.has(id)?saved.delete(id):saved.add(id);store.set("saved",[...saved]);render();return}
+  const sh=e.target.closest(".share");if(sh){const i=items.find(x=>x.id===sh.dataset.id);if(!i)return;
+    const txt=`${i.title}\n${i.keyData?i.keyData+"\n":""}${i.url||""}\n— via Oncology Pulse`;
+    if(A)A.share(txt);else if(navigator.share)navigator.share({text:txt}).catch(()=>{});}
+});
+let qt;$("q").addEventListener("input",()=>{clearTimeout(qt);qt=setTimeout(render,120)});
+$("site").addEventListener("change",render);
+
+if(A){try{$("ver").textContent="v"+A.version()}catch(e){};load(A.cached(),false);refresh();setTimeout(markSeen,4000)}
+else{fetch("news.json").then(r=>r.text()).then(t=>load(t,false)).catch(()=>render())}
+document.addEventListener("visibilitychange",()=>{if(document.hidden)markSeen()});
+</script>
+</body>
+</html>

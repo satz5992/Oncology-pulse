@@ -1,0 +1,48 @@
+plugins {
+    id 'com.android.application'
+}
+
+// The GitHub owner/repo that hosts data/news.json. Set by the build workflow
+// (GITHUB_REPOSITORY), or override locally with -PdataRepo=owner/repo.
+def dataRepo = project.findProperty('dataRepo') ?: System.getenv('GITHUB_REPOSITORY') ?: 'OWNER/oncology-pulse'
+def buildNumber = (System.getenv('GITHUB_RUN_NUMBER') ?: '1').toInteger()
+
+android {
+    namespace 'com.oncologypulse.app'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId 'com.oncologypulse.app'
+        minSdk 24
+        targetSdk 34
+        versionCode buildNumber
+        versionName "1.0.${buildNumber}"
+        buildConfigField 'String', 'NEWS_URL', "\"https://raw.githubusercontent.com/${dataRepo}/main/data/news.json\""
+    }
+
+    signingConfigs {
+        // A fixed key so every new build installs over the previous one.
+        release {
+            storeFile file('oncology-pulse.keystore')
+            storePassword 'oncopulse'
+            keyAlias 'oncopulse'
+            keyPassword 'oncopulse'
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            signingConfig signingConfigs.release
+        }
+    }
+
+    buildFeatures {
+        buildConfig true
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}

@@ -1,0 +1,764 @@
+{
+ "updated": "2026-10-10T01:30:00Z",
+ "items": [
+  {
+   "category": "approval",
+   "date": "2026-10-09",
+   "impact": "practice-changing",
+   "keyData": "ATOMIC (phase 3) · adjuvant atezolizumab + mFOLFOX6 vs mFOLFOX6",
+   "source": "Targeted Oncology",
+   "summary": "Atezolizumab added to adjuvant FOLFOX for resected stage III deficient mismatch repair colon cancer, based on the phase 3 ATOMIC trial.",
+   "tags": [
+    "ATOMIC",
+    "immunotherapy",
+    "adjuvant",
+    "MSI-H"
+   ],
+   "title": "FDA approves adjuvant atezolizumab plus chemotherapy for dMMR colon cancer",
+   "tumor": "Colorectal",
+   "url": "https://www.targetedonc.com/view/fda-approves-adjuvant-atezolizumab-plus-chemo-for-dmmr-colon-cancer",
+   "id": "2026-10-09-atezolizumab-dmmr-colon"
+  },
+  {
+   "category": "research",
+   "date": "2026-10-09",
+   "impact": "notable",
+   "keyData": "Neoadjuvant THP · HER2DX + ER status → pCR prediction",
+   "source": "Targeted Oncology",
+   "summary": "ER status and the HER2DX genomic score predicted complete response to de-escalated neoadjuvant paclitaxel-trastuzumab-pertuzumab in HER2-positive early breast cancer.",
+   "tags": [
+    "neoadjuvant",
+    "HER2",
+    "de-escalation",
+    "biomarker"
+   ],
+   "title": "HER2DX score and hormone receptor status predict pCR with neoadjuvant THP",
+   "tumor": "Breast",
+   "url": "https://www.targetedonc.com/view/her2dx-score-hormone-receptor-status-predict-pcr-her2-positive-breast-cancer",
+   "id": "2026-10-09-her2dx-thp"
+  },
+  {
+   "category": "trial",
+   "date": "2026-10-09",
+   "impact": "practice-changing",
+   "keyData": "NRG-BR002 phase 2 · SBRT/surgery to all mets + SOC vs SOC · PFS not improved",
+   "source": "Targeted Oncology",
+   "summary": "Metastasis-directed ablative radiotherapy added to standard systemic therapy did not improve outcomes in oligometastatic breast cancer; the planned phase 3 portion will not go ahead.",
+   "tags": [
+    "radiotherapy",
+    "SBRT",
+    "oligometastatic",
+    "negative trial"
+   ],
+   "title": "NRG-BR002: SBRT to oligometastases fails to extend PFS in breast cancer",
+   "tumor": "Breast",
+   "url": "https://www.targetedonc.com/view/sbrt-ablation-fails-extend-pfs-oligometastatic-breast-cancer",
+   "id": "2026-10-09-nrg-br002"
+  },
+  {
+   "category": "designation",
+   "date": "2026-10-09",
+   "impact": "notable",
+   "source": "Targeted Oncology",
+   "summary": "Two investigational agents received FDA fast track designation: VIR-5500 for prostate cancer and the lead-212 radioligand PSV359 for solitary fibrous tumours.",
+   "tags": [
+    "radioligand",
+    "fast track",
+    "sarcoma"
+   ],
+   "title": "Fast track for VIR-5500 in prostate cancer and [²¹²Pb]PSV359 in solitary fibrous tumour",
+   "tumor": "Prostate",
+   "url": "https://www.targetedonc.com/view/prostate-and-rare-cancer-agents-nab-fda-fast-track-status",
+   "id": "2026-10-09-vir5500-psv359-ftd"
+  },
+  {
+   "category": "trial",
+   "date": "2026-10-08",
+   "impact": "notable",
+   "keyData": "EXCALIBER-RRMM phase 3 · IberDd vs DVd · PFS risk ↓51%",
+   "source": "Targeted Oncology",
+   "summary": "Iberdomide plus daratumumab and dexamethasone improved progression-free survival versus daratumumab, bortezomib and dexamethasone in the phase 3 trial.",
+   "tags": [
+    "CELMoD",
+    "iberdomide",
+    "daratumumab"
+   ],
+   "title": "EXCALIBER-RRMM: iberdomide-dara-dex beats DVd in relapsed myeloma",
+   "tumor": "Myeloma",
+   "url": "https://www.targetedonc.com/view/iberdomide-excaliber-rrmm-pfs-benefit-myeloma",
+   "id": "2026-10-08-excaliber-rrmm"
+  },
+  {
+   "category": "research",
+   "date": "2026-10-08",
+   "impact": "notable",
+   "source": "Targeted Oncology",
+   "summary": "A pan-cancer analysis found that restricting germline testing by age at diagnosis overlooks most pathogenic inherited variants, supporting broader testing for treatment and family-risk decisions.",
+   "tags": [
+    "germline",
+    "genetic testing",
+    "hereditary"
+   ],
+   "title": "Age-based germline testing criteria miss most inherited cancer variants",
+   "tumor": "Pan-cancer",
+   "url": "https://www.targetedonc.com/view/age-based-genetic-testing-criteria-inherited-cancer-risk",
+   "id": "2026-10-08-germline-age-criteria"
+  },
+  {
+   "category": "designation",
+   "date": "2026-10-08",
+   "impact": "notable",
+   "source": "Targeted Oncology",
+   "summary": "The FDA granted breakthrough therapy designation to Temab-A in colorectal cancer and in c-Met–expressing non-small cell lung cancer.",
+   "tags": [
+    "ADC",
+    "c-Met",
+    "colorectal",
+    "breakthrough"
+   ],
+   "title": "c-Met ADC telisotuzumab adizutecan (Temab-A) gets two breakthrough designations",
+   "tumor": "Lung",
+   "url": "https://www.targetedonc.com/view/telisotuzumab-adizutecan-fda-breakthrough-designation-crc-nsclc",
+   "id": "2026-10-08-temab-a-btd"
+  },
+  {
+   "category": "trial",
+   "date": "2026-10-07",
+   "impact": "notable",
+   "keyData": "SURVIVE · OS primary endpoint not met · benefit in ≤65 y subgroup",
+   "source": "Targeted Oncology",
+   "summary": "The survivin-targeted vaccine did not meet its primary overall survival endpoint because the standard-of-care arm lived longer than expected; benefit was seen in patients aged 65 or younger.",
+   "tags": [
+    "vaccine",
+    "glioblastoma",
+    "negative trial"
+   ],
+   "title": "SURVIVE: SurVaxM misses OS endpoint in newly diagnosed glioblastoma",
+   "tumor": "CNS",
+   "url": "https://www.targetedonc.com/view/survaxm-vaccine-overall-survival-younger-subgroup-glioblastoma",
+   "id": "2026-10-07-survaxm-survive"
+  },
+  {
+   "category": "approval",
+   "date": "2026-10-07",
+   "impact": "practice-changing",
+   "keyData": "HER2CLIMB-05 · mPFS 24.9 vs 16.3 mo",
+   "source": "Targeted Oncology",
+   "summary": "Tucatinib added to maintenance trastuzumab and pertuzumab after first-line induction, based on the HER2CLIMB-05 trial.",
+   "tags": [
+    "HER2",
+    "TKI",
+    "maintenance"
+   ],
+   "title": "FDA approves tucatinib maintenance with trastuzumab–pertuzumab in HER2+ metastatic breast cancer",
+   "tumor": "Breast",
+   "url": "https://www.targetedonc.com/view/fda-approves-tucatinib-maintenance-therapy-her2-positive-breast-cancer",
+   "id": "2026-10-07-tucatinib-maintenance"
+  },
+  {
+   "actionDate": "2026-12-23",
+   "actionDateLabel": "23 Dec",
+   "category": "upcoming",
+   "date": "2026-10-01",
+   "impact": "notable",
+   "keyData": "iMMagine-1 · ORR 97% · sCR/CR 68%",
+   "source": "Targeted Oncology",
+   "summary": "BCMA-directed CAR T-cell therapy.",
+   "tags": [
+    "CAR-T",
+    "BCMA"
+   ],
+   "title": "Anito-cel in relapsed/refractory myeloma after ≥3 lines",
+   "tumor": "Myeloma",
+   "url": "https://www.targetedonc.com/view/q4-2026-oncology-fda-decisions-preview",
+   "id": "2026-10-01-anito-cel"
+  },
+  {
+   "actionDate": "2026-11-30",
+   "actionDateLabel": "30 Nov",
+   "category": "upcoming",
+   "date": "2026-10-01",
+   "impact": "notable",
+   "keyData": "PEAK · mPFS 16.5 vs 9.2 mo · HR 0.50",
+   "source": "Targeted Oncology",
+   "summary": "Type 1 plus type 2 KIT inhibition to cover more resistance mutations.",
+   "tags": [
+    "KIT",
+    "GIST"
+   ],
+   "title": "Bezuclastinib + sunitinib in GIST after imatinib",
+   "tumor": "Sarcoma",
+   "url": "https://www.targetedonc.com/view/q4-2026-oncology-fda-decisions-preview",
+   "id": "2026-10-01-bezuclastinib-gist"
+  },
+  {
+   "actionDate": "2026-11-30",
+   "actionDateLabel": "30 Nov",
+   "category": "upcoming",
+   "date": "2026-10-01",
+   "impact": "notable",
+   "keyData": "lidERA · IDFS HR 0.70 vs standard endocrine therapy",
+   "source": "Targeted Oncology",
+   "summary": "Would be the first oral SERD in the curative setting.",
+   "tags": [
+    "oral SERD",
+    "adjuvant"
+   ],
+   "title": "Giredestrant as adjuvant therapy in ER+/HER2− early breast cancer",
+   "tumor": "Breast",
+   "url": "https://www.targetedonc.com/view/q4-2026-oncology-fda-decisions-preview",
+   "id": "2026-10-01-giredestrant-adjuvant"
+  },
+  {
+   "actionDate": "2026-12-18",
+   "actionDateLabel": "18 Dec",
+   "category": "upcoming",
+   "date": "2026-10-01",
+   "impact": "notable",
+   "keyData": "evERA · mPFS 8.77 vs 5.49 mo · HR 0.56 (ESR1m HR 0.38)",
+   "source": "Targeted Oncology",
+   "summary": "After progression on prior endocrine-based therapy.",
+   "tags": [
+    "oral SERD",
+    "mTOR",
+    "ESR1"
+   ],
+   "title": "Giredestrant + everolimus in ESR1-mutated advanced breast cancer",
+   "tumor": "Breast",
+   "url": "https://www.targetedonc.com/view/q4-2026-oncology-fda-decisions-preview",
+   "id": "2026-10-01-giredestrant-evera"
+  },
+  {
+   "actionDate": "2026-11-14",
+   "actionDateLabel": "14 Nov",
+   "category": "upcoming",
+   "date": "2026-10-01",
+   "impact": "notable",
+   "keyData": "HARMONi · mPFS 6.8 vs 4.4 mo · HR 0.52",
+   "source": "Targeted Oncology",
+   "summary": "PD-1/VEGF bispecific antibody with platinum doublet after osimertinib-type progression.",
+   "tags": [
+    "bispecific",
+    "EGFR",
+    "VEGF"
+   ],
+   "title": "Ivonescimab + chemo in EGFR-mutant NSCLC after 3rd-gen TKI",
+   "tumor": "Lung",
+   "url": "https://www.targetedonc.com/view/q4-2026-oncology-fda-decisions-preview",
+   "id": "2026-10-01-ivonescimab"
+  },
+  {
+   "actionDate": "2026-11-27",
+   "actionDateLabel": "27 Nov",
+   "category": "upcoming",
+   "date": "2026-10-01",
+   "impact": "notable",
+   "keyData": "ALKOVE-1 · ORR 31% · intracranial 32% · G1202R ORR 68%",
+   "source": "Targeted Oncology",
+   "summary": "Next-generation ALK TKI under priority review, with activity against G1202R.",
+   "tags": [
+    "ALK",
+    "TKI",
+    "CNS"
+   ],
+   "title": "Neladalkib in pretreated ALK+ NSCLC",
+   "tumor": "Lung",
+   "url": "https://www.targetedonc.com/view/q4-2026-oncology-fda-decisions-preview",
+   "id": "2026-10-01-neladalkib"
+  },
+  {
+   "actionDate": "2026-10-31",
+   "actionDateLabel": "October",
+   "category": "upcoming",
+   "date": "2026-10-01",
+   "impact": "notable",
+   "keyData": "MANEUVER · ORR 54.0% vs 3.2% at wk 25",
+   "source": "Targeted Oncology",
+   "summary": "Oral CSF-1R inhibitor with breakthrough designation; also improved pain, stiffness and function.",
+   "tags": [
+    "CSF-1R",
+    "TGCT"
+   ],
+   "title": "Pimicotinib in tenosynovial giant cell tumour",
+   "tumor": "Sarcoma",
+   "url": "https://www.targetedonc.com/view/q4-2026-oncology-fda-decisions-preview",
+   "id": "2026-10-01-pimicotinib-tgct"
+  },
+  {
+   "actionDate": "2026-11-30",
+   "actionDateLabel": "November",
+   "category": "upcoming",
+   "date": "2026-10-01",
+   "impact": "notable",
+   "keyData": "TALAPRO-3 · rPFS HR 0.48 · 3-y rPFS 77% vs 56%",
+   "source": "Targeted Oncology",
+   "summary": "Priority review for the PARP inhibitor combination in castration-sensitive disease.",
+   "tags": [
+    "PARP",
+    "HRR",
+    "mCSPC"
+   ],
+   "title": "Talazoparib + enzalutamide in HRR-mutated mCSPC",
+   "tumor": "Prostate",
+   "url": "https://www.targetedonc.com/view/q4-2026-oncology-fda-decisions-preview",
+   "id": "2026-10-01-talapro3"
+  },
+  {
+   "actionDate": "2026-12-18",
+   "actionDateLabel": "18 Dec",
+   "category": "upcoming",
+   "date": "2026-10-01",
+   "impact": "notable",
+   "keyData": "PROSPECT (n=48) · ORR 66.7% · CR/CRu 43.8% · mPFS 6.0 mo",
+   "source": "Targeted Oncology",
+   "summary": "Second-generation BTK inhibitor, already approved in Japan.",
+   "tags": [
+    "BTK",
+    "PCNSL"
+   ],
+   "title": "Tirabrutinib in relapsed/refractory primary CNS lymphoma",
+   "tumor": "Lymphoma",
+   "url": "https://www.targetedonc.com/view/q4-2026-oncology-fda-decisions-preview",
+   "id": "2026-10-01-tirabrutinib"
+  },
+  {
+   "category": "regulatory",
+   "date": "2026-09-28",
+   "impact": "notable",
+   "keyData": "OASIS-4 (n=474) · −3.4 episodes/day vs placebo at wk 12",
+   "source": "Targeted Oncology",
+   "summary": "The dual NK-1/NK-3 antagonist is under priority review for moderate to severe hot flushes in patients on endocrine therapy for HR+ breast cancer.",
+   "tags": [
+    "supportive care",
+    "hot flushes"
+   ],
+   "title": "Elinzanetant gets priority review for vasomotor symptoms on endocrine therapy",
+   "tumor": "Breast",
+   "url": "https://www.targetedonc.com/view/elinzanetant-priority-review-vms-breast-cancer-endocrine-therapy",
+   "id": "2026-09-28-elinzanetant-priority"
+  },
+  {
+   "category": "research",
+   "date": "2026-09-28",
+   "impact": "notable",
+   "keyData": "ESMO 2026 · Madrid · Oct 23–27",
+   "source": "OncoDaily",
+   "summary": "Expected highlights include postMONARCH and FINER overall survival in HR+ breast cancer, TALAPRO-3 in mCSPC, SARON consolidation radiotherapy in oligometastatic NSCLC, LITESPARK-011 final results and HERIZON-GEA-01 in gastroesophageal cancer.",
+   "tags": [
+    "ESMO",
+    "conference",
+    "postMONARCH",
+    "FINER",
+    "SARON",
+    "radiotherapy"
+   ],
+   "title": "ESMO Congress 2026, Madrid, 23–27 October: readouts to watch",
+   "tumor": "Pan-cancer",
+   "url": "https://oncodaily.com/breast-oncology/esmo-congress-2026-bc",
+   "id": "2026-09-28-esmo-2026-preview"
+  },
+  {
+   "category": "regulatory",
+   "date": "2026-09-28",
+   "impact": "notable",
+   "keyData": "IDeate-Lung01 · ORR 48.2% · mDOR 5.3 mo · ILD 12.4%",
+   "source": "Targeted Oncology",
+   "summary": "Daiichi Sankyo and Merck withdrew the ifinatamab deruxtecan BLA after the FDA said phase 2 IDeate-Lung01 data did not meet accelerated approval requirements. Phase 3 IDeate-Lung02 is nearly fully enrolled.",
+   "tags": [
+    "ADC",
+    "B7-H3",
+    "SCLC"
+   ],
+   "title": "I-DXd application in extensive-stage SCLC withdrawn",
+   "tumor": "Lung",
+   "url": "https://www.targetedonc.com/view/fda-application-withdrawn-for-i-dxd-in-small-cell-lung-cancer",
+   "id": "2026-09-28-idxd-withdrawn"
+  },
+  {
+   "actionDate": "2026-12-31",
+   "actionDateLabel": "Q4 2026",
+   "category": "upcoming",
+   "date": "2026-09-25",
+   "impact": "notable",
+   "keyData": "VOLGA (n=695) · EFS and OS improved vs radical cystectomy",
+   "source": "Targeted Oncology",
+   "summary": "Priority review granted based on VOLGA, which improved event-free and overall survival versus cystectomy alone. Decision expected in the fourth quarter of 2026.",
+   "tags": [
+    "perioperative",
+    "ADC",
+    "immunotherapy"
+   ],
+   "title": "Perioperative durvalumab + enfortumab vedotin in cisplatin-ineligible MIBC",
+   "tumor": "Bladder",
+   "url": "https://www.targetedonc.com/view/durvalumab-enfortumab-regimen-fda-priority-review-mibc",
+   "id": "2026-09-25-durva-ev-volga"
+  },
+  {
+   "category": "approval",
+   "date": "2026-09-24",
+   "impact": "notable",
+   "keyData": "LITESPARK-011 · mPFS 14.6 vs 10.6 mo · HR 0.74 · ORR 53% vs 40% · OS HR 0.85 (NS)",
+   "source": "Targeted Oncology",
+   "summary": "The HIF-2α inhibitor combination beat cabozantinib on PFS and response; final overall survival was not statistically significant.",
+   "tags": [
+    "HIF-2a",
+    "RCC"
+   ],
+   "title": "FDA approves belzutifan plus lenvatinib for ccRCC after PD-1/PD-L1 therapy",
+   "tumor": "Kidney",
+   "url": "https://www.targetedonc.com/view/fda-approves-belzutifan-lenvatinib-advanced-ccrcc",
+   "id": "2026-09-24-belzutifan-lenvatinib"
+  },
+  {
+   "category": "regulatory",
+   "date": "2026-09-24",
+   "impact": "notable",
+   "keyData": "Benefit-risk 7–2 · PATHFINDER 2 sensitivity 35.0%, specificity 99.85%",
+   "source": "Targeted Oncology",
+   "summary": "Advisory panel supported the blood test as a prescription screen for adults 50 and older. The vote does not bind the FDA's final decision.",
+   "tags": [
+    "MCED",
+    "ctDNA",
+    "screening"
+   ],
+   "title": "FDA panel votes in favour of Galleri multi-cancer early detection test",
+   "tumor": "Screening",
+   "url": "https://www.targetedonc.com/view/fda-panel-galleri-multi-cancer-early-detection-test",
+   "id": "2026-09-24-galleri-panel"
+  },
+  {
+   "category": "approval",
+   "date": "2026-09-24",
+   "impact": "notable",
+   "keyData": "REFOCUS (n=114) · ORR 46% · mDOR 11.8 · mPFS 11.3 · mOS 22.8 mo",
+   "source": "Targeted Oncology",
+   "summary": "An irreversible, selective FGFR2 inhibitor for previously treated advanced cholangiocarcinoma with FGFR2 fusions or rearrangements. Nail toxicity, hand-foot syndrome and stomatitis were common.",
+   "tags": [
+    "FGFR2",
+    "biliary"
+   ],
+   "title": "FDA approves lirafugratinib for FGFR2-fusion cholangiocarcinoma",
+   "tumor": "Hepatobiliary",
+   "url": "https://www.targetedonc.com/view/fda-approves-lirafugratinib-fgfr2-altered-cholangiocarcinoma",
+   "id": "2026-09-24-lirafugratinib"
+  },
+  {
+   "category": "designation",
+   "date": "2026-09-24",
+   "impact": "notable",
+   "source": "Targeted Oncology",
+   "summary": "Fast track in osteosarcoma and orphan drug designation in soft tissue sarcoma; first-in-human trial expected later in 2026.",
+   "tags": [
+    "ADC",
+    "osteosarcoma"
+   ],
+   "title": "LRRC15-directed ADC SOT106 gets new designations in sarcoma",
+   "tumor": "Sarcoma",
+   "url": "https://www.targetedonc.com/view/sot106-fda-ftd-odd-osteosarcoma-soft-tissue-sarcoma",
+   "id": "2026-09-24-sot106"
+  },
+  {
+   "category": "approval",
+   "date": "2026-09-23",
+   "impact": "notable",
+   "source": "Targeted Oncology",
+   "summary": "Approved as bioequivalent to Lutathera through the abbreviated pathway, the first radioligand fully approved this way.",
+   "tags": [
+    "PRRT",
+    "radioligand",
+    "nuclear medicine"
+   ],
+   "title": "Bravnetsa (Lu-177 dotatate) gets final approval for GEP-NETs",
+   "tumor": "Neuroendocrine",
+   "url": "https://www.targetedonc.com/view/bravnetsa-lutetium-lu-177-dotatate-fda-approval-gep-nets",
+   "id": "2026-09-23-bravnetsa"
+  },
+  {
+   "category": "regulatory",
+   "date": "2026-09-23",
+   "impact": "notable",
+   "keyData": "COMPANION-002 · ORR 18.0% vs 5.3% · PFS HR 0.44 · OS 8.9 vs 9.4 mo (HR 1.05)",
+   "source": "Targeted Oncology",
+   "summary": "COMPANION-002 met its ORR endpoint and improved PFS but not overall survival; Compass plans to submit anyway, citing crossover.",
+   "tags": [
+    "bispecific",
+    "DLL4",
+    "VEGF"
+   ],
+   "title": "FDA asks for survival trial before tovecimig filing in biliary tract cancer",
+   "tumor": "Hepatobiliary",
+   "url": "https://www.targetedonc.com/view/tovecimig-biliary-tract-cancer-fda-bla",
+   "id": "2026-09-23-tovecimig"
+  },
+  {
+   "category": "designation",
+   "date": "2026-09-21",
+   "impact": "notable",
+   "keyData": "Phase 1b (n=11 at 12 mg/kg) · ORR 45.5% · CR 27.3%",
+   "source": "Targeted Oncology",
+   "summary": "Galectin-9–targeting antibody combined with a hypomethylating agent; a randomized phase 2 trial is planned.",
+   "tags": [
+    "MDS",
+    "galectin-9"
+   ],
+   "title": "Fast track for LYT-200 plus HMA in high-risk relapsed MDS",
+   "tumor": "Leukaemia/MDS",
+   "url": "https://www.targetedonc.com/view/fda-lyt-200-combo-relapsed-refractory-mds-myelodysplastic",
+   "id": "2026-09-21-lyt200"
+  },
+  {
+   "category": "regulatory",
+   "date": "2026-09-18",
+   "impact": "notable",
+   "source": "Targeted Oncology",
+   "summary": "Pairs sponsors with research institutions and allows rolling review of IND components. Applications due 30 October 2026; 8–10 pairs to be selected by 18 December.",
+   "tags": [
+    "policy",
+    "phase 1"
+   ],
+   "title": "FDA launches Expedited IND pilot for first-in-human trials",
+   "tumor": "Pan-cancer",
+   "url": "https://www.targetedonc.com/view/fda-expedited-ind-pilot-first-in-human-phase-1-trials",
+   "id": "2026-09-18-expedited-ind"
+  },
+  {
+   "category": "approval",
+   "date": "2026-09-18",
+   "impact": "notable",
+   "keyData": "EMBER-3 ESR1m subgroup (n=159) · mPFS 11.1 vs 5.5 mo · HR 0.53 · ORR 35% vs 15%",
+   "source": "Targeted Oncology",
+   "summary": "For ER+/HER2− ESR1-mutated disease after at least one line of endocrine therapy, with Guardant360 CDx as companion diagnostic. Imlunestrant alone showed no PFS gain without ESR1 mutation.",
+   "tags": [
+    "oral SERD",
+    "ESR1",
+    "CDK4/6"
+   ],
+   "title": "FDA approves imlunestrant plus abemaciclib for ESR1-mutated advanced breast cancer",
+   "tumor": "Breast",
+   "url": "https://www.targetedonc.com/view/fda-approves-imlunestrant-abemaciclib-esr1-mutated-breast-cancer",
+   "id": "2026-09-18-imlunestrant-abema"
+  },
+  {
+   "category": "regulatory",
+   "date": "2026-09-17",
+   "impact": "notable",
+   "keyData": "TRUST-I TKI-naive · mDOR 49.7 mo at 51 mo follow-up",
+   "source": "Targeted Oncology",
+   "summary": "Label now reflects 14 more months of TRUST-I and TRUST-II follow-up; safety sections unchanged.",
+   "tags": [
+    "ROS1",
+    "TKI"
+   ],
+   "title": "Taletrectinib label updated with longer response data in ROS1+ NSCLC",
+   "tumor": "Lung",
+   "url": "https://www.targetedonc.com/view/fda-approves-snda-taletrectinib-updated-dor-ros1-nsclc",
+   "id": "2026-09-17-taletrectinib-label"
+  },
+  {
+   "actionDate": "2027-06-29",
+   "actionDateLabel": "29 Jun 2027",
+   "category": "upcoming",
+   "date": "2026-09-16",
+   "impact": "notable",
+   "keyData": "APEX · ORR 65% (mIWG-MRT-ECNM, n=68)",
+   "source": "Targeted Oncology",
+   "summary": "NDA accepted for the selective KIT D816V inhibitor; separate applications in non-advanced SM and GIST are also under review.",
+   "tags": [
+    "KIT",
+    "mastocytosis"
+   ],
+   "title": "Bezuclastinib in advanced systemic mastocytosis",
+   "tumor": "Haematologic",
+   "url": "https://www.targetedonc.com/view/fda-accepts-bezuclastinib-nda-advanced-systemic-mastocytosis",
+   "id": "2026-09-16-bezuclastinib-advsm"
+  },
+  {
+   "category": "designation",
+   "date": "2026-09-16",
+   "impact": "notable",
+   "keyData": "Based on phase 1/2 RMC-GI-102 · RASolute 302: 60% ↓ risk of death vs chemo (2L)",
+   "source": "Targeted Oncology",
+   "summary": "The oral RAS(ON) multi-selective inhibitor, approved as monotherapy in August for previously treated disease, is now being tested first-line in RASolute 303.",
+   "tags": [
+    "KRAS",
+    "RAS",
+    "breakthrough"
+   ],
+   "title": "Breakthrough designation for daraxonrasib + gem/nab-paclitaxel in first-line metastatic PDAC",
+   "tumor": "Pancreas",
+   "url": "https://www.targetedonc.com/view/daraxonrasib-breakthrough-therapy-designation-first-line-metastatic-pancreatic-cancer",
+   "id": "2026-09-16-daraxonrasib-btd"
+  },
+  {
+   "category": "approval",
+   "date": "2026-09-15",
+   "impact": "notable",
+   "keyData": "ERASMUS (n=360) · ORR 17% · mDOR 35 mo",
+   "source": "Targeted Oncology",
+   "summary": "A second lutetium-177 dotatate product joins Lutathera, approved on the single-arm ERASMUS study.",
+   "tags": [
+    "PRRT",
+    "radioligand",
+    "nuclear medicine"
+   ],
+   "title": "FDA approves Bexlutry (Lu-177 dotatate) for SSTR+ GEP-NETs",
+   "tumor": "Neuroendocrine",
+   "url": "https://www.targetedonc.com/view/fda-approves-lutetium-lu-177-dotatate-injection-gep-nets",
+   "id": "2026-09-15-bexlutry"
+  },
+  {
+   "category": "approval",
+   "date": "2026-09-14",
+   "impact": "notable",
+   "keyData": "ALA-BCC-CT013 (n=187) · complete response ~66% vs 5% vehicle at 12 wk",
+   "source": "Targeted Oncology",
+   "summary": "First photodynamic therapy drug approved for a skin cancer.",
+   "tags": [
+    "PDT",
+    "basal cell"
+   ],
+   "title": "Aminolevulinic acid gel with photodynamic therapy approved for superficial BCC",
+   "tumor": "Skin",
+   "url": "https://www.targetedonc.com/view/fda-approves-aminolevulinic-acid-gel-with-pdt-for-superficial-basal-cell-carcinoma",
+   "id": "2026-09-14-ameluz-pdt-bcc"
+  },
+  {
+   "category": "approval",
+   "date": "2026-09-14",
+   "impact": "notable",
+   "keyData": "Supported by data from 382 patients",
+   "source": "Targeted Oncology",
+   "summary": "Helps distinguish recurrent or progressive glioma from treatment-related change, including post-radiation effects, in adults and children. A negative scan does not exclude recurrence.",
+   "tags": [
+    "imaging",
+    "pseudoprogression",
+    "radionecrosis",
+    "radiotherapy"
+   ],
+   "title": "FDA approves 18F-FET (Pixclara), first amino acid PET agent for glioma",
+   "tumor": "CNS",
+   "url": "https://www.targetedonc.com/view/fda-approves-pixclara-fet-pet-glioma-imaging",
+   "id": "2026-09-14-pixclara-fet-pet"
+  },
+  {
+   "category": "regulatory",
+   "date": "2026-09-14",
+   "impact": "notable",
+   "keyData": "ES-SCLC · monitoring 22–24 h → 6–8 h",
+   "source": "Targeted Oncology",
+   "summary": "Monitoring after cycle 1 doses drops from 22–24 hours to 6–8 hours plus a next-day review. Patients stay within 1 hour of care for 48 hours with a caregiver; boxed warnings unchanged.",
+   "tags": [
+    "bispecific",
+    "DLL3",
+    "CRS",
+    "day care"
+   ],
+   "title": "Tarlatamab label cuts post-infusion monitoring for first two doses",
+   "tumor": "Lung",
+   "url": "https://www.targetedonc.com/view/fda-reduces-tarlatamab-monitoring-time-sclc",
+   "id": "2026-09-14-tarlatamab-monitoring"
+  },
+  {
+   "category": "approval",
+   "date": "2026-09-11",
+   "impact": "notable",
+   "keyData": "60 mg tablet ≡ 34.5 mg capsule",
+   "source": "Targeted Oncology",
+   "summary": "Not interchangeable mg-for-mg with the tablet: a 60 mg tablet dose equals a 34.5 mg capsule dose, and the label carries a boxed warning on medication errors. Can be taken with or without food.",
+   "tags": [
+    "formulation",
+    "dosing",
+    "medication safety"
+   ],
+   "title": "Cabozantinib capsule formulation (Omcazio) gets final approval",
+   "tumor": "Kidney",
+   "url": "https://www.targetedonc.com/view/omcazio-cabozantinib-capsules-fda-final-approval",
+   "id": "2026-09-11-omcazio"
+  },
+  {
+   "actionDate": "2027-03-03",
+   "actionDateLabel": "3 Mar 2027",
+   "category": "upcoming",
+   "date": "2026-09-11",
+   "impact": "notable",
+   "keyData": "STELLAR-303 · mOS 10.9 vs 9.4 mo vs regorafenib · HR 0.80",
+   "source": "Targeted Oncology",
+   "summary": "FDA extended the review by 3 months to examine updated data. Grade ≥3 treatment-related AEs 60% vs 37%.",
+   "tags": [
+    "TKI",
+    "immunotherapy",
+    "PDUFA extension"
+   ],
+   "title": "Zanzalintinib + atezolizumab in metastatic colorectal cancer",
+   "tumor": "Colorectal",
+   "url": "https://www.targetedonc.com/view/fda-delays-decision-on-zanzalintinib-combo-for-mcrc",
+   "id": "2026-09-11-zanzalintinib-delay"
+  },
+  {
+   "category": "approval",
+   "date": "2026-09-09",
+   "impact": "notable",
+   "keyData": "SOHO-01 1L (n=69) · confirmed ORR 75% · 38% DOR ≥12 mo",
+   "source": "FDA",
+   "summary": "Accelerated approval now covers nonsquamous NSCLC with HER2 TKD activating mutations regardless of prior therapy.",
+   "tags": [
+    "HER2",
+    "ERBB2",
+    "TKI"
+   ],
+   "title": "Sevabertinib approval expanded to treatment-naive HER2-mutant NSCLC",
+   "tumor": "Lung",
+   "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/oncology-cancerhematologic-malignancies-approval-notifications",
+   "id": "2026-09-09-sevabertinib-1l"
+  },
+  {
+   "category": "approval",
+   "date": "2026-09-06",
+   "impact": "notable",
+   "keyData": "SERENA-6 · mPFS 16.8 vs 9.2 mo · HR 0.45 (ASCO 2026 update)",
+   "source": "Targeted Oncology",
+   "summary": "For HR+/HER2− advanced breast cancer when ESR1 mutation appears on ctDNA during AI + CDK4/6 therapy, with Guardant360 CDx. Approved despite a negative ODAC vote in April; confirmatory trial required.",
+   "tags": [
+    "oral SERD",
+    "ESR1",
+    "ctDNA",
+    "ODAC"
+   ],
+   "title": "Camizestrant switch on emerging ESR1 mutation gets accelerated approval",
+   "tumor": "Breast",
+   "url": "https://www.targetedonc.com/view/fda-approves-camizestrant-plus-cdk4-6-inhibitor-for-esr1-mutant-breast-cancer",
+   "id": "2026-09-06-camizestrant"
+  },
+  {
+   "category": "approval",
+   "date": "2026-08-13",
+   "impact": "notable",
+   "source": "FDA",
+   "summary": "For relapsed myeloma after at least one prior line including a proteasome inhibitor and an IMiD.",
+   "tags": [
+    "CELMoD",
+    "iberdomide"
+   ],
+   "title": "Iberdomide + daratumumab SC + dexamethasone gets accelerated approval in myeloma",
+   "tumor": "Myeloma",
+   "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/hematologyoncology-cancer-approvals-safety-notifications",
+   "id": "2026-08-13-iberdomide-dd"
+  },
+  {
+   "category": "approval",
+   "date": "2026-08-06",
+   "impact": "notable",
+   "source": "FDA",
+   "summary": "Accelerated approval for unresectable advanced cutaneous melanoma progressing on PD-1–based therapy, after two earlier rejections.",
+   "tags": [
+    "oncolytic virus",
+    "RP1",
+    "immunotherapy"
+   ],
+   "title": "Oncolytic virus vusolimogene oderparepvec + nivolumab approved for PD-1–refractory melanoma",
+   "tumor": "Melanoma",
+   "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/hematologyoncology-cancer-approvals-safety-notifications",
+   "id": "2026-08-06-vusolimogene"
+  }
+ ]
+}
