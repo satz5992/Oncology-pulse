@@ -233,7 +233,7 @@ mark{background:var(--warn-soft);color:inherit;border-radius:3px;padding:0 1px}
     <div id="homePC"></div>
     <div id="homeAhead"></div>
     <div>
-      <div class="sec-h"><h2>Latest</h2><button data-go="news">See all</button></div>
+      <div class="sec-h"><h2 id="latestH">Latest</h2><button data-go="news">See all</button></div>
       <div class="panel rows" id="homeLatest"></div>
     </div>
     <div id="homeTotd"></div>
@@ -363,6 +363,9 @@ const REPO="https://github.com/satz5992/Oncology-pulse";
 function reportUrl(title,body){return REPO+"/issues/new?title="+encodeURIComponent(title)+"&body="+encodeURIComponent(body||"")}
 function openExt(u){A?A.open(u):window.open(u)}
 function toast(m){const t=$("toast");t.textContent=m;t.classList.add("on");clearTimeout(toast.h);toast.h=setTimeout(()=>t.classList.remove("on"),2400)}
+const addedOf = i => i.added || i.date || "";
+const byAdded = (a,b) => addedOf(b).localeCompare(addedOf(a)) || (b.date||"").localeCompare(a.date||"");
+const addedLabel = s => s===today?"Added today":s===daysAgo(1)?"Added yesterday":"Added "+fmtDay(s);
 const isNew = i => seenAtOpen.size>0 && !seenAtOpen.has(i.id);
 const modOf = t => /Surgery/.test(t.modality) ? "Surgery" : t.modality;
 const ico = n => `<svg class="i"><use href="#i-${n}"/></svg>`;
@@ -371,7 +374,7 @@ const ico = n => `<svg class="i"><use href="#i-${n}"/></svg>`;
 function loadNews(json, fromNet){
   try{const d=typeof json==="string"?JSON.parse(json):json;
     const before=new Set(news.map(i=>i.id));
-    news=(d.items||[]).filter(i=>i&&i.title).sort((a,b)=>(b.date||"").localeCompare(a.date||""));
+    news=(d.items||[]).filter(i=>i&&i.title).sort(byAdded);
     updated=d.updated||null;
     if(fromNet&&before.size){const n=news.filter(i=>!before.has(i.id)).length;toast(n?`${n} new update${n>1?"s":""}`:"You're up to date")}
   }catch(e){}
@@ -432,7 +435,9 @@ function renderHome(){
     <div class="panel rows timeline">${upcoming.slice(0,4).map(i=>{const t=D(i.actionDate);const lbl=i.actionDateLabel||"";const exact=/^\d/.test(lbl);
       return `<button class="row" data-open="news:${esc(i.id)}"><span class="date"><b>${exact?t.getDate():esc(t.toLocaleDateString("en-IN",{month:"short"}))}</b><span>${exact?esc(t.toLocaleDateString("en-IN",{month:"short"})):"expected"}</span></span>
       <span class="body"><span class="t">${esc(i.title)}</span>${i.keyData?`<span class="k">${esc(i.keyData)}</span>`:""}</span><svg class="i chev"><use href="#i-chev"/></svg></button>`}).join("")}</div>`:"";
-  const latest=news.filter(i=>i.category!=="upcoming").slice(0,5);
+  const latest=news.filter(i=>i.category!=="upcoming").slice(0,6);
+  const addedToday=news.filter(i=>addedOf(i)===today).length;
+  $("latestH").textContent=addedToday?`Latest · ${addedToday} added today`:"Latest";
   $("homeLatest").innerHTML=latest.length?latest.map(i=>newsRow(i)).join(""):`<div class="empty"><strong>No news yet</strong>Pull down or tap refresh to download updates.</div>`;
   if(trials.length){const day=Math.floor(Date.now()/864e5);const t=trials[(day*7919)%trials.length];
     $("homeTotd").innerHTML=`<div class="sec-h"><h2>Trial of the day</h2><button data-go="trials">Library</button></div>
@@ -448,8 +453,8 @@ function renderNews(){
   if(ntype==="upcoming") list=list.sort((a,b)=>(a.actionDate||"").localeCompare(b.actionDate||""));
   if(!list.length){$("nlist").innerHTML=`<div class="empty"><strong>Nothing matches</strong>Try another filter or clear the search.</div>`;return}
   if(ntype==="upcoming"){$("nlist").innerHTML=`<div class="panel rows">${list.map(i=>newsRow(i,q)).join("")}</div>`;return}
-  const groups=[];list.forEach(i=>{const g=groups[groups.length-1];if(g&&g.d===i.date)g.items.push(i);else groups.push({d:i.date,items:[i]})});
-  $("nlist").innerHTML=`<div class="count">${list.length} item${list.length>1?"s":""}</div>`+groups.map(g=>`<div class="daylabel">${esc(fmtDay(g.d))}</div><div class="panel rows">${g.items.map(i=>newsRow(i,q)).join("")}</div>`).join("");
+  const groups=[];list.forEach(i=>{const k=addedOf(i);const g=groups[groups.length-1];if(g&&g.d===k)g.items.push(i);else groups.push({d:k,items:[i]})});
+  $("nlist").innerHTML=`<div class="count">${list.length} item${list.length>1?"s":""} · newest additions first</div>`+groups.map(g=>`<div class="daylabel">${esc(addedLabel(g.d))} · ${g.items.length}</div><div class="panel rows">${g.items.map(i=>newsRow(i,q)).join("")}</div>`).join("");
 }
 function renderTrials(){
   const q=$("tq").value.trim();
