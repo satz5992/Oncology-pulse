@@ -187,6 +187,14 @@ nav.tabs .dotbadge{position:absolute;top:6px;left:calc(50% + 10px);min-width:16p
 .overlay .scroll{flex:1;overflow-y:auto;padding:14px 16px 40px;display:flex;flex-direction:column;gap:18px}
 mark{background:var(--warn-soft);color:inherit;border-radius:3px;padding:0 1px}
 
+/* ---- first-launch notice ---- */
+.notice{position:fixed;inset:0;z-index:80;background:rgba(10,11,18,.55);display:flex;align-items:flex-end;justify-content:center;padding:16px}
+.notice .card{background:var(--surface);color:var(--fg);border-radius:18px;padding:22px 20px calc(18px + env(safe-area-inset-bottom,0px));max-width:480px;width:100%;display:flex;flex-direction:column;gap:12px;box-shadow:var(--shadow)}
+.notice h2{margin:0;font-size:1.15rem;font-weight:700;letter-spacing:-.01em}
+.notice p{margin:0;font-size:.9rem;line-height:1.55;color:var(--muted)}
+.notice ul{margin:0;padding-left:18px;font-size:.9rem;line-height:1.55;display:flex;flex-direction:column;gap:4px}
+.report{display:inline-flex;align-items:center;gap:6px;color:var(--accent);font-size:.84rem;font-weight:500;align-self:flex-start;padding:4px 0}
+.report svg{width:16px;height:16px}
 .toast{position:fixed;left:16px;right:16px;bottom:calc(84px + env(safe-area-inset-bottom,0px));z-index:70;background:var(--fg);color:var(--bg);padding:12px 14px;border-radius:12px;font-size:.88rem;opacity:0;transform:translateY(8px);transition:.2s;pointer-events:none;box-shadow:var(--shadow)}
 .toast.on{opacity:1;transform:none}
 @media (prefers-reduced-motion: reduce){.sheet,.toast,.ptr{transition:none}}
@@ -273,6 +281,8 @@ mark{background:var(--warn-soft);color:inherit;border-radius:3px;padding:0 1px}
     <div>
       <div class="sec-h"><h2>App</h2></div>
       <div class="panel rows">
+        <button class="link" id="lnkReport"><span><b style="font-weight:500">Report an error or correction</b><br><span class="count">Opens a form on GitHub; no account details shared</span></span><svg class="i"><use href="#i-ext"/></svg></button>
+        <button class="link" id="lnkAbout"><span><b style="font-weight:500">About &amp; disclaimer</b><br><span class="count">Who this app is for and how content is made</span></span><svg class="i"><use href="#i-chev"/></svg></button>
         <button class="link" id="lnkUpdate"><span><b style="font-weight:500">Get the latest version</b><br><span class="count">Downloads the newest APK from GitHub</span></span><svg class="i"><use href="#i-ext"/></svg></button>
         <div class="setting"><div class="l"><b>Version</b><span>Background checks every 4 hours</span></div><span class="num count" id="ver">—</span></div>
       </div>
@@ -308,6 +318,20 @@ mark{background:var(--warn-soft);color:inherit;border-radius:3px;padding:0 1px}
   <div class="scroll" id="ovBody"></div>
 </div>
 
+<div class="notice" id="notice" role="dialog" aria-modal="true" aria-labelledby="noticeTitle" hidden>
+  <div class="card">
+    <h2 id="noticeTitle">For healthcare professionals</h2>
+    <p>Oncology Pulse is an education and awareness tool for doctors and trainees. It is not medical advice and is not a substitute for clinical judgement.</p>
+    <ul>
+      <li>News summaries are compiled automatically each day from regulators, journals, companies and medical news sites, with a link to each original source.</li>
+      <li>Landmark trial summaries are a revision aid and may contain errors.</li>
+      <li>Always confirm figures, indications and doses against the original publication or prescribing information before using them for patient care.</li>
+    </ul>
+    <p>The app collects no personal data. Saved items stay on your phone.</p>
+    <button class="btn" id="noticeOk">I understand</button>
+  </div>
+</div>
+
 <div class="toast" id="toast" role="status"></div>
 
 <script>
@@ -335,6 +359,9 @@ let savedNews=new Set(store.get("saved",[])), savedTrials=new Set(store.get("tsa
 const seenAtOpen=new Set(store.get("seen",[]));
 let current=null; // {kind,id}
 
+const REPO="https://github.com/satz5992/Oncology-pulse";
+function reportUrl(title,body){return REPO+"/issues/new?title="+encodeURIComponent(title)+"&body="+encodeURIComponent(body||"")}
+function openExt(u){A?A.open(u):window.open(u)}
 function toast(m){const t=$("toast");t.textContent=m;t.classList.add("on");clearTimeout(toast.h);toast.h=setTimeout(()=>t.classList.remove("on"),2400)}
 const isNew = i => seenAtOpen.size>0 && !seenAtOpen.has(i.id);
 const modOf = t => /Surgery/.test(t.modality) ? "Surgery" : t.modality;
@@ -488,6 +515,7 @@ function openDetail(kind,id,silent){
       ${(i.tags||[]).length?`<div class="tags">${i.tags.map(t=>`<span>${esc(t)}</span>`).join("")}</div>`:""}
       ${related("news",i)}
       ${i.url?`<button class="btn" data-ext="${esc(i.url)}">${ico("ext")}Read at ${esc(i.source||"source")}</button>`:""}
+      <button class="report" data-report="news:${esc(i.id)}">${ico("ext")}Report an error in this item</button>
       <p class="disclaimer">Automatically compiled summary. Verify against the source or label before clinical use.</p>`;
   } else {
     const t=trials.find(x=>x.id===id);if(!t){closeDetail();return}
@@ -502,6 +530,7 @@ function openDetail(kind,id,silent){
       <div class="callout"><b>Takeaway</b>${esc(t.takeaway)}</div>
       ${(t.tags||[]).length?`<div class="tags">${t.tags.map(x=>`<span>${esc(x)}</span>`).join("")}</div>`:""}
       ${related("trial",t)}
+      <button class="report" data-report="trial:${esc(t.id)}">${ico("ext")}Report an error in this trial</button>
       <p class="disclaimer">Revision summary. Check figures against ${esc(t.journal)} before quoting.</p>`;
   }
   if(!silent){body.scrollTop=0;$("sheet").classList.add("on");try{A&&A.setDetailOpen&&A.setDetailOpen(true)}catch(e){}}
@@ -557,6 +586,10 @@ document.addEventListener("click",e=>{
   const nt=e.target.closest("[data-ntype]");if(nt){ntype=nt.dataset.ntype;renderNews();return}
   const tm=e.target.closest("[data-tmod]");if(tm){tmod=tm.dataset.tmod;renderTrials();return}
   const ts=e.target.closest("[data-tsite]");if(ts){tsite=ts.dataset.tsite;renderTrials();window.scrollTo(0,0);return}
+  const rp=e.target.closest("[data-report]");if(rp){const [k,id]=rp.dataset.report.split(/:(.*)/s);
+    const x=k==="news"?news.find(n=>n.id===id):trials.find(t=>t.id===id);if(!x)return;
+    const name=k==="news"?x.title:x.name;
+    openExt(reportUrl(`Correction: ${name}`.slice(0,120),`Item: ${name}\nID: ${id} (${k})\n\nWhat is wrong:\n\nCorrect information and source (link):\n`));return}
   const ex=e.target.closest("[data-ext]");if(ex){A?A.open(ex.dataset.ext):window.open(ex.dataset.ext);return}
 });
 document.addEventListener("change",e=>{
@@ -576,6 +609,10 @@ $("sheetSave").addEventListener("click",toggleSave);
 $("savedSeg").addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;savedKind=b.dataset.k;renderSaved()});
 $("segTheme").addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;store.set("theme",b.dataset.v);applyTheme();renderMore()});
 $("segSize").addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;store.set("fs",Number(b.dataset.v));applyTheme();renderMore()});
+$("lnkReport").addEventListener("click",()=>openExt(reportUrl("Report: ","Describe the error or suggestion. Include a source link for corrections.\n")));
+$("lnkAbout").addEventListener("click",()=>showNotice(false));
+function showNotice(first){$("notice").hidden=false;$("noticeOk").textContent=first?"I understand":"Close"}
+$("noticeOk").addEventListener("click",()=>{$("notice").hidden=true;store.set("ackV1",true)});
 $("lnkUpdate").addEventListener("click",()=>{const u="https://github.com/satz5992/Oncology-pulse/releases/latest";A?A.open(u):window.open(u)});
 $("btnRefresh").addEventListener("click",refresh);
 window.addEventListener("scroll",()=>$("appbar").classList.toggle("scrolled",window.scrollY>4),{passive:true});
@@ -592,6 +629,7 @@ window.onNews=j=>{$("btnRefresh").classList.remove("spin");loadNews(j,true)};
 window.onNewsError=m=>{$("btnRefresh").classList.remove("spin");toast(m)};
 window.onTrials=j=>{loadTrials(j);toast("Trials library updated")};
 window.handleBack=()=>{
+  if(!$("notice").hidden){if(store.get("ackV1",false))$("notice").hidden=true;return true}
   if($("overlay").classList.contains("on")){closeSearch();return true}
   if(current){closeDetail();return true}
   if(screen==="trials"&&(tsite||tmod!=="all"||$("tq").value)){tsite="";tmod="all";$("tq").value="";renderTrials();return true}
@@ -603,6 +641,7 @@ document.addEventListener("visibilitychange",()=>{if(document.hidden)store.set("
 
 /* ---------- boot ---------- */
 applyTheme();
+if(!store.get("ackV1",false))showNotice(true);
 go(store.get("screen","home"));
 if(A){
   try{$("ver").textContent="v"+A.version()}catch(e){}

@@ -1,6 +1,23 @@
 {
- "updated": "2026-10-10T09:02:38Z",
+ "updated": "2026-10-11T01:24:35Z",
  "items": [
+  {
+   "category": "designation",
+   "date": "2026-10-09",
+   "impact": "notable",
+   "source": "Business Wire (Natera press release)",
+   "summary": "The cfDNA screening test, which also predicts the cancer signal origin, received Breakthrough Device status after FDA review of data across 12 cancer types; no performance figures were disclosed and the designation is not a clearance.",
+   "tags": [
+    "MCED",
+    "cfDNA",
+    "liquid biopsy",
+    "breakthrough device"
+   ],
+   "title": "Natera's blood-based multi-cancer early detection assay gets FDA Breakthrough Device designation",
+   "tumor": "Screening",
+   "url": "https://www.businesswire.com/news/home/20261009275528/en/FDA-Grants-Breakthrough-Device-Designation-for-Nateras-Multi-Cancer-Early-Detection-Assay",
+   "id": "2026-10-09-natera-mced-bdd"
+  },
   {
    "category": "research",
    "date": "2026-10-09",
@@ -18,6 +35,79 @@
    "tumor": "Breast",
    "url": "https://www.onclive.com/view/her2dx-assay-predicts-pcr-following-neoadjuvant-thp-in-her2-breast-cancer",
    "id": "2026-10-09-her2dx-thp"
+  },
+  {
+   "category": "research",
+   "date": "2026-10-09",
+   "impact": "notable",
+   "keyData": "25,328 exams (4,218 ABUS vs 21,110 HHUS) · CDR similar · recall lower with ABUS",
+   "source": "Journal of the American College of Radiology",
+   "summary": "Across 25,328 screening ultrasound exams in three US BCSC registries, automated breast ultrasound had a similar cancer detection rate to handheld ultrasound with lower recall and false-positive rates.",
+   "tags": [
+    "breast screening",
+    "ultrasound",
+    "dense breasts",
+    "BCSC"
+   ],
+   "title": "Automated breast ultrasound matches handheld ultrasound for supplemental screening with fewer recalls",
+   "tumor": "Screening",
+   "url": "https://doi.org/10.1016/j.jacr.2026.06.018",
+   "id": "2026-10-09-abus-screening"
+  },
+  {
+   "category": "approval",
+   "date": "2026-10-08",
+   "impact": "notable",
+   "keyData": "TROPION-Breast02 · mPFS 10.8 vs 5.6 mo · HR 0.57 · mOS 23.7 vs 18.7 mo · HR 0.79 · ORR 63% vs 29%",
+   "source": "Daiichi Sankyo press release",
+   "summary": "China's NMPA approved Dato-DXd for unresectable or metastatic triple-negative breast cancer in patients who are not candidates for PD-1/PD-L1 inhibitors, based on TROPION-Breast02, which showed PFS and OS gains over chemotherapy.",
+   "tags": [
+    "ADC",
+    "TROP2",
+    "TNBC",
+    "NMPA",
+    "TROPION-Breast02"
+   ],
+   "title": "China approves datopotamab deruxtecan for metastatic TNBC unsuitable for PD-(L)1 therapy",
+   "tumor": "Breast",
+   "url": "https://www.daiichisankyo.com/files/news/pressrelease/pdf/202610/20261008_E2.pdf",
+   "id": "2026-10-08-nmpa-dato-dxd-tnbc"
+  },
+  {
+   "category": "regulatory",
+   "date": "2026-10-08",
+   "impact": "notable",
+   "source": "Guardant Health press release",
+   "summary": "The liquid biopsy received IVDR CE marking to detect ESR1 mutations that select patients for camizestrant plus a CDK4/6 inhibitor in ER+/HER2− advanced breast cancer, following the EU approval of camizestrant in July 2026.",
+   "tags": [
+    "ESR1",
+    "liquid biopsy",
+    "companion diagnostic",
+    "SERD",
+    "EU"
+   ],
+   "title": "Guardant360 CDx certified in EU as companion diagnostic for camizestrant",
+   "tumor": "Breast",
+   "url": "https://investors.guardanthealth.com/press-releases/press-releases/2026/Guardant-Health-Announces-Approval-in-Europe-of-Guardant360-CDx-as-Companion-Diagnostic-for-AstraZenecas-ETCAMAH-camizestrant-in-Advanced-ER-positive-Breast-Cancer/default.aspx",
+   "id": "2026-10-08-guardant360-eu-cdx-camizestrant"
+  },
+  {
+   "category": "research",
+   "date": "2026-10-08",
+   "impact": "notable",
+   "keyData": "Phase 1, n=33 · relapses 0/16 vs 3/16 (median 30 mo) · immune response 73% · no grade ≥3 vaccine AEs",
+   "source": "Nature Communications",
+   "summary": "In a small randomised phase 1 study after surgery and adjuvant therapy, immediate TG4050 vaccination produced neoantigen-specific immune responses with no relapses versus 3 relapses in the observation arm; the trial was not powered for efficacy.",
+   "tags": [
+    "cancer vaccine",
+    "neoantigen",
+    "HPV-negative",
+    "adjuvant"
+   ],
+   "title": "Individualised neoantigen vaccine TG4050 shows durable T-cell responses in resected HPV-negative HNSCC",
+   "tumor": "Head & Neck",
+   "url": "https://doi.org/10.1038/s41467-026-76667-1",
+   "id": "2026-10-08-tg4050-hnscc-vaccine"
   },
   {
    "category": "trial",
@@ -69,6 +159,24 @@
    "id": "2026-10-08-germline-age-criteria"
   },
   {
+   "category": "regulatory",
+   "date": "2026-10-08",
+   "impact": "notable",
+   "keyData": "110 drugs (35 patented) · margin cap 30% of MRP",
+   "source": "The Week",
+   "summary": "According to government sources, trade margins on 110 non-scheduled anti-cancer medicines, including 35 patented drugs, will be limited to 30% of MRP, covering branded, generic and imported products; implementation is expected later in October.",
+   "tags": [
+    "India",
+    "drug pricing",
+    "trade margin rationalisation",
+    "access"
+   ],
+   "title": "India to cap trade margins on 110 anti-cancer drugs at 30% of MRP",
+   "tumor": "Pan-cancer",
+   "url": "https://www.theweek.in/news/health/2026/10/08/cancer-drug-prices-set-to-fall-government-caps-trade-margins-at-30-per-cent-of-mrp.html",
+   "id": "2026-10-08-india-cancer-drug-margin-cap"
+  },
+  {
    "category": "approval",
    "date": "2026-10-08",
    "impact": "practice-changing",
@@ -85,6 +193,25 @@
    "tumor": "Colorectal",
    "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-atezolizumab-combination-chemotherapy-stage-iii-mismatch-repair-deficient-colon-cancer",
    "id": "2026-10-09-atezolizumab-dmmr-colon"
+  },
+  {
+   "category": "approval",
+   "date": "2026-10-08",
+   "impact": "practice-changing",
+   "keyData": "DESTINY-Breast05 · IDFS HR 0.47 · 3-yr IDFS 92.4% vs 83.7% (vs T-DM1)",
+   "source": "Daiichi Sankyo press release",
+   "summary": "NMPA approved trastuzumab deruxtecan as adjuvant therapy after neoadjuvant taxane-trastuzumab when invasive disease remains, based on DESTINY-Breast05 versus T-DM1.",
+   "tags": [
+    "ADC",
+    "HER2",
+    "post-neoadjuvant",
+    "NMPA",
+    "DESTINY-Breast05"
+   ],
+   "title": "China approves adjuvant T-DXd for HER2+ early breast cancer with residual disease",
+   "tumor": "Breast",
+   "url": "https://www.daiichisankyo.com/files/news/pressrelease/pdf/202610/20261008_E1.pdf",
+   "id": "2026-10-08-nmpa-tdxd-adjuvant-db05"
   },
   {
    "category": "approval",
@@ -154,6 +281,42 @@
    "tumor": "Breast",
    "url": "https://www.mdanderson.org/newsroom/research-newsroom/randomized-trial-finds-targeting-individual-metastases-in-oligometastatic-breast-cancer-does-not-improve-survival.h00-159858501.html",
    "id": "2026-10-09-nrg-br002"
+  },
+  {
+   "category": "trial",
+   "date": "2026-10-06",
+   "impact": "notable",
+   "keyData": "FURVENT · 240 mg mPFS 11.0 vs 9.5 mo · HR 0.75 (p=0.065) · ORR 60% vs 33%",
+   "source": "CancerNetwork",
+   "summary": "Neither firmonertinib dose significantly improved BICR-assessed PFS over platinum-pemetrexed, although the 240 mg arm had a higher response rate and fewer grade ≥3 treatment-related AEs; the sponsor is reviewing next steps.",
+   "tags": [
+    "EGFR exon 20",
+    "TKI",
+    "negative trial",
+    "FURVENT"
+   ],
+   "title": "FURVENT: firmonertinib misses PFS endpoint in first-line EGFR exon 20 insertion NSCLC",
+   "tumor": "Lung",
+   "url": "https://www.cancernetwork.com/view/firmonertinib-misses-pfs-end-point-in-first-line-egfr-exon-20-nsclc",
+   "id": "2026-10-06-furvent-firmonertinib"
+  },
+  {
+   "category": "trial",
+   "date": "2026-10-05",
+   "impact": "notable",
+   "keyData": "EPCORE DLBCL-2 · PFS HR 0.49 (IPI 3–5 and IPI 2–5) · p<0.0001",
+   "source": "BioPharm International",
+   "summary": "Topline phase 3 results show adding the CD20xCD3 bispecific to R-CHOP roughly halved the risk of progression or death in IPI 3–5 and IPI 2–5 patients; OS and safety details are awaited.",
+   "tags": [
+    "bispecific",
+    "CD20xCD3",
+    "first-line",
+    "DLBCL"
+   ],
+   "title": "EPCORE DLBCL-2: epcoritamab plus R-CHOP improves PFS in newly diagnosed high-risk DLBCL",
+   "tumor": "Lymphoma",
+   "url": "https://www.biopharminternational.com/view/epcoritamab-r-chop-survival-dlbcl-epcore-dlbcl",
+   "id": "2026-10-05-epcore-dlbcl2"
   },
   {
    "category": "approval",
@@ -357,6 +520,25 @@
    "tumor": "Pan-cancer",
    "url": "https://oncodaily.com/breast-oncology/esmo-congress-2026-bc",
    "id": "2026-09-28-esmo-2026-preview"
+  },
+  {
+   "category": "trial",
+   "date": "2026-09-28",
+   "impact": "practice-changing",
+   "keyData": "n=242 · 1-yr cavity control 87% vs 81% (p=0.046) · mOS 29 vs 20 mo · HR 0.69 (p=0.035) · necrosis 14% vs 10%",
+   "source": "ASTRO Annual Meeting abstract",
+   "summary": "In a phase 3 trial of 242 patients with a resected brain metastasis over 2 cm, 3–5 fraction SRS improved surgical-bed control and overall survival versus single-fraction SRS without more toxicity; the investigators propose fSRS as standard of care for larger cavities.",
+   "tags": [
+    "radiotherapy",
+    "SRS",
+    "brain metastases",
+    "fractionation",
+    "ASTRO 2026"
+   ],
+   "title": "Alliance A071801: fractionated SRS beats single-fraction SRS after resection of brain metastases",
+   "tumor": "CNS",
+   "url": "https://amportal.astro.org/sessions/pl-01-22946/alliance-a071801-phase-iii-trial-postoperative-single-fraction-stereotactic-radiosurgery-srs-114060",
+   "id": "2026-09-28-alliance-a071801-fsrs"
   },
   {
    "category": "regulatory",
