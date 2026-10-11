@@ -40,10 +40,13 @@ jobs:
       - name: Build signed APK
         run: gradle :app:assembleRelease --no-daemon
 
-      - name: Rename APK
+      - name: Rename APK and write version.json
         run: |
           mkdir -p out
           cp app/build/outputs/apk/release/app-release.apk out/OncologyPulse.apk
+          NOTES=$(git log -1 --pretty=%s | head -c 140)
+          python3 -c "import json,sys; json.dump({'versionCode': int(sys.argv[1]), 'versionName': '1.0.'+sys.argv[1], 'notes': sys.argv[2]}, open('out/version.json','w'))" "${{ github.run_number }}" "$NOTES"
+          cat out/version.json
           ls -la out
 
       - name: Publish to the "latest" release
@@ -54,7 +57,9 @@ jobs:
           body: |
             Download **OncologyPulse.apk** below on your Android phone and open it to install.
             Build ${{ github.run_number }} from commit ${{ github.sha }}.
-          files: out/OncologyPulse.apk
+          files: |
+            out/OncologyPulse.apk
+            out/version.json
           make_latest: true
 
       - uses: actions/upload-artifact@v4

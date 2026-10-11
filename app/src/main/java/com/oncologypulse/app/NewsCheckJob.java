@@ -50,8 +50,10 @@ public class NewsCheckJob extends JobService {
                 } else {
                     NewsRepo.markAllSeen(this, json);
                 }
+                notifyUpdateIfAny(this);
                 jobFinished(params, false);
             } catch (Exception e) {
+                notifyUpdateIfAny(this);
                 jobFinished(params, true);
             }
         }).start();
@@ -70,6 +72,31 @@ public class NewsCheckJob extends JobService {
                 ctx.getString(R.string.channel_name), NotificationManager.IMPORTANCE_DEFAULT);
         ch.setDescription(ctx.getString(R.string.channel_desc));
         nm.createNotificationChannel(ch);
+    }
+
+    /** Tell the user once per version when a newer app build is published. */
+    private static void notifyUpdateIfAny(Context ctx) {
+        JSONObject v = Updater.checkNewer();
+        if (v == null) return;
+        int code = v.optInt("versionCode", 0);
+        android.content.SharedPreferences p = ctx.getSharedPreferences("pulse", Context.MODE_PRIVATE);
+        if (p.getInt("notified_version", 0) >= code) return;
+        p.edit().putInt("notified_version", code).apply();
+        ensureChannel(ctx);
+        NotificationManager nm = (NotificationManager) ctx.getSystemService(Context.NOTIFICATION_SERVICE);
+        if (nm == null) return;
+        Intent open = new Intent(ctx, MainActivity.class).addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        PendingIntent pi = PendingIntent.getActivity(ctx, 1, open,
+                PendingIntent.FLAG_UPDATE_CURRENT | PendingIntent.FLAG_IMMUTABLE);
+        Notification.Builder b = Build.VERSION.SDK_INT >= 26
+                ? new Notification.Builder(ctx, CHANNEL_ID) : new Notification.Builder(ctx);
+        b.setSmallIcon(R.drawable.ic_stat_pulse)
+                .setContentTitle("App update available")
+                .setContentText("Oncology Pulse " + v.optString("versionName") + " · tap to install")
+                .setColor(0xFF3D3A9A)
+                .setContentIntent(pi)
+                .setAutoCancel(true);
+        try { nm.notify(2, b.build()); } catch (SecurityException ignored) {}
     }
 
     private static void notifyNew(Context ctx, List<JSONObject> fresh) {

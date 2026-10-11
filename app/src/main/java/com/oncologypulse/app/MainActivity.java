@@ -141,6 +141,34 @@ public class MainActivity extends Activity {
             });
         }
 
+        /** Check GitHub for a newer build; calls window.onUpdate(json) or onUpdate("") if none. */
+        @JavascriptInterface
+        public void checkUpdate() {
+            new Thread(() -> {
+                JSONObject v = Updater.checkNewer();
+                deliver("onUpdate", v == null ? "" : v.toString());
+            }).start();
+        }
+
+        /** Download and install the newer build. */
+        @JavascriptInterface
+        public void installUpdate(String versionName) {
+            runOnUiThread(() -> {
+                if (!Updater.canInstall(MainActivity.this)) {
+                    deliver("onUpdateStatus", "permission");
+                    Updater.openInstallPermission(MainActivity.this);
+                    return;
+                }
+                try {
+                    Updater.download(MainActivity.this, versionName,
+                            () -> deliver("onUpdateStatus", "failed"));
+                    deliver("onUpdateStatus", "downloading");
+                } catch (Exception e) {
+                    deliver("onUpdateStatus", "failed");
+                }
+            });
+        }
+
         @JavascriptInterface
         public String version() {
             return BuildConfig.VERSION_NAME;
