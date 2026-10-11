@@ -29,24 +29,55 @@ final class NewsRepo {
 
     /** Fetch the latest feed from the network. Throws on any failure. */
     static String fetch() throws Exception {
-        return fetchUrl(BuildConfig.NEWS_URL);
+        return fetchAny("news.json");
+    }
+
+    /** Mirrors of the repo's data folder, tried in order. raw.githubusercontent.com is
+     *  blocked on some Indian mobile networks, so CDN mirrors are used as fallbacks. */
+    private static String[] mirrors(String file) {
+        String repo = BuildConfig.DATA_REPO;
+        return new String[]{
+            "https://raw.githubusercontent.com/" + repo + "/main/data/" + file,
+            "https://cdn.jsdelivr.net/gh/" + repo + "@main/data/" + file,
+            "https://cdn.statically.io/gh/" + repo + "/main/data/" + file,
+            "https://github.com/" + repo + "/raw/main/data/" + file
+        };
+    }
+
+    /** Try every mirror; return the copy with the newest "updated" (or highest "version"). */
+    private static String fetchAny(String file) throws Exception {
+        String best = null; String bestKey = ""; Exception last = null;
+        for (String u : mirrors(file)) {
+            try {
+                String body = fetchUrl(u);
+                String key = freshness(body);
+                if (best == null || key.compareTo(bestKey) > 0) { best = body; bestKey = key; }
+                if (u.contains("raw.githubusercontent")) break; // primary is authoritative
+            } catch (Exception e) { last = e; }
+        }
+        if (best == null) throw last != null ? last : new Exception("No mirror reachable");
+        return best;
+    }
+
+    /** Sortable freshness key: ISO "updated" timestamp, or zero-padded "version". */
+    static String freshness(String json) {
+        try {
+            JSONObject o = new JSONObject(json);
+            String up = o.optString("updated", "");
+            if (!up.isEmpty()) return up;
+            return String.format("%08d", o.optInt("version", 0));
+        } catch (Exception e) { return ""; }
     }
 
     /** The landmark-trials library: newest downloaded copy, else the bundled one. */
     static String trials(Context ctx) {
-        File f = new File(ctx.getFilesDir(), "trials.json");
-        try {
-            if (f.exists()) return readAll(new FileInputStream(f));
-            return readAll(ctx.getAssets().open("trials.json"));
-        } catch (Exception e) {
-            return "{\"trials\":[]}";
-        }
+        return newest(ctx, "trials.json", "{\"trials\":[]}");
     }
 
     /** Download the trials library if a newer version is published; returns true if updated. */
     static boolean refreshTrials(Context ctx) {
         try {
-            String body = fetchUrl(BuildConfig.TRIALS_URL);
+            String body = fetchAny("trials.json");
             int remote = new JSONObject(body).optInt("version", 0);
             int local = new JSONObject(trials(ctx)).optInt("version", 0);
             if (remote <= local) return false;
@@ -78,6 +109,7 @@ final class NewsRepo {
     }
 
     static void saveCache(Context ctx, String json) {
+        if (freshness(json).compareTo(freshness(cached(ctx))) < 0) return; // never go backwards
         try (FileOutputStream out = new FileOutputStream(new File(ctx.getFilesDir(), CACHE_FILE))) {
             out.write(json.getBytes(StandardCharsets.UTF_8));
         } catch (Exception ignored) {}
@@ -85,13 +117,17 @@ final class NewsRepo {
 
     /** Last downloaded feed, or the copy bundled with the app. */
     static String cached(Context ctx) {
-        File f = new File(ctx.getFilesDir(), CACHE_FILE);
-        try {
-            if (f.exists()) return readAll(new FileInputStream(f));
-            return readAll(ctx.getAssets().open("news.json"));
-        } catch (Exception e) {
-            return "{\"items\":[]}";
-        }
+        return newest(ctx, CACHE_FILE, "{\"items\":[]}");
+    }
+
+    /** Whichever is fresher: the last downloaded copy or the copy bundled in this APK. */
+    private static String newest(Context ctx, String name, String empty) {
+        String saved = null, bundled = null;
+        try { File f = new File(ctx.getFilesDir(), name); if (f.exists()) saved = readAll(new FileInputStream(f)); } catch (Exception ignored) {}
+        try { bundled = readAll(ctx.getAssets().open(name)); } catch (Exception ignored) {}
+        if (saved == null) return bundled != null ? bundled : empty;
+        if (bundled == null) return saved;
+        return freshness(bundled).compareTo(freshness(saved)) > 0 ? bundled : saved;
     }
 
     static List<JSONObject> items(String json) {
