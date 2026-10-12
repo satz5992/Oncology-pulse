@@ -1,7 +1,128 @@
 {
- "updated": "2026-10-11T05:40:00Z",
+ "updated": "2026-10-12T01:30:00Z",
  "items": [
   {
+   "added": "2026-10-12",
+   "category": "research",
+   "date": "2026-10-09",
+   "impact": "notable",
+   "keyData": "TRIlogy-1 · n=56 · MRD-neg 95% (10⁻⁵), 93.3% (10⁻⁶) among tested · median 3 prior lines",
+   "source": "CancerNetwork",
+   "summary": "Phase 1 TRIlogy-1 data presented at IMS 2026 showed very high rates of MRD negativity with ramantamig (JNJ-5322) monotherapy in heavily pretreated, largely anti-CD38-refractory relapsed/refractory myeloma.",
+   "tags": [
+    "trispecific antibody",
+    "ramantamig",
+    "JNJ-5322",
+    "MRD",
+    "IMS 2026"
+   ],
+   "title": "Trispecific ramantamig achieves high MRD negativity in triple-class-exposed myeloma",
+   "tumor": "Myeloma",
+   "url": "https://www.cancernetwork.com/view/ramantamig-achieves-impressive-rates-of-mrd-negativity-in-rrmm",
+   "id": "2026-10-09-ramantamig-trilogy1-mrd"
+  },
+  {
+   "added": "2026-10-12",
+   "category": "trial",
+   "date": "2026-10-09",
+   "impact": "practice-changing",
+   "keyData": "ROAM/EORTC-1308 · n=157 · 5-y DFS 79.9% vs 64.3% · HR 0.51 · recurrence 14% vs 30% · median FU 64 mo",
+   "source": "CancerNetwork",
+   "summary": "In the first randomised trial of its kind, 60 Gy IMRT after complete resection of WHO grade 2 meningioma halved the risk of recurrence or death versus active MRI surveillance, with more adverse events but no clear cognitive or QoL penalty; no overall survival difference so far. Published in The Lancet.",
+   "tags": [
+    "radiotherapy",
+    "meningioma",
+    "IMRT",
+    "ROAM",
+    "EORTC",
+    "phase 3"
+   ],
+   "title": "ROAM/EORTC-1308: adjuvant radiotherapy cuts recurrence after gross total resection of atypical meningioma",
+   "tumor": "CNS",
+   "url": "https://www.cancernetwork.com/view/adjuvant-radiotherapy-reduced-recurrence-in-resected-atypical-meningioma",
+   "id": "2026-10-09-roam-eortc1308-meningioma"
+  },
+  {
+   "added": "2026-10-12",
+   "category": "regulatory",
+   "date": "2026-10-08",
+   "impact": "notable",
+   "keyData": "Belgium, Denmark, France, Ireland, Italy, Netherlands, Sweden, Switzerland · IV Keytruda unaffected",
+   "source": "BioSpace",
+   "summary": "A court in the Netherlands found that Merck's subcutaneous Keytruda infringes a Halozyme hyaluronidase (MDASE) patent and ordered Merck to stop making and selling it in eight countries; intravenous pembrolizumab is unaffected, and a separate German injunction is under appeal.",
+   "tags": [
+    "pembrolizumab",
+    "subcutaneous",
+    "immunotherapy",
+    "patent",
+    "Europe"
+   ],
+   "title": "Dutch court blocks subcutaneous pembrolizumab in eight European countries over Halozyme patent",
+   "tumor": "Pan-cancer",
+   "url": "https://www.biospace.com/drug-delivery/merck-barred-from-making-subcutaneous-keytruda-in-8-european-countries",
+   "id": "2026-10-08-keytruda-sc-dutch-court"
+  },
+  {
+   "added": "2026-10-12",
+   "category": "trial",
+   "date": "2026-10-07",
+   "impact": "notable",
+   "keyData": "OST31-164-01 · n=41 · 3-y OS 72.7% vs 45.8% historical · 12-mo EFS 33% vs 20%",
+   "source": "Targeted Oncology",
+   "summary": "Final phase 2b data for daznelimgene lisbac showed higher 3-year overall survival than a pooled historical control in adolescents and young adults after complete resection of pulmonary metastases; the comparison is non-randomised. An accelerated-approval BLA is planned for Q4 2026.",
+   "tags": [
+    "osteosarcoma",
+    "HER2",
+    "Listeria vector",
+    "AYA",
+    "paediatric"
+   ],
+   "title": "Listeria-based HER2 immunotherapy OST-HER2 reports 3-year OS in resected lung-metastatic osteosarcoma",
+   "tumor": "Sarcoma",
+   "url": "https://www.targetedonc.com/view/final-3-year-os-ost-her2-daznelimgene-osteosarcoma",
+   "id": "2026-10-07-ost-her2-osteosarcoma-os"
+  },
+  {
+   "added": "2026-10-12",
+   "category": "research",
+   "date": "2026-10-06",
+   "impact": "notable",
+   "keyData": "PrTK03 parent trial · DFS HR 0.70 · negative biopsy at 22-26 mo 80% vs 63% · paired residual-tumour analysis n=108",
+   "source": "Targeted Oncology",
+   "summary": "An ASTRO 2026 late-breaker used machine-learning digital pathology on biopsies from the phase 3 PrTK03 trial and found greater immune infiltration after intraprostatic aglatimagene plus EBRT than after placebo plus EBRT, offering a possible mechanism for the trial's DFS benefit; P values are nominal.",
+   "tags": [
+    "radiotherapy",
+    "oncolytic gene therapy",
+    "aglatimagene",
+    "PrTK03",
+    "ASTRO 2026"
+   ],
+   "title": "Aglatimagene with EBRT increases intratumoral lymphocytes in localized prostate cancer (PrTK03 translational analysis)",
+   "tumor": "Prostate",
+   "url": "https://www.targetedonc.com/view/aglatimagene-immune-infiltration-localized-prostate-cancer-ebrt",
+   "id": "2026-10-06-aglatimagene-prtk03-digital-path"
+  },
+  {
+   "added": "2026-10-12",
+   "category": "research",
+   "date": "2026-10-05",
+   "impact": "notable",
+   "keyData": "n=3,259 · 6-mo abstinence 8.8% (incentives) vs 5.1% (pharmacotherapy) vs 4.3% (usual care) · +4.6 pts vs usual care, P<.001",
+   "source": "OncoDaily",
+   "summary": "A four-arm pragmatic RCT in JAMA found that adding cash incentives for biochemically confirmed abstinence raised 6-month quit rates over usual care and over free pharmacotherapy alone, while a mobile health tool added nothing further.",
+   "tags": [
+    "lung cancer screening",
+    "smoking cessation",
+    "financial incentives",
+    "JAMA"
+   ],
+   "title": "Financial incentives double quit rates in underserved patients referred for lung cancer screening",
+   "tumor": "Screening",
+   "url": "https://oncodaily.com/oncolibrary/lung-oncology/smoking-cessation",
+   "id": "2026-10-05-jama-lcs-smoking-incentives"
+  },
+  {
+   "added": "2026-10-11",
    "category": "designation",
    "date": "2026-10-09",
    "impact": "notable",
@@ -16,10 +137,10 @@
    "title": "Natera's blood-based multi-cancer early detection assay gets FDA Breakthrough Device designation",
    "tumor": "Screening",
    "url": "https://www.businesswire.com/news/home/20261009275528/en/FDA-Grants-Breakthrough-Device-Designation-for-Nateras-Multi-Cancer-Early-Detection-Assay",
-   "id": "2026-10-09-natera-mced-bdd",
-   "added": "2026-10-11"
+   "id": "2026-10-09-natera-mced-bdd"
   },
   {
+   "added": "2026-10-11",
    "category": "research",
    "date": "2026-10-09",
    "impact": "notable",
@@ -35,10 +156,10 @@
    "title": "Automated breast ultrasound matches handheld ultrasound for supplemental screening with fewer recalls",
    "tumor": "Screening",
    "url": "https://doi.org/10.1016/j.jacr.2026.06.018",
-   "id": "2026-10-09-abus-screening",
-   "added": "2026-10-11"
+   "id": "2026-10-09-abus-screening"
   },
   {
+   "added": "2026-10-11",
    "category": "approval",
    "date": "2026-10-08",
    "impact": "notable",
@@ -55,10 +176,10 @@
    "title": "China approves datopotamab deruxtecan for metastatic TNBC unsuitable for PD-(L)1 therapy",
    "tumor": "Breast",
    "url": "https://www.daiichisankyo.com/files/news/pressrelease/pdf/202610/20261008_E2.pdf",
-   "id": "2026-10-08-nmpa-dato-dxd-tnbc",
-   "added": "2026-10-11"
+   "id": "2026-10-08-nmpa-dato-dxd-tnbc"
   },
   {
+   "added": "2026-10-11",
    "category": "regulatory",
    "date": "2026-10-08",
    "impact": "notable",
@@ -74,10 +195,10 @@
    "title": "Guardant360 CDx certified in EU as companion diagnostic for camizestrant",
    "tumor": "Breast",
    "url": "https://investors.guardanthealth.com/press-releases/press-releases/2026/Guardant-Health-Announces-Approval-in-Europe-of-Guardant360-CDx-as-Companion-Diagnostic-for-AstraZenecas-ETCAMAH-camizestrant-in-Advanced-ER-positive-Breast-Cancer/default.aspx",
-   "id": "2026-10-08-guardant360-eu-cdx-camizestrant",
-   "added": "2026-10-11"
+   "id": "2026-10-08-guardant360-eu-cdx-camizestrant"
   },
   {
+   "added": "2026-10-11",
    "category": "research",
    "date": "2026-10-08",
    "impact": "notable",
@@ -93,10 +214,10 @@
    "title": "Individualised neoantigen vaccine TG4050 shows durable T-cell responses in resected HPV-negative HNSCC",
    "tumor": "Head & Neck",
    "url": "https://doi.org/10.1038/s41467-026-76667-1",
-   "id": "2026-10-08-tg4050-hnscc-vaccine",
-   "added": "2026-10-11"
+   "id": "2026-10-08-tg4050-hnscc-vaccine"
   },
   {
+   "added": "2026-10-11",
    "category": "regulatory",
    "date": "2026-10-08",
    "impact": "notable",
@@ -112,10 +233,10 @@
    "title": "India to cap trade margins on 110 anti-cancer drugs at 30% of MRP",
    "tumor": "Pan-cancer",
    "url": "https://www.theweek.in/news/health/2026/10/08/cancer-drug-prices-set-to-fall-government-caps-trade-margins-at-30-per-cent-of-mrp.html",
-   "id": "2026-10-08-india-cancer-drug-margin-cap",
-   "added": "2026-10-11"
+   "id": "2026-10-08-india-cancer-drug-margin-cap"
   },
   {
+   "added": "2026-10-11",
    "category": "approval",
    "date": "2026-10-08",
    "impact": "practice-changing",
@@ -132,10 +253,10 @@
    "title": "China approves adjuvant T-DXd for HER2+ early breast cancer with residual disease",
    "tumor": "Breast",
    "url": "https://www.daiichisankyo.com/files/news/pressrelease/pdf/202610/20261008_E1.pdf",
-   "id": "2026-10-08-nmpa-tdxd-adjuvant-db05",
-   "added": "2026-10-11"
+   "id": "2026-10-08-nmpa-tdxd-adjuvant-db05"
   },
   {
+   "added": "2026-10-11",
    "category": "trial",
    "date": "2026-10-06",
    "impact": "notable",
@@ -151,10 +272,10 @@
    "title": "FURVENT: firmonertinib misses PFS endpoint in first-line EGFR exon 20 insertion NSCLC",
    "tumor": "Lung",
    "url": "https://www.cancernetwork.com/view/firmonertinib-misses-pfs-end-point-in-first-line-egfr-exon-20-nsclc",
-   "id": "2026-10-06-furvent-firmonertinib",
-   "added": "2026-10-11"
+   "id": "2026-10-06-furvent-firmonertinib"
   },
   {
+   "added": "2026-10-11",
    "category": "trial",
    "date": "2026-10-05",
    "impact": "notable",
@@ -170,10 +291,10 @@
    "title": "EPCORE DLBCL-2: epcoritamab plus R-CHOP improves PFS in newly diagnosed high-risk DLBCL",
    "tumor": "Lymphoma",
    "url": "https://www.biopharminternational.com/view/epcoritamab-r-chop-survival-dlbcl-epcore-dlbcl",
-   "id": "2026-10-05-epcore-dlbcl2",
-   "added": "2026-10-11"
+   "id": "2026-10-05-epcore-dlbcl2"
   },
   {
+   "added": "2026-10-11",
    "category": "trial",
    "date": "2026-09-28",
    "impact": "practice-changing",
@@ -190,10 +311,10 @@
    "title": "Alliance A071801: fractionated SRS beats single-fraction SRS after resection of brain metastases",
    "tumor": "CNS",
    "url": "https://amportal.astro.org/sessions/pl-01-22946/alliance-a071801-phase-iii-trial-postoperative-single-fraction-stereotactic-radiosurgery-srs-114060",
-   "id": "2026-09-28-alliance-a071801-fsrs",
-   "added": "2026-10-11"
+   "id": "2026-09-28-alliance-a071801-fsrs"
   },
   {
+   "added": "2026-10-10",
    "category": "research",
    "date": "2026-10-09",
    "impact": "notable",
@@ -209,10 +330,10 @@
    "title": "HER2DX score and hormone receptor status predict pCR with neoadjuvant THP",
    "tumor": "Breast",
    "url": "https://www.onclive.com/view/her2dx-assay-predicts-pcr-following-neoadjuvant-thp-in-her2-breast-cancer",
-   "id": "2026-10-09-her2dx-thp",
-   "added": "2026-10-10"
+   "id": "2026-10-09-her2dx-thp"
   },
   {
+   "added": "2026-10-10",
    "category": "trial",
    "date": "2026-10-08",
    "impact": "notable",
@@ -227,10 +348,10 @@
    "title": "EXCALIBER-RRMM: iberdomide-dara-dex beats DVd in relapsed myeloma",
    "tumor": "Myeloma",
    "url": "https://www.cancernetwork.com/view/iberdomide-combination-doubles-pfs-vs-soc-therapy-in-r-r-multiple-myeloma",
-   "id": "2026-10-08-excaliber-rrmm",
-   "added": "2026-10-10"
+   "id": "2026-10-08-excaliber-rrmm"
   },
   {
+   "added": "2026-10-10",
    "category": "designation",
    "date": "2026-10-08",
    "impact": "notable",
@@ -244,10 +365,10 @@
    "title": "Fast track for PSMA-targeted T-cell engager VIR-5500 in mCRPC",
    "tumor": "Prostate",
    "url": "https://onclive.com/view/vir-5500-receives-fda-fast-track-designation-in-mcrpc",
-   "id": "2026-10-09-vir5500-psv359-ftd",
-   "added": "2026-10-10"
+   "id": "2026-10-09-vir5500-psv359-ftd"
   },
   {
+   "added": "2026-10-10",
    "category": "research",
    "date": "2026-10-08",
    "impact": "notable",
@@ -261,10 +382,10 @@
    "title": "Age-based germline testing criteria miss most inherited cancer variants",
    "tumor": "Pan-cancer",
    "url": "https://www.news-medical.net/news/20261008/Universal-germline-genetic-testing-catches-missed-cancer-risks-in-older-patients.aspx",
-   "id": "2026-10-08-germline-age-criteria",
-   "added": "2026-10-10"
+   "id": "2026-10-08-germline-age-criteria"
   },
   {
+   "added": "2026-10-10",
    "category": "approval",
    "date": "2026-10-08",
    "impact": "practice-changing",
@@ -280,10 +401,10 @@
    "title": "FDA approves adjuvant atezolizumab plus chemotherapy for dMMR colon cancer",
    "tumor": "Colorectal",
    "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-atezolizumab-combination-chemotherapy-stage-iii-mismatch-repair-deficient-colon-cancer",
-   "id": "2026-10-09-atezolizumab-dmmr-colon",
-   "added": "2026-10-10"
+   "id": "2026-10-09-atezolizumab-dmmr-colon"
   },
   {
+   "added": "2026-10-10",
    "category": "approval",
    "date": "2026-10-07",
    "impact": "practice-changing",
@@ -298,10 +419,10 @@
    "title": "FDA approves tucatinib maintenance with trastuzumab–pertuzumab in HER2+ metastatic breast cancer",
    "tumor": "Breast",
    "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-tucatinib-trastuzumab-and-pertuzumab-maintenance-treatment-her2-positive-breast-cancer",
-   "id": "2026-10-07-tucatinib-maintenance",
-   "added": "2026-10-10"
+   "id": "2026-10-07-tucatinib-maintenance"
   },
   {
+   "added": "2026-10-10",
    "category": "trial",
    "date": "2026-10-07",
    "impact": "notable",
@@ -316,10 +437,10 @@
    "title": "SURVIVE: SurVaxM misses OS endpoint in newly diagnosed glioblastoma",
    "tumor": "CNS",
    "url": "https://www.healio.com/news/hematology-oncology/20261007/trial-of-vaccine-for-glioblastoma-misses-endpoint-data-compelling-for-younger-patients",
-   "id": "2026-10-07-survaxm-survive",
-   "added": "2026-10-10"
+   "id": "2026-10-07-survaxm-survive"
   },
   {
+   "added": "2026-10-10",
    "category": "designation",
    "date": "2026-10-07",
    "impact": "notable",
@@ -334,10 +455,10 @@
    "title": "c-Met ADC telisotuzumab adizutecan (Temab-A) gets two breakthrough designations",
    "tumor": "Lung",
    "url": "https://www.onclive.com/view/fda-grants-breakthrough-therapy-designation-to-telisotuzumab-adizutecan-plus-bevacizumab-in-refractory-mcrc",
-   "id": "2026-10-08-temab-a-btd",
-   "added": "2026-10-10"
+   "id": "2026-10-08-temab-a-btd"
   },
   {
+   "added": "2026-10-10",
    "category": "trial",
    "date": "2026-10-07",
    "impact": "practice-changing",
@@ -353,10 +474,10 @@
    "title": "NRG-BR002: SBRT to oligometastases fails to extend PFS in breast cancer",
    "tumor": "Breast",
    "url": "https://www.mdanderson.org/newsroom/research-newsroom/randomized-trial-finds-targeting-individual-metastases-in-oligometastatic-breast-cancer-does-not-improve-survival.h00-159858501.html",
-   "id": "2026-10-09-nrg-br002",
-   "added": "2026-10-10"
+   "id": "2026-10-09-nrg-br002"
   },
   {
+   "added": "2026-10-10",
    "category": "approval",
    "date": "2026-10-02",
    "impact": "notable",
@@ -371,12 +492,12 @@
    "title": "FDA approves pirtobrutinib for previously untreated CLL/SLL",
    "tumor": "Leukaemia/MDS",
    "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-pirtobrutinib-previously-untreated-chronic-lymphocytic-leukemia-or-small-lymphocytic",
-   "id": "2026-10-02-pirtobrutinib-1l-cll",
-   "added": "2026-10-10"
+   "id": "2026-10-02-pirtobrutinib-1l-cll"
   },
   {
    "actionDate": "2026-11-27",
    "actionDateLabel": "27 Nov",
+   "added": "2026-10-10",
    "category": "upcoming",
    "date": "2026-10-01",
    "impact": "notable",
@@ -391,12 +512,12 @@
    "title": "Neladalkib in pretreated ALK+ NSCLC",
    "tumor": "Lung",
    "url": "https://www.sec.gov/Archives/edgar/data/0001861560/000186156026000020/nuvl-ex99_1.htm",
-   "id": "2026-10-01-neladalkib",
-   "added": "2026-10-10"
+   "id": "2026-10-01-neladalkib"
   },
   {
    "actionDate": "2026-11-30",
    "actionDateLabel": "November",
+   "added": "2026-10-10",
    "category": "upcoming",
    "date": "2026-10-01",
    "impact": "notable",
@@ -411,12 +532,12 @@
    "title": "Talazoparib + enzalutamide in HRR-mutated mCSPC",
    "tumor": "Prostate",
    "url": "https://www.pfizer.com/news/press-release/press-release-detail/fda-grants-priority-review-pfizers-talzenna-plus-xtandi",
-   "id": "2026-10-01-talapro3",
-   "added": "2026-10-10"
+   "id": "2026-10-01-talapro3"
   },
   {
    "actionDate": "2026-12-23",
    "actionDateLabel": "23 Dec",
+   "added": "2026-10-10",
    "category": "upcoming",
    "date": "2026-10-01",
    "impact": "notable",
@@ -430,12 +551,12 @@
    "title": "Anito-cel in relapsed/refractory myeloma after ≥3 lines",
    "tumor": "Myeloma",
    "url": "https://www.targetedonc.com/view/q4-2026-oncology-fda-decisions-preview",
-   "id": "2026-10-01-anito-cel",
-   "added": "2026-10-10"
+   "id": "2026-10-01-anito-cel"
   },
   {
    "actionDate": "2026-10-31",
    "actionDateLabel": "October",
+   "added": "2026-10-10",
    "category": "upcoming",
    "date": "2026-10-01",
    "impact": "notable",
@@ -449,12 +570,12 @@
    "title": "Pimicotinib in tenosynovial giant cell tumour",
    "tumor": "Sarcoma",
    "url": "https://www.cancernetwork.com/view/fda-accepts-nda-for-pimicotinib-in-tenosynovial-giant-cell-tumors",
-   "id": "2026-10-01-pimicotinib-tgct",
-   "added": "2026-10-10"
+   "id": "2026-10-01-pimicotinib-tgct"
   },
   {
    "actionDate": "2026-11-30",
    "actionDateLabel": "30 Nov",
+   "added": "2026-10-10",
    "category": "upcoming",
    "date": "2026-10-01",
    "impact": "notable",
@@ -468,12 +589,12 @@
    "title": "Bezuclastinib + sunitinib in GIST after imatinib",
    "tumor": "Sarcoma",
    "url": "https://investors.cogentbio.com/news-releases/news-release-details/cogent-biosciences-announces-fda-acceptance-new-drug-0",
-   "id": "2026-10-01-bezuclastinib-gist",
-   "added": "2026-10-10"
+   "id": "2026-10-01-bezuclastinib-gist"
   },
   {
    "actionDate": "2026-11-30",
    "actionDateLabel": "30 Nov",
+   "added": "2026-10-10",
    "category": "upcoming",
    "date": "2026-10-01",
    "impact": "notable",
@@ -487,12 +608,12 @@
    "title": "Giredestrant as adjuvant therapy in ER+/HER2− early breast cancer",
    "tumor": "Breast",
    "url": "https://www.gene.com/media/press-releases/15115/2026-06-01/fda-accepts-new-drug-application-for-gen",
-   "id": "2026-10-01-giredestrant-adjuvant",
-   "added": "2026-10-10"
+   "id": "2026-10-01-giredestrant-adjuvant"
   },
   {
    "actionDate": "2026-12-18",
    "actionDateLabel": "18 Dec",
+   "added": "2026-10-10",
    "category": "upcoming",
    "date": "2026-10-01",
    "impact": "notable",
@@ -506,12 +627,12 @@
    "title": "Tirabrutinib in relapsed/refractory primary CNS lymphoma",
    "tumor": "Lymphoma",
    "url": "https://www.businesswire.com/news/home/20260217277627/en/Deciphera-Pharmaceuticals-Announces-U.S.-Food-and-Drug-Administration-Acceptance-for-Filing-of-New-Drug-Application-for-Tirabrutinib-in-Patients-with-Relapsed-or-Refractory-PCNSL",
-   "id": "2026-10-01-tirabrutinib",
-   "added": "2026-10-10"
+   "id": "2026-10-01-tirabrutinib"
   },
   {
    "actionDate": "2026-12-18",
    "actionDateLabel": "18 Dec",
+   "added": "2026-10-10",
    "category": "upcoming",
    "date": "2026-10-01",
    "impact": "notable",
@@ -526,12 +647,12 @@
    "title": "Giredestrant + everolimus in ESR1-mutated advanced breast cancer",
    "tumor": "Breast",
    "url": "https://www.gene.com/media/press-releases/15100/2026-02-19/fda-accepts-new-drug-application-for-gen",
-   "id": "2026-10-01-giredestrant-evera",
-   "added": "2026-10-10"
+   "id": "2026-10-01-giredestrant-evera"
   },
   {
    "actionDate": "2026-11-14",
    "actionDateLabel": "14 Nov",
+   "added": "2026-10-10",
    "category": "upcoming",
    "date": "2026-10-01",
    "impact": "notable",
@@ -546,10 +667,10 @@
    "title": "Ivonescimab + chemo in EGFR-mutant NSCLC after 3rd-gen TKI",
    "tumor": "Lung",
    "url": "https://businesswire.com/news/home/20260129109846/en/Summit-Therapeutics-Announces-U.S.-FDA-Acceptance-of-Biologics-License-Application-BLA-Seeking-Approval-for-Ivonescimab-in-Combination-with-Chemotherapy-in-Treatment-of-Patients-with-EGFRm-NSCLC-Post-TKI-Therapy",
-   "id": "2026-10-01-ivonescimab",
-   "added": "2026-10-10"
+   "id": "2026-10-01-ivonescimab"
   },
   {
+   "added": "2026-10-10",
    "category": "research",
    "date": "2026-09-28",
    "impact": "notable",
@@ -567,10 +688,10 @@
    "title": "ESMO Congress 2026, Madrid, 23–27 October: readouts to watch",
    "tumor": "Pan-cancer",
    "url": "https://oncodaily.com/breast-oncology/esmo-congress-2026-bc",
-   "id": "2026-09-28-esmo-2026-preview",
-   "added": "2026-10-10"
+   "id": "2026-09-28-esmo-2026-preview"
   },
   {
+   "added": "2026-10-10",
    "category": "regulatory",
    "date": "2026-09-25",
    "impact": "notable",
@@ -585,12 +706,12 @@
    "title": "I-DXd application in extensive-stage SCLC withdrawn",
    "tumor": "Lung",
    "url": "https://merck.com/news/ifinatamab-deruxtecan-biologics-license-application-for-certain-patients-with-previously-treated-extensive-stage-small-cell-lung-cancer-voluntarily-withdrawn/",
-   "id": "2026-09-28-idxd-withdrawn",
-   "added": "2026-10-10"
+   "id": "2026-09-28-idxd-withdrawn"
   },
   {
    "actionDate": "2026-12-31",
    "actionDateLabel": "Q4 2026",
+   "added": "2026-10-10",
    "category": "upcoming",
    "date": "2026-09-25",
    "impact": "notable",
@@ -605,10 +726,10 @@
    "title": "Perioperative durvalumab + enfortumab vedotin in cisplatin-ineligible MIBC",
    "tumor": "Bladder",
    "url": "https://www.astrazeneca.com/content/astraz/media-centre/press-releases/2026/perioperative-imfinzi-plus-neoadjuvant-enfortumab-vedotin-granted-priority-review-in-the-us-for-patients-with-muscle-invasive-bladder-cancer.html",
-   "id": "2026-09-25-durva-ev-volga",
-   "added": "2026-10-10"
+   "id": "2026-09-25-durva-ev-volga"
   },
   {
+   "added": "2026-10-10",
    "category": "regulatory",
    "date": "2026-09-25",
    "impact": "notable",
@@ -622,10 +743,10 @@
    "title": "Elinzanetant gets priority review for vasomotor symptoms on endocrine therapy",
    "tumor": "Breast",
    "url": "https://www.bayer.com/media/en-us/bayers-lynkuet-elinzanetant-granted-priority-review-by-us-fda-for-additional-indication/",
-   "id": "2026-09-28-elinzanetant-priority",
-   "added": "2026-10-10"
+   "id": "2026-09-28-elinzanetant-priority"
   },
   {
+   "added": "2026-10-10",
    "category": "approval",
    "date": "2026-09-24",
    "impact": "notable",
@@ -639,10 +760,10 @@
    "title": "FDA approves belzutifan plus lenvatinib for ccRCC after PD-1/PD-L1 therapy",
    "tumor": "Kidney",
    "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-belzutifan-combination-lenvatinib-advanced-renal-cell-carcinoma-clear-cell-component",
-   "id": "2026-09-24-belzutifan-lenvatinib",
-   "added": "2026-10-10"
+   "id": "2026-09-24-belzutifan-lenvatinib"
   },
   {
+   "added": "2026-10-10",
    "category": "regulatory",
    "date": "2026-09-24",
    "impact": "notable",
@@ -657,10 +778,10 @@
    "title": "FDA panel votes in favour of Galleri multi-cancer early detection test",
    "tumor": "Screening",
    "url": "https://www.mddionline.com/ivd/fda-advisory-panel-narrowly-backs-multi-cancer-blood-test-despite-effectiveness-concerns",
-   "id": "2026-09-24-galleri-panel",
-   "added": "2026-10-10"
+   "id": "2026-09-24-galleri-panel"
   },
   {
+   "added": "2026-10-10",
    "category": "designation",
    "date": "2026-09-24",
    "impact": "notable",
@@ -673,10 +794,10 @@
    "title": "LRRC15-directed ADC SOT106 gets new designations in sarcoma",
    "tumor": "Sarcoma",
    "url": "https://www.biopharminternational.com/view/fda-grants-sotio-s-sot106-adc-orphan-drug-and-fast-track-designations-for-sarcoma",
-   "id": "2026-09-24-sot106",
-   "added": "2026-10-10"
+   "id": "2026-09-24-sot106"
   },
   {
+   "added": "2026-10-10",
    "category": "approval",
    "date": "2026-09-23",
    "impact": "notable",
@@ -690,10 +811,10 @@
    "title": "FDA approves lirafugratinib for FGFR2-fusion cholangiocarcinoma",
    "tumor": "Hepatobiliary",
    "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-lirafugratinib-previously-treated-unresectable-locally-advanced-or-metastatic",
-   "id": "2026-09-24-lirafugratinib",
-   "added": "2026-10-10"
+   "id": "2026-09-24-lirafugratinib"
   },
   {
+   "added": "2026-10-10",
    "category": "approval",
    "date": "2026-09-22",
    "impact": "notable",
@@ -707,10 +828,10 @@
    "title": "Bravnetsa (Lu-177 dotatate) gets final approval for GEP-NETs",
    "tumor": "Neuroendocrine",
    "url": "https://www.cancernetwork.com/view/lutetium-lu-177-dotatate-biosimilar-earns-final-fda-approval-in-gep-nets",
-   "id": "2026-09-23-bravnetsa",
-   "added": "2026-10-10"
+   "id": "2026-09-23-bravnetsa"
   },
   {
+   "added": "2026-10-10",
    "category": "regulatory",
    "date": "2026-09-22",
    "impact": "notable",
@@ -725,10 +846,10 @@
    "title": "FDA asks for survival trial before tovecimig filing in biliary tract cancer",
    "tumor": "Hepatobiliary",
    "url": "https://www.sec.gov/Archives/edgar/data/0001738021/000117184326006162/exh_991.htm",
-   "id": "2026-09-23-tovecimig",
-   "added": "2026-10-10"
+   "id": "2026-09-23-tovecimig"
   },
   {
+   "added": "2026-10-10",
    "category": "designation",
    "date": "2026-09-21",
    "impact": "notable",
@@ -742,10 +863,10 @@
    "title": "Fast track for LYT-200 plus HMA in high-risk relapsed MDS",
    "tumor": "Leukaemia/MDS",
    "url": "https://www.cancernetwork.com/view/novel-monoclonal-antibody-wins-fda-fast-track-designation-in-high-risk-mds",
-   "id": "2026-09-21-lyt200",
-   "added": "2026-10-10"
+   "id": "2026-09-21-lyt200"
   },
   {
+   "added": "2026-10-10",
    "category": "approval",
    "date": "2026-09-18",
    "impact": "notable",
@@ -760,10 +881,10 @@
    "title": "FDA approves imlunestrant plus abemaciclib for ESR1-mutated advanced breast cancer",
    "tumor": "Breast",
    "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-imlunestrant-combination-abemaciclib-er-positive-her2-negative-esr1-mutated-advanced-or",
-   "id": "2026-09-18-imlunestrant-abema",
-   "added": "2026-10-10"
+   "id": "2026-09-18-imlunestrant-abema"
   },
   {
+   "added": "2026-10-10",
    "category": "regulatory",
    "date": "2026-09-17",
    "impact": "notable",
@@ -777,10 +898,10 @@
    "title": "Taletrectinib label updated with longer response data in ROS1+ NSCLC",
    "tumor": "Lung",
    "url": "https://www.rttnews.com/3691916/nuvation-bio-wins-fda-nod-for-updated-ibtrozi-label-showing-50-month-dor-in-ros1-lung-cancer.aspx",
-   "id": "2026-09-17-taletrectinib-label",
-   "added": "2026-10-10"
+   "id": "2026-09-17-taletrectinib-label"
   },
   {
+   "added": "2026-10-10",
    "category": "designation",
    "date": "2026-09-15",
    "impact": "notable",
@@ -795,12 +916,12 @@
    "title": "Breakthrough designation for daraxonrasib + gem/nab-paclitaxel in first-line metastatic PDAC",
    "tumor": "Pancreas",
    "url": "https://www.onclive.com/view/fda-grants-breakthrough-therapy-designation-to-first-line-daraxonrasib-plus-chemo-in-mpdac",
-   "id": "2026-09-16-daraxonrasib-btd",
-   "added": "2026-10-10"
+   "id": "2026-09-16-daraxonrasib-btd"
   },
   {
    "actionDate": "2027-06-29",
    "actionDateLabel": "29 Jun 2027",
+   "added": "2026-10-10",
    "category": "upcoming",
    "date": "2026-09-15",
    "impact": "notable",
@@ -814,10 +935,10 @@
    "title": "Bezuclastinib in advanced systemic mastocytosis",
    "tumor": "Haematologic",
    "url": "https://www.onclive.com/view/fda-accepts-nda-for-bezuclastinib-in-advanced-systemic-mastocytosis",
-   "id": "2026-09-16-bezuclastinib-advsm",
-   "added": "2026-10-10"
+   "id": "2026-09-16-bezuclastinib-advsm"
   },
   {
+   "added": "2026-10-10",
    "category": "regulatory",
    "date": "2026-09-15",
    "impact": "notable",
@@ -830,10 +951,10 @@
    "title": "FDA launches Expedited IND pilot for first-in-human trials",
    "tumor": "Pan-cancer",
    "url": "https://www.raps.org/resource/fda-to-test-new-approach-to-expediting-phase-1-trials.html",
-   "id": "2026-09-18-expedited-ind",
-   "added": "2026-10-10"
+   "id": "2026-09-18-expedited-ind"
   },
   {
+   "added": "2026-10-10",
    "category": "approval",
    "date": "2026-09-14",
    "impact": "notable",
@@ -848,10 +969,10 @@
    "title": "FDA approves Bexlutry (Lu-177 dotatate) for SSTR+ GEP-NETs",
    "tumor": "Neuroendocrine",
    "url": "https://www.fiercepharma.com/pharma/fda-approves-first-radioligand-equivalent-curiums-copycat-novartis-lutathera",
-   "id": "2026-09-15-bexlutry",
-   "added": "2026-10-10"
+   "id": "2026-09-15-bexlutry"
   },
   {
+   "added": "2026-10-10",
    "category": "approval",
    "date": "2026-09-14",
    "impact": "notable",
@@ -865,10 +986,10 @@
    "title": "Aminolevulinic acid gel with photodynamic therapy approved for superficial BCC",
    "tumor": "Skin",
    "url": "https://medicaldialogues.in/amp/dermatology/news/fda-approves-ameluz-photodynamic-therapy-for-superficial-basal-cell-carcinoma-179278",
-   "id": "2026-09-14-ameluz-pdt-bcc",
-   "added": "2026-10-10"
+   "id": "2026-09-14-ameluz-pdt-bcc"
   },
   {
+   "added": "2026-10-10",
    "category": "approval",
    "date": "2026-09-14",
    "impact": "notable",
@@ -884,10 +1005,10 @@
    "title": "FDA approves 18F-FET (Pixclara), first amino acid PET agent for glioma",
    "tumor": "CNS",
    "url": "https://announcements.asx.com.au/asxpdf/20260914/pdf/0741lpl2r01748.pdf",
-   "id": "2026-09-14-pixclara-fet-pet",
-   "added": "2026-10-10"
+   "id": "2026-09-14-pixclara-fet-pet"
   },
   {
+   "added": "2026-10-10",
    "category": "regulatory",
    "date": "2026-09-14",
    "impact": "notable",
@@ -903,12 +1024,12 @@
    "title": "Tarlatamab label cuts post-infusion monitoring for first two doses",
    "tumor": "Lung",
    "url": "https://www.amgen.com/newsroom/press-releases/2026/09/fda-approves-reduced-monitoring-time-for-first-two-doses-of-imdelltra",
-   "id": "2026-09-14-tarlatamab-monitoring",
-   "added": "2026-10-10"
+   "id": "2026-09-14-tarlatamab-monitoring"
   },
   {
    "actionDate": "2027-03-03",
    "actionDateLabel": "3 Mar 2027",
+   "added": "2026-10-10",
    "category": "upcoming",
    "date": "2026-09-11",
    "impact": "notable",
@@ -923,10 +1044,10 @@
    "title": "Zanzalintinib + atezolizumab in metastatic colorectal cancer",
    "tumor": "Colorectal",
    "url": "https://www.cancernetwork.com/view/fda-extends-review-of-zanzalintinib-combo-in-pretreated-metastatic-crc",
-   "id": "2026-09-11-zanzalintinib-delay",
-   "added": "2026-10-10"
+   "id": "2026-09-11-zanzalintinib-delay"
   },
   {
+   "added": "2026-10-10",
    "category": "approval",
    "date": "2026-09-11",
    "impact": "notable",
@@ -941,10 +1062,10 @@
    "title": "Cabozantinib capsule formulation (Omcazio) gets final approval",
    "tumor": "Kidney",
    "url": "https://www.oncnursingnews.com/view/fda-grants-final-approval-to-cabozantinib-capsules-across-multiple-solid-tumor-indications",
-   "id": "2026-09-11-omcazio",
-   "added": "2026-10-10"
+   "id": "2026-09-11-omcazio"
   },
   {
+   "added": "2026-10-10",
    "category": "approval",
    "date": "2026-09-09",
    "impact": "notable",
@@ -959,10 +1080,10 @@
    "title": "Sevabertinib approval expanded to treatment-naive HER2-mutant NSCLC",
    "tumor": "Lung",
    "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-grants-accelerated-approval-sevabertinib-locally-advanced-or-metastatic-non-squamous-non-small",
-   "id": "2026-09-09-sevabertinib-1l",
-   "added": "2026-10-10"
+   "id": "2026-09-09-sevabertinib-1l"
   },
   {
+   "added": "2026-10-10",
    "category": "approval",
    "date": "2026-09-04",
    "impact": "notable",
@@ -978,10 +1099,10 @@
    "title": "Camizestrant switch on emerging ESR1 mutation gets accelerated approval",
    "tumor": "Breast",
    "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-grants-accelerated-approval-camizestrant-cdk46-inhibitor-esr1-mutated-hr-positive-her2-negative",
-   "id": "2026-09-06-camizestrant",
-   "added": "2026-10-10"
+   "id": "2026-09-06-camizestrant"
   },
   {
+   "added": "2026-10-10",
    "category": "approval",
    "date": "2026-08-26",
    "impact": "practice-changing",
@@ -996,10 +1117,10 @@
    "title": "FDA approves daraxonrasib for previously treated metastatic pancreatic cancer",
    "tumor": "Pancreas",
    "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-daraxonrasib-metastatic-pancreatic-adenocarcinoma",
-   "id": "2026-08-26-daraxonrasib-approval",
-   "added": "2026-10-10"
+   "id": "2026-08-26-daraxonrasib-approval"
   },
   {
+   "added": "2026-10-10",
    "category": "approval",
    "date": "2026-08-25",
    "impact": "practice-changing",
@@ -1015,10 +1136,10 @@
    "title": "FDA approves zanidatamab ± tislelizumab with chemo for first-line HER2+ gastroesophageal adenocarcinoma",
    "tumor": "Gastroesophageal",
    "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-zanidatamab-hrii-and-tislelizumab-jsgr-her2-positive-gastric-gastroesophageal-junction",
-   "id": "2026-08-25-zanidatamab-tislelizumab",
-   "added": "2026-10-10"
+   "id": "2026-08-25-zanidatamab-tislelizumab"
   },
   {
+   "added": "2026-10-10",
    "category": "approval",
    "date": "2026-08-13",
    "impact": "notable",
@@ -1031,10 +1152,10 @@
    "title": "Iberdomide + daratumumab SC + dexamethasone gets accelerated approval in myeloma",
    "tumor": "Myeloma",
    "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-grants-accelerated-approval-iberdomide-daratumumab-and-hyaluronidase-fihj-and-dexamethasone",
-   "id": "2026-08-13-iberdomide-dd",
-   "added": "2026-10-10"
+   "id": "2026-08-13-iberdomide-dd"
   },
   {
+   "added": "2026-10-10",
    "category": "approval",
    "date": "2026-08-06",
    "impact": "notable",
@@ -1048,8 +1169,7 @@
    "title": "Oncolytic virus vusolimogene oderparepvec + nivolumab approved for PD-1–refractory melanoma",
    "tumor": "Melanoma",
    "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-grants-accelerated-approval-vusolimogene-oderparepvec-wtpg-combination-nivolumab-melanoma",
-   "id": "2026-08-06-vusolimogene",
-   "added": "2026-10-10"
+   "id": "2026-08-06-vusolimogene"
   }
  ]
 }
