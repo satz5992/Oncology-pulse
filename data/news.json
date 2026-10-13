@@ -1,6 +1,123 @@
 {
- "updated": "2026-10-12T01:30:00Z",
+ "updated": "2026-10-13T01:25:00Z",
  "items": [
+  {
+   "added": "2026-10-13",
+   "category": "trial",
+   "date": "2026-10-12",
+   "impact": "notable",
+   "keyData": "ACTION-1 (NCT05477576) · PFS primary endpoint met (no HR disclosed) · comparator: high-dose SSA, everolimus or sunitinib",
+   "source": "Bristol Myers Squibb press release",
+   "summary": "At a planned interim analysis, the phase 3 ACTION-1 trial met its primary endpoint of BICR-assessed PFS for RYZ101 versus investigator's-choice standard of care in SSTR-positive GEP-NETs progressing after Lu-177-based PRRT. Numbers were not released; full data will go to a future meeting and the company plans to discuss a filing with the FDA.",
+   "tags": [
+    "radioligand therapy",
+    "actinium-225",
+    "PRRT",
+    "ACTION-1",
+    "radiotherapy"
+   ],
+   "title": "ACTION-1: alpha-emitter RYZ101 (225Ac-DOTATATE) improves PFS in GEP-NETs after Lu-177 therapy",
+   "tumor": "Neuroendocrine",
+   "url": "https://news.bms.com/news/corporate-financial/2026/Bristol-Myers-Squibb-Announces-Positive-Topline-Results-from-the-Interim-Analysis-of-Phase-3-ACTION-1-for-RYZ101-RayzeBios-Radiopharmaceutical-Therapy-in-Patients-with-GEP-NETs/default.aspx",
+   "id": "2026-10-12-ryz101-action1-gepnet"
+  },
+  {
+   "added": "2026-10-13",
+   "category": "designation",
+   "date": "2026-10-12",
+   "impact": "notable",
+   "keyData": "Phase 2 NCT07111546 · ~140 enrolled · 2nd fast track (first: extrapulmonary NEC)",
+   "source": "OncLive",
+   "summary": "The FDA granted fast track designation to opamtistomig (LBL-024) for first-line advanced or metastatic biliary tract cancer. A phase 2 study is testing it with gemcitabine-cisplatin or with bevacizumab, with BTC data expected at ESMO 2026.",
+   "tags": [
+    "bispecific",
+    "PD-L1",
+    "4-1BB",
+    "fast track"
+   ],
+   "title": "Fast track for PD-L1/4-1BB bispecific opamtistomig in first-line biliary tract cancer",
+   "tumor": "Hepatobiliary",
+   "url": "https://www.onclive.com/view/fda-grants-fast-track-designation-to-opamtistomig-for-advanced-biliary-tract-cancer",
+   "id": "2026-10-12-opamtistomig-btc-ftd"
+  },
+  {
+   "added": "2026-10-13",
+   "category": "trial",
+   "date": "2026-10-06",
+   "impact": "notable",
+   "keyData": "ENV-105 (NCT05534646) · mPFS 17.7 vs 2.0 mo · P=.0008",
+   "source": "Kairos Pharma press release",
+   "summary": "An interim analysis of the phase 2 ENV-105 trial in mCRPC progressing on an AR pathway inhibitor showed markedly longer PFS when carotuximab was added to apalutamide versus apalutamide alone. Data are early and from a small open-label study.",
+   "tags": [
+    "carotuximab",
+    "endoglin",
+    "apalutamide",
+    "mCRPC"
+   ],
+   "title": "Endoglin antibody carotuximab plus apalutamide prolongs PFS in mCRPC (phase 2 interim)",
+   "tumor": "Prostate",
+   "url": "https://investors.kairospharma.com/news-and-events/news-releases/news-details/2026/Kairos-Pharma-Reports-Positive-Statistically-Significant-Interim-Efficacy-Data-from-Phase-2-Trial-of-ENV-105-in-Metastatic-Prostate-Cancer/default.aspx",
+   "id": "2026-10-06-carotuximab-apalutamide-mcrpc"
+  },
+  {
+   "added": "2026-10-13",
+   "category": "research",
+   "date": "2026-10-01",
+   "impact": "notable",
+   "keyData": "Localised Ewing: interval-compressed VDC/IE ×14 cycles · 5-yr survival 81% localised vs 41% metastatic",
+   "source": "CancerNetwork",
+   "summary": "NCCN released its first guideline for paediatric bone sarcoma covering Ewing sarcoma and other undifferentiated round cell sarcomas. Interval-compressed VDC alternating with IE is the recommended first-line systemic therapy for localised and metastatic Ewing sarcoma, with trial enrolment encouraged.",
+   "tags": [
+    "NCCN",
+    "guideline",
+    "Ewing sarcoma",
+    "VDC-IE"
+   ],
+   "title": "NCCN publishes first paediatric bone sarcoma guideline, focused on Ewing sarcoma",
+   "tumor": "Paediatric",
+   "url": "https://www.cancernetwork.com/view/nccn-debuts-first-pediatric-bone-sarcoma-guidelines-focused-on-ewing-sarcoma",
+   "id": "2026-10-01-nccn-paediatric-ewing"
+  },
+  {
+   "added": "2026-10-13",
+   "category": "trial",
+   "date": "2026-09-29",
+   "impact": "notable",
+   "keyData": "NRG-GI003 (n=115) · OS HR 1.30 (90% CI 0.83–2.04) · 24-mo OS 56.2% vs 69.3% · G≥3 AEs 11% vs 24% (P=.093)",
+   "source": "ecancer",
+   "summary": "The phase 3 NRG-GI003 trial (115 eligible patients) stopped for futility at interim analysis: protons did not extend overall or progression-free survival versus photons in advanced hepatocellular carcinoma. Grade ≥3 toxicity was numerically lower with protons but not statistically significant.",
+   "tags": [
+    "radiotherapy",
+    "proton therapy",
+    "SBRT",
+    "HCC",
+    "ASTRO 2026"
+   ],
+   "title": "NRG-GI003: proton therapy does not improve survival over photon RT in advanced HCC",
+   "tumor": "Hepatobiliary",
+   "url": "https://ecancer.org/en/news/28990-trial-results-show-no-survival-benefit-with-the-use-of-proton-therapy-for-patients-with-advanced-hepatocellular-carcinoma",
+   "id": "2026-09-29-nrg-gi003-proton-hcc"
+  },
+  {
+   "added": "2026-10-13",
+   "category": "trial",
+   "date": "2026-09-28",
+   "impact": "practice-changing",
+   "keyData": "NRG-CC009 (n=151) · mOS 17.4 vs 8.6 mo · adj. HR death 0.60 (P=.016) · NCF HR 0.83 (P=.39)",
+   "source": "The ASCO Post",
+   "summary": "In 151 patients with SCLC brain metastases randomised to stereotactic radiosurgery or hippocampal-avoidant whole-brain RT plus memantine, the primary endpoint of time to neurocognitive failure did not differ, but overall survival was longer with SRS. Presented at the ASTRO 2026 plenary, it supports SRS as a reasonable option in SCLC.",
+   "tags": [
+    "radiotherapy",
+    "SRS",
+    "brain metastases",
+    "SCLC",
+    "ASTRO 2026"
+   ],
+   "title": "NRG-CC009: SRS instead of HA-WBRT for SCLC brain metastases — no cognitive difference, longer survival",
+   "tumor": "Lung",
+   "url": "https://www.ascopost.com/news/september-2026/srs-is-a-reasonable-option-for-patients-with-sclc-and-brain-metastases/",
+   "id": "2026-09-28-nrg-cc009-srs-sclc"
+  },
   {
    "added": "2026-10-12",
    "category": "research",
