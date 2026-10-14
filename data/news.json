@@ -1,6 +1,169 @@
 {
- "updated": "2026-10-13T01:25:00Z",
+ "updated": "2026-10-14T01:35:00Z",
  "items": [
+  {
+   "added": "2026-10-14",
+   "category": "regulatory",
+   "date": "2026-10-13",
+   "impact": "notable",
+   "keyData": "CARES-310 · mOS 23.8 vs 15.2 mo · HR 0.64 · mPFS 5.6 vs 3.7 mo",
+   "source": "Targeted Oncology",
+   "summary": "Elevar and Hengrui refiled the NDA and BLA on 9 October after manufacturing-site inspections concluded; the July 2026 complete response letter (the third) cited manufacturing deficiencies, not efficacy or safety. The filing rests on the CARES-310 phase 3 trial versus sorafenib; no new PDUFA date has been announced.",
+   "tags": [
+    "rivoceranib",
+    "camrelizumab",
+    "VEGFR TKI",
+    "PD-1",
+    "CARES-310",
+    "resubmission"
+   ],
+   "title": "Rivoceranib plus camrelizumab resubmitted to FDA for first-line unresectable HCC",
+   "tumor": "Hepatobiliary",
+   "url": "https://targetedonc.com/view/rivoceranib-plus-camrelizumab-resubmitted-to-fda-in-frontline-hcc",
+   "id": "2026-10-13-rivoceranib-camrelizumab-resubmission"
+  },
+  {
+   "added": "2026-10-14",
+   "category": "trial",
+   "date": "2026-10-13",
+   "impact": "notable",
+   "keyData": "AHEAD-MERIT (Ph 2/3) · PFS not significant · OS readout pending",
+   "source": "BioNTech press release",
+   "summary": "In first-line PD-L1 CPS ≥1, HPV16-positive recurrent/metastatic HNSCC, adding BNT113 to pembrolizumab did not significantly improve progression-free survival at this analysis. The IDMC recommended continuing the trial to the second dual primary endpoint, overall survival; no efficacy numbers were released.",
+   "tags": [
+    "mRNA vaccine",
+    "HPV16",
+    "pembrolizumab",
+    "AHEAD-MERIT",
+    "oropharynx"
+   ],
+   "title": "AHEAD-MERIT: mRNA vaccine BNT113 plus pembrolizumab misses PFS endpoint in HPV16+ head and neck cancer",
+   "tumor": "Head & Neck",
+   "url": "https://www.biontech.com/int/en/home/mediaroom/news/press-releases/2026/10/BioNTech-Provides-Update-on-Phase-2-3-Clinical-Trial-for-mRNA-Cancer-Immunotherapy-Candidate-BNT113-in-Metastatic-HPV16-positive-Head-and-Neck-Cancer.html",
+   "id": "2026-10-13-bnt113-ahead-merit-pfs-miss"
+  },
+  {
+   "added": "2026-10-14",
+   "category": "research",
+   "date": "2026-10-13",
+   "impact": "notable",
+   "keyData": "LBA1 INTerpath-001 · LBA11 TroFuse-005 · LBA12 KEYNOTE-C93 · 1239O NRG-GY020",
+   "source": "Business Wire (Merck press release)",
+   "summary": "Merck listed three Presidential Symposium phase 3 presentations for ESMO (Madrid, 23–27 Oct): adjuvant mRNA neoantigen therapy intismeran plus pembrolizumab in melanoma (LBA1), sacituzumab tirumotecan in endometrial cancer (LBA11) and first-line pembrolizumab monotherapy in dMMR endometrial cancer (LBA12). NRG-GY020, testing pembrolizumab added to radiotherapy in endometrial cancer, is also being presented (1239O).",
+   "tags": [
+    "ESMO 2026",
+    "intismeran",
+    "sacituzumab tirumotecan",
+    "pembrolizumab",
+    "endometrial",
+    "radiotherapy"
+   ],
+   "title": "ESMO 2026 Presidential late-breakers: INTerpath-001, TroFuse-005 and KEYNOTE-C93; NRG-GY020 RT ± pembrolizumab also on programme",
+   "tumor": "Pan-cancer",
+   "url": "https://www.businesswire.com/news/home/20261013301331/en/Merck-Showcases-First-Time-Pivotal-Phase-3-Results-From-Oncology-Pipeline-and-Continued-Innovative-Potential-of-Existing-Portfolio-at-ESMO-2026",
+   "id": "2026-10-13-merck-esmo2026-lbas"
+  },
+  {
+   "added": "2026-10-14",
+   "category": "research",
+   "date": "2026-10-13",
+   "impact": "notable",
+   "keyData": "QoL improved 75.8% vs 6.3% · no exercise-related AEs · ~83% adherence ≥6 wk",
+   "source": "The ASCO Post",
+   "summary": "In a Brazilian randomised phase 2 trial (70 patients), a 12-week telehealth exercise programme led by a physiologist improved quality of life and cancer-related fatigue versus usual care, with roughly half the QoL gain explained by less fatigue. To be presented at the 2026 ASCO Quality Care Symposium.",
+   "tags": [
+    "supportive care",
+    "exercise",
+    "fatigue",
+    "telehealth",
+    "immunotherapy"
+   ],
+   "title": "Remote supervised exercise reduces fatigue and improves quality of life during immunotherapy",
+   "tumor": "Pan-cancer",
+   "url": "https://ascopost.com/news/october-2026/remote-exercise-program-reduces-cancer-related-fatigue-improves-quality-of-life-for-patients-undergoing-immunotherapy/",
+   "id": "2026-10-13-remote-exercise-immunotherapy-fatigue"
+  },
+  {
+   "added": "2026-10-14",
+   "category": "trial",
+   "date": "2026-10-12",
+   "impact": "notable",
+   "keyData": "RELIGHT · OS CPS≥5 16.8 vs 10.4 mo, HR 0.53 · OS ITT 15.8 vs 11.2 mo, HR 0.66 · ORR 53.4% vs 32.8%",
+   "source": "Journal of Clinical Oncology",
+   "summary": "This Chinese phase 3 trial (n=731) found that adding retlirafusp alfa to CAPOX prolonged overall survival in both the PD-L1 CPS ≥5 and intention-to-treat populations versus placebo plus CAPOX, published in JCO. The main limitation is the chemotherapy-alone comparator rather than PD-1 inhibitor plus chemotherapy.",
+   "tags": [
+    "retlirafusp alfa",
+    "PD-L1/TGF-β",
+    "bifunctional",
+    "CAPOX",
+    "RELIGHT"
+   ],
+   "title": "RELIGHT: PD-L1/TGF-β trap retlirafusp alfa plus CAPOX improves survival in first-line HER2− gastric/GEJ cancer",
+   "tumor": "Gastroesophageal",
+   "url": "https://ascopubs.org/doi/10.1200/JCO-25-02933",
+   "id": "2026-10-12-relight-retlirafusp-gastric"
+  },
+  {
+   "added": "2026-10-14",
+   "category": "research",
+   "date": "2026-10-12",
+   "impact": "notable",
+   "keyData": "Ph 1 (n=5) · 1 PR (~80% shrinkage) · no grade ≥3 AEs",
+   "source": "Targeted Oncology",
+   "summary": "T-MAXIMUM's allogeneic B7-H3-directed CAR T product MT027 can proceed to a phase 2 study in brain metastases from lung or breast cancer. Supporting phase 1 data are very small: among 5 pretreated patients with lung cancer brain metastases there was 1 partial response and no grade ≥3 drug-related toxicity.",
+   "tags": [
+    "CAR T",
+    "B7-H3",
+    "brain metastases",
+    "intrathecal",
+    "allogeneic"
+   ],
+   "title": "FDA clears phase 2 trial of intrathecal B7-H3 CAR T-cell therapy MT027 for brain metastases",
+   "tumor": "CNS",
+   "url": "https://www.targetedonc.com/view/fda-phase-2-trial-b7-h3-car-t-mt027-brain-metastases",
+   "id": "2026-10-12-mt027-b7h3-cart-brain-mets"
+  },
+  {
+   "added": "2026-10-14",
+   "category": "approval",
+   "date": "2026-10-08",
+   "impact": "notable",
+   "keyData": "C-800-01 (n=123, no liver mets) · ORR 21% · mOS 21.2 mo (exploratory)",
+   "source": "OncoDaily",
+   "summary": "Armenia's health ministry authorised the Fc-enhanced CTLA-4 antibody botensilimab with PD-1 antibody balstilimab for previously treated MSS mCRC without active liver metastases, on a one-year renewable basis. Evidence is from single-arm studies; the OS-powered phase 3 BATTMAN trial was terminated after funding was withdrawn.",
+   "tags": [
+    "botensilimab",
+    "balstilimab",
+    "CTLA-4",
+    "PD-1",
+    "MSS",
+    "ex-US approval"
+   ],
+   "title": "Armenia grants world-first conditional authorisation to botensilimab plus balstilimab in MSS colorectal cancer",
+   "tumor": "Colorectal",
+   "url": "https://oncodaily.com/gastrointestinal-oncology/botbal",
+   "id": "2026-10-08-botensilimab-balstilimab-armenia"
+  },
+  {
+   "added": "2026-10-14",
+   "category": "research",
+   "date": "2026-10-07",
+   "impact": "notable",
+   "keyData": "RACC · intraop complications 5.7% vs 10.0% · RR 0.57 · stay 3 vs 5 days · RFS pending",
+   "source": "JAMA Surgery",
+   "summary": "A prespecified secondary analysis of the 900-patient RACC randomised trial (stage IB1–IIA1) found fewer intraoperative complications, less blood loss and shorter stays with robot-assisted surgery, with similar 30-day postoperative complications. The oncological primary endpoint, recurrence-free survival, is still in follow-up — the key question after LACC.",
+   "tags": [
+    "radical hysterectomy",
+    "robotic surgery",
+    "minimally invasive",
+    "RACC",
+    "cervical cancer"
+   ],
+   "title": "RACC: robot-assisted radical hysterectomy has fewer intraoperative complications than open surgery in early cervical cancer",
+   "tumor": "Gynaecologic",
+   "url": "https://doi.org/10.1001/jamasurg.2026.4625",
+   "id": "2026-10-07-racc-robotic-hysterectomy-perioperative"
+  },
   {
    "added": "2026-10-13",
    "category": "trial",
