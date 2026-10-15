@@ -1,6 +1,106 @@
 {
- "updated": "2026-10-14T01:35:00Z",
+ "updated": "2026-10-15T01:25:00Z",
  "items": [
+  {
+   "added": "2026-10-15",
+   "category": "trial",
+   "date": "2026-10-14",
+   "impact": "notable",
+   "keyData": "mPDAC 2L+ 900 mg (n=22): ORR 41% · DCR 86% · 6-mo PFS 67% · NSCLC 2L+ 600 mg (n=23): ORR 43% · 6-mo PFS 72%",
+   "source": "StockTitan (Verastem press release)",
+   "summary": "Verastem reported updated phase 1/2 TARGET-D 101 data for VS-7375 in KRAS G12D-mutant cancers, with mostly low-grade GI toxicity and 2% discontinuation at 900 mg. FDA has agreed the design of a three-arm first-line metastatic PDAC phase 3 (TARGET-D 301), due to open by end of 2026.",
+   "tags": [
+    "KRAS G12D",
+    "VS-7375",
+    "TARGET-D",
+    "PDAC",
+    "NSCLC"
+   ],
+   "title": "Oral KRAS G12D ON/OFF inhibitor VS-7375 shows responses in pretreated pancreatic and lung cancer; phase 3 planned",
+   "tumor": "Pancreas",
+   "url": "https://www.stocktitan.net/news/VSTM/vs-7375-demonstrates-robust-anti-tumor-activity-across-advanced-kras-ddyz2obb9ht1.html",
+   "id": "2026-10-14-vs7375-target-d-kras-g12d"
+  },
+  {
+   "added": "2026-10-15",
+   "category": "trial",
+   "date": "2026-10-14",
+   "impact": "notable",
+   "keyData": "Gr 2–4 aGVHD 14.7% vs 31.6% · sHR 0.41 · Gr 3–4 6.3% vs 18.9% · 2-y OS 86.2% vs 83.0% (NS)",
+   "source": "The ASCO Post",
+   "summary": "In a randomised open-label phase 3 trial at five Chinese centres (n=190), the DPP-4 inhibitor sitagliptin added to standard prophylaxis reduced grade 2–4 and grade 3–4 acute GVHD by day 100 after myeloablative alternative-donor HCT, without a significant difference in 2-year overall or relapse-free survival. Published in JCO.",
+   "tags": [
+    "GVHD",
+    "sitagliptin",
+    "DPP-4",
+    "allogeneic transplant",
+    "phase 3"
+   ],
+   "title": "Adding sitagliptin to GVHD prophylaxis halves acute GVHD after haploidentical or unrelated-donor transplant",
+   "tumor": "Haematologic",
+   "url": "https://ascopost.com/news/october-2026/sitagliptin-added-to-standard-prophylaxis-reduces-risk-of-acute-gvhd-following-alternative-donor-transplantation/",
+   "id": "2026-10-14-sitagliptin-agvhd-prophylaxis"
+  },
+  {
+   "added": "2026-10-15",
+   "category": "approval",
+   "date": "2026-10-14",
+   "impact": "notable",
+   "keyData": "QUILT-3.032 Cohort A (CIS, n=77) · CR 62% · 58% of CRs lasting ≥12 mo, 40% ≥24 mo",
+   "source": "U.S. FDA",
+   "summary": "The IL-15 superagonist (Anktiva) with BCG, previously approved for BCG-unresponsive NMIBC with carcinoma in situ, is now also indicated for high-grade papillary-only disease. FDA based the expansion on extrapolation from the CIS cohort of QUILT-3.032.",
+   "tags": [
+    "IL-15",
+    "BCG-unresponsive",
+    "NMIBC",
+    "QUILT-3.032",
+    "immunotherapy"
+   ],
+   "title": "FDA extends nogapendekin alfa inbakicept plus BCG to papillary-only BCG-unresponsive NMIBC",
+   "tumor": "Bladder",
+   "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-expanded-indication-nogapendekin-alfa-inbakicept-pmln-bcg-unresponsive-non-muscle",
+   "id": "2026-10-14-nogapendekin-papillary-nmibc"
+  },
+  {
+   "added": "2026-10-15",
+   "category": "research",
+   "date": "2026-10-13",
+   "impact": "notable",
+   "keyData": "Neoadjuvant: 30 Gy/1.8–2 Gy, 30–39 Gy/1.5 Gy BID or 40.8 Gy/1.2 Gy BID · palliative 8 Gy×1 or 4 Gy×5 · cumulative EQD2(α/β 3) <90 Gy often deliverable",
+   "source": "Radiotherapy & Oncology (Green Journal)",
+   "summary": "ESTRO's lower-GI sub-committee published systematic-review-based recommendations for rectal cancer reirradiation, advising MDT discussion for all patients, hyperfractionated or conventional schedules with fluoropyrimidines in the neoadjuvant or definitive setting, and short palliative courses for poor-prognosis patients. The authors note most evidence is low quality.",
+   "tags": [
+    "radiotherapy",
+    "reirradiation",
+    "rectal cancer",
+    "ESTRO",
+    "ASTRO",
+    "guideline"
+   ],
+   "title": "ESTRO guideline on reirradiation for recurrent rectal cancer, endorsed by ASTRO",
+   "tumor": "Colorectal",
+   "url": "https://www.thegreenjournal.com/article/S0167-8140(26)00486-X/fulltext",
+   "id": "2026-10-13-estro-rectal-reirradiation"
+  },
+  {
+   "added": "2026-10-15",
+   "category": "research",
+   "date": "2026-10-09",
+   "impact": "notable",
+   "keyData": "mUM: mOS 20.8 mo (Dec 2023 cut) / 18.4 mo (Feb 2026) · mPFS 5.3 mo · related Gr ≥3 TEAEs 6.8%",
+   "source": "Nature Communications",
+   "summary": "The phase 1 DIONE-01 study (n=44) found no dose-limiting toxicities and few drug-related grade ≥3 events with the oral allosteric PI3Kδ inhibitor; in the uveal melanoma expansion, median OS was about 18–21 months, though responses were rare and the data are uncontrolled. A randomised phase 2 (OCULE-01) is ongoing.",
+   "tags": [
+    "PI3K delta",
+    "roginolisib",
+    "uveal melanoma",
+    "DIONE-01"
+   ],
+   "title": "First-in-human trial of PI3Kδ inhibitor roginolisib reports long survival in pretreated metastatic uveal melanoma",
+   "tumor": "Melanoma",
+   "url": "https://www.nature.com/articles/s41467-026-77358-7",
+   "id": "2026-10-09-roginolisib-uveal-melanoma"
+  },
   {
    "added": "2026-10-14",
    "category": "regulatory",
