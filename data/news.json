@@ -1,6 +1,152 @@
 {
- "updated": "2026-10-15T01:25:00Z",
+ "updated": "2026-10-16T01:40:00Z",
  "items": [
+  {
+   "added": "2026-10-16",
+   "category": "regulatory",
+   "date": "2026-10-15",
+   "impact": "notable",
+   "keyData": "RASolute 302 · mOS 13.2 vs 6.7 mo · HR 0.40 · mPFS 7.2 vs 3.6 mo · HR 0.49",
+   "source": "GlobeNewswire (Revolution Medicines)",
+   "summary": "The EMA's CHMP recommended EU authorisation of the oral RAS(ON) inhibitor daraxonrasib as monotherapy for adults with metastatic pancreatic adenocarcinoma after at least one prior systemic therapy, based on RASolute 302 versus chemotherapy. A European Commission decision follows; the drug has been FDA-approved since August.",
+   "tags": [
+    "daraxonrasib",
+    "RAS inhibitor",
+    "KRAS",
+    "CHMP",
+    "EMA",
+    "RASolute 302"
+   ],
+   "title": "CHMP backs daraxonrasib (Rasonque) for previously treated metastatic pancreatic cancer",
+   "tumor": "Pancreas",
+   "url": "https://www.globenewswire.com/news-release/2026/10/15/3381786/0/en/revolution-medicines-rasonque-daraxonrasib-receives-positive-chmp-opinion-recommending-marketing-authorization-in-european-union-for-metastatic-pancreatic-cancer.html",
+   "id": "2026-10-15-daraxonrasib-chmp-pdac"
+  },
+  {
+   "added": "2026-10-16",
+   "category": "research",
+   "date": "2026-10-15",
+   "impact": "notable",
+   "keyData": "CLOVER-WaM BTKi subset · ORR 87.5% · MRR 79.2% · DOR >16 mo",
+   "source": "Cellectar Biosciences",
+   "summary": "A CLOVER-WaM subgroup analysis presented at the International Workshop on Waldenström Macroglobulinemia reported high response rates with the phospholipid-ether radioconjugate given right after BTK inhibitor failure in patients with at least two prior lines. The company plans an accelerated-approval NDA in the first half of 2027.",
+   "tags": [
+    "iopofosine I-131",
+    "radiopharmaceutical",
+    "Waldenström",
+    "BTK inhibitor",
+    "IWWM"
+   ],
+   "title": "Iopofosine I-131 shows high response rates in BTK inhibitor–refractory Waldenström macroglobulinaemia",
+   "tumor": "Lymphoma",
+   "url": "https://d1io3yog0oux5.cloudfront.net/_7d9027cb7213651280403cd044807b84/cellectar/news/2026-09-29_Cellectar_Biosciences_to_Present_Compelling_397.pdf",
+   "id": "2026-10-15-iopofosine-wm-btki-refractory"
+  },
+  {
+   "added": "2026-10-16",
+   "category": "regulatory",
+   "date": "2026-10-14",
+   "impact": "notable",
+   "source": "CURE",
+   "summary": "The FDA's April–June 2026 list of potential serious-risk signals (posted 30 September) includes colitis with palbociclib, ribociclib and abemaciclib, myocarditis with BRAF and MEK inhibitors, enterocolitis with ide-cel and liso-cel, and Lutathera/Pluvicto mix-up errors. FDA is evaluating need for action; no labels have changed yet.",
+   "tags": [
+    "FAERS",
+    "drug safety",
+    "CDK4/6 inhibitor",
+    "BRAF inhibitor",
+    "MEK inhibitor",
+    "CAR-T",
+    "radioligand"
+   ],
+   "title": "FDA FAERS quarterly signals flag colitis with CDK4/6 inhibitors and myocarditis with BRAF/MEK inhibitors",
+   "tumor": "Pan-cancer",
+   "url": "https://www.curetoday.com/view/fda-flags-possible-colitis-risk-with-cdk4-6-breast-cancer-drugs",
+   "id": "2026-10-14-faers-signals-cdk46-braf-mek"
+  },
+  {
+   "actionDate": "2027-03-31",
+   "actionDateLabel": "31 Mar 2027",
+   "added": "2026-10-16",
+   "category": "upcoming",
+   "date": "2026-10-14",
+   "impact": "notable",
+   "keyData": "ALLELE (n=75) · ORR 50.7% · CR 28.0% · mDOR 23.0 mo · mOS 18.4 mo",
+   "source": "OncLive",
+   "summary": "FDA accepted the Class 2 BLA resubmission for the allogeneic EBV-specific T-cell therapy tabelecleucel as monotherapy for patients aged 2 and older with EBV+ PTLD after at least one prior therapy; the resubmission adds patients and longer follow-up from ALLELE.",
+   "tags": [
+    "tabelecleucel",
+    "T-cell therapy",
+    "EBV",
+    "PTLD",
+    "ALLELE"
+   ],
+   "title": "Tabelecleucel in relapsed/refractory EBV+ post-transplant lymphoproliferative disease",
+   "tumor": "Lymphoma",
+   "url": "https://www.onclive.com/view/fda-accepts-bla-resubmission-for-tabelecleucel-in-ebv-post-transplant-lymphoproliferative-disease",
+   "id": "2026-10-14-tabelecleucel-bla-resubmission"
+  },
+  {
+   "added": "2026-10-16",
+   "category": "trial",
+   "date": "2026-10-12",
+   "impact": "notable",
+   "keyData": "LUNAR (n=92) · mPFS 17.6 vs 7.4 mo · 62% lower risk of progression/ADT/death · mTime to ADT 24.3 vs 14.1 mo · 2-yr no detectable disease 33% vs 12%",
+   "source": "UCLA Health",
+   "summary": "Updated results of the randomised phase 2 LUNAR trial, now in European Urology, show two cycles of 177Lu-PNT2002 before SBRT continue to delay progression and need for further hormone therapy versus SBRT alone in oligorecurrent hormone-sensitive prostate cancer, at a median follow-up of 31.9 months.",
+   "tags": [
+    "radiotherapy",
+    "SBRT",
+    "PSMA",
+    "radioligand",
+    "177Lu-PNT2002",
+    "oligometastatic",
+    "LUNAR"
+   ],
+   "title": "LUNAR update: Lu-177 PSMA before SBRT keeps oligorecurrent prostate cancer controlled longer",
+   "tumor": "Prostate",
+   "url": "https://www.uclahealth.org/news/release/targeted-radioactive-therapy-may-help-delay-spread-recurrent",
+   "id": "2026-10-12-lunar-lu-psma-sbrt-update"
+  },
+  {
+   "added": "2026-10-16",
+   "category": "research",
+   "date": "2026-10-12",
+   "impact": "notable",
+   "keyData": "3,060 survivors · transition-eligible 398 → projected 1,071 by 2030 (+169%) · ~58% live >50 km from centre",
+   "source": "Frontiers in Adolescent Medicine",
+   "summary": "An analysis from AIIMS Delhi, Rajiv Gandhi Cancer Institute and KGMU Lucknow of survivors who finished therapy in 2016–2025 estimates the number reaching adulthood and needing transition to adult survivorship care will rise sharply, with most at moderate-to-high late-effect risk and many living far from their treating centre.",
+   "tags": [
+    "India",
+    "survivorship",
+    "AYA",
+    "late effects",
+    "paediatric oncology"
+   ],
+   "title": "North Indian multicentre study projects near-tripling of childhood cancer survivors needing adult transition by 2030",
+   "tumor": "Paediatric",
+   "url": "https://www.frontiersin.org/journals/adolescent-medicine/articles/10.3389/fradm.2026.1982235/full",
+   "id": "2026-10-12-india-aya-survivor-transition"
+  },
+  {
+   "added": "2026-10-16",
+   "category": "research",
+   "date": "2026-10-12",
+   "impact": "notable",
+   "keyData": "RASolute 302 ORR · all 33% · G12V 50% · G12D 24% · G12R 7%",
+   "source": "BioSpace",
+   "summary": "Released FDA review documents for RASolute 302 break down objective response by KRAS variant: responses were highest with G12V and lower with G12D, the most common subtype, while the small G12R group responded poorly. Overall survival benefit in the full population was the basis of approval.",
+   "tags": [
+    "daraxonrasib",
+    "KRAS G12D",
+    "KRAS G12R",
+    "RAS inhibitor",
+    "RASolute 302"
+   ],
+   "title": "FDA review documents show lower daraxonrasib response rates in KRAS G12D and G12R pancreatic cancer",
+   "tumor": "Pancreas",
+   "url": "https://www.biospace.com/drug-development/revmeds-rasonque-gets-a-subtype-data-asterisk-but-analysts-remain-bullish",
+   "id": "2026-10-12-daraxonrasib-fda-review-kras-subtypes"
+  },
   {
    "added": "2026-10-15",
    "category": "trial",
