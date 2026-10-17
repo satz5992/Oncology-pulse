@@ -1,6 +1,168 @@
 {
- "updated": "2026-10-16T01:40:00Z",
+ "updated": "2026-10-17T01:25:00Z",
  "items": [
+  {
+   "added": "2026-10-17",
+   "category": "regulatory",
+   "date": "2026-10-16",
+   "impact": "notable",
+   "keyData": "350 mg q3w × 12 wk → 700 mg q6w · PK/PD modelling-based",
+   "source": "GlobeNewswire (Regeneron press release)",
+   "summary": "The CHMP recommended an updated Libtayo schedule: 350 mg every 3 weeks for the first 12 weeks, then 700 mg every 6 weeks, across all six approved EU indications. The opinion rests on PK/PD modelling integrated with existing clinical data; a European Commission decision is pending.",
+   "tags": [
+    "cemiplimab",
+    "PD-1",
+    "dosing",
+    "EMA",
+    "CHMP"
+   ],
+   "title": "CHMP backs every-6-weeks cemiplimab dosing across all EU indications",
+   "tumor": "Pan-cancer",
+   "url": "https://www.globenewswire.com/news-release/2026/10/16/3382494/0/en/libtayo-cemiplimab-recommended-for-eu-approval-by-the-chmp-for-updated-dosing-regimen-across-all-approved-cancer-types.html",
+   "id": "2026-10-16-cemiplimab-q6w-chmp"
+  },
+  {
+   "added": "2026-10-17",
+   "category": "regulatory",
+   "date": "2026-10-16",
+   "impact": "notable",
+   "source": "European Medicines Agency",
+   "summary": "At its 12–15 October meeting the CHMP gave positive opinions on indication extensions for Talvey (talquetamab) and Tukysa (tucatinib) and recommended Kizfizo, a hybrid temozolomide product for glioma. It declined to extend gemtuzumab ozogamicin to children with newly diagnosed AML, and the applications to extend palbociclib (HR+/HER2+ maintenance) and capivasertib (PTEN-deficient hormone-sensitive mPC) were withdrawn.",
+   "tags": [
+    "EMA",
+    "CHMP",
+    "talquetamab",
+    "tucatinib",
+    "gemtuzumab ozogamicin",
+    "palbociclib",
+    "capivasertib"
+   ],
+   "title": "CHMP October: talquetamab and tucatinib extensions backed; paediatric Mylotarg refused; palbociclib and capivasertib extensions withdrawn",
+   "tumor": "Pan-cancer",
+   "url": "https://www.ema.europa.eu/en/news/meeting-highlights-committee-medicinal-products-human-use-chmp-12-15-october-2026",
+   "id": "2026-10-16-chmp-october-oncology-roundup"
+  },
+  {
+   "added": "2026-10-17",
+   "category": "research",
+   "date": "2026-10-15",
+   "impact": "notable",
+   "keyData": "n=303 · chronic irAEs 48% · ongoing at last follow-up 34% · hypothyroidism 31%",
+   "source": "JAMA Network Open",
+   "summary": "A multicentre retrospective cohort of 303 patients with resected stage III–IV melanoma found chronic irAEs in 48%, most persisting at a median 67 months of follow-up. Hypothyroidism was the commonest, and all adrenal insufficiency/hypophysitis cases were permanent — relevant when counselling on adjuvant therapy.",
+   "tags": [
+    "nivolumab",
+    "pembrolizumab",
+    "adjuvant",
+    "irAE",
+    "survivorship"
+   ],
+   "title": "Chronic immune-related adverse events affect nearly half of patients after adjuvant anti–PD-1 for melanoma",
+   "tumor": "Melanoma",
+   "url": "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2854762",
+   "id": "2026-10-15-chronic-irae-adjuvant-pd1-melanoma"
+  },
+  {
+   "added": "2026-10-17",
+   "category": "research",
+   "date": "2026-10-15",
+   "impact": "notable",
+   "keyData": "Hypothyroidism 5.8% (IMPT) vs ~19% (IMRT) · adj. OR 2.94 · mean thyroid dose 17 vs 27 Gy",
+   "source": "CancerNetwork",
+   "summary": "A retrospective ASTRO 2026 poster comparing IMPT with photon IMRT for regional nodal breast RT found clinical hypothyroidism in 5.8% vs about 19%, tracking a lower mean thyroid dose. The presenter cautioned it is not practice-changing; the key message is to contour the thyroid as an organ at risk in every plan.",
+   "tags": [
+    "radiotherapy",
+    "proton therapy",
+    "regional nodal irradiation",
+    "thyroid",
+    "ASTRO 2026"
+   ],
+   "title": "Proton therapy linked to less hypothyroidism after supraclavicular breast irradiation",
+   "tumor": "Breast",
+   "url": "https://www.cancernetwork.com/view/proton-therapy-tied-to-less-hypothyroidism-after-supraclavicular-breast-rt",
+   "id": "2026-10-15-proton-supraclavicular-hypothyroidism"
+  },
+  {
+   "added": "2026-10-17",
+   "category": "designation",
+   "date": "2026-10-15",
+   "impact": "notable",
+   "keyData": "START-001 TMB-H cohort (n=44) · ORR 20.5% · DCR 79.5%",
+   "source": "BioSpace (Marengo press release)",
+   "summary": "The FDA granted Marengo's bispecific dual T-cell agonist invikafusp alfa (STAR0602) a second fast track designation, covering TMB-H solid tumours progressing after prior therapy including checkpoint inhibitors. Updated phase 2 START-001 data are due as an ESMO 2026 oral on 23 October.",
+   "tags": [
+    "invikafusp alfa",
+    "STAR0602",
+    "TMB-H",
+    "tissue-agnostic",
+    "fast track"
+   ],
+   "title": "Fast track for invikafusp alfa expanded to tissue-agnostic TMB-high solid tumours",
+   "tumor": "Pan-cancer",
+   "url": "https://www.biospace.com/press-releases/marengo-therapeutics-receives-second-u-s-fda-fast-track-designation-for-invikafusp-alfa-expanding-to-a-tissue-agnostic-indication-across-tumor-mutational-burden-high-solid-tumors-that-progress-after-prior-therapy-including-checkpoint-inhibition",
+   "id": "2026-10-15-invikafusp-tmbh-fast-track"
+  },
+  {
+   "added": "2026-10-17",
+   "category": "research",
+   "date": "2026-10-14",
+   "impact": "notable",
+   "keyData": "10 conditional recommendations · NGS testing (moderate certainty) · early allo-HCT referral",
+   "source": "Blood Advances (ASH)",
+   "summary": "The ASH guideline in Blood Advances favours NGS-based molecular testing over limited driver-mutation testing, advises against starting JAK inhibitors in asymptomatic higher-risk MF, and suggests momelotinib or pacritinib when anaemia dominates. It also recommends early transplant referral for responding higher-risk patients; all recommendations are conditional, mostly on low or very low certainty evidence.",
+   "tags": [
+    "myelofibrosis",
+    "guideline",
+    "JAK inhibitor",
+    "momelotinib",
+    "pacritinib",
+    "allogeneic transplant"
+   ],
+   "title": "ASH publishes first myelofibrosis management guideline with 10 recommendations",
+   "tumor": "Haematologic",
+   "url": "https://doi.org/10.1182/bloodadvances.2026021650",
+   "id": "2026-10-14-ash-myelofibrosis-guideline"
+  },
+  {
+   "added": "2026-10-17",
+   "category": "regulatory",
+   "date": "2026-10-13",
+   "impact": "notable",
+   "keyData": "FYB206 · Dahlia PK equivalence met · BsUFA decision ~Q3 2027",
+   "source": "BioSpectrum India",
+   "summary": "India's Zydus Lifesciences and Formycon said the FDA accepted for review the first publicly announced Keytruda biosimilar application; a dossier is also with Health Canada. FYB206 was developed without a comparative phase 3 efficacy trial, relying on analytics and the Dahlia PK-equivalence study in resected melanoma; a decision could come around Q3 2027.",
+   "tags": [
+    "pembrolizumab",
+    "biosimilar",
+    "FYB206",
+    "Zydus",
+    "India"
+   ],
+   "title": "FDA accepts Zydus–Formycon BLA for pembrolizumab biosimilar FYB206",
+   "tumor": "Pan-cancer",
+   "url": "https://www.biospectrumindia.com/news/16/28642/zydus-unveils-first-publicly-announced-acceptance-by-usfda-of-keytruda-biosimilar-application.html",
+   "id": "2026-10-13-fyb206-pembrolizumab-biosimilar-bla"
+  },
+  {
+   "added": "2026-10-17",
+   "category": "trial",
+   "date": "2026-09-14",
+   "impact": "notable",
+   "keyData": "PEGASUS · n=135 · 2-yr RFS 88% (target ≥92%) · 3-yr DFS ctDNA+ 58.4% vs ctDNA− 82.8%, HR 2.71",
+   "source": "Nature Cancer",
+   "summary": "In this single-arm phase 2 trial of serial ctDNA-guided escalation/de-escalation in MSS colon cancer, 2-year RFS in patients ctDNA-negative after surgery was 88%, below the prespecified 92% target. The approach cut neurotoxicity versus a historical cohort, but the authors say randomised validation is needed.",
+   "tags": [
+    "ctDNA",
+    "MRD",
+    "adjuvant chemotherapy",
+    "de-escalation",
+    "PEGASUS"
+   ],
+   "title": "PEGASUS: ctDNA-guided adjuvant chemotherapy misses primary endpoint in high-risk stage II/III colon cancer",
+   "tumor": "Colorectal",
+   "url": "https://doi.org/10.1038/s43018-026-01237-9",
+   "id": "2026-10-14-pegasus-ctdna-adjuvant-colon"
+  },
   {
    "added": "2026-10-16",
    "category": "regulatory",
