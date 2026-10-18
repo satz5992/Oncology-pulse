@@ -1,6 +1,127 @@
 {
- "updated": "2026-10-17T01:25:00Z",
+ "updated": "2026-10-18T01:24:56Z",
  "items": [
+  {
+   "added": "2026-10-18",
+   "category": "regulatory",
+   "date": "2026-10-17",
+   "impact": "notable",
+   "keyData": "137 drugs · margin ≤30% of MRP · effective 9 Nov 2026 · MRP cuts up to 70% · est. savings ₹2,500 cr/yr",
+   "source": "Business Standard",
+   "summary": "The NPPA notified a cap on trade margins for 137 non-scheduled anti-cancer drugs (patented and generic, including nivolumab, olaparib and denosumab) at 30% of MRP, effective 9 November 2026. Quantities supplied through patient assistance programmes are excluded; manufacturers must report revised prices within seven days.",
+   "tags": [
+    "India",
+    "NPPA",
+    "drug pricing",
+    "access",
+    "DPCO"
+   ],
+   "title": "India finalises 30% trade-margin cap on 137 cancer drugs from 9 November",
+   "tumor": "Pan-cancer",
+   "url": "https://www.business-standard.com/industry/news/centre-finalises-30-trade-margin-cap-for-137-non-scheduled-cancer-drugs-126101700942_1.html",
+   "id": "2026-10-17-india-cancer-drug-margin-cap-final"
+  },
+  {
+   "added": "2026-10-18",
+   "category": "trial",
+   "date": "2026-10-17",
+   "impact": "notable",
+   "keyData": "HELEN-Trio 011 · pCR 57.5% vs 45.4% · Δ 12.2 pts (95% CI 1.4–22.9) · mITT n=352",
+   "source": "OncoDaily",
+   "summary": "In a Chinese phase 3 trial of 369 women with stage II–III TNBC, adding the PD-1 antibody camrelizumab to six cycles of neoadjuvant docetaxel–carboplatin (then adjuvant camrelizumab) improved pathological complete response versus chemotherapy alone. Results are in press in Annals of Oncology; event-free survival data are not yet mature.",
+   "tags": [
+    "camrelizumab",
+    "PD-1",
+    "TNBC",
+    "neoadjuvant",
+    "anthracycline-free",
+    "HELEN-Trio 011"
+   ],
+   "title": "HELEN-Trio 011: camrelizumab with anthracycline-free docetaxel–carboplatin raises pCR in early TNBC",
+   "tumor": "Breast",
+   "url": "https://oncodaily.com/breast-oncology/helen-trio-011-trial",
+   "id": "2026-10-17-helen-trio-011-camrelizumab-tnbc"
+  },
+  {
+   "added": "2026-10-18",
+   "category": "research",
+   "date": "2026-10-16",
+   "impact": "notable",
+   "keyData": "n=420 · household changes 56.2% at ~2 mo → 81.2% at 26 mo",
+   "source": "The ASCO Post",
+   "summary": "A study embedded in a Children's Oncology Group trial of 420 children with standard-risk B-ALL found that household changes (employment and/or marital status) were common soon after diagnosis and increased over treatment. Less frequent vincristine/dexamethasone pulses (every 12 vs 4 weeks) were linked to fewer families reporting leukaemia-related expenses, but most other family outcomes did not differ.",
+   "tags": [
+    "ALL",
+    "financial toxicity",
+    "survivorship",
+    "COG",
+    "JNCCN"
+   ],
+   "title": "JNCCN: standard-risk childhood ALL disrupts most families' employment or household within two years",
+   "tumor": "Paediatric",
+   "url": "https://ascopost.com/news/october-2026/even-highly-curable-childhood-leukemias-take-a-substantial-toll-on-families/",
+   "id": "2026-10-16-jnccn-childhood-all-family-toll"
+  },
+  {
+   "added": "2026-10-18",
+   "category": "approval",
+   "date": "2026-10-15",
+   "impact": "notable",
+   "keyData": "n=2,129 HR+/HER2− · 5-yr recurrence-free 95.5% (low) vs 89.6% (high risk) · +22% relative risk per 10-point score rise",
+   "source": "Good Morning America (ABC News)",
+   "summary": "SimBioSys's TumorSight Risk combines the diagnostic breast MRI with pathology and clinical data to give a 0–100 recurrence-risk score and low/intermediate/high category, and can be run before surgery. Validation used 2,129 women with early HR+/HER2− breast cancer.",
+   "tags": [
+    "AI",
+    "MRI",
+    "device",
+    "prognostic score",
+    "HR-positive"
+   ],
+   "title": "FDA-cleared AI tool TumorSight Risk estimates recurrence risk from diagnostic breast MRI",
+   "tumor": "Breast",
+   "url": "https://www.goodmorningamerica.com/wellness/story/new-fda-cleared-ai-tool-predict-breast-cancer-137268417",
+   "id": "2026-10-15-tumorsight-risk-mri-recurrence"
+  },
+  {
+   "added": "2026-10-18",
+   "category": "research",
+   "date": "2026-10-15",
+   "impact": "notable",
+   "keyData": "n=2,821,166 · non-metro vs large-metro death HR 1.034 (2010–16) → 1.093 (2017–23)",
+   "source": "The ASCO Post",
+   "summary": "Two analyses presented at the 2026 ASCO Quality Care Symposium — National Cancer Database data on 2.8 million women and registry/mortality data from 1995–2022 — show non-metro patients' survival disadvantage growing over time, with rural breast cancer mortality moving from below to above urban rates. Distant-stage incidence of several screen-detectable cancers rose faster in rural areas.",
+   "tags": [
+    "disparities",
+    "rural health",
+    "NCDB",
+    "ASCO Quality Care Symposium"
+   ],
+   "title": "US rural–urban gaps in breast cancer survival and mortality are widening",
+   "tumor": "Breast",
+   "url": "https://ascopost.com/news/october-2026/two-studies-show-breast-cancer-survival-and-mortality-gaps-are-widening-between-rural-and-urban-areas/",
+   "id": "2026-10-15-rural-urban-breast-survival-gap"
+  },
+  {
+   "added": "2026-10-18",
+   "category": "trial",
+   "date": "2026-10-12",
+   "impact": "practice-changing",
+   "keyData": "RT CHARM (A221505) · complications 12.3% vs 10.2% (non-inferior) · 3-yr LRR 1.5% vs 2.2% · median FU 3.9 yr",
+   "source": "CURE",
+   "summary": "The phase 3 Alliance A221505 trial randomised 898 women undergoing mastectomy with planned reconstruction to chest-wall and nodal RT in 16 fractions versus 25 fractions. Reconstruction complications at 24 months were non-inferior with the shorter course, with no significant differences in locoregional recurrence or toxicity; full results are now published in JCO.",
+   "tags": [
+    "radiotherapy",
+    "hypofractionation",
+    "PMRT",
+    "breast reconstruction",
+    "RT CHARM",
+    "Alliance"
+   ],
+   "title": "RT CHARM: 3-week hypofractionated post-mastectomy RT non-inferior to 5 weeks for reconstruction complications",
+   "tumor": "Breast",
+   "url": "https://www.curetoday.com/view/3-weeks-of-breast-radiation-as-safe-as-5-for-reconstruction",
+   "id": "2026-10-12-rt-charm-hypofractionated-pmrt"
+  },
   {
    "added": "2026-10-17",
    "category": "regulatory",
