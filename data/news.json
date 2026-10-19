@@ -1,6 +1,126 @@
 {
- "updated": "2026-10-18T01:24:56Z",
+ "updated": "2026-10-19T01:40:00Z",
  "items": [
+  {
+   "added": "2026-10-19",
+   "category": "trial",
+   "date": "2026-10-18",
+   "impact": "notable",
+   "keyData": "TARGIT-B · n=1,684 · 4-y LR 2.3% vs 2.1% · distant relapse HR 0.68 (P=.087) · young subgroup 7-y DR 4.3% vs 17.0%, HR 0.33",
+   "source": "CancerNetwork",
+   "summary": "In the phase 3 TARGIT-B trial, a tumour-bed boost delivered as intraoperative radiotherapy at lumpectomy gave local recurrence similar to a postoperative external-beam boost, both with whole-breast RT. Distant relapse was not significantly reduced overall but was markedly lower in the young-patient subgroup (ASTRO 2026, abstract 349).",
+   "tags": [
+    "radiotherapy",
+    "IORT",
+    "boost",
+    "breast-conserving surgery",
+    "ASTRO 2026"
+   ],
+   "title": "TARGIT-B: intraoperative RT boost matches EBRT boost for local control, with fewer distant relapses in young women",
+   "tumor": "Breast",
+   "url": "https://www.cancernetwork.com/view/targit-b-iort-boost-blunts-distant-relapse-in-young-patients-with-breast-cancer",
+   "id": "2026-10-18-targit-b-iort-boost"
+  },
+  {
+   "added": "2026-10-19",
+   "category": "research",
+   "date": "2026-10-17",
+   "impact": "notable",
+   "keyData": "IDEA · n=200 · RS ≤18 · freedom from recurrence 99% at 5 y, 94% at 8 y · median FU 7.9 y",
+   "source": "CancerNetwork",
+   "summary": "Eight-year follow-up of the single-arm phase 2 IDEA trial (endocrine therapy alone after breast-conserving surgery in women 50–69 with stage I ER+/HER2− tumours and recurrence score ≤18) shows high freedom from recurrence, with most ipsilateral events after year 5. Discussants stressed that omission depends on endocrine therapy adherence.",
+   "tags": [
+    "radiotherapy",
+    "RT omission",
+    "21-gene recurrence score",
+    "endocrine therapy",
+    "ASTRO 2026"
+   ],
+   "title": "IDEA long-term: omitting RT after lumpectomy in low-risk luminal breast cancer keeps recurrence low, but late events rise",
+   "tumor": "Breast",
+   "url": "https://www.cancernetwork.com/view/radiation-omission-in-favorable-breast-cancer-hinges-on-endocrine-adherence",
+   "id": "2026-10-17-idea-rt-omission-long-term"
+  },
+  {
+   "added": "2026-10-19",
+   "category": "trial",
+   "date": "2026-10-17",
+   "impact": "notable",
+   "keyData": "FURTHER · ORR 68% (240 mg) vs 43% (160 mg) · mPFS 16.0 vs 11.1 mo · intracranial ORR 47%",
+   "source": "Cancer Cell",
+   "summary": "The phase 1b FURTHER trial, published in Cancer Cell, randomized treatment-naive patients with EGFR P-loop/αC-helix compressing (PACC) mutations to firmonertinib 160 or 240 mg daily; the higher dose gave higher response rates and longer PFS with CNS activity. The phase 3 ALPACCA trial will compare 240 mg with osimertinib or afatinib.",
+   "tags": [
+    "EGFR",
+    "PACC mutation",
+    "firmonertinib",
+    "TKI",
+    "ALPACCA"
+   ],
+   "title": "FURTHER: firmonertinib 240 mg shows activity in first-line EGFR PACC-mutant NSCLC, including brain metastases",
+   "tumor": "Lung",
+   "url": "https://www.cell.com/cancer-cell/fulltext/S1535-6108(26)00430-7",
+   "id": "2026-10-17-further-firmonertinib-pacc"
+  },
+  {
+   "added": "2026-10-19",
+   "category": "research",
+   "date": "2026-10-15",
+   "impact": "notable",
+   "keyData": "n=385 (56 WW) · Wexner −4.8 · severe incontinence at 5 y 11% (WW cCR) vs 53% (matched TME)",
+   "source": "JAMA Network Open",
+   "summary": "A post hoc analysis of the German CAO/ARO/AIO-12 and -16 TNT trials found clinically meaningful long-term benefits in faecal incontinence, stool frequency, role and global health scores for patients managed by watch-and-wait versus immediate TME. Severe incontinence at 5 years was far less common after sustained clinical complete response; the analysis is non-randomized.",
+   "tags": [
+    "radiotherapy",
+    "total neoadjuvant therapy",
+    "organ preservation",
+    "watch-and-wait",
+    "quality of life"
+   ],
+   "title": "Watch-and-wait after total neoadjuvant therapy preserves bowel function and QOL over 5 years in rectal cancer",
+   "tumor": "Colorectal",
+   "url": "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2855353",
+   "id": "2026-10-15-rectal-watch-wait-qol"
+  },
+  {
+   "added": "2026-10-19",
+   "category": "trial",
+   "date": "2026-10-15",
+   "impact": "notable",
+   "keyData": "NEONIPIGA · n=32 · pCR 59% · 4-y OS 84.1% · 4-y EFS 83.5% · median FU 48 mo",
+   "source": "JAMA Oncology",
+   "summary": "Long-term follow-up of the French phase 2 NEONIPIGA trial of perioperative nivolumab plus ipilimumab in resectable dMMR/MSI-H gastric or GEJ adenocarcinoma reports high 4-year OS and EFS after a 59% pCR rate. Authors note no clear survival advantage over historical surgery outcomes and suggest randomized organ-preservation studies.",
+   "tags": [
+    "immunotherapy",
+    "dMMR/MSI-H",
+    "nivolumab",
+    "ipilimumab",
+    "neoadjuvant"
+   ],
+   "title": "NEONIPIGA 4-year data: neoadjuvant nivolumab–ipilimumab gives durable survival in localized MSI-H gastric/GEJ cancer",
+   "tumor": "Gastroesophageal",
+   "url": "https://jamanetwork.com/journals/jamaoncology/fullarticle/2855333",
+   "id": "2026-10-15-neonipiga-4yr-msi-gastric"
+  },
+  {
+   "added": "2026-10-19",
+   "category": "trial",
+   "date": "2026-10-15",
+   "impact": "notable",
+   "keyData": "n=23 · 40 Gy/5 fx or 36 Gy/3 fx · 1-y RFS 71.4% vs benchmark 55.7% (P=.09) · 1-y OS 95.2%",
+   "source": "UT Southwestern Medical Center",
+   "summary": "A single-centre phase 2 trial gave stereotactic radiotherapy to the inferior vena cava thrombus 4–14 days before radical nephrectomy and thrombectomy; 1-year RFS exceeded the historical surgery-alone benchmark without grade 4–5 radiation toxicity or 90-day perioperative deaths. Published in JAMA Oncology; findings are exploratory.",
+   "tags": [
+    "radiotherapy",
+    "SABR",
+    "IVC thrombus",
+    "renal cell carcinoma",
+    "neoadjuvant"
+   ],
+   "title": "Neoadjuvant SABR to IVC tumour thrombus before nephrectomy shows recurrence-free survival signal in RCC",
+   "tumor": "Kidney",
+   "url": "https://www.utsouthwestern.edu/newsroom/articles/year-2026/oct-targeted-radiation-kidney-cancer-complication.html",
+   "id": "2026-10-15-sabr-ivc-thrombus-rcc"
+  },
   {
    "added": "2026-10-18",
    "category": "regulatory",
