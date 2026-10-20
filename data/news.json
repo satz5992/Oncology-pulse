@@ -1,6 +1,152 @@
 {
- "updated": "2026-10-19T01:40:00Z",
+ "updated": "2026-10-20T01:30:00Z",
  "items": [
+  {
+   "added": "2026-10-20",
+   "category": "research",
+   "date": "2026-10-19",
+   "impact": "notable",
+   "keyData": "REGAIN (NCT06910306) · enrolment 10→20 · single-arm, 3 US centres · SNO 2026 presentation 13 Nov",
+   "source": "GlobeNewswire (Alpha Tau)",
+   "summary": "An IDE supplement doubles enrolment in the US REGAIN feasibility study of diffusing alpha-emitter radiation therapy for unresectable recurrent glioblastoma after prior brain RT, adds IDH-mutant grade 4 tumours, and adds PFS and quality-of-life endpoints. New data are due at SNO in November.",
+   "tags": [
+    "radiotherapy",
+    "brachytherapy",
+    "alpha emitter",
+    "re-irradiation",
+    "glioblastoma"
+   ],
+   "title": "FDA approves expansion of Alpha DaRT alpha-emitter brachytherapy trial in recurrent glioblastoma",
+   "tumor": "CNS",
+   "url": "https://www.globenewswire.com/news-release/2026/10/19/3383438/0/en/alpha-tau-announces-fda-approval-to-expand-alpha-dart-u-s-recurrent-glioblastoma-regain-trial-new-trial-data-to-be-presented-at-sno-2026-annual-meeting.html",
+   "id": "2026-10-19-alpha-dart-regain-gbm-expansion"
+  },
+  {
+   "added": "2026-10-20",
+   "category": "research",
+   "date": "2026-10-19",
+   "impact": "notable",
+   "keyData": "LBA7 CLARITY-Gastric01 (CLDN18.2 ≥25%) · LBA6 SAFFRON osimertinib+savolitinib · LBA3 DeLLphi-305 tarlatamab+durvalumab · LBA2 VOLGA",
+   "source": "BioSpace (AstraZeneca press release)",
+   "summary": "AstraZeneca will present overall survival from four phase 3 trials at ESMO (23–27 Oct). CLARITY-Gastric01 is described as the first phase 3 to show a significant OS benefit with a CLDN18.2 ADC (sonesitatug vedotin) in ≥2L gastric/GEJ cancer; numbers are embargoed until presentation.",
+   "tags": [
+    "ESMO 2026",
+    "CLDN18.2",
+    "ADC",
+    "sonesitatug vedotin",
+    "tarlatamab",
+    "savolitinib"
+   ],
+   "title": "ESMO 2026 Presidential Symposia: CLARITY-Gastric01, SAFFRON, DeLLphi-305 and VOLGA OS data to be presented",
+   "tumor": "Pan-cancer",
+   "url": "https://www.biospace.com/press-releases/astrazeneca-to-present-overall-survival-data-from-four-pivotal-phase-iii-trials-in-presidential-symposia-at-esmo-2026-featuring-sone-ve-imfinzi-durvalumab-tagrisso-osimertinib-and-savolitinib",
+   "id": "2026-10-19-astrazeneca-esmo-presidential-os"
+  },
+  {
+   "actionDate": "2027-06-14",
+   "actionDateLabel": "14 Jun 2027",
+   "added": "2026-10-20",
+   "category": "upcoming",
+   "date": "2026-10-19",
+   "impact": "notable",
+   "keyData": "UTOPIA · n=99 · 3-mo CR 77.8% · 6-mo event-free in CR pts 94.5%",
+   "source": "CancerNetwork",
+   "summary": "FDA accepted UroGen's NDA for UGN-103, a next-generation intravesical mitomycin hydrogel, as a non-surgical option for recurrent LG-IR-NMIBC. Filing is based on the single-arm phase 3 UTOPIA trial.",
+   "tags": [
+    "mitomycin",
+    "intravesical",
+    "NMIBC",
+    "UTOPIA",
+    "PDUFA"
+   ],
+   "title": "UGN-103 (sustained-release mitomycin gel) in recurrent low-grade intermediate-risk NMIBC",
+   "tumor": "Bladder",
+   "url": "https://www.cancernetwork.com/view/fda-accepts-nda-for-ugn-103-in-recurrent-low-grade-intermediate-risk-nmibc",
+   "id": "2026-10-19-ugn-103-nda-lg-ir-nmibc"
+  },
+  {
+   "added": "2026-10-20",
+   "category": "trial",
+   "date": "2026-10-19",
+   "impact": "notable",
+   "keyData": "Krascendo 1 · divarasib vs sotorasib or adagrasib · ESMO LBA5, 25 Oct · no numbers released",
+   "source": "GlobeNewswire (Roche)",
+   "summary": "Roche reports that next-generation KRAS G12C inhibitor divarasib showed superiority over first-generation inhibitors in previously treated KRAS G12C-mutated NSCLC; full data will be presented as LBA5 on 25 October. Roche will also present TAISHAN-301 interim phase 3 data in nasopharyngeal carcinoma.",
+   "tags": [
+    "divarasib",
+    "KRAS G12C",
+    "NSCLC",
+    "ESMO 2026",
+    "Krascendo 1"
+   ],
+   "title": "Krascendo 1: divarasib superior to sotorasib/adagrasib in pretreated KRAS G12C NSCLC, LBA at ESMO",
+   "tumor": "Lung",
+   "url": "https://www.globenewswire.com/news-release/2026/10/19/3382972/0/en/roche-to-present-pivotal-data-at-esmo-2026-showcasing-advances-across-its-lung-and-breast-cancer-late-stage-portfolio.html",
+   "id": "2026-10-19-krascendo1-divarasib-esmo"
+  },
+  {
+   "added": "2026-10-20",
+   "category": "approval",
+   "date": "2026-10-19",
+   "impact": "practice-changing",
+   "keyData": "AZUR-1 · n=154 · up to 9 doses q3w × 6 mo · ~3/4 free of surgery/RT/chemo at >2 y median FU · MSK study n=50: 93% cancer-free ≥12 mo",
+   "source": "FDA",
+   "summary": "Single-agent dostarlimab is now approved for previously untreated stage II–III dMMR/MSI-H rectal cancer, offering a non-operative route that can spare chemotherapy, radiotherapy and surgery. Approval rests on interim AZUR-1 data; continued follow-up is required to confirm durable benefit.",
+   "tags": [
+    "dostarlimab",
+    "PD-1",
+    "dMMR",
+    "MSI-H",
+    "organ preservation",
+    "AZUR-1",
+    "radiotherapy"
+   ],
+   "title": "FDA grants accelerated approval to dostarlimab for dMMR/MSI-H locally advanced rectal cancer",
+   "tumor": "Colorectal",
+   "url": "https://www.fda.gov/news-events/press-announcements/fda-approves-immunotherapy-may-allow-certain-patients-rectal-cancer-avoid-chemotherapy-radiation-and",
+   "id": "2026-10-19-dostarlimab-dmmr-rectal-fda"
+  },
+  {
+   "added": "2026-10-20",
+   "category": "approval",
+   "date": "2026-10-19",
+   "impact": "notable",
+   "keyData": "Local phase 3 (efficacy, immunogenicity, PK) · phase 4 required",
+   "source": "Medical Dialogues",
+   "summary": "Lupin received Indian approval for a nivolumab biosimilar, made with Virchow Biotech, covering the reference product's indications. Approval was supported by a local phase 3 comparative study, with a phase 4 real-world study mandated.",
+   "tags": [
+    "nivolumab",
+    "biosimilar",
+    "PD-1",
+    "CDSCO",
+    "access",
+    "India"
+   ],
+   "title": "CDSCO clears Lupin's nivolumab biosimilar for manufacture and marketing in India",
+   "tumor": "Pan-cancer",
+   "url": "https://medicaldialogues.in/news/industry/pharma/cdsco-clears-lupin-to-manufacture-market-nivolumab-biosimilar-for-cancer-treatment-181639",
+   "id": "2026-10-19-lupin-nivolumab-biosimilar-cdsco"
+  },
+  {
+   "added": "2026-10-20",
+   "category": "trial",
+   "date": "2026-10-19",
+   "impact": "notable",
+   "keyData": "NeoORB · interim n=60 · breast pCR 51.9% vs 27.3% (P=.046) · nodal pCR 88.5% vs 39.4% · G≥3 surgical complications 14.8% vs 6.1%",
+   "source": "CancerNetwork",
+   "summary": "An Indian randomised phase 3 trial gave ultrahypofractionated radiotherapy (26 Gy/5 fractions plus boost) after neoadjuvant chemotherapy and before surgery, versus standard postoperative RT. Interim results show higher breast and nodal pCR, with more grade ≥3 surgical complications; numbers are small and final outcomes awaited.",
+   "tags": [
+    "radiotherapy",
+    "neoadjuvant RT",
+    "ultrahypofractionation",
+    "ASTRO 2026",
+    "India"
+   ],
+   "title": "NeoORB (AIIMS Jodhpur): neoadjuvant 5-fraction RT before surgery doubles breast pCR in interim analysis",
+   "tumor": "Breast",
+   "url": "https://www.cancernetwork.com/view/neoadjuvant-radiotherapy-challenges-the-surgery-first-paradigm-in-breast-cancer",
+   "id": "2026-10-19-neoorb-neoadjuvant-rt-breast-india"
+  },
   {
    "added": "2026-10-19",
    "category": "trial",
