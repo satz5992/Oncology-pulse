@@ -1,6 +1,106 @@
 {
- "updated": "2026-10-20T01:30:00Z",
+ "updated": "2026-10-21T01:27:00Z",
  "items": [
+  {
+   "added": "2026-10-21",
+   "category": "research",
+   "date": "2026-10-20",
+   "impact": "notable",
+   "keyData": "CK-301-101 LA cohort · n=31 · ORR 54.8% · CR 25.8% · 24-mo DOR rate 80.2%",
+   "source": "OncLive",
+   "summary": "NCCN guidelines now include the PD-L1 antibody cosibelimab-ipdl (Unloxcyt, Sun Pharma) as a category 2A preferred therapy for locally advanced CSCC not suitable for curative surgery or radiation, extending its existing preferred status in metastatic disease.",
+   "tags": [
+    "PD-L1",
+    "cosibelimab",
+    "NCCN",
+    "CSCC",
+    "Sun Pharma"
+   ],
+   "title": "NCCN lists cosibelimab as category 2A preferred option for locally advanced cutaneous SCC",
+   "tumor": "Skin",
+   "url": "https://www.onclive.com/view/nccn-guidelines-upgrade-cosibelimab-to-category-2a-for-locally-advanced-cutaneous-squamous-cell",
+   "id": "2026-10-20-nccn-cosibelimab-la-cscc"
+  },
+  {
+   "added": "2026-10-21",
+   "category": "designation",
+   "date": "2026-10-20",
+   "impact": "notable",
+   "keyData": "Preclinical · ~5× tumour inhibition vs monomeric ADC in SU.86.86 xenograft · DAR ~5",
+   "source": "OncLive",
+   "summary": "FDA granted fast track designation to Medicovestor's MC001, a tetravalent anti-folate receptor alpha antibody dimer carrying MMAE, for advanced or metastatic pancreatic cancer. IND has been cleared but the phase 1 trial (also open to other FRα-expressing solid tumours) has not started; supporting data are preclinical only.",
+   "tags": [
+    "ADC",
+    "FRα",
+    "MMAE",
+    "fast track",
+    "PDAC"
+   ],
+   "title": "Fast track for dimeric FRα-targeted ADC MC001 in advanced pancreatic cancer",
+   "tumor": "Pancreas",
+   "url": "https://www.onclive.com/view/fda-grants-fast-track-designation-to-mc001-in-pancreatic-cancer",
+   "id": "2026-10-20-mc001-fra-adc-pdac-fast-track"
+  },
+  {
+   "added": "2026-10-21",
+   "category": "research",
+   "date": "2026-10-18",
+   "impact": "notable",
+   "keyData": "EMBOLD PanTumour-101 · ORR 61% (8 mg/kg) vs 32% (6 mg/kg) · G≥3 TRAEs 42% vs 15% · ILD 2%",
+   "source": "CancerNetwork",
+   "summary": "GSK reported phase 1b dose-optimisation data from EMBOLD PanTumour-101 in 50 patients with relapsed ES-SCLC (median 2 prior lines), with higher responses at 8 mg/kg than 6 mg/kg but more grade ≥3 toxicity; follow-up is short and full data come at ESMO 2026.",
+   "tags": [
+    "ADC",
+    "B7-H3",
+    "SCLC",
+    "risvutatug rezetecan",
+    "ESMO 2026"
+   ],
+   "title": "B7-H3 ADC risvutatug rezetecan shows high response rates in relapsed extensive-stage SCLC",
+   "tumor": "Lung",
+   "url": "https://www.cancernetwork.com/view/riz-rez-produces-anti-tumor-activity-in-extensive-stage-sclc",
+   "id": "2026-10-18-ris-rez-embold-es-sclc"
+  },
+  {
+   "added": "2026-10-21",
+   "category": "trial",
+   "date": "2026-10-17",
+   "impact": "notable",
+   "keyData": "n=236 · 24-mo EFS 86% vs 67% (P<.001) · OS 90% vs 85% · relapse 5% vs 13% · G≥3 SAEs 34% vs 47%",
+   "source": "CancerNetwork",
+   "summary": "The phase 3 trial randomised 236 adults (2:1) to ponatinib–blinatumomab or imatinib plus chemotherapy; the chemo-free arm had higher 24-month EFS, fewer relapses and fewer early deaths and serious AEs. OS difference was smaller; full results are now published in NEJM.",
+   "tags": [
+    "ponatinib",
+    "blinatumomab",
+    "Ph+ ALL",
+    "chemotherapy-free",
+    "GIMEMA ALL2820"
+   ],
+   "title": "GIMEMA ALL2820 in NEJM: chemotherapy-free ponatinib plus blinatumomab beats imatinib-chemo in newly diagnosed Ph+ ALL",
+   "tumor": "Leukaemia/MDS",
+   "url": "https://www.cancernetwork.com/view/ponatinib-blinatumomab-regimen-improves-efs-in-ph-positive-all",
+   "id": "2026-10-17-gimema-all2820-ponatinib-blina-nejm"
+  },
+  {
+   "added": "2026-10-21",
+   "category": "research",
+   "date": "2026-10-16",
+   "impact": "notable",
+   "keyData": "CR 71% · median DOR 26.6 mo · CR at 36 mo 44.2% · 36-mo cystectomy-free 84.2% · DSS 98.2%",
+   "source": "Urology Times",
+   "summary": "Long-term results in 100 patients with BCG-unresponsive CIS ± papillary NMIBC, published in the Journal of Urology, show durable complete responses and low progression to muscle-invasive disease, with mostly grade 1–2 local toxicity.",
+   "tags": [
+    "IL-15 superagonist",
+    "nogapendekin alfa",
+    "BCG-unresponsive",
+    "NMIBC",
+    "QUILT-3.032"
+   ],
+   "title": "QUILT-3.032 3-year data: nogapendekin alfa plus BCG keeps most responders cystectomy-free in BCG-unresponsive CIS NMIBC",
+   "tumor": "Bladder",
+   "url": "https://www.urologytimes.com/view/anktiva-plus-bcg-shows-durable-responses-in-bcg-unresponsive-nmibc",
+   "id": "2026-10-16-quilt3032-anktiva-3yr-cis-nmibc"
+  },
   {
    "added": "2026-10-20",
    "category": "research",
