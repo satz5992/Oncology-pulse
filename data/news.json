@@ -1,6 +1,128 @@
 {
- "updated": "2026-10-21T01:27:00Z",
+ "updated": "2026-10-22T01:45:00Z",
  "items": [
+  {
+   "added": "2026-10-22",
+   "category": "approval",
+   "date": "2026-10-21",
+   "impact": "notable",
+   "keyData": "JUPITER-06 · mOS 17.7 vs 12.9 mo · PFS risk reduced 42%",
+   "source": "Business Standard",
+   "summary": "Dr. Reddy's received DCGI approval for toripalimab (Zytorvi) plus paclitaxel–cisplatin as first-line treatment of unresectable, advanced, recurrent or metastatic oesophageal squamous cell carcinoma, its second Indian indication after nasopharyngeal carcinoma. The Indian label does not require PD-L1 selection.",
+   "tags": [
+    "toripalimab",
+    "PD-1",
+    "ESCC",
+    "India",
+    "CDSCO",
+    "JUPITER-06"
+   ],
+   "title": "India's DCGI approves toripalimab with chemotherapy for first-line advanced oesophageal SCC",
+   "tumor": "Gastroesophageal",
+   "url": "https://www.business-standard.com/companies/news/dr-reddys-zytorvi-dcgi-approval-oesophageal-cancer-toripalimab-126102100639_1.html",
+   "id": "2026-10-21-toripalimab-escc-dcgi-india"
+  },
+  {
+   "added": "2026-10-22",
+   "category": "approval",
+   "date": "2026-10-21",
+   "impact": "practice-changing",
+   "keyData": "KEYNOTE-B15/EV-304 · 2-yr EFS 79.4% vs 66.2% · HR 0.53 · 2-yr OS 86.9% vs 81.3% · HR 0.65",
+   "source": "Merck",
+   "summary": "The European Commission approved neoadjuvant pembrolizumab plus enfortumab vedotin, continued as adjuvant therapy after radical cystectomy, for adults with resectable muscle-invasive bladder cancer irrespective of cisplatin eligibility; subcutaneous pembrolizumab is included. Support comes from KEYNOTE-B15/EV-304 versus neoadjuvant gemcitabine–cisplatin in cisplatin-eligible patients.",
+   "tags": [
+    "pembrolizumab",
+    "enfortumab vedotin",
+    "ADC",
+    "perioperative",
+    "EU",
+    "KEYNOTE-B15"
+   ],
+   "title": "EC approves perioperative pembrolizumab plus enfortumab vedotin for resectable MIBC",
+   "tumor": "Bladder",
+   "url": "https://www.merck.com/news/european-commission-approves-keytruda-pembrolizumab-plus-padcev-enfortumab-vedotin-ejfv-as-perioperative-treatment-for-adults-with-resectable-muscle-invasive-bladder-cancer-mibc/",
+   "id": "2026-10-21-ec-pembro-ev-perioperative-mibc"
+  },
+  {
+   "added": "2026-10-22",
+   "category": "research",
+   "date": "2026-10-20",
+   "impact": "notable",
+   "source": "BioSpace (City of Hope press release)",
+   "summary": "City of Hope researchers reported in Nature Communications that thoracic radiation shifts protective ILC2s towards inflammatory ILC1s via IFN-β in mice, with similar changes in human ILCs; blocking IFN-β signalling during radiation reduced pneumonitis and fibrosis in the model.",
+   "tags": [
+    "radiotherapy",
+    "radiation pneumonitis",
+    "interferon",
+    "ILC",
+    "preclinical"
+   ],
+   "title": "Type I interferon drives innate lymphoid cell switch behind radiation-induced lung injury (preclinical)",
+   "tumor": "Lung",
+   "url": "https://www.biospace.com/press-releases/new-study-identifies-immune-trigger-behind-radiation-related-lung-damage",
+   "id": "2026-10-20-ifn-ilc-radiation-lung-injury"
+  },
+  {
+   "added": "2026-10-22",
+   "category": "trial",
+   "date": "2026-10-19",
+   "impact": "notable",
+   "keyData": "TASKIN (n=159) · 12-mo OS 61.3% vs 55.7% · mPFS 5.9 vs 5.6 mo · right-sided OS HR 0.38 (exploratory)",
+   "source": "XBiotech",
+   "summary": "The investigator-sponsored randomised, placebo-controlled phase 2 TASKIN trial met its prespecified 12-month survival threshold with vilamakitug added to trifluridine/tipiracil, but PFS did not differ; an exploratory right-sided subgroup showed an OS signal.",
+   "tags": [
+    "IL-1α",
+    "vilamakitug",
+    "trifluridine/tipiracil",
+    "refractory CRC",
+    "TASKIN"
+   ],
+   "title": "TASKIN: IL-1α antibody vilamakitug plus trifluridine/tipiracil meets 12-month OS threshold in refractory mCRC",
+   "tumor": "Colorectal",
+   "url": "https://investors.xbiotech.com/news-releases/news-release-details/xbiotech-announces-positive-phase-ii-final-efficacy-results",
+   "id": "2026-10-19-taskin-vilamakitug-mcrc"
+  },
+  {
+   "added": "2026-10-22",
+   "category": "designation",
+   "date": "2026-10-19",
+   "impact": "notable",
+   "keyData": "Phase 1 + cetuximab · CRC (n=5) ORR 40%, DCR 60% · PDAC (n=7) cORR 29% · G≥3 TRAEs 24%",
+   "source": "OncLive",
+   "summary": "The FDA granted fast track designation to QTX3034, an oral non-covalent multi-KRAS inhibitor that binds inactive KRAS with G12D preference, combined with cetuximab with or without FOLFOX for KRAS G12D-mutated CRC. Phase 1 combination data will be presented at ESMO 2026 on 24 October.",
+   "tags": [
+    "KRAS G12D",
+    "QTX3034",
+    "cetuximab",
+    "fast track",
+    "ESMO 2026"
+   ],
+   "title": "Fast track for KRAS G12D-preferring inhibitor QTX3034 plus cetuximab in colorectal cancer",
+   "tumor": "Colorectal",
+   "url": "https://www.onclive.com/view/qtx3034-plus-cetuximab-receives-fda-fast-track-designation-in-kras-g12d-mutated-crc",
+   "id": "2026-10-19-qtx3034-cetuximab-kras-g12d-crc-ftd"
+  },
+  {
+   "added": "2026-10-22",
+   "category": "trial",
+   "date": "2026-10-19",
+   "impact": "notable",
+   "keyData": "Combi-TED (n=106) · 1-yr OS 47% (+docetaxel) / 46% (+nivolumab) vs 29% docetaxel",
+   "source": "CancerNetwork",
+   "summary": "In the randomised phase 2 Combi-TED trial in HLA-A2-positive metastatic NSCLC progressing after first-line chemo-immunotherapy, both OSE2101 (Tedopi) combinations met the 1-year OS endpoint while docetaxel alone did not. Final results are slated for ESMO 2026.",
+   "tags": [
+    "cancer vaccine",
+    "OSE2101",
+    "Tedopi",
+    "HLA-A2",
+    "Combi-TED",
+    "ESMO 2026"
+   ],
+   "title": "Combi-TED: neoepitope vaccine OSE2101 with docetaxel or nivolumab improves 1-year OS in second-line NSCLC",
+   "tumor": "Lung",
+   "url": "https://www.cancernetwork.com/view/cancer-vaccine-combinations-improve-1-year-survival-in-second-line-nsclc",
+   "id": "2026-10-19-combi-ted-ose2101-nsclc"
+  },
   {
    "added": "2026-10-21",
    "category": "research",
