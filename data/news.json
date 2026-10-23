@@ -1,6 +1,146 @@
 {
- "updated": "2026-10-22T01:45:00Z",
+ "updated": "2026-10-23T01:40:00Z",
  "items": [
+  {
+   "added": "2026-10-23",
+   "category": "approval",
+   "date": "2026-10-22",
+   "impact": "notable",
+   "keyData": "KEYNOTE-158 · n=220 (TMB ≥13) · ORR 36% · DOR ≥12 mo in 58%",
+   "source": "U.S. FDA",
+   "summary": "Pembrolizumab (IV or subcutaneous Keytruda Qlex) now has traditional approval for previously treated unresectable/metastatic TMB-high solid tumours without satisfactory alternatives, with TMB-H redefined as ≥13 mut/Mb because benefit was not confirmed at 10 to <13 mut/Mb.",
+   "tags": [
+    "pembrolizumab",
+    "PD-1",
+    "TMB-high",
+    "tissue-agnostic",
+    "KEYNOTE-158"
+   ],
+   "title": "FDA converts pembrolizumab TMB-H approval to traditional approval, raising threshold to ≥13 mut/Mb",
+   "tumor": "Pan-cancer",
+   "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-grants-traditional-approval-pembrolizumab-or-pembrolizumab-and-berahyaluronidase-alfa-pmph",
+   "id": "2026-10-22-pembrolizumab-tmbh-traditional-approval"
+  },
+  {
+   "added": "2026-10-23",
+   "category": "regulatory",
+   "date": "2026-10-22",
+   "impact": "notable",
+   "keyData": "Phase 1a/b · DCR 84.6% (33/39) · 3 PRs",
+   "source": "Targeted Oncology",
+   "summary": "After an end-of-phase 2 meeting, Rgenta will run a ~150-patient double-blind, placebo-controlled phase 3 in biomarker-selected recurrent/metastatic ACC (two doses vs placebo, 2:2:1, PFS primary), starting in Q1 2027.",
+   "tags": [
+    "MYB",
+    "splicing modulator",
+    "adenoid cystic carcinoma",
+    "salivary gland"
+   ],
+   "title": "FDA agrees phase 3 design for oral MYB splicing modulator RGT-61159 in adenoid cystic carcinoma",
+   "tumor": "Head & Neck",
+   "url": "https://www.targetedonc.com/view/rgenta-phase-3-alignment-rgt-61159-adenoid-cystic-carcinoma",
+   "id": "2026-10-22-rgt61159-acc-phase3-alignment"
+  },
+  {
+   "added": "2026-10-23",
+   "category": "trial",
+   "date": "2026-10-22",
+   "impact": "notable",
+   "keyData": "INTerpath-001 · n=1137 · RFS HR 0.58 · 2-yr RFS 82.2% vs 70.0% · DMFS HR 0.62 · G3-5 TRAE 14.2% vs 13.4%",
+   "source": "Merck",
+   "summary": "Detailed phase 3 results, released early ahead of the ESMO Presidential Symposium (LBA1), show improved recurrence-free and distant metastasis-free survival when intismeran autogene is added to adjuvant pembrolizumab in resected stage IIB–IV melanoma; curves separate only after about 6 months and OS is immature.",
+   "tags": [
+    "mRNA vaccine",
+    "neoantigen",
+    "intismeran",
+    "pembrolizumab",
+    "adjuvant",
+    "ESMO 2026"
+   ],
+   "title": "INTerpath-001 full data: individualised mRNA vaccine intismeran plus pembrolizumab cuts recurrence in resected melanoma",
+   "tumor": "Melanoma",
+   "url": "https://www.merck.com/news/merck-and-moderna-will-present-results-from-landmark-phase-3-interpath-001-trial-for-intismeran-autogene-plus-keytruda-pembrolizumab-at-esmo-2026-presidential-symposium/",
+   "id": "2026-10-22-interpath-001-intismeran-detailed-data"
+  },
+  {
+   "added": "2026-10-23",
+   "category": "designation",
+   "date": "2026-10-21",
+   "impact": "notable",
+   "source": "OncLive",
+   "summary": "Samsung Bioepis' first ADC, SBE303, pairs an anti-Nectin-4 antibody with a topoisomerase I inhibitor payload via a beta-glucuronide cleavable linker; the designation covers locally advanced/metastatic urothelial cancer previously treated with enfortumab vedotin. A first-in-human phase 1 (NCT07524348) plans 149 patients.",
+   "tags": [
+    "ADC",
+    "Nectin-4",
+    "topoisomerase I",
+    "urothelial",
+    "post-EV"
+   ],
+   "title": "Fast track for Nectin-4 ADC SBE303 in urothelial cancer after enfortumab vedotin",
+   "tumor": "Bladder",
+   "url": "https://www.onclive.com/view/sbe303-receives-fda-fast-track-designation-in-pretreated-urothelial-cancer",
+   "id": "2026-10-21-sbe303-nectin4-adc-fast-track"
+  },
+  {
+   "added": "2026-10-23",
+   "category": "research",
+   "date": "2026-10-21",
+   "impact": "notable",
+   "keyData": "Phase 1 · n=105 · ORR 44.4% (FRα <75%) vs 56.5% (FRα ≥75%) · ILD 11.4% (2 G3)",
+   "source": "CancerNetwork",
+   "summary": "First-in-human phase 1 data in 105 patients with high-grade ovarian cancer show responses both in tumours with lower and higher FRα expression; pneumonitis/ILD occurred in 11% and no grade ≥3 neuropathy or keratopathy was seen. The exatecan-based ADC already holds FDA breakthrough designation in platinum-resistant disease.",
+   "tags": [
+    "ADC",
+    "FRα",
+    "exatecan",
+    "ovarian",
+    "platinum-resistant"
+   ],
+   "title": "Annals of Oncology: FRα ADC sofetabart mipitecan active across FRα expression levels in ovarian cancer",
+   "tumor": "Gynaecologic",
+   "url": "https://www.cancernetwork.com/view/sofetabart-mipitecan-shows-activity-across-fr-expression-levels-in-proc",
+   "id": "2026-10-21-sofetabart-mipitecan-annonc-phase1"
+  },
+  {
+   "added": "2026-10-23",
+   "category": "designation",
+   "date": "2026-10-21",
+   "impact": "notable",
+   "keyData": "Phase 1 (NCT05549661) · n=9 · clinical benefit in 3 · stable disease in 3",
+   "source": "OncLive",
+   "summary": "FDA granted orphan status to oral PLK1 inhibitor onvansertib for chronic myelomonocytic leukaemia, based on an early Mayo Clinic/NCI phase 1 dose-escalation study in relapsed/refractory proliferative CMML and MDS/MPN overlap with RAS-pathway mutations.",
+   "tags": [
+    "PLK1",
+    "onvansertib",
+    "CMML",
+    "RAS",
+    "orphan drug"
+   ],
+   "title": "Orphan drug designation for PLK1 inhibitor onvansertib in CMML",
+   "tumor": "Leukaemia/MDS",
+   "url": "https://www.onclive.com/view/fda-grants-orphan-drug-designation-to-onvansertib-for-chronic-myelomonocytic-leukemia",
+   "id": "2026-10-21-onvansertib-cmml-orphan"
+  },
+  {
+   "added": "2026-10-23",
+   "category": "research",
+   "date": "2026-10-21",
+   "impact": "notable",
+   "keyData": "4 RCTs · n=1397 · pooled OS HR 0.95 · PFS HR 0.89 · ADRIATIC OS HR 0.73",
+   "source": "CancerNetwork",
+   "summary": "A pooled analysis of four randomised trials (1,397 patients) found no significant overall OS or PFS gain from adding immune checkpoint inhibitors to chemoradiotherapy in limited-stage SCLC, with ADRIATIC consolidation durvalumab the only trial showing a significant OS benefit and no excess grade 3–4 toxicity overall.",
+   "tags": [
+    "radiotherapy",
+    "SCLC",
+    "chemoradiotherapy",
+    "durvalumab",
+    "ADRIATIC",
+    "meta-analysis"
+   ],
+   "title": "Meta-analysis: adding checkpoint inhibitors to chemoradiotherapy in LS-SCLC — benefit confined to consolidation durvalumab",
+   "tumor": "Lung",
+   "url": "https://www.cancernetwork.com/view/efficacy-and-safety-of-immune-checkpoint-inhibitors-combined-with-chemoradiotherapy-in-limited-stage-small-cell-lung-cancer",
+   "id": "2026-10-21-ici-crt-ls-sclc-meta-analysis"
+  },
   {
    "added": "2026-10-22",
    "category": "approval",
