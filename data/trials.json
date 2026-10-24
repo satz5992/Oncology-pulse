@@ -1,6 +1,6 @@
 {
- "version": 2,
- "updated": "2026-10-24",
+ "version": 3,
+ "updated": "2026-10-24T2",
  "count": 299,
  "trials": [
   {
@@ -733,23 +733,25 @@
    "id": "oxford-overview-ebctcg-chemo",
    "appraisal": {
     "inclusion": [
-     "Randomised trials of adjuvant polychemotherapy",
-     "Individual patient data, >100,000 women",
-     "Early breast cancer"
+     "Randomised trials of adjuvant polychemotherapy vs none, or comparing regimens",
+     "Individual patient data (~100,000 women, 123 trials)",
+     "Early operable breast cancer"
     ],
     "exclusion": [
-     "Non-randomised data"
+     "Non-randomised or unpublished trials without individual data",
+     "Neoadjuvant-only trials (analysed separately)"
     ],
     "strengths": [
-     "Highest level of evidence, individual patient data",
-     "Shows proportional benefit largely independent of age, nodal status and ER"
+     "Individual patient data — highest level of evidence",
+     "Shows ~one-third proportional reduction in breast cancer mortality with anthracycline-taxane regimens",
+     "Proportional benefit similar across age, nodal status and ER"
     ],
     "limitations": [
      "Older regimens dominate",
-     "Proportional benefit does not translate into similar absolute benefit for low-risk patients",
-     "Pre-dates genomic risk tools"
+     "Same proportional benefit means small absolute gain in low-risk disease",
+     "Pre-dates genomic risk tools and anti-HER2 therapy"
     ],
-    "critique": "Taxane-anthracycline regimens reduce breast cancer mortality by about a third. Absolute benefit depends on baseline risk, which is why genomic assays now guide chemotherapy."
+    "critique": "The core evidence that adjuvant chemotherapy saves lives. Because the proportional effect is constant, absolute benefit depends entirely on baseline risk — the logic behind using genomic assays to spare low-risk patients."
    }
   },
   {
@@ -776,23 +778,24 @@
    "appraisal": {
     "inclusion": [
      "Node-positive operable breast cancer",
-     "Adequate organ function",
-     "Post surgery"
+     "After mastectomy or lumpectomy with axillary dissection",
+     "Adequate organ function"
     ],
     "exclusion": [
      "Distant metastases",
-     "Prior chemotherapy"
+     "Prior chemotherapy",
+     "Significant cardiac disease"
     ],
     "strengths": [
-     "2×2 factorial design tested both dose density and sequence",
-     "Long-term follow-up"
+     "2×2 factorial design tested dose density and sequence together",
+     "Long-term follow-up showed DFS and OS benefit"
     ],
     "limitations": [
-     "Benefit seen mainly in ER-negative disease",
+     "Benefit seen mainly in ER-negative tumours",
      "Required G-CSF support",
-     "Older era without trastuzumab"
+     "Pre-trastuzumab era — HER2+ patients included"
     ],
-    "critique": "Dose-dense every-2-week AC→T improved DFS and OS. Gains were concentrated in ER-negative tumours, so the benefit for ER-positive disease is debated."
+    "critique": "Dose-dense every-2-week AC→T improved outcomes and is standard for high-risk disease. The EBCTCG dose-intensity meta-analysis later confirmed a ~10–15% proportional benefit."
    }
   },
   {
@@ -1036,22 +1039,24 @@
    "id": "atlas-attom",
    "appraisal": {
     "inclusion": [
-     "Women who completed ~5 years tamoxifen",
+     "Women who completed ~5 years of tamoxifen",
      "Disease-free at entry",
-     "ER-positive (or unknown)"
+     "ER-positive (or unknown) early breast cancer"
     ],
     "exclusion": [
-     "Recurrence before randomisation"
+     "Recurrence before randomisation",
+     "Contraindication to continuing tamoxifen"
     ],
     "strengths": [
-     "Very large trials with long follow-up",
-     "Mortality benefit seen after year 10"
+     "Very large trials (ATLAS ~12,900; aTTom ~7,000) with long follow-up",
+     "Breast cancer mortality benefit after year 10"
     ],
     "limitations": [
      "Excess endometrial cancer and pulmonary embolism",
-     "Largely pre-AI era; many patients today take AIs"
+     "Pre-AI era; most postmenopausal women now take AIs",
+     "ER-unknown patients in aTTom diluted effect"
     ],
-    "critique": "Ten years of tamoxifen lowers recurrence and breast cancer mortality, with benefits emerging late. It is mainly relevant for premenopausal women who cannot take AIs."
+    "critique": "Ten years of tamoxifen lowers recurrence and breast cancer mortality, with benefits emerging late. It mainly guides extended therapy for premenopausal women who cannot take AIs."
    }
   },
   {
@@ -1561,21 +1566,24 @@
    "id": "ctneobc-pooled-analysis",
    "appraisal": {
     "inclusion": [
-     "Neoadjuvant trials with individual patient data (12 trials, ~12,000 patients)",
-     "pCR defined as ypT0/is ypN0"
+     "12 international neoadjuvant trials with individual patient data (~12,000 patients)",
+     "Long-term EFS and OS available",
+     "Standardised pCR definitions"
     ],
     "exclusion": [
-     "Trials without long-term follow-up"
+     "Trials without long-term follow-up",
+     "Trials without individual patient data"
     ],
     "strengths": [
-     "Showed patient-level association between pCR and survival, especially TNBC and HER2+",
-     "Standardised pCR definition"
+     "Showed pCR (ypT0/is ypN0) predicts better EFS and OS for individual patients",
+     "Strongest association in TNBC and HER2+/HR− disease"
     ],
     "limitations": [
-     "Failed to show trial-level surrogacy — pCR increases did not predict EFS gains",
-     "Heterogeneous trials"
+     "Failed to show trial-level surrogacy — increases in pCR did not predict EFS gains",
+     "Heterogeneous trials and regimens",
+     "Weak association in HR+/low-grade tumours"
     ],
-    "critique": "pCR is prognostic for individuals but not a validated trial-level surrogate. This is why later trials needed EFS or OS endpoints."
+    "critique": "pCR is prognostic for individuals but not a validated trial-level surrogate. This is why later neoadjuvant trials (KEYNOTE-522, KATHERINE) required EFS or OS confirmation."
    }
   },
   {
@@ -2138,21 +2146,23 @@
     "inclusion": [
      "PIK3CA-mutated HR+, HER2− advanced breast cancer",
      "Endocrine-resistant: relapse during or within 12 months of adjuvant ET",
-     "No prior therapy for advanced disease"
+     "No prior systemic therapy for advanced disease"
     ],
     "exclusion": [
      "HbA1c ≥6.0% or diabetes requiring treatment",
-     "Prior CDK4/6i in advanced setting"
+     "Prior CDK4/6i in the advanced setting",
+     "Symptomatic visceral crisis"
     ],
     "strengths": [
      "PFS and OS benefit",
-     "First-line triplet in high-risk group"
+     "First-line triplet in a high-risk, endocrine-resistant group"
     ],
     "limitations": [
-     "Narrow, endocrine-resistant population",
-     "Hyperglycaemia and stomatitis"
+     "Narrow population (strict glucose criteria)",
+     "Hyperglycaemia, stomatitis and diarrhoea",
+     "Palbociclib backbone, not ribociclib"
     ],
-    "critique": "Establishes a first-line triplet for PIK3CA-mutant endocrine-resistant disease; requires upfront PIK3CA testing."
+    "critique": "Establishes a first-line triplet for PIK3CA-mutant endocrine-resistant disease. It requires upfront PIK3CA testing and careful glucose management."
    }
   },
   {
@@ -2486,20 +2496,23 @@
    "appraisal": {
     "inclusion": [
      "Completely resected NSCLC stage I–III",
-     "Individual patient data from 5 cisplatin trials (n=4,584)"
+     "Individual patient data from 5 cisplatin-based trials (n=4,584)"
     ],
     "exclusion": [
-     "Trials not cisplatin-based"
+     "Trials not cisplatin-based",
+     "Incompletely resected patients"
     ],
     "strengths": [
      "Pooled individual patient data",
-     "Defined 5% absolute 5-year OS benefit"
+     "Defined 5.4% absolute 5-year OS benefit",
+     "Clarified benefit by stage"
     ],
     "limitations": [
-     "No benefit in stage IA, possible harm in IA",
-     "Older staging and chemotherapy partners (vinorelbine dominated)"
+     "No benefit in stage IA, possible harm",
+     "Older staging and chemotherapy partners (vinorelbine dominated)",
+     "Many patients cannot tolerate cisplatin after lobectomy"
     ],
-    "critique": "Basis for adjuvant cisplatin doublets in stage II–III. The absolute gain is modest, and many patients cannot tolerate cisplatin after lobectomy."
+    "critique": "Basis for adjuvant cisplatin doublets in stage II–III. The absolute gain is modest, which is why targeted and IO adjuvant therapies are now preferred where applicable."
    }
   },
   {
@@ -2841,8 +2854,8 @@
     ],
     "exclusion": [
      "Prior thoracic RT",
-     "Supraclavicular nodes in some protocols",
-     "Weight loss >10%"
+     "Weight loss >10%",
+     "Supraclavicular nodes (contralateral)"
     ],
     "strengths": [
      "Definitive evidence that 74 Gy is harmful",
@@ -2850,10 +2863,10 @@
     ],
     "limitations": [
      "Survival deficit with high dose not fully explained",
-     "Variation in centre experience and RT technique (3D vs IMRT)",
+     "Variation in centre experience and technique (3D vs IMRT)",
      "Heart dose association was exploratory"
     ],
-    "critique": "60 Gy remains standard. The trial made heart and lung dose constraints central to thoracic RT planning."
+    "critique": "60 Gy remains the standard dose for concurrent chemoRT. The unexpected harm from 74 Gy is attributed partly to higher heart and lung doses and treatment interruptions, which made cardiac dose constraints a core part of thoracic planning. Cetuximab added toxicity without benefit."
    }
   },
   {
@@ -2884,7 +2897,7 @@
     ],
     "exclusion": [
      "Distant metastases",
-     "Prior RT"
+     "Prior thoracic RT"
     ],
     "strengths": [
      "Survival benefit (~9% at 2 years) from accelerated treatment",
@@ -2895,7 +2908,7 @@
      "No chemotherapy",
      "Benefit mainly in squamous histology"
     ],
-    "critique": "Showed overall treatment time matters, but logistics prevented adoption. Concurrent chemoRT superseded it."
+    "critique": "Showed overall treatment time matters in NSCLC, but logistics prevented adoption. Concurrent chemoRT superseded it."
    }
   },
   {
@@ -2982,7 +2995,7 @@
      "Small (n=101)",
      "Conventional arm included 50 Gy/20 fractions"
     ],
-    "critique": "Supports SABR as standard for inoperable early NSCLC, although the sample is small."
+    "critique": "Supports SABR as standard for inoperable early NSCLC, although the sample is small and some patients were treated with outdated conventional schedules."
    }
   },
   {
@@ -3015,11 +3028,12 @@
     ],
     "exclusion": [
      "Brain metastases >3 cm",
-     "Malignant pleural effusion"
+     "Malignant pleural effusion",
+     "Spinal cord compression"
     ],
     "strengths": [
      "OS benefit in randomised phase 2",
-     "Long-term follow-up"
+     "Long-term follow-up (8 years)"
     ],
     "limitations": [
      "Small (n=99), mixed histology",
@@ -3154,7 +3168,7 @@
      "OS benefit not seen in Asian subgroup",
      "Comparator first-generation TKIs; many control patients never received osimertinib"
     ],
-    "critique": "Osimertinib became first-line standard. The Asian subgroup result and comparator choice are the main criticisms."
+    "critique": "Osimertinib became first-line standard. The Asian subgroup result and the fact that not all controls crossed over to osimertinib are the main criticisms."
    }
   },
   {
@@ -3231,10 +3245,11 @@
     "exclusion": [
      "Prior EGFR TKI",
      "History of ILD",
-     "Untreated brain metastases"
+     "Untreated or symptomatic brain metastases"
     ],
     "strengths": [
-     "PFS and OS benefit over osimertinib"
+     "PFS and OS benefit over osimertinib",
+     "Benefit in high-risk subgroups (TP53, liver metastases)"
     ],
     "limitations": [
      "IV amivantamab with infusion reactions, rash, paronychia and VTE",
@@ -3283,7 +3298,7 @@
      "Comparator crizotinib has weak CNS penetration",
      "OS data immature for years"
     ],
-    "critique": "Alectinib became first-line standard for ALK+ NSCLC."
+    "critique": "Alectinib became first-line standard for ALK+ NSCLC. Lorlatinib (CROWN) now challenges it for patients who can tolerate CNS side effects."
    }
   },
   {
@@ -3325,7 +3340,7 @@
      "Comparator crizotinib",
      "Neurocognitive and mood effects, weight gain, hyperlipidaemia"
     ],
-    "critique": "Lorlatinib offers the longest PFS; neurocognitive toxicity and lipid monitoring are key."
+    "critique": "Lorlatinib offers the longest PFS; neurocognitive toxicity and lipid monitoring are key, and patient preference matters."
    }
   },
   {
@@ -3412,7 +3427,7 @@
      "Smaller benefit in PD-L1 <1%",
      "Nephritis and immune toxicity"
     ],
-    "critique": "Chemo-pembrolizumab is the standard for non-squamous NSCLC regardless of PD-L1."
+    "critique": "Chemo-pembrolizumab is the standard for non-squamous NSCLC regardless of PD-L1. In PD-L1 ≥50%, pembrolizumab alone may suffice."
    }
   },
   {
@@ -3452,9 +3467,10 @@
      "Carboplatin with paclitaxel or nab-paclitaxel"
     ],
     "limitations": [
-     "Smaller benefit in PD-L1 <1%"
+     "Smaller benefit in PD-L1 <1%",
+     "Neuropathy and myelosuppression"
     ],
-    "critique": "Chemo-pembrolizumab is standard for squamous NSCLC."
+    "critique": "Chemo-pembrolizumab is standard for squamous NSCLC. It was the first IO trial to show OS benefit in this histology."
    }
   },
   {
@@ -3483,21 +3499,22 @@
     "inclusion": [
      "Advanced NSCLC (squamous or non-squamous)",
      "No EGFR/ALK alterations",
-     "Treatment-naive"
+     "Treatment-naive, ECOG PS 0–1"
     ],
     "exclusion": [
      "Active autoimmune disease",
-     "Untreated CNS metastases"
+     "Untreated CNS metastases",
+     "Prior systemic therapy for advanced disease"
     ],
     "strengths": [
      "OS benefit, especially in squamous and PD-L1 <1%",
-     "Only 2 cycles of chemotherapy"
+     "Only 2 cycles of chemotherapy limit cumulative toxicity"
     ],
     "limitations": [
      "Higher immune toxicity from ipilimumab",
      "No direct comparison with chemo-pembrolizumab"
     ],
-    "critique": "An option for PD-L1-negative or squamous disease; toxicity is a trade-off."
+    "critique": "An option for PD-L1-negative or squamous disease where dual checkpoint blockade may add durability; toxicity is the trade-off."
    }
   },
   {
@@ -3532,13 +3549,14 @@
      "Progression during induction"
     ],
     "strengths": [
-     "OS benefit for continuation maintenance"
+     "OS benefit for continuation maintenance",
+     "Well tolerated"
     ],
     "limitations": [
      "Pre-immunotherapy era",
      "Selected patients who completed induction"
     ],
-    "critique": "Established pemetrexed maintenance, now incorporated into chemo-IO regimens."
+    "critique": "Established continuation pemetrexed maintenance, which survives today as part of chemo-pembrolizumab regimens. Because only patients without progression after induction were randomised, the absolute benefit applies to a selected group."
    }
   },
   {
@@ -3564,21 +3582,23 @@
    "id": "scagliotti-cis-pem-vs-cis-gem",
    "appraisal": {
     "inclusion": [
-     "Advanced NSCLC, chemotherapy-naive",
+     "Advanced (IIIB/IV) NSCLC, chemotherapy-naive",
      "ECOG PS 0–1"
     ],
     "exclusion": [
      "Prior chemotherapy",
-     "Symptomatic brain metastases"
+     "Symptomatic brain metastases",
+     "Inability to take folic acid/B12"
     ],
     "strengths": [
      "Revealed histology as a predictive factor",
      "Large trial (n=1,725)"
     ],
     "limitations": [
-     "Non-inferiority design; histology finding was a pre-planned subgroup"
+     "Non-inferiority design; histology finding was a pre-planned subgroup",
+     "Pre-molecular era"
     ],
-    "critique": "Made histology essential for chemotherapy choice — pemetrexed for non-squamous, gemcitabine for squamous."
+    "critique": "Made histology essential for chemotherapy choice — pemetrexed for non-squamous, gemcitabine for squamous. The finding came from a prespecified subgroup analysis in a non-inferiority trial but was biologically plausible (thymidylate synthase expression) and has been reproduced."
    }
   },
   {
@@ -3609,7 +3629,8 @@
      "Within 8 weeks of diagnosis"
     ],
     "exclusion": [
-     "Already receiving palliative care"
+     "Already receiving palliative care",
+     "Unable to complete questionnaires"
     ],
     "strengths": [
      "Improved quality of life and mood",
@@ -3617,9 +3638,10 @@
     ],
     "limitations": [
      "Single centre, small (n=151)",
-     "Survival endpoint secondary"
+     "Survival endpoint secondary",
+     "Not blinded"
     ],
-    "critique": "Strong case for early integrated palliative care; generalisability to resource-limited settings needs local models."
+    "critique": "Strong case for early integrated palliative care. Generalisability to resource-limited settings needs local models."
    }
   },
   {
@@ -3653,7 +3675,8 @@
      "Prior KRAS G12C inhibitor or docetaxel"
     ],
     "strengths": [
-     "First randomised phase 3 of a KRAS G12C inhibitor"
+     "First randomised phase 3 of a KRAS G12C inhibitor",
+     "Better tolerability than docetaxel"
     ],
     "limitations": [
      "Modest PFS gain (5.6 vs 4.5 months), no OS benefit",
@@ -3687,7 +3710,8 @@
    "appraisal": {
     "inclusion": [
      "RET fusion-positive advanced non-squamous NSCLC",
-     "Treatment-naive"
+     "Treatment-naive",
+     "ECOG PS 0–2"
     ],
     "exclusion": [
      "Prior systemic therapy for advanced disease",
@@ -3698,10 +3722,11 @@
      "Strong CNS activity"
     ],
     "limitations": [
-     "Rare population",
-     "OS immature"
+     "Rare population (~1–2% of NSCLC)",
+     "OS immature",
+     "Open-label"
     ],
-    "critique": "Supports first-line selpercatinib and broad NGS panels at diagnosis."
+    "critique": "Supports first-line selpercatinib and broad NGS panels at diagnosis. Using a chemo-pembrolizumab control makes this a strong design, but RET fusions are rare (~1–2%) and OS is immature, so long-term benefit and sequencing data are still evolving."
    }
   },
   {
@@ -3728,10 +3753,11 @@
    "appraisal": {
     "inclusion": [
      "HER2 (ERBB2)-mutant advanced NSCLC",
-     "Prior systemic therapy"
+     "Prior systemic therapy",
+     "ECOG PS 0–1"
     ],
     "exclusion": [
-     "History of ILD",
+     "History of ILD requiring steroids",
      "Untreated brain metastases"
     ],
     "strengths": [
@@ -3742,7 +3768,7 @@
      "Non-randomised",
      "ILD risk"
     ],
-    "critique": "Led to accelerated approval; randomised data are pending."
+    "critique": "Led to accelerated approval of T-DXd for HER2-mutant NSCLC. The 5.4 mg/kg dose kept efficacy while lowering ILD; without randomised data, its superiority over docetaxel-based therapy is inferred rather than proven."
    }
   },
   {
@@ -3784,7 +3810,7 @@
      "Designed for superiority of once daily — failed",
      "Underpowered for equivalence"
     ],
-    "critique": "Twice-daily 45 Gy remains standard, but 66 Gy once daily is acceptable when BID is impractical."
+    "critique": "Twice-daily 45 Gy remains the reference, but 66 Gy once daily gave similar survival and toxicity, so it is acceptable when twice-daily treatment is impractical — a common issue in Indian centres with heavy machine loads. CALGB 30610 reached a similar conclusion for 70 Gy."
    }
   },
   {
@@ -3819,13 +3845,14 @@
      "Prior thoracic RT"
     ],
     "strengths": [
-     "Showed accelerated BID RT improves survival"
+     "Showed accelerated BID RT improves survival",
+     "Long-term follow-up"
     ],
     "limitations": [
      "Once-daily arm only 45 Gy — low dose",
      "Higher oesophagitis with BID"
     ],
-    "critique": "Basis for 45 Gy BID. The low once-daily dose made the comparison unfair, prompting CONVERT and CALGB 30610."
+    "critique": "Basis for 45 Gy twice daily in LS-SCLC. The comparator of 45 Gy once daily was biologically low, so the trial proves accelerated fractionation beats an under-dosed schedule rather than a modern once-daily dose."
    }
   },
   {
@@ -3852,20 +3879,22 @@
    "id": "aup-rin-pci-meta-analysis",
    "appraisal": {
     "inclusion": [
-     "SCLC in complete remission",
+     "SCLC in complete remission after induction",
      "Individual patient data from 7 trials"
     ],
     "exclusion": [
-     "Patients without complete response"
+     "Patients without complete response",
+     "Brain metastases at diagnosis"
     ],
     "strengths": [
-     "Showed OS benefit (~5% at 3 years)"
+     "Showed OS benefit (~5% at 3 years)",
+     "Reduced brain metastasis incidence"
     ],
     "limitations": [
      "Mostly limited-stage; brain imaging not mandatory",
      "Pre-MRI era"
     ],
-    "critique": "PCI benefits patients with complete response, but with MRI surveillance the case for PCI is being re-examined."
+    "critique": "PCI benefits patients with complete response, but with MRI surveillance the case for PCI is being re-examined (Japanese ES-SCLC trial)."
    }
   },
   {
@@ -3898,16 +3927,18 @@
     ],
     "exclusion": [
      "Prior immunotherapy",
-     "Grade ≥2 pneumonitis"
+     "Grade ≥2 pneumonitis",
+     "Active autoimmune disease"
     ],
     "strengths": [
-     "OS and PFS benefit — first major LS-SCLC advance in decades"
+     "OS and PFS benefit — first major LS-SCLC advance in decades",
+     "Double-blind"
     ],
     "limitations": [
      "Randomisation after chemoRT selects responders",
      "Pneumonitis risk"
     ],
-    "critique": "Durvalumab consolidation is a new standard in LS-SCLC."
+    "critique": "Durvalumab consolidation is a new standard in LS-SCLC with a clear OS gain. As in PACIFIC, randomisation after chemoRT selects patients who responded and remained fit, and pneumonitis risk after thoracic RT plus IO needs vigilance."
    }
   },
   {
@@ -3943,13 +3974,14 @@
      "Untreated brain metastases"
     ],
     "strengths": [
-     "OS benefit"
+     "OS benefit",
+     "Double-blind"
     ],
     "limitations": [
      "Modest median OS gain (~2 months)",
      "Only 4 cycles of chemotherapy"
     ],
-    "critique": "Small but real OS benefit; a minority are long-term survivors."
+    "critique": "Chemo-atezolizumab is first-line standard for ES-SCLC. The median OS gain is only ~2 months, but a tail of long-term survivors justifies its use; biomarkers to select those patients are lacking."
    }
   },
   {
@@ -3992,7 +4024,7 @@
      "Modest benefit (~2–3 months median)",
      "PCI not allowed in IO arm"
     ],
-    "critique": "Confirms chemo-IO as first-line standard in ES-SCLC."
+    "critique": "Confirms chemo-IO as first-line standard in ES-SCLC and allowed cisplatin, which is useful where carboplatin access or renal function is an issue. The tremelimumab arm added toxicity without benefit."
    }
   },
   {
@@ -4026,7 +4058,8 @@
      "Progressive disease"
     ],
     "strengths": [
-     "Improved 2-year OS and intrathoracic control"
+     "Improved 2-year OS and intrathoracic control",
+     "Low-toxicity regimen"
     ],
     "limitations": [
      "Primary 1-year OS endpoint not met",
@@ -4069,13 +4102,14 @@
      "Symptomatic CNS metastases"
     ],
     "strengths": [
-     "OS benefit over standard chemotherapy"
+     "OS benefit over standard chemotherapy",
+     "Better tolerability than chemotherapy"
     ],
     "limitations": [
      "Cytokine release syndrome and neurotoxicity",
      "Requires inpatient monitoring for first doses"
     ],
-    "critique": "Tarlatamab is a new second-line standard; logistics of CRS monitoring matter."
+    "critique": "Tarlatamab is a new second-line standard in SCLC with an OS gain over chemotherapy. CRS and ICANS require monitoring during the first cycles, which limits use in centres without inpatient support."
    }
   },
   {
@@ -4151,10 +4185,12 @@
     ],
     "exclusion": [
      "pCR after surgery",
-     "Prior immunotherapy"
+     "Prior immunotherapy",
+     "Active autoimmune disease"
     ],
     "strengths": [
-     "Doubled DFS in a high-risk group"
+     "Doubled DFS in a high-risk group",
+     "Double-blind, placebo-controlled"
     ],
     "limitations": [
      "No OS benefit reported",
@@ -4241,7 +4277,8 @@
      "Distant metastases"
     ],
     "strengths": [
-     "Head-to-head OS comparison favouring FLOT"
+     "Head-to-head OS comparison favouring FLOT",
+     "Multicentre German trial"
     ],
     "limitations": [
      "Open-label; CROSS arm had low adjuvant therapy use",
@@ -4282,14 +4319,15 @@
      "Prior chemotherapy"
     ],
     "strengths": [
-     "First to show OS benefit for perioperative chemotherapy (5-year OS 36% vs 23%)"
+     "First to show OS benefit for perioperative chemotherapy (5-year OS 36% vs 23%)",
+     "Multicentre UK trial"
     ],
     "limitations": [
      "Only ~42% completed all planned treatment",
      "Limited D2 lymphadenectomy",
      "ECF is now outdated"
     ],
-    "critique": "Established perioperative chemotherapy; FLOT has since superseded ECF."
+    "critique": "Established perioperative chemotherapy for gastro-oesophageal adenocarcinoma. Poor completion of postoperative chemotherapy and limited surgical lymphadenectomy mean the benefit may partly reflect preoperative therapy alone; FLOT has since replaced ECF."
    }
   },
   {
@@ -4324,7 +4362,8 @@
      "Distant metastases"
     ],
     "strengths": [
-     "OS benefit for adjuvant chemoRT"
+     "OS benefit for adjuvant chemoRT",
+     "Long-term follow-up"
     ],
     "limitations": [
      "Only ~10% had D2 dissection — chemoRT compensated for inadequate surgery",
@@ -4453,13 +4492,14 @@
      "Untreated CNS metastases"
     ],
     "strengths": [
-     "Higher ORR and PFS/OS benefit"
+     "Higher ORR and PFS/OS benefit",
+     "Double-blind"
     ],
     "limitations": [
      "Benefit restricted to PD-L1 CPS ≥1",
      "Initial approval based on ORR alone"
     ],
-    "critique": "Adds pembrolizumab for PD-L1-positive HER2+ disease."
+    "critique": "Adds pembrolizumab to trastuzumab-chemotherapy for HER2+ gastric cancer. The benefit is confined to PD-L1 CPS ≥1, so PD-L1 testing is needed; early approval on response rates was later supported by survival data."
    }
   },
   {
@@ -4503,7 +4543,7 @@
      "Benefit concentrated in CPS ≥5",
      "Little or no benefit in CPS <1"
     ],
-    "critique": "Nivolumab plus chemotherapy is standard, ideally for higher PD-L1 expressers."
+    "critique": "Nivolumab plus chemotherapy is the standard for HER2-negative gastric/GEJ adenocarcinoma, but the benefit is concentrated in CPS ≥5. In CPS <1 tumours the gain is negligible, and regulators in Europe restricted use accordingly."
    }
   },
   {
@@ -4545,7 +4585,7 @@
      "Nausea and vomiting are frequent, especially with first dose",
      "Not compared with nivolumab-chemo"
     ],
-    "critique": "Zolbetuximab adds a targeted option; sequencing with IO remains unclear."
+    "critique": "Zolbetuximab adds a targeted option for CLDN18.2-positive disease (~35–40% of gastric cancers). Nausea and vomiting are common, and as neither trial included immunotherapy, the best sequence with nivolumab is unknown."
    }
   },
   {
@@ -4580,13 +4620,14 @@
      "Uncontrolled hypertension or major bleeding"
     ],
     "strengths": [
-     "OS benefit (9.6 vs 7.4 months)"
+     "OS benefit (9.6 vs 7.4 months)",
+     "Double-blind"
     ],
     "limitations": [
      "Modest gain",
      "Neutropenia and hypertension"
     ],
-    "critique": "Ramucirumab-paclitaxel remains a second-line standard."
+    "critique": "Ramucirumab-paclitaxel remains a second-line standard. The OS gain is modest, and in India, weekly paclitaxel alone is often used because of cost."
    }
   },
   {
@@ -4622,12 +4663,13 @@
     ],
     "strengths": [
      "OS benefit",
-     "Large global trials"
+     "Large global trials with Asian representation"
     ],
     "limitations": [
-     "Benefit driven by PD-L1-positive tumours (CPS ≥10 / TPS ≥1%)"
+     "Benefit driven by PD-L1-positive tumours (CPS ≥10 / TPS ≥1%)",
+     "Little benefit in PD-L1-negative tumours"
     ],
-    "critique": "Chemo-IO is first-line standard for oesophageal SCC, particularly with PD-L1 expression."
+    "critique": "Chemo-IO is first-line standard for oesophageal SCC, the dominant histology in India. Benefit is driven by PD-L1-positive tumours, so testing matters; nivolumab-ipilimumab without chemotherapy is an alternative in CheckMate 648."
    }
   },
   {
@@ -4662,13 +4704,14 @@
      "Tracheo-oesophageal fistula"
     ],
     "strengths": [
-     "Showed chemoRT superior to RT alone, with long-term survivors (~26% at 5 years)"
+     "Showed chemoRT superior to RT alone",
+     "Long-term survivors (~26% at 5 years)"
     ],
     "limitations": [
      "Small trial",
      "Older RT techniques"
     ],
-    "critique": "Basis for definitive chemoRT in oesophageal cancer."
+    "critique": "Basis for definitive chemoRT in oesophageal cancer, showing long-term survival was possible without surgery. The RT-alone arm (64 Gy) had no 5-year survivors, making the case for concurrent chemotherapy."
    }
   },
   {
@@ -4703,7 +4746,8 @@
      "Tracheo-oesophageal fistula"
     ],
     "strengths": [
-     "Showed no benefit for dose escalation"
+     "Showed no benefit for dose escalation",
+     "Randomised phase 3"
     ],
     "limitations": [
      "Most deaths in high-dose arm occurred before 50.4 Gy",
@@ -4752,7 +4796,7 @@
      "No OS benefit in stage II",
      "Oxaliplatin neuropathy can persist"
     ],
-    "critique": "FOLFOX is standard for stage III; stage II benefit is minimal and limited to high-risk features."
+    "critique": "FOLFOX is standard adjuvant therapy for stage III colon cancer. The OS benefit in stage II was not significant, so oxaliplatin is reserved for high-risk stage II; persistent neuropathy is an important long-term cost."
    }
   },
   {
@@ -4780,19 +4824,21 @@
    "appraisal": {
     "inclusion": [
      "Stage III colon cancer after resection",
-     "Individual data from 6 trials"
+     "Individual data from 6 trials (~12,800 patients)"
     ],
     "exclusion": [
-     "Stage II (separate analysis)"
+     "Stage II (separate analysis)",
+     "Metastatic disease"
     ],
     "strengths": [
-     "Large pooled analysis guiding risk-based duration"
+     "Large pooled analysis guiding risk-based duration",
+     "Showed less neuropathy with 3 months"
     ],
     "limitations": [
      "Non-inferiority overall not met",
-     "Regimen choice not randomised"
+     "Regimen choice (FOLFOX vs CAPOX) not randomised"
     ],
-    "critique": "3 months CAPOX for low-risk stage III is standard, reducing neuropathy; FOLFOX for 6 months for high-risk disease."
+    "critique": "3 months of CAPOX is standard for low-risk stage III (T1–3 N1), while high-risk disease may still need 6 months. The regimen effect (CAPOX better than FOLFOX for short duration) was not randomised, so it is debated."
    }
   },
   {
@@ -4834,7 +4880,7 @@
      "OS data immature",
      "Small subset of colon cancer"
     ],
-    "critique": "Adding atezolizumab to FOLFOX is a new standard for stage III dMMR colon cancer."
+    "critique": "Adding atezolizumab to FOLFOX for stage III dMMR colon cancer greatly reduces recurrence. With neoadjuvant IO results (NICHE-2) so striking, the future may be IO before surgery rather than adjuvant combination therapy."
    }
   },
   {
@@ -4875,7 +4921,7 @@
      "Single-arm",
      "Long-term outcomes awaited"
     ],
-    "critique": "Strong signal for neoadjuvant IO in dMMR colon cancer; randomised data are needed."
+    "critique": "Strong signal for neoadjuvant IO in dMMR colon cancer with very high pathological response after only two doses. As a single-arm study, it needs randomised confirmation and long-term outcomes."
    }
   },
   {
@@ -4916,7 +4962,7 @@
      "Small single-arm study",
      "Long-term durability uncertain"
     ],
-    "critique": "Paradigm-shifting for dMMR rectal cancer; small numbers mean careful follow-up remains essential."
+    "critique": "Paradigm-shifting: all early patients achieved clinical complete response without surgery or RT. The cohort is small and highly selected, so durable organ preservation needs longer follow-up and rigorous surveillance."
    }
   },
   {
@@ -4952,12 +4998,14 @@
      "Prior pelvic RT"
     ],
     "strengths": [
-     "Lower local recurrence and toxicity with preoperative chemoRT"
+     "Lower local recurrence and toxicity with preoperative chemoRT",
+     "Long-term follow-up"
     ],
     "limitations": [
-     "No OS difference"
+     "No OS difference",
+     "Overstaging risk in preoperative arm"
     ],
-    "critique": "Preoperative chemoRT became standard."
+    "critique": "Preoperative chemoRT became standard because it halved local recurrence and caused less toxicity than postoperative chemoRT. OS was not improved, and the risk of overtreating MRI-overstaged tumours remains."
    }
   },
   {
@@ -4999,7 +5047,7 @@
      "No OS benefit overall",
      "Benefit mainly in middle/low tumours"
     ],
-    "critique": "Short-course RT reduces local recurrence even with good TME surgery."
+    "critique": "Short-course RT reduces local recurrence even with quality-assured TME surgery. The benefit is largely in mid/low rectal tumours, and long-term bowel and sexual dysfunction must be weighed."
    }
   },
   {
@@ -5041,7 +5089,7 @@
      "Higher locoregional recurrence in long-term follow-up",
      "No OS benefit"
     ],
-    "critique": "Supports total neoadjuvant therapy, but concerns about local recurrence remain."
+    "critique": "Supports total neoadjuvant therapy with short-course RT for high-risk rectal cancer, doubling pCR. Higher locoregional recurrence in long-term follow-up, especially after breached mesorectum, has tempered enthusiasm."
    }
   },
   {
@@ -5077,13 +5125,14 @@
      "Prior pelvic RT"
     ],
     "strengths": [
-     "DFS and later OS benefit"
+     "DFS and later OS benefit",
+     "Higher pCR"
     ],
     "limitations": [
      "Intensive regimen",
      "Toxicity (neutropenia, diarrhoea)"
     ],
-    "critique": "Total neoadjuvant therapy with FOLFIRINOX improves outcomes for fit patients."
+    "critique": "Intensified TNT with FOLFIRINOX improved DFS and later OS. It is best suited to young, fit patients; toxicity and resource needs limit broader use."
    }
   },
   {
@@ -5110,21 +5159,24 @@
    "id": "opra",
    "appraisal": {
     "inclusion": [
-     "Stage II–III rectal adenocarcinoma",
-     "Candidates for TME surgery"
+     "Stage II–III rectal adenocarcinoma on MRI",
+     "Candidates for TME surgery",
+     "ECOG PS 0–1"
     ],
     "exclusion": [
      "Distant metastases",
-     "Prior pelvic RT"
+     "Prior pelvic RT",
+     "Tumours not suitable for watch-and-wait follow-up"
     ],
     "strengths": [
-     "Organ preservation in ~half with consolidation chemotherapy"
+     "Organ preservation in about half with consolidation chemotherapy",
+     "Structured watch-and-wait protocol"
     ],
     "limitations": [
-     "Phase 2",
-     "Compared to historical TME outcomes"
+     "Phase 2 with comparison to historical TME outcomes",
+     "Regrowth in ~a third of watched patients needs salvage surgery"
     ],
-    "critique": "Watch-and-wait is feasible with consolidation TNT; long-term data needed."
+    "critique": "Watch-and-wait after consolidation TNT is feasible, but it demands rigorous MRI and endoscopic surveillance that many centres cannot provide."
    }
   },
   {
@@ -5150,23 +5202,25 @@
    "id": "prospect",
    "appraisal": {
     "inclusion": [
-     "cT2N+ / cT3N0–1 rectal cancer",
-     "Candidates for sphincter-sparing surgery"
+     "cT2N+ or cT3N0–1 rectal cancer",
+     "Candidates for sphincter-sparing surgery",
+     "MRI-staged"
     ],
     "exclusion": [
-     "T4",
+     "cT4 disease",
      "Low tumours requiring APR",
      "Distant metastases"
     ],
     "strengths": [
-     "Showed FOLFOX alone is non-inferior to chemoRT",
-     "Less long-term toxicity"
+     "Showed FOLFOX alone (with selective chemoRT) is non-inferior for DFS",
+     "Less long-term bowel and sexual toxicity"
     ],
     "limitations": [
      "Only intermediate-risk patients",
-     "Requires high-quality MRI staging"
+     "Requires high-quality MRI staging",
+     "~9% still needed chemoRT"
     ],
-    "critique": "Pelvic RT can be omitted in selected intermediate-risk rectal cancer."
+    "critique": "Pelvic RT can be omitted in selected intermediate-risk rectal cancer, sparing fertility and late bowel effects."
    }
   },
   {
@@ -5194,7 +5248,7 @@
    "appraisal": {
     "inclusion": [
      "Metastatic CRC, first line",
-     "EGFR-expressing",
+     "EGFR-expressing tumour",
      "ECOG PS 0–2"
     ],
     "exclusion": [
@@ -5202,13 +5256,14 @@
      "Prior anti-EGFR therapy"
     ],
     "strengths": [
-     "OS benefit in KRAS wild-type"
+     "OS benefit in KRAS wild-type",
+     "Large trial enabling biomarker discovery"
     ],
     "limitations": [
      "Retrospective biomarker analysis",
-     "Skin toxicity"
+     "Acneiform rash and hypomagnesaemia"
     ],
-    "critique": "Established anti-EGFR therapy in RAS wild-type mCRC."
+    "critique": "Established anti-EGFR therapy for RAS wild-type mCRC. Its biomarker findings were retrospective, but they set the foundation for RAS testing before cetuximab or panitumumab."
    }
   },
   {
@@ -5235,21 +5290,23 @@
    "id": "fire-3-calgb-80405",
    "appraisal": {
     "inclusion": [
-     "RAS wild-type metastatic CRC",
-     "Treatment-naive"
+     "RAS wild-type metastatic CRC (on extended analysis)",
+     "Treatment-naive",
+     "ECOG PS 0–2"
     ],
     "exclusion": [
-     "Prior systemic therapy for metastatic disease"
+     "Prior systemic therapy for metastatic disease",
+     "Contraindication to bevacizumab"
     ],
     "strengths": [
-     "Head-to-head comparison",
-     "Showed sidedness matters"
+     "Head-to-head comparison of biologics",
+     "Generated the primary-sidedness hypothesis"
     ],
     "limitations": [
-     "Primary endpoints not met",
-     "Retrospective sidedness analysis"
+     "Primary endpoints (ORR, OS) not met overall",
+     "Sidedness analysis retrospective"
     ],
-    "critique": "Anti-EGFR preferred for left-sided RAS wild-type tumours."
+    "critique": "Anti-EGFR therapy is preferred for left-sided RAS wild-type tumours and bevacizumab for right-sided. The sidedness effect was found retrospectively, but PARADIGM later confirmed it prospectively."
    }
   },
   {
@@ -5281,16 +5338,18 @@
      "ECOG PS 0–1"
     ],
     "exclusion": [
-     "BRAF mutation",
+     "BRAF V600E mutation",
      "Prior systemic therapy"
     ],
     "strengths": [
-     "Prospective confirmation of left-sided benefit"
+     "Prospective confirmation of left-sided OS benefit for panitumumab",
+     "Primary endpoint in left-sided population"
     ],
     "limitations": [
-     "Japanese population only"
+     "Japanese population only",
+     "No benefit for right-sided tumours"
     ],
-    "critique": "Panitumumab-FOLFOX is standard for left-sided RAS/BRAF wild-type mCRC."
+    "critique": "Panitumumab-FOLFOX is standard first-line for left-sided RAS/BRAF wild-type mCRC. Data come from a Japanese population, but the biology of sidedness appears consistent worldwide."
    }
   },
   {
@@ -5327,13 +5386,13 @@
     ],
     "strengths": [
      "Doubled PFS",
-     "Better quality of life"
+     "Better quality of life and fewer severe adverse events"
     ],
     "limitations": [
      "Early progression in ~30%",
      "OS not statistically significant due to crossover"
     ],
-    "critique": "Pembrolizumab is first-line standard for MSI-H mCRC; early progressors need attention."
+    "critique": "Pembrolizumab is first-line standard for MSI-H mCRC; early progressors (possibly misclassified MMR status) need attention."
    }
   },
   {
@@ -5368,13 +5427,13 @@
      "Active autoimmune disease"
     ],
     "strengths": [
-     "Superior PFS with dual IO"
+     "Superior PFS with dual IO vs chemotherapy and vs nivolumab alone"
     ],
     "limitations": [
-     "More toxicity",
+     "More immune toxicity",
      "OS immature"
     ],
-    "critique": "Nivolumab-ipilimumab is an option; toxicity balance needed."
+    "critique": "Nivolumab-ipilimumab improved PFS over both chemotherapy and nivolumab alone in MSI-H mCRC. Greater immune toxicity and immature OS mean pembrolizumab monotherapy remains a reasonable choice."
    }
   },
   {
@@ -5401,20 +5460,22 @@
    "appraisal": {
     "inclusion": [
      "BRAF V600E metastatic CRC",
-     "BEACON: after 1–2 lines; BREAKWATER: first line"
+     "BEACON: after 1–2 lines; BREAKWATER: first line",
+     "ECOG PS 0–1"
     ],
     "exclusion": [
      "Prior BRAF/EGFR inhibitor",
      "Active brain metastases"
     ],
     "strengths": [
-     "OS benefit in a poor-prognosis group"
+     "OS benefit in a poor-prognosis group",
+     "Better than standard chemotherapy"
     ],
     "limitations": [
-     "Triplet arm not superior in BEACON",
+     "Triplet arm (with binimetinib) not superior in BEACON",
      "Cost"
     ],
-    "critique": "Encorafenib-cetuximab is standard; first-line combination with FOLFOX is now emerging."
+    "critique": "Encorafenib-cetuximab improves OS in BRAF V600E mCRC, a poor-prognosis group. Adding binimetinib gave no further benefit, and BREAKWATER moves the doublet with FOLFOX to first line."
    }
   },
   {
@@ -5441,20 +5502,22 @@
    "appraisal": {
     "inclusion": [
      "HER2-positive, RAS wild-type metastatic CRC",
-     "Previously treated"
+     "Previously treated",
+     "ECOG PS 0–1"
     ],
     "exclusion": [
      "Prior anti-HER2 therapy",
      "History of ILD (DESTINY-CRC)"
     ],
     "strengths": [
-     "High response rates"
+     "High response rates in a chemotherapy-refractory group",
+     "Oral tucatinib combination well tolerated"
     ],
     "limitations": [
      "Single-arm",
      "ILD risk with T-DXd"
     ],
-    "critique": "Supports HER2 testing in mCRC; randomised data are limited."
+    "critique": "Supports HER2 testing in RAS wild-type mCRC (~3–5% HER2-positive). Single-arm data give high response rates, but randomised evidence and cost-effectiveness are lacking."
    }
   },
   {
@@ -5481,7 +5544,8 @@
    "appraisal": {
     "inclusion": [
      "Refractory metastatic CRC",
-     "Prior fluoropyrimidine, oxaliplatin, irinotecan, anti-VEGF ± anti-EGFR"
+     "Prior fluoropyrimidine, oxaliplatin, irinotecan, anti-VEGF ± anti-EGFR",
+     "ECOG PS 0–1"
     ],
     "exclusion": [
      "Prior regorafenib or FTD-TPI (by trial)",
@@ -5495,7 +5559,7 @@
      "Modest gains",
      "Toxicity (regorafenib hand-foot syndrome)"
     ],
-    "critique": "FTD-TPI + bevacizumab is preferred; regorafenib remains an option."
+    "critique": "FTD-TPI with bevacizumab is preferred in later lines because SUNLIGHT showed meaningful OS gain over FTD-TPI alone. Regorafenib's toxicity (hand-foot syndrome, fatigue) often requires dose-escalation strategies (ReDOS)."
    }
   },
   {
@@ -5521,19 +5585,22 @@
    "id": "fresco-2",
    "appraisal": {
     "inclusion": [
-     "Refractory metastatic CRC after standard therapies including FTD-TPI or regorafenib"
+     "Refractory metastatic CRC after standard therapies including FTD-TPI or regorafenib",
+     "ECOG PS 0–1"
     ],
     "exclusion": [
      "Prior fruquintinib",
      "Uncontrolled hypertension"
     ],
     "strengths": [
-     "OS benefit in heavily pretreated patients"
+     "OS benefit in heavily pretreated patients",
+     "Global population"
     ],
     "limitations": [
-     "Modest benefit (~2.6 months)"
+     "Modest benefit (~2.6 months)",
+     "Hypertension and fatigue"
     ],
-    "critique": "Fruquintinib is an additional late-line option."
+    "critique": "Fruquintinib adds a late-line option with modest OS benefit. It is generally better tolerated than regorafenib, but cost is a barrier."
    }
   },
   {
@@ -5560,20 +5627,22 @@
    "appraisal": {
     "inclusion": [
      "Resectable colorectal liver metastases (≤4)",
-     "No extrahepatic disease"
+     "No extrahepatic disease",
+     "WHO PS 0–2"
     ],
     "exclusion": [
      "Prior oxaliplatin",
      "Extrahepatic disease"
     ],
     "strengths": [
-     "PFS benefit"
+     "PFS benefit",
+     "Perioperative design"
     ],
     "limitations": [
      "No OS benefit",
      "Underpowered"
     ],
-    "critique": "Perioperative FOLFOX is reasonable; OS benefit unproven."
+    "critique": "Perioperative FOLFOX improves PFS for resectable liver metastases but not OS. It remains a reasonable option; adding cetuximab (New EPOC) was harmful."
    }
   },
   {
@@ -5601,20 +5670,22 @@
    "appraisal": {
     "inclusion": [
      "Anal SCC, non-metastatic",
-     "Age ≥18"
+     "Age ≥18",
+     "WHO PS 0–2"
     ],
     "exclusion": [
      "Prior pelvic RT",
      "Distant metastases"
     ],
     "strengths": [
-     "Large trial",
+     "Large trial (n=940)",
      "Showed maintenance chemo not needed"
     ],
     "limitations": [
-     "Few HIV-positive patients"
+     "Few HIV-positive patients",
+     "Assessment at 26 weeks — earlier assessment can lead to unnecessary surgery"
     ],
-    "critique": "5-FU/mitomycin with RT remains standard."
+    "critique": "5-FU/mitomycin with RT remains standard. The finding that responses can take 26 weeks prevents premature salvage surgery."
    }
   },
   {
@@ -5648,12 +5719,14 @@
      "Prior pelvic RT"
     ],
     "strengths": [
-     "Showed cisplatin induction inferior"
+     "Showed cisplatin induction inferior",
+     "Long-term follow-up"
     ],
     "limitations": [
-     "Induction delayed RT"
+     "Induction delayed RT",
+     "Not designed to test cisplatin without induction"
     ],
-    "critique": "Confirmed mitomycin-based chemoRT as standard."
+    "critique": "Confirmed 5-FU/mitomycin chemoRT as standard for anal cancer; cisplatin induction delayed RT and worsened colostomy-free survival."
    }
   },
   {
@@ -5688,12 +5761,14 @@
      "Active autoimmune disease"
     ],
     "strengths": [
-     "PFS benefit"
+     "PFS benefit",
+     "First positive IO trial in anal cancer"
     ],
     "limitations": [
-     "OS immature"
+     "OS immature",
+     "Modest PFS gain"
     ],
-    "critique": "First positive IO trial in anal cancer; adds retifanlimab to first-line chemotherapy."
+    "critique": "First positive immunotherapy trial in advanced anal SCC, adding retifanlimab to carboplatin-paclitaxel. OS data are awaited, and access to the drug is limited outside trials."
    }
   },
   {
@@ -5943,11 +6018,12 @@
      "Brain metastases"
     ],
     "strengths": [
-     "OS benefit over gem-nab-paclitaxel (11.1 vs 9.2 months)"
+     "OS benefit over gem-nab-paclitaxel (11.1 vs 9.2 months)",
+     "Large global trial"
     ],
     "limitations": [
      "No comparison with FOLFIRINOX",
-     "Liposomal irinotecan expensive"
+     "Liposomal irinotecan is expensive"
     ],
     "critique": "NALIRIFOX is an option, but many view it as FOLFIRINOX with a costlier irinotecan; FOLFIRINOX remains equally reasonable."
    }
@@ -6074,9 +6150,9 @@
     ],
     "limitations": [
      "Gemcitabine-based regimen — not modern multi-agent chemotherapy",
-     "Primary OS endpoint not significant initially; benefit emerged with longer follow-up"
+     "OS benefit emerged only with longer follow-up"
     ],
-    "critique": "Supports a neoadjuvant approach, especially for borderline resectable disease. PREOPANC-2 and others test FOLFIRINOX-based strategies."
+    "critique": "Supports a neoadjuvant approach, especially for borderline resectable disease. PREOPANC-2 tests FOLFIRINOX-based strategies."
    }
   },
   {
@@ -6111,7 +6187,8 @@
      "Child-Pugh B or C"
     ],
     "strengths": [
-     "First systemic therapy to improve OS in HCC (10.7 vs 7.9 months)"
+     "First systemic therapy to improve OS in HCC (10.7 vs 7.9 months)",
+     "Double-blind"
     ],
     "limitations": [
      "Modest benefit",
@@ -6154,13 +6231,14 @@
      "Bile duct invasion"
     ],
     "strengths": [
-     "Non-inferior OS to sorafenib with better PFS and response"
+     "Non-inferior OS to sorafenib with better PFS and response",
+     "Large Asian representation"
     ],
     "limitations": [
      "Excluded high-risk patients (main portal vein invasion)",
      "Hypertension and proteinuria"
     ],
-    "critique": "Lenvatinib is an alternative first-line option when immunotherapy is not suitable."
+    "critique": "Lenvatinib is non-inferior to sorafenib with better response and PFS. It remains a first-line option when immunotherapy is unsuitable, though high-risk patients were excluded."
    }
   },
   {
@@ -6247,7 +6325,7 @@
      "Immune toxicity",
      "Single priming dose of tremelimumab may be impractical in some settings"
     ],
-    "critique": "STRIDE is an option for patients with bleeding risk or contraindications to bevacizumab."
+    "critique": "STRIDE gives durable OS benefit with a single tremelimumab priming dose. It avoids bevacizumab, making it useful for patients with bleeding risk or varices."
    }
   },
   {
@@ -6282,12 +6360,14 @@
      "Active autoimmune disease"
     ],
     "strengths": [
-     "OS benefit over lenvatinib or sorafenib"
+     "OS benefit over lenvatinib or sorafenib",
+     "Durable responses"
     ],
     "limitations": [
-     "Immune toxicity, including hepatitis"
+     "Immune toxicity, including hepatitis",
+     "Higher early death rate in IO arm"
     ],
-    "critique": "Nivo-ipi is another first-line option; choice among IO regimens depends on comorbidities and access."
+    "critique": "Nivolumab-ipilimumab adds a first-line option for HCC. More early deaths in the IO arm suggest careful selection of fit patients."
    }
   },
   {
@@ -6329,7 +6409,7 @@
      "Modest median gain",
      "Benefit less in gallbladder cancer"
     ],
-    "critique": "Durvalumab-gem-cis is first-line standard; relevant to India where gallbladder cancer is common."
+    "critique": "Durvalumab with gem-cis is first-line standard for biliary tract cancer. The median OS gain is modest, but a tail of long-term survivors exists; gallbladder cancer, common in North India, showed less benefit."
    }
   },
   {
@@ -6360,15 +6440,18 @@
      "ECOG PS 0–2"
     ],
     "exclusion": [
-     "Prior chemotherapy"
+     "Prior chemotherapy",
+     "Uncontrolled biliary obstruction"
     ],
     "strengths": [
-     "OS benefit (11.7 vs 8.1 months)"
+     "OS benefit (11.7 vs 8.1 months)",
+     "Established gem-cis backbone"
     ],
     "limitations": [
-     "Pre-IO era"
+     "Pre-IO era",
+     "Heterogeneous biliary sites"
     ],
-    "critique": "Established gem-cis as standard backbone for advanced biliary cancer."
+    "critique": "Established gem-cis as the standard chemotherapy backbone for advanced biliary cancer, on which immunotherapy has since been added."
    }
   },
   {
@@ -6403,13 +6486,14 @@
      "Prior therapy"
     ],
     "strengths": [
-     "OS benefit in per-protocol analysis"
+     "OS benefit in per-protocol analysis",
+     "Low-cost oral therapy"
     ],
     "limitations": [
      "ITT OS difference not significant",
      "Heterogeneous biliary sites"
     ],
-    "critique": "Capecitabine is standard adjuvant therapy, though the evidence is modest."
+    "critique": "Capecitabine is standard adjuvant therapy for resected biliary cancer. The ITT analysis was negative, so the evidence relies on per-protocol and sensitivity analyses."
    }
   },
   {
@@ -6437,19 +6521,21 @@
    "appraisal": {
     "inclusion": [
      "IDH1-mutant (ClarIDHy) or FGFR2-fusion (FIGHT-202) cholangiocarcinoma",
-     "Previously treated"
+     "Previously treated",
+     "ECOG PS 0–1"
     ],
     "exclusion": [
      "Prior targeted therapy against same target"
     ],
     "strengths": [
-     "Established targeted therapy in biliary cancer"
+     "Established targeted therapy in biliary cancer",
+     "Well tolerated oral agents"
     ],
     "limitations": [
      "FIGHT-202 single-arm",
      "Modest PFS in ClarIDHy; OS benefit only after crossover adjustment"
     ],
-    "critique": "Supports molecular testing in intrahepatic cholangiocarcinoma."
+    "critique": "Supports NGS in intrahepatic cholangiocarcinoma, where IDH1 and FGFR2 alterations are targetable. Benefits are modest and drug access in India is limited."
    }
   },
   {
@@ -6491,7 +6577,7 @@
      "Open-label",
      "OS difference not statistically significant"
     ],
-    "critique": "PRRT is the standard second-line therapy for midgut NET."
+    "critique": "PRRT is the standard second-line therapy for progressive midgut NET. The PFS benefit is large, but the final OS difference was not statistically significant, partly due to crossover."
    }
   },
   {
@@ -6518,20 +6604,22 @@
    "id": "netter-2",
    "appraisal": {
     "inclusion": [
-     "Newly diagnosed SSTR+ grade 2/3 GEP-NET (Ki-67 10–55%)"
+     "Newly diagnosed SSTR+ grade 2/3 GEP-NET (Ki-67 10–55%)",
+     "SSTR-positive on imaging"
     ],
     "exclusion": [
      "Prior PRRT",
      "Poorly differentiated carcinoma"
     ],
     "strengths": [
-     "PFS benefit in first line"
+     "PFS benefit in first line",
+     "Higher response rate"
     ],
     "limitations": [
      "OS immature",
      "High-dose octreotide control"
     ],
-    "critique": "First-line PRRT is an option for higher-grade NETs."
+    "critique": "First-line PRRT improves PFS in higher-grade (G2/G3) GEP-NETs. OS data are immature and access to Lu-177 DOTATATE is limited in India."
    }
   },
   {
@@ -6557,7 +6645,8 @@
    "id": "promid-clarinet",
    "appraisal": {
     "inclusion": [
-     "Well-differentiated GEP-NET (midgut in PROMID; GEP-NET with Ki-67 <10% in CLARINET)"
+     "Well-differentiated GEP-NET (midgut in PROMID; GEP-NET with Ki-67 <10% in CLARINET)",
+     "SSTR-positive (CLARINET)"
     ],
     "exclusion": [
      "Prior SSA",
@@ -6571,7 +6660,7 @@
      "No OS benefit",
      "Mostly low-grade tumours"
     ],
-    "critique": "SSAs are first-line therapy for well-differentiated NETs."
+    "critique": "SSAs are first-line antiproliferative therapy for well-differentiated NETs, with modest PFS benefit and good tolerability."
    }
   },
   {
@@ -6606,13 +6695,14 @@
      "Poorly differentiated tumours"
     ],
     "strengths": [
-     "PFS benefit"
+     "PFS benefit",
+     "Oral agents"
     ],
     "limitations": [
      "No OS benefit",
      "Stomatitis, hyperglycaemia (everolimus); hypertension (sunitinib)"
     ],
-    "critique": "Everolimus and sunitinib are options after SSAs."
+    "critique": "Everolimus and sunitinib are options after SSAs, chosen by site and toxicity profile. Neither improved OS significantly."
    }
   },
   {
@@ -6642,15 +6732,18 @@
      "Progressive within 12 months"
     ],
     "exclusion": [
-     "Prior temozolomide or dacarbazine"
+     "Prior temozolomide or dacarbazine",
+     "Poorly differentiated tumours"
     ],
     "strengths": [
-     "PFS and OS benefit"
+     "PFS and OS benefit",
+     "Oral regimen"
     ],
     "limitations": [
-     "Myelosuppression"
+     "Myelosuppression",
+     "Phase 2 design"
     ],
-    "critique": "CAPTEM is an effective option for pancreatic NETs."
+    "critique": "CAPTEM improves PFS and OS over temozolomide alone in pancreatic NETs. It is an inexpensive oral regimen well suited to Indian practice."
    }
   },
   {
@@ -6777,7 +6870,7 @@
      "Low RT dose (70 Gy)",
      "ADT side effects (metabolic, bone)"
     ],
-    "critique": "Established long-term ADT with RT for high-risk disease; duration (18–36 months) remains individualised."
+    "critique": "Established long-term ADT with RT for high-risk prostate cancer. The RT dose (70 Gy) is lower than modern standards, but the benefit of 2–3 years ADT has been confirmed in later trials."
    }
   },
   {
@@ -6820,7 +6913,7 @@
      "Low proportion of high-risk patients",
      "Most received short-course ADT"
     ],
-    "critique": "60 Gy/20 is standard moderate hypofractionation and saves 3 weeks of treatment."
+    "critique": "60 Gy in 20 fractions is now standard moderate hypofractionation, saving three weeks of treatment. Most patients also received short-course ADT, which may have influenced outcomes."
    }
   },
   {
@@ -6859,9 +6952,10 @@
      "Short overall treatment (1–2 weeks)"
     ],
     "limitations": [
-     "Higher acute GU toxicity in HYPO-RT-PC"
+     "Higher acute GU toxicity in HYPO-RT-PC",
+     "Low/intermediate-risk only"
     ],
-    "critique": "Ultra-hypofractionation (5 fractions) is a standard option for low-intermediate risk."
+    "critique": "Five-fraction SBRT is a standard option for low- and intermediate-risk prostate cancer, with non-inferior biochemical control. Higher acute urinary toxicity in HYPO-RT-PC was transient."
    }
   },
   {
@@ -6887,20 +6981,22 @@
    "id": "ascende-rt",
    "appraisal": {
     "inclusion": [
-     "Intermediate or high-risk localised prostate cancer"
+     "Intermediate or high-risk localised prostate cancer",
+     "All received 12 months ADT"
     ],
     "exclusion": [
      "Distant metastases",
      "Prior TURP"
     ],
     "strengths": [
-     "Improved biochemical control with LDR boost"
+     "Improved biochemical control with LDR boost",
+     "Long-term follow-up"
     ],
     "limitations": [
      "Higher GU toxicity",
      "No OS benefit"
     ],
-    "critique": "Brachytherapy boost improves PSA control but at higher urinary toxicity cost."
+    "critique": "LDR brachytherapy boost nearly halved biochemical failure. Higher late urinary toxicity and lack of OS benefit mean careful patient selection."
    }
   },
   {
@@ -6939,9 +7035,10 @@
      "Avoided overtreatment in ~half"
     ],
     "limitations": [
-     "Few very high-risk patients (pN1, Gleason 8–10)"
+     "Few very high-risk patients (pN1, Gleason 8–10)",
+     "Low event rates"
     ],
-    "critique": "Early salvage RT is preferred; adjuvant RT for very high-risk features remains debated."
+    "critique": "Early salvage RT is preferred over routine adjuvant RT after prostatectomy, avoiding RT in many men. Few very high-risk patients were included, so adjuvant RT may still benefit them."
    }
   },
   {
@@ -6976,13 +7073,14 @@
      "Contraindication to RT"
     ],
     "strengths": [
-     "OS benefit for low metastatic burden"
+     "OS benefit for low metastatic burden",
+     "Large multi-arm trial"
     ],
     "limitations": [
      "No benefit in high-burden disease",
      "Burden defined by CHAARTED criteria on conventional imaging"
     ],
-    "critique": "Prostate RT is standard for low-volume mHSPC."
+    "critique": "Prostate RT improves OS in low-volume mHSPC. It is not effective in high-volume disease; volume is defined by conventional imaging, not PSMA-PET."
    }
   },
   {
@@ -7016,13 +7114,14 @@
      "ADT started >120 days before randomisation"
     ],
     "strengths": [
-     "OS benefit for high-volume disease"
+     "OS benefit for high-volume disease",
+     "Defined high- vs low-volume"
     ],
     "limitations": [
      "No benefit in low-volume",
      "Toxicity (neutropenia, neuropathy)"
     ],
-    "critique": "Docetaxel benefit is clear in high-volume disease."
+    "critique": "Docetaxel with ADT improves OS in high-volume mHSPC, but not clearly in low-volume disease. Triplet therapy has since evolved from this foundation."
    }
   },
   {
@@ -7056,12 +7155,14 @@
      "Uncontrolled hypertension"
     ],
     "strengths": [
-     "Large OS benefit"
+     "Large OS benefit",
+     "Benefit in both trials"
     ],
     "limitations": [
-     "Mineralocorticoid side effects (hypertension, hypokalaemia)"
+     "Mineralocorticoid side effects (hypertension, hypokalaemia)",
+     "Prednisone needed"
     ],
-    "critique": "Abiraterone is a standard addition to ADT; low-cost generics make it accessible in India."
+    "critique": "Abiraterone with ADT improves OS in high-risk mHSPC. Inexpensive generics make it highly relevant in India, but hypertension and hypokalaemia need monitoring."
    }
   },
   {
@@ -7096,12 +7197,14 @@
      "Seizure history (enzalutamide)"
     ],
     "strengths": [
-     "OS benefit across volumes"
+     "OS benefit across volumes",
+     "Three concordant trials"
     ],
     "limitations": [
-     "Fatigue and falls"
+     "Fatigue and falls",
+     "Cost"
     ],
-    "critique": "ARPIs with ADT are standard regardless of volume."
+    "critique": "ARPIs with ADT improve OS in mHSPC across disease volumes. Fatigue, falls and cost are the main considerations."
    }
   },
   {
@@ -7136,13 +7239,14 @@
      "Uncontrolled hypertension"
     ],
     "strengths": [
-     "OS benefit for triplet therapy"
+     "OS benefit for triplet therapy",
+     "Consistent across trials"
     ],
     "limitations": [
      "Toxicity",
      "Doublet ARPI comparison lacking"
     ],
-    "critique": "Triplet therapy is an option for high-volume de novo disease."
+    "critique": "Triplet therapy (ADT + docetaxel + ARPI) improves OS over ADT + docetaxel in de novo mHSPC. No trial compares triplet with ADT + ARPI doublet, which is the key unanswered question."
    }
   },
   {
@@ -7176,12 +7280,14 @@
      "Seizure history (apalutamide/enzalutamide)"
     ],
     "strengths": [
-     "Metastasis-free and OS benefit"
+     "Metastasis-free and OS benefit",
+     "Three concordant trials"
     ],
     "limitations": [
-     "PSMA-PET would reclassify many patients as metastatic"
+     "PSMA-PET would reclassify many patients as metastatic",
+     "Fatigue, falls, rash"
     ],
-    "critique": "ARPIs are standard for high-risk nmCRPC, though PSMA-PET changes definitions."
+    "critique": "ARPIs delay metastasis and improve OS in high-risk nmCRPC. With PSMA-PET, most such patients would now be reclassified as metastatic."
    }
   },
   {
@@ -7216,13 +7322,14 @@
      "Seizure history"
     ],
     "strengths": [
-     "Metastasis-free survival benefit"
+     "Metastasis-free survival benefit",
+     "Enzalutamide monotherapy arm offered testosterone-sparing option"
     ],
     "limitations": [
      "OS immature",
      "PSMA-PET not used"
     ],
-    "critique": "Enzalutamide + leuprolide is an option for high-risk BCR."
+    "critique": "Enzalutamide with ADT improves metastasis-free survival in high-risk biochemical recurrence. OS data and PSMA-PET staging will shape its use."
    }
   },
   {
@@ -7256,12 +7363,14 @@
      "Brain metastases"
     ],
     "strengths": [
-     "OS benefit"
+     "OS benefit",
+     "Large trial"
     ],
     "limitations": [
-     "Modest gain (~2.5 months)"
+     "Modest gain (~2.5 months)",
+     "Neutropenia"
     ],
-    "critique": "Docetaxel became the first chemotherapy to improve OS in mCRPC."
+    "critique": "Docetaxel was the first chemotherapy to prolong survival in mCRPC. The 3-weekly schedule became standard."
    }
   },
   {
@@ -7295,12 +7404,14 @@
      "Visceral metastases (COU-AA-302)"
     ],
     "strengths": [
-     "OS benefit"
+     "OS benefit",
+     "Oral therapy"
     ],
     "limitations": [
-     "Cross-resistance between ARPIs"
+     "Cross-resistance between ARPIs",
+     "Cost"
     ],
-    "critique": "ARPIs are standard; sequencing two ARPIs is less effective."
+    "critique": "Abiraterone and enzalutamide improve OS in mCRPC before and after docetaxel. Cross-resistance means switching ARPIs is less effective."
    }
   },
   {
@@ -7333,12 +7444,14 @@
      "Grade ≥2 neuropathy"
     ],
     "strengths": [
-     "OS benefit"
+     "OS benefit",
+     "CARD showed superiority over ARPI switch"
     ],
     "limitations": [
-     "Neutropenia"
+     "Neutropenia",
+     "G-CSF often needed"
     ],
-    "critique": "Cabazitaxel is preferred over a second ARPI after docetaxel and one ARPI."
+    "critique": "Cabazitaxel improves OS after docetaxel and is better than switching ARPI (CARD). Neutropenia requires G-CSF prophylaxis."
    }
   },
   {
@@ -7373,12 +7486,14 @@
      "Bulky nodes >3 cm"
     ],
     "strengths": [
-     "OS benefit"
+     "OS benefit",
+     "Delayed skeletal events"
     ],
     "limitations": [
-     "Pre-ARPI era"
+     "Pre-ARPI era",
+     "Combination with abiraterone increased fractures (ERA 223)"
     ],
-    "critique": "Radium-223 is an option for bone-only disease."
+    "critique": "Radium-223 improves OS in bone-only mCRPC. Combination with abiraterone increased fractures (ERA 223), so bone health agents are recommended."
    }
   },
   {
@@ -7413,12 +7528,14 @@
      "Prior radioligand therapy"
     ],
     "strengths": [
-     "OS benefit"
+     "OS benefit",
+     "Quality of life benefit"
     ],
     "limitations": [
-     "Control arm excluded chemotherapy"
+     "Control arm excluded chemotherapy",
+     "Open-label with early dropout in control"
     ],
-    "critique": "Lu-PSMA is standard in later lines."
+    "critique": "Lu-PSMA improves OS in heavily pretreated mCRPC. The control arm excluded chemotherapy and had early dropouts, which may favour Lu-PSMA."
    }
   },
   {
@@ -7451,12 +7568,14 @@
      "PSMA-negative lesions"
     ],
     "strengths": [
-     "rPFS benefit"
+     "rPFS benefit",
+     "Better tolerability than taxanes"
     ],
     "limitations": [
-     "OS confounded by crossover"
+     "OS confounded by crossover",
+     "Control arm was ARPI switch"
     ],
-    "critique": "Lu-PSMA is an option before docetaxel."
+    "critique": "Lu-PSMA before docetaxel improves rPFS, but OS is confounded by crossover. It is an option for patients unfit or unwilling for chemotherapy."
    }
   },
   {
@@ -7490,12 +7609,14 @@
      "MDS/AML"
     ],
     "strengths": [
-     "OS benefit in BRCA1/2, ATM cohort"
+     "OS benefit in BRCA1/2, ATM cohort",
+     "Biomarker-driven"
     ],
     "limitations": [
-     "Benefit driven by BRCA"
+     "Benefit driven by BRCA",
+     "Control arm was ARPI switch"
     ],
-    "critique": "Olaparib is standard for BRCA-mutated mCRPC."
+    "critique": "Olaparib improves OS in mCRPC with BRCA1/2 or ATM alterations. Benefit in other HRR genes is uncertain, and the control arm was ARPI switch."
    }
   },
   {
@@ -7534,9 +7655,10 @@
      "Benefit in HRR-mutated"
     ],
     "limitations": [
-     "Limited benefit in HRR-negative"
+     "Limited benefit in HRR-negative",
+     "Anaemia"
     ],
-    "critique": "PARPi + ARPI is best for HRR-altered patients."
+    "critique": "PARPi + ARPI improves rPFS in first-line mCRPC, mainly in HRR-mutated patients. Use in HRR-negative patients is debated."
    }
   },
   {
@@ -7563,18 +7685,22 @@
    "id": "swog-8710",
    "appraisal": {
     "inclusion": [
-     "MIBC T2–T4a"
+     "MIBC T2–T4a",
+     "Fit for cystectomy"
     ],
     "exclusion": [
-     "Distant metastases"
+     "Distant metastases",
+     "Prior chemotherapy"
     ],
     "strengths": [
-     "OS benefit"
+     "OS benefit",
+     "Long-term follow-up"
     ],
     "limitations": [
-     "Toxicity"
+     "Toxicity",
+     "Slow accrual"
     ],
-    "critique": "Established neoadjuvant cisplatin-based chemo."
+    "critique": "Established neoadjuvant cisplatin-based chemotherapy for MIBC, improving survival. Toxicity and slow accrual reflect the challenges of neoadjuvant therapy."
    }
   },
   {
@@ -7600,18 +7726,22 @@
    "id": "vesper",
    "appraisal": {
     "inclusion": [
-     "MIBC, cisplatin-eligible"
+     "MIBC, cisplatin-eligible",
+     "Fit for cystectomy"
     ],
     "exclusion": [
-     "Distant metastases"
+     "Distant metastases",
+     "Prior chemotherapy"
     ],
     "strengths": [
-     "Improved PFS with ddMVAC"
+     "Improved PFS with ddMVAC",
+     "OS signal"
     ],
     "limitations": [
-     "Toxicity"
+     "Toxicity",
+     "Fewer cycles in gem-cis arm"
     ],
-    "critique": "ddMVAC is a preferred neoadjuvant option."
+    "critique": "Dose-dense MVAC gives better PFS than gem-cis. Toxicity is higher, so patient selection matters."
    }
   },
   {
@@ -7638,18 +7768,22 @@
    "id": "niagara",
    "appraisal": {
     "inclusion": [
-     "Cisplatin-eligible MIBC"
+     "Cisplatin-eligible MIBC",
+     "Fit for cystectomy"
     ],
     "exclusion": [
-     "Prior immunotherapy"
+     "Prior immunotherapy",
+     "Active autoimmune disease"
     ],
     "strengths": [
-     "EFS and OS benefit"
+     "EFS and OS benefit",
+     "Perioperative design"
     ],
     "limitations": [
-     "Contribution of adjuvant phase unclear"
+     "Contribution of adjuvant phase unclear",
+     "Immune toxicity"
     ],
-    "critique": "Perioperative durvalumab is a new standard."
+    "critique": "Perioperative durvalumab with gem-cis improves EFS and OS in cisplatin-eligible MIBC. Because durvalumab was given both before and after surgery, the contribution of each phase cannot be separated, and only cisplatin-eligible patients were studied."
    }
   },
   {
@@ -7675,18 +7809,22 @@
    "id": "checkmate-274",
    "appraisal": {
     "inclusion": [
-     "High-risk MIUC after radical surgery"
+     "High-risk MIUC after radical surgery",
+     "With or without prior neoadjuvant chemo"
     ],
     "exclusion": [
-     "Prior immunotherapy"
+     "Prior immunotherapy",
+     "Active autoimmune disease"
     ],
     "strengths": [
-     "DFS benefit"
+     "DFS benefit",
+     "Double-blind"
     ],
     "limitations": [
-     "OS data immature"
+     "OS data immature",
+     "Upper tract subgroup less clear"
     ],
-    "critique": "Adjuvant nivolumab is standard for high-risk resected MIUC."
+    "critique": "Adjuvant nivolumab improves DFS in high-risk MIUC after surgery. OS data are immature, and the benefit in upper-tract tumours and PD-L1-negative disease is less certain."
    }
   },
   {
@@ -7713,18 +7851,22 @@
    "id": "bc2001",
    "appraisal": {
     "inclusion": [
-     "MIBC T2–T4a"
+     "MIBC T2–T4a",
+     "Suitable for RT"
     ],
     "exclusion": [
-     "Distant metastases"
+     "Distant metastases",
+     "Prior pelvic RT"
     ],
     "strengths": [
-     "Improved locoregional control"
+     "Improved locoregional control",
+     "Bladder preservation"
     ],
     "limitations": [
-     "No OS benefit"
+     "No OS benefit",
+     "Older RT technique"
     ],
-    "critique": "Chemoradiotherapy with 5-FU/MMC is standard for bladder preservation."
+    "critique": "Chemoradiotherapy with 5-FU/MMC improves locoregional control for bladder preservation. OS was not improved, but bladder preservation is a key quality-of-life benefit."
    }
   },
   {
@@ -7750,18 +7892,22 @@
    "id": "pout",
    "appraisal": {
     "inclusion": [
-     "Upper-tract urothelial carcinoma pT2–T4 or N+"
+     "Upper-tract urothelial carcinoma pT2–T4 or N+",
+     "Within 90 days of nephroureterectomy"
     ],
     "exclusion": [
-     "Distant metastases"
+     "Distant metastases",
+     "Prior chemotherapy"
     ],
     "strengths": [
-     "DFS benefit"
+     "DFS benefit",
+     "Randomised in rare cancer"
     ],
     "limitations": [
-     "OS benefit not significant"
+     "OS benefit not significant",
+     "Carboplatin used if renal function poor"
     ],
-    "critique": "Adjuvant chemotherapy is standard for UTUC."
+    "critique": "Adjuvant chemotherapy improves DFS in UTUC. Carboplatin was used for patients with poor renal function."
    }
   },
   {
@@ -7791,15 +7937,18 @@
      "Advanced UC without progression after first-line platinum"
     ],
     "exclusion": [
-     "Prior immunotherapy"
+     "Prior immunotherapy",
+     "Active autoimmune disease"
     ],
     "strengths": [
-     "OS benefit"
+     "OS benefit",
+     "Maintenance strategy"
     ],
     "limitations": [
-     "Pre-EV/pembro era"
+     "Pre-EV/pembro era",
+     "Selected responders"
     ],
-    "critique": "Avelumab maintenance remains an option after platinum."
+    "critique": "Avelumab maintenance improves OS after platinum. Its role has diminished with EV-pembro first-line."
    }
   },
   {
@@ -7826,18 +7975,22 @@
    "id": "ev-302",
    "appraisal": {
     "inclusion": [
-     "Untreated advanced urothelial carcinoma"
+     "Untreated advanced urothelial carcinoma",
+     "Cisplatin-eligible or ineligible"
     ],
     "exclusion": [
-     "Prior systemic therapy"
+     "Prior systemic therapy",
+     "Active CNS metastases"
     ],
     "strengths": [
-     "Large OS benefit"
+     "Large OS benefit",
+     "Benefit across subgroups"
     ],
     "limitations": [
-     "Toxicity (rash, neuropathy, hyperglycaemia)"
+     "Toxicity (rash, neuropathy, hyperglycaemia)",
+     "Cost"
     ],
-    "critique": "EV-pembro is the new first-line standard."
+    "critique": "EV-pembro roughly doubles OS over platinum chemotherapy in first-line advanced urothelial cancer — a landmark shift. Rash, neuropathy and hyperglycaemia require monitoring, and cost is a major barrier in India."
    }
   },
   {
@@ -7863,18 +8016,22 @@
    "id": "checkmate-901-gem-cis-nivo",
    "appraisal": {
     "inclusion": [
-     "Cisplatin-eligible advanced UC"
+     "Cisplatin-eligible advanced UC",
+     "Treatment-naive"
     ],
     "exclusion": [
-     "Prior systemic therapy"
+     "Prior systemic therapy",
+     "Active autoimmune disease"
     ],
     "strengths": [
-     "OS benefit"
+     "OS benefit",
+     "Cisplatin-based combination"
     ],
     "limitations": [
-     "Superseded by EV-302"
+     "Superseded by EV-302",
+     "Cisplatin-eligible only"
     ],
-    "critique": "Nivo-gem-cis is an option for cisplatin-eligible patients."
+    "critique": "Nivolumab with gem-cis improves OS in cisplatin-eligible advanced UC. EV-pembro is now preferred."
    }
   },
   {
@@ -7900,18 +8057,22 @@
    "id": "thor",
    "appraisal": {
     "inclusion": [
-     "FGFR-altered advanced UC after ARPI/IO"
+     "FGFR-altered advanced UC after ARPI/IO",
+     "ECOG PS 0–2"
     ],
     "exclusion": [
-     "Prior FGFR inhibitor"
+     "Prior FGFR inhibitor",
+     "Central serous retinopathy"
     ],
     "strengths": [
-     "OS benefit"
+     "OS benefit",
+     "Biomarker-driven"
     ],
     "limitations": [
-     "Hyperphosphataemia and eye toxicity"
+     "Hyperphosphataemia and eye toxicity",
+     "Requires FGFR testing"
     ],
-    "critique": "Erdafitinib is standard for FGFR-altered UC."
+    "critique": "Erdafitinib improves OS in FGFR-altered UC after prior therapy, supporting routine FGFR testing. Hyperphosphataemia, nail and ocular toxicity need monitoring."
    }
   },
   {
@@ -7938,18 +8099,22 @@
    "appraisal": {
     "inclusion": [
      "Advanced clear-cell RCC",
-     "Treatment-naive"
+     "Treatment-naive",
+     "KPS ≥70"
     ],
     "exclusion": [
-     "Brain metastases"
+     "Brain metastases",
+     "Active autoimmune disease"
     ],
     "strengths": [
-     "Durable OS benefit in intermediate/poor risk"
+     "Durable OS benefit in intermediate/poor risk",
+     "Long-term follow-up"
     ],
     "limitations": [
-     "Immune toxicity"
+     "Immune toxicity",
+     "No benefit in favourable risk"
     ],
-    "critique": "Nivo-ipi is a standard first-line option."
+    "critique": "Nivo-ipi gives durable long-term OS benefit in intermediate/poor-risk ccRCC, with a plateau of long-term responders. In favourable-risk disease, sunitinib did as well, and immune toxicity needs experienced management."
    }
   },
   {
@@ -7976,18 +8141,22 @@
    "appraisal": {
     "inclusion": [
      "Advanced ccRCC",
-     "Treatment-naive"
+     "Treatment-naive",
+     "KPS ≥70"
     ],
     "exclusion": [
-     "Brain metastases"
+     "Brain metastases",
+     "Active autoimmune disease"
     ],
     "strengths": [
-     "OS benefit"
+     "OS benefit",
+     "High response rates"
     ],
     "limitations": [
-     "Toxicity of TKIs"
+     "Toxicity of TKIs",
+     "Comparator sunitinib"
     ],
-    "critique": "IO-TKI combinations are standard."
+    "critique": "IO-TKI combinations improve OS over sunitinib in advanced ccRCC and achieve high response rates. TKI toxicity requires dose management, and long-term durability vs nivo-ipi is still debated."
    }
   },
   {
@@ -8014,18 +8183,22 @@
    "id": "keynote-564",
    "appraisal": {
     "inclusion": [
-     "High-risk ccRCC after nephrectomy"
+     "High-risk ccRCC after nephrectomy",
+     "ECOG PS 0–1"
     ],
     "exclusion": [
-     "Distant metastases"
+     "Distant metastases",
+     "Prior systemic therapy"
     ],
     "strengths": [
-     "DFS and OS benefit"
+     "DFS and OS benefit",
+     "Double-blind"
     ],
     "limitations": [
-     "Toxicity"
+     "Toxicity",
+     "Overtreatment of some cured patients"
     ],
-    "critique": "Adjuvant pembrolizumab is standard."
+    "critique": "Adjuvant pembrolizumab improves DFS and OS in high-risk ccRCC after nephrectomy. Many patients are cured by surgery alone and are exposed to immune toxicity without benefit."
    }
   },
   {
@@ -8050,19 +8223,22 @@
    "id": "carmena",
    "appraisal": {
     "inclusion": [
-     "Synchronous mRCC, intermediate/poor risk"
+     "Synchronous mRCC, intermediate/poor risk",
+     "Candidates for nephrectomy"
     ],
     "exclusion": [
-     "Prior systemic therapy"
+     "Prior systemic therapy",
+     "Brain metastases"
     ],
     "strengths": [
-     "Showed sunitinib alone non-inferior"
+     "Showed sunitinib alone non-inferior",
+     "Prospective trial"
     ],
     "limitations": [
      "Poor accrual",
      "High-risk patients"
     ],
-    "critique": "Cytoreductive nephrectomy is not mandatory in intermediate/poor risk."
+    "critique": "Showed sunitinib alone is non-inferior to cytoreductive nephrectomy followed by sunitinib in intermediate/poor-risk mRCC. Poor accrual and a high-risk population limit applicability to the IO era."
    }
   },
   {
@@ -8088,18 +8264,22 @@
    "id": "litespark-005",
    "appraisal": {
     "inclusion": [
-     "Advanced ccRCC after IO and VEGF-TKI"
+     "Advanced ccRCC after IO and VEGF-TKI",
+     "KPS ≥70"
     ],
     "exclusion": [
-     "Prior HIF-2α inhibitor"
+     "Prior HIF-2α inhibitor",
+     "Hypoxia"
     ],
     "strengths": [
-     "PFS benefit"
+     "PFS benefit",
+     "Oral therapy"
     ],
     "limitations": [
-     "OS not significant"
+     "OS not significant",
+     "Anaemia and hypoxia"
     ],
-    "critique": "Belzutifan is an option in later lines."
+    "critique": "Belzutifan improves PFS in advanced ccRCC after IO and VEGF-TKI. OS was not improved."
    }
   },
   {
@@ -8126,18 +8306,22 @@
    "id": "einhorn-pvb-bep-williams",
    "appraisal": {
     "inclusion": [
-     "Disseminated germ cell tumours"
+     "Disseminated germ cell tumours",
+     "Adequate organ function"
     ],
     "exclusion": [
-     "Prior chemotherapy"
+     "Prior chemotherapy",
+     "Poor renal function"
     ],
     "strengths": [
-     "Reduced toxicity with BEP"
+     "Reduced toxicity with BEP",
+     "Equivalent efficacy"
     ],
     "limitations": [
-     "Older trial"
+     "Older trial",
+     "Bleomycin lung toxicity"
     ],
-    "critique": "BEP is standard for germ cell tumours."
+    "critique": "BEP replaced PVB with less neuromuscular toxicity and equivalent efficacy. It remains the standard for germ cell tumours."
    }
   },
   {
@@ -8162,18 +8346,22 @@
    "id": "igcccg",
    "appraisal": {
     "inclusion": [
-     "Metastatic GCT"
+     "Metastatic GCT",
+     "Treated with cisplatin-based chemotherapy"
     ],
     "exclusion": [
-     "None"
+     "None (retrospective)",
+     "Primary mediastinal non-seminoma"
     ],
     "strengths": [
-     "Defined prognostic groups"
+     "Defined prognostic groups",
+     "Widely validated"
     ],
     "limitations": [
-     "Retrospective"
+     "Retrospective",
+     "Older data"
     ],
-    "critique": "Defines risk-adapted therapy."
+    "critique": "Defined prognostic groups that guide risk-adapted therapy. It remains the basis for treatment decisions."
    }
   },
   {
@@ -8200,18 +8388,22 @@
    "id": "mrc-te19-oliver",
    "appraisal": {
     "inclusion": [
-     "Stage I seminoma after orchidectomy"
+     "Stage I seminoma after orchidectomy",
+     "Fit for chemotherapy"
     ],
     "exclusion": [
-     "Prior therapy"
+     "Prior therapy",
+     "Elevated markers"
     ],
     "strengths": [
-     "Single-dose carboplatin non-inferior"
+     "Single-dose carboplatin non-inferior",
+     "Fewer second malignancies"
     ],
     "limitations": [
-     "Surveillance now preferred"
+     "Surveillance now preferred",
+     "Low event rate"
     ],
-    "critique": "Carboplatin is an option; surveillance preferred for low-risk."
+    "critique": "Single-dose carboplatin is non-inferior to RT for stage I seminoma. Surveillance is now preferred for low-risk patients."
    }
   },
   {
@@ -8238,18 +8430,22 @@
    "id": "gog-111-ov-10",
    "appraisal": {
     "inclusion": [
-     "Stage III–IV ovarian cancer"
+     "Stage III–IV ovarian cancer after surgery",
+     "GOG 111: suboptimally debulked"
     ],
     "exclusion": [
-     "Prior chemotherapy"
+     "Prior chemotherapy",
+     "Borderline tumours"
     ],
     "strengths": [
-     "OS benefit"
+     "OS benefit for paclitaxel",
+     "Confirmed in OV-10"
     ],
     "limitations": [
-     "Cisplatin toxicity"
+     "Cisplatin toxicity",
+     "Later replaced by carboplatin"
     ],
-    "critique": "Established platinum-paclitaxel as standard."
+    "critique": "Established platinum-paclitaxel as the standard first-line chemotherapy for advanced ovarian cancer. Carboplatin later replaced cisplatin with similar efficacy and less toxicity (GOG 158)."
    }
   },
   {
@@ -8275,18 +8471,22 @@
    "id": "gog-172-armstrong-ip",
    "appraisal": {
     "inclusion": [
-     "Optimally debulked stage III ovarian cancer"
+     "Optimally debulked (≤1 cm) stage III ovarian cancer",
+     "GOG PS 0–2"
     ],
     "exclusion": [
-     "Prior chemotherapy"
+     "Prior chemotherapy",
+     "Suboptimal debulking"
     ],
     "strengths": [
-     "OS benefit"
+     "OS benefit (~16 months)",
+     "Long-term follow-up"
     ],
     "limitations": [
-     "Toxicity and catheter complications"
+     "Toxicity and catheter complications",
+     "Only 42% completed 6 cycles IP"
     ],
-    "critique": "IP chemotherapy improves OS but is rarely used."
+    "critique": "IP chemotherapy improves OS but is rarely used due to toxicity and complexity; GOG 252 did not confirm benefit with modified regimens."
    }
   },
   {
@@ -8312,18 +8512,22 @@
    "id": "jgog-3016",
    "appraisal": {
     "inclusion": [
-     "Stage II–IV ovarian cancer"
+     "Stage II–IV ovarian cancer",
+     "Japanese patients"
     ],
     "exclusion": [
-     "Prior chemotherapy"
+     "Prior chemotherapy",
+     "Borderline tumours"
     ],
     "strengths": [
-     "OS benefit with dose-dense"
+     "OS benefit with dose-dense paclitaxel",
+     "Long-term follow-up"
     ],
     "limitations": [
-     "Not replicated in Western trials"
+     "Not replicated in Western trials (ICON8)",
+     "Anaemia"
     ],
-    "critique": "Dose-dense paclitaxel is an option, mainly in Asian patients."
+    "critique": "Dose-dense weekly paclitaxel improved OS in Japanese patients, but ICON8 and GOG 262 did not confirm benefit in Western populations. It remains an option, especially where 3-weekly regimens are poorly tolerated."
    }
   },
   {
@@ -8350,18 +8554,22 @@
    "id": "eortc-55971-chorus",
    "appraisal": {
     "inclusion": [
-     "Stage IIIC–IV ovarian cancer"
+     "Stage IIIC–IV ovarian cancer",
+     "Suitable for either approach"
     ],
     "exclusion": [
-     "Prior therapy"
+     "Prior therapy",
+     "Non-epithelial tumours"
     ],
     "strengths": [
-     "Non-inferior OS with NACT"
+     "Non-inferior OS with NACT",
+     "Less surgical morbidity"
     ],
     "limitations": [
-     "Low complete resection rates"
+     "Low complete resection rates",
+     "Short survival overall"
     ],
-    "critique": "NACT is acceptable for high tumour burden."
+    "critique": "NACT followed by interval debulking is non-inferior to primary surgery for stage IIIC–IV ovarian cancer, with less morbidity. Low complete resection rates in primary surgery arms have been criticised; TRUST may refine this."
    }
   },
   {
@@ -8387,19 +8595,22 @@
    "id": "ovhipec-1",
    "appraisal": {
     "inclusion": [
-     "Stage III ovarian cancer after NACT"
+     "Stage III ovarian cancer after 3 cycles NACT",
+     "Not eligible for primary surgery"
     ],
     "exclusion": [
-     "Prior HIPEC"
+     "Prior HIPEC",
+     "Extra-abdominal disease"
     ],
     "strengths": [
-     "OS benefit"
+     "OS benefit",
+     "Randomised"
     ],
     "limitations": [
      "Open-label",
-     "Small trial"
+     "Small trial (n=245)"
     ],
-    "critique": "HIPEC at interval debulking is an option in experienced centres."
+    "critique": "HIPEC at interval debulking improved OS and RFS. The trial was open-label and small, and HIPEC requires expertise, so it is not universally adopted."
    }
   },
   {
@@ -8426,18 +8637,22 @@
    "id": "solo-1",
    "appraisal": {
     "inclusion": [
-     "BRCA-mutated advanced ovarian cancer responding to platinum"
+     "BRCA-mutated advanced ovarian cancer responding to platinum",
+     "High-grade serous or endometrioid"
     ],
     "exclusion": [
-     "Prior PARP inhibitor"
+     "Prior PARP inhibitor",
+     "MDS/AML"
     ],
     "strengths": [
-     "Large PFS and OS benefit"
+     "Large PFS and OS benefit",
+     "Long-term follow-up"
     ],
     "limitations": [
-     "Limited to BRCA-mutated"
+     "Limited to BRCA-mutated",
+     "Myelosuppression"
     ],
-    "critique": "Olaparib maintenance is standard for BRCA-mutated."
+    "critique": "Olaparib maintenance gives a large, durable PFS and OS benefit in BRCA-mutated ovarian cancer, with many patients long-term disease-free. It makes BRCA testing at diagnosis mandatory."
    }
   },
   {
@@ -8464,18 +8679,22 @@
    "id": "paola-1",
    "appraisal": {
     "inclusion": [
-     "Advanced ovarian cancer after platinum + bevacizumab"
+     "Advanced ovarian cancer after platinum + bevacizumab",
+     "High-grade serous or endometrioid"
     ],
     "exclusion": [
-     "Prior PARP inhibitor"
+     "Prior PARP inhibitor",
+     "MDS/AML"
     ],
     "strengths": [
-     "PFS and OS benefit in HRD-positive"
+     "PFS and OS benefit in HRD-positive",
+     "Biomarker-driven"
     ],
     "limitations": [
-     "Little benefit in HRD-negative"
+     "Little benefit in HRD-negative",
+     "Requires HRD testing"
     ],
-    "critique": "Olaparib + bevacizumab is standard for HRD-positive."
+    "critique": "Olaparib with bevacizumab improves PFS and OS in HRD-positive advanced ovarian cancer. Little benefit in HRD-negative tumours means HRD testing is needed."
    }
   },
   {
@@ -8502,18 +8721,22 @@
    "id": "prima",
    "appraisal": {
     "inclusion": [
-     "Advanced ovarian cancer responding to first-line platinum"
+     "Advanced ovarian cancer responding to first-line platinum",
+     "High-risk features"
     ],
     "exclusion": [
-     "Prior PARP inhibitor"
+     "Prior PARP inhibitor",
+     "MDS/AML"
     ],
     "strengths": [
-     "PFS benefit"
+     "PFS benefit across biomarker groups",
+     "Included high-risk patients"
     ],
     "limitations": [
-     "No OS benefit"
+     "No OS benefit",
+     "Thrombocytopenia"
     ],
-    "critique": "Niraparib is an option across biomarker groups."
+    "critique": "Niraparib improves PFS in advanced ovarian cancer across biomarker groups, but final OS showed no benefit. Thrombocytopenia requires weight-based dosing."
    }
   },
   {
@@ -8539,18 +8762,22 @@
    "id": "icon7-gog-218",
    "appraisal": {
     "inclusion": [
-     "Advanced ovarian cancer"
+     "Advanced ovarian cancer",
+     "High-risk early-stage (ICON7)"
     ],
     "exclusion": [
-     "Prior therapy"
+     "Prior therapy",
+     "Bowel obstruction"
     ],
     "strengths": [
-     "PFS benefit"
+     "PFS benefit",
+     "OS benefit in high-risk subgroup"
     ],
     "limitations": [
-     "OS benefit only in high-risk subgroup"
+     "OS benefit only in high-risk subgroup",
+     "Hypertension, GI perforation"
     ],
-    "critique": "Bevacizumab is an option for high-risk disease."
+    "critique": "Bevacizumab improves PFS in advanced ovarian cancer, with OS benefit only in high-risk subgroups. Cost and hypertension limit use in India."
    }
   },
   {
@@ -8577,18 +8804,22 @@
    "id": "mirasol",
    "appraisal": {
     "inclusion": [
-     "FRα-high platinum-resistant ovarian cancer"
+     "FRα-high platinum-resistant ovarian cancer",
+     "1–3 prior lines"
     ],
     "exclusion": [
-     "Prior mirvetuximab"
+     "Prior mirvetuximab",
+     "Corneal disorders"
     ],
     "strengths": [
-     "OS benefit"
+     "OS benefit",
+     "Biomarker-driven"
     ],
     "limitations": [
-     "Ocular toxicity"
+     "Ocular toxicity",
+     "Requires FRα testing"
     ],
-    "critique": "Mirvetuximab is standard for FRα-high PROC."
+    "critique": "Mirvetuximab improves OS in FRα-high platinum-resistant ovarian cancer — a rare positive trial in this setting. Ocular toxicity (keratopathy, blurred vision) requires eye care."
    }
   },
   {
@@ -8615,18 +8846,22 @@
    "id": "portec-1-2",
    "appraisal": {
     "inclusion": [
-     "Intermediate/high-intermediate-risk endometrial cancer"
+     "Intermediate/high-intermediate-risk endometrial cancer",
+     "After hysterectomy"
     ],
     "exclusion": [
-     "High-risk features"
+     "High-risk features",
+     "Stage III–IV"
     ],
     "strengths": [
-     "Reduced local recurrence"
+     "Reduced local recurrence",
+     "Less toxicity with brachytherapy"
     ],
     "limitations": [
-     "No OS benefit"
+     "No OS benefit",
+     "Pre-molecular era"
     ],
-    "critique": "Vaginal brachytherapy is standard for HIR."
+    "critique": "Vaginal brachytherapy gives similar vaginal control to pelvic EBRT with less toxicity in high-intermediate-risk endometrial cancer. Molecular classification (PORTEC-4a) now refines who needs any RT."
    }
   },
   {
@@ -8653,18 +8888,22 @@
    "id": "portec-3",
    "appraisal": {
     "inclusion": [
-     "High-risk endometrial cancer"
+     "High-risk endometrial cancer",
+     "Stage I–III"
     ],
     "exclusion": [
-     "Prior therapy"
+     "Prior therapy",
+     "Distant metastases"
     ],
     "strengths": [
-     "Improved OS"
+     "Improved OS",
+     "Benefit in serous and stage III"
     ],
     "limitations": [
-     "Toxicity"
+     "Toxicity",
+     "Long-term neuropathy"
     ],
-    "critique": "ChemoRT is standard for high-risk endometrial cancer."
+    "critique": "ChemoRT improves OS in high-risk endometrial cancer, especially serous histology and stage III. Long-term neuropathy and toxicity are significant, and molecular subgroup analysis shows p53-abnormal tumours benefit most."
    }
   },
   {
@@ -8691,18 +8930,22 @@
    "id": "gog-258",
    "appraisal": {
     "inclusion": [
-     "Stage III–IVA endometrial cancer"
+     "Stage III–IVA endometrial cancer",
+     "After surgery"
     ],
     "exclusion": [
-     "Prior therapy"
+     "Prior therapy",
+     "Distant metastases"
     ],
     "strengths": [
-     "No OS benefit for chemoRT"
+     "No OS benefit for chemoRT",
+     "Large trial"
     ],
     "limitations": [
-     "Locoregional benefit"
+     "Locoregional benefit",
+     "Toxicity"
     ],
-    "critique": "Chemotherapy alone is standard; chemoRT improves local control."
+    "critique": "ChemoRT did not improve RFS over chemotherapy alone in stage III–IVA endometrial cancer, but reduced pelvic and vaginal recurrence. Combined with PORTEC-3, it supports chemotherapy as the backbone with selective RT."
    }
   },
   {
@@ -8729,18 +8972,22 @@
    "id": "ruby-nrg-gy018",
    "appraisal": {
     "inclusion": [
-     "Stage III–IV or recurrent endometrial cancer"
+     "Stage III–IV or recurrent endometrial cancer",
+     "Measurable disease"
     ],
     "exclusion": [
-     "Prior immunotherapy"
+     "Prior immunotherapy",
+     "Active autoimmune disease"
     ],
     "strengths": [
-     "PFS benefit, OS in dMMR"
+     "PFS benefit, OS in dMMR",
+     "Two concordant trials"
     ],
     "limitations": [
-     "Limited benefit in pMMR"
+     "Limited benefit in pMMR",
+     "Immune toxicity"
     ],
-    "critique": "Chemo-IO is standard, especially for dMMR."
+    "critique": "Adding dostarlimab or pembrolizumab to carboplatin-paclitaxel improves PFS, with the largest benefit in dMMR tumours. In pMMR disease the gain is modest."
    }
   },
   {
@@ -8767,18 +9014,22 @@
    "id": "keynote-775",
    "appraisal": {
     "inclusion": [
-     "Advanced endometrial cancer after platinum"
+     "Advanced endometrial cancer after platinum",
+     "Any MMR status"
     ],
     "exclusion": [
-     "Prior lenvatinib"
+     "Prior lenvatinib",
+     "Uncontrolled hypertension"
     ],
     "strengths": [
-     "OS benefit"
+     "OS benefit",
+     "Benefit in pMMR"
     ],
     "limitations": [
-     "Toxicity"
+     "Toxicity (hypertension, fatigue)",
+     "Dose reductions common"
     ],
-    "critique": "Lenvatinib-pembrolizumab is second-line standard."
+    "critique": "Lenvatinib-pembrolizumab improves OS after platinum in advanced endometrial cancer, including pMMR tumours. Toxicity (hypertension, fatigue, hypothyroidism) often needs dose reductions."
    }
   },
   {
@@ -8805,18 +9056,22 @@
    "id": "cervix-chemort-rose-morris-1999-nci-alert",
    "appraisal": {
     "inclusion": [
-     "Locally advanced cervical cancer"
+     "Locally advanced cervical cancer",
+     "FIGO IB2–IVA"
     ],
     "exclusion": [
-     "Prior therapy"
+     "Prior therapy",
+     "Distant metastases"
     ],
     "strengths": [
-     "OS benefit"
+     "OS benefit",
+     "Multiple concordant trials"
     ],
     "limitations": [
-     "Older RT techniques"
+     "Older RT techniques",
+     "Toxicity"
     ],
-    "critique": "Cisplatin-based chemoRT is standard."
+    "critique": "Cisplatin-based chemoRT improves OS in locally advanced cervical cancer and is the global standard. Older RT techniques without image-guided brachytherapy were used, which modern practice has improved."
    }
   },
   {
@@ -8842,18 +9097,22 @@
    "id": "embrace-i",
    "appraisal": {
     "inclusion": [
-     "Locally advanced cervical cancer"
+     "Locally advanced cervical cancer",
+     "MRI-guided brachytherapy"
     ],
     "exclusion": [
-     "Prior therapy"
+     "Prior therapy",
+     "Distant metastases"
     ],
     "strengths": [
-     "Excellent local control"
+     "Excellent local control",
+     "Large prospective cohort"
     ],
     "limitations": [
-     "Non-randomised"
+     "Non-randomised",
+     "Requires MRI access"
     ],
-    "critique": "MRI-guided brachytherapy is the gold standard."
+    "critique": "MRI-guided adaptive brachytherapy gives excellent local control with low morbidity. It is non-randomised but large; access to MRI-based brachytherapy is limited in India."
    }
   },
   {
@@ -8879,18 +9138,22 @@
    "id": "interlace",
    "appraisal": {
     "inclusion": [
-     "Stage IB1 N+ to IVA cervical cancer"
+     "Stage IB1 N+ to IVA cervical cancer",
+     "Fit for chemotherapy"
     ],
     "exclusion": [
-     "Prior therapy"
+     "Prior therapy",
+     "Distant metastases"
     ],
     "strengths": [
-     "OS benefit"
+     "OS benefit",
+     "Low-cost regimen"
     ],
     "limitations": [
-     "Few stage III–IVA patients"
+     "Few stage III–IVA patients",
+     "Pre-IO era"
     ],
-    "critique": "Induction chemotherapy is a new option."
+    "critique": "Six weeks of weekly carboplatin-paclitaxel before chemoRT improves OS in locally advanced cervical cancer. It is cheap and practical, though few stage III–IVA patients were included and it pre-dates IO."
    }
   },
   {
@@ -8917,18 +9180,22 @@
    "id": "keynote-a18",
    "appraisal": {
     "inclusion": [
-     "High-risk LACC"
+     "High-risk LACC",
+     "FIGO 2014 IB2–IIB N+ or III–IVA"
     ],
     "exclusion": [
-     "Prior immunotherapy"
+     "Prior immunotherapy",
+     "Active autoimmune disease"
     ],
     "strengths": [
-     "OS benefit"
+     "OS benefit",
+     "Double-blind"
     ],
     "limitations": [
-     "Toxicity"
+     "Toxicity",
+     "Cost"
     ],
-    "critique": "Pembrolizumab with chemoRT is a new standard."
+    "critique": "Pembrolizumab with chemoRT improves PFS and OS in high-risk locally advanced cervical cancer. Cost is a major barrier in India, where cervical cancer burden is high."
    }
   },
   {
@@ -8954,18 +9221,22 @@
    "id": "gog-240",
    "appraisal": {
     "inclusion": [
-     "Recurrent/metastatic cervical cancer"
+     "Recurrent/metastatic cervical cancer",
+     "GOG PS 0–1"
     ],
     "exclusion": [
-     "Prior bevacizumab"
+     "Prior bevacizumab",
+     "Fistula"
     ],
     "strengths": [
-     "OS benefit"
+     "OS benefit",
+     "Large trial"
     ],
     "limitations": [
-     "Fistula risk"
+     "Fistula risk",
+     "Hypertension"
     ],
-    "critique": "Bevacizumab added to chemotherapy is standard."
+    "critique": "Adding bevacizumab to chemotherapy improves OS in recurrent/metastatic cervical cancer. Fistula risk, especially after pelvic RT, requires caution."
    }
   },
   {
@@ -8991,18 +9262,22 @@
    "id": "keynote-826",
    "appraisal": {
     "inclusion": [
-     "Persistent/recurrent/metastatic cervical cancer"
+     "Persistent/recurrent/metastatic cervical cancer",
+     "Not amenable to curative therapy"
     ],
     "exclusion": [
-     "Prior systemic therapy"
+     "Prior systemic therapy",
+     "Active autoimmune disease"
     ],
     "strengths": [
-     "OS benefit"
+     "OS benefit",
+     "Double-blind"
     ],
     "limitations": [
-     "Benefit mainly in PD-L1 positive"
+     "Benefit mainly in PD-L1 positive",
+     "Immune toxicity"
     ],
-    "critique": "Pembrolizumab with chemotherapy is first-line standard."
+    "critique": "Pembrolizumab with chemotherapy ± bevacizumab improves OS in persistent/recurrent/metastatic cervical cancer. Benefit is mainly in PD-L1 CPS ≥1, which is most patients."
    }
   },
   {
@@ -9029,18 +9304,22 @@
    "id": "shape",
    "appraisal": {
     "inclusion": [
-     "Low-risk early cervical cancer (≤2 cm)"
+     "Low-risk early cervical cancer (≤2 cm)",
+     "Stromal invasion <10 mm"
     ],
     "exclusion": [
-     "High-risk features"
+     "High-risk features",
+     "Lymph node metastases"
     ],
     "strengths": [
-     "Non-inferior pelvic recurrence"
+     "Non-inferior pelvic recurrence",
+     "Less morbidity"
     ],
     "limitations": [
-     "Low-risk patients only"
+     "Low-risk patients only",
+     "Requires precise imaging"
     ],
-    "critique": "Simple hysterectomy is standard for low-risk disease."
+    "critique": "Simple hysterectomy is non-inferior to radical hysterectomy for low-risk early cervical cancer, with less urinary morbidity. Careful pre-operative imaging and selection are essential."
    }
   },
   {
@@ -9067,18 +9346,22 @@
    "id": "lacc",
    "appraisal": {
     "inclusion": [
-     "Stage IA1–IB1 cervical cancer"
+     "Stage IA1–IB1 cervical cancer",
+     "Fit for radical hysterectomy"
     ],
     "exclusion": [
-     "Prior therapy"
+     "Prior therapy",
+     "Lymph node metastases"
     ],
     "strengths": [
-     "Showed worse OS with MIS"
+     "Showed worse OS with MIS",
+     "Practice-changing"
     ],
     "limitations": [
-     "Surgeon experience variable"
+     "Surgeon experience variable",
+     "Uterine manipulator use"
     ],
-    "critique": "Open radical hysterectomy is standard."
+    "critique": "Minimally invasive radical hysterectomy had worse DFS and OS than open surgery for early cervical cancer, reversing practice. Surgeon experience and uterine manipulator use have been debated."
    }
   },
   {
@@ -9151,10 +9434,12 @@
      "Individual patient data"
     ],
     "exclusion": [
-     "Trials with concurrent chemotherapy in both arms (limited)"
+     "Trials with concurrent chemotherapy in both arms",
+     "Nasopharyngeal carcinoma"
     ],
     "strengths": [
-     "Showed hyperfractionation gives the largest OS benefit (~8% at 5 years)"
+     "Showed hyperfractionation gives the largest OS benefit (~8% at 5 years)",
+     "Individual patient data"
     ],
     "limitations": [
      "Mostly RT-alone comparisons, pre-dating concurrent chemoRT",
@@ -9359,7 +9644,8 @@
      "Fit for cisplatin"
     ],
     "exclusion": [
-     "Distant metastases"
+     "Distant metastases",
+     "Poor renal function"
     ],
     "strengths": [
      "Non-inferior OS with weekly 40 mg/m²",
@@ -9369,7 +9655,7 @@
      "Japanese population",
      "Locoregional control slightly worse in weekly arm"
     ],
-    "critique": "Weekly cisplatin 40 mg/m² is an acceptable alternative postoperatively, with Noronha suggesting caution."
+    "critique": "Weekly cisplatin 40 mg/m² is non-inferior to 3-weekly 100 mg/m² in the postoperative high-risk setting, with less toxicity. Together with Noronha's trial, the choice depends on setting and patient fitness."
    }
   },
   {
@@ -9400,15 +9686,18 @@
      "T1–4, N0–3, M0"
     ],
     "exclusion": [
-     "Prior head and neck RT"
+     "Prior head and neck RT",
+     "Distant metastases"
     ],
     "strengths": [
-     "Randomised evidence that parotid-sparing IMRT reduces xerostomia"
+     "Randomised evidence that parotid-sparing IMRT reduces xerostomia",
+     "Quality-of-life benefit"
     ],
     "limitations": [
-     "Small trial (n=94)"
+     "Small trial (n=94)",
+     "No survival endpoint"
     ],
-    "critique": "IMRT is standard for head and neck RT."
+    "critique": "Parotid-sparing IMRT reduces xerostomia and improves quality of life over conventional RT. It made IMRT the standard for head and neck RT."
    }
   },
   {
@@ -9485,7 +9774,8 @@
      "Prior chemotherapy"
     ],
     "strengths": [
-     "Showed TPF superior to PF induction"
+     "Showed TPF superior to PF induction",
+     "OS benefit"
     ],
     "limitations": [
      "Did not compare induction with concurrent chemoRT alone",
@@ -9533,7 +9823,7 @@
      "Endemic population (EBV-related)",
      "Chinese centres only"
     ],
-    "critique": "GP induction followed by chemoRT is standard for locoregionally advanced NPC."
+    "critique": "GP induction before chemoRT improves OS in locoregionally advanced NPC. It comes from endemic EBV-related NPC in China; applicability to non-endemic populations is assumed."
    }
   },
   {
@@ -9576,7 +9866,7 @@
      "Pembrolizumab monotherapy not beneficial in CPS <1",
      "Cost"
     ],
-    "critique": "Pembrolizumab ± chemotherapy is first-line standard; CPS testing guides choice."
+    "critique": "Pembrolizumab ± chemotherapy improves OS over EXTREME in first-line R/M HNSCC. Monotherapy is not effective in CPS <1, so CPS guides choice."
    }
   },
   {
@@ -9606,15 +9896,18 @@
      "Progression within 6 months of platinum"
     ],
     "exclusion": [
-     "Active autoimmune disease"
+     "Active autoimmune disease",
+     "Untreated CNS metastases"
     ],
     "strengths": [
-     "OS benefit over investigator's choice"
+     "OS benefit over investigator's choice",
+     "Better quality of life"
     ],
     "limitations": [
-     "Investigator's choice included weak agents"
+     "Investigator's choice included weak agents",
+     "Low response rate (~13%)"
     ],
-    "critique": "Nivolumab is standard second-line therapy after platinum."
+    "critique": "Nivolumab improves OS over investigator's choice in platinum-refractory R/M HNSCC, with better quality of life. Response rates are low (~13%), but responses are durable."
    }
   },
   {
@@ -9646,16 +9939,18 @@
      "ECOG PS 0–1"
     ],
     "exclusion": [
-     "Prior immunotherapy"
+     "Prior immunotherapy",
+     "Active autoimmune disease"
     ],
     "strengths": [
-     "Low-cost, low-dose nivolumab improved OS"
+     "Low-cost, low-dose nivolumab improved OS",
+     "Pragmatic Indian trial"
     ],
     "limitations": [
      "Single-centre Indian trial",
      "Low-dose nivolumab not compared with full dose"
     ],
-    "critique": "Supports low-dose nivolumab as an affordable option in India."
+    "critique": "Low-dose nivolumab (40 mg) with metronomic chemotherapy improved OS in R/M HNSCC — a low-cost, practical option for India. It was single-centre and did not compare low dose with standard dose."
    }
   },
   {
@@ -9681,20 +9976,22 @@
    "id": "keynote-689",
    "appraisal": {
     "inclusion": [
-     "Resectable stage III–IVA HNSCC (oral cavity, larynx, hypopharynx, HPV-negative oropharynx)"
+     "Resectable stage III–IVA HNSCC (oral cavity, larynx, hypopharynx, HPV-negative oropharynx)",
+     "ECOG PS 0–1"
     ],
     "exclusion": [
      "Distant metastases",
      "Prior immunotherapy"
     ],
     "strengths": [
-     "EFS benefit with perioperative pembrolizumab"
+     "EFS benefit with perioperative pembrolizumab",
+     "No delay in surgery"
     ],
     "limitations": [
      "OS immature",
      "Benefit mainly in PD-L1 positive"
     ],
-    "critique": "Perioperative pembrolizumab is a new option for resectable HNSCC."
+    "critique": "Perioperative pembrolizumab improves EFS in resectable locally advanced HNSCC, with benefit mainly in PD-L1-positive tumours. OS data are immature."
    }
   },
   {
@@ -9727,7 +10024,8 @@
      "WHO PS 0–2"
     ],
     "exclusion": [
-     "Prior RT or chemotherapy"
+     "Prior RT or chemotherapy",
+     "Significant comorbidity"
     ],
     "strengths": [
      "OS benefit with long-term follow-up",
@@ -9737,7 +10035,7 @@
      "Age ≤70 only",
      "Benefit small in unmethylated tumours"
     ],
-    "critique": "Established TMZ-RT as standard for GBM; MGMT status guides prognosis."
+    "critique": "TMZ with RT improved OS in newly diagnosed GBM, especially in MGMT-methylated tumours. Patients over 70 were excluded, and the benefit in unmethylated tumours is small."
    }
   },
   {
@@ -9768,15 +10066,18 @@
      "ECOG PS 0–2"
     ],
     "exclusion": [
-     "Prior therapy"
+     "Prior therapy",
+     "Significant comorbidity"
     ],
     "strengths": [
-     "OS benefit with TMZ in elderly"
+     "OS benefit with TMZ in elderly",
+     "Short-course RT"
     ],
     "limitations": [
-     "Benefit greatest in MGMT-methylated"
+     "Benefit greatest in MGMT-methylated",
+     "Myelosuppression"
     ],
-    "critique": "Short-course RT + TMZ is standard for elderly GBM."
+    "critique": "Adding TMZ to short-course RT improves OS in elderly GBM, especially MGMT-methylated tumours. It is a practical, tolerable regimen for older patients."
    }
   },
   {
@@ -9806,16 +10107,18 @@
      "KPS ≥70"
     ],
     "exclusion": [
-     "Prior TTFields"
+     "Prior TTFields",
+     "Infratentorial tumour"
     ],
     "strengths": [
-     "OS benefit"
+     "OS benefit",
+     "Long-term follow-up"
     ],
     "limitations": [
      "Open-label, no sham control",
      "Device burden and cost"
     ],
-    "critique": "TTFields improve OS, but the lack of a sham control and cost limit adoption."
+    "critique": "TTFields with TMZ improved OS in GBM after chemoRT. The open-label design without sham control, device burden and cost limit adoption."
    }
   },
   {
@@ -9842,18 +10145,22 @@
    "id": "rtog-9802-eortc-22033",
    "appraisal": {
     "inclusion": [
-     "High-risk low-grade glioma (age ≥40 or subtotal resection)"
+     "High-risk low-grade glioma (age ≥40 or subtotal resection)",
+     "KPS ≥60"
     ],
     "exclusion": [
-     "Prior RT"
+     "Prior RT",
+     "Prior chemotherapy"
     ],
     "strengths": [
-     "OS benefit with PCV"
+     "OS benefit with PCV",
+     "Long-term follow-up"
     ],
     "limitations": [
-     "Pre-molecular era"
+     "Pre-molecular era",
+     "PCV toxicity"
     ],
-    "critique": "RT + PCV is standard for high-risk LGG."
+    "critique": "RT with PCV improves OS in high-risk low-grade glioma. Molecular analysis shows benefit is greatest in IDH-mutant tumours."
    }
   },
   {
@@ -9880,18 +10187,22 @@
    "id": "rtog-9402-eortc-26951",
    "appraisal": {
     "inclusion": [
-     "Anaplastic oligodendroglial tumours"
+     "Anaplastic oligodendroglial tumours",
+     "KPS ≥60"
     ],
     "exclusion": [
-     "Prior RT"
+     "Prior RT",
+     "Prior chemotherapy"
     ],
     "strengths": [
-     "OS benefit in 1p/19q codeleted"
+     "OS benefit in 1p/19q codeleted",
+     "Long-term follow-up"
     ],
     "limitations": [
-     "Pre-molecular era"
+     "Pre-molecular era",
+     "PCV toxicity"
     ],
-    "critique": "RT + PCV is standard for codeleted oligodendroglioma."
+    "critique": "RT with PCV improves OS in 1p/19q-codeleted anaplastic oligodendroglioma. It defined molecular markers as predictive in glioma."
    }
   },
   {
@@ -9917,18 +10228,22 @@
    "id": "catnon",
    "appraisal": {
     "inclusion": [
-     "1p/19q non-codeleted anaplastic glioma"
+     "1p/19q non-codeleted anaplastic glioma",
+     "WHO PS 0–2"
     ],
     "exclusion": [
-     "Prior RT"
+     "Prior RT",
+     "Prior chemotherapy"
     ],
     "strengths": [
-     "OS benefit with adjuvant TMZ"
+     "OS benefit with adjuvant TMZ",
+     "2×2 factorial design"
     ],
     "limitations": [
-     "Benefit restricted to IDH-mutant"
+     "Benefit restricted to IDH-mutant",
+     "No benefit for concurrent TMZ"
     ],
-    "critique": "Adjuvant TMZ is standard for IDH-mutant astrocytoma."
+    "critique": "Adjuvant TMZ improves OS in 1p/19q non-codeleted anaplastic glioma, mainly in IDH-mutant tumours. Concurrent TMZ added no benefit."
    }
   },
   {
@@ -9963,13 +10278,14 @@
      "High-risk features needing immediate treatment"
     ],
     "strengths": [
-     "PFS benefit and delayed need for further therapy"
+     "PFS benefit and delayed need for further therapy",
+     "Oral therapy"
     ],
     "limitations": [
      "OS not yet shown",
      "Cost"
     ],
-    "critique": "Vorasidenib can delay RT/chemo in selected low-grade gliomas."
+    "critique": "Vorasidenib improves PFS and delays the need for RT or chemotherapy in grade 2 IDH-mutant glioma. OS and long-term neurocognitive benefits are not yet shown."
    }
   },
   {
@@ -10000,15 +10316,18 @@
      "KPS ≥70"
     ],
     "exclusion": [
-     "Multiple brain metastases"
+     "Multiple brain metastases",
+     "Radiosensitive tumours"
     ],
     "strengths": [
-     "OS benefit for surgery"
+     "OS benefit for surgery",
+     "Better functional independence"
     ],
     "limitations": [
-     "Small trial (n=48)"
+     "Small trial (n=48)",
+     "Pre-SRS era"
     ],
-    "critique": "Surgery is standard for single, accessible brain metastasis."
+    "critique": "Surgery plus WBRT improves OS and functional independence for a single brain metastasis. It pre-dates SRS, which is now an alternative."
    }
   },
   {
@@ -10035,18 +10354,22 @@
    "id": "n0574-brown",
    "appraisal": {
     "inclusion": [
-     "1–3 brain metastases"
+     "1–3 brain metastases",
+     "Each <3 cm"
     ],
     "exclusion": [
-     "Prior WBRT"
+     "Prior WBRT",
+     "Leptomeningeal disease"
     ],
     "strengths": [
-     "Less cognitive decline with SRS alone"
+     "Less cognitive decline with SRS alone",
+     "Cognitive endpoints"
     ],
     "limitations": [
-     "No OS difference"
+     "No OS difference",
+     "Higher intracranial recurrence without WBRT"
     ],
-    "critique": "SRS alone is preferred for limited brain metastases."
+    "critique": "SRS alone causes less cognitive decline than SRS + WBRT for 1–3 brain metastases, with similar OS. Higher intracranial recurrence without WBRT requires MRI surveillance."
    }
   },
   {
@@ -10075,15 +10398,18 @@
      "KPS ≥70"
     ],
     "exclusion": [
-     "Prior WBRT"
+     "Prior WBRT",
+     "Leptomeningeal disease"
     ],
     "strengths": [
-     "Non-inferior OS for 5–10 vs 2–4 metastases"
+     "Non-inferior OS for 5–10 vs 2–4 metastases",
+     "Large prospective study"
     ],
     "limitations": [
-     "Observational"
+     "Observational",
+     "Japanese centres only"
     ],
-    "critique": "SRS is an option for up to 10 brain metastases."
+    "critique": "SRS alone for 5–10 metastases gives non-inferior OS compared with 2–4 metastases. It is observational, so it supports but does not prove SRS for multiple metastases."
    }
   },
   {
@@ -10110,18 +10436,22 @@
    "id": "nrg-cc001",
    "appraisal": {
     "inclusion": [
-     "Brain metastases for WBRT"
+     "Brain metastases for WBRT",
+     "KPS ≥70"
     ],
     "exclusion": [
-     "Prior WBRT"
+     "Prior WBRT",
+     "Metastases within 5 mm of hippocampus"
     ],
     "strengths": [
-     "Less cognitive decline with hippocampal avoidance"
+     "Less cognitive decline with hippocampal avoidance",
+     "Quality-of-life benefit"
     ],
     "limitations": [
-     "No OS benefit"
+     "No OS benefit",
+     "Requires IMRT"
     ],
-    "critique": "HA-WBRT + memantine is standard when WBRT is used."
+    "critique": "Hippocampal-avoidance WBRT with memantine reduces cognitive decline compared with WBRT + memantine. It requires IMRT and careful planning."
    }
   },
   {
@@ -10148,18 +10478,22 @@
    "id": "quartz",
    "appraisal": {
     "inclusion": [
-     "NSCLC brain metastases unsuitable for surgery/SRS"
+     "NSCLC brain metastases unsuitable for surgery/SRS",
+     "Poor prognosis"
     ],
     "exclusion": [
-     "Prior WBRT"
+     "Prior WBRT",
+     "Good prognosis candidates for SRS"
     ],
     "strengths": [
-     "Showed no OS benefit from WBRT"
+     "Showed no OS benefit from WBRT",
+     "Quality-of-life data"
     ],
     "limitations": [
-     "Poor prognosis patients"
+     "Poor prognosis patients",
+     "Pre-targeted therapy era"
     ],
-    "critique": "WBRT can be omitted in poor-prognosis patients."
+    "critique": "WBRT did not improve OS or quality of life in poor-prognosis NSCLC brain metastases. Supportive care alone is appropriate for these patients."
    }
   },
   {
@@ -10185,18 +10519,22 @@
    "id": "ifm-2009",
    "appraisal": {
     "inclusion": [
-     "Newly diagnosed myeloma age ≤65"
+     "Newly diagnosed myeloma age ≤65",
+     "Transplant-eligible"
     ],
     "exclusion": [
-     "Prior therapy"
+     "Prior therapy",
+     "Significant comorbidity"
     ],
     "strengths": [
-     "PFS benefit with early ASCT"
+     "PFS benefit with early ASCT",
+     "MRD data"
     ],
     "limitations": [
-     "No OS benefit"
+     "No OS benefit",
+     "1 year lenalidomide maintenance only"
     ],
-    "critique": "Early ASCT remains standard; deferral is an option."
+    "critique": "Early ASCT after RVD improves PFS but not OS compared with RVD alone and ASCT at relapse. Deferring ASCT is an option for selected patients."
    }
   },
   {
@@ -10222,18 +10560,22 @@
    "id": "griffin-perseus",
    "appraisal": {
     "inclusion": [
-     "Transplant-eligible NDMM"
+     "Transplant-eligible NDMM",
+     "Age ≤70"
     ],
     "exclusion": [
-     "Prior therapy"
+     "Prior therapy",
+     "Significant comorbidity"
     ],
     "strengths": [
-     "PFS benefit and MRD negativity"
+     "PFS benefit and MRD negativity",
+     "Quadruplet induction"
     ],
     "limitations": [
-     "OS immature"
+     "OS immature",
+     "Infection risk"
     ],
-    "critique": "D-VRd is the new standard induction."
+    "critique": "Adding daratumumab to VRd induction, ASCT and maintenance improves PFS and MRD negativity. D-VRd is the new standard for transplant-eligible myeloma."
    }
   },
   {
@@ -10259,18 +10601,22 @@
    "id": "maia",
    "appraisal": {
     "inclusion": [
-     "Transplant-ineligible NDMM"
+     "Transplant-ineligible NDMM",
+     "ECOG PS 0–2"
     ],
     "exclusion": [
-     "Prior therapy"
+     "Prior therapy",
+     "Significant comorbidity"
     ],
     "strengths": [
-     "PFS and OS benefit"
+     "PFS and OS benefit",
+     "Long-term follow-up"
     ],
     "limitations": [
-     "Continuous therapy"
+     "Continuous therapy",
+     "Infection risk"
     ],
-    "critique": "D-Rd is standard for transplant-ineligible patients."
+    "critique": "Daratumumab with Rd improves PFS and OS in transplant-ineligible myeloma. Continuous therapy and infection risk require monitoring."
    }
   },
   {
@@ -10296,18 +10642,22 @@
    "id": "cepheus-imroz",
    "appraisal": {
     "inclusion": [
-     "Transplant-ineligible/deferred NDMM"
+     "Transplant-ineligible/deferred NDMM",
+     "Age ≤80 (IMROZ)"
     ],
     "exclusion": [
-     "Prior therapy"
+     "Prior therapy",
+     "Frail patients"
     ],
     "strengths": [
-     "PFS benefit"
+     "PFS benefit",
+     "MRD negativity"
     ],
     "limitations": [
-     "Toxicity in elderly"
+     "Toxicity in elderly",
+     "Treatment-related deaths"
     ],
-    "critique": "Quadruplet therapy is an option for fit elderly."
+    "critique": "Quadruplet therapy (anti-CD38 + VRd) improves PFS in transplant-ineligible or deferred myeloma. Toxicity in frail elderly patients requires careful selection."
    }
   },
   {
@@ -10333,18 +10683,22 @@
    "id": "calgb-100104-myeloma-xi",
    "appraisal": {
     "inclusion": [
-     "Post-ASCT myeloma"
+     "Post-ASCT myeloma",
+     "Responding disease"
     ],
     "exclusion": [
-     "Prior lenalidomide"
+     "Prior lenalidomide",
+     "Progressive disease"
     ],
     "strengths": [
-     "OS benefit"
+     "OS benefit",
+     "Large trials"
     ],
     "limitations": [
-     "Second primary malignancies"
+     "Second primary malignancies",
+     "Continuous therapy"
     ],
-    "critique": "Lenalidomide maintenance is standard."
+    "critique": "Lenalidomide maintenance after ASCT improves OS. Second primary malignancies are a known risk."
    }
   },
   {
@@ -10371,18 +10725,22 @@
    "id": "cartitude-4",
    "appraisal": {
     "inclusion": [
-     "Lenalidomide-refractory MM, 1–3 prior lines"
+     "Lenalidomide-refractory MM, 1–3 prior lines",
+     "ECOG PS 0–1"
     ],
     "exclusion": [
-     "Prior BCMA therapy"
+     "Prior BCMA therapy",
+     "CNS involvement"
     ],
     "strengths": [
-     "PFS and OS benefit"
+     "PFS and OS benefit",
+     "Single infusion"
     ],
     "limitations": [
-     "Early deaths, CRS and neurotoxicity"
+     "Early deaths, CRS and neurotoxicity",
+     "Access and cost"
     ],
-    "critique": "Cilta-cel is an option in early relapse; access is limited."
+    "critique": "Cilta-cel improves PFS and OS in lenalidomide-refractory myeloma after 1–3 lines. Early deaths, CRS and neurotoxicity, and limited access are concerns."
    }
   },
   {
@@ -10408,18 +10766,22 @@
    "id": "majestec-3",
    "appraisal": {
     "inclusion": [
-     "Relapsed/refractory MM, 1–3 prior lines"
+     "Relapsed/refractory MM, 1–3 prior lines",
+     "ECOG PS 0–1"
     ],
     "exclusion": [
-     "Prior BCMA therapy"
+     "Prior BCMA therapy",
+     "CNS involvement"
     ],
     "strengths": [
-     "PFS and OS benefit"
+     "PFS and OS benefit",
+     "Off-the-shelf therapy"
     ],
     "limitations": [
-     "Infection risk"
+     "Infection risk",
+     "CRS"
     ],
-    "critique": "Teclistamab + daratumumab is a new option."
+    "critique": "Teclistamab with daratumumab improves PFS and OS in relapsed myeloma. Infection risk requires prophylaxis and IVIG."
    }
   },
   {
@@ -10445,18 +10807,22 @@
    "id": "gela-lnh98-5-r-chop",
    "appraisal": {
     "inclusion": [
-     "DLBCL age 60–80"
+     "DLBCL age 60–80",
+     "Untreated"
     ],
     "exclusion": [
-     "Prior therapy"
+     "Prior therapy",
+     "CNS involvement"
     ],
     "strengths": [
-     "OS benefit"
+     "OS benefit",
+     "Long-term follow-up"
     ],
     "limitations": [
-     "Elderly only"
+     "Elderly only",
+     "Rituximab cost"
     ],
-    "critique": "R-CHOP became standard for DLBCL."
+    "critique": "R-CHOP improved OS over CHOP in elderly DLBCL and became the global standard. Rituximab biosimilars have improved access in India."
    }
   },
   {
@@ -10482,18 +10848,22 @@
    "id": "polarix",
    "appraisal": {
     "inclusion": [
-     "Intermediate/high-risk DLBCL (IPI 2–5)"
+     "Intermediate/high-risk DLBCL (IPI 2–5)",
+     "Untreated"
     ],
     "exclusion": [
-     "Prior therapy"
+     "Prior therapy",
+     "CNS involvement"
     ],
     "strengths": [
-     "PFS benefit"
+     "PFS benefit",
+     "Similar toxicity"
     ],
     "limitations": [
-     "No OS benefit"
+     "No OS benefit",
+     "Cost"
     ],
-    "critique": "Pola-R-CHP is an alternative to R-CHOP."
+    "critique": "Pola-R-CHP improves PFS over R-CHOP in intermediate/high-risk DLBCL, but not OS. Cost limits uptake."
    }
   },
   {
@@ -10519,18 +10889,22 @@
    "id": "zuma-7-transform",
    "appraisal": {
     "inclusion": [
-     "Primary refractory or early relapse LBCL"
+     "Primary refractory or early relapse LBCL",
+     "Transplant-eligible"
     ],
     "exclusion": [
-     "Prior CAR-T"
+     "Prior CAR-T",
+     "CNS involvement"
     ],
     "strengths": [
-     "EFS and OS benefit"
+     "EFS and OS benefit",
+     "Practice-changing"
     ],
     "limitations": [
-     "Access and cost"
+     "Access and cost",
+     "CRS and neurotoxicity"
     ],
-    "critique": "CAR-T is standard second-line for early relapse."
+    "critique": "CAR-T improves EFS and OS over salvage chemotherapy and ASCT in early relapsed LBCL. Access, cost and toxicity limit use in India."
    }
   },
   {
@@ -10557,18 +10931,22 @@
    "id": "hd10-hd16-rapid",
    "appraisal": {
     "inclusion": [
-     "Early-stage favourable Hodgkin lymphoma"
+     "Early-stage favourable Hodgkin lymphoma",
+     "Untreated"
     ],
     "exclusion": [
-     "Prior therapy"
+     "Prior therapy",
+     "Unfavourable risk factors"
     ],
     "strengths": [
-     "Defined de-escalation"
+     "Defined de-escalation",
+     "Long-term follow-up"
     ],
     "limitations": [
-     "PFS slightly worse without RT"
+     "PFS slightly worse without RT",
+     "PET interpretation"
     ],
-    "critique": "PET-guided RT omission is an option, with slightly higher relapse."
+    "critique": "PET-guided RT omission in early favourable HL slightly increases relapse but avoids RT late effects. Shared decisions based on age and RT field are key."
    }
   },
   {
@@ -10595,18 +10973,22 @@
    "id": "rathl",
    "appraisal": {
     "inclusion": [
-     "Advanced Hodgkin lymphoma"
+     "Advanced Hodgkin lymphoma",
+     "Untreated"
     ],
     "exclusion": [
-     "Prior therapy"
+     "Prior therapy",
+     "Age >60 (some)"
     ],
     "strengths": [
-     "Showed bleomycin can be dropped"
+     "Showed bleomycin can be dropped",
+     "Less lung toxicity"
     ],
     "limitations": [
-     "PET-positive patients had poor outcomes"
+     "PET-positive patients had poor outcomes",
+     "Non-inferiority margin"
     ],
-    "critique": "PET-adapted AVD is standard."
+    "critique": "Dropping bleomycin after negative interim PET reduces lung toxicity without compromising efficacy in advanced HL. PET-positive patients still do poorly."
    }
   },
   {
@@ -10632,18 +11014,22 @@
    "id": "echelon-1",
    "appraisal": {
     "inclusion": [
-     "Stage III–IV Hodgkin lymphoma"
+     "Stage III–IV Hodgkin lymphoma",
+     "Untreated"
     ],
     "exclusion": [
-     "Prior therapy"
-    ],
-    "strengths": [
-     "OS benefit"
-    ],
-    "limitations": [
+     "Prior therapy",
      "Neuropathy"
     ],
-    "critique": "A-AVD is an option for advanced HL."
+    "strengths": [
+     "OS benefit",
+     "Removed bleomycin"
+    ],
+    "limitations": [
+     "Neuropathy",
+     "Febrile neutropenia"
+    ],
+    "critique": "A-AVD improves OS over ABVD in stage III–IV HL. Neuropathy and febrile neutropenia require G-CSF."
    }
   },
   {
@@ -10669,18 +11055,22 @@
    "id": "hd21",
    "appraisal": {
     "inclusion": [
-     "Advanced HL"
+     "Advanced HL",
+     "Age 18–60"
     ],
     "exclusion": [
-     "Prior therapy"
+     "Prior therapy",
+     "Neuropathy"
     ],
     "strengths": [
-     "Superior PFS and less toxicity"
+     "Superior PFS and less toxicity",
+     "Fertility preservation"
     ],
     "limitations": [
-     "Intensive regimen"
+     "Intensive regimen",
+     "Requires PET"
     ],
-    "critique": "BrECADD is a new standard for fit patients."
+    "critique": "BrECADD improves PFS with less toxicity than eBEACOPP in advanced HL. It is suitable for fit younger patients."
    }
   },
   {
@@ -10706,18 +11096,22 @@
    "id": "s1826",
    "appraisal": {
     "inclusion": [
-     "Stage III–IV HL, age ≥12"
+     "Stage III–IV HL, age ≥12",
+     "Untreated"
     ],
     "exclusion": [
-     "Prior therapy"
+     "Prior therapy",
+     "Active autoimmune disease"
     ],
     "strengths": [
-     "PFS benefit"
+     "PFS benefit",
+     "Less toxicity"
     ],
     "limitations": [
-     "OS immature"
+     "OS immature",
+     "Immune toxicity"
     ],
-    "critique": "N-AVD is a new standard."
+    "critique": "Nivolumab-AVD improves PFS over brentuximab-AVD in advanced HL. OS data are awaited."
    }
   },
   {
@@ -10744,18 +11138,22 @@
    "id": "prima-fl",
    "appraisal": {
     "inclusion": [
-     "Advanced FL responding to R-chemo"
+     "Advanced FL responding to R-chemo",
+     "High tumour burden"
     ],
     "exclusion": [
-     "Prior therapy"
+     "Prior therapy",
+     "Transformation"
     ],
     "strengths": [
-     "PFS benefit"
+     "PFS benefit",
+     "Long-term follow-up"
     ],
     "limitations": [
-     "No OS benefit"
+     "No OS benefit",
+     "Infection risk"
     ],
-    "critique": "Rituximab maintenance is an option."
+    "critique": "Rituximab maintenance improves PFS in advanced FL but not OS. Infection risk and cost must be considered."
    }
   },
   {
@@ -10781,18 +11179,22 @@
    "id": "stil-bright",
    "appraisal": {
     "inclusion": [
-     "Indolent NHL and MCL"
+     "Indolent NHL and MCL",
+     "Untreated"
     ],
     "exclusion": [
-     "Prior therapy"
+     "Prior therapy",
+     "Transformation"
     ],
     "strengths": [
-     "PFS benefit and less toxicity"
+     "PFS benefit and less toxicity",
+     "No alopecia"
     ],
     "limitations": [
-     "Infection risk"
+     "Infection risk",
+     "Prolonged lymphopenia"
     ],
-    "critique": "BR is a standard first-line option."
+    "critique": "BR improves PFS with less toxicity than R-CHOP in indolent NHL and MCL. Prolonged lymphopenia increases infection risk."
    }
   },
   {
@@ -10819,18 +11221,22 @@
    "id": "triangle",
    "appraisal": {
     "inclusion": [
-     "Younger fit MCL"
+     "Younger fit MCL",
+     "Untreated"
     ],
     "exclusion": [
-     "Prior therapy"
+     "Prior therapy",
+     "CNS involvement"
     ],
     "strengths": [
-     "Showed ASCT may be omitted with ibrutinib"
+     "Showed ASCT may be omitted with ibrutinib",
+     "FFS benefit"
     ],
     "limitations": [
-     "OS immature"
+     "OS immature",
+     "Cardiac toxicity"
     ],
-    "critique": "Ibrutinib-based therapy may replace ASCT."
+    "critique": "Adding ibrutinib to induction and maintenance allows ASCT omission in younger fit MCL. OS data are awaited."
    }
   },
   {
@@ -10857,18 +11263,22 @@
    "id": "cll14-elevate-tn-resonate-2",
    "appraisal": {
     "inclusion": [
-     "Untreated CLL"
+     "Untreated CLL",
+     "Comorbid or elderly"
     ],
     "exclusion": [
-     "Prior therapy"
+     "Prior therapy",
+     "Richter transformation"
     ],
     "strengths": [
-     "PFS benefit"
+     "PFS benefit",
+     "Fixed duration option"
     ],
     "limitations": [
-     "Continuous vs fixed duration"
+     "Continuous vs fixed duration",
+     "Cardiac toxicity (BTKi)"
     ],
-    "critique": "Targeted agents are standard first-line therapy."
+    "critique": "Targeted agents improve PFS over chemoimmunotherapy in untreated CLL. Choice between continuous BTKi and fixed-duration venetoclax-obinutuzumab depends on comorbidities and preference."
    }
   },
   {
@@ -10894,18 +11304,22 @@
    "id": "daunorubicin-90-vs-45-e1900",
    "appraisal": {
     "inclusion": [
-     "AML age <60"
+     "AML age <60",
+     "Untreated"
     ],
     "exclusion": [
-     "Prior therapy"
+     "Prior therapy",
+     "APL"
     ],
     "strengths": [
-     "OS benefit"
+     "OS benefit",
+     "Large trial"
     ],
     "limitations": [
-     "Benefit limited to younger patients"
+     "Benefit limited to younger patients",
+     "Cardiotoxicity"
     ],
-    "critique": "Daunorubicin 90 mg/m² is standard."
+    "critique": "Daunorubicin 90 mg/m² improves OS over 45 mg/m² in younger AML. NCRI AML17 suggested 60 mg/m² is equivalent to 90 mg/m²."
    }
   },
   {
@@ -10932,18 +11346,22 @@
    "id": "ratify",
    "appraisal": {
     "inclusion": [
-     "FLT3-mutated AML age <60"
+     "FLT3-mutated AML age <60",
+     "Untreated"
     ],
     "exclusion": [
-     "Prior therapy"
+     "Prior therapy",
+     "APL"
     ],
     "strengths": [
-     "OS benefit"
+     "OS benefit",
+     "Double-blind"
     ],
     "limitations": [
-     "Many proceeded to transplant"
+     "Many proceeded to transplant",
+     "Rash"
     ],
-    "critique": "Midostaurin is standard for FLT3-mutated AML."
+    "critique": "Midostaurin with 7+3 improves OS in FLT3-mutated AML. Many patients proceeded to transplant, which may have contributed."
    }
   },
   {
@@ -10970,18 +11388,22 @@
    "id": "viale-a",
    "appraisal": {
     "inclusion": [
-     "AML unfit for intensive chemo"
+     "AML unfit for intensive chemo",
+     "Age ≥75 or comorbidities"
     ],
     "exclusion": [
-     "Prior therapy"
+     "Prior HMA",
+     "Favourable-risk cytogenetics"
     ],
     "strengths": [
-     "OS benefit"
+     "OS benefit",
+     "High response rates"
     ],
     "limitations": [
-     "Myelosuppression"
+     "Myelosuppression",
+     "Infection risk"
     ],
-    "critique": "Ven-aza is standard for unfit AML."
+    "critique": "Venetoclax with azacitidine improves OS in AML unfit for intensive chemotherapy. Myelosuppression and infection require monitoring."
    }
   },
   {
@@ -11008,18 +11430,22 @@
    "id": "apl0406-lo-coco",
    "appraisal": {
     "inclusion": [
-     "Low/intermediate-risk APL"
+     "Low/intermediate-risk APL",
+     "WBC ≤10 × 10⁹/L"
     ],
     "exclusion": [
-     "High-risk APL"
+     "High-risk APL",
+     "QTc prolongation"
     ],
     "strengths": [
-     "Superior EFS with ATRA + ATO"
+     "Superior EFS with ATRA + ATO",
+     "Chemo-free"
     ],
     "limitations": [
-     "Low-risk only"
+     "Low-risk only",
+     "QTc monitoring needed"
     ],
-    "critique": "ATRA + ATO is standard."
+    "critique": "ATRA + ATO improves EFS over ATRA + chemotherapy in low/intermediate-risk APL. It is a chemotherapy-free cure for most patients."
    }
   },
   {
@@ -11045,18 +11471,22 @@
    "id": "iris",
    "appraisal": {
     "inclusion": [
-     "Chronic-phase CML"
+     "Chronic-phase CML",
+     "Untreated"
     ],
     "exclusion": [
-     "Prior therapy"
+     "Prior therapy",
+     "Accelerated phase"
     ],
     "strengths": [
-     "Dramatic outcomes improvement"
+     "Dramatic outcomes improvement",
+     "Long-term follow-up"
     ],
     "limitations": [
-     "Crossover"
+     "Crossover",
+     "Cost"
     ],
-    "critique": "Imatinib transformed CML."
+    "critique": "Imatinib transformed CML into a chronic disease with near-normal life expectancy. Generic imatinib is widely available in India."
    }
   },
   {
@@ -11083,18 +11513,22 @@
    "id": "phallcon-gimema-lal2116",
    "appraisal": {
     "inclusion": [
-     "Ph+ ALL"
+     "Ph+ ALL",
+     "Untreated"
     ],
     "exclusion": [
-     "Prior therapy"
+     "Prior therapy",
+     "CNS involvement"
     ],
     "strengths": [
-     "High MRD negativity"
+     "High MRD negativity",
+     "Chemo-light approaches"
     ],
     "limitations": [
-     "Toxicity"
+     "Toxicity",
+     "OS immature"
     ],
-    "critique": "Chemo-free approaches are emerging."
+    "critique": "Ponatinib and chemo-free regimens achieve high MRD negativity in Ph+ ALL. Long-term outcomes are awaited."
    }
   },
   {
@@ -11120,18 +11554,22 @@
    "id": "e1910",
    "appraisal": {
     "inclusion": [
-     "MRD-negative Ph-negative B-ALL age 30–70"
+     "MRD-negative Ph-negative B-ALL age 30–70",
+     "Complete remission"
     ],
     "exclusion": [
-     "Prior therapy"
+     "Prior blinatumomab",
+     "CNS involvement"
     ],
     "strengths": [
-     "OS benefit"
+     "OS benefit",
+     "Practice-changing"
     ],
     "limitations": [
-     "Neurotoxicity"
+     "Neurotoxicity",
+     "Cost"
     ],
-    "critique": "Blinatumomab consolidation is standard."
+    "critique": "Blinatumomab consolidation improves OS in MRD-negative B-ALL. Neurotoxicity and cost are concerns."
    }
   },
   {
@@ -11159,18 +11597,22 @@
    "id": "checkmate-067",
    "appraisal": {
     "inclusion": [
-     "Untreated advanced melanoma"
+     "Untreated advanced melanoma",
+     "ECOG PS 0–1"
     ],
     "exclusion": [
-     "Prior therapy"
+     "Prior therapy",
+     "Active brain metastases"
     ],
     "strengths": [
-     "Durable OS benefit"
+     "Durable OS benefit",
+     "Long-term follow-up"
     ],
     "limitations": [
-     "Toxicity"
+     "Toxicity",
+     "Not powered for combo vs nivo"
     ],
-    "critique": "Nivo-ipi gives the longest survival but at high toxicity."
+    "critique": "Nivo-ipi gives the longest OS in advanced melanoma, with ~50% alive at 10 years. Grade 3–4 toxicity in ~60% requires experienced management."
    }
   },
   {
@@ -11197,18 +11639,22 @@
    "id": "relativity-047",
    "appraisal": {
     "inclusion": [
-     "Untreated advanced melanoma"
+     "Untreated advanced melanoma",
+     "ECOG PS 0–1"
     ],
     "exclusion": [
-     "Prior therapy"
+     "Prior therapy",
+     "Active brain metastases"
     ],
     "strengths": [
-     "PFS benefit"
+     "PFS benefit",
+     "Less toxicity than nivo-ipi"
     ],
     "limitations": [
-     "OS not significant"
+     "OS not significant",
+     "No comparison with nivo-ipi"
     ],
-    "critique": "Nivo-relatlimab is a less toxic alternative."
+    "critique": "Nivolumab-relatlimab improves PFS over nivolumab alone with less toxicity than nivo-ipi. OS was not significantly improved."
    }
   },
   {
@@ -11235,18 +11681,22 @@
    "id": "combi-d-v-columbus",
    "appraisal": {
     "inclusion": [
-     "BRAF V600 melanoma"
+     "BRAF V600 melanoma",
+     "Untreated"
     ],
     "exclusion": [
-     "Prior BRAF/MEK therapy"
+     "Prior BRAF/MEK therapy",
+     "Active brain metastases"
     ],
     "strengths": [
-     "OS benefit"
+     "OS benefit",
+     "Less skin toxicity than BRAFi alone"
     ],
     "limitations": [
-     "Resistance develops"
+     "Resistance develops",
+     "Pyrexia (dabrafenib-trametinib)"
     ],
-    "critique": "BRAF/MEK combinations are standard."
+    "critique": "BRAF/MEK combinations improve OS over BRAFi alone in BRAF V600 melanoma. Resistance develops, so durability is less than IO."
    }
   },
   {
@@ -11272,18 +11722,22 @@
    "id": "dreamseq",
    "appraisal": {
     "inclusion": [
-     "BRAF V600 melanoma"
+     "BRAF V600 melanoma",
+     "Untreated"
     ],
     "exclusion": [
-     "Prior therapy"
+     "Prior therapy",
+     "Active brain metastases"
     ],
     "strengths": [
-     "Showed IO-first better"
+     "Showed IO-first better",
+     "Practice-changing"
     ],
     "limitations": [
-     "Small trial"
+     "Small trial",
+     "Stopped early"
     ],
-    "critique": "Immunotherapy first is preferred."
+    "critique": "Starting with nivo-ipi gives better OS than starting with BRAF/MEK in BRAF V600 melanoma. Immunotherapy first is preferred."
    }
   },
   {
@@ -11309,18 +11763,22 @@
    "id": "keynote-054-checkmate-238-combi-ad",
    "appraisal": {
     "inclusion": [
-     "Resected stage III melanoma"
+     "Resected stage III melanoma",
+     "ECOG PS 0–1"
     ],
     "exclusion": [
-     "Prior therapy"
+     "Prior therapy",
+     "Uveal melanoma"
     ],
     "strengths": [
-     "RFS benefit"
+     "RFS benefit",
+     "Three concordant trials"
     ],
     "limitations": [
-     "OS not proven"
+     "OS not proven",
+     "Toxicity"
     ],
-    "critique": "Adjuvant therapy is standard for stage III."
+    "critique": "Adjuvant therapy improves RFS in resected stage III melanoma. OS benefit is not proven."
    }
   },
   {
@@ -11346,18 +11804,22 @@
    "id": "swog-s1801",
    "appraisal": {
     "inclusion": [
-     "Resectable stage III–IV melanoma"
+     "Resectable stage III–IV melanoma",
+     "ECOG PS 0–1"
     ],
     "exclusion": [
-     "Prior therapy"
+     "Prior therapy",
+     "Uveal melanoma"
     ],
     "strengths": [
-     "EFS benefit"
+     "EFS benefit",
+     "Neoadjuvant strategy"
     ],
     "limitations": [
-     "OS immature"
+     "OS immature",
+     "Small trial"
     ],
-    "critique": "Neoadjuvant pembrolizumab is preferred."
+    "critique": "Neoadjuvant pembrolizumab improves EFS over adjuvant pembrolizumab alone. Neoadjuvant IO is now preferred for resectable melanoma."
    }
   },
   {
@@ -11384,18 +11846,22 @@
    "id": "nadina",
    "appraisal": {
     "inclusion": [
-     "Macroscopic stage III melanoma"
+     "Macroscopic stage III melanoma",
+     "Resectable"
     ],
     "exclusion": [
-     "Prior therapy"
+     "Prior therapy",
+     "Uveal melanoma"
     ],
     "strengths": [
-     "EFS benefit"
+     "EFS benefit",
+     "Response-adapted surgery"
     ],
     "limitations": [
-     "Toxicity"
+     "Toxicity",
+     "OS immature"
     ],
-    "critique": "Neoadjuvant nivo-ipi is a new standard."
+    "critique": "Neoadjuvant nivo-ipi with response-adapted surgery improves EFS over upfront surgery and adjuvant nivolumab. It is a new standard."
    }
   },
   {
@@ -11421,18 +11887,22 @@
    "id": "mslt-ii-decog-slt",
    "appraisal": {
     "inclusion": [
-     "Melanoma with positive sentinel node"
+     "Melanoma with positive sentinel node",
+     "Clinically node-negative"
     ],
     "exclusion": [
-     "Prior therapy"
+     "Prior therapy",
+     "Macroscopic nodal disease"
     ],
     "strengths": [
-     "Showed no OS benefit for completion dissection"
+     "Showed no OS benefit for completion dissection",
+     "Less lymphoedema"
     ],
     "limitations": [
-     "Low-risk patients"
+     "Low-risk patients",
+     "Ultrasound surveillance required"
     ],
-    "critique": "Completion dissection is no longer standard."
+    "critique": "Completion lymph node dissection does not improve OS in sentinel node-positive melanoma. Ultrasound surveillance is standard."
    }
   },
   {
@@ -11459,18 +11929,22 @@
    "id": "mrna-4157-pembrolizumab-keynote-942",
    "appraisal": {
     "inclusion": [
-     "Resected high-risk melanoma"
+     "Resected high-risk melanoma",
+     "Stage III–IV"
     ],
     "exclusion": [
-     "Prior therapy"
+     "Prior therapy",
+     "Uveal melanoma"
     ],
     "strengths": [
-     "RFS benefit"
+     "RFS benefit",
+     "Personalised approach"
     ],
     "limitations": [
-     "Phase 2"
+     "Phase 2",
+     "Small trial"
     ],
-    "critique": "Personalised vaccines are promising."
+    "critique": "Personalised neoantigen vaccine with pembrolizumab improves RFS in resected melanoma. It is phase 2; phase 3 (INTerpath-001) has since reported."
    }
   },
   {
@@ -11496,18 +11970,22 @@
    "id": "cemiplimab-cscc-avelumab-merkel",
    "appraisal": {
     "inclusion": [
-     "Advanced cutaneous SCC / Merkel cell carcinoma"
+     "Advanced cutaneous SCC / Merkel cell carcinoma",
+     "Not amenable to surgery/RT"
     ],
     "exclusion": [
-     "Prior therapy"
+     "Prior immunotherapy",
+     "Organ transplant"
     ],
     "strengths": [
-     "High response rates"
+     "High response rates",
+     "Durable responses"
     ],
     "limitations": [
-     "Single-arm"
+     "Single-arm",
+     "Immune toxicity"
     ],
-    "critique": "IO is standard for advanced cSCC and Merkel."
+    "critique": "Immunotherapy gives high, durable response rates in advanced cSCC and Merkel cell carcinoma. Data are single-arm, and transplant recipients are at risk of rejection."
    }
   },
   {
@@ -11534,18 +12012,22 @@
    "id": "acosog-z9001-ssg-xviii",
    "appraisal": {
     "inclusion": [
-     "Resected high-risk GIST"
+     "Resected high-risk GIST",
+     "KIT-positive"
     ],
     "exclusion": [
-     "Prior therapy"
+     "Prior imatinib",
+     "Distant metastases"
     ],
     "strengths": [
-     "OS benefit with 3 years"
+     "OS benefit with 3 years",
+     "Long-term follow-up"
     ],
     "limitations": [
-     "Optimal duration unclear"
+     "Optimal duration unclear",
+     "Fatigue, oedema"
     ],
-    "critique": "3 years adjuvant imatinib is standard."
+    "critique": "Three years of adjuvant imatinib improves OS over one year in high-risk GIST. Optimal duration beyond three years is under study."
    }
   },
   {
@@ -11571,18 +12053,22 @@
    "id": "b2222-eortc-62005",
    "appraisal": {
     "inclusion": [
-     "Advanced GIST"
+     "Advanced GIST",
+     "KIT-positive"
     ],
     "exclusion": [
-     "Prior therapy"
+     "Prior imatinib",
+     "Poor organ function"
     ],
     "strengths": [
-     "Defined imatinib efficacy"
+     "Defined imatinib efficacy",
+     "Large trials"
     ],
     "limitations": [
-     "Dose depends on KIT exon 9"
+     "Dose depends on KIT exon 9",
+     "Resistance develops"
     ],
-    "critique": "Imatinib 400 mg is standard; 800 mg for exon 9."
+    "critique": "Imatinib 400 mg is standard for advanced GIST, with 800 mg for KIT exon 9 mutations. Resistance develops over time."
    }
   },
   {
@@ -11609,18 +12095,22 @@
    "id": "invictus-voyager",
    "appraisal": {
     "inclusion": [
-     "Advanced GIST after ≥3 TKIs (INVICTUS); PDGFRA D842V (NAVIGATOR)"
+     "Advanced GIST after ≥3 TKIs (INVICTUS); PDGFRA D842V (NAVIGATOR)",
+     "ECOG PS 0–2"
     ],
     "exclusion": [
-     "Prior ripretinib"
+     "Prior ripretinib",
+     "Poor organ function"
     ],
     "strengths": [
-     "OS benefit"
+     "OS benefit",
+     "Well tolerated"
     ],
     "limitations": [
-     "Late-line only"
+     "Late-line only",
+     "Alopecia, hand-foot syndrome"
     ],
-    "critique": "Ripretinib is standard fourth-line."
+    "critique": "Ripretinib improves OS as fourth-line therapy in GIST. Avapritinib is effective for PDGFRA D842V."
    }
   },
   {
@@ -11647,18 +12137,22 @@
    "id": "o-sullivan-ncic-sr2",
    "appraisal": {
     "inclusion": [
-     "Extremity soft tissue sarcoma"
+     "Extremity soft tissue sarcoma",
+     "Resectable"
     ],
     "exclusion": [
-     "Prior RT"
+     "Prior RT",
+     "Distant metastases"
     ],
     "strengths": [
-     "Showed preop RT less fibrosis"
+     "Showed preop RT less fibrosis",
+     "Lower dose"
     ],
     "limitations": [
-     "More wound complications"
+     "More wound complications",
+     "Lower-limb tumours most affected"
     ],
-    "critique": "Preoperative RT is preferred."
+    "critique": "Preoperative RT causes less fibrosis and oedema than postoperative RT but more wound complications. Preoperative RT is preferred for extremity sarcoma."
    }
   },
   {
@@ -11685,18 +12179,22 @@
    "id": "strass",
    "appraisal": {
     "inclusion": [
-     "Primary retroperitoneal sarcoma"
+     "Primary retroperitoneal sarcoma",
+     "Resectable"
     ],
     "exclusion": [
-     "Prior RT"
+     "Prior RT",
+     "Distant metastases"
     ],
     "strengths": [
-     "Showed no benefit overall"
+     "Showed no benefit overall",
+     "Randomised in rare disease"
     ],
     "limitations": [
-     "Possible benefit in liposarcoma"
+     "Possible benefit in liposarcoma",
+     "Underpowered"
     ],
-    "critique": "Preop RT is not routine for RPS."
+    "critique": "Preoperative RT did not improve abdominal recurrence-free survival in retroperitoneal sarcoma overall. Liposarcoma may benefit."
    }
   },
   {
@@ -11722,18 +12220,22 @@
    "id": "eortc-62012",
    "appraisal": {
     "inclusion": [
-     "Advanced soft tissue sarcoma"
+     "Advanced soft tissue sarcoma",
+     "Age 18–60"
     ],
     "exclusion": [
-     "Prior chemotherapy"
+     "Prior chemotherapy",
+     "Poor organ function"
     ],
     "strengths": [
-     "Higher response with combination"
+     "Higher response with combination",
+     "Large trial"
     ],
     "limitations": [
-     "No OS benefit"
+     "No OS benefit",
+     "Toxicity"
     ],
-    "critique": "Doxorubicin alone is standard; combination for response."
+    "critique": "Doxorubicin + ifosfamide improves response but not OS over doxorubicin alone. The combination is used when response is needed for symptom control or surgery."
    }
   },
   {
@@ -11759,18 +12261,22 @@
    "id": "euramos-1",
    "appraisal": {
     "inclusion": [
-     "Resectable osteosarcoma"
+     "Resectable osteosarcoma",
+     "Age ≤40"
     ],
     "exclusion": [
-     "Prior therapy"
+     "Prior therapy",
+     "Distant metastases"
     ],
     "strengths": [
-     "Showed no benefit for intensification"
+     "Showed no benefit for intensification",
+     "Large international trial"
     ],
     "limitations": [
-     "Toxicity"
+     "Toxicity",
+     "Poor responders still do poorly"
     ],
-    "critique": "MAP remains standard."
+    "critique": "Intensifying chemotherapy for poor responders did not improve outcomes in osteosarcoma. MAP remains standard."
    }
   },
   {
@@ -11796,18 +12302,22 @@
    "id": "euro-ewing-2012-reecur",
    "appraisal": {
     "inclusion": [
-     "Newly diagnosed Ewing sarcoma"
+     "Newly diagnosed Ewing sarcoma",
+     "Age ≥2"
     ],
     "exclusion": [
-     "Prior therapy"
+     "Prior therapy",
+     "Poor organ function"
     ],
     "strengths": [
-     "OS benefit"
+     "OS benefit",
+     "Shorter treatment"
     ],
     "limitations": [
-     "Toxicity"
+     "Toxicity",
+     "Interval compression requires G-CSF"
     ],
-    "critique": "VDC/IE is standard."
+    "critique": "VDC/IE improves OS over VIDE in Ewing sarcoma. Interval compression requires G-CSF."
    }
   },
   {
@@ -11834,18 +12344,22 @@
    "id": "hartsell-rtog-97-14",
    "appraisal": {
     "inclusion": [
-     "Painful bone metastases (breast/prostate)"
+     "Painful bone metastases (breast/prostate)",
+     "KPS ≥40"
     ],
     "exclusion": [
-     "Prior RT"
+     "Prior RT to site",
+     "Pathological fracture"
     ],
     "strengths": [
-     "Equal pain relief"
+     "Equal pain relief",
+     "Convenience"
     ],
     "limitations": [
-     "Higher retreatment rate"
+     "Higher retreatment rate",
+     "Older trial"
     ],
-    "critique": "8 Gy single fraction is standard."
+    "critique": "A single 8 Gy fraction gives equal pain relief to 30 Gy/10 for bone metastases. Higher retreatment rates are acceptable for convenience."
    }
   },
   {
@@ -11872,18 +12386,22 @@
    "id": "sc-24-spine-sbrt",
    "appraisal": {
     "inclusion": [
-     "Painful spinal metastases"
+     "Painful spinal metastases",
+     "≤3 consecutive segments"
     ],
     "exclusion": [
-     "Prior RT"
+     "Prior RT to site",
+     "Spinal cord compression"
     ],
     "strengths": [
-     "Higher complete pain response"
+     "Higher complete pain response",
+     "Randomised"
     ],
     "limitations": [
-     "Fracture risk"
+     "Fracture risk",
+     "Requires SBRT technology"
     ],
-    "critique": "SBRT is an option for spine metastases."
+    "critique": "SBRT improves complete pain response for spinal metastases. Fracture risk and technology requirements limit use."
    }
   },
   {
@@ -11910,18 +12428,22 @@
    "id": "patchell-mscc",
    "appraisal": {
     "inclusion": [
-     "Metastatic spinal cord compression"
+     "Metastatic spinal cord compression",
+     "Single area of compression"
     ],
     "exclusion": [
-     "Radiosensitive tumours"
+     "Radiosensitive tumours",
+     "Paraplegia >48 hours"
     ],
     "strengths": [
-     "Improved ambulation"
+     "Improved ambulation",
+     "Randomised"
     ],
     "limitations": [
-     "Selected patients"
+     "Selected patients",
+     "Small trial"
     ],
-    "critique": "Surgery + RT is preferred for selected MSCC."
+    "critique": "Surgery plus RT improves ambulation over RT alone for MSCC. Patient selection is key."
    }
   },
   {
@@ -11947,18 +12469,22 @@
    "id": "scorad-iii",
    "appraisal": {
     "inclusion": [
-     "MSCC not suitable for surgery"
+     "MSCC not suitable for surgery",
+     "Life expectancy >8 weeks"
     ],
     "exclusion": [
-     "Prior RT"
+     "Prior RT",
+     "Radiosensitive tumours"
     ],
     "strengths": [
-     "Non-inferior ambulation"
+     "Non-inferior ambulation",
+     "Convenience"
     ],
     "limitations": [
-     "Short survival"
+     "Short survival",
+     "Non-inferiority margin"
     ],
-    "critique": "8 Gy single fraction is acceptable."
+    "critique": "A single 8 Gy fraction is non-inferior to 20 Gy/5 for ambulation in MSCC. It is appropriate for patients with short life expectancy."
    }
   },
   {
@@ -11985,18 +12511,22 @@
    "id": "oriole-stomp",
    "appraisal": {
     "inclusion": [
-     "Oligometastatic/oligorecurrent prostate cancer"
+     "Oligometastatic/oligorecurrent prostate cancer",
+     "≤3 lesions"
     ],
     "exclusion": [
-     "Prior therapy"
+     "Prior ADT",
+     "Castration resistance"
     ],
     "strengths": [
-     "Delayed ADT"
+     "Delayed ADT",
+     "Randomised"
     ],
     "limitations": [
-     "Small trials"
+     "Small trials",
+     "Short follow-up"
     ],
-    "critique": "MDT is an option for oligometastatic prostate cancer."
+    "critique": "Metastasis-directed therapy delays ADT in oligometastatic prostate cancer. Larger trials are needed."
    }
   },
   {
@@ -12023,18 +12553,22 @@
    "id": "navari-olanzapine-cinv",
    "appraisal": {
     "inclusion": [
-     "Highly emetogenic chemotherapy"
+     "Highly emetogenic chemotherapy",
+     "Chemotherapy-naive"
     ],
     "exclusion": [
-     "Prior olanzapine"
+     "Prior olanzapine",
+     "Antipsychotic use"
     ],
     "strengths": [
-     "Improved nausea control"
+     "Improved nausea control",
+     "Low cost"
     ],
     "limitations": [
-     "Sedation"
+     "Sedation",
+     "Single trial"
     ],
-    "critique": "Olanzapine is standard for HEC."
+    "critique": "Olanzapine 10 mg improves nausea control with HEC. Sedation is common; 5 mg may suffice."
    }
   },
   {
@@ -12061,18 +12595,22 @@
    "id": "hokusai-vte-cancer-select-d-caravaggio",
    "appraisal": {
     "inclusion": [
-     "Cancer-associated VTE"
+     "Cancer-associated VTE",
+     "Active cancer"
     ],
     "exclusion": [
-     "High bleeding risk"
+     "High bleeding risk",
+     "Severe renal impairment"
     ],
     "strengths": [
-     "Non-inferior VTE recurrence"
+     "Non-inferior VTE recurrence",
+     "Oral therapy"
     ],
     "limitations": [
-     "Higher GI bleeding with some DOACs"
+     "Higher GI bleeding with some DOACs",
+     "GI cancers at higher risk"
     ],
-    "critique": "DOACs are standard for cancer VTE."
+    "critique": "DOACs are non-inferior to LMWH for cancer-associated VTE. Higher GI bleeding with edoxaban and rivaroxaban in GI cancers requires caution."
    }
   },
   {
@@ -12099,18 +12637,22 @@
    "id": "denosumab-vs-zoledronic-acid-stopeck-fizazi",
    "appraisal": {
     "inclusion": [
-     "Bone metastases (breast, prostate)"
+     "Bone metastases (breast, prostate)",
+     "No prior bisphosphonate"
     ],
     "exclusion": [
-     "Prior bisphosphonate"
+     "Prior bisphosphonate",
+     "Osteonecrosis of jaw"
     ],
     "strengths": [
-     "Fewer skeletal events"
+     "Fewer skeletal events",
+     "No renal dose adjustment"
     ],
     "limitations": [
-     "No OS benefit"
+     "No OS benefit",
+     "Hypocalcaemia"
     ],
-    "critique": "Denosumab is preferred."
+    "critique": "Denosumab reduces skeletal events more than zoledronic acid. It does not improve OS, and hypocalcaemia and cost are concerns."
    }
   },
   {
@@ -12137,18 +12679,22 @@
    "id": "abcsg-18-early-breast-ebctcg-bisphosphonates",
    "appraisal": {
     "inclusion": [
-     "Postmenopausal early BC on AI"
+     "Postmenopausal early BC on AI",
+     "Adjuvant setting"
     ],
     "exclusion": [
-     "Prior bisphosphonate"
+     "Prior bisphosphonate",
+     "Osteonecrosis of jaw"
     ],
     "strengths": [
-     "Reduced fractures and recurrence"
+     "Reduced fractures and recurrence",
+     "Meta-analysis support"
     ],
     "limitations": [
-     "Osteonecrosis risk"
+     "Osteonecrosis risk",
+     "Benefit limited to postmenopausal"
     ],
-    "critique": "Adjuvant bisphosphonates are standard for postmenopausal women."
+    "critique": "Adjuvant bisphosphonates reduce fractures and recurrence in postmenopausal early breast cancer. Osteonecrosis of the jaw is rare but serious."
    }
   }
  ]
