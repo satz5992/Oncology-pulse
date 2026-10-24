@@ -20,8 +20,20 @@ for site in ORDER:
         assert slug not in seen, slug; seen.add(slug); d["id"] = slug
         out.append(d)
 assert not sites, sites.keys()
+# Critical appraisal (eligibility, strengths, limitations, critique): base files then later overrides.
+import glob
+APP = {}
+for f in ["appraisal_breast","appraisal_lung","appraisal_gi","appraisal_gu_gyn","appraisal_other"] + \
+         sorted(os.path.basename(x)[:-3] for x in glob.glob(os.path.join(os.path.dirname(__file__), "appraisal_x*.py"))):
+    APP.update(importlib.import_module(f).A)
+missing = [d["name"] for d in out if d["name"] not in APP]
+unknown = [n for n in APP if n not in {d["name"] for d in out}]
+assert not unknown, unknown
+for d in out:
+    if d["name"] in APP: d["appraisal"] = APP[d["name"]]
+print("appraisals:", len(out) - len(missing), "missing:", missing)
 root = os.path.join(os.path.dirname(__file__), "..", "..")
-json.dump({"version": 1, "updated": "2026-10-10", "count": len(out), "trials": out},
+json.dump({"version": 2, "updated": "2026-10-24", "count": len(out), "trials": out},
           open(os.path.join(root, "data", "trials.json"), "w"), ensure_ascii=False, indent=1)
 from collections import Counter
 print(len(out)); print(Counter(d["site"] for d in out))

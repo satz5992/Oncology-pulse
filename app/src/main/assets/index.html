@@ -230,6 +230,15 @@ nav.tabs.six button{font-size:.66rem}
 .st.now{color:var(--signal)} .st.soon{color:var(--accent)} .st.past{color:var(--faint)}
 .mlink{display:flex;align-items:center;gap:8px;padding:10px 12px;border-radius:10px;background:var(--surface-2);font-size:.82rem;font-weight:500;text-align:left;width:100%}
 .mlink .i{width:16px;height:16px;flex:none}
+.elig{display:grid;gap:10px}
+.eh{display:inline-block;font-size:.66rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;margin-bottom:4px}
+.eh.in{color:var(--ok)} .eh.ex{color:var(--signal)}
+.plist{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px}
+.plist li{position:relative;padding:9px 12px 9px 32px;background:var(--surface);border:1px solid var(--line);border-radius:10px;font-size:.9rem;line-height:1.45}
+.plist li::before{position:absolute;left:11px;top:8px;font-weight:700;font-family:var(--mono)}
+.plist.in li::before{content:"✓";color:var(--ok)} .plist.ex li::before{content:"✕";color:var(--signal)}
+.plist.pro li::before{content:"+";color:var(--ok)} .plist.con li::before{content:"−";color:var(--warn)}
+.callout.crit{background:var(--surface-2);border-left:3px solid var(--warn)} .callout.crit b{color:var(--warn)}
 .covgrid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:8px}
 .covgrid > .mlink{min-width:0;overflow:hidden}
 .covgrid .mlink span{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
@@ -527,7 +536,7 @@ function highlight(s,q){
 }
 const matches = (hay,q) => q.toLowerCase().split(/\s+/).filter(Boolean).every(w=>hay.toLowerCase().includes(w));
 const newsHay = i => [i.title,i.summary,i.keyData,i.tumor,i.source,(i.tags||[]).join(" "),(confById(i.conference)||{}).short||""].join(" ");
-const trialHay = t => [t.name,t.setting,t.population,(t.arms||[]).join(" "),t.result,t.takeaway,t.journal,t.site,t.modality,(t.tags||[]).join(" ")].join(" ");
+const trialHay = t => [t.name,t.setting,t.population,(t.arms||[]).join(" "),t.result,t.takeaway,t.journal,t.site,t.modality,(t.tags||[]).join(" "),t.appraisal?t.appraisal.critique:""].join(" ");
 
 /* ---------- screens ---------- */
 function renderHome(){
@@ -686,12 +695,23 @@ function openDetail(kind,id,silent){
       <div class="d-sec"><h3>Primary endpoint</h3><p>${esc(t.endpoint)}</p></div>
       <div class="d-sec"><h3>Result</h3><div class="d-data">${esc(t.result)}</div></div>
       <div class="callout"><b>Takeaway</b>${esc(t.takeaway)}</div>
+      ${appraisal(t)}
       ${(t.tags||[]).length?`<div class="tags">${t.tags.map(x=>`<span>${esc(x)}</span>`).join("")}</div>`:""}
       ${related("trial",t)}
       <button class="report" data-report="trial:${esc(t.id)}">${ico("ext")}Report an error in this trial</button>
-      <p class="disclaimer">Revision summary. Check figures against ${esc(t.journal)} before quoting.</p>`;
+      <p class="disclaimer">Revision summary. Eligibility is summarised (key criteria only) and the critique is an educational appraisal. Check figures and criteria against ${esc(t.journal)} before quoting.</p>`;
   }
   if(!silent){body.scrollTop=0;$("sheet").classList.add("on");try{A&&A.setDetailOpen&&A.setDetailOpen(true)}catch(e){}}
+}
+function appraisal(t){
+  const a=t.appraisal;if(!a)return "";
+  const li=(arr,cls)=>`<ul class="plist ${cls}">${(arr||[]).map(x=>`<li>${esc(x)}</li>`).join("")}</ul>`;
+  return `<div class="d-sec"><h3>Key eligibility</h3><div class="elig">
+      <div><span class="eh in">Inclusion</span>${li(a.inclusion,"in")}</div>
+      <div><span class="eh ex">Exclusion</span>${li(a.exclusion,"ex")}</div></div></div>
+    <div class="d-sec"><h3>Strengths</h3>${li(a.strengths,"pro")}</div>
+    <div class="d-sec"><h3>Limitations</h3>${li(a.limitations,"con")}</div>
+    <div class="callout crit"><b>Critique</b>${esc(a.critique)}</div>`;
 }
 function related(kind,x){
   if(kind==="trial"){
