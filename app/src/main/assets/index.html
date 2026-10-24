@@ -230,6 +230,10 @@ nav.tabs.six button{font-size:.66rem}
 .st.now{color:var(--signal)} .st.soon{color:var(--accent)} .st.past{color:var(--faint)}
 .mlink{display:flex;align-items:center;gap:8px;padding:10px 12px;border-radius:10px;background:var(--surface-2);font-size:.82rem;font-weight:500;text-align:left;width:100%}
 .mlink .i{width:16px;height:16px;flex:none}
+.covgrid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:8px}
+.covgrid > .mlink{min-width:0;overflow:hidden}
+.covgrid .mlink span{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.sess.s-Analysis{color:var(--ok)}
 .toast{position:fixed;left:16px;right:16px;bottom:calc(84px + env(safe-area-inset-bottom,0px));z-index:70;background:var(--fg);color:var(--bg);padding:12px 14px;border-radius:12px;font-size:.88rem;opacity:0;transform:translateY(8px);transition:.2s;pointer-events:none;box-shadow:var(--shadow)}
 .toast.on{opacity:1;transform:none}
 @media (prefers-reduced-motion: reduce){.sheet,.toast,.ptr{transition:none}}
@@ -423,8 +427,8 @@ const modOf = t => /Surgery/.test(t.modality) ? "Surgery" : t.modality;
 const ico = n => `<svg class="i"><use href="#i-${n}"/></svg>`;
 
 /* ---------- meetings helpers ---------- */
-const SESS=["Presidential","Plenary","LBA","Oral","Mini-oral","Poster","Presented","Preview"];
-const SESS_H={Presidential:"Presidential symposium",Plenary:"Plenary",LBA:"Late-breaking abstracts",Oral:"Oral presentations","Mini-oral":"Mini-oral presentations",Poster:"Posters",Presented:"Other presentations",Preview:"Announced ahead of the meeting"};
+const SESS=["Presidential","Plenary","LBA","Oral","Mini-oral","Poster","Presented","Analysis","Preview"];
+const SESS_H={Analysis:"Expert commentary & analysis",Presidential:"Presidential symposium",Plenary:"Plenary",LBA:"Late-breaking abstracts",Oral:"Oral presentations","Mini-oral":"Mini-oral presentations",Poster:"Posters",Presented:"Other presentations",Preview:"Announced ahead of the meeting"};
 const confById = id => confs.find(c=>c.id===id);
 const confEnd = c => c.end||c.start;
 const dayDiff = (a,b) => Math.round((D(a)-D(b))/864e5);
@@ -448,6 +452,17 @@ function spotlight(){ // live meeting, else the next within 30 days, else the la
 function sessGroups(list,q){
   const by={};list.forEach(i=>{const k=i.session||"Presented";(by[k]=by[k]||[]).push(i)});
   return SESS.filter(k=>by[k]).map(k=>`<div class="daylabel">${esc(SESS_H[k])} · ${by[k].length}</div><div class="panel rows">${by[k].map(i=>newsRow(i,q,true)).join("")}</div>`).join("");
+}
+const gnews = q => "https://news.google.com/search?q="+encodeURIComponent(q)+"&hl=en-IN&gl=IN&ceid=IN:en";
+function coverage(c){
+  const yr=c.start.slice(0,4), nm=c.short.includes(yr)?c.short:c.short+" "+yr, q=`"${nm}"`;
+  const L=[["news","All news coverage",gnews(q)],["news","OncLive",gnews(q+" site:onclive.com")],["news","The ASCO Post",gnews(q+" site:ascopost.com")],["news","ecancer",gnews(q+" site:ecancer.org")],
+    ["news","Medscape",gnews(q+" site:medscape.com")],["news","Targeted Oncology",gnews(q+" site:targetedonc.com")],["news","Indian perspective",gnews(q+" India oncologist")],
+    ["mic","Videos","https://www.youtube.com/results?search_query="+encodeURIComponent(nm+" highlights")]];
+  if(c.hashtag) L.push(["ext","#"+c.hashtag+" on X","https://x.com/hashtag/"+encodeURIComponent(c.hashtag)+"?f=live"]);
+  return `<div class="d-sec"><h3>Official</h3><div style="display:grid;gap:8px"><button class="mlink" data-ext="${esc(c.url)}">${ico("ext")}${esc(c.short)} website</button>${c.press?`<button class="mlink" data-ext="${esc(c.press)}">${ico("news")}Society press releases</button>`:""}</div></div>
+    <div class="d-sec"><h3>Independent coverage</h3><div class="covgrid">${L.map(([i,t,u])=>`<button class="mlink" data-ext="${esc(u)}">${ico(i)}<span>${esc(t)}</span></button>`).join("")}</div>
+    <p class="count" style="margin:8px 2px 0">Opens news, video and social searches for this meeting. Independent reports and opinions are not peer reviewed.</p></div>`;
 }
 function confRow(c){
   const s=confStatus(c),a=D(c.start),n=news.filter(i=>i.conference===c.id).length;
@@ -576,7 +591,7 @@ function renderMeet(){
   if(!msel){$("mlist").innerHTML=`<div class="empty"><strong>No highlights yet</strong>Landmark presentations appear here as each meeting's abstracts and press releases come out.</div>`;return}
   const c=confById(msel), list=confItems(msel);
   $("mlist").innerHTML=`<div class="count">${list.length} item${list.length>1?"s":""} from ${esc(c.name)} · ${esc(fmtRange(c))} · ${esc(c.city)}</div>`+sessGroups(list)+
-    `<div style="display:grid;gap:8px;margin-top:14px"><button class="mlink" data-ext="${esc(c.url)}">${ico("ext")}Official ${esc(c.short)} website</button>${c.press?`<button class="mlink" data-ext="${esc(c.press)}">${ico("news")}Official press releases</button>`:""}</div>`;
+    `<div style="margin-top:14px;display:flex;flex-direction:column;gap:14px">${coverage(c)}</div>`;
 }
 function renderTrials(){
   const q=$("tq").value.trim();
@@ -640,6 +655,7 @@ function openDetail(kind,id,silent){
       <div class="kv"><div><span>Dates</span><b>${esc(fmtRange(c))}</b></div><div><span>Venue</span><b>${esc(c.city)}</b></div></div>
       <div style="display:grid;gap:8px"><button class="btn" data-ext="${esc(c.url)}">${ico("ext")}Official website</button>${c.press?`<button class="btn ghost" data-ext="${esc(c.press)}">${ico("news")}Official press releases</button>`:""}</div>
       <div class="d-sec"><h3>Highlights${list.length?` · ${list.length}`:""}</h3>${list.length?sessGroups(list):`<p class="count">${s.k==="past"?"No highlights were collected for this meeting.":"Landmark presentations will appear here as abstracts, late-breakers and press releases are released."}</p>`}</div>
+      ${coverage(c)}
       <button class="report" data-report="conf:${esc(c.id)}">${ico("ext")}Report wrong dates or details</button>
       <p class="disclaimer">Dates and venues are taken from the organisers' announcements. Check the official website before you travel or register.</p>`;
   } else if(kind==="news"){
@@ -656,6 +672,7 @@ function openDetail(kind,id,silent){
       ${(i.tags||[]).length?`<div class="tags">${i.tags.map(t=>`<span>${esc(t)}</span>`).join("")}</div>`:""}
       ${related("news",i)}
       ${i.url?`<button class="btn" data-ext="${esc(i.url)}">${ico("ext")}Read at ${esc(i.source||"source")}</button>`:""}
+      <button class="btn ghost" data-ext="${esc(gnews(((i.keyData||"").split(" · ")[0].replace(/\s*\(.*$/,"")||i.title.split(":")[0]).trim()+(mc?" "+mc.short.split(" ")[0]:"")))}">${ico("news")}Other coverage &amp; expert views</button>
       <button class="report" data-report="news:${esc(i.id)}">${ico("ext")}Report an error in this item</button>
       <p class="disclaimer">Automatically compiled summary. Verify against the source or label before clinical use.</p>`;
   } else {

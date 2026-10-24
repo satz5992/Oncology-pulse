@@ -21,7 +21,7 @@ import re
 import sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-SESSION_ORDER = ["Presidential", "Plenary", "LBA", "Oral", "Mini-oral", "Poster", "Presented", "Preview"]
+SESSION_ORDER = ["Presidential", "Plenary", "LBA", "Oral", "Mini-oral", "Poster", "Presented", "Analysis", "Preview"]
 
 
 def ist_today():

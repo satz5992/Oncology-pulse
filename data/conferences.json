@@ -1,5 +1,5 @@
 {
- "version": 1,
+ "version": 2,
  "updated": "2026-10-24",
  "note": "Meeting calendar for the Meetings tab. 'match' is a case-insensitive regex used to link news items to a meeting when the item has no explicit 'conference' field. 'tbc' marks dates or city not yet confirmed by the organiser.",
  "conferences": [
@@ -13,7 +13,8 @@
    "focus": "All tumours",
    "url": "https://www.asco.org/annual-meeting",
    "press": "https://www.asco.org/news-initiatives",
-   "match": "\\bASCO ?2026\\b|2026 ASCO Annual Meeting"
+   "match": "\\bASCO ?2026\\b|2026 ASCO Annual Meeting",
+   "hashtag": "ASCO26"
   },
   {
    "id": "eha-2026",
@@ -24,7 +25,8 @@
    "city": "Stockholm",
    "focus": "Haematology",
    "url": "https://ehaweb.org/",
-   "match": "\\bEHA ?2026\\b|EHA2026"
+   "match": "\\bEHA ?2026\\b|EHA2026",
+   "hashtag": "EHA2026"
   },
   {
    "id": "soho-2026",
@@ -35,7 +37,8 @@
    "city": "Houston",
    "focus": "Haematology",
    "url": "https://www.soho.click/",
-   "match": "\\bSOHO 2026\\b|Society of Hematologic Oncology"
+   "match": "\\bSOHO 2026\\b|Society of Hematologic Oncology",
+   "hashtag": "SOHO2026"
   },
   {
    "id": "wclc-2026",
@@ -46,7 +49,8 @@
    "city": "Seoul",
    "focus": "Lung",
    "url": "https://www.iaslc.org/",
-   "match": "\\bWCLC ?2026\\b|World Conference on Lung Cancer"
+   "match": "\\bWCLC ?2026\\b|World Conference on Lung Cancer",
+   "hashtag": "WCLC26"
   },
   {
    "id": "eano-2026",
@@ -57,7 +61,8 @@
    "city": "Rome",
    "focus": "Neuro-oncology",
    "url": "https://www.eano.eu/",
-   "match": "\\bEANO ?2026\\b"
+   "match": "\\bEANO ?2026\\b",
+   "hashtag": "EANO2026"
   },
   {
    "id": "astro-2026",
@@ -69,7 +74,8 @@
    "focus": "Radiation oncology",
    "url": "https://www.astro.org/annual-meeting",
    "press": "https://www.astro.org/news-and-publications/news-and-media-center",
-   "match": "\\bASTRO ?2026\\b|ASTRO (Annual Meeting|plenary|late-?break)"
+   "match": "\\bASTRO ?2026\\b|ASTRO (Annual Meeting|plenary|late-?break)",
+   "hashtag": "ASTRO26"
   },
   {
    "id": "llm-2026",
@@ -80,7 +86,8 @@
    "city": "New York",
    "focus": "Haematology",
    "url": "https://www.lymphomaleukemiamyeloma.com/",
-   "match": "Lymphoma, Leukemia (and|&) Myeloma Congress"
+   "match": "Lymphoma, Leukemia (and|&) Myeloma Congress",
+   "hashtag": "LLM2026"
   },
   {
    "id": "asco-qcs-2026",
@@ -92,7 +99,8 @@
    "tbc": true,
    "focus": "Quality & survivorship",
    "url": "https://www.asco.org/",
-   "match": "ASCO Quality Care Symposium"
+   "match": "ASCO Quality Care Symposium",
+   "hashtag": "QCS26"
   },
   {
    "id": "esmo-2026",
@@ -104,7 +112,8 @@
    "focus": "All tumours",
    "url": "https://www.esmo.org/meeting-calendar/esmo-congress-2026",
    "press": "https://www.esmo.org/newsroom/press-and-media-hub",
-   "match": "\\bESMO(?: Congress)? ?2026\\b|ESMO Presidential|\\bESMO\\b[^.]{0,40}\\bLBA\\d"
+   "match": "\\bESMO(?: Congress)? ?2026\\b|ESMO Presidential|\\bESMO\\b[^.]{0,40}\\bLBA\\d",
+   "hashtag": "ESMO26"
   },
   {
    "id": "sitc-2026",
@@ -115,7 +124,8 @@
    "city": "Phoenix",
    "focus": "Immunotherapy",
    "url": "https://www.sitcancer.org/2026",
-   "match": "\\bSITC ?2026\\b"
+   "match": "\\bSITC ?2026\\b",
+   "hashtag": "SITC26"
   },
   {
    "id": "emuc-2026",
@@ -126,7 +136,8 @@
    "city": "Brussels",
    "focus": "Genitourinary",
    "url": "https://emuc.org/",
-   "match": "\\bEMUC ?2026\\b"
+   "match": "\\bEMUC ?2026\\b",
+   "hashtag": "EMUC26"
   },
   {
    "id": "sno-2026",
@@ -137,7 +148,8 @@
    "city": "Philadelphia",
    "focus": "Neuro-oncology",
    "url": "https://www.soc-neuro-onc.org/",
-   "match": "\\bSNO\\b(?! guideline)|Society for Neuro-Oncology"
+   "match": "\\bSNO\\b(?! guideline)|Society for Neuro-Oncology",
+   "hashtag": "SNO26"
   },
   {
    "id": "eortc-nci-aacr-2026",
@@ -148,7 +160,8 @@
    "city": "Barcelona",
    "focus": "Early-phase drugs",
    "url": "https://www.aacr.org/",
-   "match": "EORTC[- ]NCI[- ]AACR|\\bENA ?2026\\b"
+   "match": "EORTC[- ]NCI[- ]AACR|\\bENA ?2026\\b",
+   "hashtag": "ENA2026"
   },
   {
    "id": "ctos-2026",
@@ -159,7 +172,8 @@
    "city": "Seoul",
    "focus": "Sarcoma",
    "url": "https://www.ctos.org/",
-   "match": "\\bCTOS ?2026\\b"
+   "match": "\\bCTOS ?2026\\b",
+   "hashtag": "CTOS2026"
   },
   {
    "id": "esmo-asia-2026",
@@ -171,7 +185,8 @@
    "focus": "All tumours",
    "url": "https://www.esmo.org/meeting-calendar/esmo-asia-congress-2026",
    "press": "https://www.esmo.org/newsroom/press-and-media-hub",
-   "match": "ESMO Asia"
+   "match": "ESMO Asia",
+   "hashtag": "ESMOAsia26"
   },
   {
    "id": "naclc-2026",
@@ -182,7 +197,8 @@
    "city": "Scottsdale",
    "focus": "Lung",
    "url": "https://www.iaslc.org/",
-   "match": "North American Conference on Lung Cancer|\\bNACLC\\b"
+   "match": "North American Conference on Lung Cancer|\\bNACLC\\b",
+   "hashtag": "NACLC26"
   },
   {
    "id": "aroicon-2026",
@@ -195,7 +211,8 @@
    "focus": "Radiation oncology",
    "url": "https://www.aroicon2026.com/",
    "match": "AROICON ?2026",
-   "dateLabel": "Early December 2026 · dates to be confirmed"
+   "dateLabel": "Early December 2026 · dates to be confirmed",
+   "hashtag": "AROICON2026"
   },
   {
    "id": "sabcs-2026",
@@ -206,7 +223,8 @@
    "city": "San Antonio",
    "focus": "Breast",
    "url": "https://www.sabcs.org/",
-   "match": "\\bSABCS ?2026\\b|San Antonio Breast Cancer Symposium"
+   "match": "\\bSABCS ?2026\\b|San Antonio Breast Cancer Symposium",
+   "hashtag": "SABCS26"
   },
   {
    "id": "ash-2026",
@@ -218,7 +236,8 @@
    "focus": "Haematology",
    "url": "https://www.hematology.org/meetings/annual-meeting",
    "press": "https://www.hematology.org/newsroom",
-   "match": "\\bASH ?2026\\b|ASH Annual Meeting"
+   "match": "\\bASH ?2026\\b|ASH Annual Meeting",
+   "hashtag": "ASH26"
   },
   {
    "id": "esmo-io-2026",
@@ -229,7 +248,8 @@
    "city": "London",
    "focus": "Immunotherapy",
    "url": "https://www.esmo.org/meeting-calendar/esmo-immuno-oncology-congress-2026",
-   "match": "ESMO (IO|Immuno-Oncology) (Congress )?2026"
+   "match": "ESMO (IO|Immuno-Oncology) (Congress )?2026",
+   "hashtag": "ESMOIO26"
   },
   {
    "id": "asco-gi-2027",
@@ -240,7 +260,8 @@
    "city": "San Francisco",
    "focus": "Gastrointestinal",
    "url": "https://conferences.asco.org/gi",
-   "match": "ASCO GI 2027|2027 (ASCO )?Gastrointestinal Cancers Symposium"
+   "match": "ASCO GI 2027|2027 (ASCO )?Gastrointestinal Cancers Symposium",
+   "hashtag": "GI27"
   },
   {
    "id": "asco-gu-2027",
@@ -251,7 +272,8 @@
    "city": "San Francisco",
    "focus": "Genitourinary",
    "url": "https://conferences.asco.org/gu",
-   "match": "ASCO GU 2027|2027 (ASCO )?Genitourinary Cancers Symposium"
+   "match": "ASCO GU 2027|2027 (ASCO )?Genitourinary Cancers Symposium",
+   "hashtag": "GU27"
   },
   {
    "id": "esmo-tat-2027",
@@ -262,7 +284,8 @@
    "city": "Paris",
    "focus": "Early-phase drugs",
    "url": "https://www.esmo.org/meeting-calendar",
-   "match": "ESMO (TAT|Targeted Anticancer Therapies) 2027"
+   "match": "ESMO (TAT|Targeted Anticancer Therapies) 2027",
+   "hashtag": "ESMOTAT27"
   },
   {
    "id": "elcc-2027",
@@ -273,7 +296,8 @@
    "city": "Munich",
    "focus": "Lung",
    "url": "https://www.esmo.org/meeting-calendar",
-   "match": "\\bELCC ?2027\\b|European Lung Cancer Congress 2027"
+   "match": "\\bELCC ?2027\\b|European Lung Cancer Congress 2027",
+   "hashtag": "ELCC27"
   },
   {
    "id": "aacr-2027",
@@ -285,7 +309,8 @@
    "focus": "All tumours",
    "url": "https://www.aacr.org/meeting/aacr-annual-meeting-2027/",
    "press": "https://www.aacr.org/about-the-aacr/newsroom/",
-   "match": "\\bAACR ?2027\\b|AACR Annual Meeting 2027"
+   "match": "\\bAACR ?2027\\b|AACR Annual Meeting 2027",
+   "hashtag": "AACR27"
   },
   {
    "id": "asco-2027",
@@ -297,7 +322,8 @@
    "focus": "All tumours",
    "url": "https://www.asco.org/annual-meeting",
    "press": "https://www.asco.org/news-initiatives",
-   "match": "\\bASCO ?2027\\b|2027 ASCO Annual Meeting"
+   "match": "\\bASCO ?2027\\b|2027 ASCO Annual Meeting",
+   "hashtag": "ASCO27"
   },
   {
    "id": "eha-2027",
@@ -308,7 +334,8 @@
    "city": "Barcelona",
    "focus": "Haematology",
    "url": "https://ehaweb.org/",
-   "match": "\\bEHA ?2027\\b|EHA2027"
+   "match": "\\bEHA ?2027\\b|EHA2027",
+   "hashtag": "EHA2027"
   },
   {
    "id": "wclc-2027",
@@ -320,7 +347,8 @@
    "tbc": true,
    "focus": "Lung",
    "url": "https://www.iaslc.org/",
-   "match": "\\bWCLC ?2027\\b"
+   "match": "\\bWCLC ?2027\\b",
+   "hashtag": "WCLC27"
   },
   {
    "id": "icc-2027",
@@ -332,7 +360,8 @@
    "india": true,
    "focus": "All tumours",
    "url": "https://www.ismpo.org/",
-   "match": "Indian Cancer Congress|ICC 4\\.0"
+   "match": "Indian Cancer Congress|ICC 4\\.0",
+   "hashtag": "ICC2027"
   }
  ]
 }
