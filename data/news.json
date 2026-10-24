@@ -1,6 +1,165 @@
 {
- "updated": "2026-10-23T01:40:00Z",
+ "updated": "2026-10-24T01:25:00Z",
  "items": [
+  {
+   "added": "2026-10-24",
+   "category": "research",
+   "date": "2026-10-23",
+   "impact": "notable",
+   "keyData": "ctDNA clearance 82.1% vs 66.7% · 24-mo EFS baseline ctDNA+ 71.2% vs 54.2% (HR 0.54) · post-op ctDNA− HR 0.48",
+   "source": "OncLive",
+   "summary": "In an exploratory ESMO 2026 analysis of cisplatin-eligible MIBC, more baseline ctDNA-positive patients cleared ctDNA before surgery with enfortumab vedotin plus pembrolizumab, and EFS benefit was clearest in baseline ctDNA-positive and post-surgery ctDNA-negative groups. Persistently ctDNA-positive patients did poorly in both arms.",
+   "tags": [
+    "ctDNA",
+    "enfortumab vedotin",
+    "pembrolizumab",
+    "KEYNOTE-B15",
+    "ESMO 2026"
+   ],
+   "title": "KEYNOTE-B15 ctDNA analysis: perioperative EV–pembrolizumab clears ctDNA more often than gemcitabine–cisplatin in MIBC",
+   "tumor": "Bladder",
+   "url": "https://www.onclive.com/view/keynote-b15-ctdna-analysis-perioperative-ev-pembrolizumab-higher-ctdna-clearance-mibc",
+   "id": "2026-10-23-keynote-b15-ctdna-ev-pembro-mibc"
+  },
+  {
+   "added": "2026-10-24",
+   "category": "research",
+   "date": "2026-10-23",
+   "impact": "notable",
+   "keyData": "RASolute 302 · mOS 13.2 vs 6.7 mo · HR 0.40 · G12D HR 0.49 · G12V HR 0.32 · G12R HR 0.61 (CI crosses 1)",
+   "source": "GlobeNewswire (Revolution Medicines)",
+   "summary": "Exploratory ESMO 2026 analyses showed the overall survival advantage of daraxonrasib over chemotherapy was consistent across G12D and G12V mutations, control regimens and prior-treatment settings. Estimates for G12R, Q61 and RAS-wild-type subgroups were imprecise, with confidence intervals crossing 1.",
+   "tags": [
+    "RAS(ON) inhibitor",
+    "daraxonrasib",
+    "KRAS",
+    "RASolute 302",
+    "ESMO 2026"
+   ],
+   "title": "RASolute 302 subgroups: daraxonrasib OS benefit holds across RAS genotypes and chemotherapy comparators in pretreated PDAC",
+   "tumor": "Pancreas",
+   "url": "https://www.globenewswire.com/news-release/2026/10/23/3387179/0/en/revolution-medicines-presents-overall-survival-data-for-rasonque-daraxonrasib-across-subgroups-in-previously-treated-metastatic-pancreatic-cancer-at-esmo-2026.html",
+   "id": "2026-10-23-rasolute-302-daraxonrasib-os-subgroups"
+  },
+  {
+   "added": "2026-10-24",
+   "category": "research",
+   "date": "2026-10-23",
+   "impact": "notable",
+   "keyData": "ORR 82% · 9-mo progression-free 88% (small phase 1/2 cohort)",
+   "source": "STAT News",
+   "summary": "Updated phase 1/2 data at ESMO 2026 for Tango's MTA-cooperative PRMT5 inhibitor combined with daraxonrasib in previously treated MTAP-deleted, RAS-mutant PDAC reported responses in most patients and few progressions at 9 months. Numbers are from small early-phase cohorts; a first-line phase 3 is being planned.",
+   "tags": [
+    "PRMT5",
+    "MTAP deletion",
+    "vopimetostat",
+    "daraxonrasib",
+    "ESMO 2026"
+   ],
+   "title": "Chemo-free PRMT5 inhibitor vopimetostat plus daraxonrasib shows high response rates in MTAP-deleted pancreatic cancer",
+   "tumor": "Pancreas",
+   "url": "https://www.statnews.com/2026/10/23/esmo-2026-trial-results-tango-therapeutics-vopimetostat-revolution-medicines-rasonque/",
+   "id": "2026-10-23-vopimetostat-daraxonrasib-mtap-pdac"
+  },
+  {
+   "added": "2026-10-24",
+   "category": "approval",
+   "date": "2026-10-23",
+   "impact": "notable",
+   "keyData": "MajesTEC-9 · PFS HR 0.29 · 18-mo PFS 69.8% vs 26.9% · OS HR 0.60 · 18-mo OS 79.2% vs 68.6%",
+   "source": "BioSpace (Johnson & Johnson press release)",
+   "summary": "The European Commission approved teclistamab as monotherapy for adults with RRMM after at least one prior therapy, based on the phase 3 MajesTEC-9 trial versus PVd or Kd. The BCMA×CD3 bispecific improved both PFS and OS.",
+   "tags": [
+    "bispecific",
+    "BCMA",
+    "teclistamab",
+    "MajesTEC-9",
+    "EU"
+   ],
+   "title": "EC approves teclistamab monotherapy for relapsed/refractory myeloma from first relapse",
+   "tumor": "Myeloma",
+   "url": "https://www.biospace.com/press-releases/european-commission-approves-johnson-johnsons-tecvayli-teclistamab-monotherapy-for-relapsed-refractory-multiple-myeloma-expanding-treatment-options-from-first-relapse",
+   "id": "2026-10-23-ec-teclistamab-majestec-9-2l-myeloma"
+  },
+  {
+   "added": "2026-10-24",
+   "category": "research",
+   "date": "2026-10-23",
+   "impact": "notable",
+   "keyData": "IOV-COM-202 cohort 1A (n=24) · ORR 62.5% · CR 29.2% · mPFS 19.8 mo · mDOR NR",
+   "source": "GlobeNewswire (Iovance)",
+   "summary": "In a 24-patient phase 2 cohort with about 4 years of follow-up, adding lifileucel to pembrolizumab produced high and durable response rates, with median OS not reached. The randomised phase 3 TILVANCE-301 is enrolling.",
+   "tags": [
+    "TIL",
+    "cell therapy",
+    "lifileucel",
+    "TILVANCE-301",
+    "ESMO 2026"
+   ],
+   "title": "Lifileucel TIL therapy plus pembrolizumab shows durable responses in frontline advanced melanoma (IOV-COM-202)",
+   "tumor": "Melanoma",
+   "url": "https://www.globenewswire.com/news-release/2026/10/23/3387397/0/en/iovance-presents-new-data-at-esmo-2026-demonstrating-deep-durable-responses-with-lifileucel-til-cell-therapy-plus-pembrolizumab-in-frontline-advanced-melanoma.html",
+   "id": "2026-10-23-lifileucel-pembro-frontline-melanoma"
+  },
+  {
+   "added": "2026-10-24",
+   "category": "trial",
+   "date": "2026-10-23",
+   "impact": "notable",
+   "keyData": "KEYNOTE-866 · EFS HR 0.88 (95% CI 0.71–1.10) · 5-yr EFS 63.5% vs 61.9% · pCR 44.4% vs 35.8% · OS HR 1.00",
+   "source": "OncLive",
+   "summary": "The placebo-controlled phase 3 trial in 907 cisplatin-eligible MIBC patients did not meet its EFS endpoint; pCR was numerically higher with pembrolizumab but OS was identical. Investigators concluded the data do not support this combination, leaving durvalumab-chemo and EV-pembrolizumab as the perioperative options.",
+   "tags": [
+    "pembrolizumab",
+    "perioperative",
+    "cisplatin",
+    "KEYNOTE-866",
+    "ESMO 2026"
+   ],
+   "title": "KEYNOTE-866: adding perioperative pembrolizumab to neoadjuvant cisplatin–gemcitabine fails to improve EFS in MIBC",
+   "tumor": "Bladder",
+   "url": "https://www.onclive.com/view/pembrolizumab-plus-chemo-misses-efs-end-point-in-cisplatin-eligible-mibc",
+   "id": "2026-10-23-keynote-866-pembro-gc-mibc-efs-miss"
+  },
+  {
+   "added": "2026-10-24",
+   "category": "trial",
+   "date": "2026-10-23",
+   "impact": "notable",
+   "keyData": "KEYNOTE-365 cohort I · mOS 10.2 vs 7.1 mo · HR 0.33 · ORR 28% vs 15%",
+   "source": "OncoDaily",
+   "summary": "In a small randomised cohort (n=70) of metastatic neuroendocrine prostate cancer, adding pembrolizumab to platinum–etoposide improved response rate and overall survival, most clearly in PD-L1 CPS ≥1. Authors flagged small numbers and post hoc subgroups.",
+   "tags": [
+    "pembrolizumab",
+    "neuroendocrine prostate cancer",
+    "carboplatin-etoposide",
+    "ESMO 2026"
+   ],
+   "title": "KEYNOTE-365 cohort I: pembrolizumab plus carboplatin–etoposide prolongs OS in neuroendocrine prostate cancer",
+   "tumor": "Prostate",
+   "url": "https://oncodaily.com/genitourinary-oncology/keynote-365-esmo-2026",
+   "id": "2026-10-23-keynote-365-cohort-i-nepc"
+  },
+  {
+   "added": "2026-10-24",
+   "category": "trial",
+   "date": "2026-10-23",
+   "impact": "notable",
+   "keyData": "G-HOPE-001 · mPFS 7.1 vs 3.1 mo · HR 0.45 · mOS 10.2 vs 6.9 mo · HR 0.57 · ORR 37.4% vs 7.7%",
+   "source": "BioSpace (Innovent press release)",
+   "summary": "In this phase 3 trial (China and Japan) of 464 patients with CLDN18.2-positive gastric or GEJ adenocarcinoma after 2–4 prior regimens, arcotatug tavatecan (IBI343) monotherapy beat physician's-choice chemotherapy on both PFS and OS. Presented as an ESMO 2026 late-breaker; results so far come from the sponsor's release.",
+   "tags": [
+    "ADC",
+    "CLDN18.2",
+    "IBI343",
+    "ESMO 2026",
+    "G-HOPE-001"
+   ],
+   "title": "G-HOPE-001: CLDN18.2 ADC arcotatug tavatecan improves PFS and OS over chemotherapy in pretreated gastric/GEJ cancer",
+   "tumor": "Gastroesophageal",
+   "url": "https://www.biospace.com/press-releases/2026-esmo-lba-innovent-announces-international-phase-3-study-of-arcotatug-tavatecan-cldn18-2-adc-in-gastric-cancer-met-dual-primary-endpoints-of-pfs-and-os",
+   "id": "2026-10-23-g-hope-001-arcotatug-tavatecan-gastric"
+  },
   {
    "added": "2026-10-23",
    "category": "approval",
