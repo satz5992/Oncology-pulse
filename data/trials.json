@@ -1,6 +1,6 @@
 {
  "version": 3,
- "updated": "2026-10-24T2",
+ "updated": "2026-10-24T12:00:00Z",
  "count": 299,
  "trials": [
   {
@@ -5427,7 +5427,8 @@
      "Active autoimmune disease"
     ],
     "strengths": [
-     "Superior PFS with dual IO vs chemotherapy and vs nivolumab alone"
+     "Superior PFS for nivo-ipi vs chemotherapy (first line) and vs nivolumab alone (all lines)",
+     "Large randomised trial in a biomarker-defined population"
     ],
     "limitations": [
      "More immune toxicity",

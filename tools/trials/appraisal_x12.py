@@ -106,4 +106,4 @@ c("Navari olanzapine CINV", "Olanzapine 10 mg improves nausea control with HEC. 
 c("Hokusai VTE Cancer / SELECT-D / Caravaggio", "DOACs are non-inferior to LMWH for cancer-associated VTE. Higher GI bleeding with edoxaban and rivaroxaban in GI cancers requires caution.")
 c("Denosumab vs zoledronic acid (Stopeck / Fizazi)", "Denosumab reduces skeletal events more than zoledronic acid. It does not improve OS, and hypocalcaemia and cost are concerns.")
 c("ABCSG-18 / Early Breast EBCTCG bisphosphonates", "Adjuvant bisphosphonates reduce fractures and recurrence in postmenopausal early breast cancer. Osteonecrosis of the jaw is rare but serious.")
-PATCH["CheckMate 8HW"]["strengths"] = ["Superior PFS for nivo-ipi vs chemotherapy (first line) and vs nivolumab alone (all lines)", "Large randomised trial in a biomarker-defined population"]
+PATCH["CheckMate 8HW"] = {"strengths": ["Superior PFS for nivo-ipi vs chemotherapy (first line) and vs nivolumab alone (all lines)", "Large randomised trial in a biomarker-defined population"]}
