@@ -21,3 +21,7 @@ Open the **Releases** page of this repository on your phone, download `OncologyP
 ```
 
 Summaries are compiled automatically; confirm against the original publication or label before clinical use.
+
+## Meetings tab
+
+`data/conferences.json` holds the oncology meeting calendar (dates, city, official site, press-release page). `tools/publish.py` embeds it in `data/news.json` and links news items to a meeting (explicit `conference` id, or the meeting's `match` pattern) with a `session` label (Presidential, Plenary, LBA, Oral, Poster, Preview). Add next year's meetings to the JSON file; no app update is needed.

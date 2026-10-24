@@ -3,66 +3,6 @@
  "items": [
   {
    "added": "2026-10-24",
-   "category": "research",
-   "date": "2026-10-23",
-   "impact": "notable",
-   "keyData": "ctDNA clearance 82.1% vs 66.7% · 24-mo EFS baseline ctDNA+ 71.2% vs 54.2% (HR 0.54) · post-op ctDNA− HR 0.48",
-   "source": "OncLive",
-   "summary": "In an exploratory ESMO 2026 analysis of cisplatin-eligible MIBC, more baseline ctDNA-positive patients cleared ctDNA before surgery with enfortumab vedotin plus pembrolizumab, and EFS benefit was clearest in baseline ctDNA-positive and post-surgery ctDNA-negative groups. Persistently ctDNA-positive patients did poorly in both arms.",
-   "tags": [
-    "ctDNA",
-    "enfortumab vedotin",
-    "pembrolizumab",
-    "KEYNOTE-B15",
-    "ESMO 2026"
-   ],
-   "title": "KEYNOTE-B15 ctDNA analysis: perioperative EV–pembrolizumab clears ctDNA more often than gemcitabine–cisplatin in MIBC",
-   "tumor": "Bladder",
-   "url": "https://www.onclive.com/view/keynote-b15-ctdna-analysis-perioperative-ev-pembrolizumab-higher-ctdna-clearance-mibc",
-   "id": "2026-10-23-keynote-b15-ctdna-ev-pembro-mibc"
-  },
-  {
-   "added": "2026-10-24",
-   "category": "research",
-   "date": "2026-10-23",
-   "impact": "notable",
-   "keyData": "RASolute 302 · mOS 13.2 vs 6.7 mo · HR 0.40 · G12D HR 0.49 · G12V HR 0.32 · G12R HR 0.61 (CI crosses 1)",
-   "source": "GlobeNewswire (Revolution Medicines)",
-   "summary": "Exploratory ESMO 2026 analyses showed the overall survival advantage of daraxonrasib over chemotherapy was consistent across G12D and G12V mutations, control regimens and prior-treatment settings. Estimates for G12R, Q61 and RAS-wild-type subgroups were imprecise, with confidence intervals crossing 1.",
-   "tags": [
-    "RAS(ON) inhibitor",
-    "daraxonrasib",
-    "KRAS",
-    "RASolute 302",
-    "ESMO 2026"
-   ],
-   "title": "RASolute 302 subgroups: daraxonrasib OS benefit holds across RAS genotypes and chemotherapy comparators in pretreated PDAC",
-   "tumor": "Pancreas",
-   "url": "https://www.globenewswire.com/news-release/2026/10/23/3387179/0/en/revolution-medicines-presents-overall-survival-data-for-rasonque-daraxonrasib-across-subgroups-in-previously-treated-metastatic-pancreatic-cancer-at-esmo-2026.html",
-   "id": "2026-10-23-rasolute-302-daraxonrasib-os-subgroups"
-  },
-  {
-   "added": "2026-10-24",
-   "category": "research",
-   "date": "2026-10-23",
-   "impact": "notable",
-   "keyData": "ORR 82% · 9-mo progression-free 88% (small phase 1/2 cohort)",
-   "source": "STAT News",
-   "summary": "Updated phase 1/2 data at ESMO 2026 for Tango's MTA-cooperative PRMT5 inhibitor combined with daraxonrasib in previously treated MTAP-deleted, RAS-mutant PDAC reported responses in most patients and few progressions at 9 months. Numbers are from small early-phase cohorts; a first-line phase 3 is being planned.",
-   "tags": [
-    "PRMT5",
-    "MTAP deletion",
-    "vopimetostat",
-    "daraxonrasib",
-    "ESMO 2026"
-   ],
-   "title": "Chemo-free PRMT5 inhibitor vopimetostat plus daraxonrasib shows high response rates in MTAP-deleted pancreatic cancer",
-   "tumor": "Pancreas",
-   "url": "https://www.statnews.com/2026/10/23/esmo-2026-trial-results-tango-therapeutics-vopimetostat-revolution-medicines-rasonque/",
-   "id": "2026-10-23-vopimetostat-daraxonrasib-mtap-pdac"
-  },
-  {
-   "added": "2026-10-24",
    "category": "approval",
    "date": "2026-10-23",
    "impact": "notable",
@@ -83,23 +23,46 @@
   },
   {
    "added": "2026-10-24",
-   "category": "research",
+   "category": "trial",
    "date": "2026-10-23",
    "impact": "notable",
-   "keyData": "IOV-COM-202 cohort 1A (n=24) · ORR 62.5% · CR 29.2% · mPFS 19.8 mo · mDOR NR",
-   "source": "GlobeNewswire (Iovance)",
-   "summary": "In a 24-patient phase 2 cohort with about 4 years of follow-up, adding lifileucel to pembrolizumab produced high and durable response rates, with median OS not reached. The randomised phase 3 TILVANCE-301 is enrolling.",
+   "keyData": "G-HOPE-001 · mPFS 7.1 vs 3.1 mo · HR 0.45 · mOS 10.2 vs 6.9 mo · HR 0.57 · ORR 37.4% vs 7.7%",
+   "source": "BioSpace (Innovent press release)",
+   "summary": "In this phase 3 trial (China and Japan) of 464 patients with CLDN18.2-positive gastric or GEJ adenocarcinoma after 2–4 prior regimens, arcotatug tavatecan (IBI343) monotherapy beat physician's-choice chemotherapy on both PFS and OS. Presented as an ESMO 2026 late-breaker; results so far come from the sponsor's release.",
    "tags": [
-    "TIL",
-    "cell therapy",
-    "lifileucel",
-    "TILVANCE-301",
+    "ADC",
+    "CLDN18.2",
+    "IBI343",
+    "ESMO 2026",
+    "G-HOPE-001"
+   ],
+   "title": "G-HOPE-001: CLDN18.2 ADC arcotatug tavatecan improves PFS and OS over chemotherapy in pretreated gastric/GEJ cancer",
+   "tumor": "Gastroesophageal",
+   "url": "https://www.biospace.com/press-releases/2026-esmo-lba-innovent-announces-international-phase-3-study-of-arcotatug-tavatecan-cldn18-2-adc-in-gastric-cancer-met-dual-primary-endpoints-of-pfs-and-os",
+   "id": "2026-10-23-g-hope-001-arcotatug-tavatecan-gastric",
+   "conference": "esmo-2026",
+   "session": "LBA"
+  },
+  {
+   "added": "2026-10-24",
+   "category": "trial",
+   "date": "2026-10-23",
+   "impact": "notable",
+   "keyData": "KEYNOTE-365 cohort I · mOS 10.2 vs 7.1 mo · HR 0.33 · ORR 28% vs 15%",
+   "source": "OncoDaily",
+   "summary": "In a small randomised cohort (n=70) of metastatic neuroendocrine prostate cancer, adding pembrolizumab to platinum–etoposide improved response rate and overall survival, most clearly in PD-L1 CPS ≥1. Authors flagged small numbers and post hoc subgroups.",
+   "tags": [
+    "pembrolizumab",
+    "neuroendocrine prostate cancer",
+    "carboplatin-etoposide",
     "ESMO 2026"
    ],
-   "title": "Lifileucel TIL therapy plus pembrolizumab shows durable responses in frontline advanced melanoma (IOV-COM-202)",
-   "tumor": "Melanoma",
-   "url": "https://www.globenewswire.com/news-release/2026/10/23/3387397/0/en/iovance-presents-new-data-at-esmo-2026-demonstrating-deep-durable-responses-with-lifileucel-til-cell-therapy-plus-pembrolizumab-in-frontline-advanced-melanoma.html",
-   "id": "2026-10-23-lifileucel-pembro-frontline-melanoma"
+   "title": "KEYNOTE-365 cohort I: pembrolizumab plus carboplatin–etoposide prolongs OS in neuroendocrine prostate cancer",
+   "tumor": "Prostate",
+   "url": "https://oncodaily.com/genitourinary-oncology/keynote-365-esmo-2026",
+   "id": "2026-10-23-keynote-365-cohort-i-nepc",
+   "conference": "esmo-2026",
+   "session": "Presented"
   },
   {
    "added": "2026-10-24",
@@ -119,46 +82,120 @@
    "title": "KEYNOTE-866: adding perioperative pembrolizumab to neoadjuvant cisplatin–gemcitabine fails to improve EFS in MIBC",
    "tumor": "Bladder",
    "url": "https://www.onclive.com/view/pembrolizumab-plus-chemo-misses-efs-end-point-in-cisplatin-eligible-mibc",
-   "id": "2026-10-23-keynote-866-pembro-gc-mibc-efs-miss"
+   "id": "2026-10-23-keynote-866-pembro-gc-mibc-efs-miss",
+   "conference": "esmo-2026",
+   "session": "Presented"
   },
   {
    "added": "2026-10-24",
-   "category": "trial",
+   "category": "research",
    "date": "2026-10-23",
    "impact": "notable",
-   "keyData": "KEYNOTE-365 cohort I · mOS 10.2 vs 7.1 mo · HR 0.33 · ORR 28% vs 15%",
-   "source": "OncoDaily",
-   "summary": "In a small randomised cohort (n=70) of metastatic neuroendocrine prostate cancer, adding pembrolizumab to platinum–etoposide improved response rate and overall survival, most clearly in PD-L1 CPS ≥1. Authors flagged small numbers and post hoc subgroups.",
+   "keyData": "ctDNA clearance 82.1% vs 66.7% · 24-mo EFS baseline ctDNA+ 71.2% vs 54.2% (HR 0.54) · post-op ctDNA− HR 0.48",
+   "source": "OncLive",
+   "summary": "In an exploratory ESMO 2026 analysis of cisplatin-eligible MIBC, more baseline ctDNA-positive patients cleared ctDNA before surgery with enfortumab vedotin plus pembrolizumab, and EFS benefit was clearest in baseline ctDNA-positive and post-surgery ctDNA-negative groups. Persistently ctDNA-positive patients did poorly in both arms.",
    "tags": [
+    "ctDNA",
+    "enfortumab vedotin",
     "pembrolizumab",
-    "neuroendocrine prostate cancer",
-    "carboplatin-etoposide",
+    "KEYNOTE-B15",
     "ESMO 2026"
    ],
-   "title": "KEYNOTE-365 cohort I: pembrolizumab plus carboplatin–etoposide prolongs OS in neuroendocrine prostate cancer",
-   "tumor": "Prostate",
-   "url": "https://oncodaily.com/genitourinary-oncology/keynote-365-esmo-2026",
-   "id": "2026-10-23-keynote-365-cohort-i-nepc"
+   "title": "KEYNOTE-B15 ctDNA analysis: perioperative EV–pembrolizumab clears ctDNA more often than gemcitabine–cisplatin in MIBC",
+   "tumor": "Bladder",
+   "url": "https://www.onclive.com/view/keynote-b15-ctdna-analysis-perioperative-ev-pembrolizumab-higher-ctdna-clearance-mibc",
+   "id": "2026-10-23-keynote-b15-ctdna-ev-pembro-mibc",
+   "conference": "esmo-2026",
+   "session": "Presented"
   },
   {
    "added": "2026-10-24",
-   "category": "trial",
+   "category": "research",
    "date": "2026-10-23",
    "impact": "notable",
-   "keyData": "G-HOPE-001 · mPFS 7.1 vs 3.1 mo · HR 0.45 · mOS 10.2 vs 6.9 mo · HR 0.57 · ORR 37.4% vs 7.7%",
-   "source": "BioSpace (Innovent press release)",
-   "summary": "In this phase 3 trial (China and Japan) of 464 patients with CLDN18.2-positive gastric or GEJ adenocarcinoma after 2–4 prior regimens, arcotatug tavatecan (IBI343) monotherapy beat physician's-choice chemotherapy on both PFS and OS. Presented as an ESMO 2026 late-breaker; results so far come from the sponsor's release.",
+   "keyData": "IOV-COM-202 cohort 1A (n=24) · ORR 62.5% · CR 29.2% · mPFS 19.8 mo · mDOR NR",
+   "source": "GlobeNewswire (Iovance)",
+   "summary": "In a 24-patient phase 2 cohort with about 4 years of follow-up, adding lifileucel to pembrolizumab produced high and durable response rates, with median OS not reached. The randomised phase 3 TILVANCE-301 is enrolling.",
    "tags": [
-    "ADC",
-    "CLDN18.2",
-    "IBI343",
-    "ESMO 2026",
-    "G-HOPE-001"
+    "TIL",
+    "cell therapy",
+    "lifileucel",
+    "TILVANCE-301",
+    "ESMO 2026"
    ],
-   "title": "G-HOPE-001: CLDN18.2 ADC arcotatug tavatecan improves PFS and OS over chemotherapy in pretreated gastric/GEJ cancer",
-   "tumor": "Gastroesophageal",
-   "url": "https://www.biospace.com/press-releases/2026-esmo-lba-innovent-announces-international-phase-3-study-of-arcotatug-tavatecan-cldn18-2-adc-in-gastric-cancer-met-dual-primary-endpoints-of-pfs-and-os",
-   "id": "2026-10-23-g-hope-001-arcotatug-tavatecan-gastric"
+   "title": "Lifileucel TIL therapy plus pembrolizumab shows durable responses in frontline advanced melanoma (IOV-COM-202)",
+   "tumor": "Melanoma",
+   "url": "https://www.globenewswire.com/news-release/2026/10/23/3387397/0/en/iovance-presents-new-data-at-esmo-2026-demonstrating-deep-durable-responses-with-lifileucel-til-cell-therapy-plus-pembrolizumab-in-frontline-advanced-melanoma.html",
+   "id": "2026-10-23-lifileucel-pembro-frontline-melanoma",
+   "conference": "esmo-2026",
+   "session": "Presented"
+  },
+  {
+   "added": "2026-10-24",
+   "category": "research",
+   "date": "2026-10-23",
+   "impact": "notable",
+   "keyData": "RASolute 302 · mOS 13.2 vs 6.7 mo · HR 0.40 · G12D HR 0.49 · G12V HR 0.32 · G12R HR 0.61 (CI crosses 1)",
+   "source": "GlobeNewswire (Revolution Medicines)",
+   "summary": "Exploratory ESMO 2026 analyses showed the overall survival advantage of daraxonrasib over chemotherapy was consistent across G12D and G12V mutations, control regimens and prior-treatment settings. Estimates for G12R, Q61 and RAS-wild-type subgroups were imprecise, with confidence intervals crossing 1.",
+   "tags": [
+    "RAS(ON) inhibitor",
+    "daraxonrasib",
+    "KRAS",
+    "RASolute 302",
+    "ESMO 2026"
+   ],
+   "title": "RASolute 302 subgroups: daraxonrasib OS benefit holds across RAS genotypes and chemotherapy comparators in pretreated PDAC",
+   "tumor": "Pancreas",
+   "url": "https://www.globenewswire.com/news-release/2026/10/23/3387179/0/en/revolution-medicines-presents-overall-survival-data-for-rasonque-daraxonrasib-across-subgroups-in-previously-treated-metastatic-pancreatic-cancer-at-esmo-2026.html",
+   "id": "2026-10-23-rasolute-302-daraxonrasib-os-subgroups",
+   "conference": "esmo-2026",
+   "session": "Presented"
+  },
+  {
+   "added": "2026-10-24",
+   "category": "research",
+   "date": "2026-10-23",
+   "impact": "notable",
+   "keyData": "ORR 82% · 9-mo progression-free 88% (small phase 1/2 cohort)",
+   "source": "STAT News",
+   "summary": "Updated phase 1/2 data at ESMO 2026 for Tango's MTA-cooperative PRMT5 inhibitor combined with daraxonrasib in previously treated MTAP-deleted, RAS-mutant PDAC reported responses in most patients and few progressions at 9 months. Numbers are from small early-phase cohorts; a first-line phase 3 is being planned.",
+   "tags": [
+    "PRMT5",
+    "MTAP deletion",
+    "vopimetostat",
+    "daraxonrasib",
+    "ESMO 2026"
+   ],
+   "title": "Chemo-free PRMT5 inhibitor vopimetostat plus daraxonrasib shows high response rates in MTAP-deleted pancreatic cancer",
+   "tumor": "Pancreas",
+   "url": "https://www.statnews.com/2026/10/23/esmo-2026-trial-results-tango-therapeutics-vopimetostat-revolution-medicines-rasonque/",
+   "id": "2026-10-23-vopimetostat-daraxonrasib-mtap-pdac",
+   "conference": "esmo-2026",
+   "session": "Presented"
+  },
+  {
+   "added": "2026-10-23",
+   "category": "trial",
+   "date": "2026-10-22",
+   "impact": "notable",
+   "keyData": "INTerpath-001 · n=1137 · RFS HR 0.58 · 2-yr RFS 82.2% vs 70.0% · DMFS HR 0.62 · G3-5 TRAE 14.2% vs 13.4%",
+   "source": "Merck",
+   "summary": "Detailed phase 3 results, released early ahead of the ESMO Presidential Symposium (LBA1), show improved recurrence-free and distant metastasis-free survival when intismeran autogene is added to adjuvant pembrolizumab in resected stage IIB–IV melanoma; curves separate only after about 6 months and OS is immature.",
+   "tags": [
+    "mRNA vaccine",
+    "neoantigen",
+    "intismeran",
+    "pembrolizumab",
+    "adjuvant",
+    "ESMO 2026"
+   ],
+   "title": "INTerpath-001 full data: individualised mRNA vaccine intismeran plus pembrolizumab cuts recurrence in resected melanoma",
+   "tumor": "Melanoma",
+   "url": "https://www.merck.com/news/merck-and-moderna-will-present-results-from-landmark-phase-3-interpath-001-trial-for-intismeran-autogene-plus-keytruda-pembrolizumab-at-esmo-2026-presidential-symposium/",
+   "id": "2026-10-22-interpath-001-intismeran-detailed-data",
+   "conference": "esmo-2026",
+   "session": "Presidential"
   },
   {
    "added": "2026-10-23",
@@ -201,24 +238,44 @@
   },
   {
    "added": "2026-10-23",
-   "category": "trial",
-   "date": "2026-10-22",
+   "category": "research",
+   "date": "2026-10-21",
    "impact": "notable",
-   "keyData": "INTerpath-001 · n=1137 · RFS HR 0.58 · 2-yr RFS 82.2% vs 70.0% · DMFS HR 0.62 · G3-5 TRAE 14.2% vs 13.4%",
-   "source": "Merck",
-   "summary": "Detailed phase 3 results, released early ahead of the ESMO Presidential Symposium (LBA1), show improved recurrence-free and distant metastasis-free survival when intismeran autogene is added to adjuvant pembrolizumab in resected stage IIB–IV melanoma; curves separate only after about 6 months and OS is immature.",
+   "keyData": "4 RCTs · n=1397 · pooled OS HR 0.95 · PFS HR 0.89 · ADRIATIC OS HR 0.73",
+   "source": "CancerNetwork",
+   "summary": "A pooled analysis of four randomised trials (1,397 patients) found no significant overall OS or PFS gain from adding immune checkpoint inhibitors to chemoradiotherapy in limited-stage SCLC, with ADRIATIC consolidation durvalumab the only trial showing a significant OS benefit and no excess grade 3–4 toxicity overall.",
    "tags": [
-    "mRNA vaccine",
-    "neoantigen",
-    "intismeran",
-    "pembrolizumab",
-    "adjuvant",
-    "ESMO 2026"
+    "radiotherapy",
+    "SCLC",
+    "chemoradiotherapy",
+    "durvalumab",
+    "ADRIATIC",
+    "meta-analysis"
    ],
-   "title": "INTerpath-001 full data: individualised mRNA vaccine intismeran plus pembrolizumab cuts recurrence in resected melanoma",
-   "tumor": "Melanoma",
-   "url": "https://www.merck.com/news/merck-and-moderna-will-present-results-from-landmark-phase-3-interpath-001-trial-for-intismeran-autogene-plus-keytruda-pembrolizumab-at-esmo-2026-presidential-symposium/",
-   "id": "2026-10-22-interpath-001-intismeran-detailed-data"
+   "title": "Meta-analysis: adding checkpoint inhibitors to chemoradiotherapy in LS-SCLC — benefit confined to consolidation durvalumab",
+   "tumor": "Lung",
+   "url": "https://www.cancernetwork.com/view/efficacy-and-safety-of-immune-checkpoint-inhibitors-combined-with-chemoradiotherapy-in-limited-stage-small-cell-lung-cancer",
+   "id": "2026-10-21-ici-crt-ls-sclc-meta-analysis"
+  },
+  {
+   "added": "2026-10-23",
+   "category": "designation",
+   "date": "2026-10-21",
+   "impact": "notable",
+   "keyData": "Phase 1 (NCT05549661) · n=9 · clinical benefit in 3 · stable disease in 3",
+   "source": "OncLive",
+   "summary": "FDA granted orphan status to oral PLK1 inhibitor onvansertib for chronic myelomonocytic leukaemia, based on an early Mayo Clinic/NCI phase 1 dose-escalation study in relapsed/refractory proliferative CMML and MDS/MPN overlap with RAS-pathway mutations.",
+   "tags": [
+    "PLK1",
+    "onvansertib",
+    "CMML",
+    "RAS",
+    "orphan drug"
+   ],
+   "title": "Orphan drug designation for PLK1 inhibitor onvansertib in CMML",
+   "tumor": "Leukaemia/MDS",
+   "url": "https://www.onclive.com/view/fda-grants-orphan-drug-designation-to-onvansertib-for-chronic-myelomonocytic-leukemia",
+   "id": "2026-10-21-onvansertib-cmml-orphan"
   },
   {
    "added": "2026-10-23",
@@ -260,45 +317,25 @@
    "id": "2026-10-21-sofetabart-mipitecan-annonc-phase1"
   },
   {
-   "added": "2026-10-23",
-   "category": "designation",
+   "added": "2026-10-22",
+   "category": "approval",
    "date": "2026-10-21",
-   "impact": "notable",
-   "keyData": "Phase 1 (NCT05549661) · n=9 · clinical benefit in 3 · stable disease in 3",
-   "source": "OncLive",
-   "summary": "FDA granted orphan status to oral PLK1 inhibitor onvansertib for chronic myelomonocytic leukaemia, based on an early Mayo Clinic/NCI phase 1 dose-escalation study in relapsed/refractory proliferative CMML and MDS/MPN overlap with RAS-pathway mutations.",
+   "impact": "practice-changing",
+   "keyData": "KEYNOTE-B15/EV-304 · 2-yr EFS 79.4% vs 66.2% · HR 0.53 · 2-yr OS 86.9% vs 81.3% · HR 0.65",
+   "source": "Merck",
+   "summary": "The European Commission approved neoadjuvant pembrolizumab plus enfortumab vedotin, continued as adjuvant therapy after radical cystectomy, for adults with resectable muscle-invasive bladder cancer irrespective of cisplatin eligibility; subcutaneous pembrolizumab is included. Support comes from KEYNOTE-B15/EV-304 versus neoadjuvant gemcitabine–cisplatin in cisplatin-eligible patients.",
    "tags": [
-    "PLK1",
-    "onvansertib",
-    "CMML",
-    "RAS",
-    "orphan drug"
+    "pembrolizumab",
+    "enfortumab vedotin",
+    "ADC",
+    "perioperative",
+    "EU",
+    "KEYNOTE-B15"
    ],
-   "title": "Orphan drug designation for PLK1 inhibitor onvansertib in CMML",
-   "tumor": "Leukaemia/MDS",
-   "url": "https://www.onclive.com/view/fda-grants-orphan-drug-designation-to-onvansertib-for-chronic-myelomonocytic-leukemia",
-   "id": "2026-10-21-onvansertib-cmml-orphan"
-  },
-  {
-   "added": "2026-10-23",
-   "category": "research",
-   "date": "2026-10-21",
-   "impact": "notable",
-   "keyData": "4 RCTs · n=1397 · pooled OS HR 0.95 · PFS HR 0.89 · ADRIATIC OS HR 0.73",
-   "source": "CancerNetwork",
-   "summary": "A pooled analysis of four randomised trials (1,397 patients) found no significant overall OS or PFS gain from adding immune checkpoint inhibitors to chemoradiotherapy in limited-stage SCLC, with ADRIATIC consolidation durvalumab the only trial showing a significant OS benefit and no excess grade 3–4 toxicity overall.",
-   "tags": [
-    "radiotherapy",
-    "SCLC",
-    "chemoradiotherapy",
-    "durvalumab",
-    "ADRIATIC",
-    "meta-analysis"
-   ],
-   "title": "Meta-analysis: adding checkpoint inhibitors to chemoradiotherapy in LS-SCLC — benefit confined to consolidation durvalumab",
-   "tumor": "Lung",
-   "url": "https://www.cancernetwork.com/view/efficacy-and-safety-of-immune-checkpoint-inhibitors-combined-with-chemoradiotherapy-in-limited-stage-small-cell-lung-cancer",
-   "id": "2026-10-21-ici-crt-ls-sclc-meta-analysis"
+   "title": "EC approves perioperative pembrolizumab plus enfortumab vedotin for resectable MIBC",
+   "tumor": "Bladder",
+   "url": "https://www.merck.com/news/european-commission-approves-keytruda-pembrolizumab-plus-padcev-enfortumab-vedotin-ejfv-as-perioperative-treatment-for-adults-with-resectable-muscle-invasive-bladder-cancer-mibc/",
+   "id": "2026-10-21-ec-pembro-ev-perioperative-mibc"
   },
   {
    "added": "2026-10-22",
@@ -320,27 +357,6 @@
    "tumor": "Gastroesophageal",
    "url": "https://www.business-standard.com/companies/news/dr-reddys-zytorvi-dcgi-approval-oesophageal-cancer-toripalimab-126102100639_1.html",
    "id": "2026-10-21-toripalimab-escc-dcgi-india"
-  },
-  {
-   "added": "2026-10-22",
-   "category": "approval",
-   "date": "2026-10-21",
-   "impact": "practice-changing",
-   "keyData": "KEYNOTE-B15/EV-304 · 2-yr EFS 79.4% vs 66.2% · HR 0.53 · 2-yr OS 86.9% vs 81.3% · HR 0.65",
-   "source": "Merck",
-   "summary": "The European Commission approved neoadjuvant pembrolizumab plus enfortumab vedotin, continued as adjuvant therapy after radical cystectomy, for adults with resectable muscle-invasive bladder cancer irrespective of cisplatin eligibility; subcutaneous pembrolizumab is included. Support comes from KEYNOTE-B15/EV-304 versus neoadjuvant gemcitabine–cisplatin in cisplatin-eligible patients.",
-   "tags": [
-    "pembrolizumab",
-    "enfortumab vedotin",
-    "ADC",
-    "perioperative",
-    "EU",
-    "KEYNOTE-B15"
-   ],
-   "title": "EC approves perioperative pembrolizumab plus enfortumab vedotin for resectable MIBC",
-   "tumor": "Bladder",
-   "url": "https://www.merck.com/news/european-commission-approves-keytruda-pembrolizumab-plus-padcev-enfortumab-vedotin-ejfv-as-perioperative-treatment-for-adults-with-resectable-muscle-invasive-bladder-cancer-mibc/",
-   "id": "2026-10-21-ec-pembro-ev-perioperative-mibc"
   },
   {
    "added": "2026-10-22",
@@ -366,20 +382,23 @@
    "category": "trial",
    "date": "2026-10-19",
    "impact": "notable",
-   "keyData": "TASKIN (n=159) · 12-mo OS 61.3% vs 55.7% · mPFS 5.9 vs 5.6 mo · right-sided OS HR 0.38 (exploratory)",
-   "source": "XBiotech",
-   "summary": "The investigator-sponsored randomised, placebo-controlled phase 2 TASKIN trial met its prespecified 12-month survival threshold with vilamakitug added to trifluridine/tipiracil, but PFS did not differ; an exploratory right-sided subgroup showed an OS signal.",
+   "keyData": "Combi-TED (n=106) · 1-yr OS 47% (+docetaxel) / 46% (+nivolumab) vs 29% docetaxel",
+   "source": "CancerNetwork",
+   "summary": "In the randomised phase 2 Combi-TED trial in HLA-A2-positive metastatic NSCLC progressing after first-line chemo-immunotherapy, both OSE2101 (Tedopi) combinations met the 1-year OS endpoint while docetaxel alone did not. Final results are slated for ESMO 2026.",
    "tags": [
-    "IL-1α",
-    "vilamakitug",
-    "trifluridine/tipiracil",
-    "refractory CRC",
-    "TASKIN"
+    "cancer vaccine",
+    "OSE2101",
+    "Tedopi",
+    "HLA-A2",
+    "Combi-TED",
+    "ESMO 2026"
    ],
-   "title": "TASKIN: IL-1α antibody vilamakitug plus trifluridine/tipiracil meets 12-month OS threshold in refractory mCRC",
-   "tumor": "Colorectal",
-   "url": "https://investors.xbiotech.com/news-releases/news-release-details/xbiotech-announces-positive-phase-ii-final-efficacy-results",
-   "id": "2026-10-19-taskin-vilamakitug-mcrc"
+   "title": "Combi-TED: neoepitope vaccine OSE2101 with docetaxel or nivolumab improves 1-year OS in second-line NSCLC",
+   "tumor": "Lung",
+   "url": "https://www.cancernetwork.com/view/cancer-vaccine-combinations-improve-1-year-survival-in-second-line-nsclc",
+   "id": "2026-10-19-combi-ted-ose2101-nsclc",
+   "conference": "esmo-2026",
+   "session": "Preview"
   },
   {
    "added": "2026-10-22",
@@ -399,48 +418,29 @@
    "title": "Fast track for KRAS G12D-preferring inhibitor QTX3034 plus cetuximab in colorectal cancer",
    "tumor": "Colorectal",
    "url": "https://www.onclive.com/view/qtx3034-plus-cetuximab-receives-fda-fast-track-designation-in-kras-g12d-mutated-crc",
-   "id": "2026-10-19-qtx3034-cetuximab-kras-g12d-crc-ftd"
+   "id": "2026-10-19-qtx3034-cetuximab-kras-g12d-crc-ftd",
+   "conference": "esmo-2026",
+   "session": "Preview"
   },
   {
    "added": "2026-10-22",
    "category": "trial",
    "date": "2026-10-19",
    "impact": "notable",
-   "keyData": "Combi-TED (n=106) · 1-yr OS 47% (+docetaxel) / 46% (+nivolumab) vs 29% docetaxel",
-   "source": "CancerNetwork",
-   "summary": "In the randomised phase 2 Combi-TED trial in HLA-A2-positive metastatic NSCLC progressing after first-line chemo-immunotherapy, both OSE2101 (Tedopi) combinations met the 1-year OS endpoint while docetaxel alone did not. Final results are slated for ESMO 2026.",
+   "keyData": "TASKIN (n=159) · 12-mo OS 61.3% vs 55.7% · mPFS 5.9 vs 5.6 mo · right-sided OS HR 0.38 (exploratory)",
+   "source": "XBiotech",
+   "summary": "The investigator-sponsored randomised, placebo-controlled phase 2 TASKIN trial met its prespecified 12-month survival threshold with vilamakitug added to trifluridine/tipiracil, but PFS did not differ; an exploratory right-sided subgroup showed an OS signal.",
    "tags": [
-    "cancer vaccine",
-    "OSE2101",
-    "Tedopi",
-    "HLA-A2",
-    "Combi-TED",
-    "ESMO 2026"
+    "IL-1α",
+    "vilamakitug",
+    "trifluridine/tipiracil",
+    "refractory CRC",
+    "TASKIN"
    ],
-   "title": "Combi-TED: neoepitope vaccine OSE2101 with docetaxel or nivolumab improves 1-year OS in second-line NSCLC",
-   "tumor": "Lung",
-   "url": "https://www.cancernetwork.com/view/cancer-vaccine-combinations-improve-1-year-survival-in-second-line-nsclc",
-   "id": "2026-10-19-combi-ted-ose2101-nsclc"
-  },
-  {
-   "added": "2026-10-21",
-   "category": "research",
-   "date": "2026-10-20",
-   "impact": "notable",
-   "keyData": "CK-301-101 LA cohort · n=31 · ORR 54.8% · CR 25.8% · 24-mo DOR rate 80.2%",
-   "source": "OncLive",
-   "summary": "NCCN guidelines now include the PD-L1 antibody cosibelimab-ipdl (Unloxcyt, Sun Pharma) as a category 2A preferred therapy for locally advanced CSCC not suitable for curative surgery or radiation, extending its existing preferred status in metastatic disease.",
-   "tags": [
-    "PD-L1",
-    "cosibelimab",
-    "NCCN",
-    "CSCC",
-    "Sun Pharma"
-   ],
-   "title": "NCCN lists cosibelimab as category 2A preferred option for locally advanced cutaneous SCC",
-   "tumor": "Skin",
-   "url": "https://www.onclive.com/view/nccn-guidelines-upgrade-cosibelimab-to-category-2a-for-locally-advanced-cutaneous-squamous-cell",
-   "id": "2026-10-20-nccn-cosibelimab-la-cscc"
+   "title": "TASKIN: IL-1α antibody vilamakitug plus trifluridine/tipiracil meets 12-month OS threshold in refractory mCRC",
+   "tumor": "Colorectal",
+   "url": "https://investors.xbiotech.com/news-releases/news-release-details/xbiotech-announces-positive-phase-ii-final-efficacy-results",
+   "id": "2026-10-19-taskin-vilamakitug-mcrc"
   },
   {
    "added": "2026-10-21",
@@ -465,6 +465,26 @@
   {
    "added": "2026-10-21",
    "category": "research",
+   "date": "2026-10-20",
+   "impact": "notable",
+   "keyData": "CK-301-101 LA cohort · n=31 · ORR 54.8% · CR 25.8% · 24-mo DOR rate 80.2%",
+   "source": "OncLive",
+   "summary": "NCCN guidelines now include the PD-L1 antibody cosibelimab-ipdl (Unloxcyt, Sun Pharma) as a category 2A preferred therapy for locally advanced CSCC not suitable for curative surgery or radiation, extending its existing preferred status in metastatic disease.",
+   "tags": [
+    "PD-L1",
+    "cosibelimab",
+    "NCCN",
+    "CSCC",
+    "Sun Pharma"
+   ],
+   "title": "NCCN lists cosibelimab as category 2A preferred option for locally advanced cutaneous SCC",
+   "tumor": "Skin",
+   "url": "https://www.onclive.com/view/nccn-guidelines-upgrade-cosibelimab-to-category-2a-for-locally-advanced-cutaneous-squamous-cell",
+   "id": "2026-10-20-nccn-cosibelimab-la-cscc"
+  },
+  {
+   "added": "2026-10-21",
+   "category": "research",
    "date": "2026-10-18",
    "impact": "notable",
    "keyData": "EMBOLD PanTumour-101 · ORR 61% (8 mg/kg) vs 32% (6 mg/kg) · G≥3 TRAEs 42% vs 15% · ILD 2%",
@@ -480,7 +500,9 @@
    "title": "B7-H3 ADC risvutatug rezetecan shows high response rates in relapsed extensive-stage SCLC",
    "tumor": "Lung",
    "url": "https://www.cancernetwork.com/view/riz-rez-produces-anti-tumor-activity-in-extensive-stage-sclc",
-   "id": "2026-10-18-ris-rez-embold-es-sclc"
+   "id": "2026-10-18-ris-rez-embold-es-sclc",
+   "conference": "esmo-2026",
+   "session": "Preview"
   },
   {
    "added": "2026-10-21",
@@ -540,7 +562,9 @@
    "title": "FDA approves expansion of Alpha DaRT alpha-emitter brachytherapy trial in recurrent glioblastoma",
    "tumor": "CNS",
    "url": "https://www.globenewswire.com/news-release/2026/10/19/3383438/0/en/alpha-tau-announces-fda-approval-to-expand-alpha-dart-u-s-recurrent-glioblastoma-regain-trial-new-trial-data-to-be-presented-at-sno-2026-annual-meeting.html",
-   "id": "2026-10-19-alpha-dart-regain-gbm-expansion"
+   "id": "2026-10-19-alpha-dart-regain-gbm-expansion",
+   "conference": "sno-2026",
+   "session": "Preview"
   },
   {
    "added": "2026-10-20",
@@ -561,49 +585,9 @@
    "title": "ESMO 2026 Presidential Symposia: CLARITY-Gastric01, SAFFRON, DeLLphi-305 and VOLGA OS data to be presented",
    "tumor": "Pan-cancer",
    "url": "https://www.biospace.com/press-releases/astrazeneca-to-present-overall-survival-data-from-four-pivotal-phase-iii-trials-in-presidential-symposia-at-esmo-2026-featuring-sone-ve-imfinzi-durvalumab-tagrisso-osimertinib-and-savolitinib",
-   "id": "2026-10-19-astrazeneca-esmo-presidential-os"
-  },
-  {
-   "actionDate": "2027-06-14",
-   "actionDateLabel": "14 Jun 2027",
-   "added": "2026-10-20",
-   "category": "upcoming",
-   "date": "2026-10-19",
-   "impact": "notable",
-   "keyData": "UTOPIA · n=99 · 3-mo CR 77.8% · 6-mo event-free in CR pts 94.5%",
-   "source": "CancerNetwork",
-   "summary": "FDA accepted UroGen's NDA for UGN-103, a next-generation intravesical mitomycin hydrogel, as a non-surgical option for recurrent LG-IR-NMIBC. Filing is based on the single-arm phase 3 UTOPIA trial.",
-   "tags": [
-    "mitomycin",
-    "intravesical",
-    "NMIBC",
-    "UTOPIA",
-    "PDUFA"
-   ],
-   "title": "UGN-103 (sustained-release mitomycin gel) in recurrent low-grade intermediate-risk NMIBC",
-   "tumor": "Bladder",
-   "url": "https://www.cancernetwork.com/view/fda-accepts-nda-for-ugn-103-in-recurrent-low-grade-intermediate-risk-nmibc",
-   "id": "2026-10-19-ugn-103-nda-lg-ir-nmibc"
-  },
-  {
-   "added": "2026-10-20",
-   "category": "trial",
-   "date": "2026-10-19",
-   "impact": "notable",
-   "keyData": "Krascendo 1 · divarasib vs sotorasib or adagrasib · ESMO LBA5, 25 Oct · no numbers released",
-   "source": "GlobeNewswire (Roche)",
-   "summary": "Roche reports that next-generation KRAS G12C inhibitor divarasib showed superiority over first-generation inhibitors in previously treated KRAS G12C-mutated NSCLC; full data will be presented as LBA5 on 25 October. Roche will also present TAISHAN-301 interim phase 3 data in nasopharyngeal carcinoma.",
-   "tags": [
-    "divarasib",
-    "KRAS G12C",
-    "NSCLC",
-    "ESMO 2026",
-    "Krascendo 1"
-   ],
-   "title": "Krascendo 1: divarasib superior to sotorasib/adagrasib in pretreated KRAS G12C NSCLC, LBA at ESMO",
-   "tumor": "Lung",
-   "url": "https://www.globenewswire.com/news-release/2026/10/19/3382972/0/en/roche-to-present-pivotal-data-at-esmo-2026-showcasing-advances-across-its-lung-and-breast-cancer-late-stage-portfolio.html",
-   "id": "2026-10-19-krascendo1-divarasib-esmo"
+   "id": "2026-10-19-astrazeneca-esmo-presidential-os",
+   "conference": "esmo-2026",
+   "session": "Presidential"
   },
   {
    "added": "2026-10-20",
@@ -626,6 +610,28 @@
    "tumor": "Colorectal",
    "url": "https://www.fda.gov/news-events/press-announcements/fda-approves-immunotherapy-may-allow-certain-patients-rectal-cancer-avoid-chemotherapy-radiation-and",
    "id": "2026-10-19-dostarlimab-dmmr-rectal-fda"
+  },
+  {
+   "added": "2026-10-20",
+   "category": "trial",
+   "date": "2026-10-19",
+   "impact": "notable",
+   "keyData": "Krascendo 1 · divarasib vs sotorasib or adagrasib · ESMO LBA5, 25 Oct · no numbers released",
+   "source": "GlobeNewswire (Roche)",
+   "summary": "Roche reports that next-generation KRAS G12C inhibitor divarasib showed superiority over first-generation inhibitors in previously treated KRAS G12C-mutated NSCLC; full data will be presented as LBA5 on 25 October. Roche will also present TAISHAN-301 interim phase 3 data in nasopharyngeal carcinoma.",
+   "tags": [
+    "divarasib",
+    "KRAS G12C",
+    "NSCLC",
+    "ESMO 2026",
+    "Krascendo 1"
+   ],
+   "title": "Krascendo 1: divarasib superior to sotorasib/adagrasib in pretreated KRAS G12C NSCLC, LBA at ESMO",
+   "tumor": "Lung",
+   "url": "https://www.globenewswire.com/news-release/2026/10/19/3382972/0/en/roche-to-present-pivotal-data-at-esmo-2026-showcasing-advances-across-its-lung-and-breast-cancer-late-stage-portfolio.html",
+   "id": "2026-10-19-krascendo1-divarasib-esmo",
+   "conference": "esmo-2026",
+   "session": "LBA"
   },
   {
    "added": "2026-10-20",
@@ -666,7 +672,31 @@
    "title": "NeoORB (AIIMS Jodhpur): neoadjuvant 5-fraction RT before surgery doubles breast pCR in interim analysis",
    "tumor": "Breast",
    "url": "https://www.cancernetwork.com/view/neoadjuvant-radiotherapy-challenges-the-surgery-first-paradigm-in-breast-cancer",
-   "id": "2026-10-19-neoorb-neoadjuvant-rt-breast-india"
+   "id": "2026-10-19-neoorb-neoadjuvant-rt-breast-india",
+   "conference": "astro-2026",
+   "session": "Presented"
+  },
+  {
+   "actionDate": "2027-06-14",
+   "actionDateLabel": "14 Jun 2027",
+   "added": "2026-10-20",
+   "category": "upcoming",
+   "date": "2026-10-19",
+   "impact": "notable",
+   "keyData": "UTOPIA · n=99 · 3-mo CR 77.8% · 6-mo event-free in CR pts 94.5%",
+   "source": "CancerNetwork",
+   "summary": "FDA accepted UroGen's NDA for UGN-103, a next-generation intravesical mitomycin hydrogel, as a non-surgical option for recurrent LG-IR-NMIBC. Filing is based on the single-arm phase 3 UTOPIA trial.",
+   "tags": [
+    "mitomycin",
+    "intravesical",
+    "NMIBC",
+    "UTOPIA",
+    "PDUFA"
+   ],
+   "title": "UGN-103 (sustained-release mitomycin gel) in recurrent low-grade intermediate-risk NMIBC",
+   "tumor": "Bladder",
+   "url": "https://www.cancernetwork.com/view/fda-accepts-nda-for-ugn-103-in-recurrent-low-grade-intermediate-risk-nmibc",
+   "id": "2026-10-19-ugn-103-nda-lg-ir-nmibc"
   },
   {
    "added": "2026-10-19",
@@ -686,27 +716,9 @@
    "title": "TARGIT-B: intraoperative RT boost matches EBRT boost for local control, with fewer distant relapses in young women",
    "tumor": "Breast",
    "url": "https://www.cancernetwork.com/view/targit-b-iort-boost-blunts-distant-relapse-in-young-patients-with-breast-cancer",
-   "id": "2026-10-18-targit-b-iort-boost"
-  },
-  {
-   "added": "2026-10-19",
-   "category": "research",
-   "date": "2026-10-17",
-   "impact": "notable",
-   "keyData": "IDEA · n=200 · RS ≤18 · freedom from recurrence 99% at 5 y, 94% at 8 y · median FU 7.9 y",
-   "source": "CancerNetwork",
-   "summary": "Eight-year follow-up of the single-arm phase 2 IDEA trial (endocrine therapy alone after breast-conserving surgery in women 50–69 with stage I ER+/HER2− tumours and recurrence score ≤18) shows high freedom from recurrence, with most ipsilateral events after year 5. Discussants stressed that omission depends on endocrine therapy adherence.",
-   "tags": [
-    "radiotherapy",
-    "RT omission",
-    "21-gene recurrence score",
-    "endocrine therapy",
-    "ASTRO 2026"
-   ],
-   "title": "IDEA long-term: omitting RT after lumpectomy in low-risk luminal breast cancer keeps recurrence low, but late events rise",
-   "tumor": "Breast",
-   "url": "https://www.cancernetwork.com/view/radiation-omission-in-favorable-breast-cancer-hinges-on-endocrine-adherence",
-   "id": "2026-10-17-idea-rt-omission-long-term"
+   "id": "2026-10-18-targit-b-iort-boost",
+   "conference": "astro-2026",
+   "session": "Presented"
   },
   {
    "added": "2026-10-19",
@@ -727,6 +739,48 @@
    "tumor": "Lung",
    "url": "https://www.cell.com/cancer-cell/fulltext/S1535-6108(26)00430-7",
    "id": "2026-10-17-further-firmonertinib-pacc"
+  },
+  {
+   "added": "2026-10-19",
+   "category": "research",
+   "date": "2026-10-17",
+   "impact": "notable",
+   "keyData": "IDEA · n=200 · RS ≤18 · freedom from recurrence 99% at 5 y, 94% at 8 y · median FU 7.9 y",
+   "source": "CancerNetwork",
+   "summary": "Eight-year follow-up of the single-arm phase 2 IDEA trial (endocrine therapy alone after breast-conserving surgery in women 50–69 with stage I ER+/HER2− tumours and recurrence score ≤18) shows high freedom from recurrence, with most ipsilateral events after year 5. Discussants stressed that omission depends on endocrine therapy adherence.",
+   "tags": [
+    "radiotherapy",
+    "RT omission",
+    "21-gene recurrence score",
+    "endocrine therapy",
+    "ASTRO 2026"
+   ],
+   "title": "IDEA long-term: omitting RT after lumpectomy in low-risk luminal breast cancer keeps recurrence low, but late events rise",
+   "tumor": "Breast",
+   "url": "https://www.cancernetwork.com/view/radiation-omission-in-favorable-breast-cancer-hinges-on-endocrine-adherence",
+   "id": "2026-10-17-idea-rt-omission-long-term",
+   "conference": "astro-2026",
+   "session": "Presented"
+  },
+  {
+   "added": "2026-10-19",
+   "category": "trial",
+   "date": "2026-10-15",
+   "impact": "notable",
+   "keyData": "NEONIPIGA · n=32 · pCR 59% · 4-y OS 84.1% · 4-y EFS 83.5% · median FU 48 mo",
+   "source": "JAMA Oncology",
+   "summary": "Long-term follow-up of the French phase 2 NEONIPIGA trial of perioperative nivolumab plus ipilimumab in resectable dMMR/MSI-H gastric or GEJ adenocarcinoma reports high 4-year OS and EFS after a 59% pCR rate. Authors note no clear survival advantage over historical surgery outcomes and suggest randomized organ-preservation studies.",
+   "tags": [
+    "immunotherapy",
+    "dMMR/MSI-H",
+    "nivolumab",
+    "ipilimumab",
+    "neoadjuvant"
+   ],
+   "title": "NEONIPIGA 4-year data: neoadjuvant nivolumab–ipilimumab gives durable survival in localized MSI-H gastric/GEJ cancer",
+   "tumor": "Gastroesophageal",
+   "url": "https://jamanetwork.com/journals/jamaoncology/fullarticle/2855333",
+   "id": "2026-10-15-neonipiga-4yr-msi-gastric"
   },
   {
    "added": "2026-10-19",
@@ -753,26 +807,6 @@
    "category": "trial",
    "date": "2026-10-15",
    "impact": "notable",
-   "keyData": "NEONIPIGA · n=32 · pCR 59% · 4-y OS 84.1% · 4-y EFS 83.5% · median FU 48 mo",
-   "source": "JAMA Oncology",
-   "summary": "Long-term follow-up of the French phase 2 NEONIPIGA trial of perioperative nivolumab plus ipilimumab in resectable dMMR/MSI-H gastric or GEJ adenocarcinoma reports high 4-year OS and EFS after a 59% pCR rate. Authors note no clear survival advantage over historical surgery outcomes and suggest randomized organ-preservation studies.",
-   "tags": [
-    "immunotherapy",
-    "dMMR/MSI-H",
-    "nivolumab",
-    "ipilimumab",
-    "neoadjuvant"
-   ],
-   "title": "NEONIPIGA 4-year data: neoadjuvant nivolumab–ipilimumab gives durable survival in localized MSI-H gastric/GEJ cancer",
-   "tumor": "Gastroesophageal",
-   "url": "https://jamanetwork.com/journals/jamaoncology/fullarticle/2855333",
-   "id": "2026-10-15-neonipiga-4yr-msi-gastric"
-  },
-  {
-   "added": "2026-10-19",
-   "category": "trial",
-   "date": "2026-10-15",
-   "impact": "notable",
    "keyData": "n=23 · 40 Gy/5 fx or 36 Gy/3 fx · 1-y RFS 71.4% vs benchmark 55.7% (P=.09) · 1-y OS 95.2%",
    "source": "UT Southwestern Medical Center",
    "summary": "A single-centre phase 2 trial gave stereotactic radiotherapy to the inferior vena cava thrombus 4–14 days before radical nephrectomy and thrombectomy; 1-year RFS exceeded the historical surgery-alone benchmark without grade 4–5 radiation toxicity or 90-day perioperative deaths. Published in JAMA Oncology; findings are exploratory.",
@@ -787,26 +821,6 @@
    "tumor": "Kidney",
    "url": "https://www.utsouthwestern.edu/newsroom/articles/year-2026/oct-targeted-radiation-kidney-cancer-complication.html",
    "id": "2026-10-15-sabr-ivc-thrombus-rcc"
-  },
-  {
-   "added": "2026-10-18",
-   "category": "regulatory",
-   "date": "2026-10-17",
-   "impact": "notable",
-   "keyData": "137 drugs · margin ≤30% of MRP · effective 9 Nov 2026 · MRP cuts up to 70% · est. savings ₹2,500 cr/yr",
-   "source": "Business Standard",
-   "summary": "The NPPA notified a cap on trade margins for 137 non-scheduled anti-cancer drugs (patented and generic, including nivolumab, olaparib and denosumab) at 30% of MRP, effective 9 November 2026. Quantities supplied through patient assistance programmes are excluded; manufacturers must report revised prices within seven days.",
-   "tags": [
-    "India",
-    "NPPA",
-    "drug pricing",
-    "access",
-    "DPCO"
-   ],
-   "title": "India finalises 30% trade-margin cap on 137 cancer drugs from 9 November",
-   "tumor": "Pan-cancer",
-   "url": "https://www.business-standard.com/industry/news/centre-finalises-30-trade-margin-cap-for-137-non-scheduled-cancer-drugs-126101700942_1.html",
-   "id": "2026-10-17-india-cancer-drug-margin-cap-final"
   },
   {
    "added": "2026-10-18",
@@ -831,6 +845,26 @@
   },
   {
    "added": "2026-10-18",
+   "category": "regulatory",
+   "date": "2026-10-17",
+   "impact": "notable",
+   "keyData": "137 drugs · margin ≤30% of MRP · effective 9 Nov 2026 · MRP cuts up to 70% · est. savings ₹2,500 cr/yr",
+   "source": "Business Standard",
+   "summary": "The NPPA notified a cap on trade margins for 137 non-scheduled anti-cancer drugs (patented and generic, including nivolumab, olaparib and denosumab) at 30% of MRP, effective 9 November 2026. Quantities supplied through patient assistance programmes are excluded; manufacturers must report revised prices within seven days.",
+   "tags": [
+    "India",
+    "NPPA",
+    "drug pricing",
+    "access",
+    "DPCO"
+   ],
+   "title": "India finalises 30% trade-margin cap on 137 cancer drugs from 9 November",
+   "tumor": "Pan-cancer",
+   "url": "https://www.business-standard.com/industry/news/centre-finalises-30-trade-margin-cap-for-137-non-scheduled-cancer-drugs-126101700942_1.html",
+   "id": "2026-10-17-india-cancer-drug-margin-cap-final"
+  },
+  {
+   "added": "2026-10-18",
    "category": "research",
    "date": "2026-10-16",
    "impact": "notable",
@@ -851,6 +885,27 @@
   },
   {
    "added": "2026-10-18",
+   "category": "research",
+   "date": "2026-10-15",
+   "impact": "notable",
+   "keyData": "n=2,821,166 · non-metro vs large-metro death HR 1.034 (2010–16) → 1.093 (2017–23)",
+   "source": "The ASCO Post",
+   "summary": "Two analyses presented at the 2026 ASCO Quality Care Symposium — National Cancer Database data on 2.8 million women and registry/mortality data from 1995–2022 — show non-metro patients' survival disadvantage growing over time, with rural breast cancer mortality moving from below to above urban rates. Distant-stage incidence of several screen-detectable cancers rose faster in rural areas.",
+   "tags": [
+    "disparities",
+    "rural health",
+    "NCDB",
+    "ASCO Quality Care Symposium"
+   ],
+   "title": "US rural–urban gaps in breast cancer survival and mortality are widening",
+   "tumor": "Breast",
+   "url": "https://ascopost.com/news/october-2026/two-studies-show-breast-cancer-survival-and-mortality-gaps-are-widening-between-rural-and-urban-areas/",
+   "id": "2026-10-15-rural-urban-breast-survival-gap",
+   "conference": "asco-qcs-2026",
+   "session": "Presented"
+  },
+  {
+   "added": "2026-10-18",
    "category": "approval",
    "date": "2026-10-15",
    "impact": "notable",
@@ -868,25 +923,6 @@
    "tumor": "Breast",
    "url": "https://www.goodmorningamerica.com/wellness/story/new-fda-cleared-ai-tool-predict-breast-cancer-137268417",
    "id": "2026-10-15-tumorsight-risk-mri-recurrence"
-  },
-  {
-   "added": "2026-10-18",
-   "category": "research",
-   "date": "2026-10-15",
-   "impact": "notable",
-   "keyData": "n=2,821,166 · non-metro vs large-metro death HR 1.034 (2010–16) → 1.093 (2017–23)",
-   "source": "The ASCO Post",
-   "summary": "Two analyses presented at the 2026 ASCO Quality Care Symposium — National Cancer Database data on 2.8 million women and registry/mortality data from 1995–2022 — show non-metro patients' survival disadvantage growing over time, with rural breast cancer mortality moving from below to above urban rates. Distant-stage incidence of several screen-detectable cancers rose faster in rural areas.",
-   "tags": [
-    "disparities",
-    "rural health",
-    "NCDB",
-    "ASCO Quality Care Symposium"
-   ],
-   "title": "US rural–urban gaps in breast cancer survival and mortality are widening",
-   "tumor": "Breast",
-   "url": "https://ascopost.com/news/october-2026/two-studies-show-breast-cancer-survival-and-mortality-gaps-are-widening-between-rural-and-urban-areas/",
-   "id": "2026-10-15-rural-urban-breast-survival-gap"
   },
   {
    "added": "2026-10-18",
@@ -972,26 +1008,6 @@
   },
   {
    "added": "2026-10-17",
-   "category": "research",
-   "date": "2026-10-15",
-   "impact": "notable",
-   "keyData": "Hypothyroidism 5.8% (IMPT) vs ~19% (IMRT) · adj. OR 2.94 · mean thyroid dose 17 vs 27 Gy",
-   "source": "CancerNetwork",
-   "summary": "A retrospective ASTRO 2026 poster comparing IMPT with photon IMRT for regional nodal breast RT found clinical hypothyroidism in 5.8% vs about 19%, tracking a lower mean thyroid dose. The presenter cautioned it is not practice-changing; the key message is to contour the thyroid as an organ at risk in every plan.",
-   "tags": [
-    "radiotherapy",
-    "proton therapy",
-    "regional nodal irradiation",
-    "thyroid",
-    "ASTRO 2026"
-   ],
-   "title": "Proton therapy linked to less hypothyroidism after supraclavicular breast irradiation",
-   "tumor": "Breast",
-   "url": "https://www.cancernetwork.com/view/proton-therapy-tied-to-less-hypothyroidism-after-supraclavicular-breast-rt",
-   "id": "2026-10-15-proton-supraclavicular-hypothyroidism"
-  },
-  {
-   "added": "2026-10-17",
    "category": "designation",
    "date": "2026-10-15",
    "impact": "notable",
@@ -1008,7 +1024,31 @@
    "title": "Fast track for invikafusp alfa expanded to tissue-agnostic TMB-high solid tumours",
    "tumor": "Pan-cancer",
    "url": "https://www.biospace.com/press-releases/marengo-therapeutics-receives-second-u-s-fda-fast-track-designation-for-invikafusp-alfa-expanding-to-a-tissue-agnostic-indication-across-tumor-mutational-burden-high-solid-tumors-that-progress-after-prior-therapy-including-checkpoint-inhibition",
-   "id": "2026-10-15-invikafusp-tmbh-fast-track"
+   "id": "2026-10-15-invikafusp-tmbh-fast-track",
+   "conference": "esmo-2026",
+   "session": "Preview"
+  },
+  {
+   "added": "2026-10-17",
+   "category": "research",
+   "date": "2026-10-15",
+   "impact": "notable",
+   "keyData": "Hypothyroidism 5.8% (IMPT) vs ~19% (IMRT) · adj. OR 2.94 · mean thyroid dose 17 vs 27 Gy",
+   "source": "CancerNetwork",
+   "summary": "A retrospective ASTRO 2026 poster comparing IMPT with photon IMRT for regional nodal breast RT found clinical hypothyroidism in 5.8% vs about 19%, tracking a lower mean thyroid dose. The presenter cautioned it is not practice-changing; the key message is to contour the thyroid as an organ at risk in every plan.",
+   "tags": [
+    "radiotherapy",
+    "proton therapy",
+    "regional nodal irradiation",
+    "thyroid",
+    "ASTRO 2026"
+   ],
+   "title": "Proton therapy linked to less hypothyroidism after supraclavicular breast irradiation",
+   "tumor": "Breast",
+   "url": "https://www.cancernetwork.com/view/proton-therapy-tied-to-less-hypothyroidism-after-supraclavicular-breast-rt",
+   "id": "2026-10-15-proton-supraclavicular-hypothyroidism",
+   "conference": "astro-2026",
+   "session": "Poster"
   },
   {
    "added": "2026-10-17",
@@ -1157,25 +1197,23 @@
   },
   {
    "added": "2026-10-16",
-   "category": "trial",
+   "category": "research",
    "date": "2026-10-12",
    "impact": "notable",
-   "keyData": "LUNAR (n=92) · mPFS 17.6 vs 7.4 mo · 62% lower risk of progression/ADT/death · mTime to ADT 24.3 vs 14.1 mo · 2-yr no detectable disease 33% vs 12%",
-   "source": "UCLA Health",
-   "summary": "Updated results of the randomised phase 2 LUNAR trial, now in European Urology, show two cycles of 177Lu-PNT2002 before SBRT continue to delay progression and need for further hormone therapy versus SBRT alone in oligorecurrent hormone-sensitive prostate cancer, at a median follow-up of 31.9 months.",
+   "keyData": "RASolute 302 ORR · all 33% · G12V 50% · G12D 24% · G12R 7%",
+   "source": "BioSpace",
+   "summary": "Released FDA review documents for RASolute 302 break down objective response by KRAS variant: responses were highest with G12V and lower with G12D, the most common subtype, while the small G12R group responded poorly. Overall survival benefit in the full population was the basis of approval.",
    "tags": [
-    "radiotherapy",
-    "SBRT",
-    "PSMA",
-    "radioligand",
-    "177Lu-PNT2002",
-    "oligometastatic",
-    "LUNAR"
+    "daraxonrasib",
+    "KRAS G12D",
+    "KRAS G12R",
+    "RAS inhibitor",
+    "RASolute 302"
    ],
-   "title": "LUNAR update: Lu-177 PSMA before SBRT keeps oligorecurrent prostate cancer controlled longer",
-   "tumor": "Prostate",
-   "url": "https://www.uclahealth.org/news/release/targeted-radioactive-therapy-may-help-delay-spread-recurrent",
-   "id": "2026-10-12-lunar-lu-psma-sbrt-update"
+   "title": "FDA review documents show lower daraxonrasib response rates in KRAS G12D and G12R pancreatic cancer",
+   "tumor": "Pancreas",
+   "url": "https://www.biospace.com/drug-development/revmeds-rasonque-gets-a-subtype-data-asterisk-but-analysts-remain-bullish",
+   "id": "2026-10-12-daraxonrasib-fda-review-kras-subtypes"
   },
   {
    "added": "2026-10-16",
@@ -1199,43 +1237,45 @@
   },
   {
    "added": "2026-10-16",
-   "category": "research",
+   "category": "trial",
    "date": "2026-10-12",
    "impact": "notable",
-   "keyData": "RASolute 302 ORR · all 33% · G12V 50% · G12D 24% · G12R 7%",
-   "source": "BioSpace",
-   "summary": "Released FDA review documents for RASolute 302 break down objective response by KRAS variant: responses were highest with G12V and lower with G12D, the most common subtype, while the small G12R group responded poorly. Overall survival benefit in the full population was the basis of approval.",
+   "keyData": "LUNAR (n=92) · mPFS 17.6 vs 7.4 mo · 62% lower risk of progression/ADT/death · mTime to ADT 24.3 vs 14.1 mo · 2-yr no detectable disease 33% vs 12%",
+   "source": "UCLA Health",
+   "summary": "Updated results of the randomised phase 2 LUNAR trial, now in European Urology, show two cycles of 177Lu-PNT2002 before SBRT continue to delay progression and need for further hormone therapy versus SBRT alone in oligorecurrent hormone-sensitive prostate cancer, at a median follow-up of 31.9 months.",
    "tags": [
-    "daraxonrasib",
-    "KRAS G12D",
-    "KRAS G12R",
-    "RAS inhibitor",
-    "RASolute 302"
+    "radiotherapy",
+    "SBRT",
+    "PSMA",
+    "radioligand",
+    "177Lu-PNT2002",
+    "oligometastatic",
+    "LUNAR"
    ],
-   "title": "FDA review documents show lower daraxonrasib response rates in KRAS G12D and G12R pancreatic cancer",
-   "tumor": "Pancreas",
-   "url": "https://www.biospace.com/drug-development/revmeds-rasonque-gets-a-subtype-data-asterisk-but-analysts-remain-bullish",
-   "id": "2026-10-12-daraxonrasib-fda-review-kras-subtypes"
+   "title": "LUNAR update: Lu-177 PSMA before SBRT keeps oligorecurrent prostate cancer controlled longer",
+   "tumor": "Prostate",
+   "url": "https://www.uclahealth.org/news/release/targeted-radioactive-therapy-may-help-delay-spread-recurrent",
+   "id": "2026-10-12-lunar-lu-psma-sbrt-update"
   },
   {
    "added": "2026-10-15",
-   "category": "trial",
+   "category": "approval",
    "date": "2026-10-14",
    "impact": "notable",
-   "keyData": "mPDAC 2L+ 900 mg (n=22): ORR 41% · DCR 86% · 6-mo PFS 67% · NSCLC 2L+ 600 mg (n=23): ORR 43% · 6-mo PFS 72%",
-   "source": "StockTitan (Verastem press release)",
-   "summary": "Verastem reported updated phase 1/2 TARGET-D 101 data for VS-7375 in KRAS G12D-mutant cancers, with mostly low-grade GI toxicity and 2% discontinuation at 900 mg. FDA has agreed the design of a three-arm first-line metastatic PDAC phase 3 (TARGET-D 301), due to open by end of 2026.",
+   "keyData": "QUILT-3.032 Cohort A (CIS, n=77) · CR 62% · 58% of CRs lasting ≥12 mo, 40% ≥24 mo",
+   "source": "U.S. FDA",
+   "summary": "The IL-15 superagonist (Anktiva) with BCG, previously approved for BCG-unresponsive NMIBC with carcinoma in situ, is now also indicated for high-grade papillary-only disease. FDA based the expansion on extrapolation from the CIS cohort of QUILT-3.032.",
    "tags": [
-    "KRAS G12D",
-    "VS-7375",
-    "TARGET-D",
-    "PDAC",
-    "NSCLC"
+    "IL-15",
+    "BCG-unresponsive",
+    "NMIBC",
+    "QUILT-3.032",
+    "immunotherapy"
    ],
-   "title": "Oral KRAS G12D ON/OFF inhibitor VS-7375 shows responses in pretreated pancreatic and lung cancer; phase 3 planned",
-   "tumor": "Pancreas",
-   "url": "https://www.stocktitan.net/news/VSTM/vs-7375-demonstrates-robust-anti-tumor-activity-across-advanced-kras-ddyz2obb9ht1.html",
-   "id": "2026-10-14-vs7375-target-d-kras-g12d"
+   "title": "FDA extends nogapendekin alfa inbakicept plus BCG to papillary-only BCG-unresponsive NMIBC",
+   "tumor": "Bladder",
+   "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-expanded-indication-nogapendekin-alfa-inbakicept-pmln-bcg-unresponsive-non-muscle",
+   "id": "2026-10-14-nogapendekin-papillary-nmibc"
   },
   {
    "added": "2026-10-15",
@@ -1259,23 +1299,23 @@
   },
   {
    "added": "2026-10-15",
-   "category": "approval",
+   "category": "trial",
    "date": "2026-10-14",
    "impact": "notable",
-   "keyData": "QUILT-3.032 Cohort A (CIS, n=77) · CR 62% · 58% of CRs lasting ≥12 mo, 40% ≥24 mo",
-   "source": "U.S. FDA",
-   "summary": "The IL-15 superagonist (Anktiva) with BCG, previously approved for BCG-unresponsive NMIBC with carcinoma in situ, is now also indicated for high-grade papillary-only disease. FDA based the expansion on extrapolation from the CIS cohort of QUILT-3.032.",
+   "keyData": "mPDAC 2L+ 900 mg (n=22): ORR 41% · DCR 86% · 6-mo PFS 67% · NSCLC 2L+ 600 mg (n=23): ORR 43% · 6-mo PFS 72%",
+   "source": "StockTitan (Verastem press release)",
+   "summary": "Verastem reported updated phase 1/2 TARGET-D 101 data for VS-7375 in KRAS G12D-mutant cancers, with mostly low-grade GI toxicity and 2% discontinuation at 900 mg. FDA has agreed the design of a three-arm first-line metastatic PDAC phase 3 (TARGET-D 301), due to open by end of 2026.",
    "tags": [
-    "IL-15",
-    "BCG-unresponsive",
-    "NMIBC",
-    "QUILT-3.032",
-    "immunotherapy"
+    "KRAS G12D",
+    "VS-7375",
+    "TARGET-D",
+    "PDAC",
+    "NSCLC"
    ],
-   "title": "FDA extends nogapendekin alfa inbakicept plus BCG to papillary-only BCG-unresponsive NMIBC",
-   "tumor": "Bladder",
-   "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-expanded-indication-nogapendekin-alfa-inbakicept-pmln-bcg-unresponsive-non-muscle",
-   "id": "2026-10-14-nogapendekin-papillary-nmibc"
+   "title": "Oral KRAS G12D ON/OFF inhibitor VS-7375 shows responses in pretreated pancreatic and lung cancer; phase 3 planned",
+   "tumor": "Pancreas",
+   "url": "https://www.stocktitan.net/news/VSTM/vs-7375-demonstrates-robust-anti-tumor-activity-across-advanced-kras-ddyz2obb9ht1.html",
+   "id": "2026-10-14-vs7375-target-d-kras-g12d"
   },
   {
    "added": "2026-10-15",
@@ -1319,27 +1359,6 @@
   },
   {
    "added": "2026-10-14",
-   "category": "regulatory",
-   "date": "2026-10-13",
-   "impact": "notable",
-   "keyData": "CARES-310 · mOS 23.8 vs 15.2 mo · HR 0.64 · mPFS 5.6 vs 3.7 mo",
-   "source": "Targeted Oncology",
-   "summary": "Elevar and Hengrui refiled the NDA and BLA on 9 October after manufacturing-site inspections concluded; the July 2026 complete response letter (the third) cited manufacturing deficiencies, not efficacy or safety. The filing rests on the CARES-310 phase 3 trial versus sorafenib; no new PDUFA date has been announced.",
-   "tags": [
-    "rivoceranib",
-    "camrelizumab",
-    "VEGFR TKI",
-    "PD-1",
-    "CARES-310",
-    "resubmission"
-   ],
-   "title": "Rivoceranib plus camrelizumab resubmitted to FDA for first-line unresectable HCC",
-   "tumor": "Hepatobiliary",
-   "url": "https://targetedonc.com/view/rivoceranib-plus-camrelizumab-resubmitted-to-fda-in-frontline-hcc",
-   "id": "2026-10-13-rivoceranib-camrelizumab-resubmission"
-  },
-  {
-   "added": "2026-10-14",
    "category": "trial",
    "date": "2026-10-13",
    "impact": "notable",
@@ -1377,7 +1396,9 @@
    "title": "ESMO 2026 Presidential late-breakers: INTerpath-001, TroFuse-005 and KEYNOTE-C93; NRG-GY020 RT ± pembrolizumab also on programme",
    "tumor": "Pan-cancer",
    "url": "https://www.businesswire.com/news/home/20261013301331/en/Merck-Showcases-First-Time-Pivotal-Phase-3-Results-From-Oncology-Pipeline-and-Continued-Innovative-Potential-of-Existing-Portfolio-at-ESMO-2026",
-   "id": "2026-10-13-merck-esmo2026-lbas"
+   "id": "2026-10-13-merck-esmo2026-lbas",
+   "conference": "esmo-2026",
+   "session": "Presidential"
   },
   {
    "added": "2026-10-14",
@@ -1397,27 +1418,30 @@
    "title": "Remote supervised exercise reduces fatigue and improves quality of life during immunotherapy",
    "tumor": "Pan-cancer",
    "url": "https://ascopost.com/news/october-2026/remote-exercise-program-reduces-cancer-related-fatigue-improves-quality-of-life-for-patients-undergoing-immunotherapy/",
-   "id": "2026-10-13-remote-exercise-immunotherapy-fatigue"
+   "id": "2026-10-13-remote-exercise-immunotherapy-fatigue",
+   "conference": "asco-qcs-2026",
+   "session": "Presented"
   },
   {
    "added": "2026-10-14",
-   "category": "trial",
-   "date": "2026-10-12",
+   "category": "regulatory",
+   "date": "2026-10-13",
    "impact": "notable",
-   "keyData": "RELIGHT · OS CPS≥5 16.8 vs 10.4 mo, HR 0.53 · OS ITT 15.8 vs 11.2 mo, HR 0.66 · ORR 53.4% vs 32.8%",
-   "source": "Journal of Clinical Oncology",
-   "summary": "This Chinese phase 3 trial (n=731) found that adding retlirafusp alfa to CAPOX prolonged overall survival in both the PD-L1 CPS ≥5 and intention-to-treat populations versus placebo plus CAPOX, published in JCO. The main limitation is the chemotherapy-alone comparator rather than PD-1 inhibitor plus chemotherapy.",
+   "keyData": "CARES-310 · mOS 23.8 vs 15.2 mo · HR 0.64 · mPFS 5.6 vs 3.7 mo",
+   "source": "Targeted Oncology",
+   "summary": "Elevar and Hengrui refiled the NDA and BLA on 9 October after manufacturing-site inspections concluded; the July 2026 complete response letter (the third) cited manufacturing deficiencies, not efficacy or safety. The filing rests on the CARES-310 phase 3 trial versus sorafenib; no new PDUFA date has been announced.",
    "tags": [
-    "retlirafusp alfa",
-    "PD-L1/TGF-β",
-    "bifunctional",
-    "CAPOX",
-    "RELIGHT"
+    "rivoceranib",
+    "camrelizumab",
+    "VEGFR TKI",
+    "PD-1",
+    "CARES-310",
+    "resubmission"
    ],
-   "title": "RELIGHT: PD-L1/TGF-β trap retlirafusp alfa plus CAPOX improves survival in first-line HER2− gastric/GEJ cancer",
-   "tumor": "Gastroesophageal",
-   "url": "https://ascopubs.org/doi/10.1200/JCO-25-02933",
-   "id": "2026-10-12-relight-retlirafusp-gastric"
+   "title": "Rivoceranib plus camrelizumab resubmitted to FDA for first-line unresectable HCC",
+   "tumor": "Hepatobiliary",
+   "url": "https://targetedonc.com/view/rivoceranib-plus-camrelizumab-resubmitted-to-fda-in-frontline-hcc",
+   "id": "2026-10-13-rivoceranib-camrelizumab-resubmission"
   },
   {
    "added": "2026-10-14",
@@ -1438,6 +1462,26 @@
    "tumor": "CNS",
    "url": "https://www.targetedonc.com/view/fda-phase-2-trial-b7-h3-car-t-mt027-brain-metastases",
    "id": "2026-10-12-mt027-b7h3-cart-brain-mets"
+  },
+  {
+   "added": "2026-10-14",
+   "category": "trial",
+   "date": "2026-10-12",
+   "impact": "notable",
+   "keyData": "RELIGHT · OS CPS≥5 16.8 vs 10.4 mo, HR 0.53 · OS ITT 15.8 vs 11.2 mo, HR 0.66 · ORR 53.4% vs 32.8%",
+   "source": "Journal of Clinical Oncology",
+   "summary": "This Chinese phase 3 trial (n=731) found that adding retlirafusp alfa to CAPOX prolonged overall survival in both the PD-L1 CPS ≥5 and intention-to-treat populations versus placebo plus CAPOX, published in JCO. The main limitation is the chemotherapy-alone comparator rather than PD-1 inhibitor plus chemotherapy.",
+   "tags": [
+    "retlirafusp alfa",
+    "PD-L1/TGF-β",
+    "bifunctional",
+    "CAPOX",
+    "RELIGHT"
+   ],
+   "title": "RELIGHT: PD-L1/TGF-β trap retlirafusp alfa plus CAPOX improves survival in first-line HER2− gastric/GEJ cancer",
+   "tumor": "Gastroesophageal",
+   "url": "https://ascopubs.org/doi/10.1200/JCO-25-02933",
+   "id": "2026-10-12-relight-retlirafusp-gastric"
   },
   {
    "added": "2026-10-14",
@@ -1482,6 +1526,27 @@
   },
   {
    "added": "2026-10-13",
+   "category": "designation",
+   "date": "2026-10-12",
+   "impact": "notable",
+   "keyData": "Phase 2 NCT07111546 · ~140 enrolled · 2nd fast track (first: extrapulmonary NEC)",
+   "source": "OncLive",
+   "summary": "The FDA granted fast track designation to opamtistomig (LBL-024) for first-line advanced or metastatic biliary tract cancer. A phase 2 study is testing it with gemcitabine-cisplatin or with bevacizumab, with BTC data expected at ESMO 2026.",
+   "tags": [
+    "bispecific",
+    "PD-L1",
+    "4-1BB",
+    "fast track"
+   ],
+   "title": "Fast track for PD-L1/4-1BB bispecific opamtistomig in first-line biliary tract cancer",
+   "tumor": "Hepatobiliary",
+   "url": "https://www.onclive.com/view/fda-grants-fast-track-designation-to-opamtistomig-for-advanced-biliary-tract-cancer",
+   "id": "2026-10-12-opamtistomig-btc-ftd",
+   "conference": "esmo-2026",
+   "session": "Preview"
+  },
+  {
+   "added": "2026-10-13",
    "category": "trial",
    "date": "2026-10-12",
    "impact": "notable",
@@ -1499,25 +1564,6 @@
    "tumor": "Neuroendocrine",
    "url": "https://news.bms.com/news/corporate-financial/2026/Bristol-Myers-Squibb-Announces-Positive-Topline-Results-from-the-Interim-Analysis-of-Phase-3-ACTION-1-for-RYZ101-RayzeBios-Radiopharmaceutical-Therapy-in-Patients-with-GEP-NETs/default.aspx",
    "id": "2026-10-12-ryz101-action1-gepnet"
-  },
-  {
-   "added": "2026-10-13",
-   "category": "designation",
-   "date": "2026-10-12",
-   "impact": "notable",
-   "keyData": "Phase 2 NCT07111546 · ~140 enrolled · 2nd fast track (first: extrapulmonary NEC)",
-   "source": "OncLive",
-   "summary": "The FDA granted fast track designation to opamtistomig (LBL-024) for first-line advanced or metastatic biliary tract cancer. A phase 2 study is testing it with gemcitabine-cisplatin or with bevacizumab, with BTC data expected at ESMO 2026.",
-   "tags": [
-    "bispecific",
-    "PD-L1",
-    "4-1BB",
-    "fast track"
-   ],
-   "title": "Fast track for PD-L1/4-1BB bispecific opamtistomig in first-line biliary tract cancer",
-   "tumor": "Hepatobiliary",
-   "url": "https://www.onclive.com/view/fda-grants-fast-track-designation-to-opamtistomig-for-advanced-biliary-tract-cancer",
-   "id": "2026-10-12-opamtistomig-btc-ftd"
   },
   {
    "added": "2026-10-13",
@@ -1575,7 +1621,9 @@
    "title": "NRG-GI003: proton therapy does not improve survival over photon RT in advanced HCC",
    "tumor": "Hepatobiliary",
    "url": "https://ecancer.org/en/news/28990-trial-results-show-no-survival-benefit-with-the-use-of-proton-therapy-for-patients-with-advanced-hepatocellular-carcinoma",
-   "id": "2026-09-29-nrg-gi003-proton-hcc"
+   "id": "2026-09-29-nrg-gi003-proton-hcc",
+   "conference": "astro-2026",
+   "session": "Presented"
   },
   {
    "added": "2026-10-13",
@@ -1595,7 +1643,9 @@
    "title": "NRG-CC009: SRS instead of HA-WBRT for SCLC brain metastases — no cognitive difference, longer survival",
    "tumor": "Lung",
    "url": "https://www.ascopost.com/news/september-2026/srs-is-a-reasonable-option-for-patients-with-sclc-and-brain-metastases/",
-   "id": "2026-09-28-nrg-cc009-srs-sclc"
+   "id": "2026-09-28-nrg-cc009-srs-sclc",
+   "conference": "astro-2026",
+   "session": "Plenary"
   },
   {
    "added": "2026-10-12",
@@ -1696,7 +1746,9 @@
    "title": "Aglatimagene with EBRT increases intratumoral lymphocytes in localized prostate cancer (PrTK03 translational analysis)",
    "tumor": "Prostate",
    "url": "https://www.targetedonc.com/view/aglatimagene-immune-infiltration-localized-prostate-cancer-ebrt",
-   "id": "2026-10-06-aglatimagene-prtk03-digital-path"
+   "id": "2026-10-06-aglatimagene-prtk03-digital-path",
+   "conference": "astro-2026",
+   "session": "LBA"
   },
   {
    "added": "2026-10-12",
@@ -1719,24 +1771,6 @@
   },
   {
    "added": "2026-10-11",
-   "category": "designation",
-   "date": "2026-10-09",
-   "impact": "notable",
-   "source": "Business Wire (Natera press release)",
-   "summary": "The cfDNA screening test, which also predicts the cancer signal origin, received Breakthrough Device status after FDA review of data across 12 cancer types; no performance figures were disclosed and the designation is not a clearance.",
-   "tags": [
-    "MCED",
-    "cfDNA",
-    "liquid biopsy",
-    "breakthrough device"
-   ],
-   "title": "Natera's blood-based multi-cancer early detection assay gets FDA Breakthrough Device designation",
-   "tumor": "Screening",
-   "url": "https://www.businesswire.com/news/home/20261009275528/en/FDA-Grants-Breakthrough-Device-Designation-for-Nateras-Multi-Cancer-Early-Detection-Assay",
-   "id": "2026-10-09-natera-mced-bdd"
-  },
-  {
-   "added": "2026-10-11",
    "category": "research",
    "date": "2026-10-09",
    "impact": "notable",
@@ -1756,23 +1790,21 @@
   },
   {
    "added": "2026-10-11",
-   "category": "approval",
-   "date": "2026-10-08",
+   "category": "designation",
+   "date": "2026-10-09",
    "impact": "notable",
-   "keyData": "TROPION-Breast02 · mPFS 10.8 vs 5.6 mo · HR 0.57 · mOS 23.7 vs 18.7 mo · HR 0.79 · ORR 63% vs 29%",
-   "source": "Daiichi Sankyo press release",
-   "summary": "China's NMPA approved Dato-DXd for unresectable or metastatic triple-negative breast cancer in patients who are not candidates for PD-1/PD-L1 inhibitors, based on TROPION-Breast02, which showed PFS and OS gains over chemotherapy.",
+   "source": "Business Wire (Natera press release)",
+   "summary": "The cfDNA screening test, which also predicts the cancer signal origin, received Breakthrough Device status after FDA review of data across 12 cancer types; no performance figures were disclosed and the designation is not a clearance.",
    "tags": [
-    "ADC",
-    "TROP2",
-    "TNBC",
-    "NMPA",
-    "TROPION-Breast02"
+    "MCED",
+    "cfDNA",
+    "liquid biopsy",
+    "breakthrough device"
    ],
-   "title": "China approves datopotamab deruxtecan for metastatic TNBC unsuitable for PD-(L)1 therapy",
-   "tumor": "Breast",
-   "url": "https://www.daiichisankyo.com/files/news/pressrelease/pdf/202610/20261008_E2.pdf",
-   "id": "2026-10-08-nmpa-dato-dxd-tnbc"
+   "title": "Natera's blood-based multi-cancer early detection assay gets FDA Breakthrough Device designation",
+   "tumor": "Screening",
+   "url": "https://www.businesswire.com/news/home/20261009275528/en/FDA-Grants-Breakthrough-Device-Designation-for-Nateras-Multi-Cancer-Early-Detection-Assay",
+   "id": "2026-10-09-natera-mced-bdd"
   },
   {
    "added": "2026-10-11",
@@ -1792,25 +1824,6 @@
    "tumor": "Breast",
    "url": "https://investors.guardanthealth.com/press-releases/press-releases/2026/Guardant-Health-Announces-Approval-in-Europe-of-Guardant360-CDx-as-Companion-Diagnostic-for-AstraZenecas-ETCAMAH-camizestrant-in-Advanced-ER-positive-Breast-Cancer/default.aspx",
    "id": "2026-10-08-guardant360-eu-cdx-camizestrant"
-  },
-  {
-   "added": "2026-10-11",
-   "category": "research",
-   "date": "2026-10-08",
-   "impact": "notable",
-   "keyData": "Phase 1, n=33 · relapses 0/16 vs 3/16 (median 30 mo) · immune response 73% · no grade ≥3 vaccine AEs",
-   "source": "Nature Communications",
-   "summary": "In a small randomised phase 1 study after surgery and adjuvant therapy, immediate TG4050 vaccination produced neoantigen-specific immune responses with no relapses versus 3 relapses in the observation arm; the trial was not powered for efficacy.",
-   "tags": [
-    "cancer vaccine",
-    "neoantigen",
-    "HPV-negative",
-    "adjuvant"
-   ],
-   "title": "Individualised neoantigen vaccine TG4050 shows durable T-cell responses in resected HPV-negative HNSCC",
-   "tumor": "Head & Neck",
-   "url": "https://doi.org/10.1038/s41467-026-76667-1",
-   "id": "2026-10-08-tg4050-hnscc-vaccine"
   },
   {
    "added": "2026-10-11",
@@ -1835,6 +1848,26 @@
    "added": "2026-10-11",
    "category": "approval",
    "date": "2026-10-08",
+   "impact": "notable",
+   "keyData": "TROPION-Breast02 · mPFS 10.8 vs 5.6 mo · HR 0.57 · mOS 23.7 vs 18.7 mo · HR 0.79 · ORR 63% vs 29%",
+   "source": "Daiichi Sankyo press release",
+   "summary": "China's NMPA approved Dato-DXd for unresectable or metastatic triple-negative breast cancer in patients who are not candidates for PD-1/PD-L1 inhibitors, based on TROPION-Breast02, which showed PFS and OS gains over chemotherapy.",
+   "tags": [
+    "ADC",
+    "TROP2",
+    "TNBC",
+    "NMPA",
+    "TROPION-Breast02"
+   ],
+   "title": "China approves datopotamab deruxtecan for metastatic TNBC unsuitable for PD-(L)1 therapy",
+   "tumor": "Breast",
+   "url": "https://www.daiichisankyo.com/files/news/pressrelease/pdf/202610/20261008_E2.pdf",
+   "id": "2026-10-08-nmpa-dato-dxd-tnbc"
+  },
+  {
+   "added": "2026-10-11",
+   "category": "approval",
+   "date": "2026-10-08",
    "impact": "practice-changing",
    "keyData": "DESTINY-Breast05 · IDFS HR 0.47 · 3-yr IDFS 92.4% vs 83.7% (vs T-DM1)",
    "source": "Daiichi Sankyo press release",
@@ -1850,6 +1883,25 @@
    "tumor": "Breast",
    "url": "https://www.daiichisankyo.com/files/news/pressrelease/pdf/202610/20261008_E1.pdf",
    "id": "2026-10-08-nmpa-tdxd-adjuvant-db05"
+  },
+  {
+   "added": "2026-10-11",
+   "category": "research",
+   "date": "2026-10-08",
+   "impact": "notable",
+   "keyData": "Phase 1, n=33 · relapses 0/16 vs 3/16 (median 30 mo) · immune response 73% · no grade ≥3 vaccine AEs",
+   "source": "Nature Communications",
+   "summary": "In a small randomised phase 1 study after surgery and adjuvant therapy, immediate TG4050 vaccination produced neoantigen-specific immune responses with no relapses versus 3 relapses in the observation arm; the trial was not powered for efficacy.",
+   "tags": [
+    "cancer vaccine",
+    "neoantigen",
+    "HPV-negative",
+    "adjuvant"
+   ],
+   "title": "Individualised neoantigen vaccine TG4050 shows durable T-cell responses in resected HPV-negative HNSCC",
+   "tumor": "Head & Neck",
+   "url": "https://doi.org/10.1038/s41467-026-76667-1",
+   "id": "2026-10-08-tg4050-hnscc-vaccine"
   },
   {
    "added": "2026-10-11",
@@ -1907,7 +1959,9 @@
    "title": "Alliance A071801: fractionated SRS beats single-fraction SRS after resection of brain metastases",
    "tumor": "CNS",
    "url": "https://amportal.astro.org/sessions/pl-01-22946/alliance-a071801-phase-iii-trial-postoperative-single-fraction-stereotactic-radiosurgery-srs-114060",
-   "id": "2026-09-28-alliance-a071801-fsrs"
+   "id": "2026-09-28-alliance-a071801-fsrs",
+   "conference": "astro-2026",
+   "session": "Presented"
   },
   {
    "added": "2026-10-10",
@@ -1948,23 +2002,6 @@
   },
   {
    "added": "2026-10-10",
-   "category": "designation",
-   "date": "2026-10-08",
-   "impact": "notable",
-   "source": "OncLive",
-   "summary": "Vir Biotechnology's masked, PSMA-directed T-cell engager VIR-5500 received FDA fast track designation for metastatic castration-resistant prostate cancer.",
-   "tags": [
-    "T-cell engager",
-    "PSMA",
-    "fast track"
-   ],
-   "title": "Fast track for PSMA-targeted T-cell engager VIR-5500 in mCRPC",
-   "tumor": "Prostate",
-   "url": "https://onclive.com/view/vir-5500-receives-fda-fast-track-designation-in-mcrpc",
-   "id": "2026-10-09-vir5500-psv359-ftd"
-  },
-  {
-   "added": "2026-10-10",
    "category": "research",
    "date": "2026-10-08",
    "impact": "notable",
@@ -2001,21 +2038,20 @@
   },
   {
    "added": "2026-10-10",
-   "category": "approval",
-   "date": "2026-10-07",
-   "impact": "practice-changing",
-   "keyData": "HER2CLIMB-05 · mPFS 24.9 vs 16.3 mo",
-   "source": "U.S. FDA",
-   "summary": "Tucatinib added to maintenance trastuzumab and pertuzumab after first-line induction, based on the HER2CLIMB-05 trial.",
+   "category": "designation",
+   "date": "2026-10-08",
+   "impact": "notable",
+   "source": "OncLive",
+   "summary": "Vir Biotechnology's masked, PSMA-directed T-cell engager VIR-5500 received FDA fast track designation for metastatic castration-resistant prostate cancer.",
    "tags": [
-    "HER2",
-    "TKI",
-    "maintenance"
+    "T-cell engager",
+    "PSMA",
+    "fast track"
    ],
-   "title": "FDA approves tucatinib maintenance with trastuzumab–pertuzumab in HER2+ metastatic breast cancer",
-   "tumor": "Breast",
-   "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-tucatinib-trastuzumab-and-pertuzumab-maintenance-treatment-her2-positive-breast-cancer",
-   "id": "2026-10-07-tucatinib-maintenance"
+   "title": "Fast track for PSMA-targeted T-cell engager VIR-5500 in mCRPC",
+   "tumor": "Prostate",
+   "url": "https://onclive.com/view/vir-5500-receives-fda-fast-track-designation-in-mcrpc",
+   "id": "2026-10-09-vir5500-psv359-ftd"
   },
   {
    "added": "2026-10-10",
@@ -2034,6 +2070,24 @@
    "tumor": "CNS",
    "url": "https://www.healio.com/news/hematology-oncology/20261007/trial-of-vaccine-for-glioblastoma-misses-endpoint-data-compelling-for-younger-patients",
    "id": "2026-10-07-survaxm-survive"
+  },
+  {
+   "added": "2026-10-10",
+   "category": "approval",
+   "date": "2026-10-07",
+   "impact": "practice-changing",
+   "keyData": "HER2CLIMB-05 · mPFS 24.9 vs 16.3 mo",
+   "source": "U.S. FDA",
+   "summary": "Tucatinib added to maintenance trastuzumab and pertuzumab after first-line induction, based on the HER2CLIMB-05 trial.",
+   "tags": [
+    "HER2",
+    "TKI",
+    "maintenance"
+   ],
+   "title": "FDA approves tucatinib maintenance with trastuzumab–pertuzumab in HER2+ metastatic breast cancer",
+   "tumor": "Breast",
+   "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-tucatinib-trastuzumab-and-pertuzumab-maintenance-treatment-her2-positive-breast-cancer",
+   "id": "2026-10-07-tucatinib-maintenance"
   },
   {
    "added": "2026-10-10",
@@ -2091,46 +2145,6 @@
    "id": "2026-10-02-pirtobrutinib-1l-cll"
   },
   {
-   "actionDate": "2026-11-27",
-   "actionDateLabel": "27 Nov",
-   "added": "2026-10-10",
-   "category": "upcoming",
-   "date": "2026-10-01",
-   "impact": "notable",
-   "keyData": "ALKOVE-1 · ORR 31% · intracranial 32% · G1202R ORR 68%",
-   "source": "Nuvalent (SEC filing)",
-   "summary": "Next-generation ALK TKI under priority review, with activity against G1202R.",
-   "tags": [
-    "ALK",
-    "TKI",
-    "CNS"
-   ],
-   "title": "Neladalkib in pretreated ALK+ NSCLC",
-   "tumor": "Lung",
-   "url": "https://www.sec.gov/Archives/edgar/data/0001861560/000186156026000020/nuvl-ex99_1.htm",
-   "id": "2026-10-01-neladalkib"
-  },
-  {
-   "actionDate": "2026-11-30",
-   "actionDateLabel": "November",
-   "added": "2026-10-10",
-   "category": "upcoming",
-   "date": "2026-10-01",
-   "impact": "notable",
-   "keyData": "TALAPRO-3 · rPFS HR 0.48 · 3-y rPFS 77% vs 56%",
-   "source": "Pfizer press release",
-   "summary": "Priority review for the PARP inhibitor combination in castration-sensitive disease.",
-   "tags": [
-    "PARP",
-    "HRR",
-    "mCSPC"
-   ],
-   "title": "Talazoparib + enzalutamide in HRR-mutated mCSPC",
-   "tumor": "Prostate",
-   "url": "https://www.pfizer.com/news/press-release/press-release-detail/fda-grants-priority-review-pfizers-talzenna-plus-xtandi",
-   "id": "2026-10-01-talapro3"
-  },
-  {
    "actionDate": "2026-12-23",
    "actionDateLabel": "23 Dec",
    "added": "2026-10-10",
@@ -2148,25 +2162,6 @@
    "tumor": "Myeloma",
    "url": "https://www.targetedonc.com/view/q4-2026-oncology-fda-decisions-preview",
    "id": "2026-10-01-anito-cel"
-  },
-  {
-   "actionDate": "2026-10-31",
-   "actionDateLabel": "October",
-   "added": "2026-10-10",
-   "category": "upcoming",
-   "date": "2026-10-01",
-   "impact": "notable",
-   "keyData": "MANEUVER · ORR 54.0% vs 3.2% at wk 25",
-   "source": "CancerNetwork",
-   "summary": "Oral CSF-1R inhibitor with breakthrough designation; also improved pain, stiffness and function.",
-   "tags": [
-    "CSF-1R",
-    "TGCT"
-   ],
-   "title": "Pimicotinib in tenosynovial giant cell tumour",
-   "tumor": "Sarcoma",
-   "url": "https://www.cancernetwork.com/view/fda-accepts-nda-for-pimicotinib-in-tenosynovial-giant-cell-tumors",
-   "id": "2026-10-01-pimicotinib-tgct"
   },
   {
    "actionDate": "2026-11-30",
@@ -2213,25 +2208,6 @@
    "category": "upcoming",
    "date": "2026-10-01",
    "impact": "notable",
-   "keyData": "PROSPECT (n=48) · ORR 66.7% · CR/CRu 43.8% · mPFS 6.0 mo",
-   "source": "Deciphera press release",
-   "summary": "Second-generation BTK inhibitor, already approved in Japan.",
-   "tags": [
-    "BTK",
-    "PCNSL"
-   ],
-   "title": "Tirabrutinib in relapsed/refractory primary CNS lymphoma",
-   "tumor": "Lymphoma",
-   "url": "https://www.businesswire.com/news/home/20260217277627/en/Deciphera-Pharmaceuticals-Announces-U.S.-Food-and-Drug-Administration-Acceptance-for-Filing-of-New-Drug-Application-for-Tirabrutinib-in-Patients-with-Relapsed-or-Refractory-PCNSL",
-   "id": "2026-10-01-tirabrutinib"
-  },
-  {
-   "actionDate": "2026-12-18",
-   "actionDateLabel": "18 Dec",
-   "added": "2026-10-10",
-   "category": "upcoming",
-   "date": "2026-10-01",
-   "impact": "notable",
    "keyData": "evERA · mPFS 8.77 vs 5.49 mo · HR 0.56 (ESR1m HR 0.38)",
    "source": "Genentech press release",
    "summary": "After progression on prior endocrine-based therapy.",
@@ -2266,6 +2242,84 @@
    "id": "2026-10-01-ivonescimab"
   },
   {
+   "actionDate": "2026-11-27",
+   "actionDateLabel": "27 Nov",
+   "added": "2026-10-10",
+   "category": "upcoming",
+   "date": "2026-10-01",
+   "impact": "notable",
+   "keyData": "ALKOVE-1 · ORR 31% · intracranial 32% · G1202R ORR 68%",
+   "source": "Nuvalent (SEC filing)",
+   "summary": "Next-generation ALK TKI under priority review, with activity against G1202R.",
+   "tags": [
+    "ALK",
+    "TKI",
+    "CNS"
+   ],
+   "title": "Neladalkib in pretreated ALK+ NSCLC",
+   "tumor": "Lung",
+   "url": "https://www.sec.gov/Archives/edgar/data/0001861560/000186156026000020/nuvl-ex99_1.htm",
+   "id": "2026-10-01-neladalkib"
+  },
+  {
+   "actionDate": "2026-10-31",
+   "actionDateLabel": "October",
+   "added": "2026-10-10",
+   "category": "upcoming",
+   "date": "2026-10-01",
+   "impact": "notable",
+   "keyData": "MANEUVER · ORR 54.0% vs 3.2% at wk 25",
+   "source": "CancerNetwork",
+   "summary": "Oral CSF-1R inhibitor with breakthrough designation; also improved pain, stiffness and function.",
+   "tags": [
+    "CSF-1R",
+    "TGCT"
+   ],
+   "title": "Pimicotinib in tenosynovial giant cell tumour",
+   "tumor": "Sarcoma",
+   "url": "https://www.cancernetwork.com/view/fda-accepts-nda-for-pimicotinib-in-tenosynovial-giant-cell-tumors",
+   "id": "2026-10-01-pimicotinib-tgct"
+  },
+  {
+   "actionDate": "2026-11-30",
+   "actionDateLabel": "November",
+   "added": "2026-10-10",
+   "category": "upcoming",
+   "date": "2026-10-01",
+   "impact": "notable",
+   "keyData": "TALAPRO-3 · rPFS HR 0.48 · 3-y rPFS 77% vs 56%",
+   "source": "Pfizer press release",
+   "summary": "Priority review for the PARP inhibitor combination in castration-sensitive disease.",
+   "tags": [
+    "PARP",
+    "HRR",
+    "mCSPC"
+   ],
+   "title": "Talazoparib + enzalutamide in HRR-mutated mCSPC",
+   "tumor": "Prostate",
+   "url": "https://www.pfizer.com/news/press-release/press-release-detail/fda-grants-priority-review-pfizers-talzenna-plus-xtandi",
+   "id": "2026-10-01-talapro3"
+  },
+  {
+   "actionDate": "2026-12-18",
+   "actionDateLabel": "18 Dec",
+   "added": "2026-10-10",
+   "category": "upcoming",
+   "date": "2026-10-01",
+   "impact": "notable",
+   "keyData": "PROSPECT (n=48) · ORR 66.7% · CR/CRu 43.8% · mPFS 6.0 mo",
+   "source": "Deciphera press release",
+   "summary": "Second-generation BTK inhibitor, already approved in Japan.",
+   "tags": [
+    "BTK",
+    "PCNSL"
+   ],
+   "title": "Tirabrutinib in relapsed/refractory primary CNS lymphoma",
+   "tumor": "Lymphoma",
+   "url": "https://www.businesswire.com/news/home/20260217277627/en/Deciphera-Pharmaceuticals-Announces-U.S.-Food-and-Drug-Administration-Acceptance-for-Filing-of-New-Drug-Application-for-Tirabrutinib-in-Patients-with-Relapsed-or-Refractory-PCNSL",
+   "id": "2026-10-01-tirabrutinib"
+  },
+  {
    "added": "2026-10-10",
    "category": "research",
    "date": "2026-09-28",
@@ -2284,25 +2338,9 @@
    "title": "ESMO Congress 2026, Madrid, 23–27 October: readouts to watch",
    "tumor": "Pan-cancer",
    "url": "https://oncodaily.com/breast-oncology/esmo-congress-2026-bc",
-   "id": "2026-09-28-esmo-2026-preview"
-  },
-  {
-   "added": "2026-10-10",
-   "category": "regulatory",
-   "date": "2026-09-25",
-   "impact": "notable",
-   "keyData": "IDeate-Lung01 · ORR 48.2% · mDOR 5.3 mo · ILD 12.4%",
-   "source": "Merck press release",
-   "summary": "Daiichi Sankyo and Merck withdrew the ifinatamab deruxtecan BLA after the FDA said phase 2 IDeate-Lung01 data did not meet accelerated approval requirements. Phase 3 IDeate-Lung02 is nearly fully enrolled.",
-   "tags": [
-    "ADC",
-    "B7-H3",
-    "SCLC"
-   ],
-   "title": "I-DXd application in extensive-stage SCLC withdrawn",
-   "tumor": "Lung",
-   "url": "https://merck.com/news/ifinatamab-deruxtecan-biologics-license-application-for-certain-patients-with-previously-treated-extensive-stage-small-cell-lung-cancer-voluntarily-withdrawn/",
-   "id": "2026-09-28-idxd-withdrawn"
+   "id": "2026-09-28-esmo-2026-preview",
+   "conference": "esmo-2026",
+   "session": "Preview"
   },
   {
    "actionDate": "2026-12-31",
@@ -2340,6 +2378,24 @@
    "tumor": "Breast",
    "url": "https://www.bayer.com/media/en-us/bayers-lynkuet-elinzanetant-granted-priority-review-by-us-fda-for-additional-indication/",
    "id": "2026-09-28-elinzanetant-priority"
+  },
+  {
+   "added": "2026-10-10",
+   "category": "regulatory",
+   "date": "2026-09-25",
+   "impact": "notable",
+   "keyData": "IDeate-Lung01 · ORR 48.2% · mDOR 5.3 mo · ILD 12.4%",
+   "source": "Merck press release",
+   "summary": "Daiichi Sankyo and Merck withdrew the ifinatamab deruxtecan BLA after the FDA said phase 2 IDeate-Lung01 data did not meet accelerated approval requirements. Phase 3 IDeate-Lung02 is nearly fully enrolled.",
+   "tags": [
+    "ADC",
+    "B7-H3",
+    "SCLC"
+   ],
+   "title": "I-DXd application in extensive-stage SCLC withdrawn",
+   "tumor": "Lung",
+   "url": "https://merck.com/news/ifinatamab-deruxtecan-biologics-license-application-for-certain-patients-with-previously-treated-extensive-stage-small-cell-lung-cancer-voluntarily-withdrawn/",
+   "id": "2026-09-28-idxd-withdrawn"
   },
   {
    "added": "2026-10-10",
@@ -2497,24 +2553,6 @@
    "id": "2026-09-17-taletrectinib-label"
   },
   {
-   "added": "2026-10-10",
-   "category": "designation",
-   "date": "2026-09-15",
-   "impact": "notable",
-   "keyData": "Based on phase 1/2 RMC-GI-102 · RASolute 302: 60% ↓ risk of death vs chemo (2L)",
-   "source": "OncLive",
-   "summary": "The oral RAS(ON) multi-selective inhibitor, approved as monotherapy in August for previously treated disease, is now being tested first-line in RASolute 303.",
-   "tags": [
-    "KRAS",
-    "RAS",
-    "breakthrough"
-   ],
-   "title": "Breakthrough designation for daraxonrasib + gem/nab-paclitaxel in first-line metastatic PDAC",
-   "tumor": "Pancreas",
-   "url": "https://www.onclive.com/view/fda-grants-breakthrough-therapy-designation-to-first-line-daraxonrasib-plus-chemo-in-mpdac",
-   "id": "2026-09-16-daraxonrasib-btd"
-  },
-  {
    "actionDate": "2027-06-29",
    "actionDateLabel": "29 Jun 2027",
    "added": "2026-10-10",
@@ -2535,6 +2573,24 @@
   },
   {
    "added": "2026-10-10",
+   "category": "designation",
+   "date": "2026-09-15",
+   "impact": "notable",
+   "keyData": "Based on phase 1/2 RMC-GI-102 · RASolute 302: 60% ↓ risk of death vs chemo (2L)",
+   "source": "OncLive",
+   "summary": "The oral RAS(ON) multi-selective inhibitor, approved as monotherapy in August for previously treated disease, is now being tested first-line in RASolute 303.",
+   "tags": [
+    "KRAS",
+    "RAS",
+    "breakthrough"
+   ],
+   "title": "Breakthrough designation for daraxonrasib + gem/nab-paclitaxel in first-line metastatic PDAC",
+   "tumor": "Pancreas",
+   "url": "https://www.onclive.com/view/fda-grants-breakthrough-therapy-designation-to-first-line-daraxonrasib-plus-chemo-in-mpdac",
+   "id": "2026-09-16-daraxonrasib-btd"
+  },
+  {
+   "added": "2026-10-10",
    "category": "regulatory",
    "date": "2026-09-15",
    "impact": "notable",
@@ -2548,24 +2604,6 @@
    "tumor": "Pan-cancer",
    "url": "https://www.raps.org/resource/fda-to-test-new-approach-to-expediting-phase-1-trials.html",
    "id": "2026-09-18-expedited-ind"
-  },
-  {
-   "added": "2026-10-10",
-   "category": "approval",
-   "date": "2026-09-14",
-   "impact": "notable",
-   "keyData": "ERASMUS (n=360) · ORR 17% · mDOR 35 mo",
-   "source": "Fierce Pharma",
-   "summary": "A second lutetium-177 dotatate product joins Lutathera, approved on the single-arm ERASMUS study.",
-   "tags": [
-    "PRRT",
-    "radioligand",
-    "nuclear medicine"
-   ],
-   "title": "FDA approves Bexlutry (Lu-177 dotatate) for SSTR+ GEP-NETs",
-   "tumor": "Neuroendocrine",
-   "url": "https://www.fiercepharma.com/pharma/fda-approves-first-radioligand-equivalent-curiums-copycat-novartis-lutathera",
-   "id": "2026-09-15-bexlutry"
   },
   {
    "added": "2026-10-10",
@@ -2623,24 +2661,22 @@
    "id": "2026-09-14-tarlatamab-monitoring"
   },
   {
-   "actionDate": "2027-03-03",
-   "actionDateLabel": "3 Mar 2027",
    "added": "2026-10-10",
-   "category": "upcoming",
-   "date": "2026-09-11",
+   "category": "approval",
+   "date": "2026-09-14",
    "impact": "notable",
-   "keyData": "STELLAR-303 · mOS 10.9 vs 9.4 mo vs regorafenib · HR 0.80",
-   "source": "CancerNetwork",
-   "summary": "FDA extended the review by 3 months to examine updated data. Grade ≥3 treatment-related AEs 60% vs 37%.",
+   "keyData": "ERASMUS (n=360) · ORR 17% · mDOR 35 mo",
+   "source": "Fierce Pharma",
+   "summary": "A second lutetium-177 dotatate product joins Lutathera, approved on the single-arm ERASMUS study.",
    "tags": [
-    "TKI",
-    "immunotherapy",
-    "PDUFA extension"
+    "PRRT",
+    "radioligand",
+    "nuclear medicine"
    ],
-   "title": "Zanzalintinib + atezolizumab in metastatic colorectal cancer",
-   "tumor": "Colorectal",
-   "url": "https://www.cancernetwork.com/view/fda-extends-review-of-zanzalintinib-combo-in-pretreated-metastatic-crc",
-   "id": "2026-09-11-zanzalintinib-delay"
+   "title": "FDA approves Bexlutry (Lu-177 dotatate) for SSTR+ GEP-NETs",
+   "tumor": "Neuroendocrine",
+   "url": "https://www.fiercepharma.com/pharma/fda-approves-first-radioligand-equivalent-curiums-copycat-novartis-lutathera",
+   "id": "2026-09-15-bexlutry"
   },
   {
    "added": "2026-10-10",
@@ -2659,6 +2695,26 @@
    "tumor": "Kidney",
    "url": "https://www.oncnursingnews.com/view/fda-grants-final-approval-to-cabozantinib-capsules-across-multiple-solid-tumor-indications",
    "id": "2026-09-11-omcazio"
+  },
+  {
+   "actionDate": "2027-03-03",
+   "actionDateLabel": "3 Mar 2027",
+   "added": "2026-10-10",
+   "category": "upcoming",
+   "date": "2026-09-11",
+   "impact": "notable",
+   "keyData": "STELLAR-303 · mOS 10.9 vs 9.4 mo vs regorafenib · HR 0.80",
+   "source": "CancerNetwork",
+   "summary": "FDA extended the review by 3 months to examine updated data. Grade ≥3 treatment-related AEs 60% vs 37%.",
+   "tags": [
+    "TKI",
+    "immunotherapy",
+    "PDUFA extension"
+   ],
+   "title": "Zanzalintinib + atezolizumab in metastatic colorectal cancer",
+   "tumor": "Colorectal",
+   "url": "https://www.cancernetwork.com/view/fda-extends-review-of-zanzalintinib-combo-in-pretreated-metastatic-crc",
+   "id": "2026-09-11-zanzalintinib-delay"
   },
   {
    "added": "2026-10-10",
@@ -2766,6 +2822,339 @@
    "tumor": "Melanoma",
    "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-grants-accelerated-approval-vusolimogene-oderparepvec-wtpg-combination-nivolumab-melanoma",
    "id": "2026-08-06-vusolimogene"
+  }
+ ],
+ "conferences": [
+  {
+   "id": "asco-2026",
+   "short": "ASCO 2026",
+   "name": "ASCO Annual Meeting",
+   "start": "2026-05-29",
+   "end": "2026-06-02",
+   "city": "Chicago",
+   "focus": "All tumours",
+   "url": "https://www.asco.org/annual-meeting",
+   "press": "https://www.asco.org/news-initiatives",
+   "match": "\\bASCO ?2026\\b|2026 ASCO Annual Meeting"
+  },
+  {
+   "id": "eha-2026",
+   "short": "EHA 2026",
+   "name": "European Hematology Association Congress",
+   "start": "2026-06-11",
+   "end": "2026-06-14",
+   "city": "Stockholm",
+   "focus": "Haematology",
+   "url": "https://ehaweb.org/",
+   "match": "\\bEHA ?2026\\b|EHA2026"
+  },
+  {
+   "id": "soho-2026",
+   "short": "SOHO 2026",
+   "name": "Society of Hematologic Oncology Annual Meeting",
+   "start": "2026-09-09",
+   "end": "2026-09-12",
+   "city": "Houston",
+   "focus": "Haematology",
+   "url": "https://www.soho.click/",
+   "match": "\\bSOHO 2026\\b|Society of Hematologic Oncology"
+  },
+  {
+   "id": "wclc-2026",
+   "short": "WCLC 2026",
+   "name": "IASLC World Conference on Lung Cancer",
+   "start": "2026-09-12",
+   "end": "2026-09-15",
+   "city": "Seoul",
+   "focus": "Lung",
+   "url": "https://www.iaslc.org/",
+   "match": "\\bWCLC ?2026\\b|World Conference on Lung Cancer"
+  },
+  {
+   "id": "eano-2026",
+   "short": "EANO 2026",
+   "name": "European Association of Neuro-Oncology Meeting",
+   "start": "2026-09-24",
+   "end": "2026-09-27",
+   "city": "Rome",
+   "focus": "Neuro-oncology",
+   "url": "https://www.eano.eu/",
+   "match": "\\bEANO ?2026\\b"
+  },
+  {
+   "id": "astro-2026",
+   "short": "ASTRO 2026",
+   "name": "ASTRO Annual Meeting",
+   "start": "2026-09-26",
+   "end": "2026-09-30",
+   "city": "Boston",
+   "focus": "Radiation oncology",
+   "url": "https://www.astro.org/annual-meeting",
+   "press": "https://www.astro.org/news-and-publications/news-and-media-center",
+   "match": "\\bASTRO ?2026\\b|ASTRO (Annual Meeting|plenary|late-?break)"
+  },
+  {
+   "id": "llm-2026",
+   "short": "Lymphoma, Leukemia & Myeloma 2026",
+   "name": "Lymphoma, Leukemia and Myeloma Congress",
+   "start": "2026-10-13",
+   "end": "2026-10-16",
+   "city": "New York",
+   "focus": "Haematology",
+   "url": "https://www.lymphomaleukemiamyeloma.com/",
+   "match": "Lymphoma, Leukemia (and|&) Myeloma Congress"
+  },
+  {
+   "id": "asco-qcs-2026",
+   "short": "ASCO Quality Care 2026",
+   "name": "ASCO Quality Care Symposium",
+   "start": "2026-10-16",
+   "end": "2026-10-17",
+   "city": "Boston",
+   "tbc": true,
+   "focus": "Quality & survivorship",
+   "url": "https://www.asco.org/",
+   "match": "ASCO Quality Care Symposium"
+  },
+  {
+   "id": "esmo-2026",
+   "short": "ESMO 2026",
+   "name": "ESMO Congress",
+   "start": "2026-10-23",
+   "end": "2026-10-27",
+   "city": "Madrid",
+   "focus": "All tumours",
+   "url": "https://www.esmo.org/meeting-calendar/esmo-congress-2026",
+   "press": "https://www.esmo.org/newsroom/press-and-media-hub",
+   "match": "\\bESMO(?: Congress)? ?2026\\b|ESMO Presidential|\\bESMO\\b[^.]{0,40}\\bLBA\\d"
+  },
+  {
+   "id": "sitc-2026",
+   "short": "SITC 2026",
+   "name": "SITC Annual Meeting",
+   "start": "2026-11-04",
+   "end": "2026-11-08",
+   "city": "Phoenix",
+   "focus": "Immunotherapy",
+   "url": "https://www.sitcancer.org/2026",
+   "match": "\\bSITC ?2026\\b"
+  },
+  {
+   "id": "emuc-2026",
+   "short": "EMUC 2026",
+   "name": "European Multidisciplinary Congress on Urological Cancers",
+   "start": "2026-11-05",
+   "end": "2026-11-08",
+   "city": "Brussels",
+   "focus": "Genitourinary",
+   "url": "https://emuc.org/",
+   "match": "\\bEMUC ?2026\\b"
+  },
+  {
+   "id": "sno-2026",
+   "short": "SNO 2026",
+   "name": "Society for Neuro-Oncology Annual Meeting",
+   "start": "2026-11-12",
+   "end": "2026-11-15",
+   "city": "Philadelphia",
+   "focus": "Neuro-oncology",
+   "url": "https://www.soc-neuro-onc.org/",
+   "match": "\\bSNO\\b(?! guideline)|Society for Neuro-Oncology"
+  },
+  {
+   "id": "eortc-nci-aacr-2026",
+   "short": "ENA 2026",
+   "name": "EORTC-NCI-AACR Symposium on Molecular Targets",
+   "start": "2026-11-18",
+   "end": "2026-11-20",
+   "city": "Barcelona",
+   "focus": "Early-phase drugs",
+   "url": "https://www.aacr.org/",
+   "match": "EORTC[- ]NCI[- ]AACR|\\bENA ?2026\\b"
+  },
+  {
+   "id": "ctos-2026",
+   "short": "CTOS 2026",
+   "name": "Connective Tissue Oncology Society Annual Meeting",
+   "start": "2026-11-18",
+   "end": "2026-11-21",
+   "city": "Seoul",
+   "focus": "Sarcoma",
+   "url": "https://www.ctos.org/",
+   "match": "\\bCTOS ?2026\\b"
+  },
+  {
+   "id": "aroicon-2026",
+   "short": "AROICON 2026",
+   "name": "AROI Annual Conference (Association of Radiation Oncologists of India)",
+   "start": "2026-12-01",
+   "city": "Hyderabad (HICC)",
+   "tbc": true,
+   "india": true,
+   "focus": "Radiation oncology",
+   "url": "https://www.aroicon2026.com/",
+   "match": "AROICON ?2026",
+   "dateLabel": "Early December 2026 · dates to be confirmed"
+  },
+  {
+   "id": "esmo-asia-2026",
+   "short": "ESMO Asia 2026",
+   "name": "ESMO Asia Congress",
+   "start": "2026-12-04",
+   "end": "2026-12-06",
+   "city": "Singapore",
+   "focus": "All tumours",
+   "url": "https://www.esmo.org/meeting-calendar/esmo-asia-congress-2026",
+   "press": "https://www.esmo.org/newsroom/press-and-media-hub",
+   "match": "ESMO Asia"
+  },
+  {
+   "id": "naclc-2026",
+   "short": "NACLC 2026",
+   "name": "IASLC/ASCO North American Conference on Lung Cancer",
+   "start": "2026-12-04",
+   "end": "2026-12-06",
+   "city": "Scottsdale",
+   "focus": "Lung",
+   "url": "https://www.iaslc.org/",
+   "match": "North American Conference on Lung Cancer|\\bNACLC\\b"
+  },
+  {
+   "id": "sabcs-2026",
+   "short": "SABCS 2026",
+   "name": "San Antonio Breast Cancer Symposium",
+   "start": "2026-12-08",
+   "end": "2026-12-11",
+   "city": "San Antonio",
+   "focus": "Breast",
+   "url": "https://www.sabcs.org/",
+   "match": "\\bSABCS ?2026\\b|San Antonio Breast Cancer Symposium"
+  },
+  {
+   "id": "ash-2026",
+   "short": "ASH 2026",
+   "name": "ASH Annual Meeting & Exposition",
+   "start": "2026-12-12",
+   "end": "2026-12-15",
+   "city": "New Orleans",
+   "focus": "Haematology",
+   "url": "https://www.hematology.org/meetings/annual-meeting",
+   "press": "https://www.hematology.org/newsroom",
+   "match": "\\bASH ?2026\\b|ASH Annual Meeting"
+  },
+  {
+   "id": "esmo-io-2026",
+   "short": "ESMO IO 2026",
+   "name": "ESMO Immuno-Oncology Congress",
+   "start": "2026-12-14",
+   "end": "2026-12-16",
+   "city": "London",
+   "focus": "Immunotherapy",
+   "url": "https://www.esmo.org/meeting-calendar/esmo-immuno-oncology-congress-2026",
+   "match": "ESMO (IO|Immuno-Oncology) (Congress )?2026"
+  },
+  {
+   "id": "asco-gi-2027",
+   "short": "ASCO GI 2027",
+   "name": "ASCO Gastrointestinal Cancers Symposium",
+   "start": "2027-01-21",
+   "end": "2027-01-23",
+   "city": "San Francisco",
+   "focus": "Gastrointestinal",
+   "url": "https://conferences.asco.org/gi",
+   "match": "ASCO GI 2027|2027 (ASCO )?Gastrointestinal Cancers Symposium"
+  },
+  {
+   "id": "asco-gu-2027",
+   "short": "ASCO GU 2027",
+   "name": "ASCO Genitourinary Cancers Symposium",
+   "start": "2027-02-11",
+   "end": "2027-02-13",
+   "city": "San Francisco",
+   "focus": "Genitourinary",
+   "url": "https://conferences.asco.org/gu",
+   "match": "ASCO GU 2027|2027 (ASCO )?Genitourinary Cancers Symposium"
+  },
+  {
+   "id": "esmo-tat-2027",
+   "short": "ESMO TAT 2027",
+   "name": "ESMO Targeted Anticancer Therapies Congress",
+   "start": "2027-02-22",
+   "end": "2027-02-24",
+   "city": "Paris",
+   "focus": "Early-phase drugs",
+   "url": "https://www.esmo.org/meeting-calendar",
+   "match": "ESMO (TAT|Targeted Anticancer Therapies) 2027"
+  },
+  {
+   "id": "elcc-2027",
+   "short": "ELCC 2027",
+   "name": "European Lung Cancer Congress",
+   "start": "2027-03-17",
+   "end": "2027-03-20",
+   "city": "Munich",
+   "focus": "Lung",
+   "url": "https://www.esmo.org/meeting-calendar",
+   "match": "\\bELCC ?2027\\b|European Lung Cancer Congress 2027"
+  },
+  {
+   "id": "aacr-2027",
+   "short": "AACR 2027",
+   "name": "AACR Annual Meeting",
+   "start": "2027-04-02",
+   "end": "2027-04-07",
+   "city": "Orlando",
+   "focus": "All tumours",
+   "url": "https://www.aacr.org/meeting/aacr-annual-meeting-2027/",
+   "press": "https://www.aacr.org/about-the-aacr/newsroom/",
+   "match": "\\bAACR ?2027\\b|AACR Annual Meeting 2027"
+  },
+  {
+   "id": "asco-2027",
+   "short": "ASCO 2027",
+   "name": "ASCO Annual Meeting",
+   "start": "2027-06-04",
+   "end": "2027-06-08",
+   "city": "Chicago",
+   "focus": "All tumours",
+   "url": "https://www.asco.org/annual-meeting",
+   "press": "https://www.asco.org/news-initiatives",
+   "match": "\\bASCO ?2027\\b|2027 ASCO Annual Meeting"
+  },
+  {
+   "id": "eha-2027",
+   "short": "EHA 2027",
+   "name": "European Hematology Association Congress",
+   "start": "2027-06-10",
+   "end": "2027-06-13",
+   "city": "Barcelona",
+   "focus": "Haematology",
+   "url": "https://ehaweb.org/",
+   "match": "\\bEHA ?2027\\b|EHA2027"
+  },
+  {
+   "id": "wclc-2027",
+   "short": "WCLC 2027",
+   "name": "IASLC World Conference on Lung Cancer",
+   "start": "2027-09-11",
+   "end": "2027-09-14",
+   "city": "To be confirmed",
+   "tbc": true,
+   "focus": "Lung",
+   "url": "https://www.iaslc.org/",
+   "match": "\\bWCLC ?2027\\b"
+  },
+  {
+   "id": "icc-2027",
+   "short": "Indian Cancer Congress 2027",
+   "name": "4th Indian Cancer Congress (ICC 4.0)",
+   "start": "2027-09-30",
+   "end": "2027-10-03",
+   "city": "Chennai",
+   "india": true,
+   "focus": "All tumours",
+   "url": "https://www.ismpo.org/",
+   "match": "Indian Cancer Congress|ICC 4\\.0"
   }
  ]
 }

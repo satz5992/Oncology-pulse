@@ -202,6 +202,34 @@ mark{background:var(--warn-soft);color:inherit;border-radius:3px;padding:0 1px}
 .upd .tx span{font-size:.78rem;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .upd button{background:var(--accent);color:var(--on-accent);font-weight:600;font-size:.85rem;padding:9px 14px;border-radius:10px;flex:none}
 .upd button:disabled{opacity:.6}
+/* Meetings */
+nav.tabs.six{grid-template-columns:repeat(6,1fr)}
+nav.tabs.six button .pillbg{width:46px}
+nav.tabs.six button{font-size:.66rem}
+.mhero{background:var(--surface);border:1px solid var(--line);border-top:3px solid var(--signal);border-radius:var(--r);padding:16px;display:flex;flex-direction:column;gap:10px;box-shadow:var(--shadow);text-align:left;width:100%}
+.mhero.next{border-top-color:var(--accent)}
+.mhero .nm{font-size:1.25rem;font-weight:700;letter-spacing:-.01em;line-height:1.2}
+.mhero .sub{font-size:.85rem;color:var(--muted)}
+.mhero .acts{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.mhero .acts .btn{height:42px;font-size:.88rem}
+.live{display:inline-flex;align-items:center;gap:6px;font-size:.68rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--signal)}
+.live::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--signal);animation:blink 1.6s ease-in-out infinite}
+.mhero.next .live{color:var(--accent)} .mhero.next .live::before{background:var(--accent);animation:none}
+@keyframes blink{50%{opacity:.25}}
+@media (prefers-reduced-motion:reduce){.live::before{animation:none}}
+.prog{height:4px;border-radius:2px;background:var(--surface-2);overflow:hidden}
+.prog i{display:block;height:100%;background:var(--signal);border-radius:2px}
+.mtag{display:inline-flex;align-items:center;font-size:.66rem;font-weight:600;letter-spacing:.04em;padding:3px 7px;border-radius:5px;background:var(--surface-2);color:var(--fg)}
+.sess{display:inline-flex;align-items:center;font-size:.62rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:2px 6px;border-radius:4px;border:1px solid currentColor;color:var(--muted)}
+.sess.s-Presidential,.sess.s-Plenary{color:var(--signal)} .sess.s-LBA{color:var(--accent)} .sess.s-Preview{color:var(--info);border-style:dashed}
+.cdate{width:52px;flex:none;text-align:center;border-radius:10px;background:var(--accent-soft);color:var(--accent);padding:6px 0;line-height:1.1}
+.cdate b{display:block;font-size:1.05rem;font-family:var(--mono);font-weight:500}
+.cdate span{font-size:.64rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase}
+.cdate.past{background:var(--surface-2);color:var(--muted)} .cdate.now{background:var(--signal-soft);color:var(--signal)}
+.st{font-size:.7rem;font-weight:600;letter-spacing:.04em}
+.st.now{color:var(--signal)} .st.soon{color:var(--accent)} .st.past{color:var(--faint)}
+.mlink{display:flex;align-items:center;gap:8px;padding:10px 12px;border-radius:10px;background:var(--surface-2);font-size:.82rem;font-weight:500;text-align:left;width:100%}
+.mlink .i{width:16px;height:16px;flex:none}
 .toast{position:fixed;left:16px;right:16px;bottom:calc(84px + env(safe-area-inset-bottom,0px));z-index:70;background:var(--fg);color:var(--bg);padding:12px 14px;border-radius:12px;font-size:.88rem;opacity:0;transform:translateY(8px);transition:.2s;pointer-events:none;box-shadow:var(--shadow)}
 .toast.on{opacity:1;transform:none}
 @media (prefers-reduced-motion: reduce){.sheet,.toast,.ptr{transition:none}}
@@ -214,7 +242,9 @@ mark{background:var(--warn-soft);color:inherit;border-radius:3px;padding:0 1px}
  <symbol id="i-trials" viewBox="0 0 24 24"><path d="M9 3v6l-5 9a2 2 0 0 0 1.8 3h12.4a2 2 0 0 0 1.8-3l-5-9V3"/><path d="M8 3h8"/><path d="M7 15h10"/></symbol>
  <symbol id="i-bookmark" viewBox="0 0 24 24"><path d="M6 3h12v18l-6-4-6 4z"/></symbol>
  <symbol id="i-more" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></symbol>
- <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></symbol>
+ <symbol id="i-meet" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/><path d="M8 14h2M14 14h2M8 17.5h2"/></symbol>
+<symbol id="i-mic" viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></symbol>
+<symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></symbol>
  <symbol id="i-refresh" viewBox="0 0 24 24"><path d="M21 12a9 9 0 1 1-2.6-6.4"/><path d="M21 3v6h-6"/></symbol>
  <symbol id="i-back" viewBox="0 0 24 24"><path d="M15 18 9 12l6-6"/></symbol>
  <symbol id="i-chev" viewBox="0 0 24 24"><path d="m9 6 6 6-6 6"/></symbol>
@@ -239,6 +269,7 @@ mark{background:var(--warn-soft);color:inherit;border-radius:3px;padding:0 1px}
   <section class="screen" id="s-home">
     <div class="upd" id="updBanner" hidden><span class="ic"><svg class="i"><use href="#i-download"/></svg></span><span class="tx"><b id="updTitle">Update available</b><span id="updNotes"></span></span><button id="updBtn">Update</button></div>
     <div class="brief" id="brief"></div>
+    <div id="homeMeet"></div>
     <div id="homePC"></div>
     <div id="homeAhead"></div>
     <div>
@@ -255,6 +286,16 @@ mark{background:var(--warn-soft);color:inherit;border-radius:3px;padding:0 1px}
       <div class="chips" id="nchips"></div>
     </div>
     <div id="nlist"></div>
+  </section>
+
+  <!-- MEETINGS -->
+  <section class="screen" id="s-meet">
+    <div id="mhero"></div>
+    <div class="filters" style="top:64px">
+      <div class="seg" id="meetSeg" style="align-self:flex-start"><button data-mv="highlights" aria-pressed="true">Highlights</button><button data-mv="calendar" aria-pressed="false">Calendar</button></div>
+      <div class="chips" id="mchips"></div>
+    </div>
+    <div id="mlist"></div>
   </section>
 
   <!-- TRIALS -->
@@ -300,9 +341,10 @@ mark{background:var(--warn-soft);color:inherit;border-radius:3px;padding:0 1px}
   </section>
 </main>
 
-<nav class="tabs" id="tabs">
+<nav class="tabs six" id="tabs">
   <button data-go="home" aria-current="page"><span class="pillbg"><svg class="i"><use href="#i-home"/></svg></span>Home</button>
   <button data-go="news"><span class="pillbg"><svg class="i"><use href="#i-news"/></svg></span>News<span class="dotbadge" id="badge" hidden></span></button>
+  <button data-go="meet"><span class="pillbg"><svg class="i"><use href="#i-meet"/></svg></span>Meetings</button>
   <button data-go="trials"><span class="pillbg"><svg class="i"><use href="#i-trials"/></svg></span>Trials</button>
   <button data-go="saved"><span class="pillbg"><svg class="i"><use href="#i-bookmark"/></svg></span>Saved</button>
   <button data-go="more"><span class="pillbg"><svg class="i"><use href="#i-more"/></svg></span>More</button>
@@ -321,7 +363,7 @@ mark{background:var(--warn-soft);color:inherit;border-radius:3px;padding:0 1px}
 <div class="overlay" id="overlay" role="dialog" aria-modal="true" aria-label="Search">
   <div class="top">
     <button class="iconbtn" id="ovBack" aria-label="Close search"><svg class="i"><use href="#i-back"/></svg></button>
-    <input id="gq" type="search" placeholder="Search news and trials" aria-label="Search news and trials">
+    <input id="gq" type="search" placeholder="Search news, meetings and trials" aria-label="Search news, meetings and trials">
     <button class="iconbtn" id="ovClear" aria-label="Clear"><svg class="i"><use href="#i-x"/></svg></button>
   </div>
   <div class="scroll" id="ovBody"></div>
@@ -362,7 +404,8 @@ const fmtDay = s => { const t=D(s); return isNaN(t)?s:t.toLocaleDateString("en-I
 const fmtShort = s => { const t=D(s); return isNaN(t)?s:t.toLocaleDateString("en-IN",{day:"numeric",month:"short"}); };
 const daysAgo = n => { const t=new Date(); t.setDate(t.getDate()-n); return t.toISOString().slice(0,10); };
 
-let news=[], updated=null, trials=[], trialsMeta={};
+let news=[], updated=null, trials=[], trialsMeta={}, confs=[];
+let mview="highlights", msel="";
 let screen="home", ntype="all", nsite="", tmod="all", tsite="", savedKind="news";
 let savedNews=new Set(store.get("saved",[])), savedTrials=new Set(store.get("tsaved",[]));
 const seenAtOpen=new Set(store.get("seen",[]));
@@ -379,12 +422,57 @@ const isNew = i => seenAtOpen.size>0 && !seenAtOpen.has(i.id);
 const modOf = t => /Surgery/.test(t.modality) ? "Surgery" : t.modality;
 const ico = n => `<svg class="i"><use href="#i-${n}"/></svg>`;
 
+/* ---------- meetings helpers ---------- */
+const SESS=["Presidential","Plenary","LBA","Oral","Mini-oral","Poster","Presented","Preview"];
+const SESS_H={Presidential:"Presidential symposium",Plenary:"Plenary",LBA:"Late-breaking abstracts",Oral:"Oral presentations","Mini-oral":"Mini-oral presentations",Poster:"Posters",Presented:"Other presentations",Preview:"Announced ahead of the meeting"};
+const confById = id => confs.find(c=>c.id===id);
+const confEnd = c => c.end||c.start;
+const dayDiff = (a,b) => Math.round((D(a)-D(b))/864e5);
+function confStatus(c){
+  if(today<c.start){const n=dayDiff(c.start,today);return {k:"soon",n,txt:n===1?"Starts tomorrow":n<=60?`In ${n} days`:"Upcoming"}}
+  if(today>confEnd(c)) return {k:"past",txt:"Ended"};
+  const day=dayDiff(today,c.start)+1,len=dayDiff(confEnd(c),c.start)+1;
+  return {k:"now",day,len,txt:`Live · day ${day} of ${len}`};
+}
+function fmtRange(c){
+  if(c.dateLabel) return c.dateLabel;
+  const a=D(c.start),b=D(confEnd(c)),y=b.getFullYear();
+  const m=d=>d.toLocaleDateString("en-IN",{month:"short"});
+  const r=c.start===confEnd(c)?`${a.getDate()} ${m(a)} ${y}`:a.getMonth()===b.getMonth()?`${a.getDate()}–${b.getDate()} ${m(b)} ${y}`:`${a.getDate()} ${m(a)} – ${b.getDate()} ${m(b)} ${y}`;
+  return r+(c.tbc?" · to be confirmed":"");
+}
+const confItems = id => news.filter(i=>i.conference===id).sort((a,b)=>SESS.indexOf(a.session)-SESS.indexOf(b.session)||(b.date||"").localeCompare(a.date||""));
+function spotlight(){ // live meeting, else the next within 30 days, else the latest ended one with highlights
+  return confs.find(c=>confStatus(c).k==="now")||confs.find(c=>{const s=confStatus(c);return s.k==="soon"&&s.n<=30})||null;
+}
+function sessGroups(list,q){
+  const by={};list.forEach(i=>{const k=i.session||"Presented";(by[k]=by[k]||[]).push(i)});
+  return SESS.filter(k=>by[k]).map(k=>`<div class="daylabel">${esc(SESS_H[k])} · ${by[k].length}</div><div class="panel rows">${by[k].map(i=>newsRow(i,q,true)).join("")}</div>`).join("");
+}
+function confRow(c){
+  const s=confStatus(c),a=D(c.start),n=news.filter(i=>i.conference===c.id).length;
+  return `<button class="row" data-open="conf:${esc(c.id)}" style="align-items:center"><span class="cdate ${s.k}"><b>${c.dateLabel?"—":a.getDate()}</b><span>${esc(a.toLocaleDateString("en-IN",{month:"short"}))}</span></span>
+    <span class="body"><span class="t">${esc(c.short)}</span><span class="m"><span>${esc(c.city)}</span><span>·</span><span>${esc(c.focus||"")}</span>${c.india?`<span class="mtag">India</span>`:""}</span>
+    <span class="m"><span class="st ${s.k}">${esc(s.txt)}</span>${n?`<span>· ${n} highlight${n>1?"s":""}</span>`:""}</span></span><svg class="i chev"><use href="#i-chev"/></svg></button>`;
+}
+function heroCard(c, compact){
+  const s=confStatus(c),n=news.filter(i=>i.conference===c.id).length;
+  const lbl=s.k==="now"?s.txt:s.k==="soon"?`Next meeting · ${s.txt.toLowerCase()}`:"Ended";
+  return `<div class="mhero${s.k==="now"?"":" next"}"><span class="live">${esc(lbl)}</span>
+    <button style="text-align:left;display:flex;flex-direction:column;gap:4px" data-open="conf:${esc(c.id)}"><span class="nm">${esc(c.name)} ${esc(c.start.slice(0,4))}</span><span class="sub">${esc(fmtRange(c))} · ${esc(c.city)}</span></button>
+    ${s.k==="now"?`<div class="prog" aria-hidden="true"><i style="width:${Math.round(100*s.day/s.len)}%"></i></div>`:""}
+    ${compact?`<button class="btn ghost" data-go="meet" data-msel="${esc(c.id)}" style="height:42px">${ico("mic")}${n?`${n} highlight${n>1?"s":""} so far`:"Open meeting"}</button>`:
+    `<div class="acts"><button class="btn ghost" data-ext="${esc(c.url)}">${ico("ext")}Official site</button>${c.press?`<button class="btn ghost" data-ext="${esc(c.press)}">${ico("news")}Press releases</button>`:`<button class="btn ghost" data-open="conf:${esc(c.id)}">${ico("meet")}Details</button>`}</div>`}
+  </div>`;
+}
+
 /* ---------- data ---------- */
 function loadNews(json, fromNet){
   try{const d=typeof json==="string"?JSON.parse(json):json;
     const before=new Set(news.map(i=>i.id));
     news=(d.items||[]).filter(i=>i&&i.title).sort(byAdded);
     updated=d.updated||null;
+    if(Array.isArray(d.conferences)&&d.conferences.length) confs=d.conferences.slice().sort((a,b)=>a.start.localeCompare(b.start));
     if(fromNet&&before.size){const n=news.filter(i=>!before.has(i.id)).length;toast(n?`${n} new update${n>1?"s":""}`:"You're up to date")}
   }catch(e){}
   renderAll();
@@ -395,12 +483,13 @@ function loadTrials(json){
 }
 
 /* ---------- rows ---------- */
-function newsRow(i, q){
+function newsRow(i, q, inMeet){
   const hl = s => q ? highlight(s,q) : esc(s);
   return `<button class="row" data-open="news:${esc(i.id)}">
     <span class="bar c-${esc(i.category)}"></span>
     <span class="body">
       <span class="m"><span class="tag c-${esc(i.category)}">${esc(LABEL[i.category]||i.category)}</span>${i.tumor?`<span>${esc(i.tumor)}</span>`:""}${i.impact==="practice-changing"?`<span class="pc">Practice-changing</span>`:""}${isNew(i)?`<span class="newdot" title="New"></span>`:""}</span>
+      ${i.conference&&confById(i.conference)?`<span class="m">${inMeet?"":`<span class="mtag">${esc(confById(i.conference).short)}</span>`}${i.session&&i.session!=="Presented"?`<span class="sess s-${esc(i.session)}">${esc(i.session==="Preview"?"Preview":i.session)}</span>`:""}</span>`:""}
       <span class="t">${hl(i.title)}</span>
       ${i.keyData?`<span class="k">${hl(i.keyData)}</span>`:""}
       <span class="m">${esc(i.source||"")} · ${esc(fmtShort(i.date))}</span>
@@ -422,7 +511,7 @@ function highlight(s,q){
   return out.replace(new RegExp("("+words.join("|")+")","gi"),"<mark>$1</mark>");
 }
 const matches = (hay,q) => q.toLowerCase().split(/\s+/).filter(Boolean).every(w=>hay.toLowerCase().includes(w));
-const newsHay = i => [i.title,i.summary,i.keyData,i.tumor,i.source,(i.tags||[]).join(" ")].join(" ");
+const newsHay = i => [i.title,i.summary,i.keyData,i.tumor,i.source,(i.tags||[]).join(" "),(confById(i.conference)||{}).short||""].join(" ");
 const trialHay = t => [t.name,t.setting,t.population,(t.arms||[]).join(" "),t.result,t.takeaway,t.journal,t.site,t.modality,(t.tags||[]).join(" ")].join(" ");
 
 /* ---------- screens ---------- */
@@ -439,6 +528,7 @@ function renderHome(){
       <button class="stat" data-go="news" data-ntype="upcoming"><b>${upcoming.length}</b><span>FDA decisions ahead</span></button>
       <button class="stat" data-go="trials"><b>${trials.length}</b><span>Landmark trials</span></button>
     </div>`;
+  const sp=spotlight();$("homeMeet").innerHTML=sp?`<div class="sec-h"><h2>Meetings</h2><button data-go="meet">Calendar</button></div>${heroCard(sp,true)}`:"";
   $("homePC").innerHTML=pc.length?`<div class="sec-h"><h2>Practice-changing</h2></div><div class="hscroll">${pc.map(i=>`<button class="hcard" data-open="news:${esc(i.id)}"><span class="m"><span class="tag c-${esc(i.category)}">${esc(LABEL[i.category])}</span> <span class="count">${esc(i.tumor||"")}</span></span><span class="t">${esc(i.title)}</span>${i.keyData?`<span class="k">${esc(i.keyData)}</span>`:""}</button>`).join("")}</div>`:"";
   $("homeAhead").innerHTML=upcoming.length?`<div class="sec-h"><h2>Decisions ahead</h2>${upcoming.length>4?`<button data-go="news" data-ntype="upcoming">All ${upcoming.length}</button>`:""}</div>
     <div class="panel rows timeline">${upcoming.slice(0,4).map(i=>{const t=D(i.actionDate);const lbl=i.actionDateLabel||"";const exact=/^\d/.test(lbl);
@@ -464,6 +554,29 @@ function renderNews(){
   if(ntype==="upcoming"){$("nlist").innerHTML=`<div class="panel rows">${list.map(i=>newsRow(i,q)).join("")}</div>`;return}
   const groups=[];list.forEach(i=>{const k=addedOf(i);const g=groups[groups.length-1];if(g&&g.d===k)g.items.push(i);else groups.push({d:k,items:[i]})});
   $("nlist").innerHTML=`<div class="count">${list.length} item${list.length>1?"s":""} · newest additions first</div>`+groups.map(g=>`<div class="daylabel">${esc(addedLabel(g.d))} · ${g.items.length}</div><div class="panel rows">${g.items.map(i=>newsRow(i,q)).join("")}</div>`).join("");
+}
+function renderMeet(){
+  [...$("meetSeg").children].forEach(b=>b.setAttribute("aria-pressed",b.dataset.mv===mview));
+  const sp=spotlight();
+  $("mhero").innerHTML=sp?heroCard(sp,false):"";
+  if(!confs.length){$("mchips").innerHTML="";$("mlist").innerHTML=`<div class="empty"><strong>Meeting calendar not loaded</strong>Pull down on Home to refresh.</div>`;return}
+  $("mchips").hidden=mview==="calendar";
+  if(mview==="calendar"){
+    $("mchips").innerHTML="";
+    const up=confs.filter(c=>confStatus(c).k!=="past"), past=confs.filter(c=>confStatus(c).k==="past").reverse();
+    const months=[];up.forEach(c=>{const k=c.start.slice(0,7);const g=months[months.length-1];if(g&&g.k===k)g.items.push(c);else months.push({k,items:[c]})});
+    $("mlist").innerHTML=`<div class="count">${up.length} upcoming · tap a meeting for dates, official site and highlights</div>`+
+      months.map(g=>`<div class="daylabel">${esc(D(g.k+"-01").toLocaleDateString("en-IN",{month:"long",year:"numeric"}))}</div><div class="panel rows">${g.items.map(confRow).join("")}</div>`).join("")+
+      (past.length?`<div class="daylabel">Earlier this year</div><div class="panel rows">${past.map(confRow).join("")}</div>`:"");
+    return;
+  }
+  const withItems=confs.filter(c=>news.some(i=>i.conference===c.id)).sort((a,b)=>{const ra=confStatus(a).k==="now"?0:1,rb=confStatus(b).k==="now"?0:1;return ra-rb||b.start.localeCompare(a.start)});
+  if(!msel||!withItems.some(c=>c.id===msel)) msel=(withItems[0]||{}).id||"";
+  $("mchips").innerHTML=withItems.map(c=>`<button class="chip" data-msel="${esc(c.id)}" aria-pressed="${c.id===msel}">${esc(c.short)}<span class="n">${news.filter(i=>i.conference===c.id).length}</span></button>`).join("");
+  if(!msel){$("mlist").innerHTML=`<div class="empty"><strong>No highlights yet</strong>Landmark presentations appear here as each meeting's abstracts and press releases come out.</div>`;return}
+  const c=confById(msel), list=confItems(msel);
+  $("mlist").innerHTML=`<div class="count">${list.length} item${list.length>1?"s":""} from ${esc(c.name)} · ${esc(fmtRange(c))} · ${esc(c.city)}</div>`+sessGroups(list)+
+    `<div style="display:grid;gap:8px;margin-top:14px"><button class="mlink" data-ext="${esc(c.url)}">${ico("ext")}Official ${esc(c.short)} website</button>${c.press?`<button class="mlink" data-ext="${esc(c.press)}">${ico("news")}Official press releases</button>`:""}</div>`;
 }
 function renderTrials(){
   const q=$("tq").value.trim();
@@ -498,32 +611,46 @@ function renderMore(){
 }
 function renderChrome(){
   const n=news.filter(isNew).length;$("badge").hidden=!n;$("badge").textContent=n>9?"9+":n;
-  const titles={home:"Oncology Pulse",news:"News",trials:"Landmark trials",saved:"Saved",more:"Settings"};
+  const titles={home:"Oncology Pulse",news:"News",meet:"Meetings",trials:"Landmark trials",saved:"Saved",more:"Settings"};
   const up=updated?"Updated "+new Date(updated).toLocaleString("en-IN",{day:"numeric",month:"short",hour:"numeric",minute:"2-digit"}):"Offline copy";
-  const subs={home:up,news:`${news.length} items · ${up}`,trials:`${trials.length} practice-defining trials`,saved:`${savedNews.size+savedTrials.size} bookmarks`,more:"Display, library and app"};
+  const subs={home:up,news:`${news.length} items · ${up}`,meet:`${confs.filter(c=>confStatus(c).k!=="past").length} upcoming · ${news.filter(i=>i.conference).length} highlights`,trials:`${trials.length} practice-defining trials`,saved:`${savedNews.size+savedTrials.size} bookmarks`,more:"Display, library and app"};
   $("title").firstChild.nodeValue=titles[screen];$("subtitle").textContent=subs[screen];
-  $("btnRefresh").hidden=!(screen==="home"||screen==="news");
+  $("btnRefresh").hidden=!(screen==="home"||screen==="news"||screen==="meet");
 }
-function renderAll(){renderHome();renderNews();renderTrials();renderSaved();renderMore();renderChrome();if(current)openDetail(current.kind,current.id,true)}
+function renderAll(){renderHome();renderNews();renderMeet();renderTrials();renderSaved();renderMore();renderChrome();if(current)openDetail(current.kind,current.id,true)}
 
 function go(s,opts={}){
   screen=s;store.set("screen",s);
   document.querySelectorAll(".screen").forEach(e=>e.classList.toggle("on",e.id==="s-"+s));
   document.querySelectorAll("#tabs button").forEach(b=>{if(b.dataset.go===s)b.setAttribute("aria-current","page");else b.removeAttribute("aria-current")});
   if(opts.ntype){ntype=opts.ntype;renderNews()}
+  if(opts.msel){msel=opts.msel;mview="highlights";renderMeet()}
   renderChrome();if(!opts.keepScroll)window.scrollTo(0,0);
 }
 
 /* ---------- detail ---------- */
 function openDetail(kind,id,silent){
   const body=$("sheetBody");current={kind,id};
-  if(kind==="news"){
+  $("sheetSave").hidden=kind==="conf";
+  if(kind==="conf"){
+    const c=confById(id);if(!c){closeDetail();return}
+    const s=confStatus(c),list=confItems(id);
+    body.innerHTML=`<div class="d-meta"><span class="st ${s.k}">${esc(s.txt)}</span><span>·</span><span>${esc(c.focus||"")}</span>${c.india?`<span class="mtag">India</span>`:""}</div>
+      <h2 class="d-title" id="dTitle">${esc(c.name)} ${esc(c.start.slice(0,4))}</h2>
+      <div class="kv"><div><span>Dates</span><b>${esc(fmtRange(c))}</b></div><div><span>Venue</span><b>${esc(c.city)}</b></div></div>
+      <div style="display:grid;gap:8px"><button class="btn" data-ext="${esc(c.url)}">${ico("ext")}Official website</button>${c.press?`<button class="btn ghost" data-ext="${esc(c.press)}">${ico("news")}Official press releases</button>`:""}</div>
+      <div class="d-sec"><h3>Highlights${list.length?` · ${list.length}`:""}</h3>${list.length?sessGroups(list):`<p class="count">${s.k==="past"?"No highlights were collected for this meeting.":"Landmark presentations will appear here as abstracts, late-breakers and press releases are released."}</p>`}</div>
+      <button class="report" data-report="conf:${esc(c.id)}">${ico("ext")}Report wrong dates or details</button>
+      <p class="disclaimer">Dates and venues are taken from the organisers' announcements. Check the official website before you travel or register.</p>`;
+  } else if(kind==="news"){
     const i=news.find(x=>x.id===id);if(!i){closeDetail();return}
     $("sheetSave").setAttribute("aria-pressed",savedNews.has(id));
+    const mc=i.conference&&confById(i.conference);
     body.innerHTML=`<div class="d-meta"><span class="tag c-${esc(i.category)}">${esc(LABEL[i.category]||i.category)}</span>${i.tumor?`<span>${esc(i.tumor)}</span>`:""}${i.impact==="practice-changing"?`<span class="pc">Practice-changing</span>`:""}</div>
       <h2 class="d-title" id="dTitle">${esc(i.title)}</h2>
       <div class="d-meta"><span>${esc(i.source||"")}</span><span>·</span><span>${esc(fmtDay(i.date))}</span></div>
       ${i.category==="upcoming"&&i.actionDate?`<div class="kv"><div><span>Expected decision</span><b>${esc(i.actionDateLabel||fmtShort(i.actionDate))}</b></div><div><span>Days away</span><b class="num">${Math.max(0,Math.round((D(i.actionDate)-D(today))/864e5))}</b></div></div>`:""}
+      ${mc?`<button class="mlink" data-open="conf:${esc(mc.id)}">${ico("mic")}<span style="flex:1">${i.session==="Preview"?"Coming up at":"Presented at"} <b>${esc(mc.short)}</b>${i.session&&!["Presented","Preview"].includes(i.session)?` · ${esc(SESS_H[i.session]||i.session)}`:""}</span>${ico("chev")}</button>`:""}
       ${i.summary?`<div class="d-sec"><h3>Summary</h3><p>${esc(i.summary)}</p></div>`:""}
       ${i.keyData?`<div class="d-sec"><h3>Key data</h3><div class="d-data">${esc(i.keyData)}</div></div>`:""}
       ${(i.tags||[]).length?`<div class="tags">${i.tags.map(t=>`<span>${esc(t)}</span>`).join("")}</div>`:""}
@@ -563,6 +690,7 @@ function closeDetail(){$("sheet").classList.remove("on");current=null;try{A&&A.s
 function shareCurrent(){
   if(!current)return;let txt="";
   if(current.kind==="news"){const i=news.find(x=>x.id===current.id);if(!i)return;txt=`${i.title}\n${i.keyData?i.keyData+"\n":""}${i.url||""}\n— Oncology Pulse`}
+  else if(current.kind==="conf"){const c=confById(current.id);if(!c)return;txt=`${c.name} ${c.start.slice(0,4)}\n${fmtRange(c)} · ${c.city}\n${c.url}\n— Oncology Pulse`}
   else{const t=trials.find(x=>x.id===current.id);if(!t)return;txt=`${t.name} (${t.journal})\n${t.population}\nArms: ${(t.arms||[]).join(" vs ")}\nResult: ${t.result}\nTakeaway: ${t.takeaway}\n— Oncology Pulse`}
   if(A)A.share(txt);else if(navigator.share)navigator.share({text:txt}).catch(()=>{});
 }
@@ -579,7 +707,9 @@ function renderSearch(){
   const q=$("gq").value.trim();
   if(q.length<2){$("ovBody").innerHTML=`<div class="empty"><strong>Search everything</strong>Drug, trial, biomarker or setting — for example “ESR1”, “hypofractionation” or “residual disease”.</div>`;return}
   const n=news.filter(i=>matches(newsHay(i),q)).slice(0,20), t=trials.filter(x=>matches(trialHay(x),q)).slice(0,40);
-  $("ovBody").innerHTML=(!n.length&&!t.length)?`<div class="empty"><strong>No results</strong>Try fewer or different words.</div>`:
+  const m=confs.filter(c=>matches([c.short,c.name,c.city,c.focus].join(" "),q)).slice(0,6);
+  $("ovBody").innerHTML=(!n.length&&!t.length&&!m.length)?`<div class="empty"><strong>No results</strong>Try fewer or different words.</div>`:
+    (m.length?`<div><div class="sec-h"><h2>Meetings · ${m.length}</h2></div><div class="panel rows">${m.map(confRow).join("")}</div></div>`:"")+
     (t.length?`<div><div class="sec-h"><h2>Landmark trials · ${t.length}</h2></div><div class="panel rows">${t.map(x=>trialRow(x,q)).join("")}</div></div>`:"")+
     (n.length?`<div><div class="sec-h"><h2>News · ${n.length}</h2></div><div class="panel rows">${n.map(i=>newsRow(i,q)).join("")}</div></div>`:"");
 }
@@ -596,12 +726,14 @@ function applyTheme(){
 /* ---------- events ---------- */
 document.addEventListener("click",e=>{
   const o=e.target.closest("[data-open]");if(o){const [k,id]=o.dataset.open.split(/:(.*)/s);if($("overlay").classList.contains("on")&&k)closeSearch();openDetail(k,id);return}
-  const g=e.target.closest("[data-go]");if(g){go(g.dataset.go,{ntype:g.dataset.ntype});return}
+  const g=e.target.closest("[data-go]");if(g){go(g.dataset.go,{ntype:g.dataset.ntype,msel:g.dataset.msel});return}
   const nt=e.target.closest("[data-ntype]");if(nt){ntype=nt.dataset.ntype;renderNews();return}
+  const ms=e.target.closest("[data-msel]");if(ms){msel=ms.dataset.msel;mview="highlights";renderMeet();return}
+  const mv=e.target.closest("[data-mv]");if(mv){mview=mv.dataset.mv;renderMeet();return}
   const tm=e.target.closest("[data-tmod]");if(tm){tmod=tm.dataset.tmod;renderTrials();return}
   const ts=e.target.closest("[data-tsite]");if(ts){tsite=ts.dataset.tsite;renderTrials();window.scrollTo(0,0);return}
   const rp=e.target.closest("[data-report]");if(rp){const [k,id]=rp.dataset.report.split(/:(.*)/s);
-    const x=k==="news"?news.find(n=>n.id===id):trials.find(t=>t.id===id);if(!x)return;
+    const x=k==="news"?news.find(n=>n.id===id):k==="conf"?confById(id):trials.find(t=>t.id===id);if(!x)return;
     const name=k==="news"?x.title:x.name;
     openExt(reportUrl(`Correction: ${name}`.slice(0,120),`Item: ${name}\nID: ${id} (${k})\n\nWhat is wrong:\n\nCorrect information and source (link):\n`));return}
   const ex=e.target.closest("[data-ext]");if(ex){A?A.open(ex.dataset.ext):window.open(ex.dataset.ext);return}
@@ -655,7 +787,7 @@ try{matchMedia("(prefers-color-scheme: dark)").addEventListener("change",applyTh
 
 /* pull to refresh */
 let py=null,pd=0;
-document.addEventListener("touchstart",e=>{py=(window.scrollY<=0&&(screen==="home"||screen==="news")&&!current)?e.touches[0].clientY:null;pd=0},{passive:true});
+document.addEventListener("touchstart",e=>{py=(window.scrollY<=0&&(screen==="home"||screen==="news"||screen==="meet")&&!current)?e.touches[0].clientY:null;pd=0},{passive:true});
 document.addEventListener("touchmove",e=>{if(py==null)return;pd=e.touches[0].clientY-py;if(pd>0){$("ptr").style.height=Math.min(pd/2.2,52)+"px";$("ptr").textContent=pd>110?"Release to refresh":"Pull to refresh"}},{passive:true});
 const ptrEnd=()=>{if(py!=null&&pd>110)refresh();$("ptr").style.height="0";py=null;pd=0};
 document.addEventListener("touchend",ptrEnd);document.addEventListener("touchcancel",ptrEnd);
@@ -670,6 +802,7 @@ window.handleBack=()=>{
   if($("overlay").classList.contains("on")){closeSearch();return true}
   if(current){closeDetail();return true}
   if(screen==="trials"&&(tsite||tmod!=="all"||$("tq").value)){tsite="";tmod="all";$("tq").value="";renderTrials();return true}
+  if(screen==="meet"&&mview!=="highlights"){mview="highlights";renderMeet();return true}
   if(screen==="news"&&(nsite||ntype!=="all"||$("nq").value)){nsite="";ntype="all";$("nq").value="";renderNews();return true}
   if(screen!=="home"){go("home");return true}
   return false;
