@@ -1,6 +1,330 @@
 {
- "updated": "2026-10-27T01:40:00Z",
+ "updated": "2026-10-28T01:30:00Z",
  "items": [
+  {
+   "added": "2026-10-28",
+   "category": "research",
+   "date": "2026-10-27",
+   "impact": "notable",
+   "keyData": "MHF 60–62 Gy/20 fx or 70 Gy/28 fx · UHF 36.25–40 Gy/5 fx",
+   "source": "Newswise (ASTRO news release)",
+   "summary": "ASTRO's updated guideline in Practical Radiation Oncology (replacing the 2018 version) recommends moderate hypofractionation over conventional fractionation across risk groups and ultrahypofractionation (36.25–40 Gy/5 fx) for low- and intermediate-risk disease, conditionally for high/very-high risk; fewer than five fractions and UHF to elective pelvic nodes are limited to trials. MHF is conditionally preferred for patients with significant baseline urinary symptoms; focal MRI-guided boost may be considered.",
+   "tags": [
+    "radiotherapy",
+    "guideline",
+    "hypofractionation",
+    "SBRT",
+    "ASTRO"
+   ],
+   "title": "ASTRO updates guideline: moderate hypofractionation for all risk groups, 5-fraction SBRT standard option for low/intermediate risk prostate cancer",
+   "tumor": "Prostate",
+   "url": "https://www.newswise.com/articles/astro-updates-guideline-on-shorter-course-radiation-therapy-for-localized-prostate-cancer",
+   "id": "2026-10-27-astro-prostate-hypofractionation-guideline"
+  },
+  {
+   "added": "2026-10-28",
+   "category": "research",
+   "conference": "esmo-2026",
+   "date": "2026-10-27",
+   "impact": "notable",
+   "session": "Analysis",
+   "source": "Clinical Trials Arena",
+   "summary": "The analysis noted KEYNOTE-B49's sub-1-month PFS gain with numerically longer survival in the control arm and no OS benefit even in the high-PD-L1 subgroup, and flagged an eight-patient cohort for NECVAX-NEO1. NATALEE PI Dennis Slamon (UCLA) called continued curve separation after therapy ended very encouraging, and Man Li (Dalian Medical University) described sac-TMT survival benefit in heavily pretreated TNBC.",
+   "tags": [
+    "expert commentary",
+    "KEYNOTE-B49",
+    "NATALEE",
+    "ESMO 2026"
+   ],
+   "title": "Clinical Trials Arena on ESMO breast data: KEYNOTE-B49's control arm lived longer; NATALEE's widening OS gap welcomed",
+   "tumor": "Breast",
+   "url": "https://www.clinicaltrialsarena.com/news/esmo26-breast-cancer-treatment-landscape-continues-to-be-redefined/",
+   "id": "2026-10-27-ctarena-esmo-breast-analysis"
+  },
+  {
+   "added": "2026-10-28",
+   "category": "approval",
+   "date": "2026-10-27",
+   "impact": "practice-changing",
+   "keyData": "DESTINY-Breast05 · IDFS HR 0.47 vs T-DM1 · 3-yr IDFS 92.4% vs 83.7%",
+   "source": "AstraZeneca",
+   "summary": "The European Commission approved single-agent T-DXd for adults with HER2-positive early breast cancer who have residual invasive disease after neoadjuvant taxane plus HER2-directed therapy, based on DESTINY-Breast05 versus T-DM1. It is T-DXd's first EU approval in a curative-intent setting.",
+   "tags": [
+    "ADC",
+    "HER2",
+    "T-DXd",
+    "DESTINY-Breast05",
+    "EMA",
+    "post-neoadjuvant"
+   ],
+   "title": "EC approves trastuzumab deruxtecan as post-neoadjuvant therapy for HER2+ early breast cancer with residual disease",
+   "tumor": "Breast",
+   "url": "https://www.astrazeneca.com/media-centre/press-releases/2026/enhertu-approved-eu-for-her2-positive-ebc.html",
+   "id": "2026-10-27-ec-tdxd-adjuvant-residual-her2-ebc"
+  },
+  {
+   "added": "2026-10-28",
+   "category": "regulatory",
+   "date": "2026-10-27",
+   "impact": "notable",
+   "keyData": "CERVINO · ORR 74.0% vs 45.7% · PFS risk reduction 60%",
+   "source": "StockTitan (AbbVie press release)",
+   "summary": "AbbVie filed a biologics license application with the FDA for intravenous etentamig in relapsed/refractory multiple myeloma, supported by the phase 3 CERVINO trial against standard available therapies, which met its response and PFS endpoints.",
+   "tags": [
+    "bispecific",
+    "BCMA",
+    "etentamig",
+    "CERVINO",
+    "BLA"
+   ],
+   "title": "AbbVie submits BLA for BCMA×CD3 bispecific etentamig in relapsed/refractory myeloma",
+   "tumor": "Myeloma",
+   "url": "https://www.stocktitan.net/news/ABBV/abb-vie-submits-biologics-license-application-bla-for-etentamig-to-u-23fcitzyc6pr.html",
+   "id": "2026-10-27-etentamig-bla-cervino-rrmm"
+  },
+  {
+   "added": "2026-10-28",
+   "category": "trial",
+   "conference": "esmo-2026",
+   "date": "2026-10-27",
+   "impact": "notable",
+   "keyData": "HORIZON-Breast06 (LBA13) · mPFS 16.4 vs 6.8 mo · HR 0.27 · APEX-Breast01 (LBA27) · mPFS 16.4 vs 5.5 mo · HR 0.29",
+   "session": "LBA",
+   "source": "Targeted Oncology",
+   "summary": "In HORIZON-Breast06, trastuzumab rezetecan (SHR-A1811) improved PFS over physician's-choice chemotherapy in HER2-low advanced breast cancer; in APEX-Breast01 the biparatopic HER2 ADC TQB2102 did the same in HR+/HER2-low disease. OS is immature in both; ILD rates were 2.5% and 2.2%.",
+   "tags": [
+    "ADC",
+    "HER2-low",
+    "trastuzumab rezetecan",
+    "TQB2102",
+    "ESMO 2026"
+   ],
+   "title": "Two Chinese HER2 ADCs — trastuzumab rezetecan and TQB2102 — roughly triple PFS over chemotherapy in HER2-low MBC",
+   "tumor": "Breast",
+   "url": "https://www.targetedonc.com/view/esmo-2026-breast-cancer-late-breaking-adcs-ribociclib",
+   "id": "2026-10-27-horizon-breast06-apex-breast01-her2low-adcs"
+  },
+  {
+   "added": "2026-10-28",
+   "category": "trial",
+   "conference": "esmo-2026",
+   "date": "2026-10-27",
+   "impact": "notable",
+   "keyData": "LBA51 · mPFS 6.7 vs 6.0 mo · HR 0.74 · OS 21.0 vs 22.2 mo · HR 1.04",
+   "session": "LBA",
+   "source": "Targeted Oncology",
+   "summary": "Adding pembrolizumab to chemotherapy met the PFS primary endpoint in CPS ≥1 HR+/HER2− metastatic breast cancer, but the absolute gain was under a month and final OS showed no difference.",
+   "tags": [
+    "PD-1",
+    "pembrolizumab",
+    "KEYNOTE-B49",
+    "ESMO 2026"
+   ],
+   "title": "KEYNOTE-B49: pembrolizumab plus chemotherapy gives small PFS gain but no OS benefit in PD-L1+ HR+/HER2− MBC",
+   "tumor": "Breast",
+   "url": "https://www.targetedonc.com/view/esmo-2026-breast-cancer-late-breaking-adcs-ribociclib",
+   "id": "2026-10-27-keynote-b49-pembro-hr-mbc"
+  },
+  {
+   "added": "2026-10-28",
+   "category": "trial",
+   "conference": "esmo-2026",
+   "date": "2026-10-27",
+   "impact": "notable",
+   "keyData": "LBA50 · mPFS 8.18 vs 4.01 mo · HR 0.41 · ORR 40.5% vs 20.2%",
+   "session": "LBA",
+   "source": "Targeted Oncology",
+   "summary": "Izalontamab brengitecan improved BICR-assessed PFS and response rate over single-agent chemotherapy in 383 previously treated patients with HR+/HER2− metastatic breast cancer; OS is immature and ILD occurred in 1.1%.",
+   "tags": [
+    "ADC",
+    "bispecific",
+    "iza-bren",
+    "PANKU-Breast01",
+    "ESMO 2026"
+   ],
+   "title": "PANKU-Breast01: EGFR×HER3 bispecific ADC iza-bren doubles PFS over chemotherapy in pretreated HR+/HER2− MBC",
+   "tumor": "Breast",
+   "url": "https://www.targetedonc.com/view/esmo-2026-breast-cancer-late-breaking-adcs-ribociclib",
+   "id": "2026-10-27-panku-breast01-iza-bren-hr-mbc"
+  },
+  {
+   "added": "2026-10-28",
+   "category": "trial",
+   "conference": "esmo-2026",
+   "date": "2026-10-27",
+   "impact": "notable",
+   "keyData": "LBA46 · 1-yr DFS 88.2% vs 65% historical (cis-eligible, n=17) · 61% vs 55% (cis-unfit, n=17)",
+   "session": "LBA",
+   "source": "OncoDaily",
+   "summary": "In the Spanish TTCC phase 2 RADIAN study, adding dostarlimab and niraparib to 70 Gy chemoradiotherapy improved 1-year DFS over historical controls in cisplatin-eligible patients, but not in cisplatin-unfit patients receiving RT alone, where all had grade ≥3 toxicity; several treatment-related deaths occurred across cohorts.",
+   "tags": [
+    "radiotherapy",
+    "PARP inhibitor",
+    "PD-1",
+    "chemoradiotherapy",
+    "RADIAN",
+    "ESMO 2026"
+   ],
+   "title": "RADIAN: niraparib plus dostarlimab with (chemo)radiotherapy meets 1-year DFS goal in cisplatin-eligible locally advanced HNSCC",
+   "tumor": "Head & Neck",
+   "url": "https://oncodaily.com/oncolibrary/radiotherapy/radian",
+   "id": "2026-10-27-radian-niraparib-dostarlimab-crt-hnscc"
+  },
+  {
+   "added": "2026-10-28",
+   "category": "trial",
+   "conference": "esmo-2026",
+   "date": "2026-10-25",
+   "impact": "notable",
+   "keyData": "12-mo LRR 20.2% vs 52.0% · mPFS 11.9 vs 6.3 mo · mOS 22.0 vs 14.0 mo",
+   "session": "Oral",
+   "source": "OncoDaily",
+   "summary": "In this randomised 2:1 trial (n=74 analysed), 40 Gy/5 fx SBRT after chemotherapy (mFOLFIRINOX or gem–nab-paclitaxel) more than halved 12-month locoregional recurrence versus chemotherapy alone, with longer PFS and OS; the inoperable subgroup did not reach significance.",
+   "tags": [
+    "radiotherapy",
+    "SBRT",
+    "MASTERPLAN",
+    "locally advanced",
+    "ESMO 2026"
+   ],
+   "title": "AGITG MASTERPLAN: adding SBRT to chemotherapy cuts locoregional recurrence and lengthens survival in high-risk/locally advanced pancreatic cancer",
+   "tumor": "Pancreas",
+   "url": "https://oncodaily.com/oncolibrary/radiotherapy/agitg-masterplan-trial",
+   "id": "2026-10-25-masterplan-sbrt-pancreatic"
+  },
+  {
+   "added": "2026-10-28",
+   "category": "trial",
+   "conference": "esmo-2026",
+   "date": "2026-10-25",
+   "impact": "notable",
+   "keyData": "mPFS 15.0 vs 5.7 mo · 51% risk reduction · mDoR 13.6 vs 6.8 mo",
+   "session": "LBA",
+   "source": "pharmaphorum",
+   "summary": "In 455 Chinese patients, adding the TROP2 ADC sacituzumab tirumotecan to pembrolizumab improved PFS over the chemo-immunotherapy comparator (simultaneously published in NEJM); OS shows an early favourable trend. ESMO discussant Giannis Mountzios (Athens) called the PFS data potentially practice-changing for PD-L1-negative patients pending OS.",
+   "tags": [
+    "ADC",
+    "TROP2",
+    "sac-TMT",
+    "OptiTROP-Lung06",
+    "PD-L1 negative",
+    "ESMO 2026"
+   ],
+   "title": "OptiTROP-Lung06: sac-TMT plus pembrolizumab nearly triples PFS in first-line PD-L1-negative nonsquamous NSCLC",
+   "tumor": "Lung",
+   "url": "https://pharmaphorum.com/news/esmo26-sac-tmt-delivers-goods-pd-l1-negative-nsclc",
+   "id": "2026-10-25-optitrop-lung06-sac-tmt-pembro-pdl1-negative"
+  },
+  {
+   "added": "2026-10-28",
+   "category": "trial",
+   "conference": "esmo-2026",
+   "date": "2026-10-24",
+   "impact": "notable",
+   "keyData": "LBA32 · vs chemo HR 0.37 · 5-yr OS 77% vs 46% · vs nivo HR 0.66 (p=0.043; threshold 0.0058)",
+   "session": "LBA",
+   "source": "OncoDaily",
+   "summary": "Final OS showed a large benefit for nivolumab plus ipilimumab over chemotherapy; versus nivolumab alone the OS difference did not meet the prespecified significance threshold, so superiority over nivolumab monotherapy for OS is not established.",
+   "tags": [
+    "PD-1",
+    "CTLA-4",
+    "MSI-H",
+    "CheckMate 8HW",
+    "ESMO 2026"
+   ],
+   "title": "CheckMate 8HW final OS: first-line nivolumab plus ipilimumab gives 77% 5-year survival in MSI-H/dMMR mCRC",
+   "tumor": "Colorectal",
+   "url": "https://oncodaily.com/gastrointestinal-oncology/checkmate-8hw",
+   "id": "2026-10-24-checkmate-8hw-final-os"
+  },
+  {
+   "added": "2026-10-28",
+   "category": "research",
+   "conference": "esmo-2026",
+   "date": "2026-10-24",
+   "impact": "notable",
+   "session": "Analysis",
+   "source": "OncoDaily",
+   "summary": "Erika Hamilton (Director of a Breast Cancer Research Program) highlighted large PFS gains for trastuzumab rezetecan and TQB2102 but noted APEX-Breast01 OS is only a trend; called NATALEE's OS benefit modest and nominal; found TALENT pCR 'still disappointing'; flagged the small eligible population and modest gain in KEYNOTE-B49, 93% diarrhoea with ipatasertib in FINER, and echoed Sandra Franco's critique that 'QOL maintained' can hide meaningful toxicity.",
+   "tags": [
+    "expert commentary",
+    "ADC",
+    "NATALEE",
+    "TALENT",
+    "ESMO 2026"
+   ],
+   "title": "Erika Hamilton's breast take on ESMO 2026: HER2-low ADCs impress, NATALEE OS modest, KEYNOTE-B49 and TALENT disappoint",
+   "tumor": "Breast",
+   "url": "https://oncodaily.com/science/erika-hamilton-616791",
+   "id": "2026-10-24-hamilton-esmo-breast-commentary"
+  },
+  {
+   "added": "2026-10-28",
+   "category": "trial",
+   "conference": "esmo-2026",
+   "date": "2026-10-24",
+   "impact": "notable",
+   "keyData": "n=31 evaluable · PSA50 77% · PSA90 48% · ORR 69% (measurable disease)",
+   "session": "Presented",
+   "source": "pharmaphorum",
+   "summary": "In a phase 1/2 study, the 50 mg dose of JNJ-6143 (formerly HLD-0915) produced deep PSA declines and confirmed objective responses in patients with a median of six prior therapies, with grade ≥3 TRAEs in 10%. A ~100-patient single-arm phase 2 is open.",
+   "tags": [
+    "RIPTAC",
+    "androgen receptor",
+    "BRD4",
+    "JNJ-6143",
+    "ESMO 2026"
+   ],
+   "title": "Oral AR/BRD4 RIPTAC JNJ-6143 shows high PSA response rates in heavily pretreated mCRPC",
+   "tumor": "Prostate",
+   "url": "https://pharmaphorum.com/news/esmo26-halda-buy-delivers-win-jj-prostate-cancer",
+   "id": "2026-10-24-jnj-6143-riptac-mcrpc"
+  },
+  {
+   "added": "2026-10-28",
+   "category": "trial",
+   "conference": "esmo-2026",
+   "date": "2026-10-24",
+   "impact": "notable",
+   "keyData": "ORR 62–72% · pCR 3–9% · RCB 0/1 16–17%",
+   "session": "Presented",
+   "source": "pharmaphorum",
+   "summary": "In the investigator-led TALENT trial, eight cycles of neoadjuvant T-DXd alone, with anastrozole, or followed by adjuvant chemotherapy produced objective responses in most patients but pCR rates in single digits; ESMO described these as sobering. T-DXd lowered tumour HER2 expression while TROP2 stayed high.",
+   "tags": [
+    "ADC",
+    "T-DXd",
+    "HER2-low",
+    "neoadjuvant",
+    "TALENT",
+    "ESMO 2026"
+   ],
+   "title": "TALENT: neoadjuvant T-DXd yields high response but low pCR in HR+/HER2-low early breast cancer",
+   "tumor": "Breast",
+   "url": "https://pharmaphorum.com/news/esmo26-neoadjuvant-enhertu-fails-early-breast-cancer",
+   "id": "2026-10-24-talent-neoadjuvant-tdxd-hr-her2low"
+  },
+  {
+   "added": "2026-10-28",
+   "category": "trial",
+   "conference": "esmo-2026",
+   "date": "2026-10-23",
+   "impact": "notable",
+   "keyData": "LBA25 · OS HR 0.809 (0.661–0.989) · 6-yr OS 91.9% vs 89.7% · iDFS HR 0.741 · 6-yr iDFS +5.3%",
+   "session": "LBA",
+   "source": "Novartis",
+   "summary": "At 6 years, adding ribociclib to a nonsteroidal aromatase inhibitor reduced the risk of death versus NSAI alone in stage II/III HR+/HER2− early breast cancer, with absolute iDFS and OS gains that have widened since 5 years. The OS p-value is nominal and the absolute OS gain modest.",
+   "tags": [
+    "CDK4/6 inhibitor",
+    "ribociclib",
+    "NATALEE",
+    "adjuvant",
+    "ESMO 2026"
+   ],
+   "title": "NATALEE 6-year analysis: adjuvant ribociclib shows overall survival benefit in HR+/HER2− early breast cancer",
+   "tumor": "Breast",
+   "url": "https://www.novartis.com/news/media-releases/kisqali-shows-clinically-meaningful-overall-survival-broadest-hrher2-early-breast-cancer-population-high-risk-recurrence",
+   "id": "2026-10-23-natalee-6yr-os-ribociclib"
+  },
   {
    "added": "2026-10-27",
    "category": "trial",
@@ -225,7 +549,7 @@
    "date": "2026-10-26",
    "impact": "notable",
    "keyData": "LBA9 ARTEMIS-011 · LBA10 MIOIO · LBA11 TroFuse-005 · LBA12 KEYNOTE-C93",
-   "session": "Preview",
+   "session": "Presented",
    "source": "touchONCOLOGY",
    "summary": "The final Presidential session (26 Oct, 16:30–18:15 CET) features B7-H3 ADC risvutatug rezetecan vs gemcitabine–docetaxel in relapsed osteosarcoma, reduced-frequency checkpoint-inhibitor dosing (MIOIO), sacituzumab tirumotecan in pretreated endometrial cancer, and first-line pembrolizumab vs carboplatin–paclitaxel in dMMR endometrial cancer.",
    "tags": [
@@ -1051,7 +1375,7 @@
    "url": "https://www.cancernetwork.com/view/cancer-vaccine-combinations-improve-1-year-survival-in-second-line-nsclc",
    "id": "2026-10-19-combi-ted-ose2101-nsclc",
    "conference": "esmo-2026",
-   "session": "Preview"
+   "session": "Presented"
   },
   {
    "added": "2026-10-22",
@@ -1073,7 +1397,7 @@
    "url": "https://www.onclive.com/view/qtx3034-plus-cetuximab-receives-fda-fast-track-designation-in-kras-g12d-mutated-crc",
    "id": "2026-10-19-qtx3034-cetuximab-kras-g12d-crc-ftd",
    "conference": "esmo-2026",
-   "session": "Preview"
+   "session": "Presented"
   },
   {
    "added": "2026-10-22",
@@ -1155,7 +1479,7 @@
    "url": "https://www.cancernetwork.com/view/riz-rez-produces-anti-tumor-activity-in-extensive-stage-sclc",
    "id": "2026-10-18-ris-rez-embold-es-sclc",
    "conference": "esmo-2026",
-   "session": "Preview"
+   "session": "Presented"
   },
   {
    "added": "2026-10-21",
@@ -1679,7 +2003,7 @@
    "url": "https://www.biospace.com/press-releases/marengo-therapeutics-receives-second-u-s-fda-fast-track-designation-for-invikafusp-alfa-expanding-to-a-tissue-agnostic-indication-across-tumor-mutational-burden-high-solid-tumors-that-progress-after-prior-therapy-including-checkpoint-inhibition",
    "id": "2026-10-15-invikafusp-tmbh-fast-track",
    "conference": "esmo-2026",
-   "session": "Preview"
+   "session": "Presented"
   },
   {
    "added": "2026-10-17",
@@ -2196,7 +2520,7 @@
    "url": "https://www.onclive.com/view/fda-grants-fast-track-designation-to-opamtistomig-for-advanced-biliary-tract-cancer",
    "id": "2026-10-12-opamtistomig-btc-ftd",
    "conference": "esmo-2026",
-   "session": "Preview"
+   "session": "Presented"
   },
   {
    "added": "2026-10-13",
@@ -2993,7 +3317,7 @@
    "url": "https://oncodaily.com/breast-oncology/esmo-congress-2026-bc",
    "id": "2026-09-28-esmo-2026-preview",
    "conference": "esmo-2026",
-   "session": "Preview"
+   "session": "Presented"
   },
   {
    "actionDate": "2026-12-31",
