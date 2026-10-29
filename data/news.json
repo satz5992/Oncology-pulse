@@ -1,6 +1,240 @@
 {
- "updated": "2026-10-28T01:30:00Z",
+ "updated": "2026-10-29T01:25:00Z",
  "items": [
+  {
+   "added": "2026-10-29",
+   "category": "trial",
+   "date": "2026-10-28",
+   "impact": "notable",
+   "keyData": "BELLA Part A · ORR 59% · mPFS 7.2 mo (bev-naive 8.1 mo)",
+   "source": "OncLive",
+   "summary": "Corcept's topline phase 2 Part A data in 95 evaluable patients showed median PFS of 7.2 months (8.1 months in bevacizumab-naive patients); full results are expected at a 2027 meeting.",
+   "tags": [
+    "relacorilant",
+    "glucocorticoid receptor",
+    "bevacizumab",
+    "platinum-resistant"
+   ],
+   "title": "BELLA: relacorilant plus nab-paclitaxel and bevacizumab shows 59% response rate in platinum-resistant ovarian cancer",
+   "tumor": "Gynaecologic",
+   "url": "https://onclive.com/view/relacorilant-plus-nab-paclitaxel-and-bevacizumab-yields-7-2-month-median-pfs-in-proc",
+   "id": "2026-10-28-bella-relacorilant-proc"
+  },
+  {
+   "added": "2026-10-29",
+   "category": "trial",
+   "date": "2026-10-28",
+   "impact": "notable",
+   "keyData": "IMpactMF · n=327 · 2:1 imetelstat vs BAT · OS primary endpoint",
+   "source": "OncLive",
+   "summary": "An independent data monitoring committee judged imetelstat unlikely to meet the OS primary endpoint versus best available therapy, and Geron discontinued the 327-patient trial. No efficacy data were released and no new safety signals were seen.",
+   "tags": [
+    "imetelstat",
+    "telomerase inhibitor",
+    "myelofibrosis",
+    "futility"
+   ],
+   "title": "Geron stops phase 3 IMpactMF of imetelstat in JAK-inhibitor-refractory myelofibrosis after futility recommendation",
+   "tumor": "Haematologic",
+   "url": "https://www.onclive.com/view/phase-3-impactmf-trial-evaluating-imetelstat-in-r-r-myelofibrosis-is-discontinued",
+   "id": "2026-10-28-impactmf-imetelstat-discontinued"
+  },
+  {
+   "added": "2026-10-29",
+   "category": "trial",
+   "date": "2026-10-28",
+   "impact": "notable",
+   "keyData": "LiGeR-HN1 · OS HR 0.50 (95% CI 0.37–0.67) · ORR odds ratio 3.17 · CPS ≥1",
+   "source": "Genmab",
+   "summary": "Genmab reported that the EGFR×LGR5 bispecific petosemtamab added to pembrolizumab met both primary endpoints (OS and ORR) at the first interim analysis of the phase 3 trial, with benefit regardless of HPV status and no new safety signals. Full data will go to a future meeting; Genmab plans to engage regulators.",
+   "tags": [
+    "petosemtamab",
+    "bispecific",
+    "EGFR",
+    "LGR5",
+    "pembrolizumab",
+    "topline"
+   ],
+   "title": "LiGeR-HN1: petosemtamab plus pembrolizumab halves risk of death vs pembrolizumab alone in first-line PD-L1+ R/M HNSCC",
+   "tumor": "Head & Neck",
+   "url": "https://ir.genmab.com/news-releases/news-release-details/genmab-announces-statistically-significant-clinically-meaningful/",
+   "id": "2026-10-28-liger-hn1-petosemtamab-pembro-hnscc"
+  },
+  {
+   "added": "2026-10-29",
+   "category": "trial",
+   "conference": "esmo-2026",
+   "date": "2026-10-28",
+   "impact": "notable",
+   "keyData": "LBA64 · EFS HR 0.52 · OS HR 0.66 (P=0.0072) · mFU 48.2 mo",
+   "session": "LBA",
+   "source": "GlobeNewswire (Junshi Biosciences)",
+   "summary": "At a median 48.2 months' follow-up in 501 patients, perioperative toripalimab with neoadjuvant chemotherapy significantly reduced the risk of events and death versus placebo plus chemotherapy; results were presented at ESMO 2026 and published in Annals of Oncology.",
+   "tags": [
+    "toripalimab",
+    "PD-1",
+    "perioperative",
+    "NEOTORCH",
+    "ESMO 2026"
+   ],
+   "title": "NEOTORCH final analysis: perioperative toripalimab plus chemotherapy improves EFS and OS in resectable stage II–III NSCLC",
+   "tumor": "Lung",
+   "url": "https://www.globenewswire.com/news-release/2026/10/28/3389841/0/en/junshi-biosciences-announces-final-analysis-results-of-the-phase-3-neotorch-study-at-esmo-congress-2026.html",
+   "id": "2026-10-28-neotorch-final-os-toripalimab"
+  },
+  {
+   "added": "2026-10-29",
+   "category": "trial",
+   "date": "2026-10-27",
+   "impact": "notable",
+   "keyData": "MagnetisMM-32 · 18-mo PFS 68% (elranatamab) · gr≥3 infections 27.5% vs 18.1%",
+   "source": "CancerNetwork",
+   "summary": "Pfizer's topline results show the BCMA×CD3 bispecific significantly improved BICR-assessed PFS versus investigator's choice of EloPd, PVd or Kd in 523 patients; median PFS was not reached and OS is immature. Grade ≥3 infections were more frequent with elranatamab.",
+   "tags": [
+    "elranatamab",
+    "BCMA",
+    "bispecific",
+    "topline"
+   ],
+   "title": "MagnetisMM-32: elranatamab monotherapy beats standard triplets on PFS in relapsed/refractory myeloma after anti-CD38 and lenalidomide",
+   "tumor": "Myeloma",
+   "url": "https://www.cancernetwork.com/view/elranatamab-improves-pfs-vs-standard-regimens-in-r-r-multiple-myeloma",
+   "id": "2026-10-27-magnetismm-32-elranatamab-rrmm"
+  },
+  {
+   "added": "2026-10-29",
+   "category": "research",
+   "conference": "esmo-2026",
+   "date": "2026-10-27",
+   "impact": "notable",
+   "keyData": "MOIO · PFS HR 1.35 · OS HR 2.04 (1.08–3.85)",
+   "session": "Analysis",
+   "source": "OncoDaily",
+   "summary": "Discussing MOIO in Presidential Symposium III, Naidoo said the results were inconclusive rather than reassuring, questioned a non-inferiority margin that tolerates a ~30% higher progression hazard, and doubted a one-size-fits-all pan-tumour approach; Alfredo Addeo (Geneva University Hospitals) called the OS signal unexpected and concerning.",
+   "tags": [
+    "MOIO",
+    "immunotherapy",
+    "de-escalation",
+    "expert commentary",
+    "ESMO 2026"
+   ],
+   "title": "MOIO discussant Jarushka Naidoo: de-escalation must be biologically justified and rigorously tested",
+   "tumor": "Pan-cancer",
+   "url": "https://oncodaily.com/science/alfredo-addeo-esmo26-619453",
+   "id": "2026-10-27-naidoo-moio-discussant"
+  },
+  {
+   "added": "2026-10-29",
+   "category": "research",
+   "conference": "esmo-2026",
+   "date": "2026-10-26",
+   "impact": "notable",
+   "keyData": "MFS HR 0.42 · 4-y MFS 95% vs 88% · OS HR 0.88 (0.49–1.59)",
+   "session": "Analysis",
+   "source": "Targeted Oncology",
+   "summary": "Radiation oncologist Tamim Niazi (McGill University/Jewish General Hospital) views the MFS gain with darolutamide added to ADT and radiotherapy as practice-changing, noting consistent subgroup benefit; the report cautions that this is an interim analysis (87 of 130 events) and OS is immature with a CI spanning no effect.",
+   "tags": [
+    "darolutamide",
+    "DASL-HiCaP",
+    "radiotherapy",
+    "expert commentary",
+    "ESMO 2026"
+   ],
+   "title": "Tamim Niazi on DASL-HiCaP: darolutamide with ADT + RT in very high-risk prostate cancer",
+   "tumor": "Prostate",
+   "url": "https://www.targetedonc.com/view/niazi-on-practice-changing-data-in-prostate-cancer-from-esmo-2026",
+   "id": "2026-10-26-niazi-dasl-hicap-commentary"
+  },
+  {
+   "added": "2026-10-29",
+   "category": "research",
+   "conference": "esmo-2026",
+   "date": "2026-10-25",
+   "impact": "notable",
+   "session": "Analysis",
+   "source": "OncoDaily",
+   "summary": "Mario Balsa (Hospital Clínic de Barcelona) called INTerpath-001 clinically meaningful but questioned its adjuvant vs neoadjuvant role, immature OS and the early data leak; he cautioned that MATISSE-2 clinical CR may not equal pathological response, noted ADMEC-O's RFS gain without OS benefit, and flagged toxicity and immature OS for HBI-8000 + nivolumab and STARBOARD.",
+   "tags": [
+    "INTerpath-001",
+    "MATISSE-2",
+    "ADMEC-O",
+    "expert commentary",
+    "ESMO 2026"
+   ],
+   "title": "Mario Balsa's melanoma/skin take on ESMO 2026: questions over INTerpath-001 placement, MATISSE-2 surgery omission and ADMEC-O",
+   "tumor": "Melanoma",
+   "url": "https://oncodaily.com/science/mario-balsa-esmo26-617672",
+   "id": "2026-10-25-balsa-esmo-melanoma-commentary"
+  },
+  {
+   "added": "2026-10-29",
+   "category": "trial",
+   "conference": "esmo-2026",
+   "date": "2026-10-24",
+   "impact": "notable",
+   "keyData": "LBA21 · mDFS 25.7 vs 17.9 mo, HR 0.82 (P=0.058) · RMST +2.6 mo (P=0.011) · mOS 58.1 vs 48.2 mo (P=0.103)",
+   "session": "LBA",
+   "source": "OncoDaily",
+   "summary": "In 601 patients, gem-cis gave numerically longer DFS and OS than capecitabine, but the Cox HR crossed 1; with non-proportional hazards, a prespecified 3-year restricted mean DFS favoured gem-cis by 2.6 months. OS was not significantly improved and toxicity was higher.",
+   "tags": [
+    "gemcitabine",
+    "cisplatin",
+    "capecitabine",
+    "adjuvant",
+    "ACTICCA-1",
+    "ESMO 2026"
+   ],
+   "title": "ACTICCA-1: adjuvant gemcitabine–cisplatin vs capecitabine in resected biliary tract cancer misses conventional DFS significance",
+   "tumor": "Hepatobiliary",
+   "url": "https://oncodaily.com/gastrointestinal-oncology/acticca-1",
+   "id": "2026-10-24-acticca-1-adjuvant-gemcis-btc"
+  },
+  {
+   "added": "2026-10-29",
+   "category": "trial",
+   "conference": "esmo-2026",
+   "date": "2026-10-24",
+   "impact": "notable",
+   "keyData": "LBA37 · mOS 51.1 mo (+11.5 vs chemo) · 36-mo OS 63.4% vs 52%",
+   "session": "LBA",
+   "source": "MD Anderson Cancer Center",
+   "summary": "In 718 patients, the triplet arm (carboplatin–paclitaxel + durvalumab, then durvalumab + olaparib) achieved median OS of 51.1 months, 11.5 months longer than chemotherapy alone, with additional benefit reported in pMMR disease.",
+   "tags": [
+    "durvalumab",
+    "olaparib",
+    "PARP",
+    "pMMR",
+    "DUO-E",
+    "ESMO 2026"
+   ],
+   "title": "DUO-E overall survival: durvalumab plus olaparib maintenance after chemo-durvalumab extends survival in advanced endometrial cancer",
+   "tumor": "Gynaecologic",
+   "url": "https://www.mdanderson.org/newsroom/research-newsroom/esmo-2026--immunotherapy-combination-extends-survival-in-advanced-endometrial-cancer.h00-159859290.html",
+   "id": "2026-10-24-duo-e-os-durvalumab-olaparib"
+  },
+  {
+   "added": "2026-10-29",
+   "category": "trial",
+   "conference": "esmo-2026",
+   "date": "2026-10-24",
+   "impact": "notable",
+   "keyData": "2215O · OS 6.1 vs 4.6 y, HR 0.75 · triplet vs doublet HR 0.68, 8-y OS 40.3% vs 27.1%",
+   "session": "Oral",
+   "source": "ecancer",
+   "summary": "At a median 7.7 years in 1,173 men, abiraterone improved OS overall and in the ADT + docetaxel population; the benefit was significant in high-volume disease, with a non-significant trend in low-volume disease (no interaction).",
+   "tags": [
+    "abiraterone",
+    "docetaxel",
+    "triplet",
+    "mCSPC",
+    "PEACE-1",
+    "ESMO 2026"
+   ],
+   "title": "PEACE-1 long-term follow-up: abiraterone added to ADT ± docetaxel sustains OS benefit in de novo mCSPC",
+   "tumor": "Prostate",
+   "url": "https://ecancer.org/en/news/29089-esmo-2026-adding-abiraterone-to-adt-and-docetaxel-improves-survival-in-metastatic-prostate-cancer",
+   "id": "2026-10-24-peace-1-long-term-os"
+  },
   {
    "added": "2026-10-28",
    "category": "research",
