@@ -1,6 +1,200 @@
 {
- "updated": "2026-10-29T01:25:00Z",
+ "updated": "2026-10-30T01:40:00Z",
  "items": [
+  {
+   "added": "2026-10-30",
+   "category": "trial",
+   "date": "2026-10-29",
+   "impact": "notable",
+   "keyData": "IOV-LUN-202 · n=69 · ORR 24.6% · KRAS-wt 43.3% vs KRAS-mut 11.4% · KRAS-wt/HER2-wt/smoker 59.1%",
+   "source": "GlobeNewswire (Iovance)",
+   "summary": "Updated company-reported data from 69 patients progressing after platinum and checkpoint inhibitor showed an overall response rate similar to the earlier report, with responses concentrated in post hoc KRAS wild-type, HER2 wild-type, smoking-history subgroups; Iovance will open the biomarker-enriched POSITILITY cohort in November 2026 and plans an sBLA in 2027. Subgroups are post hoc and independent review is incomplete.",
+   "tags": [
+    "lifileucel",
+    "TIL",
+    "cell therapy",
+    "KRAS",
+    "NSCLC"
+   ],
+   "title": "IOV-LUN-202 update: lifileucel ORR 24.6% in post-IO non-squamous NSCLC; Iovance pivots to biomarker-enriched 'precision TIL' cohort",
+   "tumor": "Lung",
+   "url": "https://www.globenewswire.com/news-release/2026/10/29/3391108/0/en/iovance-reports-updated-iov-lun-202-results-and-adds-precision-til-strategy-for-second-line-metastatic-non-small-cell-lung-cancer-mnsclc.html",
+   "id": "2026-10-29-iov-lun-202-lifileucel-nsclc-update"
+  },
+  {
+   "added": "2026-10-30",
+   "category": "research",
+   "date": "2026-10-29",
+   "impact": "notable",
+   "keyData": "OLYMPUS · CR 59% (42/71) · mDOR 47.8 mo · 15/20 (75%) event-free at median 53.3 mo follow-up · ureteric stenosis 44%",
+   "source": "Targeted Oncology",
+   "summary": "Long-term follow-up of the single-arm phase 3 OLYMPUS trial, published in Therapeutic Advances in Urology, showed durable responses among initial complete responders with no progression to high-grade disease; the long-term subset is small and limited to responders, and ureteric stenosis remained common in the original trial.",
+   "tags": [
+    "mitomycin gel",
+    "UGN-101",
+    "upper tract urothelial carcinoma",
+    "kidney-sparing"
+   ],
+   "title": "OLYMPUS 5-year follow-up: mitomycin pyelocalyceal gel (UGN-101) gives durable complete responses in low-grade upper tract urothelial cancer",
+   "tumor": "Bladder",
+   "url": "https://www.targetedonc.com/view/mitomycin-gel-five-year-olympus-trial-utuc",
+   "id": "2026-10-29-olympus-ugn101-5yr-utuc"
+  },
+  {
+   "added": "2026-10-30",
+   "category": "research",
+   "conference": "sitc-2026",
+   "date": "2026-10-29",
+   "impact": "notable",
+   "keyData": "AMPLIFY-7P · n=144 · LBA poster 1186 · plenary 6 Nov 2026",
+   "session": "Preview",
+   "source": "GlobeNewswire (Elicio)",
+   "summary": "Elicio will present prespecified analyses from the 144-patient randomised phase 2 AMPLIFY-7P trial of camupepimut (ELI-002 7P) versus observation after standard locoregional therapy, in the SITC plenary on 6 Nov and as a late-breaking poster; no efficacy figures were released beforehand.",
+   "tags": [
+    "cancer vaccine",
+    "KRAS",
+    "ELI-002",
+    "pancreatic cancer",
+    "SITC 2026"
+   ],
+   "title": "SITC 2026 preview: randomised phase 2 AMPLIFY-7P of lymph-node-targeted KRAS vaccine in pancreatic cancer to be presented in plenary",
+   "tumor": "Pancreas",
+   "url": "https://www.globenewswire.com/news-release/2026/10/29/3391331/0/en/elicio-therapeutics-to-present-phase-2-amplify-7p-results-at-the-sitc-2026-annual-meeting.html",
+   "id": "2026-10-29-sitc-amplify-7p-kras-vaccine-preview"
+  },
+  {
+   "added": "2026-10-30",
+   "category": "research",
+   "conference": "sitc-2026",
+   "date": "2026-10-29",
+   "impact": "notable",
+   "keyData": "Abstract 1177 · oral 7 Nov 2026",
+   "session": "Preview",
+   "source": "GlobeNewswire (Immunocore)",
+   "summary": "Immunocore will present additional safety and efficacy data for its PRAME-targeted ImmTAC brenetafusp alone and with tebentafusp in HLA-A*02:01-positive metastatic uveal melanoma, as a poster on 6 Nov and a clinical oral session on 7 Nov; no numbers were disclosed in advance.",
+   "tags": [
+    "brenetafusp",
+    "tebentafusp",
+    "PRAME",
+    "uveal melanoma",
+    "SITC 2026"
+   ],
+   "title": "SITC 2026 preview: phase 1 brenetafusp (PRAME) plus tebentafusp in metastatic uveal melanoma selected for late-breaking oral",
+   "tumor": "Melanoma",
+   "url": "https://www.globenewswire.com/news-release/2026/10/29/3391299/0/en/immunocore-will-present-phase-1-data-for-brenetafusp-plus-kimmtrak-tebentafusp-tebn-in-metastatic-uveal-melanoma-during-a-late-breaking-oral-session-at-the-2026-sitc-meeting.html",
+   "id": "2026-10-29-sitc-brenetafusp-tebentafusp-uveal-preview"
+  },
+  {
+   "added": "2026-10-30",
+   "category": "trial",
+   "date": "2026-10-28",
+   "impact": "notable",
+   "keyData": "KEYNOTE-867 · n=448 · mEFS 31.2 vs 28.3 mo · HR 0.92 (p=0.29) · OS HR 1.33 (0.93–1.90) · G≥3 TRAEs 20.4% vs 3.7%",
+   "source": "OncoDaily",
+   "summary": "In this double-blind phase 3 trial of medically inoperable or surgery-declining stage I–II NSCLC, pembrolizumab with SBRT did not improve event-free survival over placebo plus SBRT, OS numerically favoured placebo, and severe toxicity rose with five treatment-related deaths; the trial stopped after the first interim analysis, leaving SBRT alone as standard.",
+   "tags": [
+    "pembrolizumab",
+    "SBRT",
+    "radiotherapy",
+    "early-stage NSCLC",
+    "KEYNOTE-867",
+    "JCO"
+   ],
+   "title": "KEYNOTE-867 (JCO): adding pembrolizumab to SBRT fails to improve EFS and raises toxicity in inoperable early-stage NSCLC",
+   "tumor": "Lung",
+   "url": "https://oncodaily.com/oncolibrary/lung-oncology/keynote-867",
+   "id": "2026-10-28-keynote-867-pembro-sbrt-early-nsclc"
+  },
+  {
+   "added": "2026-10-30",
+   "category": "research",
+   "conference": "esmo-2026",
+   "date": "2026-10-26",
+   "impact": "notable",
+   "keyData": "DUO-E · dMMR PFS HR 0.97 · pMMR PFS HR 0.76 (olaparib) · pMMR OS HR 0.95 (durvalumab) · G≥3 AEs 26.8% → 49.5%",
+   "session": "Analysis",
+   "source": "OncoDaily",
+   "summary": "Reviewing DUO-E alongside KEYNOTE-B21 and NRG-GY020, Mali Barbi noted olaparib added nothing in dMMR disease, gave only a modest PFS gain without proven survival benefit in pMMR disease while nearly doubling grade ≥3 AEs, and stressed that the olaparib-versus-durvalumab comparison was exploratory and never formally tested.",
+   "tags": [
+    "expert commentary",
+    "olaparib",
+    "durvalumab",
+    "endometrial",
+    "DUO-E",
+    "ESMO 2026"
+   ],
+   "title": "Mali Barbi on DUO-E: 'olaparib is not the partner for IO in endometrial cancer'",
+   "tumor": "Gynaecologic",
+   "url": "https://oncodaily.com/not-to-miss/esmo-day-4",
+   "id": "2026-10-26-barbi-duo-e-olaparib-commentary"
+  },
+  {
+   "added": "2026-10-30",
+   "category": "trial",
+   "conference": "esmo-2026",
+   "date": "2026-10-26",
+   "impact": "notable",
+   "keyData": "MANEUVER · 3747P · ORR (BICR RECIST) 76.2% · TVS ORR 77.8% · mDOR NR · 54% on treatment at 2 yrs · ROM +19.6%",
+   "session": "Poster",
+   "source": "BioSpace (Merck KGaA press release)",
+   "summary": "Two-year follow-up of the phase 3 MANEUVER trial presented at ESMO showed stable independent-review response rates, median duration of response not reached and improvements in range of motion, stiffness, pain and function, without cholestatic hepatotoxicity; the FDA application is under review.",
+   "tags": [
+    "pimicotinib",
+    "CSF1R",
+    "TGCT",
+    "MANEUVER",
+    "ESMO 2026"
+   ],
+   "title": "MANEUVER 2-year data: pimicotinib maintains ~76% response with sustained functional gains in TGCT, ahead of US decision",
+   "tumor": "Sarcoma",
+   "url": "https://www.biospace.com/press-releases/two-year-data-of-pimicotinib-demonstrated-durable-tumor-control-and-sustained-improvement-in-tgct-symptoms-and-joint-function",
+   "id": "2026-10-26-maneuver-pimicotinib-2yr-tgct"
+  },
+  {
+   "added": "2026-10-30",
+   "category": "research",
+   "conference": "esmo-2026",
+   "date": "2026-10-25",
+   "impact": "notable",
+   "keyData": "Krascendo 1 control arm 91% sotorasib · PERSEE G≥3 AEs 54% vs 19%",
+   "session": "Analysis",
+   "source": "KOL Pulse",
+   "summary": "Stephen Liu and Alfredo Addeo echoed discussant Benjamin Besse that Krascendo 1's lack of crossover was unfair for a PFS-endpoint trial, and Yago Garitaonaindía noted the control arm was 91% sotorasib; Tom John said MET 3+ was under a third of SAFFRON patients and Elvina Almuradova noted no head-to-head data versus amivantamab–chemo; Rishabh Jain questioned whether PERSEE's PFS gain justifies grade ≥3 AEs of 54% vs 19% without OS significance, while Estela Rodriguez said sac-TMT–pembrolizumab (OptiTROP-Lung06) should not be labelled chemo-free.",
+   "tags": [
+    "expert commentary",
+    "divarasib",
+    "savolitinib",
+    "PERSEE",
+    "KRAS G12C",
+    "ESMO 2026"
+   ],
+   "title": "ESMO 2026 lung KOL reactions: crossover criticism of Krascendo 1, MET-selection and comparator questions for SAFFRON, toxicity cost of PERSEE",
+   "tumor": "Lung",
+   "url": "https://kolpulse.com/uptempo-blog/esmo26-day-3-top-trials",
+   "id": "2026-10-25-esmo-lung-kol-reactions-krascendo-saffron-persee"
+  },
+  {
+   "added": "2026-10-30",
+   "category": "trial",
+   "conference": "esmo-2026",
+   "date": "2026-10-25",
+   "impact": "notable",
+   "keyData": "PERSEE · n=321 · ORR 77.5% vs 50.3% · mPFS 16.1 vs 6.9 mo · HR 0.56 · mOS 50.2 vs 29.9 mo · HR 0.77 (0.56–1.05) · G≥3 TRAEs 53.8% vs 19.3%",
+   "session": "Presented",
+   "source": "OncoDaily",
+   "summary": "The French GFPC phase 3 PERSEE trial randomised untreated PD-L1-high advanced NSCLC to pembrolizumab alone or with chemotherapy; the combination improved response and PFS, with a numerical but non-significant OS gain (trial powered for PFS) at the cost of nearly three-fold more grade ≥3 treatment-related toxicity.",
+   "tags": [
+    "pembrolizumab",
+    "chemo-immunotherapy",
+    "PD-L1 high",
+    "PERSEE",
+    "ESMO 2026"
+   ],
+   "title": "PERSEE: adding platinum chemotherapy to pembrolizumab more than doubles PFS in PD-L1 ≥50% NSCLC, OS not significant",
+   "tumor": "Lung",
+   "url": "https://oncodaily.com/oncolibrary/lung-oncology/persee-esmo26",
+   "id": "2026-10-25-persee-pembro-chemo-pdl1-high-nsclc"
+  },
   {
    "added": "2026-10-29",
    "category": "trial",
