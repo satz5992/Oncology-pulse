@@ -1,6 +1,153 @@
 {
- "updated": "2026-10-30T01:40:00Z",
+ "updated": "2026-10-31T01:25:00Z",
  "items": [
+  {
+   "added": "2026-10-31",
+   "category": "trial",
+   "conference": "esmo-2026",
+   "date": "2026-10-30",
+   "impact": "notable",
+   "keyData": "Abstract 3137RO · +mFOLFIRINOX ORR 89% (confirmed 81%), n=27 · +gem/nab-P ORR 69% (confirmed 58%), n=26 · monotherapy ORR 37%, n=41",
+   "session": "Presented",
+   "source": "OncLive",
+   "summary": "Phase 1 data presented at ESMO 2026 showed that adding Incyte's oral KRAS G12D inhibitor INCB161734 to mFOLFIRINOX or gemcitabine/nab-paclitaxel produced high response rates in metastatic PDAC. The data shaped the all-comers randomised phase 3 DAWN-303 (chemo ± INCB161734, no monotherapy arm).",
+   "tags": [
+    "KRAS G12D",
+    "INCB161734",
+    "DAWN-303",
+    "ESMO 2026"
+   ],
+   "title": "INCB161734 plus first-line chemotherapy shows high response rates in KRAS G12D pancreatic cancer; phase 3 DAWN-303 launched",
+   "tumor": "Pancreas",
+   "url": "https://www.onclive.com/view/incb161734-combination-data-shape-dawn-303-s-all-comers-design-in-frontline-kras-g12d-mutated-pdac",
+   "id": "2026-10-30-incb161734-chemo-kras-g12d-pdac"
+  },
+  {
+   "added": "2026-10-31",
+   "category": "research",
+   "conference": "sitc-2026",
+   "date": "2026-10-29",
+   "impact": "notable",
+   "keyData": "PrTK05 (NCT07332000) · Abstract 1172 · poster 7 Nov 2026",
+   "session": "Presented",
+   "source": "Candel Therapeutics (investor relations)",
+   "summary": "Candel will present a late-breaking poster on longitudinal immune profiling, biodistribution and viral shedding with the adenoviral gene therapy aglatimagene besadenovec plus valacyclovir combined with radiation in localised intermediate-risk prostate cancer.",
+   "tags": [
+    "oncolytic/gene therapy",
+    "aglatimagene",
+    "radiotherapy",
+    "SITC 2026"
+   ],
+   "title": "SITC 2026 preview: immune-profiling data from phase 2 PrTK05 of aglatimagene plus radiotherapy in intermediate-risk prostate cancer",
+   "tumor": "Prostate",
+   "url": "https://ir.candeltx.com/news-releases/news-release-details/candel-therapeutics-announces-late-breaking-abstract-accepted",
+   "id": "2026-10-29-sitc-aglatimagene-prtk05-rt-prostate-preview"
+  },
+  {
+   "added": "2026-10-31",
+   "category": "research",
+   "conference": "sitc-2026",
+   "date": "2026-10-29",
+   "impact": "notable",
+   "keyData": "BiPAVE-001 · LBA oral · 7 Nov 2026 · presenter Kai He",
+   "session": "Presented",
+   "source": "PR Newswire (OncoC4)",
+   "summary": "OncoC4 will present monotherapy results from the BiPAVE-001 studies of cesalatamig (AI-081) in NSCLC resistant or refractory to PD-(L)1 therapy at a late-breaking oral session on 7 November; no data were released ahead of the embargo. The drug received FDA fast track designation for post-IO, post-platinum NSCLC in September 2026.",
+   "tags": [
+    "PD-1/VEGF bispecific",
+    "cesalatamig",
+    "SITC 2026"
+   ],
+   "title": "SITC 2026 preview: phase 1/2 data for PD-1/VEGF bispecific cesalatamig in PD-(L)1-refractory NSCLC selected as late-breaking oral",
+   "tumor": "Lung",
+   "url": "https://www.prnewswire.com/news-releases/oncoc4-announces-oral-presentation-of-a-late-breaking-abstract-on-cesalatamig-at-the-41st-annual-meeting-of-sitc-302923113.html",
+   "id": "2026-10-29-sitc-cesalatamig-pd1-vegf-nsclc-preview"
+  },
+  {
+   "added": "2026-10-31",
+   "category": "research",
+   "conference": "sitc-2026",
+   "date": "2026-10-29",
+   "impact": "notable",
+   "session": "Presented",
+   "source": "FAIRS Online",
+   "summary": "SITC's virtual briefing during its 4–8 November Phoenix meeting will feature an NCI interim phase 2 analysis of mutant p53-specific TCR T cells in epithelial cancers, OBX-115 IL-2-free TIL in ICI-resistant melanoma, anti-CAR immunity limiting GD2-CAR T in diffuse midline glioma, adoptive therapy after neoantigen vaccination in MGMT-unmethylated GBM, intratumoral influenza vaccine in melanoma, the IL-2 prodrug WTX-124 and the PD-1/VEGF bispecific cesalatamig.",
+   "tags": [
+    "cell therapy",
+    "TIL",
+    "TCR-T",
+    "SITC 2026"
+   ],
+   "title": "SITC 2026 sets 4 November press briefing on eight immunotherapy abstracts, including mutant-p53 TCR-T cells and IL-2-free TIL",
+   "tumor": "Pan-cancer",
+   "url": "https://www.fairsonline.org/sitc-sets-nov-4-briefing-eight-cancer-immunotherapy-abstracts",
+   "id": "2026-10-29-sitc-press-briefing-lineup-preview"
+  },
+  {
+   "added": "2026-10-31",
+   "category": "research",
+   "conference": "esmo-2026",
+   "date": "2026-10-28",
+   "impact": "notable",
+   "session": "Analysis",
+   "source": "OncoDaily",
+   "summary": "Ali Chamseddine (medical oncologist/haematologist, Al Zahra Private Hospital, Dubai) ranked DeLLphi-305, VOLGA, INTerpath-001, TroFuse-005, Krascendo-1, HARMONi-GI1, SAFFRON/SANOVO, DASL-HiCaP, KEYNOTE-C93 and MOIO, calling SAFFRON/SANOVO practice-changing and several others 'promising, wait'. His caveats included immature data (DeLLphi-305, DASL-HiCaP, INTerpath-001), a ~50% CRS rate with tarlatamab, few adagrasib controls in open-label Krascendo-1, China-only HARMONi-GI1 data, high stomatitis with sac-TMT and an outdated comparator with crossing curves in KEYNOTE-C93.",
+   "tags": [
+    "expert commentary",
+    "ESMO 2026",
+    "ADCs",
+    "bispecifics"
+   ],
+   "title": "Expert view: Ali Chamseddine ranks ESMO 2026's top 10 trials and flags their weak points",
+   "tumor": "Pan-cancer",
+   "url": "https://oncodaily.com/science/ali-chamseddine-esmo26-620248",
+   "id": "2026-10-28-chamseddine-esmo-top10-analysis"
+  },
+  {
+   "added": "2026-10-31",
+   "category": "research",
+   "conference": "esmo-2026",
+   "date": "2026-10-26",
+   "impact": "notable",
+   "keyData": "Abstract 1536RO · HPV−, pembro arm: clearers vs non-clearers 5-yr OS 72.9% vs 38.9%, 5-yr EFS 63.1% vs 38.2%",
+   "session": "Presented",
+   "source": "OncLive",
+   "summary": "An exploratory ctDNA analysis of the phase 3 KEYNOTE-412 trial found that clearance by cycle 3 day 1 was associated with better 5-year EFS and OS in HPV-negative locally advanced HNSCC, most clearly in the pembrolizumab arm. Baseline ctDNA was prognostic in HPV-negative but not HPV-positive disease; HPV-positive findings were based on small numbers.",
+   "tags": [
+    "ctDNA",
+    "pembrolizumab",
+    "chemoradiotherapy",
+    "KEYNOTE-412",
+    "radiotherapy",
+    "ESMO 2026"
+   ],
+   "title": "KEYNOTE-412 ctDNA analysis: early ctDNA clearance tracks with 5-year survival on pembrolizumab plus chemoradiotherapy in HPV-negative HNSCC",
+   "tumor": "Head & Neck",
+   "url": "https://www.onclive.com/view/early-ctdna-clearance-is-linked-to-improved-survival-with-pembrolizumab-plus-crt-in-hpv-negative",
+   "id": "2026-10-26-keynote-412-ctdna-clearance-hnscc"
+  },
+  {
+   "added": "2026-10-31",
+   "category": "trial",
+   "conference": "esmo-2026",
+   "date": "2026-10-25",
+   "impact": "notable",
+   "keyData": "OrigAMI-4 cohort 5 · HPV-unrelated ORR 77% (17/22; 3 CR) · HPV+ OPC ORR 29% (2/7)",
+   "session": "Presented",
+   "source": "ecancer",
+   "summary": "In cohort 5 of the phase 1b/2 OrigAMI-4 study presented at ESMO 2026, the EGFR/MET bispecific amivantamab combined with pembrolizumab and chemotherapy produced a high confirmed response rate in HPV-unrelated R/M HNSCC, with lower activity in HPV-positive oropharyngeal disease. Investigators (Kevin Harrington, ICR/Royal Marsden) noted small numbers; the phase 3 OrigAMI-5 trial is under way.",
+   "tags": [
+    "amivantamab",
+    "EGFR/MET bispecific",
+    "pembrolizumab",
+    "OrigAMI-4",
+    "ESMO 2026"
+   ],
+   "title": "OrigAMI-4: amivantamab plus pembrolizumab and chemotherapy gives 77% response rate in HPV-unrelated recurrent/metastatic HNSCC",
+   "tumor": "Head & Neck",
+   "url": "https://ecancer.org/en/news/29094-esmo-2026-new-treatment-combination-shows-promising-results-in-recurrent-head-and-neck-cancer",
+   "id": "2026-10-25-origami-4-amivantamab-pembro-chemo-hnscc"
+  },
   {
    "added": "2026-10-30",
    "category": "trial",
@@ -47,7 +194,7 @@
    "date": "2026-10-29",
    "impact": "notable",
    "keyData": "AMPLIFY-7P · n=144 · LBA poster 1186 · plenary 6 Nov 2026",
-   "session": "Preview",
+   "session": "Presented",
    "source": "GlobeNewswire (Elicio)",
    "summary": "Elicio will present prespecified analyses from the 144-patient randomised phase 2 AMPLIFY-7P trial of camupepimut (ELI-002 7P) versus observation after standard locoregional therapy, in the SITC plenary on 6 Nov and as a late-breaking poster; no efficacy figures were released beforehand.",
    "tags": [
@@ -69,7 +216,7 @@
    "date": "2026-10-29",
    "impact": "notable",
    "keyData": "Abstract 1177 · oral 7 Nov 2026",
-   "session": "Preview",
+   "session": "Presented",
    "source": "GlobeNewswire (Immunocore)",
    "summary": "Immunocore will present additional safety and efficacy data for its PRAME-targeted ImmTAC brenetafusp alone and with tebentafusp in HLA-A*02:01-positive metastatic uveal melanoma, as a poster on 6 Nov and a clinical oral session on 7 Nov; no numbers were disclosed in advance.",
    "tags": [
